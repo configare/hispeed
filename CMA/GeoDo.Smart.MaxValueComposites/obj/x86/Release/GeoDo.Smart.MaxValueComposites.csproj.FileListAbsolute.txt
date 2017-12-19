@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.MaxValueComposites.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.MaxValueComposites.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.MaxValueComposites.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.MaxValueComposites\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.MaxValueComposites\obj\x86\Release\GeoDo.Smart.MaxValueComposites.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.MaxValueComposites\obj\x86\Release\GeoDo.Smart.MaxValueComposites.pdb

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml identify="mosaic">
+  <!--当前处理的文件-->
+  <InputFilename></InputFilename>
+  <!--输出文件信息-->
+  <OutputFiles>
+    <File>
+      <!--输出文件名(不包含路径)-->
+      <OutputFilename></OutputFilename>
+      <!--缩略图文件-->
+      <Thumbnail></Thumbnail>
+      <!--辅助文件"***.hdr,***.info,..."-->
+      <ExtendFiles></ExtendFiles>
+      <!--文件属性[double],经纬度范围、分辨率-->
+      <Envelope name="" minx="" maxx="" miny="" maxy=""/>
+      <ResolutionX></ResolutionX>
+      <ResolutionY></ResolutionY>
+      <!--文件的大小(字节)-->
+      <Length></Length>
+    </File>
+    <!--<File></File>-->
+  </OutputFiles>
+  <!--返回消息-->
+  <log>
+    <loglevel>info|warning|error</loglevel>
+    <loginfo>...</loginfo>
+  </log>
+</xml>

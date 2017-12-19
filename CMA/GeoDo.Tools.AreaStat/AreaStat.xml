@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml identify="AreaStatArg">
+  <InputDir>F:\FY3A_VIRR\</InputDir>
+  <OutputFile>F:\AreaStat.dat</OutputFile>
+  <OutResolution>0.01</OutResolution>
+</xml>

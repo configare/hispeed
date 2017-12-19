@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <InputDir>D:\</InputDir>
+  <OutputDir>D:\</OutputDir>
+  <ValidEnvelopes>
+    <Envelope name="china" minx="65" maxx="145" miny="10" maxy="60" />
+  </ValidEnvelopes>
+  <Bands>Cloud_Fraction</Bands>
+</xml>

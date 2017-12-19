@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="LST" subIdentify="DBHL" colortablename="LSTDBHL" description="夏季高温专题图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="206,200,200" minValue="1000" maxValue="3130" labeltext="&lt;40" displaylengend="true" />
+        <Color color="249,231,54" minValue="3130" maxValue="3180" labeltext="40" displaylengend="true" />
+        <Color color="255,184,60" minValue="3180" maxValue="3230" labeltext="45" displaylengend="true" />
+        <Color color="255,120,1" minValue="3230" maxValue="3280" labeltext="50" displaylengend="true" />
+        <Color color="187,72,16" minValue="3280" maxValue="3330" labeltext="55" displaylengend="true" />
+        <Color color="255,3,3" minValue="3330" maxValue="3380" labeltext="60" displaylengend="true" />
+        <Color color="143,37,37" minValue="3380" maxValue="3730" labeltext="&gt;65" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTSU" description="陆表高温专题图（夏）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="206,200,200" minValue="1000" maxValue="3030" labeltext="&lt;30" displaylengend="true" />
+        <Color color="249,231,54" minValue="3030" maxValue="3080" labeltext="30" displaylengend="true" />
+        <Color color="255,184,60" minValue="3080" maxValue="3130" labeltext="35" displaylengend="true" />
+        <Color color="255,120,1" minValue="3130" maxValue="3180" labeltext="40" displaylengend="true" />
+        <Color color="187,72,16" minValue="3180" maxValue="3230" labeltext="45" displaylengend="true" />
+        <Color color="255,3,3" minValue="3230" maxValue="3280" labeltext="50" displaylengend="true" />
+        <Color color="143,37,37" minValue="3280" maxValue="3730" labeltext="&gt;55" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="LTFR" colortablename="LSTLTFR" description="陆表高温天数(高温)" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="   水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="   云" displaylengend="true" />
+        <Color color="0,255,255" maxValue="3" minValue="1" labeltext="   1-2"/>
+        <Color color="0,255,0" maxValue="5" minValue="3" labeltext="   3-4"/>
+        <Color color="255,255,0" maxValue="7" minValue="5" labeltext="   5-6"/>
+        <Color color="255,128,0" maxValue="9999" minValue="7" labeltext=" >=7(天)"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="LTLR" colortablename="LSTLTLR" description="陆表高温天数(低温)" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="   水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="   云" displaylengend="true" />
+        <Color color="0,255,255" maxValue="3" minValue="1" labeltext="   1-2"/>
+        <Color color="0,255,0" maxValue="5" minValue="3" labeltext="   3-4"/>
+        <Color color="255,255,0" maxValue="7" minValue="5" labeltext="   5-6"/>
+        <Color color="255,128,0" maxValue="9999" minValue="7" labeltext=" >=7(天)"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="LTFI" colortablename="LSTLTFI" description="陆表高温天数专题图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="   水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="   云" displaylengend="true" />
+        <Color color="240,240,60" maxValue="3" minValue="1" labeltext="   1-2"/>
+        <Color color="250,180,75" maxValue="5" minValue="3" labeltext="   3-4"/>
+        <Color color="220,120,20" maxValue="7" minValue="5" labeltext="   5-6"/>
+        <Color color="255,10,10" maxValue="8" minValue="7" labeltext="   7(天)"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTSP" description="陆表高温专题图（春）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="207,237,254" minValue="1000" maxValue="3030" labeltext="&lt;30" displaylengend="true" />
+        <Color color="105,247,121" minValue="3030" maxValue="3080" labeltext="30" displaylengend="true" />
+        <Color color="240,240,60" minValue="3080" maxValue="3130" labeltext="35" displaylengend="true" />
+        <Color color="250,180,75" minValue="3130" maxValue="3180" labeltext="40" displaylengend="true" />
+        <Color color="220,120,20" minValue="3180" maxValue="3230" labeltext="45" displaylengend="true" />
+        <Color color="241,164,184" minValue="3230" maxValue="3280" labeltext="50" displaylengend="true" />
+        <Color color="237,101,136" minValue="3280" maxValue="3330" labeltext="55" displaylengend="true" />
+        <Color color="255,10,10" minValue="3330" maxValue="3380" labeltext="60" displaylengend="true" />
+        <Color color="143,37,37" minValue="3380" maxValue="9998" labeltext="&gt;65" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTFA" description="陆表高温专题图（秋）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="206,200,200" minValue="1000" maxValue="3130" labeltext="&lt;40" displaylengend="true" />
+        <Color color="249,231,54" minValue="3130" maxValue="3180" labeltext="40" displaylengend="true" />
+        <Color color="255,184,60" minValue="3180" maxValue="3230" labeltext="45" displaylengend="true" />
+        <Color color="255,120,1" minValue="3230" maxValue="3280" labeltext="50" displaylengend="true" />
+        <Color color="187,72,16" minValue="3280" maxValue="3330" labeltext="55" displaylengend="true" />
+        <Color color="255,3,3" minValue="3330" maxValue="3380" labeltext="60" displaylengend="true" />
+        <Color color="143,37,37" minValue="3380" maxValue="3730" labeltext="&gt;65" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTWI" description="陆表高温专题图（冬）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="0,0,255" minValue="1000" maxValue="2330" labeltext="&lt;-40" displaylengend="true" />
+        <Color color="0,228,255" minValue="2330" maxValue="2430" labeltext="-40" displaylengend="true" />
+        <Color color="0,0,0" minValue="2430" maxValue="2480" labeltext="-30" displaylengend="false" />
+        <Color color="178,248,248" minValue="2430" maxValue="2530" labeltext="-25" displaylengend="true" />
+        <Color color="22,83,3" minValue="2530" maxValue="2670" labeltext="-20" displaylengend="true" />
+        <Color color="0,255,0" minValue="2670" maxValue="2710" labeltext="-6" displaylengend="true" />
+        <Color color="165,248,100" minValue="2710" maxValue="2750" labeltext="-2" displaylengend="true" />
+        <Color color="240,240,60" minValue="2750" maxValue="2790" labeltext="2" displaylengend="true" />
+        <Color color="250,180,75" minValue="2790" maxValue="2830" labeltext="6" displaylengend="true" />
+        <Color color="220,120,20" minValue="2830" maxValue="2880" labeltext="10" displaylengend="true" />
+        <Color color="241,164,184" minValue="2880" maxValue="2930" labeltext="15" displaylengend="true" />
+        <Color color="237,101,136" minValue="2930" maxValue="3030" labeltext="20" displaylengend="true" />
+        <Color color="255,10,10" minValue="3030" maxValue="3230" labeltext="30" displaylengend="true" />
+        <Color color="143,37,37" minValue="3230" maxValue="9998" labeltext="&gt;50" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="0MAX" colortablename="LST0MAX" description="最大值合成" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="165,200,248" minValue="1000" maxValue="3030" labeltext="30" displaylengend="true" />
+        <Color color="105,247,121" minValue="3030" maxValue="3080" labeltext="35" displaylengend="true" />
+        <Color color="240,240,60" minValue="3080" maxValue="3130" labeltext="40" displaylengend="true" />
+        <Color color="250,180,75" minValue="3130" maxValue="3180" labeltext="45" displaylengend="true" />
+        <Color color="220,120,20" minValue="3180" maxValue="3230" labeltext="50" displaylengend="true" />
+        <Color color="241,164,184" minValue="3230" maxValue="3280" labeltext="55" displaylengend="true" />
+        <Color color="237,101,136" minValue="3280" maxValue="3330" labeltext="60" displaylengend="true" />
+        <Color color="255,10,10" minValue="3330" maxValue="3380" labeltext="65" displaylengend="true" />
+        <Color color="143,37,37" minValue="3380" maxValue="4000" labeltext="127" displaylengend="true" />
+        <Color color="0,0,0" minValue="4000" maxValue="9998" labeltext="&gt;127℃" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="0MIN" colortablename="LST0MIN" description="最小值合成" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="165,200,248" minValue="1000" maxValue="3030" labeltext="30" displaylengend="true" />
+        <Color color="105,247,121" minValue="3030" maxValue="3080" labeltext="35" displaylengend="true" />
+        <Color color="240,240,60" minValue="3080" maxValue="3130" labeltext="40" displaylengend="true" />
+        <Color color="250,180,75" minValue="3130" maxValue="3180" labeltext="45" displaylengend="true" />
+        <Color color="220,120,20" minValue="3180" maxValue="3230" labeltext="50" displaylengend="true" />
+        <Color color="241,164,184" minValue="3230" maxValue="3280" labeltext="55" displaylengend="true" />
+        <Color color="237,101,136" minValue="3280" maxValue="3330" labeltext="60" displaylengend="true" />
+        <Color color="255,10,10" minValue="3330" maxValue="3380" labeltext="65" displaylengend="true" />
+        <Color color="143,37,37" minValue="3380" maxValue="4000" labeltext="127" displaylengend="true" />
+        <Color color="0,0,0" minValue="4000" maxValue="9998" labeltext="&gt;127℃" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="0AVG" colortablename="LST0AVG" description="平均值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,255" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="0,0,136" minValue="1000" maxValue="2330" labeltext="-40" displaylengend="true" />
+        <Color color="0,228,255" minValue="2330" maxValue="2630" labeltext="-10" displaylengend="true" />
+        <Color color="178,248,248" minValue="2630" maxValue="2680" labeltext="-5" displaylengend="true" />
+        <Color color="22,83,3" minValue="2680" maxValue="2730" labeltext="0" displaylengend="true" />
+        <Color color="0,255,0" minValue="2730" maxValue="2780" labeltext="5" displaylengend="true" />
+        <Color color="165,248,100" minValue="2780" maxValue="2830" labeltext="10" displaylengend="true" />
+        <Color color="240,240,60" minValue="2830" maxValue="2890" labeltext="16" displaylengend="true" />
+        <Color color="250,180,75" minValue="2890" maxValue="2950" labeltext="22" displaylengend="true" />
+        <Color color="220,120,20" minValue="2950" maxValue="3010" labeltext="28" displaylengend="true" />
+        <Color color="241,164,184" minValue="3010" maxValue="3070" labeltext="34" displaylengend="true" />
+        <Color color="237,101,136" minValue="3070" maxValue="3130" labeltext="40" displaylengend="true" />
+        <Color color="255,10,10" minValue="3130" maxValue="3430" labeltext="70" displaylengend="true" />
+        <Color color="143,37,37" minValue="3430" maxValue="9998" labeltext="&gt;70" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="ANMI" colortablename="LSTANMI1" description="陆表高温距平图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="67,101,199" minValue="-998" maxValue="-120" labeltext="&lt;-12" displaylengend="true" />
+        <Color color="72,109,244" minValue="-120" maxValue="-110" labeltext="-12" displaylengend="false" />
+        <Color color="72,109,244" minValue="-110" maxValue="-100" labeltext="-11" displaylengend="false" />
+        <Color color="72,116,244" minValue="-100" maxValue="-90" labeltext="-10" displaylengend="true" />
+        <Color color="75,134,244" minValue="-90" maxValue="-80" labeltext="-9" displaylengend="false" />
+        <Color color="72,149,243" minValue="-80" maxValue="-70" labeltext="-8" displaylengend="true" />
+        <Color color="72,164,243" minValue="-70" maxValue="-60" labeltext="-7" displaylengend="false" />
+        <Color color="72,180,243" minValue="-60" maxValue="-50" labeltext="-6" displaylengend="true" />
+        <Color color="72,196,242" minValue="-50" maxValue="-40" labeltext="-5" displaylengend="false" />
+        <Color color="72,196,242" minValue="-40" maxValue="-30" labeltext="-4" displaylengend="true" />
+        <Color color="80,230,243" minValue="-30" maxValue="-30" labeltext="-3" displaylengend="false" />
+        <Color color="72,244,242" minValue="-20" maxValue="-20" labeltext="-2" displaylengend="true" />
+        <Color color="105,186,155" minValue="-10" maxValue="-1E-05" labeltext="-1" displaylengend="false" />
+        <Color color="130,186,130" minValue="1E-05" maxValue="10" labeltext="0" displaylengend="true" />
+        <Color color="155,186,105" minValue="10" maxValue="20" labeltext="1" displaylengend="false" />
+        <Color color="248,255,54" minValue="20" maxValue="30" labeltext="2" displaylengend="true" />
+        <Color color="249,242,54" minValue="30" maxValue="40" labeltext="3" displaylengend="false" />
+        <Color color="249,231,54" minValue="40" maxValue="50" labeltext="4" displaylengend="true" />
+        <Color color="250,218,54" minValue="50" maxValue="60" labeltext="5" displaylengend="false" />
+        <Color color="251,205,54" minValue="60" maxValue="70" labeltext="6" displaylengend="true" />
+        <Color color="252,194,54" minValue="70" maxValue="80" labeltext="7" displaylengend="false" />
+        <Color color="253,181,54" minValue="80" maxValue="90" labeltext="8" displaylengend="true" />
+        <Color color="253,168,54" minValue="90" maxValue="100" labeltext="9" displaylengend="false" />
+        <Color color="254,156,54" minValue="100" maxValue="110" labeltext="10" displaylengend="true" />
+        <Color color="255,144,54" minValue="110" maxValue="120" labeltext="11" displaylengend="false" />
+        <Color color="232,155,98" minValue="120" maxValue="9998" labeltext="&gt;12" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="ANMI" colortablename="LSTANMI2" description="陆表高温距平图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="72,196,242" minValue="-998" maxValue="-80" labeltext="&lt;-4" displaylengend="true" />
+        <Color color="80,230,243" minValue="-80" maxValue="-70" labeltext="-3" displaylengend="false" />
+        <Color color="72,244,242" minValue="-70" maxValue="-60" labeltext="-2" displaylengend="true" />
+        <Color color="105,186,155" minValue="-60" maxValue="-50" labeltext="-1" displaylengend="false" />
+        <Color color="130,186,130" minValue="-50" maxValue="-40" labeltext="0" displaylengend="true" />
+        <Color color="155,186,105" minValue="-40" maxValue="-30" labeltext="1" displaylengend="false" />
+        <Color color="248,255,54" minValue="-30" maxValue="-20" labeltext="2" displaylengend="true" />
+        <Color color="249,242,54" minValue="-20" maxValue="-10" labeltext="3" displaylengend="false" />
+        <Color color="249,231,54" minValue="-10" maxValue="0" labeltext="4" displaylengend="true" />
+        <Color color="250,218,54" minValue="0" maxValue="10" labeltext="5" displaylengend="false" />
+        <Color color="251,205,54" minValue="10" maxValue="20" labeltext="6" displaylengend="true" />
+        <Color color="252,194,54" minValue="20" maxValue="30" labeltext="7" displaylengend="false" />
+        <Color color="253,181,54" minValue="30" maxValue="40" labeltext="8" displaylengend="true" />
+        <Color color="253,168,54" minValue="40" maxValue="50" labeltext="9" displaylengend="false" />
+        <Color color="254,156,54" minValue="50" maxValue="60" labeltext="10" displaylengend="true" />
+        <Color color="255,144,54" minValue="60" maxValue="120" labeltext="11" displaylengend="false" />
+        <Color color="232,155,98" minValue="120" maxValue="9998" labeltext="&gt;12" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="ANMI" colortablename="LSTANMI" description="陆表高温距平图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="67,101,199" minValue="-998" maxValue="-120" labeltext="&lt;-12" displaylengend="true" />
+        <Color color="72,109,244" minValue="-120" maxValue="-110" labeltext="-12" displaylengend="false" />
+        <Color color="72,109,244" minValue="-110" maxValue="-100" labeltext="-11" displaylengend="false" />
+        <Color color="72,116,244" minValue="-100" maxValue="-90" labeltext="-10" displaylengend="true" />
+        <Color color="75,134,244" minValue="-90" maxValue="-80" labeltext="-9" displaylengend="false" />
+        <Color color="72,149,243" minValue="-80" maxValue="-70" labeltext="-8" displaylengend="true" />
+        <Color color="72,164,243" minValue="-70" maxValue="-60" labeltext="-7" displaylengend="false" />
+        <Color color="72,180,243" minValue="-60" maxValue="-50" labeltext="-6" displaylengend="true" />
+        <Color color="72,196,242" minValue="-50" maxValue="-40" labeltext="-5" displaylengend="false" />
+        <Color color="72,196,242" minValue="-40" maxValue="-30" labeltext="-4" displaylengend="true" />
+        <Color color="80,230,243" minValue="-30" maxValue="-30" labeltext="-3" displaylengend="false" />
+        <Color color="72,244,242" minValue="-20" maxValue="-20" labeltext="-2" displaylengend="true" />
+        <Color color="105,186,155" minValue="-10" maxValue="-1E-05" labeltext="-1" displaylengend="false" />
+        <Color color="130,186,130" minValue="1E-05" maxValue="10" labeltext="0" displaylengend="true" />
+        <Color color="155,186,105" minValue="10" maxValue="20" labeltext="1" displaylengend="false" />
+        <Color color="248,255,54" minValue="20" maxValue="30" labeltext="2" displaylengend="true" />
+        <Color color="249,242,54" minValue="30" maxValue="40" labeltext="3" displaylengend="false" />
+        <Color color="249,231,54" minValue="40" maxValue="50" labeltext="4" displaylengend="true" />
+        <Color color="250,218,54" minValue="50" maxValue="60" labeltext="5" displaylengend="false" />
+        <Color color="251,205,54" minValue="60" maxValue="70" labeltext="6" displaylengend="true" />
+        <Color color="252,194,54" minValue="70" maxValue="80" labeltext="7" displaylengend="false" />
+        <Color color="253,181,54" minValue="80" maxValue="90" labeltext="8" displaylengend="true" />
+        <Color color="253,168,54" minValue="90" maxValue="100" labeltext="9" displaylengend="false" />
+        <Color color="254,156,54" minValue="100" maxValue="110" labeltext="10" displaylengend="true" />
+        <Color color="255,144,54" minValue="110" maxValue="120" labeltext="11" displaylengend="false" />
+        <Color color="232,155,98" minValue="120" maxValue="9998" labeltext="&gt;12" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="CHAZ" colortablename="LSTCHAZ" description="陆表高温距平图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="67,101,199" minValue="-998" maxValue="-120" labeltext="&lt;-12" displaylengend="true" />
+        <Color color="72,109,244" minValue="-120" maxValue="-110" labeltext="-12" displaylengend="false" />
+        <Color color="72,109,244" minValue="-110" maxValue="-100" labeltext="-11" displaylengend="false" />
+        <Color color="72,116,244" minValue="-100" maxValue="-90" labeltext="-10" displaylengend="true" />
+        <Color color="75,134,244" minValue="-90" maxValue="-80" labeltext="-9" displaylengend="false" />
+        <Color color="72,149,243" minValue="-80" maxValue="-70" labeltext="-8" displaylengend="true" />
+        <Color color="72,164,243" minValue="-70" maxValue="-60" labeltext="-7" displaylengend="false" />
+        <Color color="72,180,243" minValue="-60" maxValue="-50" labeltext="-6" displaylengend="true" />
+        <Color color="72,196,242" minValue="-50" maxValue="-40" labeltext="-5" displaylengend="false" />
+        <Color color="72,196,242" minValue="-40" maxValue="-30" labeltext="-4" displaylengend="true" />
+        <Color color="80,230,243" minValue="-30" maxValue="-30" labeltext="-3" displaylengend="false" />
+        <Color color="72,244,242" minValue="-20" maxValue="-20" labeltext="-2" displaylengend="true" />
+        <Color color="105,186,155" minValue="-10" maxValue="-1E-05" labeltext="-1" displaylengend="false" />
+        <Color color="130,186,130" minValue="1E-05" maxValue="10" labeltext="0" displaylengend="true" />
+        <Color color="155,186,105" minValue="10" maxValue="20" labeltext="1" displaylengend="false" />
+        <Color color="248,255,54" minValue="20" maxValue="30" labeltext="2" displaylengend="true" />
+        <Color color="249,242,54" minValue="30" maxValue="40" labeltext="3" displaylengend="false" />
+        <Color color="249,231,54" minValue="40" maxValue="50" labeltext="4" displaylengend="true" />
+        <Color color="250,218,54" minValue="50" maxValue="60" labeltext="5" displaylengend="false" />
+        <Color color="251,205,54" minValue="60" maxValue="70" labeltext="6" displaylengend="true" />
+        <Color color="252,194,54" minValue="70" maxValue="80" labeltext="7" displaylengend="false" />
+        <Color color="253,181,54" minValue="80" maxValue="90" labeltext="8" displaylengend="true" />
+        <Color color="253,168,54" minValue="90" maxValue="100" labeltext="9" displaylengend="false" />
+        <Color color="254,156,54" minValue="100" maxValue="110" labeltext="10" displaylengend="true" />
+        <Color color="255,144,54" minValue="110" maxValue="120" labeltext="11" displaylengend="false" />
+        <Color color="232,155,98" minValue="120" maxValue="9998" labeltext="&gt;12" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTRSU" description="陆表高温强度专题图（夏）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="239,242,134" minValue="1000" maxValue="3130" labeltext="轻度" displaylengend="true" />
+        <Color color="255,184,60" minValue="3130" maxValue="3230" labeltext="中度" displaylengend="true" />
+        <Color color="187,72,16" minValue="3230" maxValue="3280" labeltext="60" displaylengend="false" />
+        <Color color="187,72,16" minValue="3280" maxValue="9998" labeltext="重度" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTRSP" description="陆表高温强度专题图（春）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="239,242,134" minValue="1000" maxValue="3130" labeltext="轻度" displaylengend="true" />
+        <Color color="255,184,60" minValue="3130" maxValue="3230" labeltext="中度" displaylengend="true" />
+        <Color color="187,72,16" minValue="3230" maxValue="3280" labeltext="60" displaylengend="false" />
+        <Color color="187,72,16" minValue="3280" maxValue="9998" labeltext="重度" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTRFA" description="陆表高温强度专题图（秋）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="   水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="     云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="209,209,209" minValue="1000" maxValue="3130" labeltext="   正常" displaylengend="true" />
+        <Color color="255,164,164" minValue="3130" maxValue="3230" labeltext="   轻度" displaylengend="true" />
+        <Color color="255,0,0" minValue="3230" maxValue="9998" labeltext="   重度" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTRWI" description="陆表高温强度专题图（冬）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="   水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="     云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="209,209,209" minValue="1000" maxValue="3130" labeltext="   正常" displaylengend="true" />
+        <Color color="255,164,164" minValue="3130" maxValue="3230" labeltext="   轻度" displaylengend="true" />
+        <Color color="255,0,0" minValue="3230" maxValue="9998" labeltext="   重度" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBHL" colortablename="LSTRHL" description="陆表高温强度专题图（夏季高温）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="239,242,134" minValue="1000" maxValue="3130" labeltext="轻度" displaylengend="true" />
+        <Color color="255,184,60" minValue="3130" maxValue="3230" labeltext="中度" displaylengend="true" />
+        <Color color="187,72,16" minValue="3230" maxValue="3280" labeltext="60" displaylengend="false" />
+        <Color color="187,72,16" minValue="3280" maxValue="9998" labeltext="重度" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="TCNI" colortablename="LSTTCNI" description="陆表高温差异专题图（印巴临时）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="187,244,240" minValue="-80" maxValue="-70" labeltext="-3" displaylengend="false" />
+        <Color color="187,244,240" minValue="-70" maxValue="-60" labeltext="-2" displaylengend="false" />
+        <Color color="187,244,240" minValue="-60" maxValue="-50" labeltext="-1" displaylengend="false" />
+        <Color color="187,244,240" minValue="-50" maxValue="-40" labeltext="0" displaylengend="false" />
+        <Color color="187,244,240" minValue="-998" maxValue="-30" labeltext="1" displaylengend="true" />
+        <Color color="248,255,54" minValue="-30" maxValue="10" labeltext="2" displaylengend="true" />
+        <Color color="251,205,54" minValue="10" maxValue="50" labeltext="6" displaylengend="true" />
+        <Color color="254,156,54" minValue="50" maxValue="9998" labeltext="10" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV" colortablename="LSTTDBI" description="高温监测图（印巴临时）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="207,237,254" minValue="1000" maxValue="3030" labeltext="&lt;30" displaylengend="true" />
+        <Color color="105,247,121" minValue="3030" maxValue="3080" labeltext="30" displaylengend="true" />
+        <Color color="240,240,60" minValue="3080" maxValue="3130" labeltext="35" displaylengend="true" />
+        <Color color="250,180,75" minValue="3130" maxValue="3180" labeltext="40" displaylengend="true" />
+        <Color color="220,120,20" minValue="3180" maxValue="3230" labeltext="45" displaylengend="true" />
+        <Color color="241,164,184" minValue="3230" maxValue="3280" labeltext="50" displaylengend="true" />
+        <Color color="255,0,0" minValue="3280" maxValue="3330" labeltext="&gt;55" displaylengend="true" />
+        <!--<Color color="255,10,10" minValue="3330" maxValue="3380" labeltext="60" displaylengend="false" />
+        <Color color="255,0,0" minValue="3380" maxValue="9998" labeltext="&gt;65" displaylengend="false" />-->
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

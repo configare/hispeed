@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Telerik.WinControls
+{
+    internal class DesignerConsts
+    {
+        private const string KeyToken = ", Culture=neutral, PublicKeyToken=5bb2a467cbec794e";
+        public const string RadItemDesignerString = "Telerik.WinControls.Design.RadItemDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadControlDesignerString = "Telerik.WinControls.RadControlDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadScreenTipDocumentDesignerString = "Telerik.WinControls.Design.RadScreenTipDocumentDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;        
+        public const string CustomShapeDesignerString = "Telerik.WinControls.OldShapeEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;        
+        public const string InputBindingEditorString = "Telerik.WinControls.Keyboard.InputBindingEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;        
+        public const string ShadowSettingsConverterString = "Telerik.WinControls.ShadowSettingsConverter, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadItemCollectionEditorString = "Telerik.WinControls.RadItemCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ShortcutsDesignerString = "Telerik.WinControls.Keyboard.ShortcutsDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadControlCodeDomSerializerString = "Telerik.WinControls.Design.RadControlCodeDomSerializer, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string CodeDomSerializerString = "System.ComponentModel.Design.Serialization.CodeDomSerializer, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a";
+        public const string RadItemCodeDomSerializerString = "Telerik.WinControls.Design.RadItemCodeDomSerializer, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadBreadCrumbDesignerString = "Telerik.WinControls.UI.RadBreadCrumbDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadThemeComponentBaseDesignerString = "Telerik.WinControls.Themes.RadThemeComponentBaseDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;//!!!!!!!!!!!!!!!!!!! 
+        public const string RadThemeManagerDesignerString = "Telerik.WinControls.Design.RadThemeManagerDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadDesktopAlertDesignerString = "Telerik.WinControls.Design.RadDesktopAlertDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ImageTypeConverterString = "Telerik.WinControls.Primitives.ImageTypeConverter, Telerik.WinControls, Version=" + VersionNumber.Number + KeyToken;
+        public const string ThemeNameEditorString = "Telerik.WinControls.Design.ThemeNameEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ImageIndexEditorString = "Telerik.WinControls.Design.ImageIndexEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ImageKeyEditorString = "Telerik.WinControls.Design.ImageKeyEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string NoneExcludedImageIndexConverterString = "Telerik.WinControls.Design.NoneExcludedImageIndexConverter, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadImageKeyConverterString = "Telerik.WinControls.Design.RadImageKeyConverter, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string FileNameEditorString = "System.Windows.Forms.Design.FileNameEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a";
+        public const string ShadowSettingsEditorString = "Telerik.WinControls.Design.ShadowSettingsEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadToolStripElementDesignerString = "Telerik.WinControls.UI.ToolStrip.RadToolStripElementDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadToolStripItemDesignerString = "Telerik.WinControls.UI.ToolStrip.RadToolStripItemDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadSplitButtonElementDesignerString = "Telerik.WinControls.UI.RadSplitButtonElementDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadPanelBarGroupDesignerString = "Telerik.WinControls.UI.RadPanelBarGroupDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadPanelBarDesignerString = "Telerik.WinControls.UI.RadPanelBarDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadTabItemDesignerString = "Telerik.WinControls.Design.RadTabItemDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadButtonItemDesignerString = "Telerik.WinControls.UI.RadButtonItemDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadGalleryElementDesignerString = "Telerik.WinControls.UI.RadGalleryElementDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadRotatorDesignerString = "Telerik.WinControls.UI.RadRotatorDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadRibbonBarButtonGroupDesignerString = "Telerik.WinControls.UI.RadRibbonBarButtonGroupDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ContextualTabGroupDesignerString = "Telerik.WinControls.UI.ContextualTabGroupDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadTabStripDesignerString = "Telerik.WinControls.Design.RadTabStripDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadGroupBoxControlDesignerString = "Telerik.WinControls.UI.Design.Design.RadGroupBoxControlDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadScrollablePanelDesignerString = "Telerik.WinControls.UI.RadScrollablePanelDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadRibbonBarGroupDesignerString = "Telerik.WinControls.UI.RadRibbonBarGroupDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadMenuItemDesignerString = "Telerik.WinControls.UI.RadMenuItemDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ContextualTabGroupTabsEditorsString = "Telerik.WinControls.UI.ContextualTabGroupTabsEditors, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadToolStripDesignerString = "Telerik.WinControls.Design.RadToolStripDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadDropDownButtonDesignerString = "Telerik.WinControls.UI.RadDropDownButtonDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadMenuDesignerString = "Telerik.WinControls.UI.Menu.RadMenuDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadRibbonBarDesignerString = "Telerik.WinControls.Design.RadRibbonBarDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadDropDownButtonElementDesignerString = "Telerik.WinControls.UI.RadDropDownButtonElementDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadApplicationMenuDesignerString = "Telerik.WinControls.UI.RadApplicationMenuDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;        
+        public const string RadContextMenuDesignerString = "Telerik.WinControls.UI.RadContextMenuDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadImageTypeEditorString = "Telerik.WinControls.Design.RadImageTypeEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string CommandTabsCollectionEditorString = "Telerik.WinControls.UI.CommandTabsCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string LayoutElementDesignerString = "Telerik.WinControls.Docking.Design.LayoutElementDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string DockingManagerDesignerString = "Telerik.WinControls.Docking.Design.DockingManagerDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadSchedulerNavigatorDesignerString = "Telerik.WinControls.UI.RadSchedulerNavigatorDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string DockSiteDesignerString = "Telerik.WinControls.Docking.Design.DockSiteDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string DockThemeNameEditorString = "Telerik.WinControls.Docking.Design.DockThemeNameEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadContextMenuManagerDesignerString = "Telerik.WinControls.UI.Design.RadContextMenuManagerDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string MultilineStringEditorString = "System.ComponentModel.Design.MultilineStringEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a";
+        public const string RadPageViewPageCollectionEditorString = "Telerik.WinControls.RadPageViewPageCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadPageViewDesignerString = "Telerik.WinControls.RadPageViewDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadPageViewPageDesignerString = "Telerik.WinControls.RadPageViewPageDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadListControlDataItemCollectionDesignerString = "Telerik.WinControls.RadListControlCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadImageShapeEditorString = "Telerik.WinControls.RadImageShapeEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadListControlDesignerString = "Telerik.WinControls.RadListControlDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadCommandBarDesignerString = "Telerik.WinControls.UI.Design.RadCommandBarDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string CommandBarStripElementDesignerString = "Telerik.WinControls.UI.Design.CommandBarStripElementDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadCommandBarToolstripsHolderPanelDesignerString = "Telerik.WinControls.UI.Design.RadCommandBarToolstripsHolderDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string CommandBarStripElementCollectionEditorString = "Telerik.WinControls.UI.Design.CommandBarStripElementCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string CommandBarRowElementCollectionEditorString = "Telerik.WinControls.UI.Design.CommandBarRowElementCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadCommandBarBaseItemCollectionEditorString = "Telerik.WinControls.UI.Design.RadCommandBarBaseItemCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadWizardDesignerString = "Telerik.WinControls.RadWizardDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadWizardPageCollectionEditorString = "Telerik.WinControls.RadWizardPageCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadRibbonBarBackstageItemsCollectionEditorString = "Telerik.WinControls.UI.Design.RadRibbonBarBackstageItemCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadRibbonBarBackstageViewDesignerString = "Telerik.WinControls.UI.Design.RadRibbonBarBackstageViewDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string BackstageViewPageDesignerString = "Telerik.WinControls.UI.Design.BackstageViewPageDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        //public const string CommandBarRowElementCollectionEditorString = "Telerik.WinControls.UI.Design.RadCommandBarDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ListViewItemCollectionDesignerString = "Telerik.WinControls.UI.Design.ListViewItemCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ListViewGroupCollectionDesignerString = "Telerik.WinControls.UI.Design.ListViewGroupCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string ListViewColumnCollectionDesignerString = "Telerik.WinControls.UI.Design.ListViewColumnCollectionEditor, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadListViewDesignerString = "Telerik.WinControls.UI.Design.RadListViewDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadMaskEditBoxDesignerString = "Telerik.WinControls.UI.Design.RadMaskEditBoxDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+        public const string RadPropertyGridDesignerString = "Telerik.WinControls.UI.Design.RadPropertyGridDesigner, Telerik.WinControls.UI.Design, Version=" + VersionNumber.Number + KeyToken;
+    }    
+}

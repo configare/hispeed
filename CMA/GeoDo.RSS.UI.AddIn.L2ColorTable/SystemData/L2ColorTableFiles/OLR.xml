@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="OLR" applyfor = "OLR,VOR" description="射出长波辐射"  matchstring="\S+_OLR_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="OLR" datasets="OLR" refdatasets="">
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTable" applyfor="OLR" description="">
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

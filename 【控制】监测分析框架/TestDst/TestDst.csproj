@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D412005-5602-45EB-A3E1-3B53D369DB3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestDst</RootNamespace>
+    <AssemblyName>TestDst</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\test\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.BlockOper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SandDust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SandDust.designer.cs">
+      <DependentUpon>SandDust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SandExtract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SandExtract.designer.cs">
+      <DependentUpon>SandExtract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VGTFileSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VGTFileSelector.Designer.cs">
+      <DependentUpon>VGTFileSelector.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SandDust.resx">
+      <DependentUpon>SandDust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SandExtract.resx">
+      <DependentUpon>SandExtract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VGTFileSelector.resx">
+      <DependentUpon>VGTFileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Core\GeoDo.RSS.MIF.Core.csproj">
+      <Project>{7BECE116-FC23-40A3-99CA-D71E8769DDD9}</Project>
+      <Name>GeoDo.RSS.MIF.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.DST\GeoDo.RSS.MIF.Prds.DST.csproj">
+      <Project>{A8E4C2A5-F9C4-42AF-B522-DCD9A670F829}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.DST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.VGT\GeoDo.RSS.MIF.Prds.VGT.csproj">
+      <Project>{6561E682-B35A-4390-B068-21F2ECECB4AF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.VGT</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="ASL" subIdentify="U5TI" colortablename="ASLU5TI" description="气溶胶光学厚度" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-327.68" maxValue="0" labeltext="无效值" displaylengend="true" />
+        <Color color="10，255，10" minValue="0" maxValue="0.4" labeltext="良" displaylengend="true" />
+        <Color color="228,243,0" minValue="0.4" maxValue="0.8" labeltext="轻度污染" displaylengend="true" />
+        <Color color="255,192,128" minValue="0.8" maxValue="1.2" labeltext="中度污染" displaylengend="true" />
+        <Color color="255,0,0" minValue="1.2" maxValue="1.6" labeltext="重度污染" displaylengend="true" />
+        <Color color="150,4,75" minValue="1.6" maxValue="2" labeltext="严重污染" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

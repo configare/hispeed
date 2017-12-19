@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <MODIS>
+    <Types Year="2000" RootPath="I:\MODIS\2000" />
+    <Types Year="2001" RootPath="I:\MODIS\2000" />
+    <Types Year="2002" RootPath="I:\MODIS\2000" />
+    <Types Year="2003" RootPath="I:\MODIS\2000" />
+    <Types Year="2004" RootPath="I:\MODIS\2000" />
+    <Types Year="2005" RootPath="I:\MODIS\2000" />
+    <Types Year="2006" RootPath="I:\MODIS\2000" />
+    <Types Year="2007" RootPath="I:\MODIS\2000" />
+    <Types Year="2008" RootPath="I:\MODIS\2000" />
+    <Types Year="2009" RootPath="I:\MODIS\2000" />
+    <Types Year="2010" RootPath="I:\MODIS\2000" />
+    <Types Year="2011" RootPath="I:\MODIS\2000" />
+    <Types Year="2012" RootPath="I:\MODIS\2000" />
+    <Types Year="2013" RootPath="I:\MODIS\2000" />
+    <Types Year="2014" RootPath="I:\MODIS\2000" />
+  </MODIS>
+  <AIRS RootPath="I:\AIRS" />
+  <ISCCP RootPath="I:\ISCCP" />
+  <CloudSAT RootPath="I:\CloudSAT" />
+</xml>

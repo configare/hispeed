@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Arguments>
+  <!--根据name属性值获取设置值，name属性值不可随便修改-->
+  <Argument name="CloudyValue" description="云标识（以，分隔）" value="-9999,30001" />
+  <Argument name="WaterValue" description="水标识（以，分隔）" value="30002,30005" />
+  <Argument name="defCloudy" description="缺省值(云)" value="-9999" />
+  <Argument name="resolution" description="输出分辨率" value="0.01"/>
+</Arguments>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<ExpInfos>
+  <EdgesFile>.\SystemData\RasterTemplate\China_Province.dat</EdgesFile>
+  <ExpItems>
+    <ExpItem name="耕地(水田)" num="11" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="耕地(旱地)" num="12" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="林地(有林地)" num="21" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="林地(灌木林地)" num="22" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="林地(其他林地)" num="23" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="草地(高覆盖度草地)" num="31" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="草地(中覆盖度草地)" num="32" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="草地(低覆盖度草地)" num="33" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="水体(河渠)" num="41" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="水体(湖泊)" num="42" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="水体(水库、坑塘)" num="43" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="水体(冰川和永久积雪)" num="44" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="水体(海涂)" num="45" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="水体(滩地)" num="46" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="城镇,工矿,建设用地(城镇用地)" num="51" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="城镇,工矿,建设用地(工矿用地)" num="52" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="城镇,工矿,建设用地(其他建设用地)" num="53" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="荒地(沙地)" num="61" A="0.05" B="0.5" C="0">
+    </ExpItem>
+    <ExpItem name="荒地(戈壁)" num="62" A="0.05" B="0.5" C="0">
+    </ExpItem>
+     <ExpItem name="荒地(盐碱地)" num="63" A="0.05" B="0.5" C="0">
+    </ExpItem>
+     <ExpItem name="荒地(沼泽地)" num="64" A="0.05" B="0.5" C="0">
+    </ExpItem>
+     <ExpItem name="荒地(裸土地)" num="65" A="0.05" B="0.5" C="0">
+    </ExpItem>
+     <ExpItem name="荒地(裸岩石砾地)" num="66" A="0.05" B="0.5" C="0">
+    </ExpItem>
+     <ExpItem name="荒地(其他)" num="67" A="0.05" B="0.5" C="0">
+    </ExpItem>
+  </ExpItems>
+</ExpInfos>

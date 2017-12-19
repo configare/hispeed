@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<BudGISMetadata version ="1.0">
+  <SystemTables>
+    <SystemTable name="BGIS_FeatureDataset" description="要素集，等价于图层集合,共享同样空间参考的一组矢量数据">
+      <Fields>
+        <Field name="ID" type="VARCHAR(64)" description="GUID"/>
+        <Field name="NAME" type="VARCHAR(64)" description="要素集名称"/>
+        <Field name="SPATIALREF" type="VARCHAR(4096)" description="空间参考(OGC WKT标准,eg:ESRI prj File)"/>
+        <Field name="CREATETIME" type="DATETIME" description="创建时间"/>
+        <Field name="DESCRIPTION" type ="VARCHAR(256)" description="要素集描述信息"/>
+        <Field name="MAPSCALE" type="INT32" description="测绘比例尺"/>
+        <Field name="SOURCE" type="VARCHAR(256)" description="数据来源"/>
+      </Fields>
+    </SystemTable>
+    <SystemTable name="BGIS_FeatureClass" description="要素类，等价于图层">
+      <Fields>
+        <Field name="ID" type="VARCHAR(64)" description="GUID"/>
+        <Field name="DATASETID"  type="VARCHAR(64)" description="要素集ID,NULL单独要素集"/>
+        <Field name="NAME" type="VARCHAR(64)" description="要素类名称"/>
+        <Field name="DATATABLE" type="VARCHAR(128)" description ="要素数据表"/>
+        <Field name="SPATIALREF" type="VARCHAR(4096)" description="空间参考(OGC WKT标准,eg:ESRI prj File)"/>
+        <Field name="ANNOTABLE" type="VARCHAR(128) " description ="注记数据表"/>
+        <Field name="ENVELOPE" type="GEOMETRY" description ="坐标值最小外界矩形"/>
+        <Field name="FEATURECOUNT" type="INT32" description ="要素数量"/>
+        <Field name="SHAPETYPE" type="VARCHAR(32)" description="几何形状"/>
+        <Field name="CREATETIME" type="DATETIME" description="创建时间"/>
+        <Field name="MAPSCALE" type="INT32" description="测绘比例尺"/>
+        <Field name="SOURCE" type="VARCHAR(256)" description="数据来源"/>
+        <Field name="DESCRIPTION" type="VARCHAR(256)" description="要素类描述"/>
+      </Fields>
+    </SystemTable>
+    <SystemTable name="BGIS_Map" description="地图,与MCD文件等价">
+      <Fields>
+        <Field name="ID" type="VARCHAR(64)" description="GUID"/>
+        <Field name="NAME" type="VARCHAR(64)" description="地图名称"/>
+        <Field name="CONFIGXML" type="TEXT(1024000)" description="配置内容,1MB大小,存贮MCD文件的内容"/>
+        <Field name="REFDATASOURCES" type="TEXT(102400)" description="地图引用的数据源列表，$分隔符分开,10KB。是MCD文件中的DataSource的快捷方式。"/>
+        <Field name="DESCRIPTION" type="VARCHAR(256)" description="地图描述"/>
+      </Fields>
+    </SystemTable>
+  </SystemTables>
+</BudGISMetadata>

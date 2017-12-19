@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataSources>
+  <DataSource name ="太湖" shapeFile="太湖矢量边界数据.shp" regionShapeFile="太湖分区_12区.shp">
+    <Regions>
+      <Region name="东太湖" PixelIndexInValidRegion="东太湖.dat"/>
+      <Region name="东部沿岸区" PixelIndexInValidRegion="东部沿岸区.dat"/>
+      <Region name="西北部沿岸区" PixelIndexInValidRegion="西北部沿岸区.dat"/>
+      <Region name="西南部沿岸区" PixelIndexInValidRegion="西南部沿岸区.dat"/>
+      <Region name="南部沿岸区" PixelIndexInValidRegion="南部沿岸区.dat"/>
+      <Region name="湖心中区" PixelIndexInValidRegion="湖心中区.dat"/>
+      <Region name="湖心北区" PixelIndexInValidRegion="湖心北区.dat"/>
+      <Region name="湖心南区" PixelIndexInValidRegion="湖心南区.dat"/>
+      <Region name="竺山湖" PixelIndexInValidRegion="竺山湖.dat"/>
+      <Region name="贡湖" PixelIndexInValidRegion="贡湖.dat"/>
+      <Region name="五里湖" PixelIndexInValidRegion="五里湖.dat"/>
+      <Region name="梅梁湖" PixelIndexInValidRegion="梅梁湖.dat"/>
+    </Regions>
+  </DataSource>
+  <DataSource name ="巢湖" beginNDVI="-0.3" endNDVI="-0.1" convertDegreeMode="auto" shapeFile ="巢湖边界.shp" regionShapeFile ="巢湖分区.shp">
+    <Regions>
+      <Region name="西部湖区" PixelIndexInValidRegion="西部湖区.dat"/>
+      <Region name="东部湖区" PixelIndexInValidRegion="东部湖区.dat"/>
+    </Regions>
+  </DataSource>
+  <DataSource name ="滇池"  beginNDVI="-0.03" endNDVI="0.81" convertDegreeMode="auto" shapeFile="滇池.shp" regionShapeFile="滇池分区.shp">
+    <Regions>
+      <Region name="北部湖区" PixelIndexInValidRegion="北部湖区.dat"/>
+      <Region name="中部湖区" PixelIndexInValidRegion="中部湖区.dat"/>
+      <Region name="南部湖区" PixelIndexInValidRegion="南部湖区.dat"/>
+    </Regions>
+  </DataSource>
+</DataSources> 

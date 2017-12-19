@@ -1,0 +1,477 @@
+<Product name=" 海  冰 " group="环境" identify="ICE" image="system:ice.png" uiprovider="GeoDo.RSS.MIF.Prds.ICE.dll:GeoDo.RSS.MIF.Prds.ICE.UITabSeaIce">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版_反" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="判识" identify="DBLV" color="255,0,0" isuseaoitemplate="true" aoitemplates="vector:海陆模版_反" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="NDSI判识" identify="NDSIAlgorithm" satellite="FY3A,FY3B,EOST,EOSA" sensor="VIRR,MERSI,MODIS" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="积雪指数阈值" datatype="float" minvalue="-2" maxvalue="1.5">
+              <Argument name="NDSIMin" description="积雪指数低端值" endpointtype="min" defaultvalue="-2" />
+              <Argument name="NDSIMax" description="积雪指数高端值" endpointtype="max" defaultvalue="1"/>
+            </ArgumentPair>
+            <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="50">
+              <Argument name="NearInfraredMin" description="近红外低端值" endpointtype="min" defaultvalue="0"/>
+              <Argument name="NearInfraredMax" description="近红外高端值" endpointtype="max" defaultvalue="24"/>
+            </ArgumentPair>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" description="可见光低端值" endpointtype="min" defaultvalue="10" />
+              <Argument name="VisibleMax" description="可见光高端值" endpointtype="max" defaultvalue="100"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="0" maxvalue="300">
+              <Argument name="FarInfraredMin" description="远红外低端值" endpointtype="min" defaultvalue="0" />
+              <Argument name="FarInfraredMax" description="远红外高端值" endpointtype="max" defaultvalue="270"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="NOAA判识" identify="NDSIAlgorithm_NOAA" satellite="NOAA18" sensor="AVHRR" customidentify="海洋">
+          <Bands>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="50">
+              <Argument name="NearInfraredMin" description="近红外低端值" endpointtype="min" defaultvalue="0" />
+              <Argument name="NearInfraredMax" description="近红外高端值" endpointtype="max" defaultvalue="24"/>
+            </ArgumentPair>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" description="可见光低端值" endpointtype="min" defaultvalue="10" />
+              <Argument name="VisibleMax" description="可见光高端值" endpointtype="max" defaultvalue="100"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="0" maxvalue="300">
+              <Argument name="FarInfraredMin" description="远红外低端值" endpointtype="min" defaultvalue="0" />
+              <Argument name="FarInfraredMax" description="远红外高端值" endpointtype="max" defaultvalue="270"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="IST判识" identify="ISTAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,NOAA,NOAA18,NOAA17,NOAA16" sensor="VIRR,MERSI,MODIS,AVHRR" customidentify="海洋">
+          <Bands>
+            <Band identify="FarInfrared11" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared12" wavelength="12" centerwavenum="-1"  zoom="10"/>
+            <Band identify="SrcColNum" wavelength="120" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="IST阈值" datatype="float" minvalue="300" maxvalue="330">
+              <Argument name="ISTMin" description="IST低端值" endpointtype="min" defaultvalue="315" />
+              <Argument name="ISTMax" description="IST高端值" endpointtype="max" defaultvalue="330"/>
+            </ArgumentPair>
+            <Argument name="FactorA" description="系数A" datatype="double" defaultvalue="-40.111752"/>
+            <Argument name="FactorB" description="系数B" datatype="double" defaultvalue="1.149542"/>
+            <Argument name="FactorC" description="系数C" datatype="double" defaultvalue="69.749572"/>
+            <Argument name="FactorD" description="系数D" datatype="double" defaultvalue="-452.349428"/>
+            <Argument name="ScanningAngleA" description="扫描角参数A" datatype="double" defaultvalue="1024" />
+            <Argument name="ScanningAngleB" description="扫描角参数B" datatype="double" defaultvalue="0.000943"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="等温线" identify="ISOT" isuseaoitemplate="true" aoitemplates="vector:海陆模版_反" isdisplaypanel="true" isneedcurrentraster="true" autogenerategroup="Ord">
+      <Algorithms>
+        <Algorithm name="等温线提取" identify="ISOTAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA" sensor="AVHRR,VIRR,MERSI,MODIS,MODI" customidentify="海洋">
+          <Bands>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10" fromarg="CurrentRasterFile"/>
+          </Bands>
+          <Arguments>
+            <Argument name="CurrentRasterFile" description="亮温数据文件"
+                      refdatatype="file" refidentify="CurrentRaster" reffilter="局地投影数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+            <Argument name="Smaping" description="采样比" datatype="Int32" defaultvalue="1"/>
+            <Argument name="TempratureMin" description="温度最小值(℃)" datatype="Int32" defaultvalue="-20"/>
+            <Argument name="TempratureMax" description="温度最大值(℃)" datatype="Int32" defaultvalue="2"/>
+            <Argument name="IntervalMax" description="温度间隔(℃)" datatype="Int32" defaultvalue="2"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="ISOT" visible ="false"/>
+            <Argument name="IsOutputUncompleted" description="是否闭合" datatype="bool" defaultvalue="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="手绘冰缘线" identify="EDGE" isuseaoitemplate="true" aoitemplates="vector:海陆模版_反" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="手绘冰缘线" identify="IEDGAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA" sensor="AVHRR,VIRR,MERSI,MODIS,MODI" customidentify="海洋">
+          <Bands>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="CurrentRasterFile" description="亮温数据文件"
+                      refdatatype="file" refidentify="CurrentRaster" reffilter="局地投影数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+            <!--<Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="EDGE" visible ="false"/>-->
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="自动冰缘线" identify="AEDG" isuseaoitemplate="true" aoitemplates="vector:海陆模版_反" autogenerategroup="Ord">
+      <Algorithms>
+        <Algorithm name="冰缘线提取" identify="AEDGAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA" sensor="AVHRR,VIRR,MERSI,MODIS,MODI" customidentify="海洋">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV"
+                      reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="Smaping" description="采样比" datatype="Int32" defaultvalue="1"/>
+            <Argument name="contourValue" description="提取值" datatype="Int32" defaultvalue="0"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="AEDG" visible ="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="海冰冰缘线模板" visible ="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="FREQ"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="海冰频次统计模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="MCSI" layoutname="海冰产品多通道合成图"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="OMCS" layoutname="海冰原始分辨率多通道合成图" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0SDI" layoutname="海冰二值图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord"/>
+        <Instance name="对比分析图" fileprovider="ContextEnvironment:COMP"
+                  outfileidentify="COMI" layoutname="海冰对比分析专题图"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Com"/>
+      </Instances>
+    </SubProduct>
+    <!--<SubProduct name="覆盖度" identify="DEGR" isuseaoitemplate="true" aoitemplates="" isdisplaypanel="true" isneedcurrentraster="false">
+      <Algorithms>
+        <Algorithm name="覆盖度计算" identify="DEGR" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA" sensor="AVHRR,VIRR,MERSI,MODIS,MODI" customidentify="海洋">
+          <Bands>
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="判识结果"
+                      refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>-->
+    <SubProduct name="覆盖度专题图" identify="DEGR" isuseaoitemplate="false" aoitemplates="vector:海陆模版_反" isdisplaypanel="false" isneedcurrentraster="false" autogenerategroup="Ord">
+      <Algorithms>
+        <Algorithm name="覆盖度图" identify="ISOIAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="海洋">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="等值线数据"
+                      refdatatype="file" refidentify="DBLV" reffilter="等值线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="DEGX"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="海冰等温线模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="覆盖度图(0.1度)" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="DEG1" layoutname="海冰覆盖度图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord"/>
+        <Instance name="覆盖度图(0.25度)" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="DEG2" layoutname="海冰覆盖度图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord"/>
+        <Instance name="覆盖度图(自定义)" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="DEGX" layoutname="海冰覆盖度图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="等温线专题图" identify="ISOI" isuseaoitemplate="false" aoitemplates="vector:海陆模版_反" isdisplaypanel="false" isneedcurrentraster="false" autogenerategroup="Ord">
+      <Algorithms>
+        <Algorithm name="等温线图" identify="ISOIAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="海洋">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="等值线数据"
+                      refdatatype="file" refidentify="ISOT" reffilter="等值线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:ISOT"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="ISOI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="海冰等温线模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="冰缘线专题图" identify="EDGI" isuseaoitemplate="false" aoitemplates="vector:海陆模版_反" isdisplaypanel="false" isneedcurrentraster="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="冰缘线图" identify="ISOIAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="冰缘线数据"
+                      refdatatype="file" refidentify="EDGE" reffilter="冰缘线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:EDGE"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="EDGI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模版名称" datatype="string" defaultvalue="海冰冰缘线专题图模版"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="海冰厚度专题图" identify="SITI" isuseaoitemplate="false"  isdisplaypanel="false" isneedcurrentraster="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="海冰厚度图" identify="SITIAlgorithm" satellite="NOAA,NOAA18" sensor="AVHRR" customidentify="海洋">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="海冰厚度数据"
+                      refdatatype="file" refidentify="0SIT" reffilter="海冰厚度数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:0SIT"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="SITI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模版名称" datatype="string" defaultvalue="海冰厚度专题图模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="海冰厚度专题图" fileprovider="ContextEnvironment:0SIT"
+                  outfileidentify="SITI" layoutname="海冰厚度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" />
+      </Instances>
+    </SubProduct>
+    <SubProduct name="海冰面积专题图" identify="SIAI" isuseaoitemplate="false"  isdisplaypanel="false" isneedcurrentraster="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="海冰面积图" identify="SIAIAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,NOAA,NOAA18,NOAA17,NOAA16" sensor="VIRR,MERSI,MODIS,AVHRR">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="海冰判识结果数据"
+                      refdatatype="file" refidentify="0SIT" reffilter="海冰判识结果(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="false"  fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="SIAI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模版名称" datatype="string" defaultvalue="海冰面积专题图模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="海冰厚度专题图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="SIAI" layoutname="海冰面积专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" />
+      </Instances>
+    </SubProduct>
+    <SubProduct name="面积统计" identify="STAT" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="STATAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CCAR"
+                  aoiprovider="" autogenerategroup="Ord"/>
+        <!--<Instance name="面积统计({关注区})" fileprovider="ContextEnvironment:DBLV"
+                         outfileidentify="CCCA"
+                         aoiprovider="SystemAOI:DefaultAOI"/>-->
+        <!--<Instance name="土地类型面积统计" fileprovider="ContextEnvironment:DBLV"
+                        outfileidentify="CLUT"
+                        aoiprovider="土地利用类型" />
+              <Instance name="省界面积统计" fileprovider="ContextEnvironment:DBLV"
+                        outfileidentify="0CBP"
+                        aoiprovider="省级行政区划"/>
+              <Instance name="省市县面积统计" fileprovider="ContextEnvironment:DBLV"
+                        outfileidentify="0CCC"
+                        aoiprovider="省市县行政区划"/>-->
+      </Instances>
+    </SubProduct>
+    <SubProduct name="频次统计" identify="FREQ" isdisplaypanel="false"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="频次统计" identify="FREQAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="频次统计文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="FREQ"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="海冰频次统计模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="FREQ"  extinfo="_POTD" layoutname="海冰频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="FREQ" extinfo="_POAM" layoutname="海冰频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="FREQ" extinfo="_POAQ" layoutname="海冰频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="FREQ" extinfo="_POAY" layoutname="海冰频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="长序列频次" identify="TFRE" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频次" identify="TFREAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="DBLV"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:DBLV"
+                       ismultiselect="true"></Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频率" identify="TFRQ" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频率" identify="TFRQAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="DBLV"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:DBLV"
+                       ismultiselect="true"></Argument>
+            <Argument name="Zoom" description="放大倍数" datatype="double" defaultvalue="1000" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频次图" identify="TFRI" isdisplaypanel="true">
+      <Algorithms>
+        <Algorithm name="长序列频次图" identify="TFRIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="长序列文件"
+                               refdatatype="file" refidentify="TFRE"
+                               reffilter="长序列数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" />
+            <Argument name="ShpFile" description="冰缘线文件"
+                             refdatatype="file" refidentify="EDGE"
+                             reffilter="冰缘线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                             ismultiselect="true" />
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="TFRI" visible="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="长序列频次图模板" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频率图" identify="TFQI" isdisplaypanel="true">
+      <Algorithms>
+        <Algorithm name="长序列频率图" identify="TFQIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="长序列文件"
+                               refdatatype="file" refidentify="TFRQ"
+                               reffilter="长序列数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" />
+            <Argument name="ShpFile" description="冰缘线文件"
+                             refdatatype="file" refidentify="EDGE"
+                             reffilter="冰缘线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                             ismultiselect="true" />
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="TFQI" visible="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="长序列频率图模板" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="周期合成" identify="CYCI" isdisplaypanel="false"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="周期合成" identify="CYCIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="周期合成文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="CYCI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="海冰周期合成模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="CYCI" extinfo="_POTD" layoutname="海冰周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="CYCI" extinfo="_POAM" layoutname="海冰周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="CYCI" extinfo="_POAQ" layoutname="海冰周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=ICE,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="CYCI" extinfo="_POAY" layoutname="海冰周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="0,0,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="CLMAlgorithm" satellite="FY3A,FY3B,EOST,EOS,EOSA,TERRA,AQUA,NOAA,NOAA16,NOAA17,NOAA18,NOAA19" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <NearVisiable>false</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="海冰厚度" identify="0SIT" isuseaoitemplate="true" aoitemplates="vector:海陆模版_反" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="海冰厚度" identify="IceThinknessAlgorithm" satellite="NOAA18" sensor="AVHRR">
+          <Bands>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="DBLVFile" description="海冰监测结果" editoruiprovider="GeoDo.RSS.MIF.Prds.ICE.dll:GeoDo.RSS.MIF.Prds.ICE.UCDBLVImport"/>
+            <Argument name="T1" description="冰水混合阈值" datatype="float" defaultvalue="2694" />
+            <Argument name="T2" description="海冰厚度小于5cm阈值" datatype="float" defaultvalue="2684"/>
+            <Argument name="T3" description="海冰厚度大于10cm阈值" datatype="float" defaultvalue="2667"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="极区海冰覆盖度图" identify="PICI" isuseaoitemplate="false"  isdisplaypanel="true" isneedcurrentraster="false">
+      <Algorithms>
+        <Algorithm name="海冰覆盖度图" identify="IceConverageAlgorithm" satellite="NOAA18" sensor="AVHRR">
+          <Arguments>
+            <Argument name="BoolCustomAOI" description="使用自定义AOI" datatype="bool" defaultvalue="true" />
+            <Argument name="CoverageArguments" description="极区覆盖度图参数" editoruiprovider="GeoDo.RSS.MIF.Prds.ICE.dll:GeoDo.RSS.MIF.Prds.ICE.UCIceCoverage"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="海冰覆盖度专题图" colortablename="ICEPICI"
+                  outfileidentify="NICI" layoutname="北极海冰覆盖度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="海冰覆盖度专题图" colortablename="ICEPICI"
+                  outfileidentify="SICI" layoutname="南极海冰覆盖度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" />
+      </Instances>
+    </SubProduct>
+    <SubProduct name="对比分析" identify="COMP" isdisplaypanel="true" autogenerategroup="Com">
+      <Algorithms>
+        <Algorithm name="对比分析" identify="COMP" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="CompareFile" description="历史结果数据" refdatatype="file" refidentify="DBLV"
+                      reffilter="历史结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="MainFile" description="海冰判识结果"  refdatatype="file"  fileprovider="ContextEnvironment:DBLV" refidentify="DBLV"
+                      reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="对比分析面积统计" identify="COMA" isdisplaypanel="false" autogenerategroup="Com">
+      <Algorithms>
+        <Algorithm name="对比分析面积统计" identify="COMA" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="COMP" reffilter="对比分析结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="fasle" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:COMP"
+                  outfileidentify="0CCA"
+                  aoiprovider="" autogenerategroup="Com"/>
+      </Instances>
+    </SubProduct>
+  </SubProducts>
+</Product>

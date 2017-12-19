@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WhiteFill,Padding(24,15,0,0),Padding(24,15,0,0),Padding(24,15,0,0),Padding(24,15,0,0),Padding(24,15,0,0),PageViewBackstageFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewBackstageElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageGroupItemText,TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="8, 40" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripGroupItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageGroupItemUnderline">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewGroupItemUnderline" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder,PageViewBackstageItemText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="8, 45" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageItemBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageItemPressedImageShape">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageItemSelectedImageShape,TransparentFill,TransparentBorder,PageViewBackstageItemText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="8, 45" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageFill,PageViewBackstageContentAreaBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="24, 15, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(24,15,0,0),Padding(24,15,0,0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="300, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder,PageViewBackstageItemSelectedImageShape,PageViewBackstageItemText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageFill,PageViewBackstageContentAreaBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="24, 15, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemLayout.LeftAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewBackstageFill,PageViewBackstageContentAreaBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 15, 24, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemLayout.RightAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPageView" ElementType="Telerik.WinControls.UI.RadPageViewBackstageElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <Server>10.24.190.187</Server>
+  <Database>cloudparasprdsbase</Database>
+  <Uid>root</Uid>
+  <Passwords>123456</Passwords>
+  <MODIS RootPath="e:\" />
+  <AIRS RootPath="d:\" />
+  <ISCCP RootPath="D:\" />
+  <CloudSAT RootPath="D:\" />
+</xml>

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D57F2800-3C04-4CD9-8DE6-FBFD36D41AC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.LST</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.LST</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;LSTTEST</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.MathAlg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MathLib\GeoDo.MathAlg.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.BlockOper">
+      <HintPath>..\RefDLL\BlockOper\GeoDo.RSS.BlockOper.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.Elements, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\SubProductLTLRLST.cs" />
+    <Compile Include="Analysis\SubProductSTATLST.cs" />
+    <Compile Include="Analysis\SubProductLTFRLST.cs" />
+    <Compile Include="Analysis\SubProductTHANLST.cs" />
+    <Compile Include="Binary\SubProductBinaryLST.cs" />
+    <Compile Include="Binary\SubProductBinaryLMCZ.cs" />
+    <Compile Include="LST\UITabLST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LST\UITabLST.designer.cs">
+      <DependentUpon>UITabLST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\GeneralCYCAFileList.cs" />
+    <Compile Include="Raster\LSTDataProcessor.cs" />
+    <Compile Include="Raster\SubProductHFIILST.cs" />
+    <Compile Include="CloudyProcess.cs" />
+    <Compile Include="Layout\SubProductIMGLST.cs" />
+    <Compile Include="MonitoringProductLST.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\SubProductANMILST.cs" />
+    <Compile Include="Raster\SubProductAVGLST.cs" />
+    <Compile Include="Raster\SubProductCHAZLST.cs" />
+    <Compile Include="Raster\SubProductCYCALST.cs" />
+    <Compile Include="Raster\SubProductMAXLST.cs" />
+    <Compile Include="Raster\SubProductMINLST.cs" />
+    <Compile Include="UCControl\Base\UCDirSelectBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\Base\UCDirSelectBase.Designer.cs">
+      <DependentUpon>UCDirSelectBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\Default\ArgsFileProvider.cs" />
+    <Compile Include="UCControl\Default\LSTArgs.cs" />
+    <Compile Include="UCControl\frmTemperatureRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UCControl\frmTemperatureRegion.Designer.cs">
+      <DependentUpon>frmTemperatureRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\MathCompare.cs" />
+    <Compile Include="UCControl\UCAnlysisTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCAnlysisTool.Designer.cs">
+      <DependentUpon>UCAnlysisTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCDataCorrection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCDataCorrection.Designer.cs">
+      <DependentUpon>UCDataCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCCyctimeCalc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCCyctimeCalc.Designer.cs">
+      <DependentUpon>UCCyctimeCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCFilesSelectorLST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCFilesSelectorLST.designer.cs">
+      <DependentUpon>UCFilesSelectorLST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCCloudDBLVImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCCloudDBLVImport.Designer.cs">
+      <DependentUpon>UCCloudDBLVImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCLstFilePath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCLstFilePath.Designer.cs">
+      <DependentUpon>UCLstFilePath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCRegionTemperature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCRegionTemperature.Designer.cs">
+      <DependentUpon>UCRegionTemperature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCSegmentArgFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCSegmentArgFile.Designer.cs">
+      <DependentUpon>UCSegmentArgFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCLstDBLVImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCLstDBLVImport.Designer.cs">
+      <DependentUpon>UCLstDBLVImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCFilesSelectorLSTProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCFilesSelectorLSTProcess.designer.cs">
+      <DependentUpon>UCFilesSelectorLSTProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCRegionArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCRegionArgs.Designer.cs">
+      <DependentUpon>UCRegionArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCObserveDataFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCObserveDataFile.Designer.cs">
+      <DependentUpon>UCObserveDataFile.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MonitoringProductArgs\LST\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\Base\UCDirSelectBase.resx">
+      <DependentUpon>UCDirSelectBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\frmTemperatureRegion.resx">
+      <DependentUpon>frmTemperatureRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCAnlysisTool.resx">
+      <DependentUpon>UCAnlysisTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCDataCorrection.resx">
+      <DependentUpon>UCDataCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCFilesSelectorLST.resx">
+      <DependentUpon>UCFilesSelectorLST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCCloudDBLVImport.resx">
+      <DependentUpon>UCCloudDBLVImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCLstFilePath.resx">
+      <DependentUpon>UCLstFilePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCRegionTemperature.resx">
+      <DependentUpon>UCRegionTemperature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCSegmentArgFile.resx">
+      <DependentUpon>UCSegmentArgFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCLstDBLVImport.resx">
+      <DependentUpon>UCLstDBLVImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCFilesSelectorLSTProcess.resx">
+      <DependentUpon>UCFilesSelectorLSTProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCRegionArgs.resx">
+      <DependentUpon>UCRegionArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCObserveDataFile.resx">
+      <DependentUpon>UCObserveDataFile.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.Comm\GeoDo.RSS.MIF.Prds.Comm.csproj">
+      <Project>{9F3FE8A1-E2E1-4B99-8E3D-2EE977D132DF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LSTSeasonSetting.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\folder-open16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

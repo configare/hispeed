@@ -1,0 +1,32 @@
+﻿功能：
+批量投影工具
+
+使用：
+
+2031008更新
+添加节点：
+  <DayNight>day</DayNight>
+  <ExtArgs>SolarZenith</ExtArgs>
+
+最新支持参数参见BatchProjectionMoasic.xml
+示例：
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <InputFilename>E:\Smart\OrbitData\FY3C_VIRR\20130925 *1000M_MS.HDF</InputFilename>
+  <OutputDir>E:\Smart\OrbitData\FY3C_VIRR</OutputDir>
+  <ValidEnvelopes>
+    <Envelope name="GBAL" minx="-180" maxx="180" miny="-90" maxy="90" />
+  </ValidEnvelopes>
+  <Bands>1,2,6</Bands>
+  <ProjectionIdentify>GLL</ProjectionIdentify>
+  <Envelopes>
+  </Envelopes>
+  <ResolutionX>0.01</ResolutionX>
+  <ResolutionY>0.01</ResolutionY>
+  <PervObservationDate />
+  <PervObservationTime />
+  <OrbitIdentify />
+  <IsOnlySaveMosaicFile>false</IsOnlySaveMosaicFile>-->
+  <DayNight>day</DayNight>
+  <ExtArgs>SolarZenith</ExtArgs>
+</xml>

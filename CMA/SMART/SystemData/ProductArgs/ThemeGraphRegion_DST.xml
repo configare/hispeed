@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThemeGraphRegion enabled="true" selectedindex="0">
+    <EnvelopeItem name="黄河山东段" minLongitude="110.4625" minLatitude="33.5675" maxLongitude="119.5375" maxLatitude="39.4325" />
+    <EnvelopeItem name="淮河洪涝监测" minLongitude="114.44" minLatitude="30.44" maxLongitude="119.56" maxLatitude="35.56" />
+</ThemeGraphRegion>

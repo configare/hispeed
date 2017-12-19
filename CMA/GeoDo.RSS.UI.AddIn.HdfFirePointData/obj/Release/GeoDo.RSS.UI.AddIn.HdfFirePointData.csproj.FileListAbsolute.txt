@@ -1,0 +1,5 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.RSS.UI.AddIn.HdfFirePointData.dll
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.RSS.UI.AddIn.HdfFirePointData.pdb
+D:\监测分析平台\Code\CMA\GeoDo.RSS.UI.AddIn.HdfFirePointData\obj\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.RSS.UI.AddIn.HdfFirePointData\obj\Release\GeoDo.RSS.UI.AddIn.HdfFirePointData.dll
+D:\监测分析平台\Code\CMA\GeoDo.RSS.UI.AddIn.HdfFirePointData\obj\Release\GeoDo.RSS.UI.AddIn.HdfFirePointData.pdb

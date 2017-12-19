@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--声明插件,一个扩展包为一个监测分析扩展，其中可能包含有系统命令，系统窗口等元素-->
+<Package name="甘蔗监测分析扩展包" description="" type="" enable="true">
+  <Plugin register="监测分析专题" value="GeoDo.CMA.Prds.SUN.dll"/>
+  <Plugin register="系统命令" value="GeoDo.CMA.Prds.SUN.dll"/>
+</Package>

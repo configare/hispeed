@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B129AFB0-B9D5-4051-8670-DB416BE143AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.ASL</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.ASL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMART\bin\Release\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\SubProductSTATASL.cs" />
+    <Compile Include="ASL\frmDoAerosolReversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASL\frmDoAerosolReversion.Designer.cs">
+      <DependentUpon>frmDoAerosolReversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASL\UITabASL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ASL\UITabASL.Designer.cs">
+      <DependentUpon>UITabASL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitoringProductASL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Layout\SubProductL55TASL.cs" />
+    <Compile Include="UI\UCRegionVti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UCRegionVti.designer.cs">
+      <DependentUpon>UCRegionVti.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Binary\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Raster\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.Comm\GeoDo.RSS.MIF.Prds.Comm.csproj">
+      <Project>{9F3FE8A1-E2E1-4B99-8E3D-2EE977D132DF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASL\frmDoAerosolReversion.resx">
+      <DependentUpon>frmDoAerosolReversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UCRegionVti.resx">
+      <DependentUpon>UCRegionVti.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

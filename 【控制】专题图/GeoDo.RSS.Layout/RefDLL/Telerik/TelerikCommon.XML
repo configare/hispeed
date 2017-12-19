@@ -1,0 +1,3594 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TelerikCommon</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGRequestType">
+            <summary>
+            From MPEG_REQUEST_TYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGContextType">
+            <summary>
+            From MPEG_CONTEXT_TYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGPacketList">
+            <summary>
+            From MPEG_PACKET_LIST
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DSMCCFilterOptions">
+            <summary>
+            From DSMCC_FILTER_OPTIONS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ATSCFilterOptions">
+            <summary>
+            From ATSC_FILTER_OPTIONS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEG2Filter">
+            <summary>
+            From MPEG2_FILTER
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGContextUnion">
+            <summary>
+            From unnamed union
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BCSDeMux">
+            <summary>
+            From MPEG_BCS_DEMUX
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGWinSock">
+            <summary>
+            From MPEG_WINSOCK
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGContext">
+            <summary>
+            From MPEG_CONTEXT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGStreamBuffer">
+            <summary>
+            From MPEG_STREAM_BUFFER
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.MsError.ThrowExceptionForHR(System.Int32)">
+            <summary>
+            If hr has a "failed" status code (E_*), throw an exception.  Note that status
+            messages (S_*) are not considered failure codes.  If DES or DShow error text
+            is available, it is used to build the exception, otherwise a generic com error
+            is thrown.
+            </summary>
+            <param name="hr">The HRESULT to check</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMMultiMediaStream">
+            <summary>
+            From CLSID_AMMultiMediaStream
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMMediaTypeStream">
+            <summary>
+            From CLSID_AMMediaTypeStream
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMDirectDrawStream">
+            <summary>
+            From CLSID_AMDirectDrawStream
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMAudioStream">
+            <summary>
+            From CLSID_AMAudioStream
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMAudioData">
+            <summary>
+            From CLSID_AMAudioData
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CompletionStatusFlags">
+            <summary>
+            From COMPLETION_STATUS_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SSUpdate">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamState">
+            <summary>
+            From STREAM_STATE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamType">
+            <summary>
+            From STREAM_TYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MMSSF">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MSPID.PrimaryVideo">
+            <summary> MSPID_PrimaryVideo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MSPID.PrimaryAudio">
+            <summary> MSPID_PrimaryAudio </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CDef">
+            <summary>
+            From CDEF_CLASS_* defines
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DESError.ThrowExceptionForHR(System.Int32)">
+            <summary>
+            If hr has a "failed" status code (E_*), throw an exception.  Note that status
+            messages (S_*) are not considered failure codes.  If DES or DShow error text
+            is available, it is used to build the exception, otherwise a generic com error
+            is thrown.
+            </summary>
+            <param name="hr">The HRESULT to check</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimeline">
+            <summary>
+            From CLSID_AMTimeline
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.PropertySetter">
+            <summary>
+            From CLSID_PropertySetter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineObj">
+            <summary>
+            From CLSID_AMTimelineObj
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineSrc">
+            <summary>
+            From CLSID_AMTimelineSrc
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineTrack">
+            <summary>
+            From CLSID_AMTimelineTrack
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineComp">
+            <summary>
+            From CLSID_AMTimelineComp
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineGroup">
+            <summary>
+            From CLSID_AMTimelineGroup
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineTrans">
+            <summary>
+            From CLSID_AMTimelineTrans
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTimelineEffect">
+            <summary>
+            From CLSID_AMTimelineEffect
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.RenderEngine">
+            <summary>
+            From CLSID_RenderEngine
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SmartRenderEngine">
+            <summary>
+            From CLSID_SmartRenderEngine
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AudMixer">
+            <summary>
+            From CLSID_AudMixer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Xml2Dex">
+            <summary>
+            From CLSID_Xml2Dex
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MediaLocator">
+            <summary>
+            From CLSID_MediaLocator
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MediaDet">
+            <summary>
+            From CLSID_MediaDet
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DxtCompositor">
+            <summary>
+            From CLSID_DxtCompositor
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DxtAlphaSetter">
+            <summary>
+            From CLSID_DxtAlphaSetter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DxtJpeg">
+            <summary>
+            From CLSID_DxtJpeg
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ColorSource">
+            <summary>
+            From CLSID_ColorSource
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DxtKey">
+            <summary>
+            From CLSID_DxtKey
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.TimelineMajorType">
+            <summary>
+            From TIMELINE_MAJOR_TYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.TimelineInsertMode">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SFNValidateFlags">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SCompFmt0">
+            <summary>
+            From SCompFmt0
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ResizeFlags">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DexterFTrackSearchFlags">
+            <summary>
+            From DEXTERF_TRACK_SEARCH_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DexterParam">
+            <summary>
+            From DEXTER_PARAM
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ConnectFDynamic">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DexterValue">
+            <summary>
+            From DEXTER_VALUE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Dexterf">
+            <summary>
+            From DEXTERF
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DESErrorCode">
+            <summary>
+            From DEX_IDS_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.WindowsHook">
+            <exclude/>
+        </member>
+        <member name="T:Telerik.WinControls.WindowsHook.HookType">
+            <summary>
+            You can use hook types to monitor and change window messages.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_JOURNALRECORD">
+            <summary>
+            Use this hook type to control and record input events.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_JOURNALPLAYBACK">
+            <summary>
+            Use this hook type to insert messages in the windows system queue. 
+            For example, you can play recorded mouse events. 
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_KEYBOARD">
+            <summary>
+            Use this hook type to monitor the keyboard events.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_GETMESSAGE">
+            <summary>
+            Use this hook type to get messages returned by the GetMessage and PeekMessage
+            functions.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_CALLWNDPROC">
+            <summary>
+            Use this hook type to get the message passed to some of the windows 
+            procedures before it's actually handled by the procedure.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_CBT">
+            <summary>
+            This hook type is used in CBT (computer base training) applications.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_SYSMSGFILTER">
+            <summary>
+            Use this hook type to monitor messages passed to menus, message box, etc and
+            the activation of different window by a keyboard shortcut.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_MOUSE">
+            <summary>
+            Use this hook type to monitor mouse messages.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_HARDWARE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_DEBUG">
+            <summary>
+            Hook procedure that is invoked before any other hook.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_SHELL">
+            <summary>
+            Used in shell applications.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_FOREGROUNDIDLE">
+            <summary>
+            Invoked when the foreground thread is to become idle. 
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_CALLWNDPROCRET">
+            <summary>
+            Use this hook type to get the message passed to some of the windows 
+            procedures after it is handled by the procedure.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_KEYBOARD_LL">
+             <summary>
+            Use this hook type to get keyboard events.
+             </summary>
+        </member>
+        <member name="F:Telerik.WinControls.WindowsHook.HookType.WH_MOUSE_LL">
+             <summary>
+            Use this hook type to get mouse events.
+             </summary>
+        </member>
+        <member name="T:Telerik.WinControls.RadMessageListener">
+            <summary>
+            Provides basic implementation of the IMessageListener 
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.IMessageListener">
+            <summary>
+            Defines a message listener that may be registered with a RadMessageListener.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.IMessageListener.PreviewMessage(System.Windows.Forms.Message@)">
+            <summary>
+            Preview the specified message.
+            </summary>
+            <param name="msg"></param>
+            <returns>True to indicate that the message is processed and no further processing is required, false otherwise.</returns>
+        </member>
+        <member name="M:Telerik.WinControls.IMessageListener.PreviewWndProc(System.Windows.Forms.Message)">
+            <summary>
+            Preview the message before it is dispatched to the target window. Cannot be modified.
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Telerik.WinControls.IMessageListener.PreviewSystemMessage(Telerik.WinControls.SystemMessage,System.Windows.Forms.Message)">
+            <summary>
+            Previews the specified system message. System messages are sent to internal windows like menus, dialogs, scrollbars, etc.
+            </summary>
+            <param name="message"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="P:Telerik.WinControls.IMessageListener.DesiredHook">
+            <summary>
+            Gets the desired hook to be installed for this listener.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FECMethod">
+            <summary>
+            From FECMethod
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BinaryConvolutionCodeRate">
+            <summary>
+            From BinaryConvolutionCodeRate
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Polarisation">
+            <summary>
+            From Polarisation
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SpectralInversion">
+            <summary>
+            From SpectralInversion
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ModulationType">
+            <summary>
+            From ModulationType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVBSystemType">
+            <summary>
+            From DVBSystemType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.HierarchyAlpha">
+            <summary>
+            From HierarchyAlpha
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.GuardInterval">
+            <summary>
+            From GuardInterval
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.TransmissionMode">
+            <summary>
+            From TransmissionMode
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ComponentStatus">
+            <summary>
+            From ComponentStatus
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ComponentCategory">
+            <summary>
+            From ComponentCategory
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEG2StreamType">
+            <summary>
+            From MPEG2StreamType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ATSCComponentTypeFlags">
+            <summary>
+            From ATSCComponentTypeFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BDATemplateConnection">
+            <summary>
+            From BDA_TEMPLATE_CONNECTION
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BDACompFlags">
+            <summary>
+            From BDA_Comp_Flags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdDomain">
+            <summary>
+            From DVD_DOMAIN
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdMenuId">
+            <summary>
+            From DVD_MENU_ID
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdDiscSide">
+            <summary>
+            From DVD_DISC_SIDE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdPreferredDisplayMode">
+            <summary>
+            From DVD_PREFERRED_DISPLAY_MODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdFrameRate">
+            <summary>
+            From DVD_FRAMERATE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdTimeCodeFlags">
+            <summary>
+            From DVD_TIMECODE_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ValidUOPFlag">
+            <summary>
+            From VALID_UOP_FLAG
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdCmdFlags">
+            <summary>
+            From DVD_CMD_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdOptionFlag">
+            <summary>
+            From DVD_OPTION_FLAG
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdRelativeButton">
+            <summary>
+            From DVD_RELATIVE_BUTTON
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdParentalLevel">
+            <summary>
+            From DVD_PARENTAL_LEVEL
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdAudioLangExt">
+            <summary>
+            From DVD_AUDIO_LANG_EXT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdSubPictureLangExt">
+            <summary>
+            From DVD_SUBPICTURE_LANG_EXT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdAudioAppMode">
+            <summary>
+            From DVD_AUDIO_APPMODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdAudioFormat">
+            <summary>
+            From DVD_AUDIO_FORMAT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdKaraokeDownMix">
+            <summary>
+            From DVD_KARAOKE_DOWNMIX
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdKaraokeContents">
+            <summary>
+            From DVD_KARAOKE_CONTENTS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdKaraokeAssignment">
+            <summary>
+            From DVD_KARAOKE_ASSIGNMENT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdVideoCompression">
+            <summary>
+            From DVD_VIDEO_COMPRESSION
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdSubPictureType">
+            <summary>
+            From DVD_SUBPICTURE_TYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdSubPictureCoding">
+            <summary>
+            From DVD_SUBPICTURE_CODING
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdTitleAppMode">
+            <summary>
+            From DVD_TITLE_APPMODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdTextStringType">
+            <summary>
+            From DVD_TextStringType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdTextCharSet">
+            <summary>
+            From DVD_TextCharSet
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdAudioCaps">
+            <summary>
+            From DVD_AUDIO_CAPS_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMDvdGraphFlags">
+            <summary>
+            From AM_DVD_GRAPH_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMDvdStreamFlags">
+            <summary>
+            From AM_DVD_STREAM_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.GPRMArray">
+            <summary>
+            From GPRMARRAY
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SPRMArray">
+            <summary>
+            From SPRMARRAY
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdHMSFTimeCode">
+            <summary>
+            From DVD_HMSF_TIMECODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdPlaybackLocation2">
+            <summary>
+            From DVD_PLAYBACK_LOCATION2
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdAudioAttributes">
+            <summary>
+            From DVD_AudioAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdMUAMixingInfo">
+            <summary>
+            From DVD_MUA_MixingInfo
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdMUACoeff">
+            <summary>
+            From DVD_MUA_Coeff
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdMultichannelAudioAttributes">
+            <summary>
+            From DVD_MultichannelAudioAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdKaraokeAttributes">
+            <summary>
+            From DVD_KaraokeAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdVideoAttributes">
+            <summary>
+            From DVD_VideoAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdSubpictureAttributes">
+            <summary>
+            From DVD_SubpictureAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdTitleAttributes">
+            <summary>
+            From DVD_TitleAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdMenuAttributes">
+            <summary>
+            From DVD_MenuAttributes
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdDecoderCaps">
+            <summary>
+            From DVD_DECODER_CAPS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMDvdRenderStatus">
+            <summary>
+            From AM_DVD_RENDERSTATUS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.VersionNumber">
+            <summary>
+            Defines the current version of the RadControls for WinForms
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.KSMultipleItem">
+            <summary>
+            From KSMULTIPLE_ITEM - Note that data is returned in the memory IMMEDIATELY following this struct.
+            The Size parm indicates ths size of the KSMultipleItem plus the extra bytes.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.IKsPin.KsQueryMediums(System.IntPtr@)">
+            <summary>
+            The caller must free the returned structures, using the CoTaskMemFree function
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMPinFlowControl">
+            <summary>
+            From _AM_PIN_FLOW_CONTROL_BLOCK_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMGraphConfigReconnect">
+            <summary>
+            From AM_GRAPH_CONFIG_RECONNECT_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMFilterFlags">
+            <summary>
+            From _AM_FILTER_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.RemFilterFlags">
+            <summary>
+            From _REM_FILTER_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMInterlace">
+            <summary>
+            From AMINTERLACE_*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMCopyProtect">
+            <summary>
+            From AMCOPYPROTECT_*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMControl">
+            <summary>
+            From AMCONTROL_*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoInfoHeader">
+            <summary>
+            From VIDEOINFOHEADER
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoInfoHeader2">
+            <summary>
+            From VIDEOINFOHEADER2
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WaveFormatEx">
+            <summary>
+            From WAVEFORMATEX
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.ISampleGrabberCB.SampleCB(System.Double,Telerik.WinControls.UI.Multimedia.IMediaSample)">
+            <summary>
+            When called, callee must release pSample
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MixerData">
+            <summary>
+            From MIXER_DATA_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MixerState">
+            <summary>
+            #define MIXER_STATE_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.TIFLoad">
+            <summary>
+            From CLSID_TIFLoad
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadBitVector64.Reset">
+            <summary>
+            Clears all currently set bits in this vector.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.RadBitVector64.Item(System.UInt64)">
+            <summary>
+            Determines whether the bit, corresponding to the specified key is set
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.WinControls.RadBitVector64.Data">
+            <summary>
+            Gets the UInt64 structure holding the separate bits of the vector.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.DllWrapper">
+            <summary>
+            Wrapper of native dlls. This class automatically disposes the loaded dll.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.DllWrapper.#ctor">
+            <summary>
+            The default wrapper has no dll and IsDllLoaded returns false.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.DllWrapper.#ctor(System.String)">
+            <summary>
+            Tries to load the given dll. If ti fails - IsDllLoaded will return false.
+            </summary>
+            <param name="dllName"></param>
+        </member>
+        <member name="M:Telerik.WinControls.DllWrapper.LoadDll(System.String)">
+            <summary>
+            Loads a native dll by given name (could be name only or with full path).
+            If only a name is given the Operatin System's search order will be used.
+            </summary>
+            <param name="dllName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.DllWrapper.FreeDll">
+            <summary>
+            Releases the unmanaged dll. This method is called both by Dispose and by the destructor so it is not
+            obligatory to call it explicitly.
+            </summary>
+            <returns>true if the wrapped handle was truly released</returns>
+        </member>
+        <member name="M:Telerik.WinControls.DllWrapper.GetFunctionAsDelegate(System.String,System.Type)">
+            <summary>
+            Gets a delegate that wraps a function in a native dll.
+            This method works only if there is a successfully loaded dll.
+            </summary>
+            <param name="functionName">Name of the function for which a delegate will be returned.</param>
+            <param name="delegateType">The type of the delegate that should be returned.</param>
+            <returns>Managed delegate of the given type or null on error.</returns>
+        </member>
+        <member name="P:Telerik.WinControls.DllWrapper.IsDllLoaded">
+            <summary>
+            Gets a boolean value indicating whether a native dll is loaded in this wrapper.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.Layouts.RadMatrix">
+            <summary>
+            Represents a light-weight 3*3 Matrix to be used for GDI+ transformations.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Initializes a new RadMatrix, using the specified parameters.
+            </summary>
+            <param name="m11"></param>
+            <param name="m12"></param>
+            <param name="m21"></param>
+            <param name="m22"></param>
+            <param name="dx"></param>
+            <param name="dy"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(Telerik.WinControls.Layouts.RadMatrix)">
+            <summary>
+            Copy constructor.
+            </summary>
+            <param name="source"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Drawing.Drawing2D.Matrix)">
+            <summary>
+            Initializes a new RadMatrix, using the elements of the specified GDI+ Matrix instance.
+            </summary>
+            <param name="gdiMatrix"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Drawing.PointF)">
+            <summary>
+            Initializes a new RadMatrix, applying the specified X and Y values as DX and DY members of the matrix.
+            </summary>
+            <param name="offset"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Single,System.Single)">
+            <summary>
+            Initializes a new RadMatrix, scaling it by the provided parameters, at the origin (0, 0).
+            </summary>
+            <param name="scaleX"></param>
+            <param name="scaleY"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Single,System.Single,System.Drawing.PointF)">
+            <summary>
+            Initializes a new RadMatrix, scaling it by the provided parameters, at the specified origin.
+            </summary>
+            <param name="scaleX"></param>
+            <param name="scaleY"></param>
+            <param name="origin"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Single)">
+            <summary>
+            Initializes a new RadMatrix, rotated by the specified angle (in degrees) at origin (0, 0).
+            </summary>
+            <param name="angle"></param>
+        </member>
+        <member name="M:Telerik.WinControls.Layouts.RadMatrix.#ctor(System.Single,System.Drawing.PointF)">
+            <summary>
+            Initializes a new RadMatrix, rotated by the specified angle (in degrees) at the provided origin.
+            </summary>
+            <param name="angle"></param>
+            <param name="origin"></param>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.IsEmpty">
+            <summary>
+            Determines whether the current matrix is empty.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.IsIdentity">
+            <summary>
+            Determines whether this matrix equals to the Identity one.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.Determinant">
+            <summary>
+            Gets the determinant - [(M11 * M22) - (M12 * M21)] - of this Matrix.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.IsInvertible">
+            <summary>
+            Determines whether this matrix may be inverted. That is to have non-zero determinant.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.ScaleX">
+            <summary>
+            Gets the scale by the X axis, provided by this matrix.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.ScaleY">
+            <summary>
+            Gets the scale by the Y axis, provided by this matrix.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.Rotation">
+            <summary>
+            Gets the rotation (in degrees) applied to this matrix.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.Layouts.RadMatrix.Elements">
+            <summary>
+            Gets all the six fields of the matrix as an array.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.MessagePreviewResult">
+            <summary>
+            Defines the possible results of a PreviewMessage method of an IMessageListener instance.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.MessagePreviewResult.NotProcessed">
+            <summary>
+            The message is not processed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.MessagePreviewResult.Processed">
+            <summary>
+            The message is processed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.MessagePreviewResult.NoDispatch">
+            <summary>
+            No dispatch of the message is allowed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.MessagePreviewResult.NoContinue">
+            <summary>
+            No further delegation to other listeners is desired.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.MessagePreviewResult.ProcessedNoDispatch">
+            <summary>
+            Processed and Dispatched flags
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.MessagePreviewResult.All">
+            <summary>
+            All flags are set
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.InstalledHook">
+            <summary>
+            Defines the possible hooks available for installation.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.InstalledHook.None">
+            <summary>
+            No hook is installed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.InstalledHook.GetMessage">
+            <summary>
+            A WH_GETMESSAGE hook is installed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.InstalledHook.CallWndProc">
+            <summary>
+            A WH_CALLWNDPROC hook is installed.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.InstalledHook.SystemMessage">
+            <summary>
+            A WH_MSGFILTER hook is installed.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.SystemMessage">
+            <summary>
+            Defines the possible targets of a system message.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.HookEventArgs">
+            <exclude/>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMExtendedSeekingCapabilities">
+            <summary>
+            From AMExtendedSeekingCapabilities
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.WeakReferenceList`1">
+            <summary>
+            Wraps instances of type T in WeakReference and stores them in a List.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Telerik.WinControls.WeakReferenceList`1.AutoCleanNonAlive">
+            <summary>
+            Determines whether the list will automatically remove any containednon-alive weak reference.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.WeakReferenceList`1.TrackRessurection">
+            <summary>
+            Determines the WeakReference.TrackRessurection property for all T instances added.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.WeakReferenceList`1.Count">
+            <summary>
+            Gets the count of the list.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.WeakReferenceList`1.List">
+            <summary>
+            Gets the internal List used to store all instances.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMGBF">
+            <summary>
+            From AM_GBF_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMVideoFlag">
+            <summary>
+            From AM_VIDEO_FLAG_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMSamplePropertyFlags">
+            <summary>
+            From AM_SAMPLE_PROPERTY_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.PinInfo">
+            <summary>
+            From PIN_INFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMMediaType">
+            <summary>
+            From AM_MEDIA_TYPE - When you are done with an instance of this class,
+            it should be released with FreeAMMediaType() to avoid leaking
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.PinDirection">
+            <summary>
+            From PIN_DIRECTION
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMSeekingSeekingCapabilities">
+            <summary>
+            From AM_SEEKING_SeekingCapabilities
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FilterState">
+            <summary>
+            From FILTER_STATE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FilterInfo">
+            <summary>
+            From FILTER_INFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMSeekingSeekingFlags">
+            <summary>
+            From AM_SEEKING_SeekingFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AllocatorProperties">
+            <summary>
+            From ALLOCATOR_PROPERTIES
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMSample2Properties">
+            <summary>
+            From AM_SAMPLE2_PROPERTIES
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.IPin.ConnectionMediaType(Telerik.WinControls.UI.Multimedia.AMMediaType)">
+            <summary>
+            Release returned parameter with DsUtils.FreeAMMediaType
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.IPin.QueryPinInfo(Telerik.WinControls.UI.Multimedia.PinInfo@)">
+            <summary>
+            Release returned parameter with DsUtils.FreePinInfo
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.IMediaSample.GetMediaType(Telerik.WinControls.UI.Multimedia.AMMediaType@)">
+            <summary>
+            Returned object must be released with DsUtils.FreeAMMediaType()
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRDeinterlaceTech">
+            <summary>
+            From VMRDeinterlaceTech
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRBitmap">
+            <summary>
+            From VMRBITMAP_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRDeinterlacePrefs">
+            <summary>
+            From VMRDeinterlacePrefs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRMixerPrefs">
+            <summary>
+            From VMRMixerPrefs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRRenderPrefs">
+            <summary>
+            From VMRRenderPrefs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRMode">
+            <summary>
+            From VMRMode
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRAspectRatioMode">
+            <summary>
+            From VMR_ASPECT_RATIO_MODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRAlphaBitmap">
+            <summary>
+            From VMRALPHABITMAP
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRDeinterlaceCaps">
+            <summary>
+            From VMRDeinterlaceCaps
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRFrequency">
+            <summary>
+            From VMRFrequency
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRVideoDesc">
+            <summary>
+            From VMRVideoDesc
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRVideoStreamInfo">
+            <summary>
+            From VMRVIDEOSTREAMINFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DDColorKey">
+            <summary>
+            From DDCOLORKEY
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRMonitorInfo">
+            <summary>
+            From VMRMONITORINFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMRGuid">
+            <summary>
+            From VMRGUID
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.IVMRWindowlessControl.GetCurrentImage(System.IntPtr@)">
+            <summary>
+            the caller is responsible for free the returned memory by calling CoTaskMemFree.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9PresentationFlags">
+            <summary>
+            From VMR9PresentationFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9SurfaceAllocationFlags">
+            <summary>
+            From VMR9SurfaceAllocationFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9ProcAmpControlFlags">
+            <summary>
+            From VMR9ProcAmpControlFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9MixerPrefs">
+            <summary>
+            From VMR9MixerPrefs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9DeinterlaceTech">
+            <summary>
+            From VMR9DeinterlaceTech
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9AlphaBitmapFlags">
+            <summary>
+            From VMR9AlphaBitmapFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9DeinterlacePrefs">
+            <summary>
+            From VMR9DeinterlacePrefs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9RenderPrefs">
+            <summary>
+            From VMR9RenderPrefs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9Mode">
+            <summary>
+            From VMR9Mode
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9AspectRatioMode">
+            <summary>
+            From VMR9AspectRatioMode
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9SampleFormat">
+            <summary>
+            From VMR9_SampleFormat
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9PresentationInfo">
+            <summary>
+            From VMR9PresentationInfo
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9AllocationInfo">
+            <summary>
+            From VMR9AllocationInfo
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9ProcAmpControl">
+            <summary>
+            From VMR9ProcAmpControl
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9MonitorInfo">
+            <summary>
+            From VMR9MonitorInfo
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9DeinterlaceCaps">
+            <summary>
+            From VMR9DeinterlaceCaps
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9VideoStreamInfo">
+            <summary>
+            From VMR9VideoStreamInfo
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9VideoDesc">
+            <summary>
+            From VMR9VideoDesc
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9Frequency">
+            <summary>
+            From VMR9Frequency
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9AlphaBitmap">
+            <summary>
+            From VMR9AlphaBitmap
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VMR9ProcAmpControlRange">
+            <summary>
+            From VMR9ProcAmpControlRange
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaParamTimeFormat.Reference">
+            <summary> GUID_TIME_REFERENCE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaParamTimeFormat.Music">
+            <summary> GUID_TIME_MUSIC </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaParamTimeFormat.Samples">
+            <summary> GUID_TIME_SAMPLES, audio capture category </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPData">
+            <summary>
+            From MP_DATA
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEnvelopeSegment">
+            <summary>
+            From MP_ENVELOPE_SEGMENT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPFlags">
+            <summary>
+            From MPF_ENVLP_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPType">
+            <summary>
+            From MP_TYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPCaps">
+            <summary>
+            From MP_CAPS_CURVE* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ParamInfo">
+            <summary>
+            From MP_PARAMINFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOOutputDataBufferFlags">
+            <summary>
+            From _DMO_OUTPUT_DATA_BUFFER_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOEnumerator">
+            <summary>
+            From DMO_ENUM_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMORegisterFlags">
+            <summary>
+            From DMO_REGISTER_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOProcessOutput">
+            <summary>
+            From DMO_PROCESS_OUTPUT_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOInputDataBuffer">
+            <summary>
+            From DMO_INPUT_DATA_BUFFER_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOInplaceProcess">
+            <summary>
+            From DMO_INPLACE_PROCESS_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOInputStreamInfo">
+            <summary>
+            From DMO_INPUT_STREAM_INFO_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOOutputStreamInfo">
+            <summary>
+            From DMO_OUTPUT_STREAM_INFO_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOSetType">
+            <summary>
+            From _DMO_SET_TYPE_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOInputStatusFlags">
+            <summary>
+            From DMO_INPUT_STATUS_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOVideoOutputStream">
+            <summary>
+            From DMO_VIDEO_OUTPUT_STREAM_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOPartialMediatype">
+            <summary>
+            From DMO_PARTIAL_MEDIATYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOOutputDataBuffer">
+            <summary>
+            From DMO_OUTPUT_DATA_BUFFER
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.AudioDecoder">
+            <summary> DMOCATEGORY_AUDIO_DECODER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.AudioEncoder">
+            <summary> DMOCATEGORY_AUDIO_ENCODER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.VideoDecoder">
+            <summary> DMOCATEGORY_VIDEO_DECODER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.VideoEncoder">
+            <summary> DMOCATEGORY_VIDEO_ENCODER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.AudioEffect">
+            <summary> DMOCATEGORY_AUDIO_EFFECT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.VideoEffect">
+            <summary> DMOCATEGORY_VIDEO_EFFECT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.DMOCategory.AudioCaptureEffect">
+            <summary> DMOCATEGORY_AUDIO_CAPTURE_EFFECT </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DMOError.ThrowExceptionForHR(System.Int32)">
+            <summary>
+            If hr has a "failed" status code (E_*), throw an exception.  Note that status
+            messages (S_*) are not considered failure codes.  If DMO or DShow error text
+            is available, it is used to build the exception, otherwise a generic COM error
+            is thrown.
+            </summary>
+            <param name="hr">The HRESULT to check</param>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.RecordingType">
+            <summary>
+            From unnamed structure
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferAttrDataType">
+            <summary>
+            From STREAMBUFFER_ATTR_DATATYPE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferEventCode">
+            <summary>
+            From unnamed structure
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferRecording">
+            <summary>
+            From g_wszStreamBufferRecording* static const WCHAR
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferAttribute">
+            <summary>
+            From STREAMBUFFER_ATTRIBUTE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SBEPinData">
+            <summary>
+            From SBE_PIN_DATA
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMFilterMiscFlags">
+            <summary>
+            From _AM_FILTER_MISC_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMStreamInfoFlags">
+            <summary>
+            From AM_STREAM_INFO_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEG2Program">
+            <summary>
+            From MPEG2_PROGRAM_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMAudioRendererStatParam">
+            <summary>
+            From _AM_AUDIO_RENDERER_STAT_PARAM
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMStreamInfo">
+            <summary>
+            From AM_STREAM_INFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVDecoderResolution">
+            <summary>
+            From _DVDECODERRESOLUTION
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMIntfSearchFlags">
+            <summary>
+            From _AM_INTF_SEARCH_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMQueryDecoder">
+            <summary>
+            From AM_QUERY_DECODER_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DecoderCap">
+            <summary>
+            From DECODER_CAP_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DecimationUsage">
+            <summary>
+            From DECIMATION_USAGE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMOverlayFX">
+            <summary>
+            From AMOVERLAYFX
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMResCtlReserveFlags">
+            <summary>
+            From _AMRESCTL_RESERVEFLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMStreamSelectInfoFlags">
+            <summary>
+            From _AMSTREAMSELECTINFOFLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMStreamSelectEnableFlags">
+            <summary>
+            From _AMSTREAMSELECTENABLEFLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Merit">
+            <summary>
+            unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ColorKey">
+            <summary>
+            From COLORKEY
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.RegPinMedium">
+            <summary>
+            From REGPINMEDIUM
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVInfo">
+            <summary>
+            From DVINFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVEncoderResolution">
+            <summary>
+            From _DVENCODERRESOLUTION
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVEncoderFormat">
+            <summary>
+            From _DVENCODERFORMAT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVEncoderVideoFormat">
+            <summary>
+            From _DVENCODERVIDEOFORMAT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMRenderExFlags">
+            <summary>
+            From _AM_RENSDEREXFLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.InterleavingMode">
+            <summary>
+            From InterleavingMode
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMFileSinkFlags">
+            <summary>
+            From AM_FILESINK_FLAGS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.KSPropertySupport">
+            <summary>
+            From KSPROPERTY_SUPPORT_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMPropertyPin">
+            <summary>
+            From AMPROPERTY_PIN
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTunerSubChannel">
+            <summary>
+            From AMTunerSubChannel
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTunerSignalStrength">
+            <summary>
+            From AMTunerSignalStrength
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTunerModeType">
+            <summary>
+            From AMTunerModeType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTunerEventType">
+            <summary>
+            From AMTunerEventType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AnalogVideoStandard">
+            <summary>
+            From AnalogVideoStandard
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.TunerInputType">
+            <summary>
+            From TunerInputType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoControlFlags">
+            <summary>
+            From VideoControlFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.TVAudioMode">
+            <summary>
+            From TVAudioMode
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoProcAmpProperty">
+            <summary>
+            From VideoProcAmpProperty
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoProcAmpFlags">
+            <summary>
+            From VideoProcAmpFlags
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.PhysicalConnectorType">
+            <summary>
+            From PhysicalConnectorType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMTVAudioEventType">
+            <summary>
+            From AMTVAudioEventType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CompressionCaps">
+            <summary>
+            From CompressionCaps
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VfwCompressDialogs">
+            <summary>
+            From VfwCompressDialogs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VfwCaptureDialogs">
+            <summary>
+            From VfwCaptureDialogs
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtDevicePort">
+            <summary>
+            From DEV_PORT_*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtDeviceCaps">
+            <summary>
+            From ED_DEVCAP*, ED_DEVTYPE* etc.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportCaps">
+            <summary>
+            From ED_TRANSCAP*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportMediaStates">
+            <summary>
+            From ED_MEDIA*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportModes">
+            <summary>
+            From ED_MODE*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportStatus">
+            <summary>
+            from ED_MEDIA* etc.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportParameters">
+            <summary>
+            From ED_TRANSBASIC* etc.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportAudio">
+            <summary>
+            From ED_AUDIO*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ExtTransportEdit">
+            <summary>
+            From ED_EDIT*
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoStreamConfigCaps">
+            <summary>
+            From VIDEO_STREAM_CONFIG_CAPS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AudioStreamConfigCaps">
+            <summary>
+            From AUDIO_STREAM_CONFIG_CAPS
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Quality">
+            <summary>
+            From Quality
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.QualityMessageType">
+            <summary>
+            From QualityMessageType
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.RadMessageFilter">
+            <summary>
+            Represents a custom MessageFilter implementation, which uses Hooks rather than the IMessageFilter interface.
+            This is needed because sometimes we are in an unmanaged environment (like in MFC or in Outlook).
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadMessageFilter.AddListener(Telerik.WinControls.IMessageListener)">
+            <summary>
+            Registers the specified listener.
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:Telerik.WinControls.RadMessageFilter.RemoveListener(Telerik.WinControls.IMessageListener)">
+            <summary>
+            Removes the specified listener.
+            </summary>
+            <param name="listener"></param>
+        </member>
+        <member name="M:Telerik.WinControls.RadMessageFilter.RemoveAll">
+            <summary>
+            Removes all registered listeners and uninstalls all hooks.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadMessageFilter.ContainsListener(Telerik.WinControls.IMessageListener)">
+            <summary>
+            Determines whether the specified listener is registered with this filter.
+            </summary>
+            <param name="listener"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.RadMessageFilter.EnsureInstalledHooks">
+            <summary>
+            Verifies that all the needed hooks are installed (depending on each listener's DesiredHook).
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.RadMessageFilter.Instance">
+            <summary>
+            Gets the only instance of the filter.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.RadMessageFilter.Enabled">
+            <summary>
+            Determines whether the filter is currently enabled.
+            If false, all hooks will be removed.
+            If true, all the needed hooks, depending on the registered listeners, will be installed.
+            </summary>
+        </member>
+        <member name="P:Telerik.WinControls.RadMessageFilter.InstalledHook">
+            <summary>
+            Gets the currently installed hooks.
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.RadMessageFilter.HookType">
+            <summary>
+            You can use hook types to monitor and change window messages.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_JOURNALRECORD">
+            <summary>
+            Use this hook type to control and record input events.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_JOURNALPLAYBACK">
+            <summary>
+            Use this hook type to insert messages in the windows system queue. 
+            For example, you can play recorded mouse events. 
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_KEYBOARD">
+            <summary>
+            Use this hook type to monitor the keyboard events.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_GETMESSAGE">
+            <summary>
+            Use this hook type to get messages returned by the GetMessage and PeekMessage
+            functions.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_CALLWNDPROC">
+            <summary>
+            Use this hook type to get the message passed to some of the windows 
+            procedures before it's actually handled by the procedure.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_CBT">
+            <summary>
+            This hook type is used in CBT (computer base training) applications.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_SYSMSGFILTER">
+            <summary>
+            Use this hook type to monitor messages passed to menus, message box, etc and
+            the activation of different window by a keyboard shortcut.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_MOUSE">
+            <summary>
+            Use this hook type to monitor mouse messages.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_HARDWARE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_DEBUG">
+            <summary>
+            Hook procedure that is invoked before any other hook.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_SHELL">
+            <summary>
+            Used in shell applications.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_FOREGROUNDIDLE">
+            <summary>
+            Invoked when the foreground thread is to become idle. 
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_CALLWNDPROCRET">
+            <summary>
+            Use this hook type to get the message passed to some of the windows 
+            procedures after it is handled by the procedure.
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_KEYBOARD_LL">
+             <summary>
+            Use this hook type to get keyboard events.
+             </summary>
+        </member>
+        <member name="F:Telerik.WinControls.RadMessageFilter.HookType.WH_MOUSE_LL">
+             <summary>
+            Use this hook type to get mouse events.
+             </summary>
+        </member>
+        <member name="T:Telerik.WinControls.RadHdcWrapper">
+            <summary>
+            Represents a wrapper for native GDI HDC handle.
+            Transforms a GDI+ graphics to its HDC counterpart, preserving any clipping and transformations applied.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.RadHdcWrapper.#ctor(System.Drawing.Graphics,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="g"></param>
+            <param name="useTransfrom"></param>
+        </member>
+        <member name="M:Telerik.WinControls.RadHdcWrapper.GetHdc">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.WinControls.RadHdcWrapper.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.RadHdcWrapper.XFORM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMVP_Mode">
+            <summary>
+            From AMVP_MODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CreateDevEnum">
+            <summary>
+            CLSID_SystemDeviceEnum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FilterGraph">
+            <summary>
+            CLSID_FilterGraph
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FilterGraphNoThread">
+            <summary>
+            CLSID_FilterGraphNoThread
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CaptureGraphBuilder2">
+            <summary>
+            CLSID_CaptureGraphBuilder2
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DvdGraphBuilder">
+            <summary>
+            CLSID_DvdGraphBuilder
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CaptureGraphBuilder">
+            <summary>
+            CLSID_CaptureGraphBuilder
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferConfig">
+            <summary>
+            CLSID_StreamBufferConfig
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferComposeRecording">
+            <summary>
+            CLSID_StreamBufferComposeRecording
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SeekingPassThru">
+            <summary>
+            CLSID_SeekingPassThru
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FilterMapper2">
+            <summary>
+            CLSID_FilterMapper2
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MemoryAllocator">
+            <summary>
+            CLSID_MemoryAllocator
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MediaPropertyBag">
+            <summary>
+            CLSID_MediaPropertyBag
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVDState">
+            <summary>
+            CLSID_DVDState
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SectionList">
+            <summary>
+            CLSID_SectionList
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Mpeg2Stream">
+            <summary>
+            CLSID_Mpeg2Stream
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Mpeg2Data">
+            <summary>
+            CLSID_Mpeg2Data
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SAMIParser">
+            <summary>
+            Unnamed clsid
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.InternalScriptCommandRenderer">
+            <summary>
+            Unnamed clsid
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BroadcastEventService">
+            <summary>
+            CLSID_BroadcastEventService
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DMOWrapperFilter">
+            <summary>
+            CLSID_DMOWrapperFilter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferSink">
+            <summary>
+            CLSID_StreamBufferSink
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SampleGrabber">
+            <summary>
+            CLSID_SampleGrabber
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.StreamBufferSource">
+            <summary>
+            CLSID_StreamBufferSource
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoMixingRenderer">
+            <summary>
+            CLSID_VideoMixingRenderer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoMixingRenderer9">
+            <summary>
+            CLSID_VideoMixingRenderer9
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoRendererDefault">
+            <summary>
+            CLSID_VideoRendererDefault
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AviSplitter">
+            <summary>
+            CLSID_AviSplitter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SmartTee">
+            <summary>
+            CLSID_SmartTee
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.NullRenderer">
+            <summary>
+            CLSID_NullRenderer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ACMWrapper">
+            <summary>
+            CLSID_ACMWrapper
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AudioRender">
+            <summary>
+            CLSID_AudioRender
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AVIDec">
+            <summary>
+            CLSID_AVIDec
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AVIDraw">
+            <summary>
+            CLSID_AVIDraw
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AviDest">
+            <summary>
+            CLSID_AviDest
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ATSCNetworkProvider">
+            <summary>
+            CLSID_ATSCNetworkProvider
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVBCNetworkProvider">
+            <summary>
+            CLSID_DVBCNetworkProvider
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVBSNetworkProvider">
+            <summary>
+            CLSID_DVBSNetworkProvider
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVBTNetworkProvider">
+            <summary>
+            CLSID_DVBTNetworkProvider
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Colour">
+            <summary>
+            CLSID_Colour
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DSoundRender">
+            <summary>
+            CLSID_DSoundRender
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVMux">
+            <summary>
+            CLSID_DVMux
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVSplitter">
+            <summary>
+            CLSID_DVSplitter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVVideoCodec">
+            <summary>
+            CLSID_DVVideoCodec
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVVideoEnc">
+            <summary>
+            CLSID_DVVideoEnc
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DVDNavigator">
+            <summary>
+            CLSID_DVDNavigator
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AsyncReader">
+            <summary>
+            CLSID_AsyncReader
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.URLReader">
+            <summary>
+            CLSID_URLReader
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.FileWriter">
+            <summary>
+            CLSID_FileWriter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.ModexRenderer">
+            <summary>
+            CLSID_ModexRenderer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.InfTee">
+            <summary>
+            CLSID_InfTee
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Line21Decoder">
+            <summary>
+            CLSID_Line21Decoder
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Line21Decoder2">
+            <summary>
+            CLSID_Line21Decoder2
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AVIMIDIRender">
+            <summary>
+            CLSID_AVIMIDIRender
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MJPGEnc">
+            <summary>
+            CLSID_MJPGEnc
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MjpegDec">
+            <summary>
+            CLSID_MjpegDec
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CMpegAudioCodec">
+            <summary>
+            CLSID_CMpegAudioCodec
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEG1Splitter">
+            <summary>
+            CLSID_MPEG1Splitter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.CMpegVideoCodec">
+            <summary>
+            CLSID_CMpegVideoCodec
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEG2Demultiplexer">
+            <summary>
+            CLSID_MPEG2Demultiplexer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MMSPLITTER">
+            <summary>
+            CLSID_MMSPLITTER
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.OverlayMixer">
+            <summary>
+            CLSID_OverlayMixer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.OverlayMixer2">
+            <summary>
+            CLSID_OverlayMixer2
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.QTDec">
+            <summary>
+            CLSID_QTDec
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.QuickTimeParser">
+            <summary>
+            CLSID_QuickTimeParser
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VBISurfaces">
+            <summary>
+            CLSID_VBISurfaces
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VfwCapture">
+            <summary>
+            CLSID_VfwCapture
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Dither">
+            <summary>
+            CLSID_Dither
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoPortManager">
+            <summary>
+            CLSID_VideoPortManager
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.VideoRenderer">
+            <summary>
+            CLSID_VideoRenderer
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WMAsfReader">
+            <summary>
+            CLSID_WMAsfReader
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.SystemClock">
+            <summary>
+            CLSID_SystemClock
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WMAsfWriter">
+            <summary>
+            CLSID_WMAsfWriter
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WSTDecoder">
+            <summary>
+            CLSID_WSTDecoder
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.Mpeg2VideoStreamAnalyzer">
+            <summary>
+            CLSID_Mpeg2VideoStreamAnalyzer
+            </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AudioInputDevice">
+            <summary> CLSID_AudioInputDeviceCategory, audio capture category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.VideoInputDevice">
+            <summary> CLSID_VideoInputDeviceCategory, video capture category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.VideoCompressorCategory">
+            <summary> CLSID_VideoCompressorCategory, video compressor category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AudioCompressorCategory">
+            <summary> CLSID_AudioCompressorCategory, audio compressor category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.LegacyAmFilterCategory">
+            <summary> CLSID_LegacyAmFilterCategory, legacy filters </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AudioRendererCategory">
+            <summary> CLSID_AudioRendererCategory, Audio renderer category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.BDAReceiverComponentsCategory">
+            <summary> KSCATEGORY_BDA_RECEIVER_COMPONENT, BDA Receiver Components category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.BDASourceFiltersCategory">
+            <summary> KSCATEGORY_BDA_NETWORK_TUNER, BDA Source Filters category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.BDARenderingFiltersCategory">
+            <summary> KSCATEGORY_BDA_IP_SINK, BDA Rendering Filters category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.BDANetworkProvidersCategory">
+            <summary> KSCATEGORY_BDA_NETWORK_PROVIDER, BDA Network Providers category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.BDATransportInformationRenderersCategory">
+            <summary> KSCATEGORY_BDA_TRANSPORT_INFORMATION, BDA Transport Information Renderers category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.MidiRendererCategory">
+            <summary> CLSID_MidiRendererCategory </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.TransmitCategory">
+            <summary> CLSID_TransmitCategory  External Renderers Category</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.DeviceControlCategory">
+            <summary> CLSID_DeviceControlCategory  Device Control Filters</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.VideoEffects1Category">
+            <summary> CLSID_VideoEffects1Category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.VideoEffects2Category">
+            <summary> CLSID_VideoEffects2Category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AudioEffects1Category">
+            <summary> CLSID_AudioEffects1Category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AudioEffects2Category">
+            <summary> CLSID_AudioEffects2Category </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.KSDataDecompressor">
+            <summary> KSCATEGORY_DATADECOMPRESSOR_and_CLSID_DVDHWDecodersCategory </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.KSCommunicationsTransform">
+            <summary> KSCATEGORY_COMMUNICATIONSTRANSFORM </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.KSDataTransform">
+            <summary> KSCATEGORY_DATATRANSFORM </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.KSInterfaceTransform">
+            <summary> KSCATEGORY_INTERFACETRANSFORM </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.KSMixer">
+            <summary> KSCATEGORY_MIXER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.KSAudioDevice">
+            <summary> KSCATEGORY_AUDIO_DEVICE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.ActiveMovieCategories">
+            <summary> CLSID_ActiveMovieCategories </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSCapture">
+            <summary> AM_KSCATEGORY_CAPTURE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSRender">
+            <summary> AM_KSCATEGORY_RENDER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSDataCompressor">
+            <summary> AM_KSCATEGORY_DATACOMPRESSOR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSAudio">
+            <summary> AM_KSCATEGORY_AUDIO </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSVideo">
+            <summary> AM_KSCATEGORY_VIDEO </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSTVTuner">
+            <summary> AM_KSCATEGORY_TVTUNER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSCrossbar">
+            <summary> AM_KSCATEGORY_CROSSBAR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSTVAudio">
+            <summary> AM_KSCATEGORY_TVAUDIO </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSVBICodec">
+            <summary> AM_KSCATEGORY_VBICODEC </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.AMKSSplitter">
+            <summary> AM_KSCATEGORY_SPLITTER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.WDMStreamingEncoderDevices">
+            <summary> Not defined </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.WDMStreamingMultiplexerDevices">
+            <summary> Not defined </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.BDACPCAFilters">
+            <summary> Not defined </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FilterCategory.LTMMVideoProcessors">
+            <summary> Not defined </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.VMRClsId.AllocPresenter">
+            <summary>CLSID_AllocPresenter</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.VMRClsId.AllocPresenterDDXclMode">
+            <summary>CLSID_AllocPresenterDDXclMode</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.TVEClsId.DShowTVEFilter">
+            <summary>CLSID_DShowTVEFilter</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.TVEClsId.TVEFilterTuneProperties">
+            <summary>CLSID_TVEFilterTuneProperties</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.TVEClsId.TVEFilterCCProperties">
+            <summary>CLSID_TVEFilterCCProperties</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.TVEClsId.TVEFilterStatsProperties">
+            <summary>CLSID_TVEFilterStatsProperties</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.ENCAPIClsId.IVideoEncoderProxy">
+            <summary>CLSID_IVideoEncoderProxy</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.ENCAPIClsId.ICodecAPIProxy">
+            <summary>CLSID_ICodecAPIProxy</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.ENCAPIClsId.IVideoEncoderCodecAPIProxy">
+            <summary>CLSID_IVideoEncoderCodecAPIProxy</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Video">
+            <summary> MEDIATYPE_Video 'vids' </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Interleaved">
+            <summary> MEDIATYPE_Interleaved 'iavs' </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Audio">
+            <summary> MEDIATYPE_Audio 'auds' </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Text">
+            <summary> MEDIATYPE_Text 'txts' </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Stream">
+            <summary> MEDIATYPE_Stream </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.VBI">
+            <summary> MEDIATYPE_VBI </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Midi">
+            <summary> MEDIATYPE_Midi </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.File">
+            <summary> MEDIATYPE_File </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.ScriptCommand">
+            <summary> MEDIATYPE_ScriptCommand </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.AuxLine21Data">
+            <summary> MEDIATYPE_AUXLine21Data </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Timecode">
+            <summary> MEDIATYPE_Timecode </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.LMRT">
+            <summary> MEDIATYPE_LMRT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.URLStream">
+            <summary> MEDIATYPE_URL_STREAM </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.AnalogVideo">
+            <summary> MEDIATYPE_AnalogVideo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.AnalogAudio">
+            <summary> MEDIATYPE_AnalogAudio </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaType.Mpeg2Sections">
+            <summary> MEDIATYPE_MPEG2_SECTIONS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.CLPL">
+            <summary> MEDIASUBTYPE_CLPL </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.YUYV">
+            <summary> MEDIASUBTYPE_YUYV </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IYUV">
+            <summary> MEDIASUBTYPE_IYUV </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.YVU9">
+            <summary> MEDIASUBTYPE_YVU9 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Y411">
+            <summary> MEDIASUBTYPE_Y411 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Y41P">
+            <summary> MEDIASUBTYPE_Y41P </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.YUY2">
+            <summary> MEDIASUBTYPE_YUY2 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.YVYU">
+            <summary> MEDIASUBTYPE_YVYU </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.UYVY">
+            <summary> MEDIASUBTYPE_UYVY </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Y211">
+            <summary> MEDIASUBTYPE_Y211 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.CLJR">
+            <summary> MEDIASUBTYPE_CLJR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IF09">
+            <summary> MEDIASUBTYPE_IF09 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.CPLA">
+            <summary> MEDIASUBTYPE_CPLA </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MJPG">
+            <summary> MEDIASUBTYPE_MJPG </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.TVMJ">
+            <summary> MEDIASUBTYPE_TVMJ </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.WAKE">
+            <summary> MEDIASUBTYPE_WAKE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.CFCC">
+            <summary> MEDIASUBTYPE_CFCC </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IJPG">
+            <summary> MEDIASUBTYPE_IJPG </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.PLUM">
+            <summary> MEDIASUBTYPE_Plum </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DVCS">
+            <summary> MEDIASUBTYPE_DVCS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DVSD">
+            <summary> MEDIASUBTYPE_DVSD </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MDVF">
+            <summary> MEDIASUBTYPE_MDVF </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB1">
+            <summary> MEDIASUBTYPE_RGB1 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB4">
+            <summary> MEDIASUBTYPE_RGB4 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB8">
+            <summary> MEDIASUBTYPE_RGB8 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB565">
+            <summary> MEDIASUBTYPE_RGB565 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB555">
+            <summary> MEDIASUBTYPE_RGB555 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB24">
+            <summary> MEDIASUBTYPE_RGB24 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB32">
+            <summary> MEDIASUBTYPE_RGB32 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB1555">
+            <summary> MEDIASUBTYPE_ARGB1555 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB4444">
+            <summary> MEDIASUBTYPE_ARGB4444 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB32">
+            <summary> MEDIASUBTYPE_ARGB32 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.A2R10G10B10">
+            <summary> MEDIASUBTYPE_A2R10G10B10 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.A2B10G10R10">
+            <summary> MEDIASUBTYPE_A2B10G10R10 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AYUV">
+            <summary> MEDIASUBTYPE_AYUV </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AI44">
+            <summary> MEDIASUBTYPE_AI44 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IA44">
+            <summary> MEDIASUBTYPE_IA44 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB32_D3D_DX7_RT">
+            <summary> MEDIASUBTYPE_RGB32_D3D_DX7_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB16_D3D_DX7_RT">
+            <summary> MEDIASUBTYPE_RGB16_D3D_DX7_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB32_D3D_DX7_RT">
+            <summary> MEDIASUBTYPE_ARGB32_D3D_DX7_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB4444_D3D_DX7_RT">
+            <summary> MEDIASUBTYPE_ARGB4444_D3D_DX7_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB1555_D3D_DX7_RT">
+            <summary> MEDIASUBTYPE_ARGB1555_D3D_DX7_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB32_D3D_DX9_RT">
+            <summary> MEDIASUBTYPE_RGB32_D3D_DX9_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RGB16_D3D_DX9_RT">
+            <summary> MEDIASUBTYPE_RGB16_D3D_DX9_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB32_D3D_DX9_RT">
+            <summary> MEDIASUBTYPE_ARGB32_D3D_DX9_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB4444_D3D_DX9_RT">
+            <summary> MEDIASUBTYPE_ARGB4444_D3D_DX9_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.ARGB1555_D3D_DX9_RT">
+            <summary> MEDIASUBTYPE_ARGB1555_D3D_DX9_RT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.YV12">
+            <summary> MEDIASUBTYPE_YV12 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.NV12">
+            <summary> MEDIASUBTYPE_NV12 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IMC1">
+            <summary> MEDIASUBTYPE_IMC1 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IMC2">
+            <summary> MEDIASUBTYPE_IMC2 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IMC3">
+            <summary> MEDIASUBTYPE_IMC3 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IMC4">
+            <summary> MEDIASUBTYPE_IMC4 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.S340">
+            <summary> MEDIASUBTYPE_S340 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.S342">
+            <summary> MEDIASUBTYPE_S342 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Overlay">
+            <summary> MEDIASUBTYPE_Overlay </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1Packet">
+            <summary> MEDIASUBTYPE_MPEG1Packet </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1Payload">
+            <summary> MEDIASUBTYPE_MPEG1Payload </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1AudioPayload">
+            <summary> MEDIASUBTYPE_MPEG1AudioPayload </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1SystemStream">
+            <summary> MEDIATYPE_MPEG1SystemStream </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1System">
+            <summary> MEDIASUBTYPE_MPEG1System </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1VideoCD">
+            <summary> MEDIASUBTYPE_MPEG1VideoCD </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1Video">
+            <summary> MEDIASUBTYPE_MPEG1Video </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.MPEG1Audio">
+            <summary> MEDIASUBTYPE_MPEG1Audio </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Avi">
+            <summary> MEDIASUBTYPE_Avi </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Asf">
+            <summary> MEDIASUBTYPE_Asf </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.QTMovie">
+            <summary> MEDIASUBTYPE_QTMovie </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.QTRpza">
+            <summary> MEDIASUBTYPE_QTRpza </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.QTSmc">
+            <summary> MEDIASUBTYPE_QTSmc </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.QTRle">
+            <summary> MEDIASUBTYPE_QTRle </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.QTJpeg">
+            <summary> MEDIASUBTYPE_QTJpeg </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.PCMAudio_Obsolete">
+            <summary> MEDIASUBTYPE_PCMAudio_Obsolete </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.PCM">
+            <summary> MEDIASUBTYPE_PCM </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.WAVE">
+            <summary> MEDIASUBTYPE_WAVE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AU">
+            <summary> MEDIASUBTYPE_AU </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AIFF">
+            <summary> MEDIASUBTYPE_AIFF </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.dvhd">
+            <summary> MEDIASUBTYPE_dvhd </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.dvsl">
+            <summary> MEDIASUBTYPE_dvsl </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.dv25">
+            <summary> MEDIASUBTYPE_dv25 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.dv50">
+            <summary> MEDIASUBTYPE_dv50 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.dvh1">
+            <summary> MEDIASUBTYPE_dvh1 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Line21_BytePair">
+            <summary> MEDIASUBTYPE_Line21_BytePair </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Line21_GOPPacket">
+            <summary> MEDIASUBTYPE_Line21_GOPPacket </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Line21_VBIRawData">
+            <summary> MEDIASUBTYPE_Line21_VBIRawData </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.TELETEXT">
+            <summary> MEDIASUBTYPE_TELETEXT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.WSS">
+            <summary> MEDIASUBTYPE_WSS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.VPS">
+            <summary> MEDIASUBTYPE_VPS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DRM_Audio">
+            <summary> MEDIASUBTYPE_DRM_Audio </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.IEEE_FLOAT">
+            <summary> MEDIASUBTYPE_IEEE_FLOAT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DOLBY_AC3_SPDIF">
+            <summary> MEDIASUBTYPE_DOLBY_AC3_SPDIF </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.RAW_SPORT">
+            <summary> MEDIASUBTYPE_RAW_SPORT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.SPDIF_TAG_241h">
+            <summary> MEDIASUBTYPE_SPDIF_TAG_241h </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DssVideo">
+            <summary> MEDIASUBTYPE_DssVideo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DssAudio">
+            <summary> MEDIASUBTYPE_DssAudio </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.VPVideo">
+            <summary> MEDIASUBTYPE_VPVideo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.VPVBI">
+            <summary> MEDIASUBTYPE_VPVBI </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_NTSC_M">
+            <summary> MEDIASUBTYPE_AnalogVideo_NTSC_M </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_B">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_B </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_D">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_D </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_G">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_G </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_H">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_H </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_I">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_I </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_M">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_M </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_N">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_N </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_PAL_N_COMBO">
+            <summary> MEDIASUBTYPE_AnalogVideo_PAL_N_COMBO </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_B">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_B </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_D">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_D </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_G">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_G </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_H">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_H </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_K">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_K </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_K1">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_K1 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AnalogVideo_SECAM_L">
+            <summary> MEDIASUBTYPE_AnalogVideo_SECAM_L </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.I420">
+            <summary> not in uuids.h </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.VideoImage">
+            <summary> WMMEDIASUBTYPE_VIDEOIMAGE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Mpeg2Video">
+            <summary> WMMEDIASUBTYPE_MPEG2_VIDEO </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.WebStream">
+            <summary> WMMEDIASUBTYPE_WebStream </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Mpeg2Audio">
+            <summary> MEDIASUBTYPE_MPEG2_AUDIO </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DolbyAC3">
+            <summary> MEDIASUBTYPE_DOLBY_AC3 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.DvbSI">
+            <summary> MEDIASUBTYPE_DVB_SI </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.AtscSI">
+            <summary> MEDIASUBTYPE_ATSC_SI </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Mpeg2Data">
+            <summary> MEDIASUBTYPE_MPEG2DATA </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Mpeg2Program">
+            <summary> MEDIASUBTYPE_MPEG2_PROGRAM </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Mpeg2Transport">
+            <summary> MEDIASUBTYPE_MPEG2_TRANSPORT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.Mpeg2TransportStride">
+            <summary> MEDIASUBTYPE_MPEG2_TRANSPORT_STRIDE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.MediaSubType.None">
+            <summary> MEDIASUBTYPE_None </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.None">
+            <summary> FORMAT_None </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.VideoInfo">
+            <summary> FORMAT_VideoInfo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.VideoInfo2">
+            <summary> FORMAT_VideoInfo2 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.WaveEx">
+            <summary> FORMAT_WaveFormatEx </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.MpegVideo">
+            <summary> FORMAT_MPEGVideo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.MpegStreams">
+            <summary> FORMAT_MPEGStreams </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.DvInfo">
+            <summary> FORMAT_DvInfo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.AnalogVideo">
+            <summary> FORMAT_AnalogVideo </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.Mpeg2Video">
+            <summary> FORMAT_MPEG2Video </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.DolbyAC3">
+            <summary> FORMAT_DolbyAC3 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FormatType.Mpeg2Audio">
+            <summary> FORMAT_MPEG2Audio </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.Pin">
+            <summary> AMPROPSETID_Pin</summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.DroppedFrames">
+            <summary> PROPSETID_VIDCAP_DROPPEDFRAMES </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.ENCAPIPARAM_BitRate">
+            <summary> STATIC_ENCAPIPARAM_BITRATE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.ENCAPIPARAM_PeakBitRate">
+            <summary> STATIC_ENCAPIPARAM_PEAK_BITRATE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.ENCAPIPARAM_BitRateMode">
+            <summary> STATIC_ENCAPIPARAM_BITRATE_MODE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_ChangeLists">
+            <summary> STATIC_CODECAPI_CHANGELISTS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_VideoEncoder">
+            <summary> STATIC_CODECAPI_VIDEO_ENCODER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_AudioEncoder">
+            <summary> STATIC_CODECAPI_AUDIO_ENCODER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_SetAllDefaults">
+            <summary> STATIC_CODECAPI_SETALLDEFAULTS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_AllSettings">
+            <summary> STATIC_CODECAPI_ALLSETTINGS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_SupportsEvents">
+            <summary> STATIC_CODECAPI_SUPPORTSEVENTS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropSetID.CODECAPI_CurrentChangeList">
+            <summary> STATIC_CODECAPI_CURRENTCHANGELIST </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.Capture">
+            <summary> PIN_CATEGORY_CAPTURE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.Preview">
+            <summary> PIN_CATEGORY_PREVIEW </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.AnalogVideoIn">
+            <summary> PIN_CATEGORY_ANALOGVIDEOIN </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.VBI">
+            <summary> PIN_CATEGORY_VBI </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.VideoPort">
+            <summary> PIN_CATEGORY_VIDEOPORT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.NABTS">
+            <summary> PIN_CATEGORY_NABTS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.EDS">
+            <summary> PIN_CATEGORY_EDS </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.TeleText">
+            <summary> PIN_CATEGORY_TELETEXT </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.CC">
+            <summary> PIN_CATEGORY_CC </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.Still">
+            <summary> PIN_CATEGORY_STILL </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.TimeCode">
+            <summary> PIN_CATEGORY_TIMECODE </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PinCategory.VideoPortVBI">
+            <summary> PIN_CATEGORY_VIDEOPORT_VBI </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FindDirection.UpstreamOnly">
+            <summary> LOOK_UPSTREAM_ONLY </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.FindDirection.DownstreamOnly">
+            <summary> LOOK_DOWNSTREAM_ONLY </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.CrossbarFilterPropertyPage">
+            <summary> CLSID_CrossbarFilterPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.AudioInputMixer">
+            <summary> CLSID_AudioInputMixerProperties </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.AudioProperties">
+            <summary> CLSID_AudioProperties </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.AudioRendererAdvancedProperties">
+            <summary> CLSID_AudioRendererAdvancedProperties </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.AviMux">
+            <summary> CLSID_AviMuxProptyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.AviMux1">
+            <summary> CLSID_AviMuxProptyPage1 </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.DVDec">
+            <summary> CLSID_DVDecPropertiesPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.DVEnc">
+            <summary> CLSID_DVEncPropertiesPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.Modex">
+            <summary> CLSID_ModexProperties </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.Capture">
+            <summary> CLSID_CaptureProperties </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.WstDecoder">
+            <summary> CLSID_WstDecoderPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.DVMux">
+            <summary> CLSID_DVMuxPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.VideoProcAmpPropertyPage">
+            <summary> CLSID_VideoProcAmpPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.CameraControlPropertyPage">
+            <summary> CLSID_CameraControlPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.AnalogVideoDecoderPropertyPage">
+            <summary> CLSID_AnalogVideoDecoderPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.VideoStreamConfigPropertyPage">
+            <summary> CLSID_VideoStreamConfigPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.ATSCNetworkPropertyPage">
+            <summary> CLSID_ATSCNetworkPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.TVTunerFilterPropertyPage">
+            <summary> CLSID_TVTunerFilterPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.PropertyPages.TVAudioFilterPropertyPage">
+            <summary> CLSID_TVAudioFilterPropertyPage </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.RFTuner">
+            <summary> KSNODE_BDA_RF_TUNER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.QAMDemodulator">
+            <summary> KSNODE_BDA_QAM_DEMODULATOR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.QPSKDemodulator">
+            <summary> KSNODE_BDA_QPSK_DEMODULATOR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.EightVSBDemodulator">
+            <summary> KSNODE_BDA_8VSB_DEMODULATOR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.COFDMDemodulator">
+            <summary> KSNODE_BDA_COFDM_DEMODULATOR </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.OpenCablePod">
+            <summary> KSNODE_BDA_OPENCABLE_POD </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.CommonCAPod">
+            <summary> KSNODE_BDA_COMMON_CA_POD </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.PidFilter">
+            <summary> KSNODE_BDA_PID_FILTER </summary>
+        </member>
+        <member name="F:Telerik.WinControls.UI.Multimedia.BDANodeCategory.IPSink">
+            <summary> KSNODE_BDA_IP_SINK </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WSTLevel">
+            <summary>
+            From AM_WST_LEVEL
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WSTService">
+            <summary>
+            From AM_WST_SERVICE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WSTState">
+            <summary>
+            From AM_WST_STATE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WSTDrawBGMode">
+            <summary>
+            From AM_WST_DRAWBGMODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGAudioDivider">
+            <summary>
+            Not from DirectShow
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGAudioDual">
+            <summary>
+            From AM_MPEG_AUDIO_DUAL_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGAudioAccuracy">
+            <summary>
+            Not from DirectShow
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEGAudioChannels">
+            <summary>
+            Not from DirectShow
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WSTPage">
+            <summary>
+            From AM_WST_PAGE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AcmMpegHeadLayer">
+            <summary>
+            From ACM_MPEG_LAYER* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AcmMpegHeadMode">
+            <summary>
+            From ACM_MPEG_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AcmMpegHeadFlags">
+            <summary>
+            From ACM_MPEG_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MPEG1WaveFormat">
+            <summary>
+            From MPEG1WAVEFORMAT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMLine21CCLevel">
+            <summary>
+            From AM_LINE21_CCLEVEL
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMLine21CCService">
+            <summary>
+            From AM_LINE21_CCSERVICE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMLine21CCState">
+            <summary>
+            From AM_LINE21_CCSTATE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMLine21DrawBGMode">
+            <summary>
+            From AM_LINE21_DRAWBGMODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.PinConnectedStatus">
+            <summary>
+            Not from DirectShow
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BitmapInfo">
+            <summary>
+            From BITMAPINFO
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BitmapInfoHeader">
+            <summary>
+            From BITMAPINFOHEADER
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DDPixelFormat">
+            <summary>
+            From DDPIXELFORMAT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DsCAUUID">
+            <summary>
+            From CAUUID
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsCAUUID.ToGuidArray">
+            <summary>
+            Perform a manual marshaling of pElems to retrieve an array of System.Guid.
+            Assume this structure has been already filled by the ISpecifyPropertyPages.GetPages() method.
+            </summary>
+            <returns>A managed representation of pElems (cElems items)</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DsLong">
+            <summary>
+            DsLong is a wrapper class around a <see cref="T:System.Int64"/> value type.
+            </summary>
+            <remarks>
+            This class is necessary to enable null paramters passing.
+            </remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsLong.#ctor(System.Int64)">
+            <summary>
+            Constructor
+            Initialize a new instance of DsLong with the Value parameter
+            </summary>
+            <param name="Value">Value to assign to this new instance</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsLong.ToString">
+            <summary>
+            Get a string representation of this DsLong Instance.
+            </summary>
+            <returns>A string representing this instance</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsLong.op_Implicit(Telerik.WinControls.UI.Multimedia.DsLong)~System.Int64">
+             <summary>
+             Define implicit cast between DsLong and System.Int64 for languages supporting this feature.
+             VB.Net doesn't support implicit cast. <see cref="M:Telerik.WinControls.UI.Multimedia.DsLong.ToInt64"/> for similar functionality.
+             <code>
+               // Define a new DsLong instance
+               DsLong dsL = new DsLong(9876543210);
+               // Do implicit cast between DsLong and Int64
+               long l = dsL;
+            
+               Console.WriteLine(l.ToString());
+             </code>
+             </summary>
+             <param name="l">DsLong to be cast</param>
+             <returns>A casted System.Int64</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsLong.op_Implicit(System.Int64)~Telerik.WinControls.UI.Multimedia.DsLong">
+             <summary>
+             Define implicit cast between System.Int64 and DsLong for languages supporting this feature.
+             VB.Net doesn't support implicit cast. Refer to DirectShowLib.DsGuid.FromInt64 for similar functionality.
+             <code>
+               // Define a new Int64 instance
+               long l = 9876543210;
+               // Do implicit cast between Int64 and DsLong
+               DsLong dsl = l;
+            
+               Console.WriteLine(dsl.ToString());
+             </code>
+             </summary>
+             <param name="l">System.Int64 to be cast</param>
+             <returns>A casted DsLong</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsLong.ToInt64">
+            <summary>
+            Get the System.Int64 equivalent to this DsLong instance.
+            </summary>
+            <returns>A System.Int64</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsLong.FromInt64(System.Int64)">
+            <summary>
+            Get a new DsLong instance for a given System.Int64
+            </summary>
+            <param name="l">The System.Int64 to wrap into a DsLong</param>
+            <returns>A new instance of DsLong</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DsGuid">
+            <summary>
+            DirectShowLib.DsGuid is a wrapper class around a System.Guid value type.
+            </summary>
+            <remarks>
+            This class is necessary to enable null paramters passing.
+            </remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.#ctor">
+            <summary>
+            Empty constructor. 
+            Initialize it with System.Guid.Empty
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.#ctor(System.String)">
+            <summary>
+            Constructor.
+            Initialize this instance with a given System.Guid string representation.
+            </summary>
+            <param name="g">A valid System.Guid as string</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.#ctor(System.Guid)">
+            <summary>
+            Constructor.
+            Initialize this instance with a given System.Guid.
+            </summary>
+            <param name="g">A System.Guid value type</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.ToString">
+            <summary>
+            Get a string representation of this DirectShowLib.DsGuid Instance.
+            </summary>
+            <returns>A string representing this instance</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.ToString(System.String)">
+            <summary>
+            Get a string representation of this DirectShowLib.DsGuid Instance with a specific format.
+            </summary>
+            <param name="format"><see cref="M:System.Guid.ToString(System.String)"/> for a description of the format parameter.</param>
+            <returns>A string representing this instance according to the format parameter</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.op_Implicit(Telerik.WinControls.UI.Multimedia.DsGuid)~System.Guid">
+             <summary>
+             Define implicit cast between DirectShowLib.DsGuid and System.Guid for languages supporting this feature.
+             VB.Net doesn't support implicit cast. Refer to DirectShowLib.DsGuid.ToGuid for similar functionality.
+             <code>
+               // Define a new DsGuid instance
+               DsGuid dsG = new DsGuid("{33D57EBF-7C9D-435e-A15E-D300B52FBD91}");
+               // Do implicit cast between DsGuid and Guid
+               Guid g = dsG;
+            
+               Console.WriteLine(g.ToString());
+             </code>
+             </summary>
+             <param name="g">DirectShowLib.DsGuid to be cast</param>
+             <returns>A casted System.Guid</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.op_Implicit(System.Guid)~Telerik.WinControls.UI.Multimedia.DsGuid">
+             <summary>
+             Define implicit cast between System.Guid and DirectShowLib.DsGuid for languages supporting this feature.
+             VB.Net doesn't support implicit cast. Refer to DirectShowLib.DsGuid.FromGuid for similar functionality.
+             <code>
+               // Define a new Guid instance
+               Guid g = new Guid("{B9364217-366E-45f8-AA2D-B0ED9E7D932D}");
+               // Do implicit cast between Guid and DsGuid
+               DsGuid dsG = g;
+            
+               Console.WriteLine(dsG.ToString());
+             </code>
+             </summary>
+             <param name="g">System.Guid to be cast</param>
+             <returns>A casted DirectShowLib.DsGuid</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.ToGuid">
+            <summary>
+            Get the System.Guid equivalent to this DirectShowLib.DsGuid instance.
+            </summary>
+            <returns>A System.Guid</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsGuid.FromGuid(System.Guid)">
+            <summary>
+            Get a new DirectShowLib.DsGuid instance for a given System.Guid
+            </summary>
+            <param name="g">The System.Guid to wrap into a DirectShowLib.DsGuid</param>
+            <returns>A new instance of DirectShowLib.DsGuid</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DsRect">
+            <summary>
+            DirectShowLib.DsRect is a managed representation of the Win32 RECT structure.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.#ctor">
+            <summary>
+            Empty contructor. Initialize all fields to 0
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            A parametred constructor. Initialize fields with given values.
+            </summary>
+            <param name="left">the left value</param>
+            <param name="top">the top value</param>
+            <param name="right">the right value</param>
+            <param name="bottom">the bottom value</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.#ctor(System.Drawing.Rectangle)">
+            <summary>
+            A parametred constructor. Initialize fields with a given <see cref="T:System.Drawing.Rectangle"/>.
+            </summary>
+            <param name="rectangle">A <see cref="T:System.Drawing.Rectangle"/></param>
+            <remarks>
+            Warning, DsRect define a rectangle by defining two of his corners and <see cref="T:System.Drawing.Rectangle"/> define a rectangle with his upper/left corner, his width and his height.
+            </remarks>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.ToString">
+            <summary>
+            Provide de string representation of this DsRect instance
+            </summary>
+            <returns>A string formated like this : [left, top - right, bottom]</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.op_Implicit(Telerik.WinControls.UI.Multimedia.DsRect)~System.Drawing.Rectangle">
+             <summary>
+             Define implicit cast between DirectShowLib.DsRect and System.Drawing.Rectangle for languages supporting this feature.
+             VB.Net doesn't support implicit cast. Refer to DirectShowLib.DsRect.ToRectangle for similar functionality.
+             <code>
+               // Define a new Rectangle instance
+               Rectangle r = new Rectangle(0, 0, 100, 100);
+               // Do implicit cast between Rectangle and DsRect
+               DsRect dsR = r;
+            
+               Console.WriteLine(dsR.ToString());
+             </code>
+             </summary>
+             <param name="r">a DsRect to be cast</param>
+             <returns>A casted System.Drawing.Rectangle</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.op_Implicit(System.Drawing.Rectangle)~Telerik.WinControls.UI.Multimedia.DsRect">
+             <summary>
+             Define implicit cast between System.Drawing.Rectangle and DirectShowLib.DsRect for languages supporting this feature.
+             VB.Net doesn't support implicit cast. Refer to DirectShowLib.DsRect.FromRectangle for similar functionality.
+             <code>
+               // Define a new DsRect instance
+               DsRect dsR = new DsRect(0, 0, 100, 100);
+               // Do implicit cast between DsRect and Rectangle
+               Rectangle r = dsR;
+            
+               Console.WriteLine(r.ToString());
+             </code>
+             </summary>
+             <param name="r">A System.Drawing.Rectangle to be cast</param>
+             <returns>A casted DsRect</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.ToRectangle">
+            <summary>
+            Get the System.Drawing.Rectangle equivalent to this DirectShowLib.DsRect instance.
+            </summary>
+            <returns>A System.Drawing.Rectangle</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsRect.FromRectangle(System.Drawing.Rectangle)">
+            <summary>
+            Get a new DirectShowLib.DsRect instance for a given <see cref="T:System.Drawing.Rectangle"/>
+            </summary>
+            <param name="r">The <see cref="T:System.Drawing.Rectangle"/> used to initialize this new DirectShowLib.DsGuid</param>
+            <returns>A new instance of DirectShowLib.DsGuid</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsError.ThrowExceptionForHR(System.Int32)">
+            <summary>
+            If hr has a "failed" status code (E_*), throw an exception.  Note that status
+            messages (S_*) are not considered failure codes.  If DirectShow error text
+            is available, it is used to build the exception, otherwise a generic com error
+            is thrown.
+            </summary>
+            <param name="hr">The HRESULT to check</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsError.GetErrorText(System.Int32)">
+            <summary>
+            Returns a string describing a DS error.  Works for both error codes
+            (values &lt; 0) and Status codes (values >= 0)
+            </summary>
+            <param name="hr">HRESULT for which to get description</param>
+            <returns>The string, or null if no error text can be found</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsUtils.GetPinCategory(Telerik.WinControls.UI.Multimedia.IPin)">
+            <summary>
+            Returns the PinCategory of the specified pin.  Usually a member of PinCategory.  Not all pins have a category.
+            </summary>
+            <param name="pPin"></param>
+            <returns>Guid indicating pin category or Guid.Empty on no category.  Usually a member of PinCategory</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsUtils.FreeAMMediaType(Telerik.WinControls.UI.Multimedia.AMMediaType)">
+            <summary>
+             Free the nested structures and release any
+             COM objects within an AMMediaType struct.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsUtils.FreePinInfo(Telerik.WinControls.UI.Multimedia.PinInfo)">
+            <summary>
+             Free the nested interfaces within a PinInfo struct.
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsDevice.GetDevicesOfCat(System.Guid)">
+            <summary>
+            Returns an array of DsDevices of type devcat.
+            </summary>
+            <param name="FilterCategory">Any one of FilterCategory</param>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsDevice.GetFriendlyName">
+            <summary>
+            Get the FriendlyName for a moniker
+            </summary>
+            <returns>String or null on error</returns>
+        </member>
+        <member name="P:Telerik.WinControls.UI.Multimedia.DsDevice.DevicePath">
+            <summary>
+            Returns a unique identifier for a device
+            </summary>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsFindPin.ByDirection(Telerik.WinControls.UI.Multimedia.IBaseFilter,Telerik.WinControls.UI.Multimedia.PinDirection,System.Int32)">
+            <summary>
+            Scans a filter's pins looking for a pin in the specified direction
+            </summary>
+            <param name="vSource">The filter to scan</param>
+            <param name="vDir">The direction to find</param>
+            <param name="iIndex">Zero based index (ie 2 will return the third pin in the specified direction)</param>
+            <returns>The matching pin, or null if not found</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsFindPin.ByName(Telerik.WinControls.UI.Multimedia.IBaseFilter,System.String)">
+            <summary>
+            Scans a filter's pins looking for a pin with the specified name
+            </summary>
+            <param name="vSource">The filter to scan</param>
+            <param name="vPinName">The pin name to find</param>
+            <returns>The matching pin, or null if not found</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsFindPin.ByCategory(Telerik.WinControls.UI.Multimedia.IBaseFilter,System.Guid,System.Int32)">
+            <summary>
+            Scan's a filter's pins looking for a pin with the specified category
+            </summary>
+            <param name="vSource">The filter to scan</param>
+            <param name="PinCategory">The guid from PinCategory to scan for</param>
+            <param name="iIndex">Zero based index (ie 2 will return the third pin of the specified category)</param>
+            <returns>The matching pin, or null if not found</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsFindPin.ByConnectionStatus(Telerik.WinControls.UI.Multimedia.IBaseFilter,Telerik.WinControls.UI.Multimedia.PinConnectedStatus,System.Int32)">
+            <summary>
+            Scans a filter's pins looking for a pin with the specified connection status
+            </summary>
+            <param name="vSource">The filter to scan</param>
+            <param name="vStat">The status to find (connected/unconnected)</param>
+            <param name="iIndex">Zero based index (ie 2 will return the third pin with the specified status)</param>
+            <returns>The matching pin, or null if not found</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsToString.AMMediaTypeToString(Telerik.WinControls.UI.Multimedia.AMMediaType)">
+            <summary>
+            Produces a usable string that describes the MediaType object
+            </summary>
+            <returns>Concatenation of MajorType + SubType + FormatType + Fixed + Temporal + SampleSize.ToString</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsToString.MediaTypeToString(System.Guid)">
+            <summary>
+            Converts AMMediaType.MajorType Guid to a readable string
+            </summary>
+            <returns>MajorType Guid as a readable string or Guid if unrecognized</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsToString.MediaSubTypeToString(System.Guid)">
+            <summary>
+            Converts the AMMediaType.SubType Guid to a readable string
+            </summary>
+            <returns>SubType Guid as a readable string or Guid if unrecognized</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsToString.MediaFormatTypeToString(System.Guid)">
+            <summary>
+            Converts the AMMediaType.FormatType Guid to a readable string
+            </summary>
+            <returns>FormatType Guid as a readable string or Guid if unrecognized</returns>
+        </member>
+        <member name="M:Telerik.WinControls.UI.Multimedia.DsToString.WalkClass(System.Type,System.Guid)">
+            <summary>
+            Use reflection to walk a class looking for a property containing a specified guid
+            </summary>
+            <param name="MyType">Class to scan</param>
+            <param name="guid">Guid to scan for</param>
+            <returns>String representing property name that matches, or Guid.ToString() for no match</returns>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.NotifyFlags">
+            <summary>
+            From define AM_MEDIAEVENT_NONOTIFY
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.OABool">
+            <summary>
+            From #define OATRUE/OAFALSE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WindowStyle">
+            <summary>
+            From WS_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WindowStyleEx">
+            <summary>
+            From WS_EX_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.WindowState">
+            <summary>
+            From SW_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DispatchFlags">
+            <summary>
+            From DISPATCH_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMMStream">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMMMultiStream">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.AMOpenModes">
+            <summary>
+            From unnamed enum
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DDColor">
+            <summary>
+            From DDCOLOR_* defines
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.DDColorControl">
+            <summary>
+            From DDCOLORCONTROL
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BDAChangeState">
+            <summary>
+            From BDA_CHANGE_STATE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MulticastMode">
+            <summary>
+            From BDA_MULTICAST_MODE
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.MediaSampleContent">
+            <summary>
+            From MEDIA_SAMPLE_CONTENT
+            </summary>
+        </member>
+        <member name="T:Telerik.WinControls.UI.Multimedia.BDANodeDescriptor">
+            <summary>
+            From BDANODE_DESCRIPTOR
+            </summary>
+        </member>
+    </members>
+</doc>

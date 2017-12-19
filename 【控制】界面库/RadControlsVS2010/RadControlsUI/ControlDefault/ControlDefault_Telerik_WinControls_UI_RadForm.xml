@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="FormOuterBorderNotActive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormOuterBorderActive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OfficeShape,SegoeUIDefaultText,BlackText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="191, 219, 255" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="204, 216, 232" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-3, 0, -3, -3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormImageBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="176, 203, 239" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormImageBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormOuterBorderNotActive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="FormOuterBorderActive">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.MouseOver.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="204, 216, 232" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormImageBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="176, 203, 239" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadFormElement.MouseOver.IsFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadFormImageBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMinimizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonNormalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMinimizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonMouseDownImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMinimizeButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MinimizeButtonMouseOverImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMinimizeButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonMaxNormalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMaximizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonMaxMouseDownImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMaximizeButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MaximizeButtonMaxMouseOverImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMaximizeButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonNormalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonMouseOverImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripCloseButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CloseButtonMouseDownImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripCloseButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SkyBlueFill(DefaultVisible)">
+            <Selectors>
+              <XmlClassSelector ElementClass="MdiControlStrip">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="TitleFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripMaximizeButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MDIStripCloseButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadForm" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

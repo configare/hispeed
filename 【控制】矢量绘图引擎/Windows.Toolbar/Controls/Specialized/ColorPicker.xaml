@@ -1,0 +1,161 @@
+﻿<windowsToolbar:SelectionContainer x:Class="Windows.Toolbar.Controls.Specialized.ColorPicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:windowsToolbar="clr-namespace:Windows.Toolbar.Controls"
+    xmlns:windowsToolbarSpecialized="clr-namespace:Windows.Toolbar.Controls.Specialized">
+
+    <windowsToolbar:SelectionContainer.Resources>
+        <Style x:Key="Heading" TargetType="Border">
+            <Setter Property="Padding" Value="2,0,0,0" /> 
+            <Setter Property="BorderBrush" Value="#C5C5C5"/>
+            <Setter Property="Background" Value="#DDE7EE"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        </Style>
+
+		<Style x:Key="HeadingText" TargetType="TextBlock">
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Foreground" Value="#001585"/>
+		</Style>
+
+        <Style x:Key="ColorRow" TargetType="FrameworkElement">
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+    </windowsToolbar:SelectionContainer.Resources>
+
+
+	<Border BorderBrush="#868686" BorderThickness="1" CornerRadius="3" Background="White">
+        <StackPanel Background="White" Margin="1">
+            <Border Style="{StaticResource Heading}">
+                <TextBlock Text="Theme Colors" Style="{StaticResource HeadingText}"/>
+            </Border>
+
+            <!-- Theme Colors -->
+            <StackPanel Orientation="Horizontal" Margin="0,2,0,2">
+                <!-- First column gray tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#FFFFFF" Click="ColorPickerItem_Click" Margin="0,0,0,4"/>
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#F2F2F2" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#D8D8D8" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#BFBFBF" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#A5A5A5" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#7F7F7F" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Second column darkgray tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#000000" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#7F7F7F" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#595959" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#3F3F3F" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#262626" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#0C0C0C" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Third column chrome tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#EEECE1" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#DDD9C3" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#C4BD97" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#938953" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#494429" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#1C1B10" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Fourth column dark blue tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#1F497D" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#C6D9F0" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#8DB3E2" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#548DD4" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#17365D" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#0F243E" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Fourth column light blue tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#4F81BD" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#DBE5F1" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#B8CCE4" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#95B3D7" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#366092" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#244061" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Fifth column red tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#C0504D" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#F2DCDB" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#E5B9B7" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#D99694" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#953734" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#632423" Click="ColorPickerItem_Click" />
+                </StackPanel>
+                
+                <!-- Sixth column green tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#3F3151" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#EBF1DD" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#D7E3BC" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#C3D69B" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#76923C" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#4F6128" Click="ColorPickerItem_Click" />
+                </StackPanel>
+                
+                <!-- Sixth column purple tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#8064A2" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#E5E0EC" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#CCC1D9" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#B2A2C7" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#5F497A" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem Color="#3F3151" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Sixth column sky tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#4BACC6" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#DBEEF3" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#B7DDE8" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#92CDDC" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#31859B" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#205867" Click="ColorPickerItem_Click" />
+                </StackPanel>
+
+                <!-- Sixth column orange tones -->
+                <StackPanel Style="{StaticResource ColorRow}">
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Independent" Color="#F79646" Click="ColorPickerItem_Click" Margin="0,0,0,4" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Top" Color="#FDEADA" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#FBD5B5" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#FAC08F" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Body" Color="#E36C09" Click="ColorPickerItem_Click" />
+                    <windowsToolbarSpecialized:ColorPickerItem BorderType="Bottom" Color="#974806" Click="ColorPickerItem_Click" />
+                </StackPanel>
+            </StackPanel>
+            
+            <Border Style="{StaticResource Heading}">
+                <TextBlock Text="Standard Colors" Style="{StaticResource HeadingText}"  />
+            </Border>
+
+            <StackPanel Orientation="Horizontal" Margin="0,2,0,2">
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#C00000" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#FF0000" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#FFC000" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#FFFF00" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#92D050" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#00B050" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#00B0F0" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#0070C0" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#002060" Click="ColorPickerItem_Click" />
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="#7030A0" Click="ColorPickerItem_Click" />
+            </StackPanel>
+
+            <Border Style="{StaticResource Heading}" />
+            
+            <StackPanel Orientation="Horizontal" Margin="0,2,0,2">
+                <windowsToolbarSpecialized:ColorPickerItem Style="{StaticResource ColorRow}" Color="Transparent" Click="ColorPickerItem_Click"/>
+                
+                <TextBlock Text="No Color" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </StackPanel>
+        </StackPanel>
+    </Border>	
+</windowsToolbar:SelectionContainer>

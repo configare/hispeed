@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD62990C-2648-42EF-B070-217652ECFB72}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_00.CodeCell.Project</RootNamespace>
+    <AssemblyName>00.CodeCell.Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00.Projection\Proj4\Proj4Projection.cs" />
+    <Compile Include="00.Projection\Proj4\proj_api.cs" />
+    <Compile Include="00.Projection\Proj4\proj_api_test.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\CoordinateDomain.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\IProjectionTransform.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\PrjTranSimpleEquidistantCyclindrical.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\ProjectionTransform.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\ProjectionTransformFactory.cs" />
+    <Compile Include="00.Projection\SpatialReferenceFactory.cs" />
+    <Compile Include="00.Projection\SpatialReference\enumWKTSource.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\AngularUnit.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\Datum.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\GeographicCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\PrimeMeridian.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\Spheroid.cs" />
+    <Compile Include="00.Projection\SpatialReference\IGeographicCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\IProjectionCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\ISpatialReference.cs" />
+    <Compile Include="00.Projection\SpatialReference\ISpatialReferenceStringParser.cs" />
+    <Compile Include="00.Projection\SpatialReference\ISpatialRefFormat.cs" />
+    <Compile Include="00.Projection\SpatialReference\NameMapItem.cs" />
+    <Compile Include="00.Projection\SpatialReference\NameValuePair.cs" />
+    <Compile Include="00.Projection\SpatialReference\OGCWkt2Proj4Mapper.cs" />
+    <Compile Include="00.Projection\SpatialReference\ProjectionCoordSystem\ProjectionCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\SpatialReference.cs" />
+    <Compile Include="00.Projection\SpatialReference\WktParsers\WktParserBase.cs" />
+    <Compile Include="00.Projection\SpatialReference\WktParsers\WktProjectionCommonParser.cs" />
+    <Compile Include="00.Projection\SpatialReference\WktParsers\WktSpliter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="00.Projection\Proj4\00README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

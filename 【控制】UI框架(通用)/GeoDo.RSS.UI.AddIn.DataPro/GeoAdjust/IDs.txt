@@ -1,0 +1,5 @@
+﻿  <UIButton name="startPan" text="开始平移" identify="30002" image="system:play.png"/>
+  <UIButton name="saveAdjustResult" text="保存校正" identify="30003" image="system:save.png"/>
+  <UIButton name="cancelAdjustResult" text="取消校正" identify="30004" image="system:Extracting_撤销.png"/>
+  <UIDropDownButton name="toscale" text="校正方案" font="tabfont" image="system:AdjustSolution.png" imagealigment="TopCenter" textaligment="BottomCenter" dropdowndirection="Down" arrowposition="Bottom" expandarrowbutton="false">
+  <MenuItem text="保存为方案" image="" identify="30005" argument="0"/>

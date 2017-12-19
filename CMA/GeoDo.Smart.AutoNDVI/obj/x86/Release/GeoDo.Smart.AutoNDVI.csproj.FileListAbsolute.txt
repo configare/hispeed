@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoNDVI.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoNDVI.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoNDVI.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoNDVI\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoNDVI\obj\x86\Release\GeoDo.Smart.AutoNDVI.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoNDVI\obj\x86\Release\GeoDo.Smart.AutoNDVI.pdb

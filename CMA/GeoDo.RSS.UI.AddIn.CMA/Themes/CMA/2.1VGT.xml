@@ -1,0 +1,714 @@
+﻿<Product name=" 植  被 " group="气候" identify="VGT" image="system:vegetation.png" uiprovider="GeoDo.RSS.MIF.Prds.VGT.dll:GeoDo.RSS.MIF.Prds.VGT.UITabVegetation">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="NDVI计算" identify="NDVI" isdisplaypanel="true" isneedcurrentraster="true" isuseaoitemplate="false" aoitemplates="vector:海陆模版" >
+      <Algorithms>
+        <!--<Algorithm name="NDVI=(NIR-RED)/(NIR+RED)" identify="NDVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">-->
+        <Algorithm name="NDVI（远红外）" identify="NDVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="10" defaultvalue="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="10" defaultvalue="2"/>
+            <Band identify="MiddInfrared" bandno="3" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" bandno="4" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="resultZoom" description="输出NDVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Ndvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+              <DefaultValue></DefaultValue>
+            </Argument>
+            <ArgumentGroup name="云检测" description="云检测">
+              <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+              <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+              <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="中远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="中远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="NDVI（无远红外）" identify="NDVI2" satellite="FY3A,FY3B,EOSA,EOST,EOS,AQUA,TERRA" sensor="MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="10" defaultvalue="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="10" defaultvalue="2"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="resultZoom" description="输出NDVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Ndvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+            </Argument>
+            <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+            <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="RVI计算" identify="0RVI" isdisplaypanel="true" isneedcurrentraster="true" isuseaoitemplate="false" aoitemplates="vector:海陆模版" >
+      <Algorithms>
+        <!--<Algorithm name="RVI=NIR/RED" identify="0RVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">-->
+        <Algorithm name="RVI（远红外）" identify="0RVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="1"/>
+            <Band identify="MiddInfrared" bandno="3" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" bandno="4" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="resultZoom" description="输出RVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Rvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+              <DefaultValue></DefaultValue>
+            </Argument>
+            <ArgumentGroup name="云检测" description="云检测">
+              <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+              <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+              <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="RVI（无远红外）" identify="0RVI2" satellite="FY3A,FY3B,EOSA,EOST,EOS,AQUA,TERRA" sensor="MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="1"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="resultZoom" description="输出RVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Rvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+              <DefaultValue></DefaultValue>
+            </Argument>
+            <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+            <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="DVI计算" identify="0DVI" isdisplaypanel="true" isneedcurrentraster="true" isuseaoitemplate="false" aoitemplates="vector:海陆模版" >
+      <Algorithms>
+        <!--<Algorithm name="DVI=(NIR-RED)/100" identify="0DVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">-->
+        <Algorithm name="DVI（远红外）" identify="0DVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="1"/>
+            <Band identify="MiddInfrared" bandno="3" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" bandno="4" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="resultZoom" description="输出DVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Dvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+              <DefaultValue></DefaultValue>
+            </Argument>
+            <ArgumentGroup name="云检测" description="云检测">
+              <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+              <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+              <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="DVI（无远红外）" identify="0DVI2" satellite="FY3A,FY3B,EOSA,EOST,AQUA,TERRA" sensor="MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="1"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="resultZoom" description="输出DVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Dvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+              <DefaultValue></DefaultValue>
+            </Argument>
+            <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+            <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="EVI计算" identify="0EVI" isdisplaypanel="true" isneedcurrentraster="true" isuseaoitemplate="false" aoitemplates="vector:海陆模版" >
+      <Algorithms>
+        <!--<Algorithm name="EVI=G*(Nir-Red)/(Nir+c1*Red-c2*Blue+L)" identify="0EVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">-->
+        <Algorithm name="EVI（远红外）" identify="0EVI1" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="1"/>
+            <Band identify="Blue" bandno="1" wavelength="0.47" centerwavenum="-1" zoom="1" />
+            <Band identify="MiddInfrared" bandno="3" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" bandno="4" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="G" description="系数G" datatype="float" defaultvalue="2.5" />
+            <Argument name="C1" description="系数C1" datatype="float" defaultvalue="6" />
+            <Argument name="C2" description="系数C2" datatype="float" defaultvalue="7.5" />
+            <Argument name="L" description="系数L" datatype="float" defaultvalue="1" />
+            <Argument name="resultZoom" description="输出EVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Dvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+              <DefaultValue></DefaultValue>
+            </Argument>
+            <ArgumentGroup name="云检测" description="云检测">
+              <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+              <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+              <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="EVI（无远红外）" identify="0EVI2" satellite="FY3A,FY3B,EOSA,EOST,EOS,AQUA,TERRA" sensor="MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="0.65" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="2" wavelength="0.85" centerwavenum="-1" zoom="1"/>
+            <Band identify="Blue" bandno="1" wavelength="0.47" centerwavenum="-1" zoom="1" />
+            <Band identify="cloudCH" bandno="1" wavelength="-1" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>
+            <Argument name="G" description="系数G" datatype="float" defaultvalue="2.5" />
+            <Argument name="C1" description="系数C1" datatype="float" defaultvalue="6" />
+            <Argument name="C2" description="系数C2" datatype="float" defaultvalue="7.5" />
+            <Argument name="L" description="系数L" datatype="float" defaultvalue="1" />
+            <Argument name="resultZoom" description="输出EVI放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Dvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+            </Argument>
+            <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+            <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="VCI计算" identify="0VCI" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="VCI计算" identify="0VCI" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR,MERSI" customidentify="">
+          <Bands>
+            <Band identify="NdviCH" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000"  fromarg="NdviFile"/>
+            <Band identify="NdviMaxCH" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" fromarg="BackFile"/>
+            <Band identify="NdviMinCH" wavelength="-1" bandno="2" centerwavenum="-1" zoom="1000" fromarg="BackFile"/>
+          </Bands>
+          <Arguments>
+            <Argument name="resultZoom" description="放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="mainfiles" description="NDVI文件"
+                      refdatatype="file" refidentify="NDVI"
+                      reffilter="Ndvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"
+                      fileprovider="ContextEnvironment:NDVI"
+                      ismultiselect="false"></Argument>
+            <Argument name="BackFile" description="背景库数据"
+                      refdatatype="file" refidentify=""
+                      reffilter="Ndvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"
+                      ismultiselect="false">
+              <!--fileprovider="GeoDo.RSS.MIF.Prds.VGT.DLL,GeoDo.RSS.MIF.Core.NDVIBackFileFinder"-->
+            </Argument>
+            <!--<Argument name="DefaultFile" description="默认背景库文件"
+                            editoruiprovider="GeoDo.RSS.MIF.Prds.VGT.dll:GeoDo.RSS.MIF.Prds.VGT.UCDefaultFilePath">
+                    <DefaultValue>
+                      <Path value="SystemData\ndvi_0901.ldf" />
+                    </DefaultValue>
+                  </Argument>-->
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="255,255,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="CLMAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11.3" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="0.865,1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.67,0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <NearVisiable>false</NearVisiable>
+                <!--<NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>-->
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="最大值合成" identify="0MAX" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="最大值合成" identify="0MAX" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="计算文件"
+                      refdatatype="file" refidentify="NDVI"
+                      reffilter="栅格数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                      fileprovider="ContextEnvironment:NDVI"
+                      ismultiselect="true"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="-9999,30001" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="30002,30005" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <ArgumentPair description="有效区域" datatype="double"  minvalue="-10000" maxvalue="1000">
+              <Argument name="VaildRegionMin" endpointtype="min" description="有效区域低端值"  defaultvalue="-1000"/>
+              <Argument name="VaildRegionMax" endpointtype="max" description="有效区域高端值" defaultvalue="989"/>
+            </ArgumentPair>
+            <Argument name="resolution" description="输出分辨率（度/像素）" datatype="float" defaultvalue="0.01" visible ="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬最大值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=10,NaturalDays=false,Format=dat"
+                        outfileidentify="0MAX"  extinfo="_POTD"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月最大值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                        outfileidentify="0MAX" extinfo="_POAM"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季最大值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                        outfileidentify="0MAX" extinfo="_POAQ"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年最大值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                        outfileidentify="0MAX" extinfo="_POAY"  aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="最小值合成" identify="0MIN" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="最小值合成" identify="0MIN" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="NDVI文件"
+                                datatype="float" refdatatype="file" refidentify="NDVI"
+                                reffilter="栅格数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*ld3|所有文件(*.*)|*.*"
+                                fileprovider="ContextEnvironment:NDVI"
+                                ismultiselect="true"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="-9999,30001" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="30002,30005" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <ArgumentPair description="有效区域" datatype="double"  minvalue="-10000" maxvalue="1000">
+              <Argument name="VaildRegionMin" endpointtype="min" description="有效区域低端值"  defaultvalue="-1000"/>
+              <Argument name="VaildRegionMax" endpointtype="max" description="有效区域高端值" defaultvalue="989"/>
+            </ArgumentPair>
+            <Argument name="resolution" description="输出分辨率（度/像素）" datatype="float" defaultvalue="0.01" visible ="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬最小值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=10,NaturalDays=false,Format=dat"
+                        outfileidentify="0MIN"  extinfo="_POTD"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月最小值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                        outfileidentify="0MIN"  extinfo="_POAM"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季最小值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                         argument="Prd=VGT,SubPrd=NDVI,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                        outfileidentify="0MIN"  extinfo="_POAQ"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年最小值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                        outfileidentify="0MIN"  extinfo="_POAY"  aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="平均值合成" identify="0AVG" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="平均值合成" identify="0AVG" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,AQUA,TERRA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="NDVI文件"
+                                 datatype="float" refdatatype="file" refidentify="NDVI"
+                                 reffilter="栅格数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                                 fileprovider="ContextEnvironment:NDVI"
+                                 ismultiselect="true"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="-9999,30001" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="30002,30005" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <ArgumentPair description="有效区域" datatype="double"  minvalue="-10000" maxvalue="1000">
+              <Argument name="VaildRegionMin" endpointtype="min" description="有效区域低端值"  defaultvalue="-1000"/>
+              <Argument name="VaildRegionMax" endpointtype="max" description="有效区域高端值" defaultvalue="989"/>
+            </ArgumentPair>
+            <Argument name="resolution" description="输出分辨率（度/像素）" datatype="float" defaultvalue="0.01" visible ="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬平均值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                         argument="Prd=VGT,SubPrd=NDVI,Days=10,NaturalDays=false,Format=dat"
+                        outfileidentify="0AVG"  extinfo="_POTD"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月平均值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                        outfileidentify="0AVG"  extinfo="_POAM"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季平均值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                        outfileidentify="0AVG"  extinfo="_POAQ"  aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年平均值合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                        argument="Prd=VGT,SubPrd=NDVI,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                        outfileidentify="0AVG"  extinfo="_POAY"  aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="差值计算" identify="CHAZ" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="差值计算" identify="CHAZ" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+            <Band identify="NdviCH1" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000"  fromarg="beijianshu"/>
+            <Band identify="NdviCH2" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" fromarg="jianshu"/>
+          </Bands>
+          <Arguments>
+            <Argument name="mainfiles" description="NDVI文件(被减数)"
+                                        refdatatype="file" refidentify="NDVI"
+                                        reffilter="Ndvi数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                                        fileprovider="ContextEnvironment:NDVI"
+                                        ismultiselect="false"></Argument>
+            <Argument name="jianshu" description="NDVI文件(减数)"
+                                       refdatatype="file" refidentify="NDVI"
+                                       reffilter="Ndvi数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                                       fileprovider="ContextEnvironment:NDVI"
+                                       ismultiselect="false"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="-9999,30001" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="30002,30005" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="距平计算" identify="ANMI" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="距平计算" identify="ANMI" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="NdviCH" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000"  fromarg="NDVIFile"/>
+            <Band identify="NdviAvgCH" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" fromarg="NDVIAvgFile"/>
+          </Bands>
+          <Arguments>
+            <Argument name="NDVIFile" description="植被指数"
+                                       refdatatype="file" refidentify="NDVI"
+                                       reffilter="Ndvi数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                                       fileprovider="ContextEnvironment:NDVI"
+                                       ismultiselect="false"></Argument>
+            <Argument name="NDVIAvgFile" description="植被指数年均值"
+                                     refdatatype="file" refidentify="0AVG"
+                                     reffilter="Ndvi年均值数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                                     fileprovider="ContextEnvironment:0AVG"
+                                     ismultiselect="false"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="-9999,30001" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="30002,30005" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="面积统计" identify="VTAT" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="VTAT" satellite="FY3A,FY3B,EOST,EOSA,EOS,NA16,NA17,NA18" sensor="VIRR,VIRRX,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="植被指数文件"
+                              refdatatype="file" refidentify="NDVI"
+                              reffilter="栅格数据文件(*.dat,*.ldf,*.ld3)|*.dat;*.ldf;*.ld3|所有文件(*.*)|*.*"
+                              ismultiselect="false" />
+            <Argument name="resultZoom" description="放大倍数" datatype="UInt16" defaultvalue="1000" />
+            <Argument name="NDVIRegion" description="植被指数范围"
+                              editoruiprovider="GeoDo.RSS.MIF.Prds.VGT.dll:GeoDo.RSS.MIF.Prds.VGT.UCRegionNdvi">
+              <DefaultValue>
+                <Segements>
+                  <Segement min="0" max ="0.2"/>
+                  <Segement min="0.2" max ="0.4"/>
+                  <Segement min="0.4" max ="0.6"/>
+                  <Segement min="0.6" max ="0.8"/>
+                  <Segement min="0.8" max ="1"/>
+                </Segements>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="NDVI统计" fileprovider="ContextEnvironment:NDVI"
+                        outfileidentify="NCBP" aoiprovider="省级行政区划"/>
+        <Instance name="RVI统计" fileprovider="ContextEnvironment:0RVI"
+                        outfileidentify="RCBP" aoiprovider="省级行政区划"/>
+        <Instance name="DVI统计" fileprovider="ContextEnvironment:0DVI"
+                       outfileidentify="DCBP" aoiprovider="省级行政区划"/>
+        <Instance name="EVI统计" fileprovider="ContextEnvironment:0EVI"
+                       outfileidentify="ECBP" aoiprovider="省级行政区划"/>
+        <Instance name="植被状态指数统计" fileprovider="ContextEnvironment:0VCI"
+                       outfileidentify="VCBP" aoiprovider="省级行政区划"/>
+        <Instance name="植被指数差值统计" fileprovider="ContextEnvironment:CHAZ"
+                       outfileidentify="CCBP" aoiprovider="省级行政区划"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA,NA16,NA17,NA18" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件"
+                               refdatatype="file" refidentify="NDVI"
+                               reffilter="植被指数数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="NVII"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="植被指数图模版"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="植被指数NDVI专题图" fileprovider="ContextEnvironment:NDVI"
+                        outfileidentify="NVII" layoutname="植被指数NDVI"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数RVI专题图" fileprovider="ContextEnvironment:0RVI"
+                        outfileidentify="RVII" layoutname="植被指数RVI"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数DVI专题图" fileprovider="ContextEnvironment:0DVI"
+                       outfileidentify="DVII" layoutname="植被指数DVI"
+                       aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数EVI专题图" fileprovider="ContextEnvironment:0EVI"
+                      outfileidentify="EVII" layoutname="植被指数EVI"
+                      aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被状态指数专题图" fileprovider="ContextEnvironment:0VCI"
+                        outfileidentify="VCII" layoutname="植被状态指数图"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数差值专题图" fileprovider="ContextEnvironment:CHAZ"
+                        outfileidentify="ZTUI" layoutname="植被指数差值图"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数距平专题图" fileprovider="ContextEnvironment:ANMI"
+                        outfileidentify="PTUI" layoutname="植被指数距平图"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="OMCS" layoutname="植被原始分辨率多通道合成图" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+
+        <Instance name="植被指数NDVI专题图" fileprovider="ContextEnvironment:NDVI"
+                        outfileidentify="ONVI" layoutname="植被指数NDVI"  isoriginal="true"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数RVI专题图" fileprovider="ContextEnvironment:0RVI"
+                        outfileidentify="ORVI" layoutname="植被指数RVI"  isoriginal="true"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数DVI专题图" fileprovider="ContextEnvironment:0DVI"
+                       outfileidentify="ODVI" layoutname="植被指数DVI"  isoriginal="true"
+                       aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数EVI专题图" fileprovider="ContextEnvironment:0EVI"
+                      outfileidentify="OEVI" layoutname="植被指数EVI"  isoriginal="true"
+                      aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被状态指数专题图" fileprovider="ContextEnvironment:0VCI"
+                        outfileidentify="OVCI" layoutname="植被状态指数图"  isoriginal="true"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数差值专题图" fileprovider="ContextEnvironment:CHAZ"
+                        outfileidentify="OZTU" layoutname="植被指数差值图"  isoriginal="true"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="植被指数距平专题图" fileprovider="ContextEnvironment:ANMI"
+                        outfileidentify="OPTU" layoutname="植被指数距平图"  isoriginal="true"
+                        aoiprovider="SystemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="周期计算" identify="CYCA" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="周期计算" identify="CYCAAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <!--<DefaultValue>
+                      <Path value="SystemData\ndvi_0901.ldf" />
+                    </DefaultValue>-->
+
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="日合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                 argument="Prd=VGT,SubPrd=DBLV,Days=1,NaturalDays=false,Format=dat"
+                 outfileidentify="CYCA" extinfo="_POAD" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="周合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                 argument="Prd=VGT,SubPrd=CYCA,Days=7,NaturalDays=false,Format=dat,BaseOn=_POAD"
+                 outfileidentify="CYCA" extinfo="_POSD" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="旬合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=VGT,SubPrd=CYCA,Days=10,NaturalDays=false,Format=dat,BaseOn=_POSD"
+                  outfileidentify="CYCA" extinfo="_POTD" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=VGT,SubPrd=CYCA,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="CYCA" extinfo="_POAM" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=VGT,SubPrd=CYCA,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="CYCA" extinfo="_POAQ" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=VGT,SubPrd=CYCA,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="CYCA" extinfo="_POAY" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+
+    </SubProduct>
+    <SubProduct name="平均值统计" identify="AVGS" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="平均值统计" identify="AVGAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA,NA16,NA17,NA18" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="植被指数文件"
+                               refdatatype="file" refidentify="NDVI"
+                               reffilter="植被指数数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" />
+            <Argument name="ValidMin" description="有效值最小值" datatype="Int16" defaultvalue="0"/>
+            <Argument name="ValidMax" description="有效值最大值" datatype="Int16" defaultvalue="10000"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="AVGS"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="LAI计算" identify="0LAI" isdisplaypanel="true" isneedcurrentraster="FALSE" isuseaoitemplate="false" aoitemplates="vector:海陆模版" >
+      <Algorithms>
+        <Algorithm name="LAI(轨道数据)" identify="LAISWIR" satellite="FY3A,FY3B,FY3C" sensor="MERSI" customidentify="">
+          <Bands>
+            <!--<Band identify="Red" bandno="3" wavelength="0.65" centerwavenum="-1" zoom="10" defaultvalue="1"/>
+            <Band identify="NearInfrared" bandno="4" wavelength="0.85" centerwavenum="-1" zoom="10" defaultvalue="2"/>
+            <Band identify="MiddInfrared" bandno="6" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" bandno="4" wavelength="11" centerwavenum="-1" zoom="10"/>-->
+          </Bands>
+          <Arguments>
+            <Argument name="IOFilesArguments" description="输入文件参数" editoruiprovider="GeoDo.RSS.MIF.Prds.VGT.dll:GeoDo.RSS.MIF.Prds.VGT.UCLAIFilesSelector"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="LAI(投影数据)" identify="LAIPrj" satellite="FY3A,FY3B,FY3C" sensor="MERSI" customidentify="">
+          <Bands>
+            <Band identify="Red" bandno="3"  wavelength="0.65" centerwavenum="-1" zoom="1000" defaultvalue="3" />
+            <Band identify="NearInfrared" bandno="4"  wavelength="0.86" centerwavenum="-1" zoom="1000" defaultvalue="4" />
+            <Band identify="SWInfrared"  bandno="6"  wavelength="1.6" centerwavenum="-1" zoom="1000" defaultvalue="6"/>
+          </Bands>
+          <Arguments>
+            <!--<Argument name="AOITemplate" description="感兴趣区域"
+                    editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucAOITemplateArgEditorUI">
+              <DefaultValue>
+                <Value>vector:海陆模版</Value>
+              </DefaultValue>
+            </Argument>-->
+            <Argument name="IOFilesArguments" description="输入文件参数" editoruiprovider="GeoDo.RSS.MIF.Prds.VGT.dll:GeoDo.RSS.MIF.Prds.VGT.UCLAIPrjFilesSelector"/>
+            <!--<Argument name="resultZoom" description="输出LAI放大倍数" datatype="UInt16" defaultvalue="100" />-->
+            <!--<Argument name="RasterFile" description="局地文件选择" fileprovider="ContextEnvironment:CurrentRasterFile"
+                      editoruiprovider="GeoDo.RSS.MIF.UI.dll:GeoDo.RSS.MIF.UI.ucMultiFileSelectArgEditorUI" refdatatype="file"
+                      refidentify="CurrentRasterFile" reffilter="Ndvi数据文件(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*">
+            </Argument>
+            <Argument name="isFilterCloudy" description="是否过滤云" datatype="bool" defaultvalue="true"/>-->
+            <!--<Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="-9999" visible ="false"/>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>
+              </DefaultValue>
+            </Argument>-->
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+  </SubProducts>
+</Product>

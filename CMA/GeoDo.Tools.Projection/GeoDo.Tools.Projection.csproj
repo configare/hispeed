@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFF245BC-382C-4FC9-B646-C3D85D66DBD9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.Tools.Projection</RootNamespace>
+    <AssemblyName>GeoDo.Tools.Projection</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.FileProject">
+      <HintPath>..\RefDLL\Project\GeoDo.FileProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project">
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.ProjectDefine">
+      <HintPath>..\RefDLL\Project\GeoDo.ProjectDefine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject">
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.BlockOper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\BlockOper\GeoDo.RSS.BlockOper.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.LDF, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.LDF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Execute.cs" />
+    <Compile Include="FileMateData.cs" />
+    <Compile Include="GenericFilename.cs" />
+    <Compile Include="Args\InputArg.cs" />
+    <Compile Include="Mosaic\MosaicOutputArg.cs" />
+    <Compile Include="Mosaic\Mosaic.cs" />
+    <Compile Include="Mosaic\MosaicInputArg.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Args\OutputArg.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NA16_AVHRR_HRPT_L1_ORB_MLT_NUL_20130117_0017_1100M_PJ.1BD.xml" />
+    <Content Include="Testprj.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="投影输入.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="投影输出.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="拼接镶嵌输出.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.Tools\GeoDo.Tools.csproj">
+      <Project>{E2A8E987-7BCE-4114-BC7B-A4282326DA04}</Project>
+      <Name>GeoDo.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

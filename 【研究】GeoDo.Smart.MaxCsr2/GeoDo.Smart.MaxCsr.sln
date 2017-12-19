@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.Smart.MaxCsr2", "GeoDo.Smart.MaxCsr2.csproj", "{4F062C62-21C7-432E-BEDA-198FC7A34C19}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://218.240.142.98:8080/tfs/smart_w520_20120716
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GeoDo.Smart.MaxCsr2.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F062C62-21C7-432E-BEDA-198FC7A34C19}.Debug|x86.ActiveCfg = Debug|x86
+		{4F062C62-21C7-432E-BEDA-198FC7A34C19}.Debug|x86.Build.0 = Debug|x86
+		{4F062C62-21C7-432E-BEDA-198FC7A34C19}.Release|x86.ActiveCfg = Release|x86
+		{4F062C62-21C7-432E-BEDA-198FC7A34C19}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

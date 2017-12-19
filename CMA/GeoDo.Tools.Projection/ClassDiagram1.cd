@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="GeoDo.Tools.Projection.InputArg">
+    <Position X="3.25" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAMIAAYACAgAAwEAAKAgECBAAkQAAAAACKAAM=</HashCode>
+      <FileName>Args\InputArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.OutputArg">
+    <Position X="6" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAgAAAAAQAAAAAAEAEgAABAAAFIAAIDgBAAgAAABAA=</HashCode>
+      <FileName>Args\OutputArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.OutFileArg">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAYACAAAAACABAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Args\OutputArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.Execute">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAIAAAAQAAAAUAAAQACEBAAEAAAAACAQQAAAA=</HashCode>
+      <FileName>Execute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.FileMateData">
+    <Position X="11.5" Y="2.75" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQAAAAAAEAAgAAAAAABAAAABgAAAAAAAAAA=</HashCode>
+      <FileName>FileMateData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.GenericFilename">
+    <Position X="11" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAgAAQAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>GenericFilename.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.Mosaic">
+    <Position X="0.5" Y="4.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAEAAQAAAAAAAAAIAAAAAAAAAAQAAABAAEAAA=</HashCode>
+      <FileName>Mosaic\Mosaic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.MosaicInputArg">
+    <Position X="11.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Mosaic\MosaicInputArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.MosaicOutputArg">
+    <Position X="8.75" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAEAEgAAAAAAFIAAIBgBAAgAAABAA=</HashCode>
+      <FileName>Mosaic\MosaicOutputArg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.Tools.Projection.Program">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

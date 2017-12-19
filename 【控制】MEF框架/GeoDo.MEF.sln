@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.MEF", "GeoDo.MEF\GeoDo.MEF.csproj", "{EFA589A3-AC3E-4B5A-9425-424602FC438F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{26B87D90-B905-47A4-A15E-72DA2B8F047C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://agileserver:8080/tfs/mas%e4%ba%8c%e6%9c%9f%e5%b7%a5%e7%a8%8b
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GeoDo.MEF\\GeoDo.MEF.csproj
+		SccProjectName1 = GeoDo.MEF
+		SccLocalPath1 = GeoDo.MEF
+		SccProjectUniqueName2 = test\\test.csproj
+		SccProjectName2 = test
+		SccLocalPath2 = test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EFA589A3-AC3E-4B5A-9425-424602FC438F}.Release|x86.ActiveCfg = Release|Any CPU
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Debug|x86.ActiveCfg = Debug|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Debug|x86.Build.0 = Debug|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Release|Any CPU.ActiveCfg = Release|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Release|x86.ActiveCfg = Release|x86
+		{26B87D90-B905-47A4-A15E-72DA2B8F047C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CanvasSetting name="GDIPlus">
+  <TileSetting tilesize="512" sampleratio="2"/>
+  <RenderSetting backcolor="0,0,0" enabledparallel="false" enableddummymode="false">    
+  </RenderSetting>
+  <ZoomSetting zoomfactor="0.01" zoomminpercent="0.01" zoommaxpercent="100">
+    <ZoomStepByScales>
+      <ZoomStepByScale minscale="0" maxscale="0.1" steps="1"/>
+      <ZoomStepByScale minscale="0.1" maxscale="0.2" steps="2"/>
+      <ZoomStepByScale minscale="0.2" maxscale="0.6" steps="4"/>
+      <ZoomStepByScale minscale="0.6" maxscale="2" steps="6"/>
+      <ZoomStepByScale minscale="2" maxscale="6" steps="8"/>
+      <ZoomStepByScale minscale="6" maxscale="10" steps="12"/>
+      <ZoomStepByScale minscale="10" maxscale="50" steps="20"/>
+      <ZoomStepByScale minscale="50" maxscale="10000" steps="50"/>
+    </ZoomStepByScales>
+  </ZoomSetting>
+</CanvasSetting>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Map name="">
+  <MapArguments backcolor="0,255,255,255" smoothingmode="Default" spatialreference="">
+    <Extent MinX="117.44" MinY="36.44" MaxX="122.56" MaxY="41.56" />
+  </MapArguments>
+  <ConflictDefinitionSymbol>
+    <ConflictDefinition gridsize="20,20" enabled="True" />
+  </ConflictDefinitionSymbol>
+  <ConflictDefinitionLabel>
+    <ConflictDefinition gridsize="60,16" enabled="True" />
+  </ConflictDefinitionLabel>
+  <Author author="" beginmaketime="0001-01-01 00:00:00" endmaketime="0001-01-01 00:00:00" />
+  <Version year="0" scaleofmapping="0" publisher="" source="" description="" />
+  <Layers>
+    <Layer name="ICE_ISOT_FY3A_VIRR_1000M_20110214032000" visible="True" enabledisplayLevel="True" twostepflag="False">
+      <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      <LabelDef source="Label" enabled="False" field="" fields="CONTOUR" ruler="Center" invalidvalue="" autotonewline="False" charcountperline="6">
+        <Font font="Microsoft Sans Serif,9,Regular" color="255,0,0,0" maskcolor="0,0,0,0" />
+        <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      </LabelDef>
+      <Renderer type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.UniqueFeatureRenderer" field="CONTOUR">
+        <UniqueSymbols UniqueValues="2530,2550,2570,2590,2610,2630,2650,2670,2690,2710,2730,2750">
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,63,28,119" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,196,167,110" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,90,240,25" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,163,7,63" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,81,252,173" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,166,72,156" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,179,178,242" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,23,41,97" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,203,43,202" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,78,209,226" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,141,182,178" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+          <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,3,252,205" width="1" startcap="Flat" endcap="Flat" linejoin="Miter" />
+        </UniqueSymbols>
+      </Renderer>
+      <RotateField rotatefield="" angleoffset="0" fields="CONTOUR" />
+      <FeatureClass>
+        <GridDef spanx="360" spany="180" gridsonetimes="4" />
+        <MemoryLimiter type="None" maxcount="0" maxmemory="0" />
+        <DataSource type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.FileDataSource" name="ICE_ISOT_FY3A_VIRR_1000M_20110214032000" fileurl=".\ICE_ISOT_FY3A_VIRR_1000M_20110214032000.SHP">
+          <ArgsOfLeveling enabled="False" gridsize="80" beginlevel="0" />
+        </DataSource>
+      </FeatureClass>
+    </Layer>
+  </Layers>
+</Map>

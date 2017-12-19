@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2Top,PageViewItemSelectedFill,StripViewItemForeColor,StripViewItemSelectedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.BorderPadding" Value="0, 0, 0, -1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.FillPadding" Value="0, 0, 0, -2" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewItemForeColor,OuterInnerEmptyBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="(none)" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.BorderPadding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.FillPadding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewSelectedBorder,RoundRectShape2,StripViewContentAreaFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewItemsLayoutTop">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2Top,PageViewItemHoverFill,PageViewItemHoverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.BorderPadding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.FillPadding" Value="0, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2Top,PageViewItemSelectedFill,StripViewItemHoverSelectedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.FillPadding" Value="0, 0, 0, -2" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElementBase.BorderPadding" Value="0, 0, 0, -2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OuterInnerEmptyBorder,RightArrow">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewRightScrollButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OuterInnerEmptyBorder,DownArrow">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemListButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewItemsLayoutRight">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer.RightAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewItemsLayoutTop,StripViewItemsLayoutBottom">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer.BottomAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewItemsLayoutLeft">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemContainer.LeftAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewFooter" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonHover,StripButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewLeftScrollButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonPressedBorder,StripButtonPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewLeftScrollButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OuterInnerEmptyBorder,LeftArrow">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewLeftScrollButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OuterInnerEmptyBorder,CloseButton">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="LeftArrowDisabled">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewLeftScrollButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RightArrowDisabled">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewRightScrollButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemListButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewCloseButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonHover,StripButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewRightScrollButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonPressedBorder,StripButtonPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewRightScrollButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonHover,StripButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemListButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonPressedBorder,StripButtonPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewItemListButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonHover,StripButtonHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewCloseButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripButtonPressedBorder,StripButtonPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StripViewCloseButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewFill,StripViewPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBHQXdBQUFBQUFBRFlBQUFBb0FBQUFEQUFBQUE4QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHp5Ni84QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvUExyL3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRDg4dXYvQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQenk2LzhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvdjcrS3YvLy95RCsvdjRIQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9rTCsvdjVUL3Y3K1UvNysva0wvLy84Zy92NytCd0FBQUFBQUFBQUFBQUFBQVA3Ky9nZi8vLzhnL3Y3K1F2NysvbE51TkJIL1lpNFAvLzcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBL3Y3K0IvLy8veUQrL3Y1Qy92NytVM282RS85dU5CSC9ZaTRQLzFRb0RmLysvdjVUL3Y3K1F2Ly8veUQrL3Y0SC8vLy9JUDcrL2tMKy92NVRoRDhVLzNvNkUvOXVOQkgvWWk0UC8xUW9EZjlJSWd2Ly92NytVLzcrL2tMLy8vOGcvdjcrS3Y3Ky9sT0xRaFgvaEQ4VS8zbzZFLzl1TkJIL1lpNFAvMVFvRGY5SUlndi9QaDBLLy83Ky9sUCsvdjRxLy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2xOdU5CSC9ZaTRQLy83Ky9sUCsvdjVUL3Y3K1UvNysva0wvLy84Zy92NytCLy8vL3lEKy92NHEvdjcrS3Y3Ky9sTnVOQkgvWWk0UC8vNysvbFArL3Y0cS92NytLdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBL3Y3K0t2NysvbE51TkJIL1lpNFAvLzcrL2xQKy92NHFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K0t2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD40PC9MZWZ0PjxSaWdodD40PC9SaWdodD48VG9wPjExPC9Ub3A+PC9NYXJnaW5zPjxQYWRkaW5nPjxBbGw+LTE8L0FsbD48Qm90dG9tPjE8L0JvdHRvbT48TGVmdD4wPC9MZWZ0PjxSaWdodD4wPC9SaWdodD48VG9wPjU8L1RvcD48L1BhZGRpbmc+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewPadding,StripViewFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBHQXdBQUFBQUFBRFlBQUFBb0FBQUFEd0FBQUF3QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS8vLy9JUDcrL2djQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvLy8vSVA3Ky9rTCsvdjVUL3Y3K1F2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytLdjcrL2xPTFFoWC8vdjcrVS83Ky9rTC8vLzhnL3Y3K0J3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K0t2NysvbE9FUHhUL2hEOFUvLzcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUFBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9sTjZPaFAvZWpvVC8zbzZFLy8rL3Y1VC92NytRdi8vL3lEODh1di9BQUFBQUFBQUFBQUFBQUFBL3Y3K0t2NysvbE51TkJIL2JqUVIvMjQwRWY5dU5CSC9ialFSLzI0MEVmOXVOQkgvL3Y3K1UvNysvaW9BQUFBQS9QTHIvd0FBQUFBQUFBQUEvdjcrS3Y3Ky9sTmlMZy8vWWk0UC8ySXVELzlpTGcvL1lpNFAvMkl1RC85aUxnLy8vdjcrVS83Ky9pb0FBQUFBQUFBQUFQenk2LzhBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9sTlVLQTMvVkNnTi8xUW9EZi8rL3Y1VC92NytRdi8vL3lBQUFBQUFBQUFBQUFBQUFBRDg4dXYvL3Y3K0IvLy8veUQrL3Y0cS92NytLdjcrL2xOSUlndi9TQ0lMLy83Ky9sUCsvdjVDLy8vL0lQNysvZ2NBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0t2NysvbE0rSFFyLy92NytVLzcrL2tMLy8vOGcvdjcrQndBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvLy8vSVA3Ky9rTCsvdjVUL3Y3K1F2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjQ8L0JvdHRvbT48TGVmdD4xMTwvTGVmdD48UmlnaHQ+MDwvUmlnaHQ+PFRvcD40PC9Ub3A+PC9NYXJnaW5zPjxQYWRkaW5nPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD41PC9MZWZ0PjxSaWdodD4xPC9SaWdodD48VG9wPjA8L1RvcD48L1BhZGRpbmc+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripElement.LeftAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewPadding,StripViewFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBHQXdBQUFBQUFBRFlBQUFBb0FBQUFEd0FBQUF3QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDcrL2dmLy8vOGcvdjcrS3YvLy95RCsvdjRIQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y1Qy92NytVLzcrL2tMLy8vOGdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9rTCsvdjVUUGgwSy8vNysvbFArL3Y0cUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQNysvZ2YvLy84Zy92NytRdjcrL2xOSUlndi9TQ0lMLy83Ky9sUCsvdjRxL3Y3K0t2Ly8veUQrL3Y0SC9QTHIvd0FBQUFBQUFBQUFBQUFBQVAvLy95RCsvdjVDL3Y3K1UxUW9EZjlVS0EzL1ZDZ04vLzcrL2xQKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFQenk2LzhBQUFBQUFBQUFBUDcrL2lyKy92NVRZaTRQLzJJdUQvOWlMZy8vWWk0UC8ySXVELzlpTGcvL1lpNFAvLzcrL2xQKy92NHFBQUFBQUFBQUFBRDg4dXYvQUFBQUFQNysvaXIrL3Y1VGJqUVIvMjQwRWY5dU5CSC9ialFSLzI0MEVmOXVOQkgvYmpRUi8vNysvbFArL3Y0cUFBQUFBQUFBQUFBQUFBQUEvUExyLy8vLy95RCsvdjVDL3Y3K1UzbzZFLzk2T2hQL2Vqb1QvLzcrL2xQKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDcrL2dmLy8vOGcvdjcrUXY3Ky9sT0VQeFQvaEQ4VS8vNysvbFArL3Y0cS92NytLdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQrL3Y0SC8vLy9JUDcrL2tMKy92NVRpMElWLy83Ky9sUCsvdjRxQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y1Qy92NytVLzcrL2tMLy8vOGdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVA3Ky9nZi8vLzhnL3Y3K0t2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjQ8L0JvdHRvbT48TGVmdD4wPC9MZWZ0PjxSaWdodD4xMTwvUmlnaHQ+PFRvcD40PC9Ub3A+PC9NYXJnaW5zPjxQYWRkaW5nPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD4xPC9MZWZ0PjxSaWdodD41PC9SaWdodD48VG9wPjA8L1RvcD48L1BhZGRpbmc+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripElement.RightAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewPadding,StripViewFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBHQXdBQUFBQUFBRFlBQUFBb0FBQUFEQUFBQUE4QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS92NytLdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvdjcrS3Y3Ky9sTmlMZy8vYmpRUi8vNysvbFArL3Y0cUFBQUFBQUFBQUFBQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K0t2NysvbE5pTGcvL2JqUVIvLzcrL2xQKy92NHEvdjcrS3YvLy95RCsvdjRILy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2xOaUxnLy9ialFSLy83Ky9sUCsvdjVUL3Y3K1UvNysva0wvLy84Zy92NytLdjcrL2xNK0hRci9TQ0lMLzFRb0RmOWlMZy8vYmpRUi8zbzZFLytFUHhUL2kwSVYvLzcrL2xQKy92NHEvLy8vSVA3Ky9rTCsvdjVUU0NJTC8xUW9EZjlpTGcvL2JqUVIvM282RS8rRVB4VC8vdjcrVS83Ky9rTC8vLzhnL3Y3K0IvLy8veUQrL3Y1Qy92NytVMVFvRGY5aUxnLy9ialFSLzNvNkUvLysvdjVUL3Y3K1F2Ly8veUQrL3Y0SEFBQUFBUDcrL2dmLy8vOGcvdjcrUXY3Ky9sTmlMZy8vYmpRUi8vNysvbFArL3Y1Qy8vLy9JUDcrL2djQUFBQUFBQUFBQUFBQUFBRCsvdjRILy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrQndBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvdjcrS3YvLy95RCsvdjRIQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQenk2LzhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS9QTHIvd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEODh1di9BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVB6eTYvOEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjExPC9Cb3R0b20+PExlZnQ+NDwvTGVmdD48UmlnaHQ+NDwvUmlnaHQ+PFRvcD4wPC9Ub3A+PC9NYXJnaW5zPjxQYWRkaW5nPjxBbGw+LTE8L0FsbD48Qm90dG9tPjU8L0JvdHRvbT48TGVmdD4wPC9MZWZ0PjxSaWdodD4wPC9SaWdodD48VG9wPjE8L1RvcD48L1BhZGRpbmc+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripElement.BottomAlign" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StripViewItemCloseButton">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PageViewItemCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="4, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewItemButtonsPanel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PageViewItemHoverFill,PageViewItemHoverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripNewItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OuterInnerEmptyBorder,RoundRectShape2Top,StripViewNewItemGlyph">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="14, 14" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStripNewItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPageView" ElementType="Telerik.WinControls.UI.RadPageViewStripElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadPageViewStripElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

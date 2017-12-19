@@ -1,0 +1,18 @@
+﻿文件标识:char[]{"GEODOCONTOUR"}  //12个字符,Unicode编码
+版本:byte //1个字节,默认为:0
+等值线个数:int32   //ContourCount
+坐标类型:byte[1]   //1个字节
+         0:栅格坐标,1:地理坐标(等经纬度投影)，2:投影坐标
+坐标范围:float[4]  //MinX,MinY,MaxX,MaxY ,4*4个字节
+                   //栅格坐标左上角为(0,0)，其他坐标左下角为(0,0)
+空间参考长度:int32 //SpatialRefLen,4个字节  //注意长度是字符个数而非字节数
+空间参考（wkt字符串）:char[SpatialRefLen]
+                   //编码:Unicode
+等值线等值表:double[ContourCount]
+等值线索引表:long[ContourCount]  //记录从文件头到某个等值线头的偏移
+等值线:
+      float[4]     //最小外部矩形:MinX,MinY,MaxX,MaxY
+      int          //ClassIndex等值线类别序号       ,4个字节
+	  int          //PointCount,点数                ,4个字节
+	  PointF[PointCount]     	  
+

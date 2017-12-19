@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="SNW" subIdentify="DBLV" colortablename="SNW" description="判识结果" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="255,128,64" maxValue="2" minValue="1" labeltext="积雪" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="DBLV" colortablename="SNWDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="123, 252, 252" maxValue="2" minValue="1" labeltext="积雪" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="DBLV" colortablename="SNWNMCS" description="网络合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="100" minValue="1" labeltext="积雪"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="FREQ"  colortablename="SNWFREQ" description="积雪频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255,10,0" maxValue="" minValue="10" labeltext=">10"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="FRDS"  colortablename="SNWFRDS" description="积雪天数统计图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255,10,0" maxValue="9998" minValue="10" labeltext=">10"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="COMP" colortablename="SNWCOMP" description="积雪对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="123, 252, 252" maxValue="2" minValue="1" labeltext="持续雪" />
+        <Color color="255,0,0" maxValue="5" minValue="4" labeltext="新生雪"/>
+        <Color color="255,255,0" maxValue="6" minValue="5" labeltext="融化雪"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="MAXI" colortablename="SNWMAXI" description="积雪日最大合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="100" minValue="1" labeltext="积雪"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="0SSD" colortablename="SNW0SSD" description="积雪深度" labeltext="">
+      <Colors>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="206,255,207" maxValue="5.00001" minValue="0.00001" labeltext="1" />
+        <Color color="112,255,255" maxValue="10" minValue="5.00001" labeltext="5" />
+        <Color color="0,209,202" maxValue="20" minValue="10" labeltext="10" />
+        <Color color="0,155,154" maxValue="30" minValue="20" labeltext="20" />
+        <Color color="86,79,237" maxValue="40" minValue="30" labeltext="30" />
+        <Color color="3,3,254" maxValue="" minValue="40" labeltext="40" />
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

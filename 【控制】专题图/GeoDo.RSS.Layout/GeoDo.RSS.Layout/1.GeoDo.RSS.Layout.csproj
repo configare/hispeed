@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E9173D6-20E7-4AF2-A674-2AD80BB0AC31}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.Layout</RootNamespace>
+    <AssemblyName>GeoDo.RSS.Layout</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BitmapType.cs" />
+    <Compile Include="ControlTool\IControlTool.cs" />
+    <Compile Include="Edit\enumEditType.cs" />
+    <Compile Include="Edit\IInteractiveEditable.cs" />
+    <Compile Include="Edit\ISelectedEditBox.cs" />
+    <Compile Include="Edit\ISelectedEditBoxManager.cs" />
+    <Compile Include="Element\IDrawingElement.cs" />
+    <Compile Include="Element\ISingleDrawingElement.cs" />
+    <Compile Include="Element\IRasterLegend.cs" />
+    <Compile Include="Element\IRotateableElement.cs" />
+    <Compile Include="Element\ISizableElementGroup.cs" />
+    <Compile Include="Element\LegendItem.cs" />
+    <Compile Include="Element\RasterLegendElement.cs" />
+    <Compile Include="Element\SizableElementGroup.cs" />
+    <Compile Include="ImageGeter\ImageGetter.cs" />
+    <Compile Include="LayoutHost\enumElementAligment.cs" />
+    <Compile Include="LayoutHost\IElementsEditOperator.cs" />
+    <Compile Include="LayoutRuntime\ILayoutCoordinateTransform.cs" />
+    <Compile Include="LayoutRuntime\LayoutRuntime.cs" />
+    <Compile Include="Layout\enumLayoutUnit.cs" />
+    <Compile Include="Layout\ILayout.cs" />
+    <Compile Include="Layout\Layout.cs" />
+    <Compile Include="Element\Element.cs" />
+    <Compile Include="Element\ElementGroup.cs" />
+    <Compile Include="Event\CanvasEventArgs.cs" />
+    <Compile Include="Event\enumCanvasEventType.cs" />
+    <Compile Include="Event\ICanvasEvent.cs" />
+    <Compile Include="LayoutHost\ILayoutHost.cs" />
+    <Compile Include="LayoutRuntime\ILayoutRuntime.cs" />
+    <Compile Include="Element\IElementGroup.cs" />
+    <Compile Include="Element\IDataFrame.cs" />
+    <Compile Include="Element\IElement.cs" />
+    <Compile Include="Element\IBorder.cs" />
+    <Compile Include="Persist\IPersitable.cs" />
+    <Compile Include="Persist\LayoutFromFile.cs" />
+    <Compile Include="Persist\LayoutToFile.cs" />
+    <Compile Include="Persist\PersistAttribute.cs" />
+    <Compile Include="Render\DrawArgs.cs" />
+    <Compile Include="Render\IDrawArgs.cs" />
+    <Compile Include="Render\IRenderable.cs" />
+    <Compile Include="Element\ISizableElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Element\SizableElement.cs" />
+    <Compile Include="Template\Gxd\GxdEnvelope.cs" />
+    <Compile Include="Template\Gxd\IGxdDataFrame.cs" />
+    <Compile Include="Template\Gxd\IGxdDocument.cs" />
+    <Compile Include="Template\Gxd\IGxdItem.cs" />
+    <Compile Include="Template\Gxd\IGxdRasterItem.cs" />
+    <Compile Include="Template\Gxd\IGxdTemplateHost.cs" />
+    <Compile Include="Template\Gxd\IGxdVectorHost.cs" />
+    <Compile Include="Template\ILayoutTemplate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

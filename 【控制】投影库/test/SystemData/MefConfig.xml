@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartMefConfig>
+  <MefCatalogs>
+    <MefCatalog name="数据驱动">
+      <!--IGeoDataDriver-->
+      <!--<MefCatalogItem assembly="GeoDo.RSS.DF.MWBandProvider.dll"/>-->
+      <MefCatalogItem assembly="GeoDo.RSS.DF.LDF.DLL"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.NOAA.dll"/><!--D1BDDriver、D1A5Driver-->
+      <MefCatalogItem assembly="GeoDo.RSS.DF.MVG.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.MEM.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.dll"/>
+    </MefCatalog>
+    <MefCatalog name="波段提供者">
+      <!--IBandProvider-->
+      <MefCatalogItem assembly="GeoDo.RSS.DF.MWBandProvider.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.H4BandPrd.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.H5BandPrd.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.NOAA.BandPrd.dll"/>
+    </MefCatalog>
+    <MefCatalog name="图像处理">
+      <MefCatalogItem assembly="GeoDo.RSS.CA.dll"/>
+    </MefCatalog>
+    <MefCatalog name="专题制图">
+      <MefCatalogItem assembly="GeoDo.RSS.Layout.Elements.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.Layout.GDIPlus.dll"/>
+    </MefCatalog>
+    <MefCatalog name="投影">
+      <MefCatalogItem assembly="GeoDo.FileProject.dll"/>
+    </MefCatalog>
+    <MefCatalog name="系统窗口">
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Windows.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Python.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Layout.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Theme.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Office.dll"/>
+    </MefCatalog>
+    <MefCatalog name="系统命令">
+      <MefCatalogItem assembly="GeoDo.RSS.Core.UI.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.CanvasViewer.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.ImgPro.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.DataPro.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Windows.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.DataRef.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Layout.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Python.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.GeoVIS.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Theme.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.CMA.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.AddInMgr.dll"/>
+    </MefCatalog>
+    <MefCatalog name="文件支持">
+      <MefCatalogItem assembly="GeoDo.RSS.UI.WinForm.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.CanvasViewer.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.UI.AddIn.Office.dll"/>
+    </MefCatalog>
+    <MefCatalog name="监测分析专题">
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.BAG.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.DRT.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.DST.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.FIR.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.FLD.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.FOG.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.ICE.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.LST.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.SNW.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.UHI.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.MIF.Prds.VGT.dll"/>
+    </MefCatalog>
+  </MefCatalogs>
+</SmartMefConfig>

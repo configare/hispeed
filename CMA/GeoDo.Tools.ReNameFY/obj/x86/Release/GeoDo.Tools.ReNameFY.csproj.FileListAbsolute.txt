@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.ReNameFY.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.ReNameFY.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.ReNameFY.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Tools.ReNameFY\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Tools.ReNameFY\obj\x86\Release\GeoDo.Tools.ReNameFY.exe
+D:\监测分析平台\Code\CMA\GeoDo.Tools.ReNameFY\obj\x86\Release\GeoDo.Tools.ReNameFY.pdb

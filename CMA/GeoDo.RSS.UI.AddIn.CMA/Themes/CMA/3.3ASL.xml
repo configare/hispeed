@@ -1,0 +1,72 @@
+﻿<Product name=" 气溶胶 " group="天气" identify="ASL" image="system:Aerosol.png" uiprovider="GeoDo.RSS.MIF.Prds.ASL.dll:GeoDo.RSS.MIF.Prds.ASL.UITabASL">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="气溶胶厚度栅格数据" identify="U5TI" color="255,255,0" isuseaoitemplate="true" aoitemplates="vector:海陆模版" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="陆地气溶胶反演" identify="LandAlgorithm" satellite="TERRA,AQUA" sensor="MODIS" customidentify="陆地">
+        </Algorithm>
+        <Algorithm name="海洋气溶胶反演" identify="SeaAlgorithm"  satellite="TERRA,AQUA" sensor="MODIS" customidentify="陆地">
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="气溶胶厚度专题图" identify="0IMG"  isneedcurrentraster="true"  isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="TAUIAlgorithm" satellite="TERRA,AQUA" sensor="MODIS" customidentify="">
+          <Arguments>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="U5TT"/>
+            <Argument name="SelectedPrimaryFiles" description="气溶胶厚度栅格数据" refdatatype="file" refidentify="U5TI" reffilter="气溶胶厚度栅格数据(*.DAT)|*.DAT|所有文件(*.*)|*.*"  ismultiselect="false" datatype="float" defaultvalue="ContextEnvironment:U5TI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="气溶胶专题图模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="0.55通道气溶胶厚度专题图" fileprovider="ContextEnvironment:U5TI"
+                  outfileidentify="U5TT" layoutname="气溶胶专题图模板" isoriginal="false"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename="ASLU5TI" autogenerategroup="Ord,Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="面积统计" identify="STAT" isneedcurrentraster="false" isdisplaypanel="true">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="STATAlgorithm" satellite="TERRA,AQUA" sensor="MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="气溶胶厚度栅格数据文件" refdatatype="file" refidentify="U5TI" reffilter="气溶胶厚度栅格数据(*.DAT)|*.DAT|所有文件(*.*)|*.*"  ismultiselect="false" datatype="float" defaultvalue="ContextEnvironment:U5TI"/>
+            <!--<Argument name="AOI" description="AOI模板名称或Int[]" datatype="object"/>
+                  <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="CCAR"/>
+                  <Argument name="resultZoom" description="放大倍数" datatype="UInt16" defaultvalue="1" />-->
+            <Argument name="VTIRegion" description="干旱指数范围"
+                              editoruiprovider="GeoDo.RSS.MIF.Prds.ASL.dll:GeoDo.RSS.MIF.Prds.ASL.UCRegionVti">
+              <DefaultValue>
+                <Segements>
+                  <Segement min="0" max ="0.4"/>
+                  <Segement min="0.4" max ="0.8"/>
+                  <Segement min="0.8" max ="1.2"/>
+                  <Segement min="1.2" max ="1.6"/>
+                  <Segement min="1.6" max ="2"/>
+                </Segements>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:U5TI"
+                  outfileidentify="CCAR"
+                  aoiprovider="当前区域" autogenerategroup="Ord,Dis"/>
+        <Instance name="面积统计({关注区})" fileprovider="ContextEnvironment:U5TI"
+                   outfileidentify="CCCA"
+                   aoiprovider="自定义区域"/>
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:U5TI"
+                  outfileidentify="CLUT"
+                  aoiprovider="土地利用类型" autogenerategroup="Dis"/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:U5TI"
+                  outfileidentify="0CBP"
+                  aoiprovider="省级行政区划" autogenerategroup="Dis"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:U5TI"
+                  outfileidentify="0CCC"
+                  aoiprovider="省市县行政区划" autogenerategroup="Dis"/>
+      </Instances>
+    </SubProduct>
+  </SubProducts>
+</Product>

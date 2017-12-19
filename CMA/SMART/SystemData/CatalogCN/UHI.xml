@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="UHI">
+  <CatalogCN identify="DBLV" cnname="城市热岛结果"/>
+  <CatalogCN identify="MCSI" cnname="城市热岛监测图"/>
+  <CatalogCN identify="OMCS" cnname="城市热岛监测图（原始分辩率）"/>
+  <CatalogCN identify="0SDI" cnname="热岛专题图"/>
+  <CatalogCN identify="CSDI" cnname="自定义热岛专题图"/>
+  <CatalogCN identify="0CLM" cnname="云结果"/>
+</ProductIdentify>

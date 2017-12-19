@@ -1,0 +1,41 @@
+﻿<windowsToolbar:SelectionContainer x:Class="Windows.Toolbar.Controls.Specialized.LinePicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:windowsToolbar="clr-namespace:Windows.Toolbar.Controls"
+    xmlns:windowsToolbarSpecialized="clr-namespace:Windows.Toolbar.Controls.Specialized"
+    Width="180" >
+    
+    <windowsToolbar:SelectionContainer.Resources>
+        <windowsToolbarSpecialized:VisibleWhenZeroConverter x:Key="VisibleWhenZeroConverter" />
+        
+        <windowsToolbarSpecialized:CollapsedWhenZeroConverter x:Key="CollapsedWhenZeroConverter" />
+    </windowsToolbar:SelectionContainer.Resources>
+    
+    <Border BorderBrush="#868686" BorderThickness="1" CornerRadius="3" Background="White">
+    	<StackPanel>
+    		<ListBox x:Name="LinesListBox" SelectionChanged="LinesListBox_SelectionChanged"
+    			ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+    			<ListBox.ItemTemplate>
+    				<DataTemplate>
+    					<StackPanel>
+    						<Grid Height="12">
+    							<Rectangle Height="{Binding Value}" Width="168" Fill="Black" VerticalAlignment="Center" 
+                                    Visibility="{Binding Value, Converter={StaticResource CollapsedWhenZeroConverter}}"/>
+                                
+                                <TextBlock Text="No Line" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                    Visibility="{Binding Value, Converter={StaticResource VisibleWhenZeroConverter}}"/>
+    						</Grid>
+    					</StackPanel>
+    				</DataTemplate>
+    			</ListBox.ItemTemplate>
+				
+    			<windowsToolbarSpecialized:LinePickerItem/>
+    			<windowsToolbarSpecialized:LinePickerItem Value="1"/>
+    			<windowsToolbarSpecialized:LinePickerItem Value="2"/>
+    			<windowsToolbarSpecialized:LinePickerItem Value="4"/>
+    			<windowsToolbarSpecialized:LinePickerItem Value="6"/>
+    			<windowsToolbarSpecialized:LinePickerItem Value="10"/>
+    		</ListBox>            
+    	</StackPanel>
+    </Border>
+</windowsToolbar:SelectionContainer>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="ASL">
+  <CatalogCN identify="U5TT" cnname="气溶胶厚度专题图"/>
+  <CatalogCN identify="U5TI" cnname="气溶胶厚度栅格数据"/>
+  <CatalogCN identify="CCAR" cnname="当前区域面积统计"/>
+  <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+  <CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+  <CatalogCN identify="0CBP" cnname="省界面积统计"/>
+  <CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+</ProductIdentify>

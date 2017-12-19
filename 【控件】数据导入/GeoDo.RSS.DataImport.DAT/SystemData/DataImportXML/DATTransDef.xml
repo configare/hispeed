@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TransDef>
+  <Product name="火情" smartidentify="FIR" fileidentify="FIR">
+    <SubProduct name="火" smartidentify="DBLV" fileidentify="DBLV">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+    <SubProduct name="烟" smartidentify="SMOK" fileidentify="SMOK">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+    <SubProduct name="云" smartidentify="0CLM" fileidentify="CLM">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+    <SubProduct name="过火区" smartidentify="FIRG" fileidentify="FIRG">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+    <SubProduct name="火点强度" smartidentify="0FPG" fileidentify="FPG">
+    </SubProduct>
+  </Product>
+  <Product name="大雾" smartidentify="FOG" fileidentify="FOG">
+    <SubProduct name="大雾" smartidentify="DBLV" fileidentify="DBLV">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+    <SubProduct name="云" smartidentify="0CLM" fileidentify="0CLM">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+  </Product>
+  <Product name="沙尘" smartidentify="DST" fileidentify="DST">
+    <SubProduct name="沙尘" smartidentify="DBLV" fileidentify="DBLV">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+    <SubProduct name="云" smartidentify="0CLM" fileidentify="0CLM">
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+  </Product>
+</TransDef>

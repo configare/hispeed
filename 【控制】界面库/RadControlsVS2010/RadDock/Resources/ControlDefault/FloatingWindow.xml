@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault, Office2007Blue, *">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SplitContainerBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="191, 219, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.UI.OfficeShape|False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RootRadElement.ApplyShapeToControl" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadFormElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="59, 90, 130" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientAngle" Value="90" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|5, False, True, False, True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="176, 203, 239" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormImageBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="176, 203, 239" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormImageBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="204, 216, 232" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormImageBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="59, 90, 130" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="151, 165, 183" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormBorder" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -1, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="MdiControlStrip" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1GBQAAAAAAADYAAAAoAAAAEgAAABIAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//39///9/f///f3///39///9/f///f3///39/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnYp7/52Ke/+dinv/nYp7/52Ke/+dinv/nYp7/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARUVF/0VFRf9FRUX/RUVF/0VFRf9FRUX/RUVF/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAiFJREFUOE+llFtvElEYRefP8keMD76YaOJDU5MChgppLaJQLlMKE66lXFpKaau0VWDkOsDYCHLRbM8+2OFFXpBkJRy+tfccmDkoiniFz0dwxvSNYJYdymFpAPuxjkoLG8EsOxRnrImzxgJqdQrtZoZUbY7c/YrC1wUeefw8ezdHUnj0mWWHLMrdTuAr/kCwPEa0OoZ2vST1aYLM5xVcE87o0WdWFu1Em0hemXBnTRzkTfhLJiLlJdGKiXh1BdeEM3r0mWWHLIqVe3Amh3BnhvCeDuAvGJJwyYB63rcIiTXhjB59Zq0itdjCTmKI3bSBdyd9fMj3JIFCVwRXcE0428/2pS+z3JFdfL//LWKH/LHD+abY0UBeYV/syHfalfgLHQSLbYuAWBPO6LnSfZm17porWsPTj108D7bxSv2G1+LhJHZNx5tE08KhNUE4o0ef2b9FOjzxOzw77OGl2sVWvANHcokr24b7pGPBNeGMHn1meSqUXXFVX7qOF0cGtjQDjoyBt+KO2Gy2tXBOjz6z7Fhb9GQ7gnX8s8iT0HFU6mA7ZcKZM+E5+w7v5QOms/lavJUH6dFnlh3KXqqFzM0ILnFE9i7GeH89QaD2UxL6MoVan0mOGzOE76cSzujRZ5YdykGmhYu6KLhieIaQOLARcRBJVF9Aa/+SpLu/EW8tJGpjLryZ9Jllh6JVh/LNbXexEcyyQ/4nJaoj+HLiQdsAZtnxB65iP4yIGtcIAAAAAElFTkSuQmCC" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAehJREFUOE+llO+O0kAUxefleCrfwFdQTI3ZGDXxgx/8tkj3T1DWuIoaZDHErWyhlRba4rLQTo9z7ljQaM1mJTkJ03vmd89chiplPu0PEf5HZKjW+winowS6xI3EvWSohy9TbArg+1UpWm+up0vjo7/QwONXKdReZymg5LIUWZj+p1ZrvW3MvY+6GdS9g0xA0XIHYjeqLl2Vno2598Hx0oKuNvWgTUGzVQUmKDOqQM6RSdR0UwEFaWlTrTgvKz5nx0pcU6zRRz/XzqEc7eYgJhKQJGonZh5AmLKD7XT9RJC9zkFiQYzYG5cYhiW82B6Rqo7HrtyQmSNRrI3nJc4COwoB3WnPtyAWaJhlVr+mq+bCZ5wnfZ9N4zlBbmxArUhA78Yag6mWRDQ2Go1asU7fMNSIzJwc19zsOtCt203U6U+QSdRsfUNoEr31Ckn0ZabhL7Rc/TqxTh/9THTfnUHd3Q+2oL5fYBQWOI+sLuYWSgXJ7vvXWGP0E8QQTjuEcl5M4HNGXo6+n2MY5AZm5c12Gse/r1kfTHLZu+dOoZ4cnmPgrxCvSyzM/yvLzU9tbjPFG/231wufs07vdLHG0yMP8k561vHwvHuB/Tc+3N4Uxx9DUfdThJOzWPR6GMua6vQjqbu9AK3TiUB+AFPDpUqPWJm/AAAAAElFTkSuQmCC" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="MinimizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlNameSelector ElementName="MinimizeButtonFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlNameSelector ElementName="MaximizeButtonFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlNameSelector ElementName="CloseButtonFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonFocus" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ButtonBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="176, 203, 239" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TitleFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="176, 203, 239" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TitleFill" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="204, 216, 232" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="TitleFill" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1GBQAAAAAAADYAAAAoAAAAEgAAABIAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//f3///39///9/f///f3///39///9/f///f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxmYj/sZmI/7GZiP+xmYj/sZmI/7GZiP+xmYj///39///9/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACqk4P/AAAAAAAAAAAAAAAAAAAAAAAAAACqk4P/sZmI/7GZiP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACqk4P/AAAAAAAAAAAAAAAAAAAAAAAAAACqk4P/AAAAAKqTg/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACijX7/AAAAAAAAAAAAAAAAAAAAAAAAAACijX7/AAAAAKqTg/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRf3L/kX9y/5F/cv+Rf3L/kX9y/5F/cv+Rf3L/AAAAAKKNfv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFRUX/RUVF/0VFRf9FRUX/RUVF/0VFRf9FRUX/kX9y/5F/cv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEVFRf9FRUX/RUVF/0VFRf9FRUX/RUVF/0VFRf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFUOE+dlF1TElEAhvfP8Yf6AXVRF944k1MXVjMCDgaDaZSIuCLs8CkKGhJqoRawAStfmxPER8zbeQ8BfZAXMPPMsuc873t22T0oivj437VgD+pzwSw7lO3jBqz7OrJlzAWz7FDswRJOigOouS60ix6i+T6S11NSnwcYMx5PXPURER59Ztkhi5KXHXjS3+DLtBHItaGdj4h+6CD+cQrPCefo0WdWFq0ESoicmXAmTGwcmdg6NrGbGRHImgjlpvCccI4efWbZIYuCmRvYI004401sHjawlapLLBbLf6FHn9lJkZouYyXcxFqsjlcHtTsL7j1YAllP1KQvs7wiq7i/v4vG8qyjN2Xg/uLqH0XskD+2/6gkrqghV1gXV0TRc2iI26vCl65M4LhXjD184paeI1aT2clTcwTyePTWwKKvgqfqFym+EC+oVdOxGi5N4LhNK8l5evSZ/VWkwxW6wsL2DZZUA8uh0Yq2SBWORAXOg+oEji88eyOhR59Z7gplTazqiRXweK+OZa0OW7w+kceh34/DIUDo0WeWHTOLxvKs40vx2Mk/Ra6wjr3jKp5HTdiTJlwnX7H5/vZusrfSo88sOxR3tIz4RQsOsUXcp228Pu/Am/8u2fnUhVroSfaLPfivuxLO0aPPLDuUjXgZpwVRcMZwDztiw+6KjUgC+gBa5YckZgwRKg8karEvvJ70mWWHouWa8sulMZgLZtkh/5PCuRY8yepcMMuOn0gtJLtHczcyAAAAAElFTkSuQmCC" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgNJREFUOE+llM1u00AUhf1yeSEeABZs2HSBWCEoMkUVokhIsGDXEPdHoQFRCKCQBkXUpE5sYie20+bH9hzmXNeJKhxAYOlo4plzv3s8ntgw9FX75ON/RIZR/ejjuBsiU/gnsZYM4/HrCIsUOJ8p0Xzxd7rQPvrTDNg5imBs1ycCCi+UKIdlv9V0ni0bs/ZJI4bxYC8WkD9ZgdiNWpeuSM/GrH10OMlBs0U5qFKpYJ1inbwAmQc60aYVCciNVJ5qirXFhF67cVtEH/2sNffl0X4FFeaykYXXN7YExEQCkkS1UO8H4EXsoBe1gcbJDGLiHhTiPOdu3tm5TASpNffCHMSIzZ5Cx1OwAyVGzhUwFrOA87FuwLE3Ujhx860Q0L3aaAniAg00DuPcRFghzt+6+1xE31fdeESQFWhQ1RfQh16G9iCTRIW5bOQBpOjreBl8vU+mpU92Gagwl418u9RVkE60Wf0BTyd6b6eS6NswgzP+s+ijn4keWkMY93fdJajlpOh6KU79XGejFdANV7+/Bxm6lyCGMGseDPNVHw73yE7QchJ03ETDctnDlXrB1Xuut/uJ1G5bAxhP90/RdqYI5gpj/f+KE/2q9dmheH7KPi+c5zq9g/Eczw5syDfpRd3Gy8YZdt85sJoDHH72RI0vPt6cBKK3nUDuqXrLl3Wr6aJ63BfIT5AqfXSdCeJ1AAAAAElFTkSuQmCC" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="MaximizeButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1GBQAAAAAAADYAAAAoAAAAEgAAABIAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9/f///f3///39///9/f8AAAAAAAAAAAAAAAD//f3///39///9/f///f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxm4n/sZuJ/7Gbif///f3/AAAAAP/9/f+xm4n/sZuJ/7Gbif8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArJaF/6yWhf+sloX///39/6yWhf+sloX/rJaF/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWRgP+lkYD/pZGA/6WRgP+lkYD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACdinv/nYp7/52Ke/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXhHb/l4R2/5eEdv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI9+cf+PfnH/RUVF/49+cf+PfnH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiXls/4l5bP9FRUX/AAAAAEVFRf+JeWz/iXls/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFRUX/RUVF/0VFRf8AAAAAAAAAAAAAAABFRUX/RUVF/0VFRf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAjxJREFUOE+dlO1PUlEAxu8/x3/Tl760tbbWB9uyrZVbK5dLYIN0voWJgleUO15FkERDLdQCbsDlzbuWBBJ7Os+hC5R+gu23e895Xs6Bew+KIj7+g0s4d/SxYJYdynq6Afu2jqMSxoJZdijOnSI+FrpQs21opx1EctdIXAxJfevCwpqPn18jLHz0M8sOWZQ4a8Gz/xMbmSsEslfQTvpEPrcQ+zKEY0KNPvqZlUWzgSLCxybm4iaWkybW0iY2M30CRyaC2SEcE2r00c8sO2TRTqYKZ7iJuVgTK3sN2Gy2AepBDRaj8/TRz+ygSN0vYTbUhDtax9JuDavJKu7cn5Qw7Esb8mrNUV+M16RfZrkju/h+txXRfPfhcwlLrHtvypALjRaxQ/7Y/mRR7KghV1gUO/LsGZK1VAX3Jl4P8IoxoUafK1qT2cFTcwVymPhg4NlGGS/V75gRLyexazoePH07wKEVQajRRz+zf4t0zAfP8WS9iinVwHSwAke4z6Mp9w1c8bLU6KOfWZ4KxS1W9UTzeLFVx7RWhyNWxzvxRB6/WhrQ6+GfMXX66GeWHbcWTc6swoIlDPI6On+jaD6kYytdwZuICWfClIFRVj79gMX/Gv3MskNZiJQQO72ESxyRhcMrvD9pwZv7JfF9bUPNdyTbhQ78F20JNfroZ5YdynKshMO8KDhmuAOfOLCb4iCSgN6FVv4tiRo9BEtdiVq4Fr6O9DPLDkXLNuXNmdEdC2bZIf+TQtlLeBLiRRsDZtnxB28BKdqLryXDAAAAAElFTkSuQmCC" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAhdJREFUOE+llM2P0lAUxfvP8d+4cWNiTIwLXYwb40YXI6bGEONHTMaFu0E6H0HROIoaZDAkU5lCKy3QIgzQ9vjOfWkBRWOU5KR9vef+7unLo4ahfpWPPv5HZBjlDz6O2iMkKf5J7CXDePAyxDwGvp+lotn87zRVPvrjBHj0KoRRqo4FNJqkIg1L/qjpLMkHs/dhLYJxdy8SkD9egjiN+l26LD0Hs/f+4ViDzhbroEKhgEzzmGat1eeRSp6BzAOVqGiFAnLDVKeacr+Acxe3RGzmVF6zZ6zTRz97zX15tc0gms9fviEiJLtnYwZiIgFJosoIkznghZygJ9FI0XTh6u1cXK+C6GevuTfSIEasd1K0vBR2oF+RIuzS9WKuSK0p1jqDFMeu3goBbVcGOYgFGvqR1pWbpV/ERu4nfV/U4AFBVqBAZV9A7zsJmr1EEtF47daTXDx0q2vW6Wt5CXy1T6alTvYm0Nb2DjIRwkZeV5+vg1SiYvkbPJXonR1LIjasyhkmyPRzjX4mumf1YdzZdXNQw4nR9mKc+FqngyXEHS3vvwYJ2n29FQxhVjwY5osuHO6RvUDDWaDlLhRMy+4v1QnW16w3uwvpLVk9GI/3T9B0pghmKYbq/xWpszJRJ5niid70eeFz1untDWd4emBDvknPqjae106x+9aBVe/h8JMnqn328fo4EL1pBbKmqg1f6lbdRfmoK5AfBS6DB4bbx/QAAAAASUVORK5CYII=" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="CloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormElementScrollbarSquare" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="247, 247, 247" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormScrollSquareFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadFormScrollSquareBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="234, 241, 252" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="217, 231, 249" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="202, 222, 247" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="228, 239, 253" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="90" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.2388316" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.2594502" />
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, 0" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleFill" AutoUnapply="False" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="228, 235, 246" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="219, 232, 249" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="228, 235, 246" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="228, 235, 246" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="228, 235, 246" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="228, 235, 246" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="228, 235, 246" />
+                <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="176, 207, 247" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleBorder" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="118, 138, 163" />
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Alignment" Value="MiddleLeft" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleCaption" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="ButtonFill" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 2, 6, 3" />
+              </PropertySettings>
+              <Selectors>
+                <XmlTypeSelector ElementType="Telerik.WinControls.Layouts.StackLayoutPanel" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1GBQAAAAAAADYAAAAoAAAAEgAAABIAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/9/f///f3///39///9/f8AAAAAAAAAAAAAAAD//f3///39///9/f///f3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxm4n/sZuJ/7Gbif///f3/AAAAAP/9/f+xm4n/sZuJ/7Gbif8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArJaF/6yWhf+sloX///39/6yWhf+sloX/rJaF/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWRgP+lkYD/pZGA/6WRgP+lkYD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACdinv/nYp7/52Ke/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXhHb/l4R2/5eEdv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI9+cf+PfnH/RUVF/49+cf+PfnH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiXls/4l5bP9FRUX/AAAAAEVFRf+JeWz/iXls/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFRUX/RUVF/0VFRf8AAAAAAAAAAAAAAABFRUX/RUVF/0VFRf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 3, 1, 3" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAk9JREFUOE+dlEtPE2EYhYe1K934N/wTJP4YN25MjIlxgYmYGCUxSiRCmxQh3CxSKAyFTnq1FCoXC2gBpa1tpy1lYmylVHL8zlunrcJGJnky8817zjPTTqddmtrm149hVqo8/O/t+rUr2s0bV7u02cQRhpay2MrhUrBLh+ZczuBDugE9eQJjt45Q6hSxgzarXxuwsc9H908RVDnm2aVDRLG9GtxrPzC3UYUvWYWx0yT0qYbI5zZcE86YY55dEQ36MghuWxiJWpiMW5hJWFjYaOLbsuBPtuGacMYc8+zSIaLljSKcwQpGIhVMrRyhu7u7hb5egk3neeaYZ7cl0tdyGAxUMBwuY+J9CdPxIm7d7RVY9iZM2dvnOB+PliQvXd7RkPp8F4kYvn3/qUCJfexZNeVCnSI65Muej2fUHR3JFcbVHblXTGFmtYA7PS9beNSacMacK1ySbuupuXwp9Lwz8WQuj+f6NwwsZ4UhI4t7j1+3cBgZEM6YY57dP6IsRv37eDRbRJ9uot9fgCPY5EHf8Dlc0bzMmGOeXacSa8Pqqu7wIZ4tltFvlOGIlPFGPZGHLyZanJ3hrzXnzDHPLh0XinoHpmFDCYvcd54/JxoNZLGYKOBVyIIzZkmhk6mP32Hz74x5dunQxkI5RHaP4VKvyNhmFW93avCkfgreLyfQD+vCUrqO+YMTgTPmmGeXDm0yksPmoRJss1yHV72wC+pFJL5sA0b+lxA2z+DPNQQ9fapydcmzS4dmJCtysGc2LgW7dMgfWSB5DHdM/dAuAbt0/AbT/vxE2/S8TgAAAABJRU5ErkJggg==" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAiJJREFUOE+dlM2K01AcxTPP4Gv4EG76Nm7cCCKIC12MG3Gji7ESkSJ+IOjC3dRmPqhWcbQqtVMpTOykTWzSJqnttPk43nMvSVOtIhP4kdz7P/9zTy432dDEVfvsgvfTXufOntnQqp9cHHR9JClOBXvpoT18HWARAz9PUsl88X/MhI76OAEevwmgVeoTaeRPU4kyS/7JbJ7kC7P3USOEdm8nlEbuZGnE1cjf0mXpuTB7H+xPlNFJtGpUKpWQsYgpVhTnQ5E8M9L3RKKyEUgjO0hVqhn3Czh/aVPCZq7KezbHOnXUs1ffla+23ojiC1duSmiSPbMxM2IiaSQT1XxMF4ATcAW1EoWEoovX7uRwXDSinr36jq+MGLHZS9FxUpieekVCs8s3yjmhGBPWeqMUh7baCmm0VRvlRixQMAwVV29V/oCN3E/qvomFRzQyPGFUdaXRx16C9iCRiSi8fvtpDg9dccw6dR0ngSv2STfEyV5ntLn1HBk0YSPvxflVI5GoXP0BRyT6YMYyERuKWOMEGb/XqGei+8YQ2t1tOzdqWTG6TowjV3E8WprY/vL5u5egO1RbwRB6zYGmv+rD4h6ZEVpWhI4dCTOFOVzS81bHrLf7keytGANoT3aP0LZm8OYpxuL7CsVZmYqTTHii1/1eOM86tYPxHM/2TPU/e1E38bJxjO33FozmAPtfHEnjq4u3h57kXceTY1JvubJuNG1UD/rS5BfbxE8IZZZsngAAAABJRU5ErkJggg==" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="CloseButton" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC3qZ//t6mf/7epn/+3qZ//t6mf/7Kkmv+ypJr/t6mf/7epn/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsqSa/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACypJr/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALKkmv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsqSa/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACsn5b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKyflv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnpSM/56UjP+elIz/npSM/56UjP+elIz/npSM/56UjP+elIz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJWMhP+VjIT/lYyE/5WMhP+VjIT/lYyE/5WMhP+VjIT/lYyE/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIH/gICB/4CAgf+AgIH/gICB/4CAgf+AgIH/gICB/4CAgf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 3, 1, 3" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAi9JREFUOE+dlEtvElEcxadrV7rxa/glSPwybtwYN7pQk7poYqML1KRAQ4VQq2htoVMKE57FtrS0oa3SVoGRRxlgTAR5SI733FpofITIJL9kLv/fOffCZJhQxOXfaaBSb/L2v6+rVy4p169dnlCWUjXY1nTsFTEWzLJDcQQL2M73oGba0A47iGa7SJ4M2fzcwznnnyeOu4gIjz6z7JBFyaMWvFvfsJxuIpBpQjs4I/qhhfjHIVwTzujRZ1YWzQQKiOybcCVMLGyYWEyZWEmfEdgzEcoM4ZpwRo8+s+yQRcH0KRyROlzxOl69r2Fx05D4UwbUneoAn1gTzujRZ3ZQpG4VMROuYy5m4OV6FRaLZSTziar0ZZYnsonv93vRjdsPMYqLReyQP7Z/oyBOVJM7zIsT3bw7PRJ6zlhVZgdPzRnI4v7bCqaWS3iifsGtB1Y8D+qwaTpmw4UBdq0Awjk9+sz+KtLhDh1jcukU02oF1lAZd6ZmYY+U4UyU4FovD+CacE6PPrMOsakyJ3b1xnJ4tGrAqhmwxw3ce+zBC/FU/gXn9Ogzy46/Fk0+fYNR/FHkDutYTZXxLGrCkTTh3v6Kfh8joUefWXYonmgR8cMGnOIV8ew28fqghXfZ7xLfpzbUXEeylu/Af9KWcEaPPrPsUBbiRezmRME+wx34xAu7Il5EEtB70Eo/JLFKH6FiT6Lmu8LrSJ9Zdihapi5vjiq9sWCWHfKPLJxpwJssjwWz7PgJ4zn3ZtzOmMIAAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgpJREFUOE+dlMtu01AURd1v4Df4CCb5HCZMEBMYICQYMEBMQFBkQBWiSEgwYNYQ96FAQBQCKKRBETWpE5vYie20edne3H0uSVTRYNRIS4l9zll3+8b2iqE+pS8++H3az7mzZ1aM4mcfu80QaYZTwVk6jCdvIkwS4HCUCePJ/3Gk+tifpMD62wjGWnkgovAoE7Qs/SfDcTpfmLNPKzGMB5uxiPzBQsTVyLJ0s/RcmLOPdwZaNJosF00SNmtmYopixUxkbqtEq1YkIjfKdKohUCgUcmEf+zlrbsml/S06f+kG8qCIiUQkiUqh2g/Ai7iCKqqGC1du5aITQWbNzVCLGLHaytDwMthBhovX7si5wxFkRcKBWB0T1lu9DHuu3goR3Sv15iIW2HD55iN0Y91E2Qy5HAXr7PuuFu5RZAVKVPRF9KmVot5JJdHV2+uy+ctgnX0NL4Wv9sm01J19kuj63RfI47hIJVot/oKnEn20E0n0o5vKbZ8H+9jPRA+tLoz7G+5cVHMSNL0E+77moJfC6WvccPH7Z5Ci+UfEEGbJg2G+bsPhHtlT1JwpGu5UyTR2d0ErOH7Mer09ldk1qwPj2dY+6s4QwThDXz1f8VT91er5IXyOTnq98Dzr7O30x3i+bev32cuyjVeVA2x8cGBVO9j56gmVbz7e7QXC+0Ygx6Rc86VuVV0Ud9si+Q02GUpXm9DKzQAAAABJRU5ErkJggg==" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MaximizeButton" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKick/+onJP/qJyT/6ick/+onJP/qJyT/6ick/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIH/gICB/4CAgf+AgIH/gICB/4CAgf+AgIH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 3, 1, 3" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MinimizeButton" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="5, 5, 0, 0" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleIcon" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="False" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleIconBorder" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <Selectors>
+                <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <Selectors>
+                <XmlTypeSelector ElementType="Telerik.WinControls.Layouts.ImageAndTextLayoutPanel" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="ButtonFocus" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <Selectors>
+                <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.TextPrimitive" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleBar" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <Selectors>
+                <XmlTypeSelector ElementType="Telerik.WinControls.Layouts.DockLayoutPanel" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="ButtonBorder" />
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlAnimatedPropertySetting EndValue="234, 241, 252" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+                <XmlAnimatedPropertySetting EndValue="217, 231, 249" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+                <XmlAnimatedPropertySetting EndValue="202, 222, 247" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+                <XmlAnimatedPropertySetting EndValue="228, 239, 253" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleFill" AutoUnapply="False">
+                  <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlAnimatedPropertySetting EndValue="227, 231, 236" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+                <XmlAnimatedPropertySetting EndValue="222, 229, 237" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+                <XmlAnimatedPropertySetting EndValue="216, 225, 236" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+                <XmlAnimatedPropertySetting EndValue="223, 235, 239" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="TitleFill" AutoUnapply="False">
+                  <Condition xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1GBQAAAAAAADYAAAAoAAAAEgAAABIAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//f3///39///9/f///f3///39///9/f///f3///39///9/f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxmYj/sZmI/7GZiP+xmYj/sZmI/7GZiP+xmYj/sZmI/7GZiP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACqk4P/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKqTg/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACijX7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKNfv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYhXf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJiFd/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRf3L/kX9y/5F/cv+Rf3L/kX9y/5F/cv+Rf3L/kX9y/5F/cv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACJeW3/iXlt/4l5bf+JeW3/iXlt/4l5bf+JeW3/iXlt/4l5bf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFRUX/RUVF/0VFRf9FRUX/RUVF/0VFRf9FRUX/RUVF/0VFRf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAi9JREFUOE+dlEtvElEcxadrV7rxa/glSPwybtwYN7pQk7poYqML1KRAQ4VQq2htoVMKE57FtrS0oa3SVoGRRxlgTAR5SI733FpofITIJL9kLv/fOffCZJhQxOXfaaBSb/L2v6+rVy4p169dnlCWUjXY1nTsFTEWzLJDcQQL2M73oGba0A47iGa7SJ4M2fzcwznnnyeOu4gIjz6z7JBFyaMWvFvfsJxuIpBpQjs4I/qhhfjHIVwTzujRZ1YWzQQKiOybcCVMLGyYWEyZWEmfEdgzEcoM4ZpwRo8+s+yQRcH0KRyROlzxOl69r2Fx05D4UwbUneoAn1gTzujRZ3ZQpG4VMROuYy5m4OV6FRaLZSTziar0ZZYnsonv93vRjdsPMYqLReyQP7Z/oyBOVJM7zIsT3bw7PRJ6zlhVZgdPzRnI4v7bCqaWS3iifsGtB1Y8D+qwaTpmw4UBdq0Awjk9+sz+KtLhDh1jcukU02oF1lAZd6ZmYY+U4UyU4FovD+CacE6PPrMOsakyJ3b1xnJ4tGrAqhmwxw3ce+zBC/FU/gXn9Ogzy46/Fk0+fYNR/FHkDutYTZXxLGrCkTTh3v6Kfh8joUefWXYonmgR8cMGnOIV8ew28fqghXfZ7xLfpzbUXEeylu/Af9KWcEaPPrPsUBbiRezmRME+wx34xAu7Il5EEtB70Eo/JLFKH6FiT6Lmu8LrSJ9Zdihapi5vjiq9sWCWHfKPLJxpwJssjwWz7PgJ4zn3ZtzOmMIAAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgpJREFUOE+dlMtu01AURd1v4Df4CCb5HCZMEBMYICQYMEBMQFBkQBWiSEgwYNYQ96FAQBQCKKRBETWpE5vYie20edne3H0uSVTRYNRIS4l9zll3+8b2iqE+pS8++H3az7mzZ1aM4mcfu80QaYZTwVk6jCdvIkwS4HCUCePJ/3Gk+tifpMD62wjGWnkgovAoE7Qs/SfDcTpfmLNPKzGMB5uxiPzBQsTVyLJ0s/RcmLOPdwZaNJosF00SNmtmYopixUxkbqtEq1YkIjfKdKohUCgUcmEf+zlrbsml/S06f+kG8qCIiUQkiUqh2g/Ai7iCKqqGC1du5aITQWbNzVCLGLHaytDwMthBhovX7si5wxFkRcKBWB0T1lu9DHuu3goR3Sv15iIW2HD55iN0Y91E2Qy5HAXr7PuuFu5RZAVKVPRF9KmVot5JJdHV2+uy+ctgnX0NL4Wv9sm01J19kuj63RfI47hIJVot/oKnEn20E0n0o5vKbZ8H+9jPRA+tLoz7G+5cVHMSNL0E+77moJfC6WvccPH7Z5Ci+UfEEGbJg2G+bsPhHtlT1JwpGu5UyTR2d0ErOH7Mer09ldk1qwPj2dY+6s4QwThDXz1f8VT91er5IXyOTnq98Dzr7O30x3i+bev32cuyjVeVA2x8cGBVO9j56gmVbz7e7QXC+0Ygx6Rc86VuVV0Ud9si+Q02GUpXm9DKzQAAAABJRU5ErkJggg==" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MaximizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                    </Condition1>
+                    <Condition2 xsi:type="XmlComplexCondition" BinaryOperator="OrOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Normal" />
+                      </Condition1>
+                      <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Minimized" />
+                      </Condition2>
+                    </Condition2>
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAFxJREFUOE9jYBgFwyQEXF1d/xPCRHk1t7LzPyFMlEFF9RP/E8JEGVTeOuM/PoWE5OF663oX4TWIkDzcoObJq/AaREgeblDHzI3/CWGiwujv3///CWGiDBpVhBICAFO2ibOF9DFAAAAAAElFTkSuQmCC" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAi9JREFUOE+dlEtvElEcxadrV7rxa/glSPwybtwYN7pQk7poYqML1KRAQ4VQq2htoVMKE57FtrS0oa3SVoGRRxlgTAR5SI733FpofITIJL9kLv/fOffCZJhQxOXfaaBSb/L2v6+rVy4p169dnlCWUjXY1nTsFTEWzLJDcQQL2M73oGba0A47iGa7SJ4M2fzcwznnnyeOu4gIjz6z7JBFyaMWvFvfsJxuIpBpQjs4I/qhhfjHIVwTzujRZ1YWzQQKiOybcCVMLGyYWEyZWEmfEdgzEcoM4ZpwRo8+s+yQRcH0KRyROlzxOl69r2Fx05D4UwbUneoAn1gTzujRZ3ZQpG4VMROuYy5m4OV6FRaLZSTziar0ZZYnsonv93vRjdsPMYqLReyQP7Z/oyBOVJM7zIsT3bw7PRJ6zlhVZgdPzRnI4v7bCqaWS3iifsGtB1Y8D+qwaTpmw4UBdq0Awjk9+sz+KtLhDh1jcukU02oF1lAZd6ZmYY+U4UyU4FovD+CacE6PPrMOsakyJ3b1xnJ4tGrAqhmwxw3ce+zBC/FU/gXn9Ogzy46/Fk0+fYNR/FHkDutYTZXxLGrCkTTh3v6Kfh8joUefWXYonmgR8cMGnOIV8ew28fqghXfZ7xLfpzbUXEeylu/Af9KWcEaPPrPsUBbiRezmRME+wx34xAu7Il5EEtB70Eo/JLFKH6FiT6Lmu8LrSJ9Zdihapi5vjiq9sWCWHfKPLJxpwJssjwWz7PgJ4zn3ZtzOmMIAAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAgpJREFUOE+dlMtu01AURd1v4Df4CCb5HCZMEBMYICQYMEBMQFBkQBWiSEgwYNYQ96FAQBQCKKRBETWpE5vYie20edne3H0uSVTRYNRIS4l9zll3+8b2iqE+pS8++H3az7mzZ1aM4mcfu80QaYZTwVk6jCdvIkwS4HCUCePJ/3Gk+tifpMD62wjGWnkgovAoE7Qs/SfDcTpfmLNPKzGMB5uxiPzBQsTVyLJ0s/RcmLOPdwZaNJosF00SNmtmYopixUxkbqtEq1YkIjfKdKohUCgUcmEf+zlrbsml/S06f+kG8qCIiUQkiUqh2g/Ai7iCKqqGC1du5aITQWbNzVCLGLHaytDwMthBhovX7si5wxFkRcKBWB0T1lu9DHuu3goR3Sv15iIW2HD55iN0Y91E2Qy5HAXr7PuuFu5RZAVKVPRF9KmVot5JJdHV2+uy+ctgnX0NL4Wv9sm01J19kuj63RfI47hIJVot/oKnEn20E0n0o5vKbZ8H+9jPRA+tLoz7G+5cVHMSNL0E+77moJfC6WvccPH7Z5Ci+UfEEGbJg2G+bsPhHtlT1JwpGu5UyTR2d0ErOH7Mer09ldk1qwPj2dY+6s4QwThDXz1f8VT91er5IXyOTnq98Dzr7O30x3i+bev32cuyjVeVA2x8cGBVO9j56gmVbz7e7QXC+0Ygx6Rc86VuVV0Ud9si+Q02GUpXm9DKzQAAAABJRU5ErkJggg==" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MaximizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                    </Condition1>
+                    <Condition2 xsi:type="XmlComplexCondition" BinaryOperator="OrOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Normal" />
+                      </Condition1>
+                      <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Minimized" />
+                      </Condition2>
+                    </Condition2>
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAF5JREFUOE9jYBgFgyMEXF1d/+PCRLkQnwFF9RP/gzBRBsEUY6NBBtT1LiLOIFwKYeLNk1cRZxAuhTBxqhjUMXPjfxAmKoxgirHRf//+/w/CRBkEU4yNJsqAUUW0DQEAgtuFXU5hgtAAAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAj1JREFUOE+dlF1TElEAhtfrruqmv9GfYKbf0w+oi7rwxpmcurCaEXEwGEyjRNQVYYdPUcCQUAu1gA1Y+XBzwgRy3s57jKWMnMmdeWZ3z3ne9+yycxhRxLH87hhGq83L/z5u37qh3L1zc0RZzDRhX9ORq+BaMMsOxREsY6vUg5o/g7bXQbTQRfJwQOpzD33644mDLiLCo88sO2RRcv8U3vQ3+LNtBPJtaLsXRD+cIv5xAO8J5+jRZ1YWTQbKiOyYcCVMzG2aWMiYWMleEMiZCOUH8J5wjh59Ztkhi4LZIzgiLbjiLcxvNLGQakhsNts/oUefWatITVcwGW5hJtbAq/X6lQX3HoyDzCbq0pdZPpFdvN/lor487OxLGbg/Nv1HETvkj728WRZP1JQrzIonoujdMMTr1eBPVy047hNjD594pOeM1WXW+mrOQAGP3hoY81fxVP0ixRdBHXZNx3S4bMHxKa0s5+nRZ/ZXkQ536ACji0cYVw1MhC5WnIrU4ExU4VqvWXB89NkbCT36zDrEosqMWNUbK+LxagMTWgNT8YYl90O/n8/PAUKPPrPsGFrUl4edX4rPTv4qcod1rGZqeB414UiacG99xfz7k6vJnUiPPrPsUDzRCuJ7x3CKLeLZbuP17il8he+SpU9nUIsdyVqpg+XDMwnn6NFnlh3KXLyC7aIo2GG4gyWxYVfERiQBvQet+kMSM84RqvQkaqkrvI70mWWHouVb8mLf6F0LZtkh/8jC+WN4k7VrwSw7fgKtKvclK4HRxgAAAABJRU5ErkJggg==" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAg5JREFUOE+dlM1u00AUhd1n4DX6EGzyQjxAWbBhwwKxQlDkgipEkZBg0V1D3B+lBEQhgEIaFFGTOrEbO7GdNj/+Ocy5rhNVOIBq6WjimXO/ezIee0VTV+WrC47XvW6u3ljRyl9cHLV9JCmuJdaSoT0/DDCLgfNJKprO/k8Xykd/nABb7wJom9WRgPyLVJTBkr9qPE3mjVn7ohZCe7IbCsgdLUDsRi1Ll6dnY9Y+OxhloMmsGFQqlbBMoUqeg/R9lWjdCARkB2mWaoylxYTeun1fRB/9rNX35K/9CcrNRSML1+49FRATCUgSVXy1H4ATsINaVAYaRxOIiXuQi/Ocu/Ng6zIRpFbf9TMQI9Y7KVpOCtNLxci5HMZiFnA+VA04dgYpju1sKwT0qDKYg7hAA439MDMRlovzdx++FtH3QzUeEGR4ClR2BfS5k6DZSyRRbi4aeQAp+lpOAlftk26ok10Eys1FI58udRWkEq2Xz+CoRJ/MWBL97Cewhv8WffQz0YbRh/Z4x56DGlaMthPjxM10OlgAbX/x+5eXoH0JYgi94kDT33ZhcY/MCA0rQsuOFCyT2V+o412953qzG0ntptGD9nLvBE1rDG+aYqjerzBSj1qdHYrnp+jzwnmu09sbTvFq38y+Z2+qJrZrp9j5aMGo93DwzRHVvrt4f+yJPrQ8uaeqDVfWjbqN8lFXIL8BZs9JdU/V+sIAAAAASUVORK5CYII=" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MaximizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Maximized" />
+                    </Condition1>
+                    <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                    </Condition2>
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAF5JREFUOE9jYBgFgyMEXF1d/+PCRLkQnwFF9RP/gzBRBsEUY6NBBtT1LiLOIFwKYeLNk1cRZxAuhTBxqhjUMXPjfxAmKoxgirHRf//+/w/CRBkEU4yNJsqAUUW0DQEAgtuFXU5hgtAAAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAj1JREFUOE+dlF1TElEAhtfrruqmv9GfYKbf0w+oi7rwxpmcurCaEXEwGEyjRNQVYYdPUcCQUAu1gA1Y+XBzwgRy3s57jKWMnMmdeWZ3z3ne9+yycxhRxLH87hhGq83L/z5u37qh3L1zc0RZzDRhX9ORq+BaMMsOxREsY6vUg5o/g7bXQbTQRfJwQOpzD33644mDLiLCo88sO2RRcv8U3vQ3+LNtBPJtaLsXRD+cIv5xAO8J5+jRZ1YWTQbKiOyYcCVMzG2aWMiYWMleEMiZCOUH8J5wjh59Ztkhi4LZIzgiLbjiLcxvNLGQakhsNts/oUefWatITVcwGW5hJtbAq/X6lQX3HoyDzCbq0pdZPpFdvN/lor487OxLGbg/Nv1HETvkj728WRZP1JQrzIonoujdMMTr1eBPVy047hNjD594pOeM1WXW+mrOQAGP3hoY81fxVP0ixRdBHXZNx3S4bMHxKa0s5+nRZ/ZXkQ536ACji0cYVw1MhC5WnIrU4ExU4VqvWXB89NkbCT36zDrEosqMWNUbK+LxagMTWgNT8YYl90O/n8/PAUKPPrPsGFrUl4edX4rPTv4qcod1rGZqeB414UiacG99xfz7k6vJnUiPPrPsUDzRCuJ7x3CKLeLZbuP17il8he+SpU9nUIsdyVqpg+XDMwnn6NFnlh3KXLyC7aIo2GG4gyWxYVfERiQBvQet+kMSM84RqvQkaqkrvI70mWWHouVb8mLf6F0LZtkh/8jC+WN4k7VrwSw7fgKtKvclK4HRxgAAAABJRU5ErkJggg==" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAg5JREFUOE+dlM1u00AUhd1n4DX6EGzyQjxAWbBhwwKxQlDkgipEkZBg0V1D3B+lBEQhgEIaFFGTOrEbO7GdNj/+Ocy5rhNVOIBq6WjimXO/ezIee0VTV+WrC47XvW6u3ljRyl9cHLV9JCmuJdaSoT0/DDCLgfNJKprO/k8Xykd/nABb7wJom9WRgPyLVJTBkr9qPE3mjVn7ohZCe7IbCsgdLUDsRi1Ll6dnY9Y+OxhloMmsGFQqlbBMoUqeg/R9lWjdCARkB2mWaoylxYTeun1fRB/9rNX35K/9CcrNRSML1+49FRATCUgSVXy1H4ATsINaVAYaRxOIiXuQi/Ocu/Ng6zIRpFbf9TMQI9Y7KVpOCtNLxci5HMZiFnA+VA04dgYpju1sKwT0qDKYg7hAA439MDMRlovzdx++FtH3QzUeEGR4ClR2BfS5k6DZSyRRbi4aeQAp+lpOAlftk26ok10Eys1FI58udRWkEq2Xz+CoRJ/MWBL97Cewhv8WffQz0YbRh/Z4x56DGlaMthPjxM10OlgAbX/x+5eXoH0JYgi94kDT33ZhcY/MCA0rQsuOFCyT2V+o412953qzG0ntptGD9nLvBE1rDG+aYqjerzBSj1qdHYrnp+jzwnmu09sbTvFq38y+Z2+qJrZrp9j5aMGo93DwzRHVvrt4f+yJPrQ8uaeqDVfWjbqN8lFXIL8BZs9JdU/V+sIAAAAASUVORK5CYII=" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MaximizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Maximized" />
+                    </Condition1>
+                    <Condition2 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                      <Setting Property="Telerik.WinControls.UI.RadFormElement.IsFormActive" Value="True" />
+                    </Condition2>
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk1GBQAAAAAAADYAAAAoAAAAEgAAABIAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//39///9/f///f3///39///9/f///f3///39/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnYp7/52Ke/+dinv/nYp7/52Ke/+dinv/nYp7/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARUVF/0VFRf9FRUX/RUVF/0VFRf9FRUX/RUVF/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAjNJREFUOE+llMtuElEcxqdrV7rxNXwMX4QXMS7cmGjioqlJAUOFtBZRKJcphQnXUi4tRdoqbZWLwHAdG0Eums/zHSxsZCFO8kvm8P993wwMZ9YUcfhP+tB7A57+83H/3h3l4YO7a8pergvzQQ2FOlaCWXYo1lAVx5Up1OII2sUYsdIEqesFmS9T3HL7efJqgqjw6DPLDlmUuhzClf0Ob36AYHEA7XxG7OMQiU8LuCac0aPPrCzaDFYRPTNgTxrYTRtw5wwE8jOCBQPh4gKuCWf06DPLDlkUyrdgjfZgT/TgPOrCnelI/LkO1JP2HJ9YE87o0Wd2XqRm69iM9LAV7+DNYRvv0i2JJ6OL4AKuCWc7ybb0ZZZ3ZBbf73+L2CF/bH+6Ku6oK6+wI+7IdaRL3JkmvNnGHI9YE87o2eJtmZ0/NVuwhMfvdTz1NvBC/YqXoZrErNXwKlKdY9GqIJzRo8/sn6IaHOErPNlr4bmqYz3chCU6w5ZswH7YnMM14YwefWatoljZEld1xct4tt/ButaBJdHBa/FETCbTUjinR59ZdiwterQRwDL+WuSI1LCfa2IjZsCaMuA4/gbnhxuMxpOlOAs30qPPLDuU7VgdiYs+bGKLbJ8O8PZ8CE/ph8T3eQS1PJYcVMbwX48knNGjzyw7lN1EHadlUXDG8Bg+sWEDYiOSYG0KrfFTEtd/IVyfStTKRHhj6TPLDkUr9uTJpT5dCWbZIV9kkWIfrpT4o60As+z4DRNuEgVUTSouAAAAAElFTkSuQmCC" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAfNJREFUOE+dlN+O0kAUxrvP4Gv4EN7wVL7BvoJiasxmoyZeeOHdIt0/QdG4ihpkMcStbKFdWmiLy0I7/ZzvjAWN1mxo8gVmzjm/881h6I6ln+anEPzc9rlz+9aO1fgY4nQQQxXYSqwlw9p/lWCVAz+uC9FydTNd6Tzm5wp48jqBtdeaCyi+KkQGpv6rxVKtG7P2cTuF9eAwFVA434DYjapyV7pnY9Y+Opkb0PWqGrTKmWxUgglKtUqQfawd1Z1EQH5SGFcLzsuI++xYimuKMeYxn2v7SI62PYiOBCSOmrGeBxAk7GA63dwRpNY+jA2IFjvDAv2ggBuZI1Ll8diVBak+EsXYcFrgzDejENC95nQNYoAJk9Tod3flXLjHeTLvq248JciJNKgRCujDUKE3VuKIibVarVKMM68fKIR6Trajb3YV6O5uHVX6G6Qd1RuXCLSj924ujr5NFLyZkqtfJcaZx3w6euhMYN0/8NegrpdjEOQ4D40upgZK+fHm+/dIYfALRBN2M4BlvxzB44zcDF0vQ9/PNMzInWw0jP5cM94bZVK754xhPT06R89bIFoWmOn/V5rpn1rfZoo3+l+vF+4zztzxbIlnx655nz1vuXjRvsDBOw9OZ4yTz4Go/SXEm7NI9LYfyZpqdUOJOx0fjdORQH4CKmhxS7XTJmEAAAAASUVORK5CYII=" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MinimizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Normal" />
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAF5JREFUOE9jYBgFgyMEXF1d/+PCRLkQnwFF9RP/gzBRBsEUY6NBBtT1LiLOIFwKYeLNk1cRZxAuhTBxqhjUMXPjfxAmKoxgirHRf//+/w/CRBkEU4yNJsqAUUW0DQEAgtuFXU5hgtAAAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAj1JREFUOE+dlF1TElEAhtfrruqmv9GfYKbf0w+oi7rwxpmcurCaEXEwGEyjRNQVYYdPUcCQUAu1gA1Y+XBzwgRy3s57jKWMnMmdeWZ3z3ne9+yycxhRxLH87hhGq83L/z5u37qh3L1zc0RZzDRhX9ORq+BaMMsOxREsY6vUg5o/g7bXQbTQRfJwQOpzD33644mDLiLCo88sO2RRcv8U3vQ3+LNtBPJtaLsXRD+cIv5xAO8J5+jRZ1YWTQbKiOyYcCVMzG2aWMiYWMleEMiZCOUH8J5wjh59Ztkhi4LZIzgiLbjiLcxvNLGQakhsNts/oUefWatITVcwGW5hJtbAq/X6lQX3HoyDzCbq0pdZPpFdvN/lor487OxLGbg/Nv1HETvkj728WRZP1JQrzIonoujdMMTr1eBPVy047hNjD594pOeM1WXW+mrOQAGP3hoY81fxVP0ixRdBHXZNx3S4bMHxKa0s5+nRZ/ZXkQ536ACji0cYVw1MhC5WnIrU4ExU4VqvWXB89NkbCT36zDrEosqMWNUbK+LxagMTWgNT8YYl90O/n8/PAUKPPrPsGFrUl4edX4rPTv4qcod1rGZqeB414UiacG99xfz7k6vJnUiPPrPsUDzRCuJ7x3CKLeLZbuP17il8he+SpU9nUIsdyVqpg+XDMwnn6NFnlh3KXLyC7aIo2GG4gyWxYVfERiQBvQet+kMSM84RqvQkaqkrvI70mWWHouVb8mLf6F0LZtkh/8jC+WN4k7VrwSw7fgKtKvclK4HRxgAAAABJRU5ErkJggg==" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAg5JREFUOE+dlM1u00AUhd1n4DX6EGzyQjxAWbBhwwKxQlDkgipEkZBg0V1D3B+lBEQhgEIaFFGTOrEbO7GdNj/+Ocy5rhNVOIBq6WjimXO/ezIee0VTV+WrC47XvW6u3ljRyl9cHLV9JCmuJdaSoT0/DDCLgfNJKprO/k8Xykd/nABb7wJom9WRgPyLVJTBkr9qPE3mjVn7ohZCe7IbCsgdLUDsRi1Ll6dnY9Y+OxhloMmsGFQqlbBMoUqeg/R9lWjdCARkB2mWaoylxYTeun1fRB/9rNX35K/9CcrNRSML1+49FRATCUgSVXy1H4ATsINaVAYaRxOIiXuQi/Ocu/Ng6zIRpFbf9TMQI9Y7KVpOCtNLxci5HMZiFnA+VA04dgYpju1sKwT0qDKYg7hAA439MDMRlovzdx++FtH3QzUeEGR4ClR2BfS5k6DZSyRRbi4aeQAp+lpOAlftk26ok10Eys1FI58udRWkEq2Xz+CoRJ/MWBL97Cewhv8WffQz0YbRh/Z4x56DGlaMthPjxM10OlgAbX/x+5eXoH0JYgi94kDT33ZhcY/MCA0rQsuOFCyT2V+o412953qzG0ntptGD9nLvBE1rDG+aYqjerzBSj1qdHYrnp+jzwnmu09sbTvFq38y+Z2+qJrZrp9j5aMGo93DwzRHVvrt4f+yJPrQ8uaeqDVfWjbqN8lFXIL8BZs9JdU/V+sIAAAAASUVORK5CYII=" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MinimizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Minimized" />
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+            <XmlPropertySettingGroup>
+              <PropertySettings>
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAADFJREFUOE9jYBgFoyEwGgLkhICrq+t/XJgk86q75v7HhUky6O/f//9xYZIMGlUMDwEAdCM60qV02r8AAAAASUVORK5CYII=" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageClicked" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAjNJREFUOE+llMtuElEcxqdrV7rxNXwMX4QXMS7cmGjioqlJAUOFtBZRKJcphQnXUi4tRdoqbZWLwHAdG0Eums/zHSxsZCFO8kvm8P993wwMZ9YUcfhP+tB7A57+83H/3h3l4YO7a8pergvzQQ2FOlaCWXYo1lAVx5Up1OII2sUYsdIEqesFmS9T3HL7efJqgqjw6DPLDlmUuhzClf0Ob36AYHEA7XxG7OMQiU8LuCac0aPPrCzaDFYRPTNgTxrYTRtw5wwE8jOCBQPh4gKuCWf06DPLDlkUyrdgjfZgT/TgPOrCnelI/LkO1JP2HJ9YE87o0Wd2XqRm69iM9LAV7+DNYRvv0i2JJ6OL4AKuCWc7ybb0ZZZ3ZBbf73+L2CF/bH+6Ku6oK6+wI+7IdaRL3JkmvNnGHI9YE87o2eJtmZ0/NVuwhMfvdTz1NvBC/YqXoZrErNXwKlKdY9GqIJzRo8/sn6IaHOErPNlr4bmqYz3chCU6w5ZswH7YnMM14YwefWatoljZEld1xct4tt/ButaBJdHBa/FETCbTUjinR59ZdiwterQRwDL+WuSI1LCfa2IjZsCaMuA4/gbnhxuMxpOlOAs30qPPLDuU7VgdiYs+bGKLbJ8O8PZ8CE/ph8T3eQS1PJYcVMbwX48knNGjzyw7lN1EHadlUXDG8Bg+sWEDYiOSYG0KrfFTEtd/IVyfStTKRHhj6TPLDkUr9uTJpT5dCWbZIV9kkWIfrpT4o60As+z4DRNuEgVUTSouAAAAAElFTkSuQmCC" />
+                <XmlPropertySetting Property="Telerik.WinControls.UI.RadImageButtonElement.ImageHovered" Value="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAfNJREFUOE+dlN+O0kAUxrvP4Gv4EN7wVL7BvoJiasxmoyZeeOHdIt0/QdG4ihpkMcStbKFdWmiLy0I7/ZzvjAWN1mxo8gVmzjm/881h6I6ln+anEPzc9rlz+9aO1fgY4nQQQxXYSqwlw9p/lWCVAz+uC9FydTNd6Tzm5wp48jqBtdeaCyi+KkQGpv6rxVKtG7P2cTuF9eAwFVA434DYjapyV7pnY9Y+Opkb0PWqGrTKmWxUgglKtUqQfawd1Z1EQH5SGFcLzsuI++xYimuKMeYxn2v7SI62PYiOBCSOmrGeBxAk7GA63dwRpNY+jA2IFjvDAv2ggBuZI1Ll8diVBak+EsXYcFrgzDejENC95nQNYoAJk9Tod3flXLjHeTLvq248JciJNKgRCujDUKE3VuKIibVarVKMM68fKIR6Trajb3YV6O5uHVX6G6Qd1RuXCLSj924ujr5NFLyZkqtfJcaZx3w6euhMYN0/8NegrpdjEOQ4D40upgZK+fHm+/dIYfALRBN2M4BlvxzB44zcDF0vQ9/PNMzInWw0jP5cM94bZVK754xhPT06R89bIFoWmOn/V5rpn1rfZoo3+l+vF+4zztzxbIlnx655nz1vuXjRvsDBOw9OZ4yTz4Go/SXEm7NI9LYfyZpqdUOJOx0fjdORQH4CKmhxS7XTJmEAAAAASUVORK5CYII=" />
+              </PropertySettings>
+              <Selectors>
+                <XmlClassSelector ElementClass="MinimizeButton" AutoUnapply="False">
+                  <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.RadFormElement.FormWindowState" Value="Maximized" />
+                  </Condition>
+                </XmlClassSelector>
+              </Selectors>
+            </XmlPropertySettingGroup>
+          </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.FloatingWindow" ElementType="Telerik.WinControls.RootRadElement"/>
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

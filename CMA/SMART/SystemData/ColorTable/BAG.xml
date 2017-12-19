@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="BAG" subIdentify="TFRV" colortablename="BAGTFRV" description="蓝藻均值分布图（年均）" labeltext="">
+      <Colors>
+        <!--<Color color="0,0,0" maxValue="0.1" minValue="-1" labeltext="0" displaylengend="false"/>
+        <Color color="80,180,0" minValue="0.1" maxValue="3" labeltext="3"/>
+        <Color color="120,200,0" minValue="3" maxValue="6" labeltext="6"/>
+        <Color color="160,220,0" minValue="6" maxValue="9" labeltext="9"/>
+        <Color color="210,240,0" minValue="9" maxValue="12" labeltext="12"/>
+        <Color color="255,250,0" minValue="12" maxValue="15" labeltext="15"/>
+        <Color color="255,200,0" minValue="15" maxValue="18" labeltext="18"/>
+        <Color color="255,150,0" minValue="18" maxValue="21" labeltext="21"/>
+        <Color color="255,100,0" minValue="21" maxValue="24" labeltext="24"/>
+        <Color color="255,50,0" minValue="24" maxValue="27" labeltext="27"/>
+        <Color color="255,0,0" minValue="" maxValue="30" labeltext="以上"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>-->
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="5" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="10" minValue="5" labeltext="5"/>
+        <Color color="20,200,45" maxValue="15" minValue="10" labeltext="10"/>
+        <Color color="10,150,30" maxValue="20" minValue="15" labeltext="15"/>
+        <Color color="5,90,15" maxValue="25" minValue="20" labeltext="20"/>
+        <Color color="1,60,8" maxValue="" minValue="25" labeltext="25"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="DBLV" colortablename="BAGDBLV" description="二值图"  labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无蓝藻" displaylengend="false"/>
+        <Color color="0, 128, 0" maxValue="2" minValue="1" labeltext="蓝藻" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BPCD" colortablename="PCDI" description="蓝藻覆盖度图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="-1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,10,0" maxValue="0.1" minValue="-1" labeltext="" displaylengend=""/>
+        <Color color="0,26,0" maxValue="0.2" minValue="0.1" labeltext="" />
+        <Color color="0,51,0" maxValue="0.3" minValue="0.2" labeltext="" />
+        <Color color="0,77,0" maxValue="0.4" minValue="0.3" labeltext="覆盖度0%-100%" />
+        <Color color="0,102,0" maxValue="0.5" minValue="0.4" labeltext="" />
+        <Color color="0,128,0" maxValue="0.6" minValue="0.5" labeltext="" />
+        <Color color="0,154,0" maxValue="0.7" minValue="0.6" labeltext="" />
+        <Color color="0,179,0" maxValue="0.8" minValue="0.7" labeltext="" />
+        <Color color="0,205,0" maxValue="0.9" minValue="0.8" labeltext="" />
+        <Color color="0,230,0" maxValue="1" minValue="0.9"  labeltext="" />
+        <Color color="0,255,0" maxValue="1" minValue="1"  labeltext="" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BPCD" colortablename="QD10" description="蓝藻强度10级图" labeltext="">
+      <Colors>
+        <Color color="80,180,0" maxValue="0" minValue="-1" labeltext="0" displaylengend="false"/>
+        <Color color="80,180,0" maxValue="0.1" minValue="0" labeltext="0"/>
+        <Color color="120,200,0" maxValue="0.2" minValue="0.1" labeltext="10%"/>
+        <Color color="160,220,0" maxValue="0.3" minValue="0.2" labeltext="20%"/>
+        <Color color="210,240,0" maxValue="0.4" minValue="0.3" labeltext="30%"/>
+        <Color color="255,250,0" maxValue="0.5" minValue="0.4" labeltext="40%"/>
+        <Color color="255,200,0" maxValue="0.6" minValue="0.5" labeltext="50%"/>
+        <Color color="255,150,0" maxValue="0.7" minValue="0.6" labeltext="60%"/>
+        <Color color="255,100,0" maxValue="0.8" minValue="0.7" labeltext="70%"/>
+        <Color color="255,50,0" maxValue="0.9" minValue="0.8" labeltext="80%"/>
+        <Color color="255,0,0" maxValue="1" minValue="0.9" labeltext="90%"/>
+        <Color color="255,0,0" maxValue="" minValue="1" labeltext="100%" displaylengend="false"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BPCD" colortablename="0QD3" description="蓝藻强度3级图" labeltext="">
+      <Colors>
+        <Color color="254,0,0" maxValue="1" minValue="0.6" labeltext="重度"/>
+        <Color color="254,199,0" maxValue="0.6" minValue="0.3" labeltext="中度"/>
+        <Color color="75,229,0" maxValue="0.3" minValue="0" labeltext="轻度"/>
+        <Color color="75,229,0" maxValue="0" minValue="-1" labeltext="0" displaylengend="false"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="FREQ"  colortablename="BAGFREQ" description="蓝藻频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="2"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="4"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="6"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="8"/>
+        <Color color="1,60,8" maxValue="" minValue="11" labeltext="10"/>
+      </Colors>
+    </ProductColorTable>
+    <!--<ProductColorTable identify="BAG" subIdentify="CFRI"  colortablename="BAGCFRI" description="蓝藻频次统计图[自定义]" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="1,60,8" maxValue="" minValue="11" labeltext="10以上"/>
+      </Colors>
+    </ProductColorTable>-->
+    <ProductColorTable identify="BAG" subIdentify="BCDF"  colortablename="BAGBCDF" description="蓝藻覆盖度频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="1,60,8" maxValue="" minValue="11" labeltext="10以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POTD"  colortablename="BAGPOTD" description="蓝藻像元频次统计图_旬" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="1,60,8" maxValue="100" minValue="11" labeltext="10以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POAM"  colortablename="BAGPOAM" description="蓝藻像元频次统计图_月" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="5" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="10" minValue="6" labeltext="5"/>
+        <Color color="20,200,45" maxValue="15" minValue="11" labeltext="10"/>
+        <Color color="10,150,30" maxValue="20" minValue="16" labeltext="15"/>
+        <Color color="5,90,15" maxValue="25" minValue="21" labeltext="20"/>
+        <Color color="1,60,8" maxValue="30" minValue="26" labeltext="25"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POAQ"  colortablename="BAGPOAQ" description="蓝藻像元频次统计图_季" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="10" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="20" minValue="11" labeltext="10"/>
+        <Color color="20,200,45" maxValue="40" minValue="21" labeltext="20"/>
+        <Color color="10,150,30" maxValue="60" minValue="41" labeltext="40"/>
+        <Color color="5,90,15" maxValue="90" minValue="61" labeltext="60"/>
+        <Color color="1,60,8" maxValue="120" minValue="91" labeltext="90"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POAY"  colortablename="BAGPOAY" description="蓝藻像元频次统计图_年" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="20" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="60" minValue="21" labeltext="20"/>
+        <Color color="20,200,45" maxValue="100" minValue="61" labeltext="60"/>
+        <Color color="10,150,30" maxValue="150" minValue="101" labeltext="100"/>
+        <Color color="5,90,15" maxValue="200" minValue="151" labeltext="150"/>
+        <Color color="1,60,8" maxValue="1000" minValue="201" labeltext="200"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

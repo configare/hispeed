@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GeoDo.RSS.Layout.DataFrm.DataFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFZDAgAADbMEYAAQEEEEAIJ6AkBAQJAYABgEHBABAIA=</HashCode>
+      <FileName>DataFrame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.DataFrameDataProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gFAAAgAgACAAAEBAAACFAAAiAAAAAgAAAQABQAAAEAA=</HashCode>
+      <FileName>DataFrameDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.DrawingElement" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAJgAAADAAgAgAAAAGAQAAAAIABEAAAADIII=</HashCode>
+      <FileName>Elements\DrawingElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.FeatureDrawingElement" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Elements\FeatureDrawingElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.LineDrawingElement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAAKgIAACAAAAgAAAgAAAAAAAAABEAgAAAAAA=</HashCode>
+      <FileName>Elements\LineDrawingElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.RectDrawingElement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASQAAAAAAKAIAgCgAAAgAAAAAAAAAAAAABEAgAAAAAA=</HashCode>
+      <FileName>Elements\RectDrawingElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.SimpleDrawingElement" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Elements\SimpleDrawingElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.LayerObjectBase" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.LayerObject" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAgAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.LayerObjectGroup" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GeoDo.RSS.Layout.DataFrm.LayerObjectContainer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAgAAQAAAAA=</HashCode>
+      <FileName>LayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="GeoDo.RSS.Layout.DataFrm.ILayerObjectBase" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAACAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GeoDo.RSS.Layout.DataFrm.ILayerObject" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GeoDo.RSS.Layout.DataFrm.ILayerObjecGroup" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GeoDo.RSS.Layout.DataFrm.ILayerObjectContainer" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ILayerObjectContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadScrollViewFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="10" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadScrollViewBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorderNoAnim">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden),ButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.Active">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.Selected.Active">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ItemMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ItemMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.Selected">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ItemMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.Active">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ItemMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.Selected.Active">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListBoxItem.MouseOver.MouseDown.Selected.Active">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ListBoxItemSelectionBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadListBox" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadListBoxElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

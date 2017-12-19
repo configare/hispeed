@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63921B43-E1C4-41C0-8AAC-58C141B961CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.AddIn.HdService</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.AddIn.HdService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.FileProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.FileProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.ProjectDefine, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.ProjectDefine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.View, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.View.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.LDF, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.LDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\CommandDataSearch.cs" />
+    <Compile Include="Commands\CommandFirstPage.cs" />
+    <Compile Include="Commands\CommandToDb.cs" />
+    <Compile Include="ContentPage\CatalogTreeView.cs" />
+    <Compile Include="ContentPage\queryPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContentPage\queryPage.Designer.cs">
+      <DependentUpon>queryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\toDbPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContentPage\toDbPage.Designer.cs">
+      <DependentUpon>toDbPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPathHelper.cs" />
+    <Compile Include="Data\HdDataInfo.cs" />
+    <Compile Include="MonitorTask\ChangedType.cs" />
+    <Compile Include="MonitorTask\CustomTaskScheduler.cs" />
+    <Compile Include="FileBaseInfo.cs" />
+    <Compile Include="ContentPage\queryPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContentPage\queryPageControl.Designer.cs">
+      <DependentUpon>queryPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\firstPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContentPage\firstPage.Designer.cs">
+      <DependentUpon>firstPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firstPageContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="firstPageContent.Designer.cs">
+      <DependentUpon>firstPageContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorTask\GeneralMonitoringTask.cs" />
+    <Compile Include="IListen.cs" />
+    <Compile Include="ContentPage\monitoringPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContentPage\monitoringPage.Designer.cs">
+      <DependentUpon>monitoringPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorTask\HdDataMonitor.cs" />
+    <Compile Include="MonitorTask\HdDataProvider.cs" />
+    <Compile Include="MonitorTask\SmpTaskScheduler.cs" />
+    <Compile Include="MonitorTask\GeneralMonitoringTask2.cs" />
+    <Compile Include="MonitorTask\副本 HdDataMonitor.cs" />
+    <Compile Include="Service References\HdDataServer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TaskDataProcessListening.cs" />
+    <Compile Include="ContentPage\toDbPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContentPage\toDbPageControl.Designer.cs">
+      <DependentUpon>toDbPageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\queryUIProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\queryUIProvider.designer.cs">
+      <DependentUpon>queryUIProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ClockLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\DataFileterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\HdDataFilter.cs" />
+    <Compile Include="UserControl\NotifyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskFileInfo.cs" />
+    <Compile Include="UserControl\NotifyRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="ContentPage\queryPageControl.resx">
+      <DependentUpon>queryPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentPage\firstPage.resx">
+      <DependentUpon>firstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentPage\queryPage.resx">
+      <DependentUpon>queryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentPage\toDbPage.resx">
+      <DependentUpon>toDbPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firstPageContent.resx">
+      <DependentUpon>firstPageContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentPage\monitoringPage.resx">
+      <DependentUpon>monitoringPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentPage\toDbPageControl.resx">
+      <DependentUpon>toDbPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProvider\queryUIProvider.resx">
+      <DependentUpon>queryUIProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\NotifyLabel.resx">
+      <DependentUpon>NotifyLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl\NotifyRadioButton.resx">
+      <DependentUpon>NotifyRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\HdDataServer\DataSearchServer.wsdl" />
+    <None Include="Service References\HdDataServer\GeoDo.RSS.UI.AddIn.HdService.HdDataServer.BlockInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HdDataServer\GeoDo.RSS.UI.AddIn.HdService.HdDataServer.MosaicInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HdDataServer\GeoDo.RSS.UI.AddIn.HdService.HdDataServer.OrbitInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HdDataServer\GeoDo.RSS.UI.AddIn.HdService.HdDataServer.ProjectionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.DataPro\02.GeoDo.RSS.UI.AddIn.DataPro.csproj">
+      <Project>{9627ABEA-7D9D-4A85-9944-E5E72D2AAEE8}</Project>
+      <Name>02.GeoDo.RSS.UI.AddIn.DataPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.Theme\20.GeoDo.RSS.UI.AddIn.Theme.csproj">
+      <Project>{AA1D6CF7-01C3-4178-BEDB-C1CD87584E11}</Project>
+      <Name>20.GeoDo.RSS.UI.AddIn.Theme</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.Bricks\GeoDo.RSS.UI.Bricks.csproj">
+      <Project>{4A10E304-EEBA-43A9-9B1C-A521683B772D}</Project>
+      <Name>GeoDo.RSS.UI.Bricks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applications-utilities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-black %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-blue %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-green %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-red %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-yellow %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet-yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HdServiceConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble2 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble5 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bubble5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ko-grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strategy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmdOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DBLVFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GXDFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\HdDataServer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HdDataServer\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HdDataServer\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HdDataServer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

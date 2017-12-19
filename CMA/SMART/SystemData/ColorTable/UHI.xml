@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="UHI" subIdentify="DBLV"  colortablename="UHIDBLV" description="热岛专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,192" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="0,0,255" maxValue="29800" minValue="10000" labeltext="强冷"/>
+        <Color color="41,218,252" maxValue="30000" minValue="29800" labeltext="弱冷"/>
+        <Color color="139,255,190" maxValue="30200" minValue="30000" labeltext="无"/>
+        <Color color="219,255,97" maxValue="30400" minValue="30200" labeltext="较弱"/>
+        <Color color="255,132,2" maxValue="30600" minValue="30400" labeltext="较强"/>
+        <Color color="255,0,0" maxValue="37300" minValue="30600" labeltext="强热岛"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

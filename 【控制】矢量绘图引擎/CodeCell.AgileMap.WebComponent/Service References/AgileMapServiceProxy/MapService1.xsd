@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" />
+  <xs:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
+  <xs:element name="GetMapImage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="x" type="xs:double" />
+        <xs:element minOccurs="0" name="y" type="xs:double" />
+        <xs:element minOccurs="0" name="width" type="xs:double" />
+        <xs:element minOccurs="0" name="height" type="xs:double" />
+        <xs:element minOccurs="0" name="targetWidth" type="xs:int" />
+        <xs:element minOccurs="0" name="targetHeight" type="xs:int" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="invisibleLayerIds" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMapImageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" minOccurs="0" name="GetMapImageResult" nillable="true" type="q2:MapImage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMapImageByQuadkey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="quadkey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="x" type="xs:double" />
+        <xs:element minOccurs="0" name="y" type="xs:double" />
+        <xs:element minOccurs="0" name="width" type="xs:double" />
+        <xs:element minOccurs="0" name="height" type="xs:double" />
+        <xs:element minOccurs="0" name="targetWidth" type="xs:int" />
+        <xs:element minOccurs="0" name="targetHeight" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMapImageByQuadkeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" minOccurs="0" name="GetMapImageByQuadkeyResult" nillable="true" type="q3:MapImage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeoEnvelope2PrjEnvelope">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="minX" type="xs:double" />
+        <xs:element minOccurs="0" name="maxX" type="xs:double" />
+        <xs:element minOccurs="0" name="minY" type="xs:double" />
+        <xs:element minOccurs="0" name="maxY" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeoEnvelope2PrjEnvelopeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GeoEnvelope2PrjEnvelopeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Geo2Prj">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="geoPts" nillable="true" type="q4:ArrayOfPointF" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Geo2PrjResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Geo2PrjResult" nillable="true" type="q5:ArrayOfPointF" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Prj2Geo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="prjPts" nillable="true" type="q6:ArrayOfPointF" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Prj2GeoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Prj2GeoResult" nillable="true" type="q7:ArrayOfPointF" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMapInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMapInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" minOccurs="0" name="GetMapInfoResult" nillable="true" type="q8:MapInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLayerInfos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLayerInfosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" minOccurs="0" name="GetLayerInfosResult" nillable="true" type="q9:ArrayOfLayerInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="layerId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="geometry" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="keywords" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" minOccurs="0" name="QueryResult" nillable="true" type="q10:ArrayOfFeatureInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Identify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="layerIds" nillable="true" type="q11:ArrayOfstring" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="prjPt" type="q12:PointF" />
+        <xs:element minOccurs="0" name="tolerance" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IdentifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" minOccurs="0" name="IdentifyResult" nillable="true" type="q13:ArrayOfFeatureInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

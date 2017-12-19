@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProjectionSetting>
+  <DefaultControl>
+    <IsQuicklyProject>true</IsQuicklyProject>
+    <IsOpenProjected>true</IsOpenProjected>
+    <IsResolutionFusion>true</IsResolutionFusion>
+  </DefaultControl>
+  <GLLProjectionRef Name ="等经纬度投影" ShortName="GLL" FullName="等经纬度投影"></GLLProjectionRef>
+  <OtherProjections>
+    <Projection Name="阿尔伯斯等面积投影" ShortName="AEA" FullName="Albers 等面积投影(等面积正割圆锥投影)"></Projection>
+    <Projection Name="极射赤面投影" ShortName="PSG" FullName="极射赤面投影"></Projection>
+    <Projection Name="麦卡托投影" ShortName="MCT" FullName="Mercator投影（等角正轴圆柱投影）"></Projection>
+    <Projection Name="兰伯托投影" ShortName="LBT" FullName="Lambert等角圆锥投影（等角正割圆锥投影）"></Projection>
+    <Projection Name="Hammer投影" ShortName="HAM" FullName="Hammer等面积投影"></Projection>
+  </OtherProjections>
+  <Orbits>
+    <Orbit satellite="FY-3A,FY-3B" sensor="VIRR">
+      <Band name="反射 1" dataset="EV_RefSB" datasetindex="0"/>
+      <Band name="反射 2" dataset="EV_RefSB" datasetindex="1"/>
+      <Band name="辐射 3" dataset="EV_Emissive" datasetindex="0"/>
+      <Band name="辐射 4" dataset="EV_Emissive" datasetindex="1"/>
+      <Band name="辐射 5" dataset="EV_Emissive" datasetindex="2"/>
+      <Band name="反射 6" dataset="EV_RefSB" datasetindex="2"/>
+      <Band name="反射 7" dataset="EV_RefSB" datasetindex="3"/>
+      <Band name="反射 8" dataset="EV_RefSB" datasetindex="4"/>
+      <Band name="反射 9" dataset="EV_RefSB" datasetindex="5"/>
+      <Band name="反射 10" dataset="EV_RefSB" datasetindex="6"/>
+      <Band name="传感器高度角" dataset="SensorAzimuth" datasetindex="0"/>
+      <Band name="传感器天顶角" dataset="SensorZenith" datasetindex="0"/>
+      <Band name="太阳高度角" dataset="SolarAzimuth" datasetindex="0"/>
+      <Band name="太阳天顶角" dataset="SolarZenith" datasetindex="0"/>
+    </Orbit>
+  </Orbits>
+</ProjectionSetting>

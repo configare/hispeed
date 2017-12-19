@@ -1,0 +1,8 @@
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GeoDo.RSS.UI.WinForm.frmComponentFileSelect.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GeoDo.RSS.UI.WinForm.frmConfig.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GeoDo.RSS.UI.WinForm.frmMainForm.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GeoDo.RSS.UI.WinForm.frmProgressBar.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GeoDo.RSS.UI.WinForm.UCSmartWindowManager.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.WinForm\obj\Debug\GenerateResource.write.1.tlog

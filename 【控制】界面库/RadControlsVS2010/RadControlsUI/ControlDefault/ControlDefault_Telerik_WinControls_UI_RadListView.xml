@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="BlackText,ListViewFill,ListViewBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBackgroundNoAnim,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentBackgroundNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentSelectedBorder,ListViewItemCurrentSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.Current.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCheckboxChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCheckboxNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,TransparentBackgroundNoAnim,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentSelectedFill,RoundRectShape2,ListViewItemCurrentSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.Current.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,TransparentBackgroundNoAnim,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedFill,RoundRectShape2,ListViewItemSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ListViewGroupText,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewGroupArrowExpanded">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewGroupArrowCollapsed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentBackgroundNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentSelectedBorder,ListViewItemCurrentSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.Current.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderBorder,TransparentFill,ListViewHeaderCellText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderHoverBorder,ListViewColumnHeaderHoverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderPressedFill,ListViewColumnHeaderPressedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.DetailListViewElement.ColumnDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazMyQXdBQUFBQUFBRFlBQUFBb0FBQUFEQUFBQUJRQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS92NytLdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvdjcrS3Y3Ky9sTnVOQkgvWWk0UC8vNysvbFArL3Y0cS92NytLdi8vL3lEKy92NEgvLy8vSVA3Ky9rTCsvdjVUL3Y3K1UvNysvbE51TkJIL1lpNFAvLzcrL2xQKy92NVQvdjcrVS83Ky9rTC8vLzhnL3Y3K0t2NysvbE9MUWhYL2hEOFUvM282RS85dU5CSC9ZaTRQLzFRb0RmOUlJZ3YvUGgwSy8vNysvbFArL3Y0cS8vLy9JUDcrL2tMKy92NVRoRDhVLzNvNkUvOXVOQkgvWWk0UC8xUW9EZjlJSWd2Ly92NytVLzcrL2tMLy8vOGcvdjcrQi8vLy95RCsvdjVDL3Y3K1UzbzZFLzl1TkJIL1lpNFAvMVFvRGYvKy92NVQvdjcrUXYvLy95RCsvdjRIQUFBQUFQNysvZ2YvLy84Zy92NytRdjcrL2xOdU5CSC9ZaTRQLy83Ky9sUCsvdjVDLy8vL0lQNysvZ2NBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQnVOQkgvNUtsdi93QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQURrcVcvL2JqUVIvd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCdU5CSC9ialFSL3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQnVOQkgvYmpRUi93QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVA3Ky9nZi8vLzhnL3Y3K1F2NysvbE51TkJIL1lpNFAvLzcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBL3Y3K0IvLy8veUQrL3Y1Qy92NytVM282RS85dU5CSC9ZaTRQLzFRb0RmLysvdjVUL3Y3K1F2Ly8veUQrL3Y0SC8vLy9JUDcrL2tMKy92NVRoRDhVLzNvNkUvOXVOQkgvWWk0UC8xUW9EZjlJSWd2Ly92NytVLzcrL2tMLy8vOGcvdjcrS3Y3Ky9sT0xRaFgvaEQ4VS8zbzZFLzl1TkJIL1lpNFAvMVFvRGY5SUlndi9QaDBLLy83Ky9sUCsvdjRxLy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2xOdU5CSC9ZaTRQLy83Ky9sUCsvdjVUL3Y3K1UvNysva0wvLy84Zy92NytCLy8vL3lEKy92NHEvdjcrS3Y3Ky9sTnVOQkgvWWk0UC8vNysvbFArL3Y0cS92NytLdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBLy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2tMLy8vOGdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvdjcrS3YvLy95RCsvdjRIQUFBQUFBQUFBQUFBQUFBQTwvSW1hZ2VTdHJlYW0+PE1hcmdpbnM+PEFsbD4tMTwvQWxsPjxCb3R0b20+ODwvQm90dG9tPjxMZWZ0PjA8L0xlZnQ+PFJpZ2h0PjA8L1JpZ2h0PjxUb3A+ODwvVG9wPjwvTWFyZ2lucz48L1JhZEltYWdlU2hhcGU+" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.DetailListViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="60, 94, 114" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.IsSorted">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewHeaderCellText,ListViewColumnHeaderSortedBorder,ListViewColumnHeaderSortedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.IsSorted" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderHoverBorder,ListViewColumnHeaderHoverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver.IsSorted" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderPressedFill,ListViewColumnHeaderPressedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown.IsSorted" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderHoverBorder,ListViewColumnHeaderHoverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderPressedFill,ListViewColumnHeaderPressedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderHoverBorder,ListViewColumnHeaderHoverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver.Current.IsSorted" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewColumnHeaderPressedFill,ListViewColumnHeaderPressedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown.Current.IsSorted" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="76, 96, 122" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.Current.IsSorted">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.Current">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver.Current.IsSorted">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown.Current.IsSorted">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemInactiveSelectedFill,ListViewItemInactiveSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.ControlInactive.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemInactiveSelectedFill,ListViewItemInactiveSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.ControlInactive.Current.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBackgroundNoAnim,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemInactiveSelectedFill,ListViewItemInactiveSelectedBorder,RoundRectShape2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.ControlInactive.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemInactiveSelectedFill,ListViewItemInactiveSelectedBorder,RoundRectShape2">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.ControlInactive.Current.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,TransparentBackgroundNoAnim,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemInactiveSelectedFill,ListViewItemInactiveSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.ControlInactive.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemInactiveSelectedFill,ListViewItemInactiveSelectedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.ControlInactive.Current.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(TopBottom),TransparentBackgroundNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ListViewGroupText,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewGroupArrowCollapsed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewGroupArrowCollapsed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewGroupArrowExpanded">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewGroupArrowExpanded">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewGroupToggleButton.ToggleState=On.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCheckboxNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCheckboxNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCheckboxChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.ToggleState=On.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCheckboxChecked">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ListViewItemToggleButton.ToggleState=On.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewHeaderCellText,TransparentFill,ListViewColumnHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewHeaderCellText,ListViewColumnHeaderSortedBorder,ListViewColumnHeaderSortedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.PositionOffset" Value="0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.Current.IsSorted" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewCellCurrentBorder,TransparentBackgroundNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewDataCellElement.Current.CurrentRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewCellCurrentBorder,TransparentBackgroundNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewDataCellElement.Current.Selected.CurrentRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBackgroundNoAnim,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewDataCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentSelectedBorder,ListViewItemCurrentSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.IsHotTracking.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewVisualItem.IsHotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.IsHotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverFill,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.IsHotTracking.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.Selected.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.Current.Selected.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorderNoAnim,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.Current.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.IsHotTracking.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverFill,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SimpleListViewGroupVisualItem.IsHotTracking.Current.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2,ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewVisualItem.IsHotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ListViewGroupText,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ListViewGroupText,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.IsHotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverFill,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.IsHotTracking.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.Selected.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.Current.Selected.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorderNoAnim,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.Current.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.IsHotTracking.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverFill,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="IconListViewGroupVisualItem.IsHotTracking.Current.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ListViewGroupText,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ListViewGroupText,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.ControlInactive.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.IsHotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverFill,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.IsHotTracking.Current" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.Selected.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemSelectedBorder,ListViewItemSelectedFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.Current.Selected.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorderNoAnim,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentBorder,TransparentFill,ListViewGroupText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.Current.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.IsHotTracking.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverFill,ListViewItemCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewGroupVisualItem.IsHotTracking.Current.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemHoverBorder,ListViewItemHoverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.IsHotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListViewItemCurrentSelectedBorder,ListViewItemCurrentSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem.IsHotTracking.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver.IsSorted">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown.IsSorted">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown.Current">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver.Current">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseDown">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.MouseOver">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewHeaderCellElement.Disabled">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ArrowPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBackgroundNoAnim,TransparentBorderNoAnim">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DetailListViewVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadListView" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadListViewElement" />
+        <!--
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.SimpleListViewGroupVisualItem" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.SimpleListViewVisualItem" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.SimpleListViewElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.ListViewItemCheckbox" />
+        -->
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

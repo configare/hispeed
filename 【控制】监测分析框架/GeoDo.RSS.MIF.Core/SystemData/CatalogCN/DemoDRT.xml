@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="DRT">
+  <CatalogCN identify="MCSI" cnname="干旱监测示意图"/>
+  <CatalogCN identify="OMCS" cnname="干旱监测示意图（原始分辩率）"/>
+  <CatalogCN identify="TVDI" cnname="温度植被干旱指数"/>
+  <CatalogCN identify="0VTI" cnname="时序植被温度干旱指数"/>
+  <CatalogCN identify="0SWI" cnname="热惯量干旱指数"/>
+  <CatalogCN identify="0TCI" cnname="温度状态指数"/>
+  <CatalogCN identify="0VCI" cnname="植被状态指数"/>
+  <CatalogCN identify="TCAR" cnname="温度植被干旱指数区域面积统计"/>
+  <CatalogCN identify="TLUT" cnname="温度植被干旱指数土地类型面积统计"/>
+  <CatalogCN identify="TCBP" cnname="温度植被干旱指数行政区划面积统计"/>
+  <CatalogCN identify="TCCA" cnname="温度植被干旱指数自定义面积统计"/>
+  <CatalogCN identify="VCAR" cnname="时序植被温度干旱指数区域面积统计"/>
+  <CatalogCN identify="VLUT" cnname="时序植被温度干旱指数土地类型面积统计"/>
+  <CatalogCN identify="VCBP" cnname="时序植被温度干旱指数行政区划面积统计"/>
+  <CatalogCN identify="VCCA" cnname="时序植被温度干旱指数自定义面积统计"/>
+  <CatalogCN identify="SCAR" cnname="热惯量区域面积统计"/>
+  <CatalogCN identify="SLUT" cnname="热惯量土地类型面积统计"/>
+  <CatalogCN identify="SCBP" cnname="热惯量行政区划面积统计"/>
+  <CatalogCN identify="SCCA" cnname="热惯量自定义面积统计"/>
+  <CatalogCN identify="0CLM" cnname="云结果"/>
+  <CatalogCN identify="0DNT" cnname="亮温差结果"/>
+  <CatalogCN identify="VSWI" cnname="植被供水指数"/>
+  <CatalogCN identify="TVII" cnname="温度植被干旱专题图"/>
+  <CatalogCN identify="CTVI" cnname="自定义温度植被干旱专题图"/>
+  <CatalogCN identify="VTII" cnname="时序温度植被干旱图"/>
+  <CatalogCN identify="CVTI" cnname="自定义时序温度植被干旱图"/>
+  <CatalogCN identify="SWII" cnname="热惯量专题图"/>
+  <CatalogCN identify="CSWI" cnname="自定义热惯量专题图"/>
+
+  <CatalogCN identify="OTVI" cnname="温度植被干旱监测专题图(原始分辨率)"/>
+  <CatalogCN identify="O0VC" cnname="植被状态指数监测专题图(原始分辨率)"/>
+  <CatalogCN identify="O0TC" cnname="温度状态指数监测专题图(原始分辨率)"/>
+  <CatalogCN identify="OVTI" cnname="时序植被温度干旱指数监测专题图(原始分辨率)"/>
+  <CatalogCN identify="OSWI" cnname="热惯量监测专题图(原始分辨率)"/>
+
+  <CatalogCN identify="COTV" cnname="自定义温度植被干旱监测专题图(原始分辨率)"/>
+  <CatalogCN identify="COVC" cnname="自定义植被状态指数监测专题图(原始分辨率)"/>
+  <CatalogCN identify="COTC" cnname="自定义温度状态指数监测专题图(原始分辨率)"/>
+  <CatalogCN identify="COVT" cnname="自定义时序植被温度干旱指数监测专题图(原始分辨率)"/>
+  <CatalogCN identify="COSW" cnname="自定义热惯量监测专题图(原始分辨率)"/>
+
+</ProductIdentify>

@@ -1,0 +1,12 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\SystemData\NSMCDataCoordCorrectArgs.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\SystemData\CodeToCoordDic.txt
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.dll.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.dll
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.Main.resources
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.Properties.Resources.resources
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\GenerateResource.write.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.dll
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.NSMCDataCoordCorrect\obj\x86\Release\GeoDo.Smart.Tools.NSMCDataCoordCorrect.pdb

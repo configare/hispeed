@@ -1,0 +1,14 @@
+﻿集成植被产品的植被指数算法，包含NDVI，EVI、
+
+软件为控制台程序，必须按指定位置直接输入参数。
+
+第一个参数：表示当前计算的是何种植被指数，目前支持的包含NDVI、0RVI、0DVI、0EVI
+第二个参数：局地亮温文件
+第三个参数：输出的植被指数文件名称
+
+GeoDo.Smart.AutoNDVI.exe "NDVI|0RVI|0DVI|0EVI" "ldf局地文件路径" "输出NDVI文件"
+
+例如
+GeoDo.Smart.AutoNDVI.exe "NDVI" "D:\N189123300740.ldf" "D:\NDVI.dat" "1000"
+
+GeoDo.Smart.AutoNDVI.exe "0EVI" "E:\Smart\FY3B_VIRR_DXX_GLL_L1_20130816_0500_1000M.ldf" "E:\Smart\VGT_0EVI_FY3B_VIRR_1000M_20130816050000.dat"

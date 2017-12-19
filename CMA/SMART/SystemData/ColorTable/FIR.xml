@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="FIR" subIdentify="DBLV" colortablename="FIR" description="判识结果" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无火" displaylengend="false"/>
+        <Color color="255, 255, 0" maxValue="2" minValue="1" labeltext="火点" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="FIRF" colortablename="FIRFIRF" description="过火程度过火区" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="非过火区" displaylengend="false"/>
+        <Color color="160, 128, 58" maxValue="2" minValue="1" labeltext="过火区" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="DBLV" colortablename="FIRDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无火" displaylengend="false"/>
+        <Color color="255, 0, 0" maxValue="2" minValue="1" labeltext="火点" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="FIFL" colortablename="FIRFIFL" description="农田过火区图" labeltext="">
+      <Colors>
+        <!--<Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无火" displaylengend="false"/>
+        <Color color="255, 0, 0" maxValue="2" minValue="1" labeltext="火点" />-->
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <!--<Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />-->
+        <Color color="0,255,255" maxValue="30" minValue="0.000001" labeltext="0"/>
+        <Color color="0,255,0" maxValue="50" minValue="30" labeltext="0.3"/>
+        <Color color="255,255,0" maxValue="70" minValue="50" labeltext="0.5"/>
+        <Color color="255,128,0" maxValue="85" minValue="70" labeltext="0.7"/>
+        <Color color="255,0,0" maxValue="9999" minValue="85" labeltext="0.85"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="COMP" colortablename="FIRCOMP" description="火情对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="熄灭火点" />
+        <Color color="255,0,0" maxValue="3" minValue="2" labeltext="持续火点"/>
+        <Color color="0,0,255" maxValue="4" minValue="3" labeltext="新生火点"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="CCOM" colortablename="FIRCCOM" description="自定义火情对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="熄灭火点" />
+        <Color color="255,0,0" maxValue="3" minValue="2" labeltext="持续火点"/>
+        <Color color="0,0,255" maxValue="4" minValue="3" labeltext="新生火点"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="FREQ"  colortablename="FIRFREQ" description="火情频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="238, 254, 90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184, 253, 91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73, 252, 167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94, 200, 251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94, 160, 251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92, 113, 252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50, 50, 255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243, 94, 251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250, 80, 70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255, 10, 0" maxValue="" minValue="10" labeltext="10次及以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="F2MJ"  colortablename="FIRF2MJ" description="火点亚像元面积" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="1000" minValue="100" labeltext="1000"/>
+        <Color color="0,0,255" maxValue="2000" minValue="1000" labeltext="2000"/>
+        <Color color="0,180,0" maxValue="3000" minValue="2000" labeltext="3000"/>
+        <Color color="0,255,0" maxValue="4000" minValue="3000" labeltext="4000"/>
+        <Color color="255,255,0" maxValue="5000" minValue="4000" labeltext="5000"/>
+        <Color color="180,180,0" maxValue="7000" minValue="5000" labeltext="7000"/>
+        <Color color="180,0,180" maxValue="9000" minValue="7000" labeltext="9000"/>
+        <Color color="255,0,255" maxValue="12000" minValue="9000" labeltext="12000"/>
+        <Color color="255,0,0" maxValue="15000" minValue="12000" labeltext="15000"/>
+        <Color color="180,0,0" maxValue="" minValue="15000" labeltext="15000"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="0FPG"  colortablename="FIR0FPG" description="火点强度图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,255,64" maxValue="31" minValue="1" labeltext="1"/>
+        <Color color="91,173,255" maxValue="101" minValue="31" labeltext="2"/>
+        <Color color="0,0,255" maxValue="251" minValue="101" labeltext="3"/>
+        <Color color="0,255,255" maxValue="501" minValue="251" labeltext="4"/>
+        <Color color="255,255,0" maxValue="801" minValue="501" labeltext="5"/>
+        <Color color="255, 128, 255" maxValue="1301" minValue="801" labeltext="6"/>
+        <Color color="255, 0, 255" maxValue="2001" minValue="1301" labeltext="7"/>
+        <Color color="255, 0, 0" maxValue="4001" minValue="2001" labeltext="8"/>
+        <Color color="128, 0, 0" maxValue="7001" minValue="4001" labeltext="9"/>
+        <Color color="0, 0, 0" maxValue="9999" minValue="7001" labeltext="10"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />
+        <Color color="0,0,0" maxValue="" minValue="10002" labeltext="10002" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="GFRR" colortablename="FIRGFRR" description="全球火点强度等级" labeltext="火点强度等级">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无火" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="2" minValue="1" labeltext="   1" />
+        <Color color="0,180,0" maxValue="3" minValue="2" labeltext="   2"/>
+        <Color color="180,180,0" maxValue="4" minValue="3" labeltext="   3"/>
+        <Color color="0,255,255" maxValue="5" minValue="4" labeltext="   4"/>
+        <Color color="255,0,255" maxValue="6" minValue="5" labeltext="   5"/>
+        <Color color="255, 0, 0" maxValue="7" minValue="6" labeltext="   6"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="GFRF"  colortablename="FIRGFRF" description="全球火点频次累计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="20" minValue="1" labeltext="1"/>
+        <Color color="0,0,255" maxValue="40" minValue="21" labeltext="20"/>
+        <Color color="0,180,0" maxValue="60" minValue="41" labeltext="40"/>
+        <Color color="0,255,0" maxValue="80" minValue="61" labeltext="60"/>
+        <Color color="255,255,0" maxValue="100" minValue="81" labeltext="80"/>
+        <Color color="180,180,0" maxValue="150" minValue="101" labeltext="100"/>
+        <Color color="180,0,180" maxValue="200" minValue="151" labeltext="150"/>
+        <Color color="255,0,255" maxValue="250" minValue="201" labeltext="200"/>
+        <Color color="255,0,0" maxValue="300" minValue="251" labeltext="250"/>
+        <Color color="180,0,0" maxValue="" minValue="301" labeltext="300"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="GFRY"  colortablename="FIRGFRY" description="全球火点频次累计图(年)" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="120" minValue="1" labeltext="1"/>
+        <Color color="0,0,255" maxValue="240" minValue="120" labeltext="120"/>
+        <Color color="0,180,0" maxValue="360" minValue="240" labeltext="240"/>
+        <Color color="0,255,0" maxValue="480" minValue="360" labeltext="360"/>
+        <Color color="255,255,0" maxValue="600" minValue="480" labeltext="480"/>
+        <Color color="180,180,0" maxValue="900" minValue="600" labeltext="600"/>
+        <Color color="180,0,180" maxValue="1200" minValue="900" labeltext="900"/>
+        <Color color="255,0,255" maxValue="1500" minValue="1200" labeltext="1200"/>
+        <Color color="255,0,0" maxValue="1800" minValue="1500" labeltext="1500"/>
+        <Color color="180,0,0" maxValue="" minValue="1800" labeltext="1800"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="FLMX" colortablename="FIRFLMX" description="过火程度最大合成" labeltext="">
+      <Colors>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="0,255,255" maxValue="30" minValue="0.000001" labeltext="0"/>
+        <Color color="0,255,0" maxValue="50" minValue="30" labeltext="0.3"/>
+        <Color color="255,255,0" maxValue="70" minValue="50" labeltext="0.5"/>
+        <Color color="255,128,0" maxValue="85" minValue="70" labeltext="0.7"/>
+        <Color color="255,0,0" maxValue="9999" minValue="85" labeltext="0.85"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FIR" subIdentify="FLMI" colortablename="FIRFLMI" description="过火程度最小合成" labeltext="">
+      <Colors>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="0,255,255" maxValue="30" minValue="0.000001" labeltext="0"/>
+        <Color color="0,255,0" maxValue="50" minValue="30" labeltext="0.3"/>
+        <Color color="255,255,0" maxValue="70" minValue="50" labeltext="0.5"/>
+        <Color color="255,128,0" maxValue="85" minValue="70" labeltext="0.7"/>
+        <Color color="255,0,0" maxValue="9999" minValue="85" labeltext="0.85"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FIR" subIdentify="FLAV" colortablename="FIRFLAV" description="过火程度均值合成" labeltext="">
+      <Colors>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="0,255,255" maxValue="30" minValue="0.000001" labeltext="0"/>
+        <Color color="0,255,0" maxValue="50" minValue="30" labeltext="0.3"/>
+        <Color color="255,255,0" maxValue="70" minValue="50" labeltext="0.5"/>
+        <Color color="255,128,0" maxValue="85" minValue="70" labeltext="0.7"/>
+        <Color color="255,0,0" maxValue="9999" minValue="85" labeltext="0.85"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FIR" subIdentify="FLAV" colortablename="FIRFLAV" description="过火程度距平" labeltext="">
+      <Colors>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="0,255,255" maxValue="10" minValue="0.000001" labeltext="0"/>
+        <Color color="0,255,0" maxValue="15" minValue="10" labeltext="0.1"/>
+        <Color color="255,255,0" maxValue="20" minValue="15" labeltext="0.15"/>
+        <Color color="255,128,0" maxValue="25" minValue="20" labeltext="0.2"/>
+        <Color color="255,0,0" maxValue="9999" minValue="25" labeltext="0.25"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FIR" subIdentify="FLCY" colortablename="FIRFLCY" description="过火程度差异" labeltext="">
+      <Colors>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="0,255,255" maxValue="10" minValue="0.000001" labeltext="0"/>
+        <Color color="0,255,0" maxValue="15" minValue="10" labeltext="0.1"/>
+        <Color color="255,255,0" maxValue="20" minValue="15" labeltext="0.15"/>
+        <Color color="255,128,0" maxValue="25" minValue="20" labeltext="0.2"/>
+        <Color color="255,0,0" maxValue="9999" minValue="25" labeltext="0.25"/>
+      </Colors>
+    </ProductColorTable>
+
+  </ProductColorTables>
+</ColorTable>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A227019-04CD-4C08-A4A2-B15F6FAB6040}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestHdf4</RootNamespace>
+    <AssemblyName>TestHdf4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\test\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HDF5DotNet, Version=1.0.2616.13243, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\HDF5DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\DataField.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\DataFields.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\EnumEndian.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\Hdf4FileAttr.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\Hdf4FileAttrs.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\HDFAttributeDef.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\HDFDataFormat.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\HDFDatasetDef.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\HDFDef.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\KeyValue.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\KeyValues.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\Pair.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\SetHdfFileAttributeValues.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\SHdf4To5.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\UtilHdf4To5.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\Utility.cs" />
+    <Compile Include="GeoDo.Smart.Tools.MODLSTPro\WriteHdfAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Drivers\GDAL\HDF Helper\GeoDo.HDF4\GeoDo.HDF4.csproj">
+      <Project>{2F2E1E62-054D-42B3-B212-20D8E8A1F8F2}</Project>
+      <Name>GeoDo.HDF4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.HDF4.Cloudsat\GeoDo.RSS.DF.HDF4.Cloudsat.csproj">
+      <Project>{DE2DA0F6-9EDF-41AF-B76F-E088787952EA}</Project>
+      <Name>GeoDo.RSS.DF.HDF4.Cloudsat</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

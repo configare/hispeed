@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88A0D7CB-04C2-4DF6-A345-E318974E6632}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.FIR</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.FIR</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="gdal_csharp, Version=1.0.4499.30545, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine.GDIPlus">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.Grid">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.View">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.View.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MicapsData, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.MicapsData.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DataImport\GeoDo.RSS.DI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.GDIPlus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.CanvasViewer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.CanvasViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.Bricks, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.Bricks.dll</HintPath>
+    </Reference>
+    <Reference Include="HDF5DotNet, Version=1.8.8.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\HDF5DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binary\FireAngleCollection.cs" />
+    <Compile Include="Binary\FireAngleFeature.cs" />
+    <Compile Include="Binary\SubProductFLARFIR.cs" />
+    <Compile Include="Analysis\SubProductFREQFIR.cs" />
+    <Compile Include="Analysis\SubProductGFCFFIR.cs" />
+    <Compile Include="Analysis\SubProductSTATFIR.cs" />
+    <Compile Include="Analysis\SubProductFSTAFIR.cs" />
+    <Compile Include="Binary\CreateArgument.cs" />
+    <Compile Include="Binary\FireSubareaColumn.cs" />
+    <Compile Include="Binary\ExactExtracter.cs" />
+    <Compile Include="Binary\Filter\AbnormalHTmpPixelFilter.cs" />
+    <Compile Include="Binary\Filter\BackTmpComputer.cs" />
+    <Compile Include="Binary\Filter\DoubtFirPixelFilter.cs" />
+    <Compile Include="Binary\Filter\FireAreaInfoListGenerator.cs" />
+    <Compile Include="Binary\Filter\FirePixelInfoListGenerator.cs" />
+    <Compile Include="Binary\Filter\IBackTmpComputerHelper.cs" />
+    <Compile Include="Binary\Filter\IntensityRasterGenerator.cs" />
+    <Compile Include="Binary\Filter\LandHTmpPixelFilter.cs" />
+    <Compile Include="Binary\Filter\ISolarZenithProvider.cs" />
+    <Compile Include="Binary\GetFirePointIndeiex.cs" />
+    <Compile Include="Binary\GetOtherExtractResult.cs" />
+    <Compile Include="Binary\PixelFeature.cs" />
+    <Compile Include="Binary\Filter\VertifyFirPixelFiter.cs" />
+    <Compile Include="Binary\FirFeatureCollection.cs" />
+    <Compile Include="Binary\FirGFeature.cs" />
+    <Compile Include="Binary\SubProductBinaryFIR.cs" />
+    <Compile Include="Binary\SubProductBinaryFIRG.cs" />
+    <Compile Include="Binary\SubProductBinarySMOK.cs" />
+    <Compile Include="Binary\FireAreaFeature.cs" />
+    <Compile Include="Binary\FirGFeatureCollection.cs" />
+    <Compile Include="Controls\FLAR\AngleParModel.cs" />
+    <Compile Include="Controls\FLAR\AngleSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FLAR\AngleSettings.Designer.cs">
+      <DependentUpon>AngleSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segment\frmRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Segment\frmRegion.Designer.cs">
+      <DependentUpon>frmRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\Save2DBLV.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\SetDBLVParas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\SetDBLVParas.Designer.cs">
+      <DependentUpon>SetDBLVParas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FIFL\UCFirALevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FIFL\UCFirALevel.Designer.cs">
+      <DependentUpon>UCFirALevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FIFL\UCFirePointImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FIFL\UCFirePointImport.Designer.cs">
+      <DependentUpon>UCFirePointImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\GbalFirRevisePage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\GbalFirRevisePage.designer.cs">
+      <DependentUpon>GbalFirRevisePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\HDF5Filter.cs" />
+    <Compile Include="Controls\GlobeFir\HDF5Helper.cs" />
+    <Compile Include="Controls\GlobeFir\ISelectMaskLayer.cs" />
+    <Compile Include="Controls\GlobeFir\SelectMaskLayer.cs" />
+    <Compile Include="Controls\GlobeFir\UCGbalFirRevise.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GlobeFir\UCGbalFirRevise.designer.cs">
+      <DependentUpon>UCGbalFirRevise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FIFL\UCCoverageFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FIFL\UCCoverageFile.Designer.cs">
+      <DependentUpon>UCCoverageFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Segment\MathCompare.cs" />
+    <Compile Include="Controls\Segment\UCSegmentArgFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Segment\UCSegmentArgFile.Designer.cs">
+      <DependentUpon>UCSegmentArgFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIR\UITabFire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FIR\UITabFire.designer.cs">
+      <DependentUpon>UITabFire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubProductCOMPFIR.cs" />
+    <Compile Include="Layout\SubProductGFRFFIR.cs" />
+    <Compile Include="Layout\SubProductGFRIFIR.cs" />
+    <Compile Include="Layout\SubProductIMGFIR.cs" />
+    <Compile Include="MonitoringProductFIR.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\DataCalc\CloudyProcess.cs" />
+    <Compile Include="Raster\DataCalc\SubProductFLANFIR.cs" />
+    <Compile Include="Raster\DataCalc\SubProductFLAVFIR.cs" />
+    <Compile Include="Raster\DataCalc\SubProductFLCYFIR.cs" />
+    <Compile Include="Raster\DataCalc\SubProductFLMXFIR.cs" />
+    <Compile Include="Raster\DataCalc\SubProductFLMIFIR.cs" />
+    <Compile Include="Raster\SubProductFIRFFIR.cs" />
+    <Compile Include="Raster\SubProductFireInfoList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\FLAR\AngleSettings.resx">
+      <DependentUpon>AngleSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segment\frmRegion.resx">
+      <DependentUpon>frmRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GlobeFir\SetDBLVParas.resx">
+      <DependentUpon>SetDBLVParas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FIFL\UCFirALevel.resx">
+      <DependentUpon>UCFirALevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FIFL\UCFirePointImport.resx">
+      <DependentUpon>UCFirePointImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GlobeFir\UCGbalFirRevise.resx">
+      <DependentUpon>UCGbalFirRevise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FIFL\UCCoverageFile.resx">
+      <DependentUpon>UCCoverageFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Segment\UCSegmentArgFile.resx">
+      <DependentUpon>UCSegmentArgFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.Comm\GeoDo.RSS.MIF.Prds.Comm.csproj">
+      <Project>{9F3FE8A1-E2E1-4B99-8E3D-2EE977D132DF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmdOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controls\FIFL\folder-open16.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

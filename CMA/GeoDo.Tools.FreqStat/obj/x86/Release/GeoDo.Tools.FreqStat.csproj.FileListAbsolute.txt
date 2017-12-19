@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\FreqStat.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.FreqStat.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.FreqStat.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Tools.FreqStat\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Tools.FreqStat\obj\x86\Release\GeoDo.Tools.FreqStat.exe
+D:\监测分析平台\Code\CMA\GeoDo.Tools.FreqStat\obj\x86\Release\GeoDo.Tools.FreqStat.pdb

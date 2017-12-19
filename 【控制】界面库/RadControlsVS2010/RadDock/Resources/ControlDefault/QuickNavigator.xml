@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault, Office2007Blue">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="217, 231, 249" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="234, 241, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="202, 222, 247" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="228, 239, 253" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.2388316" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.2594502" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="90" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorHeaderFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="202, 222, 247" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.BorderPrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="118, 138, 163" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorHeaderText" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 230, 249" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="199, 220, 248" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="179, 208, 245" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="205, 224, 247" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage" Value="0.3092783" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientPercentage2" Value="0.3204134" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="270" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorFooterFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.Primitives.ImagePrimitive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="118, 138, 163" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorFooterText" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="217, 231, 249" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorContentFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlClassSelector ElementClass="DockQuickNavigatorFooter" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="68, 72, 76" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemText" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.Docking.QuickNavigatorListItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+              <XmlAnimatedPropertySetting EndValue="255, 187, 100" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 172, 67" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 146, 64" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+              <XmlAnimatedPropertySetting EndValue="253, 199, 93" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.Docking.QuickNavigatorListItem.IsActive" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemFill" AutoUnapply="False">
+                <Condition xsi:type="XmlComplexCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Condition1 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.UI.Docking.QuickNavigatorListItem.IsActive" Value="True" />
+                  </Condition1>
+                  <Condition2 xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                    <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                  </Condition2>
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="118, 138, 163" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorToolWindowListHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="118, 138, 163" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorDocumentWindowListHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlAnimatedPropertySetting EndValue="255, 252, 221" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 229, 155" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 215, 104" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="" />
+              <XmlAnimatedPropertySetting EndValue="255, 222, 127" Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Linear" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemFill" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.VisualElement.IsMouseOver" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Tahoma, 9pt, style=Bold" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemText" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.Docking.QuickNavigatorListItem.IsActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Tahoma, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorListItemText" AutoUnapply="False">
+                <Condition xsi:type="XmlSimpleCondition" UnaryOperator="NotOperator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                  <Setting Property="Telerik.WinControls.UI.Docking.QuickNavigatorListItem.IsActive" Value="True" />
+                </Condition>
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.QuickNavigator" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

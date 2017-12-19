@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B045DA7-9BA6-43BB-8974-62E56EFC6C18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCell.AgileMap.ToolBox</RootNamespace>
+    <AssemblyName>CodeCell.AgileMap.ToolBox</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ActionCreateDbf.cs" />
+    <Compile Include="Actions\ActionFeaturesToDbf.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Environment\ApplicationModelEditor.cs" />
+    <Compile Include="Environment\HookModelEditor.cs" />
+    <Compile Include="Environment\IHookOfModelEditor.cs" />
+    <Compile Include="Environment\UIBuilderModelEditor.cs" />
+    <Compile Include="frmModelEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModelEditor.Designer.cs">
+      <DependentUpon>frmModelEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIComponment\CommandProvider.cs" />
+    <Compile Include="UIComponment\Commands\cmdArrow.cs" />
+    <Compile Include="UIComponment\Commands\cmdCopy.cs" />
+    <Compile Include="UIComponment\Commands\cmdCut.cs" />
+    <Compile Include="UIComponment\Commands\cmdDelete.cs" />
+    <Compile Include="UIComponment\Commands\cmdFullView.cs" />
+    <Compile Include="UIComponment\Commands\cmdOpenFile.cs" />
+    <Compile Include="UIComponment\Commands\cmdPaste.cs" />
+    <Compile Include="UIComponment\Commands\cmdSave.cs" />
+    <Compile Include="UIComponment\Commands\cmdScale.cs" />
+    <Compile Include="UIComponment\Commands\cmdText.cs" />
+    <Compile Include="UIComponment\Menu\EditMenus.cs" />
+    <Compile Include="UIComponment\Menu\FileMenus.cs" />
+    <Compile Include="UIComponment\Menu\ToolMenus.cs" />
+    <Compile Include="UIComponment\Menu\ViewMenus.cs" />
+    <Compile Include="UIComponment\ToolBar\MainToolBar.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmModelEditor.resx">
+      <DependentUpon>frmModelEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZResources\CatalogAddLocal.png" />
+    <EmbeddedResource Include="ZResources\CatalogDataset.png" />
+    <EmbeddedResource Include="ZResources\CatalogFeatureClass.png" />
+    <EmbeddedResource Include="ZResources\CatalogLocalFolder.png" />
+    <EmbeddedResource Include="ZResources\CatalogMap.png" />
+    <EmbeddedResource Include="ZResources\CatalogRoot.png" />
+    <EmbeddedResource Include="ZResources\CatalogServer.png" />
+    <EmbeddedResource Include="ZResources\CatalogServerFolder.png" />
+    <EmbeddedResource Include="ZResources\cmdArrow.png" />
+    <EmbeddedResource Include="ZResources\cmdCopy.png" />
+    <EmbeddedResource Include="ZResources\cmdCut.png" />
+    <EmbeddedResource Include="ZResources\cmdDelete.png" />
+    <EmbeddedResource Include="ZResources\cmdFullView.png" />
+    <EmbeddedResource Include="ZResources\cmdOpen.png" />
+    <EmbeddedResource Include="ZResources\cmdPan.png" />
+    <EmbeddedResource Include="ZResources\cmdPaste.png" />
+    <EmbeddedResource Include="ZResources\cmdSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeCell.AgileMap.Components\02.CodeCell.AgileMap.Components.csproj">
+      <Project>{622512A1-9550-4294-B7D2-143A66BEFC4F}</Project>
+      <Name>02.CodeCell.AgileMap.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeCell.AgileMap.Core\01.CodeCell.AgileMap.Core.csproj">
+      <Project>{CB472768-5291-45D1-B5B0-322539867D84}</Project>
+      <Name>01.CodeCell.AgileMap.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeCell.Bricks\00.CodeCell.Bricks.csproj">
+      <Project>{530F3258-AE9C-4C12-A506-358F7021B345}</Project>
+      <Name>00.CodeCell.Bricks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ArgTypes\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

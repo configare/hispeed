@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="FOG" applyfor = "VFM,FOG" description="区域大雾判识"  matchstring="\S+_FOG_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="FOG" datasets="FOGS" refdatasets="">
+      <Segment values = "0~0" indexes = "0" />
+      <Segment values = "50~50" indexes = "1" />
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTable" applyfor="FOG" description="">
+      <Color index = "0" rgb = "0,0,0"/>
+      <Color index = "1" rgb = "255,255,255"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

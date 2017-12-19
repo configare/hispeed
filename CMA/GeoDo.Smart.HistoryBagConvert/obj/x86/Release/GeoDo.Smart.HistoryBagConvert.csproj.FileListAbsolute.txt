@@ -1,0 +1,5 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.HistoryBagConvert.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.HistoryBagConvert.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.HistoryBagConvert\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.HistoryBagConvert\obj\x86\Release\GeoDo.Smart.HistoryBagConvert.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.HistoryBagConvert\obj\x86\Release\GeoDo.Smart.HistoryBagConvert.pdb

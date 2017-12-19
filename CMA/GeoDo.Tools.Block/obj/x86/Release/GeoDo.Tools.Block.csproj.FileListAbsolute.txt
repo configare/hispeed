@@ -1,0 +1,9 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\Testblock.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\分幅输出.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\分幅输入.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Block.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Block.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Block.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Block\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Block\obj\x86\Release\GeoDo.Tools.Block.exe
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Block\obj\x86\Release\GeoDo.Tools.Block.pdb

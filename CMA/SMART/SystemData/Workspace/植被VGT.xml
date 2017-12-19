@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Workspace text="植被" identify="VGT" isenabled="true">
+  <ExtractCatalog text="当前监测分析" class="CurrentExtracting">
+    <CatalogNodeGroup text="2012-06-26" identify="OrbitDateTime">
+      <CatalogNodeGroup  text="局地文件" identify="OrbitFileName"/>
+      <CatalogNodeGroup text="栅格数据" identify="NDVI,0RVI,0DVI,0EVI,0VCI,0PLP,SJPH,0AVG,0MAX,0MIN,CHAZ,ANMI,CYCA,0CLM,0LAI" pattern="*_{0}_*.dat">
+        <!--<CatalogNodeGroup text="NDVI数据" identify="NDVI" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="RVI数据" identify="0RVI" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="DVI数据" identify="0DVI" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="EVI数据" identify="0EVI" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="VCI数据" identify="0VCI" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="像元百分比" identify="0PLP" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="数据平滑" identify="SJPH" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="NDVI平均值" identify="0AVG" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="NDVI最大值" identify="0MAX" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="NDVI最小值" identify="0MIN" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="NDVI差值" identify="CHAZ" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="NDVI距平" identify="ANMI" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="NDVI周期计算" identify="CYCA" pattern="*_{0}_*.dat"/>-->
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="专题图" identify="NVII,RVII,DVII,EVII,VCII,PTUI,ZTUI,MCSI,OMCS,ONVI,ORVI,ODVI,OEVI,OVCI,OPTU,OZTU" pattern="*_{0}_*.gxd">
+        <!--<CatalogNodeGroup text="植被指数图" identify="NVII,RVII,DVII,EVII" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="植被状态指数图" identify="VCII" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="植被指数距平图" identify="PTUI" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="植被指数差值图" identify="ZTUI" pattern="*_{0}_*.gxd"/>-->
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="统计分析">
+        <CatalogNodeGroup text="植被指数统计" identify="NCBP,RCBP,ECBP,DCBP,NDVA,RVIA,EVIA,DVIA,AVGS" pattern="*_{0}_*.xlsx"/>
+        <CatalogNodeGroup text="自定义植被指数统计" identify="NCCA,RCCA,ECCA,DCCA" pattern="*_{0}_*.xlsx"/>
+        <CatalogNodeGroup text="植被状态指数统计" identify="VCIC" pattern="*_{0}_*.xlsx"/>
+        <CatalogNodeGroup text="自定义植被状态指数统计" identify="VCCA" pattern="*_{0}_*.xlsx"/>
+        <!--<CatalogNodeGroup text="CNDVI统计" identify="CDVC" pattern="*_{0}_*.xlsx"/>-->
+        <CatalogNodeGroup text="植被指数差值统计" identify="CHZC,CCCA" pattern="*_{0}_*.xlsx"/>
+      </CatalogNodeGroup>
+    </CatalogNodeGroup>
+  </ExtractCatalog>
+  <Catalog text="栅格产品" folder="栅格产品" class="RasterProduct" identify="NDVI,0RVI,0DVI,0EVI,0VCI,SJPH,0AVG,0MAX,0MIN,CHAZ,ANMI,CYCA,0CLM,0LAI" filter="Smart Raster(*.dat,*.ldf)|*.dat;*.ldf" pattern="*_{0}_*.dat">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <!--<Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+        <Attribute text="传感器" identify="Sensor" format="" visible="true"/>-->
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <!--<Attribute text="原始文件" identify="SourceFile" format="" visible="true"/>
+        <Attribute text="监测区域" identify="RegionIdentify" format="" visible="true"/>
+        <Attribute text="描述" identify="Description" format="" visible="true"/>-->
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="统计分析产品" folder="统计产品" class="ChartProduct" identify="NCBP,RCBP,ECBP,DCBP,VCBP,CVCI,CCBP,NDVA,RVIA,EVIA,DVIA,AVGS,NCCA,RCCA,ECCA,DCCA,VCCA,CCCA" filter="Ms Office Files(*.xlsx)|*.xlsx" pattern="*_{0}_*.xlsx">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="专题图产品" folder="专题产品" class="GraphicProduct" identify="NVII,RVII,DVII,EVII,VCII,PTUI,ZTUI,MCSI,OMCS,ONVI,ORVI,ODVI,OEVI,OVCI,OPTU,OZTU" filter="Smart Theme File(*.gxd)|*.gxd" pattern="*_{0}_*.gxd">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+</Workspace>

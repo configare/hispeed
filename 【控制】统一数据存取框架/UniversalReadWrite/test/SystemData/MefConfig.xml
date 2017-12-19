@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartMefConfig>
+  <MefCatalogs>
+    <MefCatalog name="数据驱动">
+      <!--IGeoDataDriver-->
+      <MefCatalogItem assembly="GeoDo.RSS.DF.LDF.DLL"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.MVG.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.MEM.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.FY1D.dll"/>
+      <!--<MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.HDF4Universal.dll"/>-->
+      <MefCatalogItem assembly="GeoDo.RSS.DF.GRIB.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.dll"/>
+    
+    </MefCatalog>
+    <MefCatalog name="波段提供者">
+      <!--IBandProvider-->
+      <!--<MefCatalogItem assembly="GeoDo.RSS.DF.FY2NOM.dll"/>-->
+      <!--<MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.H4BandPrd.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.H5BandPrd.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.NOAA.BandPrd.dll"/>
+      <MefCatalogItem assembly="GeoDo.RSS.DF.FY1D.BandPrd.dll"/>-->
+      <!--<MefCatalogItem assembly="GeoDo.RSS.DF.GDAL.HDF4Universal.dll"/>-->-->
+    </MefCatalog>
+    <MefCatalog name="图像处理">
+      <MefCatalogItem assembly=""/>
+    </MefCatalog>
+    <MefCatalog name="投影">
+      <MefCatalogItem assembly="GeoDo.FileProject.dll"/>
+    </MefCatalog>
+  </MefCatalogs>
+</SmartMefConfig>

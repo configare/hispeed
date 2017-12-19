@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml identify="cutfiles">
+  <InputDir dir="D:\代码数据\GeodoSmart\通用功能数据\多源数据\FY3A\Prj|*.ldf"></InputDir>
+  <!--高程数据文件-->
+  <OutputDir dir="D:\"></OutputDir>
+  <CoordEnv>
+    <CoordName value="DXX"></CoordName>
+    <MinX value="122"></MinX>
+    <MaxX value="128"></MaxX>
+    <MinY value="38"></MinY>
+    <MaxY value="44"></MaxY>
+  </CoordEnv>
+  <CoordEnv>
+    <CoordName value="woshishui"></CoordName>
+    <MinX value="123"></MinX>
+    <MaxX value="129"></MaxX>
+    <MinY value="39"></MinY>
+    <MaxY value="45"></MaxY>
+  </CoordEnv>
+</xml>

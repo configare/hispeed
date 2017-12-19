@@ -1,0 +1,835 @@
+﻿<Product name=" 火  情 " group="环境" identify="FIR" image="system:fire1.png" uiprovider="GeoDo.RSS.MIF.Prds.FIR.dll:GeoDo.RSS.MIF.Prds.FIR.UITabFire">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="判识" identify="DBLV" color="255,255,0" isuseaoitemplate="true" aoitemplates="vector:海陆模版" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="精细化判识" identify="ExactAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,EOST,EOSA,AQUA,EOS,NOAA11,NOAA14" sensor="VIRR,MERSI,AVHRR,MOD,MODIS" customidentify="陆地">
+          <Bands>
+            <Band identify="Visible" bandno="" wavelength="0.67" centerwavenum="-1" zoom="1"/>
+            <Band identify="NearInfrared" bandno="" wavelength="0.86" centerwavenum="-1" zoom="1"/>
+            <Band identify="MiddleInfrared" bandno="" wavelength="3.7" centerwavenum="-1" zoom="1"/>
+            <Band identify="FarInfrared" bandno="" wavelength="11" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <!-- Argument节点生成UI控件说明:
+                      <Argument name="" description="" datatype="" defaultvalue="" minvalue="" maxvalue=""/>
+                      (1)如果minvalue和maxvalue属性都存在且不为空则生成滑块,滑块不标记有效段
+                      (2)如果minvalue和maxvalue属性都不存在或者值全部为空，则根据数据类型生成录入框
+                         整数生成：NumericDown控件
+                         浮点生成：DoubleTextBox
+                      (3)如果minvalue和maxvalue只存在一个，则按照(2)处理
+                  -->
+
+            <!--第一步：4%高温像元-->
+            <ArgumentGroup name="中红外高端像元" description="中红外高端像元">
+              <Argument name="HTPixelPercent" description="X%高端像元" datatype="float" defaultvalue="4" minvalue="0" maxvalue="100"/>
+            </ArgumentGroup>
+            <!--第二步：判识-->
+            <ArgumentGroup name="判识" description="判识">
+              <!--（1）通过陆地高温点判识-->
+              <ArgumentPair description="中红外阈值" datatype="float" minvalue="2200" maxvalue="3500">
+                <Argument name="HTMiddleInfraredMin" endpointtype="min" description="中红外阈值" defaultvalue="3150"/>
+              </ArgumentPair>
+              <!--（2）通过窗口内异常高温点数量判识，MAS一期窗口大小设置的是半径，MAS二期采用直径-->
+              <Argument name="HTWndMax" description="最大邻域" datatype="Int32" defaultvalue="7"/>
+              <ArgumentPair description="(中红外-远红外)阈值" datatype="Int32" minvalue="0" maxvalue="100">
+                <Argument name="HTMiddleFarInfraredDiff" endpointtype="max" description="(中红外-远红外)阈值" defaultvalue="80"/>
+              </ArgumentPair>
+              <ArgumentPair description="中红外最大值" datatype="float" minvalue="1500" maxvalue="3500">
+                <Argument name="HTMiddleInfraredMax" endpointtype="max" description="中红外最大值" defaultvalue="3150"/>
+              </ArgumentPair>
+              <Argument name="HTMiddleInfraredOffset" description="中红外偏移量" datatype="Int32" defaultvalue="30"/>
+              <Argument name="HTAbnormalPixelCount" description="异常像元个数" datatype="Int32" defaultvalue="6"/>
+            </ArgumentGroup>
+            <!--第三步：疑似火点判识-->
+            <ArgumentGroup name="疑似火点判识" description="疑似火点判识">
+              <Argument name="BackWndMin" description="最小邻域" datatype="Int32" defaultvalue="7"/>
+              <Argument name="BackWndMax" description="最大邻域" datatype="Int32" defaultvalue="19"/>
+              <Argument name="HitedPixelCount" description="符合条件像元个数" datatype="Int32" defaultvalue="6"/>
+              <Argument name="BackTSolarZenith" description="太阳天顶角阈值" datatype="Int32" defaultvalue="87"/>
+              <!--（1）水体判识-->
+              <Argument name="Water_MinMidIfr" description="中红外阈值" datatype="Int32" defaultvalue="2700"/>
+              <Argument name="Water_MinNearIfr" description="近红外阈值" datatype="Int32" defaultvalue="500"/>
+              <Argument name="Water_NearIfr_Vis" description="(近红外-可见光)阈值" datatype="Int32" defaultvalue="0"/>
+              <!--（2）云判识-->
+              <Argument name="Cloud_MinVis" description="可见光阈值" datatype="Int32" defaultvalue="200"/>
+              <Argument name="Cloud_FarIfr" description="远红外阈值" datatype="Int32" defaultvalue="40"/>
+              <!--（3）疑似火点判识-->
+              <Argument name="Doubt_MidIfr" description="中红外阈值" datatype="Int32" defaultvalue="3200" minvalue="2200" maxvalue="3500"/>
+              <Argument name="Doubt_MidIfr_Diff" description="中红外偏移" datatype="Int32" defaultvalue="0"/>
+              <Argument name="Doubt_MidIfr_FarIfr" description="(中红外-远红外)差值阈值" datatype="Int32" defaultvalue="150"/>
+              <Argument name="Doubt_MinMidIfr" description="中红外最小值" datatype="Int32" defaultvalue="3150"/>
+              <Argument name="Doubt_MaxHTmpPixelCount" description="邻域内符合条件的像元个数" datatype="Int32" defaultvalue="9"/>
+              <Argument name="Doubt_MidIfrAvg" description="中红外均值偏移阈值" datatype="Int32" defaultvalue="80"/>
+            </ArgumentGroup>
+            <!--第四步：背景温度计算-->
+            <ArgumentGroup name="背景温度计算" description="背景温度计算">
+              <Argument name="BackTmp_SkyPixelCount" description="晴空像元个数阈值" datatype="Int32" defaultvalue="6"/>
+              <!--   区域背景温度最大值、最小值修正-->
+              <Argument name="BackTmp_localBackTmpMax" description="区域最大温度偏移量" datatype="Int32" defaultvalue="30"/>
+              <Argument name="BackTmp_localBackTmpMin" description="区域最小温度偏移量" datatype="Int32" defaultvalue="20"/>
+              <!--   标准差耀斑区修正-->
+              <Argument name="BackTmp_SolarAzimuthMax" description="最大太阳相对方位角" datatype="Int32" defaultvalue="60"/>
+              <Argument name="BackTmp_SolarAzimuthMin" description="最小太阳相对方位角" datatype="Int32" defaultvalue="0"/>
+              <Argument name="BackTmp_GlaringVIRR" description="可见光耀斑修正阈值" datatype="Int32" defaultvalue="100"/>
+              <!--   标准差荒漠与植被临近处修正-->
+              <Argument name="BackTmp_WildernessCorrect" description="可见光荒漠与植被修正阈值" datatype="Int32" defaultvalue="50"/>
+              <!--   亚像元面积计算-->
+              <Argument name="BackTmp_MaxMidIfrValue" description="最大中红外值阈值" datatype="Int32" defaultvalue="3360"/>
+              <Argument name="BackTmp_FirComputeFactor" description="火点计算因子" datatype="Int32" defaultvalue="750"/>
+              <Argument name="BackTmp_FirIntensityFactor" description="强度估算因子" datatype="Int32" defaultvalue="750"/>
+            </ArgumentGroup>
+            <!--第五步：火点确认-->
+            <ArgumentGroup name="火点确认" description="火点确认">
+              <!--（1）通过背景温度特征确认火点-->
+              <Argument name="Vertify_MaxFarIfr" description="远红外最小值阈值" datatype="float" defaultvalue="2730"/>
+              <Argument name="Vertify_MinVis" description="可见光最大值阈值" datatype="float" defaultvalue="250"/>
+              <!--缺省 3300;Noaa 3360;FY3 3400-->
+              <Argument name="Vertify_SecondMidIfr" description="亚像元火点中红外阈值" datatype="float" defaultvalue="3400"/>
+              <Argument name="Vertify_BackTmpFactor" description="背景亮温系数阈值" datatype="Int32" defaultvalue="5"/>
+              <Argument name="Vertify_MidFarRatio" description="中红外偏移量/远红外偏移量" datatype="float" defaultvalue="2"/>
+              <!--（2）通过云污染检测排除火点-->
+              <Argument name="CLMStainVisible" description="可见光阈值" datatype="float" defaultvalue="50"/>
+              <Argument name="CLMStainMiddleInfrared" description="中红外阈值" datatype="float" defaultvalue="3300" minvalue="2200" maxvalue="3500"/>
+              <Argument name="CLMStainFarInfrared" description="远红外阈值" datatype="float" defaultvalue="20"/>
+              <Argument name="CLMStainVisibleCompare" description="可见光比较系数" datatype="Int32" defaultvalue="150"/>
+              <Argument name="CLMStainMiddleInfraredOffset" description="中红外偏移量系数" datatype="Uint16" defaultvalue="60"/>
+              <Argument name="CLMStainMiddleFarInfraredOffset" description="中远红外差异偏移量系数" datatype="Uint16" defaultvalue="6"/>
+              <!--（3）确认云边缘火点-->
+              <Argument name="CLMEdgeMiddleInfraredOffset" description="中红外偏移量" datatype="UInt16" defaultvalue="80"/>
+              <!--（4）中红外偏移量与远红外偏移量比值火点确认-->
+              <Argument name="defaultPercent" description="默认比值" datatype="float" defaultvalue="0.2"/>
+              <Argument name="isUsedMidFar" description="启动比值确认" datatype="bool" defaultvalue="true"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点强度定级" description="火点强度定级">
+              <Argument name="Intensity_Grade1" description="强度1级阈值" datatype="float" defaultvalue="2"/>
+              <Argument name="Intensity_Grade2" description="强度2级阈值" datatype="float" defaultvalue="10"/>
+              <Argument name="Intensity_Grade3" description="强度3级阈值" datatype="float" defaultvalue="20"/>
+              <Argument name="Intensity_Grade4" description="强度4级阈值" datatype="float" defaultvalue="40"/>
+              <Argument name="Intensity_Grade5" description="强度5级阈值" datatype="float" defaultvalue="50"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点可信度" description="火点可信度">
+              <Argument name="Vis_FirReliability" description="可见光阈值" datatype="float" defaultvalue="150"/>
+              <Argument name="MidIfr_farInfr_FirReliability" description="中远红外差异阈值" datatype="float" defaultvalue="100"/>
+              <Argument name="MidIfr_FirReliability" description="中红外阈值" datatype="float" defaultvalue="100"/>
+            </ArgumentGroup>
+            <Argument name="FirePoints" description="已确认火点" datatype="object" visible="false" defaultvalue="" isalgorithmshare="true"/>
+            <Argument name="IsNight" description="夜间火点" datatype="bool" visible="false" defaultvalue="false" isalgorithmshare="false"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="日粗判" identify="EasyAlgorithm" isuseaoitemplate="true" aoitemplates="vector:海陆模版"  satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA,NOAA11,NOAA14" sensor="VIRR,AVHRR,MODIS,MOD" customidentify="陆地">
+          <Bands>
+            <!--Visible_CenterWaveNum-->
+            <Band identify="Visible" bandno="" wavelength="0.67" centerwavenum="-1" bandtype="" zoom="1"/>
+            <Band identify="NearInfrared" bandno="" wavelength="0.86" centerwavenum="-1" zoom="1"/>
+            <Band identify="MiddleInfrared" bandno="" wavelength="3.7" centerwavenum="-1" zoom="1"/>
+            <Band identify="FarInfrared" bandno="" wavelength="11" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="1000">
+              <!--endpointtype:min,max可以只有一个-->
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="0"/>
+              <!--右边部分有效-->
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="1000"/>
+              <!--左边部分有效-->
+            </ArgumentPair>
+            <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="1000">
+              <Argument name="NearInfraredMin" endpointtype="min" description="近红外阈值低端值" defaultvalue="0"/>
+              <Argument name="NearInfraredMax" endpointtype="max" description="近红外阈值高端值" defaultvalue="1000" />
+            </ArgumentPair>
+            <ArgumentPair description="中红外阈值" datatype="float" minvalue="1500" maxvalue="3800">
+              <Argument name="MiddleInfraredMin" endpointtype="min" description="中红外阈值低端值" defaultvalue="3150"/>
+              <Argument name="MiddleInfraredMax" endpointtype="max" description="中红外阈值高端值" defaultvalue="3800"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="1500" maxvalue="3800">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="1500"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="3800"/>
+            </ArgumentPair>
+
+            <!--背景温度计算-->
+            <ArgumentGroup name="疑似火点判识" description="疑似火点判识" visible="false">
+              <Argument name="BackWndMin" description="最小邻域" datatype="Int32" defaultvalue="7"/>
+              <Argument name="BackWndMax" description="最大邻域" datatype="Int32" defaultvalue="19"/>
+              <Argument name="HitedPixelCount" description="符合条件像元个数" datatype="Int32" defaultvalue="6"/>
+              <Argument name="BackTSolarZenith" description="太阳天顶角阈值" datatype="Int32" defaultvalue="87"/>
+              <!--（1）水体判识-->
+              <Argument name="Water_MinMidIfr" description="中红外阈值" datatype="Int32" defaultvalue="2700"/>
+              <Argument name="Water_MinNearIfr" description="近红外阈值" datatype="Int32" defaultvalue="500"/>
+              <Argument name="Water_NearIfr_Vis" description="(近红外-可见光)阈值" datatype="Int32" defaultvalue="0"/>
+              <!--（2）云判识-->
+              <Argument name="Cloud_MinVis" description="可见光阈值" datatype="Int32" defaultvalue="200"/>
+              <Argument name="Cloud_FarIfr" description="远红外阈值" datatype="Int32" defaultvalue="40"/>
+              <!--（3）疑似火点判识-->
+              <Argument name="Doubt_MidIfr" description="中红外阈值" datatype="Int32" defaultvalue="3200" minvalue="2200" maxvalue="3500"/>
+              <Argument name="Doubt_MidIfr_Diff" description="中红外偏移" datatype="Int32" defaultvalue="0"/>
+              <Argument name="Doubt_MidIfr_FarIfr" description="(中红外-远红外)差值阈值" datatype="Int32" defaultvalue="150"/>
+              <Argument name="Doubt_MinMidIfr" description="中红外最小值" datatype="Int32" defaultvalue="3150"/>
+              <Argument name="Doubt_MaxHTmpPixelCount" description="邻域内符合条件的像元个数" datatype="Int32" defaultvalue="9"/>
+              <Argument name="Doubt_MidIfrAvg" description="中红外均值偏移阈值" datatype="Int32" defaultvalue="80"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="背景温度计算" description="背景温度计算" visible="false">
+              <Argument name="BackTmp_SkyPixelCount" description="晴空像元个数阈值" datatype="Int32" defaultvalue="6"/>
+              <!--   区域背景温度最大值、最小值修正-->
+              <Argument name="BackTmp_localBackTmpMax" description="区域最大温度偏移量" datatype="Int32" defaultvalue="30"/>
+              <Argument name="BackTmp_localBackTmpMin" description="区域最小温度偏移量" datatype="Int32" defaultvalue="20"/>
+              <!--   标准差耀斑区修正-->
+              <Argument name="BackTmp_SolarAzimuthMax" description="最大太阳相对方位角" datatype="Int32" defaultvalue="60"/>
+              <Argument name="BackTmp_SolarAzimuthMin" description="最小太阳相对方位角" datatype="Int32" defaultvalue="0"/>
+              <Argument name="BackTmp_GlaringVIRR" description="可见光耀斑修正阈值" datatype="Int32" defaultvalue="100"/>
+              <!--   标准差荒漠与植被临近处修正-->
+              <Argument name="BackTmp_WildernessCorrect" description="可见光荒漠与植被修正阈值" datatype="Int32" defaultvalue="50"/>
+              <!--   亚像元面积计算-->
+              <Argument name="BackTmp_MaxMidIfrValue" description="最大中红外值阈值" datatype="Int32" defaultvalue="3360"/>
+              <Argument name="BackTmp_FirComputeFactor" description="火点计算因子" datatype="Int32" defaultvalue="750"/>
+              <Argument name="BackTmp_FirIntensityFactor" description="强度估算因子" datatype="Int32" defaultvalue="750"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点强度定级" description="火点强度定级" visible="false">
+              <Argument name="Intensity_Grade1" description="强度1级阈值" datatype="float" defaultvalue="2"/>
+              <Argument name="Intensity_Grade2" description="强度2级阈值" datatype="float" defaultvalue="10"/>
+              <Argument name="Intensity_Grade3" description="强度3级阈值" datatype="float" defaultvalue="20"/>
+              <Argument name="Intensity_Grade4" description="强度4级阈值" datatype="float" defaultvalue="40"/>
+              <Argument name="Intensity_Grade5" description="强度5级阈值" datatype="float" defaultvalue="50"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点可信度" description="火点可信度" visible="false">
+              <Argument name="Vis_FirReliability" description="可见光阈值" datatype="float" defaultvalue="150"/>
+              <Argument name="MidIfr_farInfr_FirReliability" description="中远红外差异阈值" datatype="float" defaultvalue="100"/>
+              <Argument name="MidIfr_FirReliability" description="中红外阈值" datatype="float" defaultvalue="100"/>
+            </ArgumentGroup>
+            <Argument name="FirePoints" description="已确认火点" datatype="object" visible="false" defaultvalue="" isalgorithmshare="true"/>
+            <Argument name="IsNight" description="夜间火点" datatype="bool" visible="false" defaultvalue="false" isalgorithmshare="false"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="夜粗判" identify="NightAlgorithm" isuseaoitemplate="true" aoitemplates="vector:海陆模版"  satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA,NOAA11,NOAA14" sensor="VIRR,AVHRR,MODIS,MOD" customidentify="陆地">
+          <Bands>
+            <!--Visible_CenterWaveNum-->
+            <Band identify="MiddleInfrared" bandno="" wavelength="3.7" centerwavenum="-1" zoom="1"/>
+            <Band identify="FarInfrared" bandno="" wavelength="11" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="中红外阈值" datatype="float" minvalue="1500" maxvalue="3800">
+              <Argument name="MiddleInfraredMin" endpointtype="min" description="中红外阈值低端值" defaultvalue="2680"/>
+              <Argument name="MiddleInfraredMax" endpointtype="max" description="中红外阈值高端值" defaultvalue="3800"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="1500" maxvalue="3800">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="1500"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="3800"/>
+            </ArgumentPair>
+
+            <!--背景温度计算-->
+            <ArgumentGroup name="疑似火点判识" description="疑似火点判识" visible="false">
+              <Argument name="BackWndMin" description="最小邻域" datatype="Int32" defaultvalue="7"/>
+              <Argument name="BackWndMax" description="最大邻域" datatype="Int32" defaultvalue="19"/>
+              <Argument name="HitedPixelCount" description="符合条件像元个数" datatype="Int32" defaultvalue="6"/>
+              <Argument name="BackTSolarZenith" description="太阳天顶角阈值" datatype="Int32" defaultvalue="87"/>
+              <!--（1）水体判识-->
+              <Argument name="Water_MinMidIfr" description="中红外阈值" datatype="Int32" defaultvalue="2700"/>
+              <Argument name="Water_MinNearIfr" description="近红外阈值" datatype="Int32" defaultvalue="500"/>
+              <Argument name="Water_NearIfr_Vis" description="(近红外-可见光)阈值" datatype="Int32" defaultvalue="0"/>
+              <!--（2）云判识-->
+              <Argument name="Cloud_MinVis" description="可见光阈值" datatype="Int32" defaultvalue="200"/>
+              <Argument name="Cloud_FarIfr" description="远红外阈值" datatype="Int32" defaultvalue="40"/>
+              <!--（3）疑似火点判识-->
+              <Argument name="Doubt_MidIfr" description="中红外阈值" datatype="Int32" defaultvalue="3200" minvalue="2200" maxvalue="3500"/>
+              <Argument name="Doubt_MidIfr_Diff" description="中红外偏移" datatype="Int32" defaultvalue="0"/>
+              <Argument name="Doubt_MidIfr_FarIfr" description="(中红外-远红外)差值阈值" datatype="Int32" defaultvalue="150"/>
+              <Argument name="Doubt_MinMidIfr" description="中红外最小值" datatype="Int32" defaultvalue="3150"/>
+              <Argument name="Doubt_MaxHTmpPixelCount" description="邻域内符合条件的像元个数" datatype="Int32" defaultvalue="9"/>
+              <Argument name="Doubt_MidIfrAvg" description="中红外均值偏移阈值" datatype="Int32" defaultvalue="80"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="背景温度计算" description="背景温度计算" visible="false">
+              <Argument name="BackTmp_SkyPixelCount" description="晴空像元个数阈值" datatype="Int32" defaultvalue="6"/>
+              <!--   区域背景温度最大值、最小值修正-->
+              <Argument name="BackTmp_localBackTmpMax" description="区域最大温度偏移量" datatype="Int32" defaultvalue="30"/>
+              <Argument name="BackTmp_localBackTmpMin" description="区域最小温度偏移量" datatype="Int32" defaultvalue="20"/>
+              <!--   标准差耀斑区修正-->
+              <Argument name="BackTmp_SolarAzimuthMax" description="最大太阳相对方位角" datatype="Int32" defaultvalue="60"/>
+              <Argument name="BackTmp_SolarAzimuthMin" description="最小太阳相对方位角" datatype="Int32" defaultvalue="0"/>
+              <Argument name="BackTmp_GlaringVIRR" description="可见光耀斑修正阈值" datatype="Int32" defaultvalue="100"/>
+              <!--   标准差荒漠与植被临近处修正-->
+              <Argument name="BackTmp_WildernessCorrect" description="可见光荒漠与植被修正阈值" datatype="Int32" defaultvalue="50"/>
+              <!--   亚像元面积计算-->
+              <Argument name="BackTmp_MaxMidIfrValue" description="最大中红外值阈值" datatype="Int32" defaultvalue="3360"/>
+              <Argument name="BackTmp_FirComputeFactor" description="火点计算因子" datatype="Int32" defaultvalue="750"/>
+              <Argument name="BackTmp_FirIntensityFactor" description="强度估算因子" datatype="Int32" defaultvalue="750"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点强度定级" description="火点强度定级"  visible="false">
+              <Argument name="Intensity_Grade1" description="强度1级阈值" datatype="float" defaultvalue="2"/>
+              <Argument name="Intensity_Grade2" description="强度2级阈值" datatype="float" defaultvalue="10"/>
+              <Argument name="Intensity_Grade3" description="强度3级阈值" datatype="float" defaultvalue="20"/>
+              <Argument name="Intensity_Grade4" description="强度4级阈值" datatype="float" defaultvalue="40"/>
+              <Argument name="Intensity_Grade5" description="强度5级阈值" datatype="float" defaultvalue="50"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点可信度" description="火点可信度" visible="false">
+              <Argument name="Vis_FirReliability" description="可见光阈值" datatype="float" defaultvalue="150"/>
+              <Argument name="MidIfr_farInfr_FirReliability" description="中远红外差异阈值" datatype="float" defaultvalue="100"/>
+              <Argument name="MidIfr_FirReliability" description="中红外阈值" datatype="float" defaultvalue="100"/>
+            </ArgumentGroup>
+            <Argument name="FirePoints" description="已确认火点" datatype="object" visible="false" defaultvalue="" isalgorithmshare="true"/>
+            <Argument name="IsNight" description="夜间火点" datatype="bool" visible="false" defaultvalue="true" isalgorithmshare="false"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="导入PGS" identify="ImportAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,AVHRR,MODIS,MOD" customidentify="">
+          <Bands>
+          </Bands>
+          <Arguments>
+            <Argument name="GFRFile" description="火点监测数据" editoruiprovider="GeoDo.RSS.MIF.Prds.FIR.dll:GeoDo.RSS.MIF.Prds.FIR.UCFirePointImport">
+              <DefaultValue>
+                <FileFullName value=""/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="过火区" identify="FIRG" color="255,128,64" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isneedcurrentraster="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="判识" identify="FireGroundAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="陆地">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <!--
+                      reftype:表示参数为复杂类型(例如：文件）,取值：[var|file]
+                              如果reftype不存在,则参数类型为var
+                      refidentify:表示复杂参数的标识(例如：子产品标识)
+                      reffilter:选择文件的过滤条件
+                      ismultiselect:允许多选文件
+                      生成时：
+                          如果reftype为file,则生成ComboBox + FileOpenButton
+                                ComboBox中默认为本次会话中符合条件的文件
+                  -->
+            <ArgumentPair description="NDVI阈值" datatype="float"  minvalue="-1" maxvalue="1">
+              <Argument name="NDVIMax" endpointtype="max" description="阈值高端值"  defaultvalue="0.15"/>
+            </ArgumentPair>
+            <ArgumentPair description="可见光阈值" datatype="float"  minvalue="0" maxvalue="100">
+              <Argument name="VisibleMax" endpointtype="max" description="阈值高端值" defaultvalue="10"/>
+            </ArgumentPair>
+            <ArgumentPair description="近红外阈值" datatype="float"  minvalue="0" maxvalue="100">
+              <Argument name="NearInfraredMax" endpointtype="max" description="阈值高端值" defaultvalue="10"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float"  minvalue="150" maxvalue="380">
+              <Argument name="FarInfraredMin" endpointtype="min" description="阈值低端值" defaultvalue="290"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="太阳耀斑角" identify="FLAR" color="255,128,64" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isneedcurrentraster="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="太阳耀斑角" identify="FlareAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="陆地">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="angle" bandno="1"  zoom="100" />
+           
+          </Bands>
+          <Arguments>
+            <ArgumentGroup name="角度设置" description="角度设置">
+              <Argument name="anglesettings" description="角度设置" editoruiprovider="GeoDo.RSS.MIF.Prds.FIR.dll:GeoDo.RSS.MIF.Prds.FIR.AngleSettings">
+              </Argument>
+            </ArgumentGroup>
+            <ArgumentPair description="耀斑角阈值" datatype="float"  minvalue="0" maxvalue="90">
+              <Argument name="glint" endpointtype="max" description="阈值高端值" defaultvalue="30"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="烟区" identify="SMOK" color="128,128,192" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true"  isneedcurrentraster="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="判识" identify="FireSmokeAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="陆地">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float"  minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="阈值低端值"  defaultvalue="13"/>
+              <Argument name="VisibleMax" endpointtype="max" description="阈值高端值" defaultvalue="25"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float"  minvalue="150" maxvalue="380">
+              <Argument name="FarInfraredMin" endpointtype="min" description="阈值低端值" defaultvalue="200"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="阈值高端值" defaultvalue="300"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="过火程度" identify="FIRF" color="255,128,64" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="过火区程度" identify="FIRFAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="NearInfrared" bandno="" wavelength="0.865" centerwavenum="-1" zoom="10" />
+            <Band identify="CoverageBand" bandno="1" wavelength="" centerwavenum="-1" zoom="1000" />
+          </Bands>
+          <Arguments>
+            <Argument name="FIRFZoom" description="过火程度放大倍数" datatype="float" defaultvalue="100"/>
+            <ArgumentGroup name="过火区程度计算" description="过火区程度计算">
+              <Argument name="NearInfraredValues" description="近红外端元值"
+                        editoruiprovider="GeoDo.RSS.MIF.Prds.FIR.dll:GeoDo.RSS.MIF.Prds.FIR.UCFirALevel">
+              </Argument>
+              <ArgumentPair description="农田百分比" datatype="float"  minvalue="-1" maxvalue="2">
+                <Argument name="CoverageMin" endpointtype="min" description="阈值高端值" defaultvalue="0.8"/>
+              </ArgumentPair>
+            </ArgumentGroup>
+            <ArgumentGroup name="过火区判识" description="过火区判识">
+              <ArgumentPair description="近红外" datatype="float"  minvalue="-20" maxvalue="100">
+                <Argument name="NearInfraredMax" endpointtype="max" description="阈值高端值" defaultvalue="17.5"/>
+              </ArgumentPair>
+            </ArgumentGroup>
+            <ArgumentGroup name="辅助参数" description="辅助参数">
+              <Argument name="percectMax" description="最大百分比(%)" datatype="float" defaultvalue="10"/>
+              <Argument name="percectMin" description="最小百分比(%)" datatype="float" defaultvalue="10"/>
+              <Argument name="coverageFile" description="背景农田"
+                        editoruiprovider="GeoDo.RSS.MIF.Prds.FIR.dll:GeoDo.RSS.MIF.Prds.FIR.UCCoverageFile">
+                <DefaultValue>
+                  <FileDirs>
+                    <FileDir dir="@SystemData\ProductArgs\FIR\CropPercent.dat"/>
+                  </FileDirs>
+                </DefaultValue>
+              </Argument>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="信息列表" identify="FRIL" isdisplaypanel="true" isuseaoitemplate="false" aoitemplates="" isneedcurrentraster="true" autogenerategroup="Ord,Dis">
+      <Algorithms>
+        <Algorithm name="信息列表" identify="FireAreaAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,AVHRR,MODIS,MOD" customidentify="陆地">
+          <Bands>
+            <Band identify="Visible" bandno="" wavelength="0.67" centerwavenum="-1" bandtype="" zoom="1"/>
+            <Band identify="NearInfrared" bandno="" wavelength="0.86" centerwavenum="-1" zoom="1"/>
+            <Band identify="MiddleInfrared" bandno="" wavelength="3.7" centerwavenum="-1" zoom="1"/>
+            <Band identify="FarInfrared" bandno="" wavelength="11" centerwavenum="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="CurrentRasterFile" description="亮温数据文件"
+                      refdatatype="file" refidentify="CurrentRaster" reffilter="局地投影数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"
+                      ismultiselect="false" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+            <Argument name="DBLVFile" description="判识结果文件"
+                      refdatatype="file" refidentify="DBLV" reffilter="局地投影数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+
+            <!--背景温度计算-->
+            <ArgumentGroup name="疑似火点判识" description="疑似火点判识" visible="false">
+              <Argument name="BackWndMin" description="最小邻域" datatype="Int32" defaultvalue="7"/>
+              <Argument name="BackWndMax" description="最大邻域" datatype="Int32" defaultvalue="19"/>
+              <Argument name="HitedPixelCount" description="符合条件像元个数" datatype="Int32" defaultvalue="6"/>
+              <Argument name="BackTSolarZenith" description="太阳天顶角阈值" datatype="Int32" defaultvalue="87"/>
+              <!--（1）水体判识-->
+              <Argument name="Water_MinMidIfr" description="中红外阈值" datatype="Int32" defaultvalue="2700"/>
+              <Argument name="Water_MinNearIfr" description="近红外阈值" datatype="Int32" defaultvalue="500"/>
+              <Argument name="Water_NearIfr_Vis" description="(近红外-可见光)阈值" datatype="Int32" defaultvalue="0"/>
+              <!--（2）云判识-->
+              <Argument name="Cloud_MinVis" description="可见光阈值" datatype="Int32" defaultvalue="200"/>
+              <Argument name="Cloud_FarIfr" description="远红外阈值" datatype="Int32" defaultvalue="40"/>
+              <!--（3）疑似火点判识-->
+              <Argument name="Doubt_MidIfr" description="中红外阈值" datatype="Int32" defaultvalue="3200" minvalue="2200" maxvalue="3500"/>
+              <Argument name="Doubt_MidIfr_Diff" description="中红外偏移" datatype="Int32" defaultvalue="0"/>
+              <Argument name="Doubt_MidIfr_FarIfr" description="(中红外-远红外)差值阈值" datatype="Int32" defaultvalue="150"/>
+              <Argument name="Doubt_MinMidIfr" description="中红外最小值" datatype="Int32" defaultvalue="3150"/>
+              <Argument name="Doubt_MaxHTmpPixelCount" description="邻域内符合条件的像元个数" datatype="Int32" defaultvalue="9"/>
+              <Argument name="Doubt_MidIfrAvg" description="中红外均值偏移阈值" datatype="Int32" defaultvalue="80"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="背景温度计算" description="背景温度计算" visible="false">
+              <Argument name="BackTmp_SkyPixelCount" description="晴空像元个数阈值" datatype="Int32" defaultvalue="6"/>
+              <!--   区域背景温度最大值、最小值修正-->
+              <Argument name="BackTmp_localBackTmpMax" description="区域最大温度偏移量" datatype="Int32" defaultvalue="30"/>
+              <Argument name="BackTmp_localBackTmpMin" description="区域最小温度偏移量" datatype="Int32" defaultvalue="20"/>
+              <!--   标准差耀斑区修正-->
+              <Argument name="BackTmp_SolarAzimuthMax" description="最大太阳相对方位角" datatype="Int32" defaultvalue="60"/>
+              <Argument name="BackTmp_SolarAzimuthMin" description="最小太阳相对方位角" datatype="Int32" defaultvalue="0"/>
+              <Argument name="BackTmp_GlaringVIRR" description="可见光耀斑修正阈值" datatype="Int32" defaultvalue="100"/>
+              <!--   标准差荒漠与植被临近处修正-->
+              <Argument name="BackTmp_WildernessCorrect" description="可见光荒漠与植被修正阈值" datatype="Int32" defaultvalue="50"/>
+              <!--   亚像元面积计算-->
+              <Argument name="BackTmp_MaxMidIfrValue" description="最大中红外值阈值" datatype="Int32" defaultvalue="3360"/>
+              <Argument name="BackTmp_FirComputeFactor" description="火点计算因子" datatype="Int32" defaultvalue="750"/>
+              <Argument name="BackTmp_FirIntensityFactor" description="强度估算因子" datatype="Int32" defaultvalue="750"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="火点强度定级" description="火点强度定级" visible="false">
+              <Argument name="Intensity_Grade1" description="强度1级阈值" datatype="float" defaultvalue="2"/>
+              <Argument name="Intensity_Grade2" description="强度2级阈值" datatype="float" defaultvalue="10"/>
+              <Argument name="Intensity_Grade3" description="强度3级阈值" datatype="float" defaultvalue="20"/>
+              <Argument name="Intensity_Grade4" description="强度4级阈值" datatype="float" defaultvalue="40"/>
+              <Argument name="Intensity_Grade5" description="强度5级阈值" datatype="float" defaultvalue="50"/>
+            </ArgumentGroup>
+            <Argument name="IsNight" description="夜间火点" datatype="bool" visible="false" defaultvalue="false" isalgorithmshare="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="0LWP" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="LWPI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="火情专题图模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="NCSI" layoutname="火情网络合成图" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord,Dis"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="MCSI" layoutname="火情产品多通道合成图"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Dis"/>
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0SDI" layoutname="火情监测专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  colortablename="FIRDBLV" autogenerategroup="Dis"/>
+        <Instance name="火点强度图" fileprovider="ContextEnvironment:0FPG"
+                  outfileidentify="FPGI" layoutname="火情强度图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename="FIR0FPG" autogenerategroup="Dis"/>
+        <Instance name="二值图({关注区})" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CSDI" layoutname="火情监测专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  colortablename="FIRDBLV"
+                  isautogenerate="false"/>
+        <Instance name="过火区图" fileprovider="ContextEnvironment:FIRG"
+                outfileidentify="FRGI" layoutname="过火区专题图模板"
+                aoiprovider="SystemAOI:DefaultAOI"  colortablename="FIRDBLV"
+                isautogenerate="false"/>
+        <Instance name="全球月火点频次图" fileprovider="ContextEnvironment:GFRF"
+                  outfileidentify="FREI" layoutname="全球月火点像元累计专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename="FIRGFRF" isautogenerate="false"/>
+        <Instance name="多通道合成图(原始分辨率)" fileprovider="ContextEnvironment:CurrentRasterFile"
+                   outfileidentify="OMCS" layoutname="过火程度过火区原始分辨率图" isoriginal="true"
+                   aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="过火区图(原始分辨率)" fileprovider="ContextEnvironment:FIRF"
+                  outfileidentify="OFFR" layoutname="过火程度过火区专题图模板(原分)" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="过火程度图(原始分辨率)" fileprovider="ContextEnvironment:FIFL"
+                 outfileidentify="OFFL" layoutname="过火程度专题图模板(原分)" isoriginal="true"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="过火程度图(省原始分辨率)" fileprovider="ContextEnvironment:FIFL"
+            outfileidentify="OCFL" layoutname="过火程度专题图模板(省原分)" isoriginal="true"
+            aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="过火区图" fileprovider="ContextEnvironment:FIRF"
+             outfileidentify="FFRI" layoutname="过火程度过火区专题图模板" isoriginal="false"
+             aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="过火程度图" fileprovider="ContextEnvironment:FIFL"
+                 outfileidentify="FFLI" layoutname="过火程度专题图模板" isoriginal="false"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="面积统计" identify="STAT" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="STATAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CCAR"
+                  aoiprovider="" autogenerategroup="Ord,Dis"/>
+        <!--<Instance name="面积统计({关注区})" fileprovider="ContextEnvironment:DBLV"
+                         outfileidentify="CCCA"
+                         aoiprovider="SystemAOI:DefaultAOI"/>-->
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CLUT"
+                  aoiprovider="土地利用类型" autogenerategroup="Dis"/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CBP"
+                  aoiprovider="省级行政区划" autogenerategroup="Dis"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CCC"
+                  aoiprovider="省市县行政区划" autogenerategroup="Dis"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CCB"
+                  aoiprovider="分级行政区划" autogenerategroup="Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="频次统计" identify="FREQ" isdisplaypanel="false"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="频次统计" identify="FREQAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="频次统计文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="LWPI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="火情频次统计模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="FREQ"  extinfo="_POTD" layoutname="火情频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="FREQ" extinfo="_POAM" layoutname="火情频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="FREQ" extinfo="_POAQ" layoutname="火情频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="FREQ" extinfo="_POAY" layoutname="火情频次统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="周期合成" identify="CYCI" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="周期合成" identify="CYCIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="周期合成文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="CYCI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="火情周期合成模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="CYCI" extinfo="_POTD" layoutname="火情周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="CYCI" extinfo="_POAM" layoutname="火情周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="CYCI" extinfo="_POAQ" layoutname="火情周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FIR,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="CYCI" extinfo="_POAY" layoutname="火情周期统计专题图模板" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="对比分析图" identify="COMP" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="对比分析" identify="COMP" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="DBLV文件" refdatatype="file" refidentify="DBLV"
+                      reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="COMP"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="火情对比分析专题图"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="255,255,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="CLMAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA,NOAA,NOAA16,NOAA17,NOAA18,NOAA19" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <NearVisiable>false</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="全球火点强度图" identify="GFRI" isdisplaypanel="true"  isautogenerate="false" isuseaoitemplate="false">
+      <Algorithms>
+        <Algorithm name="全球火点强度" identify="GFRIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedRGFRFile" description="全球火点修正文件" refdatatype="file" refidentify="RGFR" reffilter="全球火点修正文件(*.shp)|*.shp"  ismultiselect="false"/>
+            <Argument name="Resolution" description="分辨率" datatype="double" defaultvalue="1"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="GFRI"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="全球火点强度图" fileprovider="ContextEnvironment:GFRR"
+                  outfileidentify="GFRI" layoutname="全球日火点强度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename ="FIRGFRR" isoriginal="false"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="全球火点频次图" identify="GFRF" isdisplaypanel="true"  isautogenerate="false" isuseaoitemplate="false">
+      <Algorithms>
+        <Algorithm name="全球火点频次" identify="GFRFAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedRGFRFiles" description="全球火点修正文件" refdatatype="file" refidentify="RGFR" reffilter="全球火点修正文件(*.shp,*.txt)|*.shp;*.txt"  ismultiselect="true"/>
+            <Argument name="Resolution" description="分辨率" datatype="double" defaultvalue="1"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="GFRF"/>
+            <Argument name="YearStat" description="是否年统计" datatype="bool" defaultvalue="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="全球火点频次图" fileprovider="ContextEnvironment:GFRF"
+                  outfileidentify="GFRF" layoutname="全球火点像元累计专题图模板 "
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename ="FIRGFRF"
+                  isoriginal="false"/>
+        <Instance name="全球火点频次图(年)" fileprovider="ContextEnvironment:GFRF"
+                 outfileidentify="GFRY" layoutname="全球火点像元累计专题图年模板 "
+                 aoiprovider="SystemAOI:DefaultAOI" colortablename ="FIRGFRY"
+                 isoriginal="false"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="全球火点累计频次" identify="GFCF" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="全球火点大洲累计频次" identify="GFCFAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="全球火点修正文件或火点累计频次" refdatatype="file" refidentify="RGFR" reffilter="全球火点修正文件(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="GFCF"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="大洲累计频次统计" fileprovider="ContextEnvironment:RGFR"
+                  outfileidentify="GFCF"
+                  aoiprovider="大洲" autogenerategroup="Ord,Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="农田面积统计" identify="FSTA" isdisplaypanel="true" visiablesavebtn="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="农田面积统计" identify="FSTAAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="农田过火产品"
+                      refdatatype="file" refidentify="FIFL" reffilter="FIFL文件(*.dat)|*.dat" ismultiselect="true" />
+            <Argument name="resultZoom" description="过火放大倍数" datatype="float" defaultvalue="100" />
+            <Argument name="RegionFileName" description="分段参数文件"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FIR.dll:GeoDo.RSS.MIF.Prds.FIR.UCSegmentArgFile">
+              <DefaultValue>
+                <FileDirs>
+                  <FileDir dir="@SystemData\ProductArgs\FIR\Segments\ANMIStat.txt"/>
+                  <!--<CYFileDir dir="@SystemData\ProductArgs\FIR\Segments\ANMICStat.txt"/>-->
+                </FileDirs>
+              </DefaultValue>
+            </Argument>
+            <Argument name="isWeight" description="启用过火程度" datatype="bool" defaultvalue="true" />
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="9999,-9999" isoptional="true" visible="false"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="9998" isoptional="true" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:FIFL"
+                  outfileidentify="FCAR" aoiprovider="当前区域"/>
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:FIFL"
+                  outfileidentify="FCLU" aoiprovider="土地利用类型"/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:FIFL"
+                  outfileidentify="FCBP" aoiprovider="省级行政区划"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:FIFL"
+                  outfileidentify="FCCC" aoiprovider="省市县行政区划" />
+      </Instances>
+    </SubProduct>
+    <SubProduct name="过火程度最大值合成" identify="FLMX" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" visiablesavebtn="false"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="过火程度最大值合成" identify="FLMX" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+            <Band identify="FIFLBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="计算文件"
+                      refdatatype="file" refidentify="FIFL"
+                      reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      fileprovider="ContextEnvironment:FIFL"
+                      ismultiselect="true"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="9999" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="9998" isoptional="true"/>
+            <Argument name="InvailValue" description="无效值（以，分隔）" datatype="string" defaultvalue="0" isoptional="true" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="过火程度最小值合成" identify="FLMI" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" visiablesavebtn="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="过火程度最小值合成" identify="FLMI" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+            <Band identify="FIFLBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="计算文件"
+                                refdatatype="file" refidentify="FIFL"
+                                reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                fileprovider="ContextEnvironment:FIFL"
+                                ismultiselect="true"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="9999" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="9998" isoptional="true"/>
+            <Argument name="InvailValue" description="无效值（以，分隔）" datatype="string" defaultvalue="0" isoptional="true" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="过火程度平均值合成" identify="FLAV" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" visiablesavebtn="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="过火程度平均值合成" identify="FLAV" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+            <Band identify="FIFLBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="计算文件"
+                                 refdatatype="file" refidentify="FIFL"
+                                 reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                 fileprovider="ContextEnvironment:FIFL"
+                                 ismultiselect="true"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="9999" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="9998" isoptional="true"/>
+            <Argument name="InvailValue" description="无效值（以，分隔）" datatype="string" defaultvalue="0" isoptional="true" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="过火程度距平计算" identify="FLAN" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" visiablesavebtn="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="过火程度距平计算" identify="FLAN" satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+            <Band identify="FIFLBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" />
+            <Band identify="AvgBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" />
+          </Bands>
+          <Arguments>
+            <Argument name="FIFLFile" description="过火程度文件"
+                                       refdatatype="file" refidentify="FIFL"
+                                       reffilter="FIFL数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                       fileprovider="ContextEnvironment:FIFL"
+                                       ismultiselect="false"></Argument>
+            <Argument name="AvgFile" description="过火程度均值文件"
+                                     refdatatype="file" refidentify="FLAV"
+                                     reffilter="FIFL均值数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                     fileprovider="ContextEnvironment:FLAV"
+                                     ismultiselect="false"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="9999,-999" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="9998" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="9999" visible ="false"/>
+            <Argument name="defNanValue" description="缺省无效值" datatype="Int16" defaultvalue="-10000" visible ="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="过火程度差异计算" identify="FLCY" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" visiablesavebtn="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="过火程度差异计算" identify="FLCY"  satellite="FY3A,FY3B,FY1D,EOSA,EOST,EOS,TERRA,AQUA,NOAA,NOAA18,NOAA17,NOAA16,NA16,NA17,NA18" sensor="VIRR,MERSI,MODIS,AVHRR,MOD" customidentify="">
+          <Bands>
+            <Band identify="FIFLBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" />
+            <Band identify="AvgBandNo" wavelength="-1" bandno="1" centerwavenum="-1" zoom="1000" />
+          </Bands>
+          <Arguments>
+            <Argument name="FIFLFile" description="过火程度文件"
+                                       refdatatype="file" refidentify="FIFL"
+                                       reffilter="FIFL数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                       fileprovider="ContextEnvironment:FIFL"
+                                       ismultiselect="false"></Argument>
+            <Argument name="AvgFile" description="过火程度基准文件"
+                                     refdatatype="file" refidentify="FLAV"
+                                     reffilter="FIFL基准数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                     fileprovider="ContextEnvironment:FLAV"
+                                     ismultiselect="false"></Argument>
+            <Argument name="CloudyValue" description="云标识（以，分隔）" datatype="string" defaultvalue="9999,-999" isoptional="true"/>
+            <Argument name="WaterValue" description="水标识（以，分隔）" datatype="string" defaultvalue="9998" isoptional="true"/>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="Int16" defaultvalue="9999" visible ="false"/>
+            <Argument name="defNanValue" description="缺省无效值" datatype="Int16" defaultvalue="-10000" visible ="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+  </SubProducts>
+</Product>

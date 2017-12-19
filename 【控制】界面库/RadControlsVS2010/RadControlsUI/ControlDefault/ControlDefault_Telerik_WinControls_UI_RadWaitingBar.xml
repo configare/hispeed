@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="BlackText,SegoeUIDefaultText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WaitingProgressBarFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadWaitingBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ProgressFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadWaitingBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ProgressBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape2">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadWaitingBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadWaitingBarElement">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarFill,ProgressBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadWaitingBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressBarVerticalFill,ProgressBarBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadWaitingBarElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WaitingProgressBarFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WaitingProgressVerticalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WaitingBarIndicatorElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.WaitingBarTextElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressProgressBarVerticalFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.SweepAngle" Value="60" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.StepWidth" Value="20" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.SeparatorWidth" Value="20" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WaitingBarSeparator.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ProgressProgressBarFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.SweepAngle" Value="60" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.StepWidth" Value="20" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.SeparatorWidth" Value="20" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WaitingBarSeparator" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadWaitingBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadWaitingBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

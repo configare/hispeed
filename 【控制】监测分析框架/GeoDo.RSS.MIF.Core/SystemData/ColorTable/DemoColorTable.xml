@@ -1,0 +1,1373 @@
+﻿<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="FIR" subIdentify="DBLV" colortablename="FIR" description="判识结果" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无火" displaylengend="false"/>
+        <Color color="255, 255, 0" maxValue="2" minValue="1" labeltext="火点" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="DBLV" colortablename="FIRDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无火" displaylengend="false"/>
+        <Color color="255, 0, 0" maxValue="2" minValue="1" labeltext="火点" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="DBLV" colortablename="ICEDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无冰" displaylengend="false"/>
+        <!--color支持"R、G、B"和"A、R、G、B"两种（例如透明色："0,255,255,255"）-->
+        <!--色标采用value>=minValue&& value<maxValue>-->
+        <Color color="123, 252, 252" maxValue="2" minValue="1"  labeltext="海冰" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="ISOT" colortablename="ICEISOT" description="海冰表面温度等值线" labeltext="">
+      <Colors>
+        <Color color="120,34, 45" minValue="2770"  maxValue="2780" labeltext="4" displaylengend="false"/>
+        <Color color="0, 128, 128" minValue="2760"  maxValue="2770" labeltext="3" displaylengend="false"/>
+        <Color color="0, 128, 128" minValue="2750"  maxValue="2760" labeltext="2" displaylengend="false"/>
+        <Color color="0, 0, 0" minValue="2740"  maxValue="2750" labeltext="1" displaylengend="false"/>
+        <Color color="0, 0, 0" minValue="2730"  maxValue="2740" labeltext="0" displaylengend="false"/>
+        <Color color="0, 255, 255" minValue="2720"  maxValue="2730" labeltext="-1" displaylengend="false"/>
+        <Color color="0, 255, 255" minValue="2710"  maxValue="2720" labeltext="-2" displaylengend="false"/>
+        <Color color="255, 0, 0" minValue="2700"  maxValue="2710" labeltext="-3" displaylengend="false"/>
+        <Color color="255, 0, 0" minValue="2690"  maxValue="2700" labeltext="-4" displaylengend="false"/>
+        <Color color="255, 255, 0" minValue="2680"  maxValue="2690" labeltext="-5" displaylengend="false"/>
+        <Color color="255, 255, 0" minValue="2670"  maxValue="2680" labeltext="-6" displaylengend="false"/>
+        <Color color="0, 0, 255" minValue="2660"  maxValue="2670" labeltext="-7" displaylengend="false"/>
+        <Color color="0, 0, 255" minValue="2650"  maxValue="2660" labeltext="-8" displaylengend="false"/>
+        <Color color="0, 255, 0" minValue="2640"  maxValue="2650" labeltext="-9" displaylengend="false"/>
+        <Color color="0, 255, 0" minValue="2630"  maxValue="2640" labeltext="-10" displaylengend="false"/>
+        <Color color="255, 0, 255" minValue="2620"  maxValue="2630" labeltext="-11" displaylengend="false"/>
+        <Color color="255, 0, 255" minValue="2610"  maxValue="2620" labeltext="-12" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable><ProductColorTable identify="ICE" subIdentify="EDGE" colortablename="ICEEDGE" description="海冰冰缘线" labeltext="">
+      <Colors>
+        <Color color="166, 208, 255" minValue="1"  maxValue="2" labeltext="1" displaylengend="false"/>
+        <Color color="120,34, 45" minValue="2"  maxValue="3" labeltext="2" displaylengend="false"/>
+        <Color color="0, 128, 128" minValue="3"  maxValue="4" labeltext="3" displaylengend="false"/>
+        <Color color="0, 0, 0" minValue="4"  maxValue="5" labeltext="4" displaylengend="false"/>
+        <Color color="0, 255, 255" minValue="5"  maxValue="6" labeltext="5" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="DBLV"  colortablename="FOGDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无雾" displaylengend="false"/>
+        <Color color="100, 255, 255" maxValue="2" minValue="1" labeltext="大雾"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="DBLV"  colortablename="DSTDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无沙" displaylengend="false"/>
+        <Color color="190,168,65" maxValue="2" minValue="1" labeltext="沙尘"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="VISY"  colortablename="DSTVISY" description="沙尘能见度产品" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="170,0,0" maxValue="50" minValue="1" labeltext="50"/>
+        <Color color="255,85,0" maxValue="100" minValue="50" labeltext="100"/>
+        <Color color="255,170,85" maxValue="200" minValue="100" labeltext="200"/>
+        <Color color="255,255,0" maxValue="300" minValue="200" labeltext="300"/>
+        <Color color="0,170,85" maxValue="500" minValue="300" labeltext="500"/>
+        <Color color="0,85,0" maxValue="1000" minValue="500" labeltext="1000"/>
+        <Color color="85,255,255" maxValue="5000" minValue="1000" labeltext="5000"/>
+        <Color color="0,0,255" maxValue="10000" minValue="5000" labeltext="10000"/>
+        <Color color="85,0,170" maxValue="" minValue="10000" labeltext=">10000"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="CYCI"  colortablename="DSTCYCI" description="沙尘周期合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="253,224,149" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="253,217,121" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="252,208,95" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="252,201,67" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="251,193,40" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="251,185,13" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="232,169,4" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="198,143,2" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="181,132,2" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="166,121,2" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="129,94,1" maxValue="" minValue="11" labeltext="11"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="CCYI"  colortablename="DSTCCYI" description="沙尘周期合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="253,224,149" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="253,217,121" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="252,208,95" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="252,201,67" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="251,193,40" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="251,185,13" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="232,169,4" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="198,143,2" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="181,132,2" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="166,121,2" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="129,94,1" maxValue="" minValue="11" labeltext="11"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="FREQ"  colortablename="DSTFREQ" description="沙尘频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8次以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="CFRI"  colortablename="DSTCFRI" description="沙尘周期统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8次"/>
+      </Colors>
+    </ProductColorTable>
+    <!--<ProductColorTable identify="UHI" subIdentify="DBLV"  colortablename="UHIDBLV" description="热岛专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,255" maxValue="30100" minValue="22300" labeltext="水体"/>
+        <Color color="59,116,252" maxValue="30300" minValue="30100" labeltext="较强冷岛"/>
+        <Color color="41,218,252" maxValue="30500" minValue="30300" labeltext="弱冷岛"/>
+        <Color color="139,255,190" maxValue="30700" minValue="30500" labeltext="无热岛"/>
+        <Color color="219,255,97" maxValue="30900" minValue="30700" labeltext="弱热岛"/>
+        <Color color="255,132,2" maxValue="31100" minValue="30900" labeltext="较强热岛"/>
+        <Color color="255,0,0" maxValue="37300" minValue="31100" labeltext="强热岛"/>
+      </Colors>
+    </ProductColorTable>-->
+    <!--chennan 上海-->
+    <ProductColorTable identify="UHI" subIdentify="DBLV"  colortablename="UHIDBLV" description="热岛专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,192" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="0,0,255" maxValue="29800" minValue="10000" labeltext="强冷"/>
+        <Color color="41,218,252" maxValue="30000" minValue="29800" labeltext="弱冷"/>
+        <Color color="139,255,190" maxValue="30200" minValue="30000" labeltext="无"/>
+        <Color color="219,255,97" maxValue="30400" minValue="30200" labeltext="较弱"/>
+        <Color color="255,132,2" maxValue="30600" minValue="30400" labeltext="较强"/>
+        <Color color="255,0,0" maxValue="37300" minValue="30600" labeltext="强热岛"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="DBLV" colortablename="FLDDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无水" displaylengend="false"/>
+        <Color color="0, 0, 255" maxValue="2" minValue="1" labeltext="判识水体" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="FLOD"  colortablename="FLDFLOD" description="泛滥缩小水体" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无水" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="2" minValue="1" labeltext="未变化水体"/>
+        <Color color="255,0,0" maxValue="5" minValue="4" labeltext="扩大水体"/>
+        <Color color="255,255,0" maxValue="6" minValue="5" labeltext="缩小水体"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="LS3J"  colortablename="FLDLS3J" description="淹没历时三级" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="5" minValue="1" labeltext="1-5天"/>
+        <Color color="255,128,0" maxValue="10" minValue="6" labeltext="6-10天"/>
+        <Color color="255,0,0" maxValue="100" minValue="10" labeltext="10天以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="LS6J"  colortablename="FLDLS6J" description="淹没历时六级" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="1-2天"/>
+        <Color color="255,192,128" maxValue="4" minValue="2" labeltext="3-4天"/>
+        <Color color="255,128,128" maxValue="6" minValue="4" labeltext="5-6天"/>
+        <Color color="255,128,0" maxValue="8" minValue="6" labeltext="7-8天"/>
+        <Color color="255,0,0" maxValue="10" minValue="8" labeltext="9-10天"/>
+        <Color color="192,0,0" maxValue="" minValue="10" labeltext=">10天"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="MUTI"  colortablename="FLDMUTI" description="多时次洪涝" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="128,255,255" maxValue="2" minValue="1" labeltext="1次"/>
+        <Color color="255,255,128" maxValue="3" minValue="2" labeltext="2次"/>
+        <Color color="128,255,128" maxValue="4" minValue="3" labeltext="3次"/>
+        <Color color="255,128,128" maxValue="5" minValue="4" labeltext="4次"/>
+        <Color color="0,128,255" maxValue="6" minValue="5" labeltext="5次"/>
+        <Color color="255,128,192" maxValue="7" minValue="6" labeltext="6次"/>
+        <Color color="0,128,0" maxValue="8" minValue="7" labeltext="7次"/>
+        <Color color="128,0,128" maxValue="9" minValue="8" labeltext="8次"/>
+        <Color color="128,0,255" maxValue="10" minValue="9" labeltext="9次"/>
+        <Color color="128,64,0" maxValue="11" minValue="10" labeltext="10次"/>
+        <Color color="0,64,0" maxValue="12" minValue="11" labeltext="11次"/>
+        <Color color="128,64,64" maxValue="" minValue="12" labeltext=">12次"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="0MIX"  colortablename="FLD0MIX" description="混合像元" labeltext="">
+      <Colors>
+        <Color color="168,168,168" maxValue="10" minValue="0" labeltext="0"/>
+        <Color color="192,192,192" maxValue="20" minValue="10" labeltext="10%"/>
+        <Color color="216,216,216" maxValue="30" minValue="20" labeltext="20%"/>
+        <Color color="228,228,228" maxValue="40" minValue="30" labeltext="30%"/>
+        <Color color="200,255,255" maxValue="50" minValue="40" labeltext="40%"/>
+        <Color color="0,85,170" maxValue="60" minValue="50" labeltext="50%"/>
+        <Color color="0,90,120" maxValue="70" minValue="60" labeltext="60%"/>
+        <Color color="0,64,128" maxValue="80" minValue="70" labeltext="70%"/>
+        <Color color="0,0,255" maxValue="90" minValue="80" labeltext="80%"/>
+        <Color color="0,0,160" maxValue="100" minValue="90" labeltext="90%"/>
+        <Color color="0,0,160" maxValue="" minValue="100" labeltext="100%"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="NDVI"  colortablename="VGTNDVI" description="NDVI图" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.10002" maxValue="-0.10001" labeltext="-0.10001" displaylengend="false"/>
+        <Color color="0,0,139" minValue="-0.10001" maxValue="0" labeltext="0" displaylengend="false"/>
+        <!--<Color color="255,255,255" minValue="0" maxValue="0.000001" labeltext="0.000001" displaylengend="false"/>-->
+        <!--由于目前程序中0不恰当的作为了背景值。故暂时加次色标-->
+        <Color color="0,0,139" minValue="0.000001" maxValue="0.0001" labeltext="0.0001" displaylengend="false"/>
+        <!--<Color color="234,228,220" minValue="0.0001" maxValue="0" labeltext="0"/>
+        <Color color="214,202,185" minValue="0" maxValue="66" labeltext="66"/>-->
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66"/>
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99"/>
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132"/>
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165"/>
+        <Color color="177,148,104" maxValue="198" minValue="165" labeltext="198"/>
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231"/>
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288"/>
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345"/>
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402"/>
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459"/>
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516"/>
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573"/>
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630"/>
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687"/>
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744"/>
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801"/>
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858"/>
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915"/>
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972"/>
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000"/>
+        <Color color="255,255,255" minValue="1000" maxValue="" labeltext="1100" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0AVG"  colortablename="VGT0AVG" description="平均值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.10002" maxValue="-0.10001" labeltext="-0.10001" displaylengend="false"/>
+        <Color color="0,0,139" minValue="-0.10001" maxValue="0" labeltext="0" displaylengend="false"/>
+        <!--<Color color="255,255,255" minValue="0" maxValue="0.000001" labeltext="0.000001" displaylengend="false"/>-->
+        <Color color="234,228,220" minValue="0.000001" maxValue="0.0001" labeltext="0"/>
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66"/>
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99"/>
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132"/>
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165"/>
+        <Color color="177,148,104" maxValue="198" minValue="165" labeltext="198"/>
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231"/>
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288"/>
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345"/>
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402"/>
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459"/>
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516"/>
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573"/>
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630"/>
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687"/>
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744"/>
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801"/>
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858"/>
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915"/>
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972"/>
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000"/>
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100"/>
+        <Color color="0,0,0" minValue="1100" maxValue="1200" labeltext="1200" displaylengend="false"/>
+        <Color color="0,0,0" minValue="1200" maxValue="5000" labeltext="5000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0MAX"  colortablename="VGT0MAX" description="最大值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.10002" maxValue="-0.10001" labeltext="-0.10001" displaylengend="false"/>
+        <Color color="0,0,139" minValue="-0.10001" maxValue="0" labeltext="0" displaylengend="false"/>
+        <!--<Color color="255,255,255" minValue="0" maxValue="0.000001" labeltext="0.000001" displaylengend="false"/>-->
+        <!--由于目前程序中0不恰当的作为了背景值。故暂时加次色标-->
+        <Color color="234,228,220" minValue="0.000001" maxValue="0.0001" labeltext="0"/>
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66"/>
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99"/>
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132"/>
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165"/>
+        <Color color="177,148,104" maxValue="198" minValue="165" labeltext="198"/>
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231"/>
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288"/>
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345"/>
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402"/>
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459"/>
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516"/>
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573"/>
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630"/>
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687"/>
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744"/>
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801"/>
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858"/>
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915"/>
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972"/>
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000"/>
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100"/>
+        <Color color="0,0,0" minValue="1100" maxValue="1200" labeltext="1200" displaylengend="false"/>
+        <Color color="0,0,0" minValue="1200" maxValue="5000" labeltext="5000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0MIN"  colortablename="VGT0MIN" description="最小值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.10002" maxValue="-0.10001" labeltext="-0.10001" displaylengend="false"/>
+        <Color color="0,0,139" minValue="-0.10001" maxValue="0" labeltext="0" displaylengend="false"/>
+        <!--<Color color="255,255,255" minValue="0" maxValue="0.000001" labeltext="0.000001" displaylengend="false"/>-->
+        <Color color="234,228,220" minValue="0.000001" maxValue="0.0001" labeltext="0"/>
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66"/>
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99"/>
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132"/>
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165"/>
+        <Color color="177,148,104" maxValue="198" minValue="165" labeltext="198"/>
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231"/>
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288"/>
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345"/>
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402"/>
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459"/>
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516"/>
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573"/>
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630"/>
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687"/>
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744"/>
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801"/>
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858"/>
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915"/>
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972"/>
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000"/>
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100"/>
+        <Color color="0,0,0" minValue="1100" maxValue="1200" labeltext="1200" displaylengend="false"/>
+        <Color color="0,0,0" minValue="1200" maxValue="5000" labeltext="5000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0EVI"  colortablename="VGT0EVI" description="EVI图" labeltext="">
+      <Colors>
+        <!--<Color color="0,0,139" maxValue="0.001" minValue="" labeltext="0.001"/>-->
+        <Color color="234,228,220" maxValue="1" minValue="-10000" labeltext="1"/>
+        <Color color="214,202,185" maxValue="660" minValue="0" labeltext="660"/>
+        <Color color="201,189,173" maxValue="990" minValue="660" labeltext="990"/>
+        <Color color="173,141,142" maxValue="1320" minValue="990" labeltext="1320"/>
+        <Color color="187,158,128" maxValue="1650" minValue="1320" labeltext="1650"/>
+        <Color color="177,148,104" maxValue="1980" minValue="1650" labeltext="1980"/>
+        <Color color="165,130,76" maxValue="2310" minValue="1980" labeltext="2310"/>
+        <Color color="146,113,62" maxValue="2880" minValue="2310" labeltext="2880"/>
+        <Color color="197,227,115" maxValue="3450" minValue="2880" labeltext="3450"/>
+        <Color color="161,191,79" maxValue="4020" minValue="3450" labeltext="4020"/>
+        <Color color="149,181,18" maxValue="4590" minValue="4020" labeltext="4590"/>
+        <Color color="125,155,43" maxValue="5160" minValue="4590" labeltext="5160"/>
+        <Color color="116,169,0" maxValue="5730" minValue="5160" labeltext="5730"/>
+        <Color color="102,160,0" maxValue="6300" minValue="5730" labeltext="6300"/>
+        <Color color="82,147,1" maxValue="6870" minValue="6300" labeltext="6870"/>
+        <Color color="60,133,0" maxValue="7440" minValue="6870" labeltext="7440"/>
+        <Color color="27,114,1" maxValue="8010" minValue="7440" labeltext="8010"/>
+        <Color color="0,95,1" maxValue="8580" minValue="8010" labeltext="8580"/>
+        <Color color="0,73,1" maxValue="9150" minValue="8580" labeltext="9150"/>
+        <Color color="0,55,0" maxValue="9720" minValue="9150" labeltext="9720"/>
+        <Color color="1,139,0" maxValue="10000" minValue="9720" labeltext="10000"/>
+        <Color color="0,0,139" maxValue="11000" minValue="10000" labeltext="11000"/>
+        <Color color="0,0,0" maxValue="12000" minValue="11000" labeltext="12000" displaylengend="false"/>
+        <Color color="0,0,0" maxValue="30000" minValue="12000" labeltext="30000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0DVI"  colortablename="VGT0DVI" description="DVI图" labeltext="">
+      <Colors>
+        <Color color="194,82,60" maxValue="1" minValue="-10000" labeltext="1"/>
+        <Color color="214,111,43" maxValue="40" minValue="1" labeltext="40"/>
+        <Color color="237,160,20" maxValue="80" minValue="40" labeltext="80"/>
+        <Color color="245,200,10" maxValue="120" minValue="80" labeltext="120"/>
+        <Color color="255,255,0" maxValue="160" minValue="120" labeltext="160"/>
+        <Color color="120,240,0" maxValue="200" minValue="160" labeltext="200"/>
+        <Color color="0,220,0" maxValue="240" minValue="200" labeltext="240"/>
+        <Color color="20,185,95" maxValue="280" minValue="240" labeltext="280"/>
+        <Color color="30,155,145" maxValue="320" minValue="280" labeltext="320"/>
+        <Color color="20,105,140" maxValue="360" minValue="320" labeltext="360"/>
+        <Color color="10,45,120" maxValue="400" minValue="360" labeltext="400"/>
+        <Color color="255,255,255,255" maxValue="10000" minValue="400" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0RVI"  colortablename="VGT0RVI" description="RVI图" labeltext="">
+      <Colors>
+        <Color color="100,100,100" maxValue="1" minValue="-10000" labeltext="1"/>
+        <Color color="194,82,60" maxValue="400" minValue="1" labeltext="400"/>
+        <Color color="214,111,43" maxValue="800" minValue="400" labeltext="800"/>
+        <Color color="237,160,20" maxValue="1000" minValue="800" labeltext="1000"/>
+        <Color color="245,200,10" maxValue="1050" minValue="1000" labeltext="1050"/>
+        <Color color="255,255,0" maxValue="1100" minValue="1050" labeltext="1100"/>
+        <Color color="120,240,0" maxValue="1200" minValue="1100" labeltext="1200"/>
+        <Color color="0,220,0" maxValue="1250" minValue="1200" labeltext="1250"/>
+        <Color color="20,185,95" maxValue="1400" minValue="1250" labeltext="1400"/>
+        <Color color="30,30,145" maxValue="1550" minValue="1400" labeltext="1550"/>
+        <Color color="20,105,140" maxValue="1800" minValue="1550" labeltext="1800"/>
+        <Color color="10,45,120" maxValue="10000" minValue="1800" labeltext="10000"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="CHAZ"  colortablename="VGTCHAZ" description="植被指数差值图" labeltext="">
+      <Colors>
+        <Color color="255,255,255" maxValue="-10000" minValue="" labeltext="-10000"  displaylengend="false"/>
+        <Color color="254,105,3" maxValue="-650" minValue="-9998" labeltext="-650"/>
+        <Color color="255,135,4" maxValue="-640" minValue="-650" labeltext="-640"/>
+        <Color color="255,165,4" maxValue="-630" minValue="-640" labeltext="-630"/>
+        <Color color="255,195,5" maxValue="-620" minValue="-630" labeltext="-620"/>
+        <Color color="255,255,3" maxValue="-610" minValue="-620" labeltext="-610"/>
+        <Color color="203,191,175" maxValue="-60" minValue="-610" labeltext="-60"/>
+        <Color color="173,141,142" maxValue="-30" minValue="-60" labeltext="-30"/>
+        <Color color="187,156,125" maxValue="-10" minValue="-30" labeltext="-10"/>
+        <Color color="177,148,104" maxValue="10" minValue="-10" labeltext="10"/>
+        <Color color="165,130,76" maxValue="30" minValue="10" labeltext="30"/>
+        <Color color="146,113,62" maxValue="60" minValue="30" labeltext="60"/>
+        <Color color="197,227,115" maxValue="75" minValue="60" labeltext="75"/>
+        <Color color="161,191,79" maxValue="90" minValue="75" labeltext="90"/>
+        <Color color="149,181,18" maxValue="115" minValue="90" labeltext="115"/>
+        <Color color="125,155,43" maxValue="130" minValue="115" labeltext="130"/>
+        <Color color="116,169,0" maxValue="150" minValue="130" labeltext="150"/>
+        <Color color="102,160,0" maxValue="170" minValue="150" labeltext="170"/>
+        <Color color="82,147,1" maxValue="200" minValue="170" labeltext="200"/>
+        <Color color="60,133,0" maxValue="230" minValue="200" labeltext="230"/>
+        <Color color="27,114,1" maxValue="250" minValue="230" labeltext="250"/>
+        <Color color="0,95,1" maxValue="270" minValue="250" labeltext="270"/>
+        <Color color="0,72,0" maxValue="290" minValue="270" labeltext="290"/>
+        <Color color="0,55,0" maxValue="500" minValue="290" labeltext="500"/>
+        <Color color="1,39,0" maxValue="700" minValue="500" labeltext="700"/>
+        <Color color="0,19,0" maxValue="1000" minValue="700" labeltext="1000"/>
+        <Color color="0,0,0" maxValue="10000000" minValue="1000" labeltext="10000000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    //临时使用
+    <!--<ProductColorTable identify="VGT" subIdentify="CHAZ"  colortablename="VGTCHAZ" description="植被指数差值图" labeltext="">
+      <Colors>
+        <Color color="255,255,255" maxValue="-10000" minValue="" labeltext="-10000"  displaylengend="false"/>
+        <Color color="254,105,3" maxValue="-150" minValue="-10000" labeltext=""/>
+        <Color color="255,165,4" maxValue="-60" minValue="-150" labeltext="-150"/>
+        <Color color="255,255,3" maxValue="-30" minValue="-60" labeltext="-60"/>        
+        <Color color="165,130,76" maxValue="-0.0001" minValue="-30" labeltext="-30"/>
+        <Color color="165,130,76" maxValue="30" minValue="0.0001" labeltext="-30"/>      
+        <Color color="149,181,18" maxValue="60" minValue="30" labeltext="30"/>       
+        <Color color="102,160,0" maxValue="150" minValue="60" labeltext="60"/>        
+        <Color color="27,114,1" maxValue="" minValue="150" labeltext="150"/>
+        <Color color="0,0,0" maxValue="10000000" minValue="1000" labeltext="10000000" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>-->
+    <ProductColorTable identify="VGT" subIdentify="ANMI"  colortablename="VGTANMI" description="植被指数距平图" labeltext="">
+      <Colors>
+        <Color color="255,255,255" maxValue="-10000" minValue="" labeltext="-10000" displaylengend="false" />
+        <Color color="254,105,3" maxValue="-650" minValue="-9998" labeltext="-650"/>
+        <Color color="255,135,4" maxValue="-640" minValue="-650" labeltext="-640"/>
+        <Color color="255,165,4" maxValue="-630" minValue="-640" labeltext="-630"/>
+        <Color color="255,195,5" maxValue="-620" minValue="-630" labeltext="-620"/>
+        <Color color="255,255,3" maxValue="-610" minValue="-620" labeltext="-610"/>
+        <Color color="203,191,175" maxValue="-60" minValue="-610" labeltext="-60"/>
+        <Color color="173,141,142" maxValue="-30" minValue="-60" labeltext="-30"/>
+        <Color color="187,156,125" maxValue="-10" minValue="-30" labeltext="-10"/>
+        <Color color="177,148,104" maxValue="10" minValue="-10" labeltext="10"/>
+        <Color color="165,130,76" maxValue="30" minValue="10" labeltext="30"/>
+        <Color color="146,113,62" maxValue="60" minValue="30" labeltext="60"/>
+        <Color color="197,227,115" maxValue="75" minValue="60" labeltext="75"/>
+        <Color color="161,191,79" maxValue="90" minValue="75" labeltext="90"/>
+        <Color color="149,181,18" maxValue="115" minValue="90" labeltext="115"/>
+        <Color color="125,155,43" maxValue="130" minValue="115" labeltext="130"/>
+        <Color color="116,169,0" maxValue="150" minValue="130" labeltext="150"/>
+        <Color color="102,160,0" maxValue="170" minValue="150" labeltext="170"/>
+        <Color color="82,147,1" maxValue="200" minValue="170" labeltext="200"/>
+        <Color color="60,133,0" maxValue="230" minValue="200" labeltext="230"/>
+        <Color color="27,114,1" maxValue="250" minValue="230" labeltext="250"/>
+        <Color color="0,95,1" maxValue="270" minValue="250" labeltext="270"/>
+        <Color color="0,72,0" maxValue="290" minValue="270" labeltext="290"/>
+        <Color color="0,55,0" maxValue="500" minValue="290" labeltext="500"/>
+        <Color color="1,39,0" maxValue="700" minValue="500" labeltext="700"/>
+        <Color color="0,19,0" maxValue="1000" minValue="700" labeltext="1000"/>
+        <Color color="0,0,0" maxValue="10000000" minValue="1000" labeltext="10000000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0VCI"  colortablename="VGT0VCI" description="VCI图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="-10000" labeltext="1" displaylengend="false"/>
+        <Color color="196,79,54" maxValue="150" minValue="1" labeltext="150"/>
+        <Color color="255,145,79" maxValue="300" minValue="150" labeltext="300"/>
+        <Color color="255,255,102" maxValue="400" minValue="300" labeltext="400"/>
+        <Color color="172,255,69" maxValue="800" minValue="400" labeltext="800"/>
+        <Color color="48,255,61" maxValue="9999" minValue="800" labeltext="1000"/>
+        <Color color="0,0,0" maxValue="10000" minValue="9999" labeltext="10000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="CYCA"  colortablename="VGTCYCA" description="NDVI镶嵌图" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.10002" maxValue="-0.10001" labeltext="-0.10001" displaylengend="false"/>
+        <Color color="0,0,139" minValue="-0.10001" maxValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,0" minValue="0" maxValue="0.000001" labeltext="0.000001" displaylengend="false"/>
+        <Color color="234,228,220" minValue="0.000001" maxValue="0.0001" labeltext="0"/>
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66"/>
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99"/>
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132"/>
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165"/>
+        <Color color="177,148,104" maxValue="198" minValue="165" labeltext="198"/>
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231"/>
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288"/>
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345"/>
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402"/>
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459"/>
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516"/>
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573"/>
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630"/>
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687"/>
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744"/>
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801"/>
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858"/>
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915"/>
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972"/>
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000"/>
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100"/>
+        <Color color="0,0,0" minValue="1100" maxValue="1200" labeltext="1200" displaylengend="false"/>
+        <Color color="0,0,0" minValue="1200" maxValue="5000" labeltext="5000" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="-9998" minValue="-9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="EDGE"  colortablename="ICEEDGE" description="海冰边缘线图" labeltext="">
+      <Colors>
+        <Color color="166,208,255" maxValue="0" minValue="-1" labeltext="0"/>
+        <Color color="Blue" maxValue="1" minValue="0" labeltext="1"/>
+        <Color color="Green" maxValue="2" minValue="1" labeltext="2"/>
+        <Color color="Red" maxValue="3" minValue="2" labeltext="3"/>
+        <Color color="Brown" maxValue="4" minValue="3" labeltext="4"/>
+        <Color color="BlueViolet" maxValue="5" minValue="4" labeltext="5"/>
+        <Color color="Black" maxValue="6" minValue="5" labeltext="6"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="ISOT"  colortablename="ICEISOT" description="海冰冰面温度图" labeltext="">
+      <Colors>
+        <Color color="0,128,128" maxValue="2750" minValue="2749" labeltext="2750"/>
+        <Color color="Black" maxValue="2730" minValue="2729" labeltext="2730"/>
+        <Color color="0,255,255" maxValue="2710" minValue="2709" labeltext="2710"/>
+        <Color color="255,0,0" maxValue="2690" minValue="2689" labeltext="2690"/>
+        <Color color="Yellow" maxValue="2670" minValue="2669" labeltext="2670"/>
+        <Color color="Blue" maxValue="2650" minValue="2649" labeltext="2650"/>
+        <Color color="Green" maxValue="2630" minValue="2629" labeltext="2630"/>
+        <Color color="255,0,255" maxValue="2610" minValue="2609" labeltext="2610"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="CYCT"  colortablename="ICECYCT" description="海冰多时段合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="82,204,255" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="FREQ"  colortablename="ICEFREQ" description="海冰频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="ICE" subIdentify="CFRI"  colortablename="ICECFRI" description="海冰频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="DBLV" colortablename="SNWDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="123, 252, 252" maxValue="2" minValue="1" labeltext="积雪" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="DBLV" colortablename="SNWNMCS" description="网络合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="100" minValue="1" labeltext="积雪"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="FREQ"  colortablename="SNWFREQ" description="积雪频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255,10,0" maxValue="" minValue="10" labeltext=">10"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="COMP" colortablename="SNWCOMP" description="积雪对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="123, 252, 252" maxValue="2" minValue="1" labeltext="持续雪" />
+        <Color color="255,0,0" maxValue="5" minValue="4" labeltext="新生雪"/>
+        <Color color="255,255,0" maxValue="6" minValue="5" labeltext="融化雪"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="MAXI" colortablename="SNWMAXI" description="积雪日最大合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="255,255,255" maxValue="100" minValue="1" labeltext="积雪"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="SNW" subIdentify="CFRI"  colortablename="SNWCFRI" description="积雪频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="2"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="3"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="4"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="5"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="6"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="7"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="8"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="9"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="10"/>
+        <Color color="255,10,0" maxValue="" minValue="10" labeltext="10"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="0LWP"  colortablename="FOG0LWP" description="大雾液态水路径专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="155,255,227" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="96,255,211" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="38,255,196" maxValue="800" minValue="700" labeltext="0.8"/>
+        <Color color="79,201,253" maxValue="900" minValue="800" labeltext="0.9"/>
+        <Color color="40,189,253" maxValue="1000" minValue="900" labeltext="1"/>
+        <Color color="2,172,244" maxValue="1100" minValue="1000" labeltext="1.1"/>
+        <Color color="6,141,251" maxValue="1200" minValue="1100" labeltext="1.2"/>
+        <Color color="4,128,227" maxValue="1300" minValue="1200" labeltext="1.3"/>
+        <Color color="7,91,248" maxValue="1400" minValue="1300" labeltext="1.4"/>
+        <Color color="7,82,220" maxValue="1500" minValue="1400" labeltext="1.5"/>
+        <Color color="7,55,220" maxValue="1600" minValue="1500" labeltext="1.6"/>
+        <Color color="6,45,174" maxValue="1700" minValue="1600" labeltext="1.7"/>
+        <Color color="7,16,173" maxValue="1800" minValue="1700" labeltext="1.8"/>
+        <Color color="0,3,138" maxValue="" minValue="1800" labeltext=">1.8"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="OPTD"  colortablename="FOGOPTD" description="大雾光学厚度专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="191,86,254" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="170,31,254" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="135,1,216" maxValue="900" minValue="700" labeltext="0.9"/>
+        <Color color="105,1,167" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="69,2,208" maxValue="1300" minValue="1100" labeltext="1.3"/>
+        <Color color="57,2,172" maxValue="1500" minValue="1300" labeltext="1.5"/>
+        <Color color="13,138,251" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="3,203,245" maxValue="1900" minValue="1700" labeltext="1.9"/>
+        <Color color="138,233,253" maxValue="2100" minValue="1900" labeltext="2.1"/>
+        <Color color="104,253,175" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="92,239,92" maxValue="2500" minValue="2300" labeltext="2.5"/>
+        <Color color="146,253,130" maxValue="2700" minValue="2500" labeltext="2.7"/>
+        <Color color="187,249,83" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="223,249,102" maxValue="3100" minValue="2900" labeltext="3.1"/>
+        <Color color="250,250,95" maxValue="3300" minValue="3100" labeltext="3.3"/>
+        <Color color="248,233,54" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="235,200,35" maxValue="3700" minValue="3500" labeltext="3.7"/>
+        <Color color="220,183,7" maxValue="3900" minValue="3700" labeltext="3.9"/>
+        <Color color="226,116,5" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,45,6" maxValue="4300" minValue="4100" labeltext="4.3"/>
+        <Color color="255,0,0" maxValue="6000" minValue="4300" labeltext="6"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6000" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="OPTD"  colortablename="FOGGIMG" description="大雾强度专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="191,86,254" maxValue="500" minValue="1" labeltext="弱" displaylengend="false"/>
+        <Color color="170,31,254" maxValue="700" minValue="500" labeltext="0.7" displaylengend="false"/>
+        <Color color="135,1,216" maxValue="900" minValue="700" labeltext="0.9" displaylengend="false"/>
+        <Color color="105,1,167" maxValue="1100" minValue="900" labeltext="1.1" displaylengend="false"/>
+        <Color color="69,2,208" maxValue="1300" minValue="1100" labeltext="1.3" displaylengend="false"/>
+        <Color color="57,2,172" maxValue="1500" minValue="1300" labeltext="较弱"/>
+        <Color color="13,138,251" maxValue="1700" minValue="1500" labeltext="1.7" displaylengend="false"/>
+        <Color color="3,203,245" maxValue="1900" minValue="1700" labeltext="1.9" displaylengend="false"/>
+        <Color color="138,233,253" maxValue="2100" minValue="1900" labeltext="2.1" displaylengend="false"/>
+        <Color color="104,253,175" maxValue="2300" minValue="2100" labeltext="2.3" displaylengend="false"/>
+        <Color color="92,239,92" maxValue="2500" minValue="2300" labeltext="中等"/>
+        <Color color="146,253,130" maxValue="2700" minValue="2500" labeltext="2.7" displaylengend="false"/>
+        <Color color="187,249,83" maxValue="2900" minValue="2700" labeltext="2.9" displaylengend="false"/>
+        <Color color="223,249,102" maxValue="3100" minValue="2900" labeltext="3.1" displaylengend="false"/>
+        <Color color="250,250,95" maxValue="3300" minValue="3100" labeltext="3.3" displaylengend="false"/>
+        <Color color="248,233,54" maxValue="3500" minValue="3300" labeltext="3.5" displaylengend="false"/>
+        <Color color="235,200,35" maxValue="3700" minValue="3500" labeltext="较强"/>
+        <Color color="220,183,7" maxValue="3900" minValue="3700" labeltext="3.9" displaylengend="false"/>
+        <Color color="226,116,5" maxValue="4100" minValue="3900" labeltext="4.1" displaylengend="false"/>
+        <Color color="225,45,6" maxValue="4300" minValue="4100" labeltext="4.3" displaylengend="false"/>
+        <Color color="255,0,0" maxValue="6000" minValue="4300" labeltext="6" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6000" labeltext="强" />
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="0TOU"  colortablename="0TOU" description="雾霾监测示意图" labeltext="">
+      <!--<Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="191,86,254" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="170,31,254" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="135,1,216" maxValue="900" minValue="700" labeltext="0.9"/>
+        <Color color="105,1,167" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="69,2,208" maxValue="1300" minValue="1100" labeltext="1.3"/>
+        <Color color="57,2,172" maxValue="1500" minValue="1300" labeltext="1.5"/>
+        <Color color="13,138,251" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="3,203,245" maxValue="1900" minValue="1700" labeltext="1.9"/>
+        <Color color="138,233,253" maxValue="2100" minValue="1900" labeltext="2.1"/>
+        <Color color="104,253,175" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="92,239,92" maxValue="2500" minValue="2300" labeltext="2.5"/>
+        <Color color="146,253,130" maxValue="2700" minValue="2500" labeltext="2.7"/>
+        <Color color="187,249,83" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="223,249,102" maxValue="3100" minValue="2900" labeltext="3.1"/>
+        <Color color="250,250,95" maxValue="3300" minValue="3100" labeltext="3.3"/>
+        <Color color="248,233,54" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="235,200,35" maxValue="3700" minValue="3500" labeltext="3.7"/>
+        <Color color="220,183,7" maxValue="3900" minValue="3700" labeltext="3.9"/>
+        <Color color="226,116,5" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,45,6" maxValue="4300" minValue="4100" labeltext="4.3"/>
+        <Color color="255,0,0" maxValue="6000" minValue="4300" labeltext="6"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6000" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>-->
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,159" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="0,0,191" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="0,0,223" maxValue="900" minValue="700" labeltext="0.9"/>
+        <Color color="0,47,255" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="0,95,255" maxValue="1300" minValue="1100" labeltext="1.3"/>
+        <Color color="0,127,255" maxValue="1500" minValue="1300" labeltext="1.5"/>
+        <Color color="0,143,255" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="0,191,255" maxValue="1900" minValue="1700" labeltext="1.9"/>
+        <Color color="0,255,255" maxValue="2100" minValue="1900" labeltext="2.1"/>
+        <Color color="31,255,223" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="47,255,207" maxValue="2500" minValue="2300" labeltext="2.5"/>
+        <Color color="79,255,175" maxValue="2700" minValue="2500" labeltext="2.7"/>
+        <Color color="127,255,127" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="159,255,95" maxValue="3100" minValue="2900" labeltext="3.1"/>
+        <Color color="191,255,63" maxValue="3300" minValue="3100" labeltext="3.3"/>
+        <Color color="239,255,15" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="255,223,0" maxValue="3700" minValue="3500" labeltext="3.7"/>
+        <Color color="255,207,0" maxValue="3900" minValue="3700" labeltext="3.9"/>
+        <Color color="255,175,0" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,159,0" maxValue="4300" minValue="4100" labeltext="4.3"/>
+        <Color color="255,117,0" maxValue="4500" minValue="4300" labeltext="4.3"/>
+        <Color color="255,111,0" maxValue="4700" minValue="4500" labeltext="4.5"/>
+        <Color color="255,63,0" maxValue="4900" minValue="4700" labeltext="4.7"/>
+        <Color color="255,31,0" maxValue="5100" minValue="4900" labeltext="4.9"/>
+        <Color color="255,0,0" maxValue="5300" minValue="5100" labeltext="5.1"/>
+        <Color color="239,0,0" maxValue="5500" minValue="5300" labeltext="5.3"/>
+        <Color color="207,0,0" maxValue="5700" minValue="5500" labeltext="5.5"/>
+        <Color color="175,0,0" maxValue="5900" minValue="5700" labeltext="5.7"/>
+        <Color color="143,0,0" maxValue="6100" minValue="5900" labeltext="5.9"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6100" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="ERAD"  colortablename="FOGERAD" description="大雾雾滴尺度专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="-10000" labeltext="" displaylengend="false"/>
+        <Color color="200,252,137" maxValue="6" minValue="1" labeltext="0.05"/>
+        <Color color="179,251,89" maxValue="11" minValue="6" labeltext="0.1"/>
+        <Color color="160,250,52" maxValue="16" minValue="11" labeltext="0.15"/>
+        <Color color="140,249,9" maxValue="21" minValue="16" labeltext="0.2"/>
+        <Color color="126,226,5" maxValue="26" minValue="21" labeltext="0.25"/>
+        <Color color="115,205,5" maxValue="31" minValue="26" labeltext="0.3"/>
+        <Color color="112,199,5" maxValue="36" minValue="31" labeltext="0.35"/>
+        <Color color="100,179,4" maxValue="41" minValue="36" labeltext="0.4"/>
+        <Color color="87,155,4" maxValue="46" minValue="41" labeltext="0.45"/>
+        <Color color="77,137,3" maxValue="51" minValue="46" labeltext="0.5"/>
+        <Color color="58,104,2" maxValue="10000" minValue="50" labeltext=">0.5"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="FREQ"  colortablename="FOGFREQ" description="大雾频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255,10,0" maxValue="" minValue="10" labeltext="10次及以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="CFRI"  colortablename="FOGCFRI" description="大雾频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255,10,0" maxValue="" minValue="10" labeltext="10次及以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="CYCI"  colortablename="FOGCYCI" description="大雾周期合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="253,224,149" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="253,217,121" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="252,208,95" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="252,201,67" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="251,193,40" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="251,185,13" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="232,169,4" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="198,143,2" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="181,132,2" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="166,121,2" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="129,94,1" maxValue="" minValue="11" labeltext="10次以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="CCYI"  colortablename="FOGCCYI" description="大雾周期合成图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="253,224,149" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="253,217,121" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="252,208,95" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="252,201,67" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="251,193,40" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="251,185,13" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="232,169,4" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="198,143,2" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="181,132,2" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="166,121,2" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="129,94,1" maxValue="" minValue="11" labeltext="10次以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="DBLV" colortablename="BAGDBLV" description="二值图"  labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无蓝藻" displaylengend="false"/>
+        <Color color="0, 128, 0" maxValue="2" minValue="1" labeltext="蓝藻" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BPCD" colortablename="PCDI" description="蓝藻覆盖度图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="-1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,10,0" maxValue="0.1" minValue="-1" labeltext="" displaylengend=""/>
+        <Color color="0,26,0" maxValue="0.2" minValue="0.1" labeltext="" />
+        <Color color="0,51,0" maxValue="0.3" minValue="0.2" labeltext="" />
+        <Color color="0,77,0" maxValue="0.4" minValue="0.3" labeltext="覆盖度0%-100%" />
+        <Color color="0,102,0" maxValue="0.5" minValue="0.4" labeltext="" />
+        <Color color="0,128,0" maxValue="0.6" minValue="0.5" labeltext="" />
+        <Color color="0,154,0" maxValue="0.7" minValue="0.6" labeltext="" />
+        <Color color="0,179,0" maxValue="0.8" minValue="0.7" labeltext="" />
+        <Color color="0,205,0" maxValue="0.9" minValue="0.8" labeltext="" />
+        <Color color="0,230,0" maxValue="1" minValue="0.9"  labeltext="" />
+        <Color color="0,255,0" maxValue="1" minValue="1"  labeltext="" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BPCD" colortablename="QD10" description="蓝藻强度10级图" labeltext="">
+      <Colors>
+        <Color color="80,180,0" maxValue="0" minValue="-1" labeltext="0" displaylengend="false"/>
+        <Color color="80,180,0" maxValue="0.1" minValue="0" labeltext="0"/>
+        <Color color="120,200,0" maxValue="0.2" minValue="0.1" labeltext="10%"/>
+        <Color color="160,220,0" maxValue="0.3" minValue="0.2" labeltext="20%"/>
+        <Color color="210,240,0" maxValue="0.4" minValue="0.3" labeltext="30%"/>
+        <Color color="255,250,0" maxValue="0.5" minValue="0.4" labeltext="40%"/>
+        <Color color="255,200,0" maxValue="0.6" minValue="0.5" labeltext="50%"/>
+        <Color color="255,150,0" maxValue="0.7" minValue="0.6" labeltext="60%"/>
+        <Color color="255,100,0" maxValue="0.8" minValue="0.7" labeltext="70%"/>
+        <Color color="255,50,0" maxValue="0.9" minValue="0.8" labeltext="80%"/>
+        <Color color="255,0,0" maxValue="1" minValue="0.9" labeltext="90%"/>
+        <Color color="255,0,0" maxValue="" minValue="1" labeltext="100%" displaylengend="false"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BPCD" colortablename="0QD3" description="蓝藻强度3级图" labeltext="">
+      <Colors>
+        <Color color="254,0,0" maxValue="1" minValue="0.6" labeltext="重度"/>
+        <Color color="254,199,0" maxValue="0.6" minValue="0.3" labeltext="中度"/>
+        <Color color="75,229,0" maxValue="0.3" minValue="0" labeltext="轻度"/>
+        <Color color="75,229,0" maxValue="0" minValue="-1" labeltext="0" displaylengend="false"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="FREQ"  colortablename="BAGFREQ" description="蓝藻频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="2"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="4"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="6"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="8"/>
+        <Color color="1,60,8" maxValue="" minValue="11" labeltext="10"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="CFRI"  colortablename="BAGCFRI" description="蓝藻频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="1,60,8" maxValue="" minValue="11" labeltext="10以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="BCDF"  colortablename="BAGBCDF" description="蓝藻频次统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="1,60,8" maxValue="" minValue="11" labeltext="10以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POTD"  colortablename="BAGPOTD" description="蓝藻像元频次统计图_旬" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="20,200,45" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="10,150,30" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="5,90,15" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="1,60,8" maxValue="100" minValue="11" labeltext="10以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POAM"  colortablename="BAGPOAM" description="蓝藻像元频次统计图_月" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="5" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="10" minValue="6" labeltext="5"/>
+        <Color color="20,200,45" maxValue="15" minValue="11" labeltext="10"/>
+        <Color color="10,150,30" maxValue="20" minValue="16" labeltext="15"/>
+        <Color color="5,90,15" maxValue="25" minValue="21" labeltext="20"/>
+        <Color color="1,60,8" maxValue="30" minValue="26" labeltext="25"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POAQ"  colortablename="BAGPOAQ" description="蓝藻像元频次统计图_季" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="10" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="20" minValue="11" labeltext="10"/>
+        <Color color="20,200,45" maxValue="40" minValue="21" labeltext="20"/>
+        <Color color="10,150,30" maxValue="60" minValue="41" labeltext="40"/>
+        <Color color="5,90,15" maxValue="90" minValue="61" labeltext="60"/>
+        <Color color="1,60,8" maxValue="120" minValue="91" labeltext="90"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="BAG" subIdentify="POAY"  colortablename="BAGPOAY" description="蓝藻像元频次统计图_年" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="145,250,160" maxValue="20" minValue="1" labeltext="1"/>
+        <Color color="60,245,85" maxValue="60" minValue="21" labeltext="20"/>
+        <Color color="20,200,45" maxValue="100" minValue="61" labeltext="60"/>
+        <Color color="10,150,30" maxValue="150" minValue="101" labeltext="100"/>
+        <Color color="5,90,15" maxValue="200" minValue="151" labeltext="150"/>
+        <Color color="1,60,8" maxValue="1000" minValue="201" labeltext="200"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="COMP" colortablename="FIRCOMP" description="火情对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="熄灭火点" />
+        <Color color="255,0,0" maxValue="3" minValue="2" labeltext="持续火点"/>
+        <Color color="0,0,255" maxValue="4" minValue="3" labeltext="新生火点"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="CCOM" colortablename="FIRCCOM" description="自定义火情对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="熄灭火点" />
+        <Color color="255,0,0" maxValue="3" minValue="2" labeltext="持续火点"/>
+        <Color color="0,0,255" maxValue="4" minValue="3" labeltext="新生火点"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="FREQ"  colortablename="FIRFREQ" description="火情频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="238, 254, 90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184, 253, 91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73, 252, 167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94, 200, 251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94, 160, 251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92, 113, 252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50, 50, 255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243, 94, 251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250, 80, 70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255, 10, 0" maxValue="" minValue="10" labeltext="10次及以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="GFRF"  colortablename="FIRGFRF" description="全球月火点像元累计专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="20" minValue="1" labeltext="1"/>
+        <Color color="0,0,255" maxValue="40" minValue="21" labeltext="20"/>
+        <Color color="0,180,0" maxValue="60" minValue="41" labeltext="40"/>
+        <Color color="0,255,0" maxValue="80" minValue="61" labeltext="60"/>
+        <Color color="255,255,0" maxValue="100" minValue="81" labeltext="80"/>
+        <Color color="180,180,0" maxValue="150" minValue="101" labeltext="100"/>
+        <Color color="180,0,180" maxValue="200" minValue="151" labeltext="150"/>
+        <Color color="255,0,255" maxValue="250" minValue="201" labeltext="200"/>
+        <Color color="255,0,0" maxValue="300" minValue="251" labeltext="250"/>
+        <Color color="180,0,0" maxValue="" minValue="301" labeltext="300"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="CFRI"  colortablename="FIRCFRI" description="火情频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="238, 254, 90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184, 253, 91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73, 252, 167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94, 200, 251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94, 160, 251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92, 113, 252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50, 50, 255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243, 94, 251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250, 80, 70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255, 10, 0" maxValue="" minValue="10" labeltext="10次及以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="GFRE"  colortablename="FIRGBALFREQ" description="全球火情频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="10" minValue="1" labeltext="10"/>
+        <Color color="0,0,255" maxValue="20" minValue="10" labeltext="20"/>
+        <Color color="0,180,0" maxValue="30" minValue="20" labeltext="30"/>
+        <Color color="0,255,0" maxValue="40" minValue="30" labeltext="40"/>
+        <Color color="255,255,0" maxValue="50" minValue="40" labeltext="50"/>
+        <Color color="180,180,0" maxValue="70" minValue="50" labeltext="70"/>
+        <Color color="180,0,180" maxValue="90" minValue="70" labeltext="90"/>
+        <Color color="255,0,255" maxValue="120" minValue="90" labeltext="120"/>
+        <Color color="255,0,0" maxValue="150" minValue="120" labeltext="150"/>
+        <Color color="180,0,0" maxValue="" minValue="150" labeltext="150"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="GCFR"  colortablename="FIRGBALCFRI" description="全球火情频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="10" minValue="1" labeltext="10"/>
+        <Color color="0,0,255" maxValue="20" minValue="10" labeltext="20"/>
+        <Color color="0,180,0" maxValue="30" minValue="20" labeltext="30"/>
+        <Color color="0,255,0" maxValue="40" minValue="30" labeltext="40"/>
+        <Color color="255,255,0" maxValue="50" minValue="40" labeltext="50"/>
+        <Color color="180,180,0" maxValue="70" minValue="50" labeltext="70"/>
+        <Color color="180,0,180" maxValue="90" minValue="70" labeltext="90"/>
+        <Color color="255,0,255" maxValue="120" minValue="90" labeltext="120"/>
+        <Color color="255,0,0" maxValue="150" minValue="120" labeltext="150"/>
+        <Color color="180,0,0" maxValue="" minValue="150" labeltext="150"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="F2MJ"  colortablename="FIRF2MJ" description="火点亚像元面积" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,180" maxValue="1000" minValue="100" labeltext="1000"/>
+        <Color color="0,0,255" maxValue="2000" minValue="1000" labeltext="2000"/>
+        <Color color="0,180,0" maxValue="3000" minValue="2000" labeltext="3000"/>
+        <Color color="0,255,0" maxValue="4000" minValue="3000" labeltext="4000"/>
+        <Color color="255,255,0" maxValue="5000" minValue="4000" labeltext="5000"/>
+        <Color color="180,180,0" maxValue="7000" minValue="5000" labeltext="7000"/>
+        <Color color="180,0,180" maxValue="9000" minValue="7000" labeltext="9000"/>
+        <Color color="255,0,255" maxValue="12000" minValue="9000" labeltext="12000"/>
+        <Color color="255,0,0" maxValue="15000" minValue="12000" labeltext="15000"/>
+        <Color color="180,0,0" maxValue="" minValue="15000" labeltext="15000"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FIR" subIdentify="0FPG"  colortablename="FIR0FPG" description="火点强度图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,255,64" maxValue="31" minValue="1" labeltext="1"/>
+        <Color color="91,173,255" maxValue="101" minValue="31" labeltext="2"/>
+        <Color color="0,0,255" maxValue="251" minValue="101" labeltext="3"/>
+        <Color color="0,255,255" maxValue="501" minValue="251" labeltext="4"/>
+        <Color color="255,255,0" maxValue="801" minValue="501" labeltext="5"/>
+        <Color color="255, 128, 255" maxValue="1301" minValue="801" labeltext="6"/>
+        <Color color="255, 0, 255" maxValue="2001" minValue="1301" labeltext="7"/>
+        <Color color="255, 0, 0" maxValue="4001" minValue="2001" labeltext="8"/>
+        <Color color="128, 0, 0" maxValue="7001" minValue="4001" labeltext="9"/>
+        <Color color="0, 0, 0" maxValue="9999" minValue="7001" labeltext="10"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+        <Color color="168, 168, 168" maxValue="10001" minValue="10000" labeltext="烟" />
+        <Color color="160, 128, 58" maxValue="10002" minValue="10001" labeltext="过火区" />
+        <Color color="0,0,0" maxValue="" minValue="10002" labeltext="10002" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV"  colortablename="LSTSU" description="陆表高温专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="165,200,248" maxValue="3030" minValue="1000" labeltext="30"/>
+        <Color color="105,247,121" maxValue="3080" minValue="3030" labeltext="35"/>
+        <Color color="240,240,60" maxValue="3130" minValue="3080" labeltext="40"/>
+        <Color color="250,180,75" maxValue="3180" minValue="3130" labeltext="45"/>
+        <Color color="220,120,20" maxValue="3230" minValue="3180" labeltext="50"/>
+        <Color color="241,164,184" maxValue="3280" minValue="3230" labeltext="55"/>
+        <Color color="237,101,136" maxValue="3330" minValue="3280" labeltext="60"/>
+        <Color color="255,10,10" maxValue="3380" minValue="3330" labeltext="65"/>
+        <Color color="143,37,37" maxValue="4000" minValue="3380" labeltext="127"/>
+        <Color color="0,0,0" maxValue="9998" minValue="4000" labeltext=">127℃"/>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV"  colortablename="LSTSP" description="陆表高温专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,136" maxValue="2330" minValue="1000" labeltext="-40"/>
+        <Color color="0,228,255" maxValue="2630" minValue="2330" labeltext="-10"/>
+        <Color color="178,248,248" maxValue="2680" minValue="2630" labeltext="-5"/>
+        <Color color="22,83,3" maxValue="2730" minValue="2680" labeltext="0"/>
+        <Color color="0,255,0" maxValue="2780" minValue="2730" labeltext="5"/>
+        <Color color="165,248,100" maxValue="2830" minValue="2780" labeltext="10"/>
+        <Color color="240,240,60" maxValue="2890" minValue="2830" labeltext="16"/>
+        <Color color="250,180,75" maxValue="2950" minValue="2890" labeltext="22"/>
+        <Color color="220,120,20" maxValue="3010" minValue="2950" labeltext="28"/>
+        <Color color="241,164,184" maxValue="3070" minValue="3010" labeltext="34"/>
+        <Color color="237,101,136" maxValue="3130" minValue="3070" labeltext="40"/>
+        <Color color="255,10,10" maxValue="3430" minValue="3130" labeltext="70"/>
+        <Color color="143,37,37" maxValue="9998" minValue="3430" labeltext=">70"/>
+        <Color color="0,0,255" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="DBLV"  colortablename="LSTFA" description="陆表高温专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="2330" minValue="1000" labeltext="-40"/>
+        <Color color="0,228,255" maxValue="2430" minValue="2330" labeltext="-30"/>
+        <Color color="178,248,248" maxValue="2500" minValue="2430" labeltext="-23"/>
+        <Color color="22,83,3" maxValue="2570" minValue="2500" labeltext="-16"/>
+        <Color color="0,255,0" maxValue="2640" minValue="2570" labeltext="-9"/>
+        <Color color="165,248,100" maxValue="2710" minValue="2640" labeltext="-2"/>
+        <Color color="240,240,60" maxValue="2780" minValue="2710" labeltext="5"/>
+        <Color color="250,180,75" maxValue="2850" minValue="2780" labeltext="12"/>
+        <Color color="220,120,20" maxValue="2920" minValue="2850" labeltext="19"/>
+        <Color color="241,164,184" maxValue="2990" minValue="2920" labeltext="26"/>
+        <Color color="237,101,136" maxValue="3130" minValue="2990" labeltext="40"/>
+        <Color color="255,10,10" maxValue="3430" minValue="3130" labeltext="70"/>
+        <Color color="143,37,37" maxValue="9998" minValue="3430" labeltext=">70"/>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <!--<ProductColorTable identify="LST" subIdentify="DBLV"  colortablename="LSTDBLV" description="陆表高温专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+        <Color color="0,0,255" maxValue="23300" minValue="10000" labeltext="-40"/>
+        <Color color="0,228,255" maxValue="23800" minValue="23300" labeltext="-35"/>
+        <Color color="178,248,248" maxValue="24300" minValue="23800" labeltext="-30"/>
+        <Color color="22,83,3" maxValue="24800" minValue="24300" labeltext="-23"/>
+        <Color color="0,255,0" maxValue="25300" minValue="24800" labeltext="-20"/>
+        <Color color="165,248,100" maxValue="28300" minValue="25300" labeltext="10"/>
+        <Color color="240,240,60" maxValue="29300" minValue="28300" labeltext="20"/>
+        <Color color="250,180,75" maxValue="29800" minValue="29300" labeltext="25"/>
+        <Color color="220,120,20" maxValue="30300" minValue="29800" labeltext="30"/>
+        <Color color="241,164,184" maxValue="30800" minValue="30300" labeltext="35"/>
+        <Color color="237,101,136" maxValue="31300" minValue="30800" labeltext="40"/>
+        <Color color="255,10,10" maxValue="34300" minValue="31300" labeltext="70"/>
+        <Color color="143,37,37" maxValue="" minValue="34300" labeltext=">70"/>
+      </Colors>
+    </ProductColorTable>-->
+    <ProductColorTable identify="LST" subIdentify="DBLV"  colortablename="LSTWI" description="陆表高温专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="2330" minValue="1000" labeltext="-40"/>
+        <Color color="0,228,255" maxValue="2430" minValue="2330" labeltext="-30"/>
+        <Color color="" maxValue="2480" minValue="2430" labeltext="-25"/>
+        <Color color="178,248,248" maxValue="2530" minValue="2430" labeltext="-20"/>
+        <Color color="22,83,3" maxValue="2670" minValue="2530" labeltext="-6"/>
+        <Color color="0,255,0" maxValue="2710" minValue="2670" labeltext="-2"/>
+        <Color color="165,248,100" maxValue="2750" minValue="2710" labeltext="2"/>
+        <Color color="240,240,60" maxValue="2790" minValue="2750" labeltext="6"/>
+        <Color color="250,180,75" maxValue="2830" minValue="2790" labeltext="10"/>
+        <Color color="220,120,20" maxValue="2880" minValue="2830" labeltext="15"/>
+        <Color color="241,164,184" maxValue="2930" minValue="2880" labeltext="20"/>
+        <Color color="" maxValue="2960" minValue="2930" labeltext="35"/>
+        <Color color="" maxValue="2990" minValue="2960" labeltext="35"/>
+        <Color color="237,101,136" maxValue="3030" minValue="2930" labeltext="40"/>
+        <Color color="255,10,10" maxValue="3430" minValue="3030" labeltext="70"/>
+        <Color color="143,37,37" maxValue="9998" minValue="3430" labeltext=">70"/>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="0MAX"  colortablename="LST0MAX" description="最大值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="165,200,248" maxValue="3030" minValue="1000" labeltext="30"/>
+        <Color color="105,247,121" maxValue="3080" minValue="3030" labeltext="35"/>
+        <Color color="240,240,60" maxValue="3130" minValue="3080" labeltext="40"/>
+        <Color color="250,180,75" maxValue="3180" minValue="3130" labeltext="45"/>
+        <Color color="220,120,20" maxValue="3230" minValue="3180" labeltext="50"/>
+        <Color color="241,164,184" maxValue="3280" minValue="3230" labeltext="55"/>
+        <Color color="237,101,136" maxValue="3330" minValue="3280" labeltext="60"/>
+        <Color color="255,10,10" maxValue="3380" minValue="3330" labeltext="65"/>
+        <Color color="143,37,37" maxValue="4000" minValue="3380" labeltext="127"/>
+        <Color color="0,0,0" maxValue="9998" minValue="4000" labeltext=">127℃"/>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="0MIN"  colortablename="LST0MIN" description="最小值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="165,200,248" maxValue="3030" minValue="1000" labeltext="30"/>
+        <Color color="105,247,121" maxValue="3080" minValue="3030" labeltext="35"/>
+        <Color color="240,240,60" maxValue="3130" minValue="3080" labeltext="40"/>
+        <Color color="250,180,75" maxValue="3180" minValue="3130" labeltext="45"/>
+        <Color color="220,120,20" maxValue="3230" minValue="3180" labeltext="50"/>
+        <Color color="241,164,184" maxValue="3280" minValue="3230" labeltext="55"/>
+        <Color color="237,101,136" maxValue="3330" minValue="3280" labeltext="60"/>
+        <Color color="255,10,10" maxValue="3380" minValue="3330" labeltext="65"/>
+        <Color color="143,37,37" maxValue="4000" minValue="3380" labeltext="127"/>
+        <Color color="0,0,0" maxValue="9998" minValue="4000" labeltext=">127℃"/>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="LST" subIdentify="0AVG"  colortablename="LST0AVG" description="平均值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,136" maxValue="2330" minValue="1000" labeltext="-40"/>
+        <Color color="0,228,255" maxValue="2630" minValue="2330" labeltext="-10"/>
+        <Color color="178,248,248" maxValue="2680" minValue="2630" labeltext="-5"/>
+        <Color color="22,83,3" maxValue="2730" minValue="2680" labeltext="0"/>
+        <Color color="0,255,0" maxValue="2780" minValue="2730" labeltext="5"/>
+        <Color color="165,248,100" maxValue="2830" minValue="2780" labeltext="10"/>
+        <Color color="240,240,60" maxValue="2890" minValue="2830" labeltext="16"/>
+        <Color color="250,180,75" maxValue="2950" minValue="2890" labeltext="22"/>
+        <Color color="220,120,20" maxValue="3010" minValue="2950" labeltext="28"/>
+        <Color color="241,164,184" maxValue="3070" minValue="3010" labeltext="34"/>
+        <Color color="237,101,136" maxValue="3130" minValue="3070" labeltext="40"/>
+        <Color color="255,10,10" maxValue="3430" minValue="3130" labeltext="70"/>
+        <Color color="143,37,37" maxValue="9998" minValue="3430" labeltext=">70"/>
+        <Color color="0,0,255" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="0VTI"  colortablename="DRT0VTI" description="时序植被温度干旱指数图" labeltext="">
+      <Colors>
+        <!--<Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>-->
+        <Color color="196, 79, 54" maxValue="15" minValue="0.0001" labeltext="0"/>
+        <Color color="255, 145, 79" maxValue="30" minValue="15" labeltext="15"/>
+        <Color color="255, 255, 102" maxValue="40" minValue="30" labeltext="30"/>
+        <Color color="172, 255, 69" maxValue="80" minValue="40" labeltext="40"/>
+        <Color color="48, 255, 61" maxValue="" minValue="80" labeltext=">=80"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="TVDI"  colortablename="DRTTVDI" description="温度植被干旱指数图" labeltext="">
+      <Colors>
+        <!--<Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>-->
+        <!--<Color color="45, 145, 20" maxValue="20" minValue="" labeltext="20"/>
+        <Color color="115, 240, 85" maxValue="40" minValue="20" labeltext="40"/>
+        <Color color="245,240,140" maxValue="60" minValue="40" labeltext="60"/>
+        <Color color="235,175,65" maxValue="80" minValue="60" labeltext="80"/>
+        <Color color="200,125,65" maxValue="100" minValue="80" labeltext="80"/>-->
+        <Color color="0,0,0" maxValue="-0.00001" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="0" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="45, 145, 20" maxValue="20" minValue="0.0001" labeltext="20"/>
+        <Color color="115, 240, 85" maxValue="40" minValue="20" labeltext="40"/>
+        <Color color="245, 240, 140" maxValue="60" minValue="40" labeltext="60"/>
+        <Color color="235, 175, 65" maxValue="80" minValue="60" labeltext="80"/>
+        <Color color="200, 125, 65" maxValue="150" minValue="80" labeltext="200"/>  
+        <Color color="200, 125, 65" maxValue="200" minValue="151" labeltext="200" displaylengend="false"/>
+        <Color color="0, 0, 0" maxValue="500" minValue="200" labeltext="500"/>
+        <Color color="240, 40, 230" maxValue="" minValue="500" labeltext=">500"/>
+        <Color color="255, 255, 255" maxValue="151" minValue="150" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="0DNT"  colortablename="DRT0DNT" description="亮温差计算" labeltext="">
+      <Colors>
+        <Color color="255,255,255" maxValue="-10000" minValue="" labeltext="-10000"  displaylengend="false"/>
+        <Color color="254,105,3" maxValue="-650" minValue="-10000" labeltext="-650"/>
+        <Color color="255,135,4" maxValue="-640" minValue="-650" labeltext="-640"/>
+        <Color color="255,165,4" maxValue="-630" minValue="-640" labeltext="-630"/>
+        <Color color="255,195,5" maxValue="-620" minValue="-630" labeltext="-620"/>
+        <Color color="255,255,3" maxValue="-610" minValue="-620" labeltext="-610"/>
+        <Color color="203,191,175" maxValue="-60" minValue="-610" labeltext="-60"/>
+        <Color color="173,141,142" maxValue="-30" minValue="-60" labeltext="-30"/>
+        <Color color="187,156,125" maxValue="-10" minValue="-30" labeltext="-10"/>
+        <Color color="177,148,104" maxValue="10" minValue="-10" labeltext="10"/>
+        <Color color="165,130,76" maxValue="30" minValue="10" labeltext="30"/>
+        <Color color="146,113,62" maxValue="60" minValue="30" labeltext="60"/>
+        <Color color="197,227,115" maxValue="75" minValue="60" labeltext="75"/>
+        <Color color="161,191,79" maxValue="90" minValue="75" labeltext="90"/>
+        <Color color="149,181,18" maxValue="115" minValue="90" labeltext="115"/>
+        <Color color="125,155,43" maxValue="130" minValue="115" labeltext="130"/>
+        <Color color="116,169,0" maxValue="150" minValue="130" labeltext="150"/>
+        <Color color="102,160,0" maxValue="170" minValue="150" labeltext="170"/>
+        <Color color="82,147,1" maxValue="200" minValue="170" labeltext="200"/>
+        <Color color="60,133,0" maxValue="230" minValue="200" labeltext="230"/>
+        <Color color="27,114,1" maxValue="250" minValue="230" labeltext="250"/>
+        <Color color="0,95,1" maxValue="270" minValue="250" labeltext="270"/>
+        <Color color="0,72,0" maxValue="290" minValue="270" labeltext="290"/>
+        <Color color="0,55,0" maxValue="500" minValue="290" labeltext="500"/>
+        <Color color="1,39,0" maxValue="700" minValue="500" labeltext="700"/>
+        <Color color="0,19,0" maxValue="1000" minValue="700" labeltext="1000"/>
+        <Color color="0,0,0" maxValue="10000000" minValue="1000" labeltext="10000000" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="0SWI"  colortablename="DRT0SWI" description="热惯量计算" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="0" displaylengend="false"/>
+        <Color color="170,74, 49" maxValue="200" minValue="0.0001" labeltext="20"/>
+        <Color color="232,119,53" maxValue="400" minValue="200" labeltext="40"/>
+        <Color color="252,155,236" maxValue="500" minValue="400" labeltext="50"/>
+        <Color color="253,246,51" maxValue="600" minValue="500" labeltext="60"/>
+        <Color color="101,253,72" maxValue="800" minValue="600" labeltext="80"/>
+        <Color color="60,147,42" maxValue="1000" minValue="800" labeltext="100"/>
+        <Color color="0,0,0" maxValue="10000000" minValue="1000" labeltext="10000000" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

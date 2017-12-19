@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataType>
+  <Satelite name="FY-3A" searchName="FY3A,FY-3A" description="风云三号A星">
+    <Sensor name="VIRR" searchName="VIRR" description="可见光红外扫描辐射计(VIRR)">
+      <Product name="L1" searchName="L1" description="1级数据(L1)"></Product>
+      <Product name="L1PRJ"></Product>
+      <Product name="L1PRJSplice"></Product>
+    </Sensor>
+    <Sensor name="MERSI">
+      <Product name="L1"></Product>
+      <Product name="L1PRJ"></Product>
+      <Product name="L1PRJSplice"></Product>
+    </Sensor>
+  </Satelite>
+  <Satelite name="FY-3B">
+    <Sensor name="VIRR">
+      <Product name="L1"></Product>
+      <Product name="L1PRJ"></Product>
+      <Product name="L1PRJSplice"></Product>
+    </Sensor>
+    <Sensor name="MERSI">
+      <Product name="L1"></Product>
+      <Product name="L1PRJ"></Product>
+      <Product name="L1PRJSplice"></Product>
+      <Product name="5度分幅"></Product>
+      <Product name="10度分幅"></Product>
+      <Product name="10度分幅"></Product>
+    </Sensor>
+  </Satelite>
+</DataType>

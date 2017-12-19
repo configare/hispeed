@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoPrd.Mosaic.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoPrd.Mosaic.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoPrd.Mosaic.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoPrd.Mosaic\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoPrd.Mosaic\obj\x86\Release\GeoDo.Smart.AutoPrd.Mosaic.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoPrd.Mosaic\obj\x86\Release\GeoDo.Smart.AutoPrd.Mosaic.pdb

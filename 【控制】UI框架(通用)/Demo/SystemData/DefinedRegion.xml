@@ -1,0 +1,195 @@
+﻿<Root>
+  <EnvelopeGroup name="海冰">
+		<EnvelopeItem name="渤海湾" minLongitude="117.45" minLatitude="36.40" maxLongitude="122.57" maxLatitude="41.52" />
+	</EnvelopeGroup>
+  <EnvelopeGroup name="水情">
+		<EnvelopeItem name="嫩江流域" minLongitude="122.44" minLatitude="43.94" maxLongitude="127.56" maxLatitude="49.06" />
+		<EnvelopeItem name="辽河流域" minLongitude="119.94" minLatitude="39.94" maxLongitude="125.06" maxLatitude="45.06" />
+		<EnvelopeItem name="海河流域" minLongitude="113.94" minLatitude="36.94" maxLongitude="119.06" maxLatitude="42.06" />
+		<EnvelopeItem name="黄河流域" minLongitude="111.94" minLatitude="31.94" maxLongitude="117.06" maxLatitude="37.06" />
+		<EnvelopeItem name="淮河流域" minLongitude="115.44" minLatitude="30.44" maxLongitude="120.56" maxLatitude="35.56" />
+		<EnvelopeItem name="汉水流域" minLongitude="109.94" minLatitude="29.94" maxLongitude="115.06" maxLatitude="35.06" />
+		<EnvelopeItem name="太湖流域" minLongitude="117.94" minLatitude="28.94" maxLongitude="123.06" maxLatitude="34.06" />
+		<EnvelopeItem name="四川地区" minLongitude="102.94" minLatitude="27.94" maxLongitude="108.06" maxLatitude="33.06" />
+		<EnvelopeItem name="洞庭湖流域" minLongitude="109.94" minLatitude="26.44" maxLongitude="115.06" maxLatitude="31.56" />
+		<EnvelopeItem name="鄱阳湖流域" minLongitude="114.94" minLatitude="26.44" maxLongitude="120.06" maxLatitude="31.56" />
+		<EnvelopeItem name="福建地区" minLongitude="114.94" minLatitude="26.44" maxLongitude="120.06" maxLatitude="31.56" />
+		<EnvelopeItem name="贵州地区" minLongitude="104.94" minLatitude="23.44" maxLongitude="110.06" maxLatitude="28.56" />
+		<EnvelopeItem name="邕江" minLongitude="104.94" minLatitude="20.94" maxLongitude="110.06" maxLatitude="26.06" />
+		<EnvelopeItem name="珠江流域" minLongitude="109.94" minLatitude="20.94" maxLongitude="115.06" maxLatitude="26.06" />
+		<EnvelopeItem name="新疆地区" minLongitude="83.94" minLatitude="44.94" maxLongitude="89.06" maxLatitude="50.06" />
+		<EnvelopeItem name="西藏扎达" minLongitude="78" minLatitude="31" maxLongitude="80" maxLatitude="33" />
+	</EnvelopeGroup>
+  <EnvelopeGroup name="积雪">
+		<EnvelopeItem name="S01" minLongitude="71.76" minLatitude="35.76" maxLongitude="82.24" maxLatitude="46.24" />
+		<EnvelopeItem name="S02" minLongitude="72.76" minLatitude="25.76" maxLongitude="83.24" maxLatitude="36.24" />
+		<EnvelopeItem name="S03" minLongitude="81.76" minLatitude="45.76" maxLongitude="92.24" maxLatitude="56.24" />
+		<EnvelopeItem name="S04" minLongitude="81.76" minLatitude="35.76" maxLongitude="92.24" maxLatitude="46.24" />
+		<EnvelopeItem name="S05" minLongitude="82.76" minLatitude="25.76" maxLongitude="93.24" maxLatitude="36.24" />
+		<EnvelopeItem name="S06" minLongitude="91.76" minLatitude="35.76" maxLongitude="102.24" maxLatitude="46.24" />
+		<EnvelopeItem name="S07" minLongitude="92.76" minLatitude="25.76" maxLongitude="103.24" maxLatitude="36.24" />
+		<EnvelopeItem name="S08" minLongitude="92.76" minLatitude="15.76" maxLongitude="103.24" maxLatitude="26.24" />
+		<EnvelopeItem name="S09" minLongitude="101.76" minLatitude="35.76" maxLongitude="112.24" maxLatitude="46.24" />
+		<EnvelopeItem name="S10" minLongitude="102.76" minLatitude="25.76" maxLongitude="113.24" maxLatitude="36.24" />
+		<EnvelopeItem name="S11" minLongitude="102.76" minLatitude="15.76" maxLongitude="113.24" maxLatitude="26.24" />
+		<EnvelopeItem name="S12" minLongitude="111.76" minLatitude="45.76" maxLongitude="122.24" maxLatitude="56.24" />
+		<EnvelopeItem name="S13" minLongitude="111.76" minLatitude="35.76" maxLongitude="122.24" maxLatitude="46.24" />
+		<EnvelopeItem name="S14" minLongitude="112.76" minLatitude="25.76" maxLongitude="123.24" maxLatitude="36.24" />
+		<EnvelopeItem name="S15" minLongitude="112.76" minLatitude="15.76" maxLongitude="123.24" maxLatitude="26.24" />
+		<EnvelopeItem name="S16" minLongitude="121.76" minLatitude="45.76" maxLongitude="132.24" maxLatitude="56.24" />
+		<EnvelopeItem name="S17" minLongitude="121.76" minLatitude="35.76" maxLongitude="132.24" maxLatitude="46.24" />
+		<EnvelopeItem name="S18" minLongitude="131.76" minLatitude="41.76" maxLongitude="142.24" maxLatitude="52.24" />
+		<EnvelopeItem name="S19" minLongitude="91.76" minLatitude="45.76" maxLongitude="102.24" maxLatitude="56.24" />
+		<EnvelopeItem name="S20" minLongitude="101.76" minLatitude="45.76" maxLongitude="112.24" maxLatitude="56.24" />
+		<EnvelopeItem name="S21" minLongitude="122.76" minLatitude="25.76" maxLongitude="133.24" maxLatitude="36.24" />
+	</EnvelopeGroup>
+  <EnvelopeGroup name="火情">
+		<EnvelopeItem name="FEA" minLongitude="129.94" minLatitude="44.94" maxLongitude="135.06" maxLatitude="50.06" />
+		<EnvelopeItem name="FEB" minLongitude="129.94" minLatitude="39.94" maxLongitude="135.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEC" minLongitude="122.94" minLatitude="49.94" maxLongitude="128.06" maxLatitude="55.06" />
+		<EnvelopeItem name="FED" minLongitude="124.94" minLatitude="44.94" maxLongitude="130.06" maxLatitude="50.06" />
+		<EnvelopeItem name="FEE" minLongitude="124.94" minLatitude="39.94" maxLongitude="130.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEF" minLongitude="117.94" minLatitude="49.94" maxLongitude="123.06" maxLatitude="55.06" />
+		<EnvelopeItem name="FEG" minLongitude="119.94" minLatitude="44.94" maxLongitude="125.06" maxLatitude="50.06" />
+		<EnvelopeItem name="FEH" minLongitude="119.94" minLatitude="39.94" maxLongitude="125.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEI" minLongitude="114.94" minLatitude="44.94" maxLongitude="120.06" maxLatitude="50.06" />
+		<EnvelopeItem name="FEJ" minLongitude="114.94" minLatitude="39.94" maxLongitude="120.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEK" minLongitude="109.94" minLatitude="39.94" maxLongitude="115.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEL" minLongitude="109.94" minLatitude="29.94" maxLongitude="115.06" maxLatitude="35.06" />
+		<EnvelopeItem name="FEM" minLongitude="99.94" minLatitude="34.94" maxLongitude="105.06" maxLatitude="40.06" />
+		<EnvelopeItem name="FEN" minLongitude="94.94" minLatitude="39.94" maxLongitude="100.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEO" minLongitude="94.94" minLatitude="34.94" maxLongitude="100.06" maxLatitude="40.06" />
+		<EnvelopeItem name="FEP" minLongitude="89.94" minLatitude="39.94" maxLongitude="95.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FEQ" minLongitude="86.94" minLatitude="44.94" maxLongitude="92.06" maxLatitude="50.06" />
+		<EnvelopeItem name="FER" minLongitude="84.94" minLatitude="39.94" maxLongitude="90.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FES" minLongitude="81.94" minLatitude="44.94" maxLongitude="87.06" maxLatitude="50.06" />
+		<EnvelopeItem name="FET" minLongitude="79.94" minLatitude="39.94" maxLongitude="85.06" maxLatitude="45.06" />
+		<EnvelopeItem name="FHA" minLongitude="109.94" minLatitude="34.94" maxLongitude="115.06" maxLatitude="40.06" />
+		<EnvelopeItem name="FHB" minLongitude="114.94" minLatitude="34.94" maxLongitude="120.06" maxLatitude="40.06" />
+		<EnvelopeItem name="FHC" minLongitude="99.94" minLatitude="29.94" maxLongitude="105.06" maxLatitude="35.06" />
+		<EnvelopeItem name="FHD" minLongitude="104.94" minLatitude="29.94" maxLongitude="110.06" maxLatitude="35.06" />
+		<EnvelopeItem name="FHF" minLongitude="114.94" minLatitude="29.94" maxLongitude="120.06" maxLatitude="35.06" />
+		<EnvelopeItem name="FHG" minLongitude="104.94" minLatitude="24.94" maxLongitude="110.06" maxLatitude="30.06" />
+		<EnvelopeItem name="FHH" minLongitude="109.94" minLatitude="24.94" maxLongitude="115.06" maxLatitude="30.06" />
+		<EnvelopeItem name="FHI" minLongitude="114.94" minLatitude="24.94" maxLongitude="120.06" maxLatitude="30.06" />
+		<EnvelopeItem name="FHJ" minLongitude="114.94" minLatitude="19.94" maxLongitude="120.06" maxLatitude="25.06" />
+		<EnvelopeItem name="FHK" minLongitude="109.94" minLatitude="19.94" maxLongitude="115.06" maxLatitude="25.06" />
+		<EnvelopeItem name="FHL" minLongitude="104.94" minLatitude="19.94" maxLongitude="110.06" maxLatitude="25.06" />
+		<EnvelopeItem name="FHM" minLongitude="99.94" minLatitude="24.94" maxLongitude="105.06" maxLatitude="30.06" />
+		<EnvelopeItem name="FHN" minLongitude="99.94" minLatitude="19.94" maxLongitude="105.06" maxLatitude="25.06" />
+		<EnvelopeItem name="FHE" minLongitude="104.94" minLatitude="34.94" maxLongitude="110.06" maxLatitude="40.06" />
+		<EnvelopeItem name="FHO" minLongitude="94.94" minLatitude="19.94" maxLongitude="100.06" maxLatitude="25.06" />
+		<EnvelopeItem name="FHP" minLongitude="94.94" minLatitude="24.94" maxLongitude="100.06" maxLatitude="30.06" />
+		<EnvelopeItem name="FHQ" minLongitude="94.94" minLatitude="29.94" maxLongitude="100.06" maxLatitude="35.06" />
+		<EnvelopeItem name="FHR" minLongitude="89.94" minLatitude="24.94" maxLongitude="95.06" maxLatitude="30.06" />
+		<EnvelopeItem name="FHS" minLongitude="119.94" minLatitude="34.94" maxLongitude="125.06" maxLatitude="40.06" />
+		<EnvelopeItem name="FHT" minLongitude="119.94" minLatitude="29.94" maxLongitude="125.06" maxLatitude="35.06" />
+		<EnvelopeItem name="FHU" minLongitude="119.94" minLatitude="24.94" maxLongitude="125.06" maxLatitude="30.06" />
+	</EnvelopeGroup>
+  <EnvelopeGroup name="干旱">
+		<EnvelopeItem name="D01" minLongitude="71.76" minLatitude="35.76" maxLongitude="82.24" maxLatitude="46.24" />
+		<EnvelopeItem name="D02" minLongitude="72.76" minLatitude="25.76" maxLongitude="83.24" maxLatitude="36.24" />
+		<EnvelopeItem name="D03" minLongitude="81.76" minLatitude="45.76" maxLongitude="92.24" maxLatitude="56.24" />
+		<EnvelopeItem name="D04" minLongitude="81.76" minLatitude="35.76" maxLongitude="92.24" maxLatitude="46.24" />
+		<EnvelopeItem name="D05" minLongitude="82.76" minLatitude="25.76" maxLongitude="93.24" maxLatitude="36.24" />
+		<EnvelopeItem name="D06" minLongitude="91.76" minLatitude="35.76" maxLongitude="102.24" maxLatitude="46.24" />
+		<EnvelopeItem name="D07" minLongitude="92.76" minLatitude="25.76" maxLongitude="103.24" maxLatitude="36.24" />
+		<EnvelopeItem name="D08" minLongitude="92.76" minLatitude="15.76" maxLongitude="103.24" maxLatitude="26.24" />
+		<EnvelopeItem name="D09" minLongitude="101.76" minLatitude="35.76" maxLongitude="112.24" maxLatitude="46.24" />
+		<EnvelopeItem name="D10" minLongitude="102.76" minLatitude="25.76" maxLongitude="113.24" maxLatitude="36.24" />
+		<EnvelopeItem name="D11" minLongitude="102.76" minLatitude="15.76" maxLongitude="113.24" maxLatitude="26.24" />
+		<EnvelopeItem name="D12" minLongitude="111.76" minLatitude="45.76" maxLongitude="122.24" maxLatitude="56.24" />
+		<EnvelopeItem name="D13" minLongitude="111.76" minLatitude="35.76" maxLongitude="122.24" maxLatitude="46.24" />
+		<EnvelopeItem name="D14" minLongitude="112.76" minLatitude="25.76" maxLongitude="123.24" maxLatitude="36.24" />
+		<EnvelopeItem name="D15" minLongitude="112.76" minLatitude="15.76" maxLongitude="123.24" maxLatitude="26.24" />
+		<EnvelopeItem name="D16" minLongitude="121.76" minLatitude="45.76" maxLongitude="132.24" maxLatitude="56.24" />
+		<EnvelopeItem name="D17" minLongitude="121.76" minLatitude="35.76" maxLongitude="132.24" maxLatitude="46.24" />
+		<EnvelopeItem name="D18" minLongitude="131.76" minLatitude="41.76" maxLongitude="142.24" maxLatitude="52.24" />
+		<EnvelopeItem name="D19" minLongitude="91.76" minLatitude="45.76" maxLongitude="102.24" maxLatitude="56.24" />
+		<EnvelopeItem name="D20" minLongitude="101.76" minLatitude="45.76" maxLongitude="112.24" maxLatitude="56.24" />
+		<EnvelopeItem name="D21" minLongitude="122.76" minLatitude="25.76" maxLongitude="133.24" maxLatitude="36.24" />
+	</EnvelopeGroup>
+  <EnvelopeGroup name="黄河冰凌">
+		<EnvelopeItem name="HHMR" minLongitude="14.46" minLatitude="35.5475" maxLongitude="21.54" maxLatitude="42.4525" />
+		<EnvelopeItem name="HHDR" minLongitude="110.4625" minLatitude="33.5675" maxLongitude="119.5375" maxLatitude="39.4325" />
+	</EnvelopeGroup>
+  <EnvelopeGroup name="重点区域" description="">
+    <EnvelopeItem name="中国及周边" minLongitude="70" minLatitude="10" maxLongitude="150" maxLatitude="60" />
+    <EnvelopeItem name="积雪全国区域" minLongitude="70" minLatitude="10" maxLongitude="150" maxLatitude="60" />
+    <EnvelopeItem name="火情全国区域" minLongitude="80" minLatitude="10" maxLongitude="140" maxLatitude="55" />
+  </EnvelopeGroup>
+  <EnvelopeGroup name="自定义区域">
+    <EnvelopeItem name="太湖、阳澄湖局部" minLongitude="119.65" minLatitude="30.55" maxLongitude="121.15" maxLatitude="32.05" />
+    <EnvelopeItem name="巢湖局部" minLongitude="117" minLatitude="31" maxLongitude="118" maxLatitude="32" />
+    <EnvelopeItem name="太湖蓝藻专题图" minLongitude="119.75" minLatitude="30.75" maxLongitude="120.75" maxLatitude="31.75" />
+    <EnvelopeItem name="淮河洪涝监测" minLongitude="114.44" minLatitude="30.44" maxLongitude="119.56" maxLatitude="35.56" />
+    <EnvelopeItem name="黄河山东段" minLongitude="110.4625" minLatitude="33.5675" maxLongitude="119.5375" maxLatitude="39.4325" />
+  </EnvelopeGroup>
+  <EnvelopeGroup name="标准五度分幅">
+    <EnvelopeItem name="EA" minLongitude="130" minLatitude="45" maxLongitude="135" maxLatitude="50" />
+    <EnvelopeItem name="EB" minLongitude="130" minLatitude="40" maxLongitude="135" maxLatitude="45" />
+    <EnvelopeItem name="EC" minLongitude="123" minLatitude="50" maxLongitude="128" maxLatitude="55" />
+    <EnvelopeItem name="ED" minLongitude="125" minLatitude="45" maxLongitude="130" maxLatitude="50" />
+    <EnvelopeItem name="EE" minLongitude="125" minLatitude="40" maxLongitude="130" maxLatitude="45" />
+    <EnvelopeItem name="EF" minLongitude="118" minLatitude="50" maxLongitude="123" maxLatitude="55" />
+    <EnvelopeItem name="EG" minLongitude="120" minLatitude="45" maxLongitude="125" maxLatitude="50" />
+    <EnvelopeItem name="EH" minLongitude="120" minLatitude="40" maxLongitude="125" maxLatitude="45" />
+    <EnvelopeItem name="EI" minLongitude="115" minLatitude="45" maxLongitude="120" maxLatitude="50" />
+    <EnvelopeItem name="EJ" minLongitude="115" minLatitude="40" maxLongitude="120" maxLatitude="45" />
+    <EnvelopeItem name="EK" minLongitude="110" minLatitude="40" maxLongitude="115" maxLatitude="45" />
+    <EnvelopeItem name="EL" minLongitude="110" minLatitude="30" maxLongitude="115" maxLatitude="35" />
+    <EnvelopeItem name="EM" minLongitude="100" minLatitude="35" maxLongitude="105" maxLatitude="40" />
+    <EnvelopeItem name="EN" minLongitude="95" minLatitude="40" maxLongitude="100" maxLatitude="45" />
+    <EnvelopeItem name="EO" minLongitude="95" minLatitude="35" maxLongitude="100" maxLatitude="40" />
+    <EnvelopeItem name="EP" minLongitude="90" minLatitude="40" maxLongitude="95" maxLatitude="45" />
+    <EnvelopeItem name="EQ" minLongitude="87" minLatitude="45" maxLongitude="92" maxLatitude="50" />
+    <EnvelopeItem name="ER" minLongitude="85" minLatitude="40" maxLongitude="90" maxLatitude="45" />
+    <EnvelopeItem name="ES" minLongitude="82" minLatitude="45" maxLongitude="87" maxLatitude="50" />
+    <EnvelopeItem name="ET" minLongitude="80" minLatitude="40" maxLongitude="85" maxLatitude="45" />
+    <EnvelopeItem name="HA" minLongitude="110" minLatitude="35" maxLongitude="115" maxLatitude="40" />
+    <EnvelopeItem name="HB" minLongitude="115" minLatitude="35" maxLongitude="120" maxLatitude="40" />
+    <EnvelopeItem name="HC" minLongitude="100" minLatitude="30" maxLongitude="105" maxLatitude="35" />
+    <EnvelopeItem name="HD" minLongitude="105" minLatitude="30" maxLongitude="110" maxLatitude="35" />
+    <EnvelopeItem name="HF" minLongitude="115" minLatitude="30" maxLongitude="120" maxLatitude="35" />
+    <EnvelopeItem name="HG" minLongitude="105" minLatitude="25" maxLongitude="110" maxLatitude="30" />
+    <EnvelopeItem name="HH" minLongitude="110" minLatitude="25" maxLongitude="115" maxLatitude="30" />
+    <EnvelopeItem name="HI" minLongitude="115" minLatitude="25" maxLongitude="120" maxLatitude="30" />
+    <EnvelopeItem name="HJ" minLongitude="115" minLatitude="20" maxLongitude="120" maxLatitude="25" />
+    <EnvelopeItem name="HK" minLongitude="110" minLatitude="20" maxLongitude="115" maxLatitude="25" />
+    <EnvelopeItem name="HL" minLongitude="105" minLatitude="20" maxLongitude="110" maxLatitude="25" />
+    <EnvelopeItem name="HM" minLongitude="100" minLatitude="25" maxLongitude="105" maxLatitude="30" />
+    <EnvelopeItem name="HN" minLongitude="100" minLatitude="20" maxLongitude="105" maxLatitude="25" />
+    <EnvelopeItem name="HE" minLongitude="105" minLatitude="35" maxLongitude="110" maxLatitude="40" />
+    <EnvelopeItem name="HO" minLongitude="95" minLatitude="20" maxLongitude="100" maxLatitude="25" />
+    <EnvelopeItem name="HP" minLongitude="95" minLatitude="25" maxLongitude="100" maxLatitude="30" />
+    <EnvelopeItem name="HQ" minLongitude="95" minLatitude="30" maxLongitude="100" maxLatitude="35" />
+    <EnvelopeItem name="HR" minLongitude="90" minLatitude="25" maxLongitude="95" maxLatitude="30" />
+    <EnvelopeItem name="HU" minLongitude="120" minLatitude="25" maxLongitude="125" maxLatitude="30" />
+    <EnvelopeItem name="FQ" minLongitude="110" minLatitude="45" maxLongitude="115" maxLatitude="50" />
+    <EnvelopeItem name="FT" minLongitude="75" minLatitude="40" maxLongitude="80" maxLatitude="45" />
+    <EnvelopeItem name="FB" minLongitude="107.5" minLatitude="15" maxLongitude="112.5" maxLatitude="20" />
+    <EnvelopeItem name="FC" minLongitude="105" minLatitude="40" maxLongitude="110" maxLatitude="45" />
+    <EnvelopeItem name="FJ" minLongitude="90" minLatitude="30" maxLongitude="95" maxLatitude="35" />
+    <EnvelopeItem name="FN" minLongitude="85" minLatitude="25" maxLongitude="90" maxLatitude="30" />
+    <EnvelopeItem name="FG" minLongitude="80" minLatitude="35" maxLongitude="85" maxLatitude="40" />
+    <EnvelopeItem name="FM" minLongitude="75" minLatitude="30" maxLongitude="80" maxLatitude="35" />
+    <EnvelopeItem name="FV" minLongitude="125" minLatitude="35" maxLongitude="130" maxLatitude="40" />
+    <EnvelopeItem name="EV" minLongitude="135" minLatitude="45" maxLongitude="140" maxLatitude="50" />
+    <EnvelopeItem name="FO" minLongitude="80" minLatitude="25" maxLongitude="85" maxLatitude="30" />
+    <EnvelopeItem name="FP" minLongitude="113" minLatitude="50" maxLongitude="118" maxLatitude="55" />
+    <EnvelopeItem name="FS" minLongitude="77" minLatitude="45" maxLongitude="82" maxLatitude="50" />
+    <EnvelopeItem name="FE" minLongitude="90" minLatitude="35" maxLongitude="95" maxLatitude="40" />
+    <EnvelopeItem name="FK" minLongitude="85" minLatitude="30" maxLongitude="90" maxLatitude="35" />
+    <EnvelopeItem name="FI" minLongitude="70" minLatitude="35" maxLongitude="75" maxLatitude="40" />
+    <EnvelopeItem name="EU" minLongitude="128" minLatitude="50" maxLongitude="133" maxLatitude="55" />
+    <EnvelopeItem name="HT" minLongitude="120" minLatitude="30" maxLongitude="125" maxLatitude="35" />
+    <EnvelopeItem name="FR" minLongitude="92" minLatitude="45" maxLongitude="97" maxLatitude="50" />
+    <EnvelopeItem name="FD" minLongitude="100" minLatitude="40" maxLongitude="105" maxLatitude="45" />
+    <EnvelopeItem name="FF" minLongitude="85" minLatitude="35" maxLongitude="90" maxLatitude="40" />
+    <EnvelopeItem name="FH" minLongitude="75" minLatitude="35" maxLongitude="80" maxLatitude="40" />
+    <EnvelopeItem name="FU" minLongitude="70" minLatitude="40" maxLongitude="75" maxLatitude="45" />
+    <EnvelopeItem name="HS" minLongitude="120" minLatitude="35" maxLongitude="125" maxLatitude="40" />
+    <EnvelopeItem name="FA" minLongitude="120" minLatitude="20" maxLongitude="125" maxLatitude="25" />
+    <EnvelopeItem name="FL" minLongitude="80" minLatitude="30" maxLongitude="85" maxLatitude="35" />
+  </EnvelopeGroup>
+</Root>

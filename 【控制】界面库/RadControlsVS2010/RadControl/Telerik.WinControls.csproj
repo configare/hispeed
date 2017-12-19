@@ -1,0 +1,1193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD6A4B81-5455-49E3-82D9-5B392B5E2242}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Telerik.WinControls</RootNamespace>
+    <AssemblyName>Telerik.WinControls</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>RadControl.snk</AssemblyOriginatorKeyFile>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>..\..\bin\Debug\Telerik.WinControls.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Release\Telerik.WinControls.XML</DocumentationFile>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>..\..\bin\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\bin\ReleaseTrial\Telerik.WinControls.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x86' ">
+    <OutputPath>bin\x86\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x64' ">
+    <OutputPath>bin\x64\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Descriptors\FilterValueStringConverter.cs" />
+    <Compile Include="Data\Expressions\DescribeItemsList\ExpressionItem.cs" />
+    <Compile Include="Data\Expressions\DescribeItemsList\ExpressionItemEnums.cs" />
+    <Compile Include="Data\Expressions\DescribeItemsList\ExpressionItemsList.cs" />
+    <Compile Include="Data\Interfaces\ITooltipOwner.cs" />
+    <Compile Include="Data\ObjectRelation.cs" />
+    <Compile Include="Data\ObjectRelationCollecion.cs" />
+    <Compile Include="Data\Relations\SelfReferenceRelation.cs" />
+    <Compile Include="Design\TelerikToolboxCategoryAttribute.cs" />
+    <Compile Include="Design\ToolboxGroupStrings.cs" />
+    <Compile Include="Enumerations\Dock.cs" />
+    <Compile Include="Enumerations\TextWrapExpandMode.cs" />
+    <Compile Include="Enumerations\WaitingBarStyles.cs" />
+    <Compile Include="Events\TextChangingEventArgs.cs" />
+    <Compile Include="Keyboard\Assistance\AdornerLayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\ScreenTipPresenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\ScreenTipPresenter.Designer.cs">
+      <DependentUpon>ScreenTipPresenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\IScreenTipContent.cs" />
+    <Compile Include="Keyboard\Assistance\KeyTip.cs" />
+    <Compile Include="Keyboard\Assistance\RadFilteredPropertiesConverter.cs" />
+    <Compile Include="Keyboard\Assistance\RadScreenTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\RadScreenTipElement.cs" />
+    <Compile Include="Keyboard\Assistance\RadScreenTipPlaceholder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\ScreenTipEditor.cs" />
+    <Compile Include="Keyboard\Assistance\ScreenTipUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\ScreenTipUI.Designer.cs">
+      <DependentUpon>ScreenTipUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keyboard\Assistance\TemplateEventArgs.cs" />
+    <Compile Include="Keyboard\Assistance\TipStates.cs" />
+    <Compile Include="Events\CollectionChangedEvent.cs" />
+    <Compile Include="Collections\NotifyCollection.cs" />
+    <Compile Include="Collections\ObservableCollection.cs" />
+    <Compile Include="Collections\RBTree\Interfaces.cs" />
+    <Compile Include="Collections\RBTree\OrderedTree.cs" />
+    <Compile Include="Collections\RBTree\Tree.cs" />
+    <Compile Include="Collections\RBTree\TreeBase.cs" />
+    <Compile Include="Collections\RBTree\TreeEnum.cs" />
+    <Compile Include="Collections\RBTree\TreeNode.cs" />
+    <Compile Include="Collections\ReadOnlyObservableCollection.cs" />
+    <Compile Include="ResFinder.cs" />
+    <Compile Include="TPF\Control\ComponentBehavior.cs" />
+    <Compile Include="TPF\Control\ComponentElementTree.cs" />
+    <Compile Include="TPF\Control\ComponentInputBehavior.cs" />
+    <Compile Include="TPF\Control\ComponentLayoutElementTree.cs" />
+    <Compile Include="TPF\Control\ComponentThemableElementTree.cs" />
+    <Compile Include="Events\HoveredElementChangedEventArgs.cs" />
+    <Compile Include="TPF\Control\IComponentTreeHandler.cs" />
+    <Compile Include="TPF\Control\ItemsControl\IItemsControl.cs" />
+    <Compile Include="Events\ItemSelectedEventArgs.cs" />
+    <Compile Include="Events\ItemUpdatedEventArgs.cs" />
+    <Compile Include="Events\NCMouseEventArgs.cs" />
+    <Compile Include="TPF\Control\ItemsControl\RadItemsControlImpl.cs" />
+    <Compile Include="TPF\Control\RadLayeredWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Control\RadNCEnabledControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\ReplaceRadControlProvider.cs" />
+    <Compile Include="Events\ScreenTipNeededEventArgs.cs" />
+    <Compile Include="Events\SetValueDelegate.cs" />
+    <Compile Include="Events\ThemeNameChangedEventArgs.cs" />
+    <Compile Include="Events\ToolTipTextNeededEventArgs.cs" />
+    <Compile Include="Collections\Avl.cs" />
+    <Compile Include="Data\CollectionViewProvider.cs" />
+    <Compile Include="Data\Descriptors\DateFilterDescriptor.cs" />
+    <Compile Include="Data\EmptyCollectionView.cs" />
+    <Compile Include="Data\Helpers\AggregateItems.cs" />
+    <Compile Include="Data\Sorting\AvlIndex.cs" />
+    <Compile Include="Data\Descriptors\CompositeFilterDescriptor.cs" />
+    <Compile Include="Data\Sorting\DataItemComparer.cs" />
+    <Compile Include="Data\Grouping\DataItemGroup.cs" />
+    <Compile Include="Data\Grouping\DefaultGroupDescriptorCollectionFactory.cs" />
+    <Compile Include="Data\Grouping\DefaultGroupFactory.cs" />
+    <Compile Include="Data\Sorting\DefaultSortDescriptorCollectionFactory.cs" />
+    <Compile Include="Data\Descriptors\FilterDescriptor.cs" />
+    <Compile Include="Data\Descriptors\FilterDescriptorCollection.cs" />
+    <Compile Include="Data\Filtering\FilterExpressionException.cs" />
+    <Compile Include="Data\Filtering\FilterOperators.cs" />
+    <Compile Include="Data\Grouping\Group.cs" />
+    <Compile Include="Data\Grouping\GroupCollection.cs" />
+    <Compile Include="Data\Grouping\GroupComparer.cs" />
+    <Compile Include="Data\Descriptors\GroupDescriptor.cs" />
+    <Compile Include="Data\Descriptors\GroupDescriptorCollection.cs" />
+    <Compile Include="Data\Grouping\GroupBuilder.cs" />
+    <Compile Include="Data\Interfaces\ICollectionView.cs" />
+    <Compile Include="Data\Interfaces\IDataItem.cs" />
+    <Compile Include="Data\Interfaces\IDataItemSource.cs" />
+    <Compile Include="Data\Interfaces\IGroupDescriptorCollectionFactory.cs" />
+    <Compile Include="Data\Interfaces\IGroupFactory.cs" />
+    <Compile Include="Data\Sorting\Index.cs" />
+    <Compile Include="Data\Interfaces\IReadOnlyCollection.cs" />
+    <Compile Include="Data\Interfaces\ISortDescriptorCollectionFactory.cs" />
+    <Compile Include="Data\SnapshotCollectionView.cs" />
+    <Compile Include="Data\Sorting\LinqIndex.cs" />
+    <Compile Include="Data\Helpers\NotifyPropertyBase.cs" />
+    <Compile Include="Data\RadCollectionView.cs" />
+    <Compile Include="Data\RadDataView.cs" />
+    <Compile Include="Data\RadListSource.cs" />
+    <Compile Include="Data\Helpers\Range.cs" />
+    <Compile Include="Data\Descriptors\SortDescriptor.cs" />
+    <Compile Include="Data\Descriptors\SortDescriptorCollection.cs" />
+    <Compile Include="Design\DesignerConsts.cs" />
+    <Compile Include="Design\NewItemData.cs" />
+    <Compile Include="Design\RadComponent.cs" />
+    <Compile Include="Design\RadComponentElement.cs" />
+    <Compile Include="Design\RadDefaultValueAttribute.cs" />
+    <Compile Include="Design\RadDescriptionAttribute.cs" />
+    <Compile Include="Design\RadItemDesignTimePropertyDescriptor.cs" />
+    <Compile Include="Design\RadItemEditTextAttribute.cs" />
+    <Compile Include="Design\RadNewItemAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\RadPropertyDefaultValueAttribute.cs" />
+    <Compile Include="Design\RadThemeManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\RadToolboxItemAttribute.cs" />
+    <Compile Include="Design\ServiceProviderSite.cs" />
+    <Compile Include="Design\VSCacheError.cs" />
+    <Compile Include="TPF\Dps\NewDps\DisposableObject.cs" />
+    <Compile Include="TPF\Dps\NewDps\PropertyBinding.cs" />
+    <Compile Include="TPF\Dps\NewDps\PropertyBoundObject.cs" />
+    <Compile Include="TPF\Dps\NewDps\RadObject.cs" />
+    <Compile Include="TPF\Dps\NewDps\RadPropertyValue.cs" />
+    <Compile Include="TPF\Dps\NewDps\RadPropertyValueCollection.cs" />
+    <Compile Include="TPF\Dps\NewDps\RadTypeResolver.cs" />
+    <Compile Include="Events\ChildrenChangedEventHandler.cs" />
+    <Compile Include="Patterns\Command\Commands\CloseCommand.cs" />
+    <Compile Include="TPF\Helpers\Filters\PropertyFilter.cs" />
+    <Compile Include="Interfaces\IItemsElement.cs" />
+    <Compile Include="TPF\Control\MeasurementControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Collections\RadElementZOrderCollection.cs" />
+    <Compile Include="Collections\RadItemCollection.cs" />
+    <Compile Include="Collections\RadItemReadOnlyCollection.cs" />
+    <Compile Include="Collections\RadItemVirtualizationCollection.cs" />
+    <Compile Include="Enumerations\TreeTraversalMode.cs" />
+    <Compile Include="Enumerations\BorderDrawModes.cs" />
+    <Compile Include="Enumerations\CheckPrimitiveStyle.cs" />
+    <Compile Include="Data\Expressions\AggregateNode.cs" />
+    <Compile Include="Data\Expressions\Aggregates.cs" />
+    <Compile Include="Data\Expressions\BinaryOpNode.cs" />
+    <Compile Include="Data\Expressions\ConstNode.cs" />
+    <Compile Include="Data\Expressions\DataStorageHelper.cs" />
+    <Compile Include="Data\Expressions\DataTypePrecedence.cs" />
+    <Compile Include="Data\Expressions\DictionaryObject.cs" />
+    <Compile Include="Data\Expressions\DynamicObject.cs" />
+    <Compile Include="Data\Expressions\ExpressionContext.cs" />
+    <Compile Include="Data\Expressions\ExpressionNode.cs" />
+    <Compile Include="Data\Expressions\ExpressionParser.cs" />
+    <Compile Include="Data\Expressions\ExpressionUtils.cs" />
+    <Compile Include="Data\Expressions\FunctionContext.cs" />
+    <Compile Include="Data\Expressions\FunctionNode.cs" />
+    <Compile Include="Data\Expressions\InvalidExpressionException.cs" />
+    <Compile Include="Data\Expressions\Lexer.cs" />
+    <Compile Include="Data\Expressions\LexicalException.cs" />
+    <Compile Include="Data\Expressions\LikeNode.cs" />
+    <Compile Include="Data\Expressions\NameNode.cs" />
+    <Compile Include="Data\Expressions\Operand.cs" />
+    <Compile Include="Data\Expressions\OperandType.cs" />
+    <Compile Include="Data\Expressions\Operator.cs" />
+    <Compile Include="Data\Expressions\ParserException.cs" />
+    <Compile Include="Data\Expressions\SqlConvert.cs" />
+    <Compile Include="Data\Expressions\StorageType.cs" />
+    <Compile Include="Data\Expressions\Token.cs" />
+    <Compile Include="Data\Expressions\UnaryOpNode.cs" />
+    <Compile Include="Data\Expressions\Utils.cs" />
+    <Compile Include="Data\Expressions\ValueType.cs" />
+    <Compile Include="Data\Expressions\ZeroOpNode.cs" />
+    <Compile Include="TPF\Helpers\ControlHelper.cs" />
+    <Compile Include="TPF\Helpers\CursorHelper.cs" />
+    <Compile Include="TPF\Helpers\DoubleUtil.cs" />
+    <Compile Include="TPF\Helpers\Filters\AndFilter.cs" />
+    <Compile Include="TPF\Helpers\Filters\CompositeFilter.cs" />
+    <Compile Include="TPF\Helpers\Filters\Filter.cs" />
+    <Compile Include="TPF\Helpers\Filters\OrFilter.cs" />
+    <Compile Include="TPF\Helpers\Filters\TypeFilter.cs" />
+    <Compile Include="TPF\Helpers\ImageHelper.cs" />
+    <Compile Include="TPF\Helpers\MeasurementGraphics.cs" />
+    <Compile Include="TPF\Helpers\ReflectionHelper.cs" />
+    <Compile Include="TPF\Helpers\ResourceHelper.cs" />
+    <Compile Include="TPF\Helpers\TelerikHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\CollectionResetReason.cs" />
+    <Compile Include="Interfaces\ILayoutHandler.cs" />
+    <Compile Include="Interfaces\ILayoutManager.cs" />
+    <Compile Include="Interfaces\ILayoutQueue.cs" />
+    <Compile Include="Interfaces\ILoadObsoleteDockingManagerXml.cs" />
+    <Compile Include="Interfaces\INotifyCollectionChanged.cs" />
+    <Compile Include="Interfaces\INotifyCollectionChanging.cs" />
+    <Compile Include="Interfaces\INotifyPropertyChangingEx.cs" />
+    <Compile Include="Interfaces\IVirtualizationCollection.cs" />
+    <Compile Include="Interfaces\IVirtualViewport.cs" />
+    <Compile Include="Interfaces\IVisualElementProvider.cs" />
+    <Compile Include="Events\NotifyCollectionChangedAction.cs" />
+    <Compile Include="Events\NotifyCollectionChangedEventArgs.cs" />
+    <Compile Include="Events\NotifyCollectionChangedEventHandler.cs" />
+    <Compile Include="Events\NotifyCollectionChangingEventArgs.cs" />
+    <Compile Include="Events\NotifyCollectionChangingEventHandler.cs" />
+    <Compile Include="Events\PropertyChangingEventArgsEx.cs" />
+    <Compile Include="Events\PropertyChangingEventHandlerEx.cs" />
+    <Compile Include="Data\Relations\DataSetObjectRelation.cs" />
+    <Compile Include="Keyboard\InputBindingsCollection.cs" />
+    <Compile Include="Keyboard\Shortcuts\IShortcutProvider.cs" />
+    <Compile Include="Events\PartialShortcutEventArgs.cs" />
+    <Compile Include="Keyboard\Shortcuts\RadShortcut.cs" />
+    <Compile Include="Keyboard\Shortcuts\RadKeyboardFilter.cs" />
+    <Compile Include="Keyboard\Shortcuts\RadShortcutCollection.cs" />
+    <Compile Include="Keyboard\Shortcuts\RadShortcutManager.cs" />
+    <Compile Include="Events\ShortcutEventArgs.cs" />
+    <Compile Include="TPF\Layout\Panels\IntegralScrollWrapPanel.cs" />
+    <Compile Include="TPF\Layout\Panels\WrapLayoutPanel.cs" />
+    <Compile Include="Localization\LocalizationProvider.cs" />
+    <Compile Include="TPF\Paint\FontTextMetrics.cs" />
+    <Compile Include="TPF\Paint\ShadowSettings.cs" />
+    <Compile Include="Patterns\Command\SetPropertyValueCommand.cs" />
+    <Compile Include="Enumerations\ArrowDirection.cs" />
+    <Compile Include="Enumerations\ImagePositions.cs" />
+    <Compile Include="Enumerations\PanelBarStyles.cs" />
+    <Compile Include="TPF\Layout\Panels\BoxLayout.cs" />
+    <Compile Include="TPF\Layout\ContextLayoutManager.cs">
+    </Compile>
+    <Compile Include="TPF\Layout\Panels\ForceSizeLayoutPanel.cs" />
+    <Compile Include="TPF\Layout\SizeChangedInfo.cs" />
+    <Compile Include="Collections\EventsCollection.cs" />
+    <Compile Include="TPF\Control\Containers\RadShimControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Control\RadControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Control\ItemsControl\RadItemsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Events\RadPropertyChangingEventArgs.cs" />
+    <Compile Include="Events\RadPropertyChangedEventHandler.cs" />
+    <Compile Include="Patterns\Command\Commands\ClickCommand.cs" />
+    <Compile Include="Patterns\Command\Commands\FocusCommand.cs" />
+    <Compile Include="Interfaces\IBoxStyle.cs" />
+    <Compile Include="Interfaces\IItemsOwner.cs" />
+    <Compile Include="Collections\RadElementReadonlyList.cs" />
+    <Compile Include="Enumerations\AutoSizeModeBoxes.cs" />
+    <Compile Include="Enumerations\BooleanBoxes.cs" />
+    <Compile Include="Enumerations\BorderBoxStyle.cs" />
+    <Compile Include="Enumerations\ChildrenListOptions.cs" />
+    <Compile Include="Enumerations\SortStyle.cs" />
+    <Compile Include="Enumerations\ClickMode.cs" />
+    <Compile Include="Enumerations\DropDownStyle.cs" />
+    <Compile Include="Enumerations\ElementVisibility.cs" />
+    <Compile Include="Enumerations\ImageScaling.cs" />
+    <Compile Include="Enumerations\PerformLayoutType.cs" />
+    <Compile Include="Enumerations\ProgressOrientation.cs" />
+    <Compile Include="Enumerations\RadAutoSizeMode.cs" />
+    <Compile Include="Enumerations\RadCategories.cs" />
+    <Compile Include="Enumerations\RadElementState.cs" />
+    <Compile Include="Enumerations\RadFitToSizeMode.cs" />
+    <Compile Include="Enumerations\ScrollButtonsPositions.cs" />
+    <Compile Include="Enumerations\SeparatorOrientation.cs" />
+    <Compile Include="Enumerations\ToggleState.cs" />
+    <Compile Include="Enumerations\TrackBarTickStyles.cs" />
+    <Compile Include="Enumerations\VisibilityBoxes.cs" />
+    <Compile Include="TPF\Helpers\Formatter.cs" />
+    <Compile Include="Interfaces\IHierarchicalItem.cs" />
+    <Compile Include="Keyboard\ChordConverter.cs" />
+    <Compile Include="Keyboard\ChordMessageFilter.cs" />
+    <Compile Include="Keyboard\ChordKeysUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Keyboard\ChordKeysUI.Designer.cs">
+      <DependentUpon>ChordKeysUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keyboard\ChordModifier.cs" />
+    <Compile Include="Keyboard\ChordModifierConverter.cs" />
+    <Compile Include="Keyboard\ChordsEditor.cs" />
+    <Compile Include="TPF\Control\Containers\ContainerControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Keyboard\ShortcutEventArgs.cs" />
+    <Compile Include="Keyboard\ShortcutEventHandler.cs" />
+    <Compile Include="Keyboard\Chord.cs">
+    </Compile>
+    <Compile Include="Keyboard\Shortcuts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Keyboard\Shortcuts.Designer.cs">
+      <DependentUpon>Shortcuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Control\MouseHoverTimer.cs" />
+    <Compile Include="TPF\Dps\RadProperty.cs" />
+    <Compile Include="TPF\Dps\RadPropertyBinding.cs" />
+    <Compile Include="TPF\Dps\RadObjectType.cs" />
+    <Compile Include="Events\RadPropertyChangedEventArgs.cs" />
+    <Compile Include="TPF\Dps\EffectiveValueEntry.cs" />
+    <Compile Include="TPF\Dps\RadPropertyMetadata.cs" />
+    <Compile Include="TPF\Layout\ElementLayoutData.cs" />
+    <Compile Include="TPF\Element\RadHostItem.cs" />
+    <Compile Include="Enumerations\DisplayStyle.cs" />
+    <Compile Include="Enumerations\GradientStyles.cs" />
+    <Compile Include="Keyboard\InputBinding.cs" />
+    <Compile Include="Interfaces\IBoxElement.cs" />
+    <Compile Include="Interfaces\ICollapsibleElement.cs" />
+    <Compile Include="Interfaces\ILayoutEngine.cs" />
+    <Compile Include="TPF\Layout\Panels\ImageAndTextLayoutPanel.cs" />
+    <Compile Include="Interfaces\IScrollViewer.cs" />
+    <Compile Include="TPF\Layout\Panels\StripLayoutPanel.cs" />
+    <Compile Include="TPF\Layout\TelerikLayoutEngine.cs" />
+    <Compile Include="Licensing\EvaluationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licensing\EvaluationForm.Designer.cs">
+      <DependentUpon>EvaluationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Paint\FillRepository.cs" />
+    <Compile Include="Patterns\Command\ComandBaseConverter.cs" />
+    <Compile Include="Patterns\Command\CommandContextConverter.cs" />
+    <Compile Include="Patterns\Command\CommandConverter.cs" />
+    <Compile Include="Patterns\Command\CommandEditor.cs" />
+    <Compile Include="Patterns\Command\CommandInstanceConverter.cs" />
+    <Compile Include="Patterns\Command\CommandSourceConverter.cs" />
+    <Compile Include="Patterns\Command\GetPropertyValueCommand.cs" />
+    <Compile Include="TPF\Primitives\Impls\BorderPrimitiveImpl.cs" />
+    <Compile Include="TPF\Primitives\Impls\FillElementPaintBuffer.cs" />
+    <Compile Include="TPF\Primitives\Impls\FillPrimitiveImpl.cs" />
+    <Compile Include="TPF\Primitives\FocusPrimitive.cs" />
+    <Compile Include="TPF\Primitives\GripPrimitive.cs" />
+    <Compile Include="TPF\Primitives\GroupStatePrimitive.cs" />
+    <Compile Include="Interfaces\IBorderElement.cs" />
+    <Compile Include="Interfaces\IFillElement.cs" />
+    <Compile Include="Interfaces\IImageElement.cs" />
+    <Compile Include="Design\ImageTypeConverter.cs" />
+    <Compile Include="Interfaces\IPrimitiveElement.cs" />
+    <Compile Include="TPF\Primitives\LinePrimitive.cs" />
+    <Compile Include="TPF\Primitives\OutLookGripPrimitive.cs" />
+    <Compile Include="TPF\Primitives\OverflowPrimitive.cs" />
+    <Compile Include="TPF\Primitives\ProgressBarPrimitive.cs" />
+    <Compile Include="TPF\Primitives\RadioPrimitive.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\FormattedText.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\FormattedTextBlock.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\ITextPrimitive.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\ITextPrimitiveFactory.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\ITextProvider.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\TextLine.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\TextParams.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\TextPrimitiveHtmlImpl.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\TextPrimitiveImpl.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\TinyHtmlParsers.cs" />
+    <Compile Include="TPF\Primitives\Impls\TextPrimitiveUtils\Tokenizer.cs" />
+    <Compile Include="TPF\Primitives\TrackBarPrimitive.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Design\RadEditItemsActionAttribute.cs" />
+    <Compile Include="Serialization\Archive\PackageFormat.cs" />
+    <Compile Include="Serialization\Archive\RadArchivePackage.cs" />
+    <Compile Include="Serialization\Archive\RadArchiveStream.cs" />
+    <Compile Include="Serialization\Archive\RadThemePackage.cs" />
+    <Compile Include="Serialization\Archive\RadXmlThemeArchiveStream.cs" />
+    <Compile Include="Serialization\Archive\StreamFormat.cs" />
+    <Compile Include="Services\Common\IRadServiceProvider.cs" />
+    <Compile Include="Services\Common\RadService.cs" />
+    <Compile Include="Services\Common\RadServiceStartingEventArgs.cs" />
+    <Compile Include="Services\Common\RadServiceState.cs" />
+    <Compile Include="Services\Common\RadServiceStoppingEventArgs.cs" />
+    <Compile Include="Services\DragDropService\PreviewDragHintEventArgs.cs" />
+    <Compile Include="Services\DragDropService\RadDragDropEventArgs.cs" />
+    <Compile Include="Services\DragDropService\RadDragEventArgs.cs" />
+    <Compile Include="Services\DragDropService\RadDragOverEventArgs.cs" />
+    <Compile Include="Services\DragDropService\PreviewDragContextEventArgs.cs" />
+    <Compile Include="Services\DragDropService\PreviewDragStartEventArgs.cs" />
+    <Compile Include="Services\DragDropService\PreviewDropTargetEventArgs.cs" />
+    <Compile Include="Services\DragDropService\RadDragDropService.cs" />
+    <Compile Include="Services\DragDropService\ISupportDrag.cs" />
+    <Compile Include="Services\DragDropService\ISupportDrop.cs" />
+    <Compile Include="Services\DragDropService\RadDragDropFeedbackEventArgs.cs" />
+    <Compile Include="Services\DragDropService\RadDropEventArgs.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\CustomShapeEditor.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\CustomShapeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\CustomShapeEditorForm.Designer.cs">
+      <DependentUpon>CustomShapeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditor.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditorControl.Designer.cs">
+      <DependentUpon>CustomShapeEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditorForm.Designer.cs">
+      <DependentUpon>CustomShapeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\CustomShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\IShapeCurve.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeBezier.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeEditorControl.designer.cs">
+      <DependentUpon>ShapeEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeEditorZoom.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeLine.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeLinesCollection.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapePoint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapesIntersection.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\SnapToGrid.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\ShapePoint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\ShapePointBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\SnapToGrid.cs" />
+    <Compile Include="TPF\Theming\Shapes\CustomShape\ShapeConvertor\CustomShapeConvertor.cs">
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\DonutShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enumerations\ElementPropertyOptions.cs" />
+    <Compile Include="TPF\Theming\Shapes\ElementShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\ElementShapeConverter.cs" />
+    <Compile Include="TPF\Theming\Shapes\ElementShapeEditor.cs" />
+    <Compile Include="TPF\Theming\Shapes\ElipseShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Collections\RadItemOwnerCollection.cs" />
+    <Compile Include="TPF\Element\RadItem.cs" />
+    <Compile Include="Collections\RadElementZOrderComparer.cs" />
+    <Compile Include="TPF\Theming\Shapes\ImageShape\ImageSegments.cs" />
+    <Compile Include="TPF\Theming\Shapes\ImageShape\RadImageSegment.cs" />
+    <Compile Include="TPF\Theming\Shapes\ImageShape\RadImageShape.cs" />
+    <Compile Include="TPF\Theming\Shapes\ImageShape\ImageSizeMode.cs" />
+    <Compile Include="TPF\Theming\Shapes\ImageShape\RadImageShapeEditorControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\ImageShape\RadImageShapeTypeConverter.cs" />
+    <Compile Include="TPF\Theming\Shapes\QAShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Shapes\RoundRectShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\RoutedEvents\RoutedEventBehavior.cs" />
+    <Compile Include="Enumerations\TypeRestriction.cs" />
+    <Compile Include="Collections\ReadOnlyControlCollection.cs" />
+    <Compile Include="TPF\Layout\Panels\DockLayoutPanel.cs" />
+    <Compile Include="TPF\Layout\Panels\ElementWithCaptionLayoutPanel.cs" />
+    <Compile Include="TPF\Layout\PreferredSizeData.cs" />
+    <Compile Include="TPF\Layout\Panels\StackLayoutPanel.cs" />
+    <Compile Include="TPF\Helpers\ClientUtils.cs" />
+    <Compile Include="Patterns\Command\CommandComponentBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Patterns\Command\CommandComponentBase.Designer.cs">
+      <DependentUpon>CommandComponentBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\Command\CommandEventHandler.cs" />
+    <Compile Include="Patterns\Command\CommandEventArgs.cs" />
+    <Compile Include="Patterns\Command\CommandList.cs">
+    </Compile>
+    <Compile Include="Patterns\Command\CommandListComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Patterns\Command\CommandListComponent.Designer.cs">
+      <DependentUpon>CommandListComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patterns\Command\ICommandTarget.cs" />
+    <Compile Include="TPF\Primitives\ArrowPrimitive.cs" />
+    <Compile Include="TPF\RoutedEvents\RoutedEvent.cs" />
+    <Compile Include="TPF\RoutedEvents\RoutedEventStyleBehavior.cs" />
+    <Compile Include="TPF\RoutedEvents\RoutedEventArgs.cs" />
+    <Compile Include="TPF\Primitives\FillPrimitive.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\AnimatedPropertySetting.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\AnimationValueCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValueColorCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValueFontCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValueIntCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValuePaddingCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValueRectangleCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValueFloatCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Calculators\AnimationValueDoubleCalculator.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\ColorAnimationStep.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\AnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\AnimationForm.Designer.cs">
+      <DependentUpon>AnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\ColorAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\ColorAnimationForm.Designer.cs">
+      <DependentUpon>ColorAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\ColorComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\FontAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\FontAnimationForm.Designer.cs">
+      <DependentUpon>FontAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\FontComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\FontComboBox.Designer.cs">
+      <DependentUpon>FontComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\GeneralAnimationSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\GeneralAnimationSettings.Designer.cs">
+      <DependentUpon>GeneralAnimationSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\DigitAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\DigitAnimationForm.Designer.cs">
+      <DependentUpon>DigitAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\PaddingAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\PaddingAnimationForm.Designer.cs">
+      <DependentUpon>PaddingAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\PointAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\PointAnimationForm.Designer.cs">
+      <DependentUpon>PointAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\PointFAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\PointFAnimationForm.Designer.cs">
+      <DependentUpon>PointFAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\RectangleAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\RectangleAnimationForm.Designer.cs">
+      <DependentUpon>RectangleAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\SizeAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\SizeAnimationForm.Designer.cs">
+      <DependentUpon>SizeAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\SizeFAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Dialogs\SizeFAnimationForm.Designer.cs">
+      <DependentUpon>SizeFAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Styles\Animation\Enumerations\AnimationState.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Enumerations\AnimatorStyles.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\Enumerations\RadControlAnimationTimer.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\EventArgsAndEventHandlers.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\FontAnimationStep.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\VisualStateSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\CompositeStateNode.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\ItemStateManagerBase.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\ItemStateManagerFactory.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\ItemStateManager.cs" />
+    <Compile Include="TPF\Theming\Styles\PartiallyLoadableStyleSheet.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\IValueProvider.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\ClassSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\ColorAnimationStepConverter.cs" />
+    <Compile Include="TPF\Theming\Styles\Conditions\ComplexCondition.cs" />
+    <Compile Include="TPF\Theming\Styles\Conditions\Condition.cs" />
+    <Compile Include="TPF\Theming\Styles\Animation\ElementValuesAnimator.cs" />
+    <Compile Include="TPF\Theming\Styles\Conditions\Enumerations\BinaryOperator.cs" />
+    <Compile Include="TPF\Theming\Styles\Conditions\Enumerations\UnaryOperator.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\GeneralSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\HierarchicalSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\IElementSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\IPropertySetting.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\NameSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertyChangeBehaviorCollection.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertyChangeBehavior.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertyChangeStyleBehavior.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\PropertySettingBase.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\PropertySettingCollection.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\PropertySettingGroupCollection.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\PropertySetting.cs" />
+    <Compile Include="TPF\Element\RootRadElement.cs" />
+    <Compile Include="TPF\Theming\Styles\PropertySettings\PropertySettingGroup.cs" />
+    <Compile Include="TPF\Theming\Styles\Conditions\RoutedEventCondition.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\SelectorCollection.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\SelectorBase.cs" />
+    <Compile Include="TPF\Dps\RadPropertySystem.cs" />
+    <Compile Include="TPF\Dps\DpsStorage.cs" />
+    <Compile Include="TPF\Helpers\TelerikAlignHelper.cs" />
+    <Compile Include="TPF\Helpers\TelerikPaintHelper.cs" />
+    <Compile Include="Interfaces\IImageListProvider.cs" />
+    <Compile Include="Interfaces\IRadLayoutElement.cs" />
+    <Compile Include="TPF\Layout\Panels\LayoutPanel.cs" />
+    <Compile Include="TPF\Layout\LayoutUtils.cs" />
+    <Compile Include="Licensing\LicenseManager.cs" />
+    <Compile Include="Patterns\Command\CommandBase.cs" />
+    <Compile Include="Patterns\Command\ICommandPresentation.cs" />
+    <Compile Include="Patterns\Command\ICommand.cs" />
+    <Compile Include="Patterns\Command\ICommandSource.cs" />
+    <Compile Include="TPF\Paint\IGraphics.cs" />
+    <Compile Include="TPF\Paint\RadGdiGraphics.cs" />
+    <Compile Include="TPF\Primitives\BasePrimitive.cs" />
+    <Compile Include="TPF\Primitives\BorderPrimitive.cs" />
+    <Compile Include="TPF\Primitives\CheckPrimitive.cs" />
+    <Compile Include="TPF\Primitives\ImagePrimitive.cs" />
+    <Compile Include="Interfaces\IPrimitive.cs" />
+    <Compile Include="TPF\Primitives\TextPrimitive.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TPF\Theming\Styles\Conditions\SimpleCondition.cs" />
+    <Compile Include="TPF\Theming\Styles\Selectors\TypeSelector.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\StateDescriptionNode.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\StateManagerAttachmentData.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\ItemStateManagerFactoryRegistry.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\ItemStateManagerFactoryBase.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\StateNodeBase.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\StateNodeWithCondition.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\StatePlaceholderNode.cs" />
+    <Compile Include="TPF\Theming\Styles\StateManager\VoidStateNode.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\ElementHierarchyEnumerator.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\ElementStylesheetKeysCache.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\StyleManager.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\StyleManagerState.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\StyleMap.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\StylesheetTree.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\StylesheetTreeNode.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleManager\StylesheetTreeNodeCollection.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\ColorPickerActiveMode.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\IRadColorDialog.cs" />
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientEditorControl.Designer.cs">
+      <DependentUpon>GradientEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\ResolveStyleBuilderEventArgs.cs" />
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\ElementRepositoryOptions.cs" />
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\VsbBrowsableAttribute.cs" />
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\VsbMetadataAction.cs" />
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\VsbMetadataType.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlRepositoryItem.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlStyleRepository.cs" />
+    <Compile Include="TPF\Theming\SystemSkinning\ISupportSystemSkin.cs" />
+    <Compile Include="TPF\Theming\SystemSkinning\SystemSkinManager.cs" />
+    <Compile Include="TPF\Theming\SystemSkinning\UseSystemSkinMode.cs" />
+    <Compile Include="TPF\Theming\SystemSkinning\VistaAeroTheme.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\ColorChangedEventArgs.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\CustomColorsEventArgs.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\IColorSelector.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\RadColorDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\ColorDialog\RadColorEditor.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\RadColorEditorConverter.cs" />
+    <Compile Include="TPF\Theming\Themes\ColorDialog\RadFillEditor.cs" />
+    <Compile Include="TPF\Theming\Themes\ConditionBuilderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\ConditionBuilderForm.Designer.cs">
+      <DependentUpon>ConditionBuilderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\RadThemeComponentBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\DefaultStyleBuilder.cs" />
+    <Compile Include="TPF\Theming\Themes\Design\DesignTimeDataAttribute.cs" />
+    <Compile Include="TPF\Theming\Themes\Design\IStyleDispatcher.cs" />
+    <Compile Include="TPF\Theming\Themes\Design\RadControlDefaultDesignTimeData.cs" />
+    <Compile Include="TPF\Theming\Themes\Design\RadControlDesignTimeData.cs" />
+    <Compile Include="TPF\Theming\Themes\Design\ControlStyleBuilderInfo.cs" />
+    <Compile Include="TPF\Theming\Themes\ElementTreeNode.cs" />
+    <Compile Include="TPF\Theming\Themes\GradientDialog\ColorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientAngleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientAngleControl.Designer.cs">
+      <DependentUpon>GradientAngleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientColorValue.cs" />
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\GradientSlider.Designer.cs">
+      <DependentUpon>GradientSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\RadGradientDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\GradientDialog\RadGradientDialog.Designer.cs">
+      <DependentUpon>RadGradientDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\HslColor.cs" />
+    <Compile Include="TPF\Theming\Themes\HslColorConverter.cs" />
+    <Compile Include="TPF\Theming\Themes\HSLColorDepricated.cs" />
+    <Compile Include="TPF\Theming\Themes\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\StyleBuilder.cs" />
+    <Compile Include="TPF\Theming\Themes\StyleBuilderReadOnlyAttribute.cs" />
+    <Compile Include="TPF\Theming\Themes\StyleBuilderRegistration.cs" />
+    <Compile Include="TPF\Theming\Themes\StyleDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\StyleDesigner.Designer.cs">
+      <DependentUpon>StyleDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\ThemePropertyCollection.cs" />
+    <Compile Include="TPF\Theming\Themes\ThemeResolutionService.cs" />
+    <Compile Include="TPF\Theming\Themes\TypeTreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\TypeTreeForm.Designer.cs">
+      <DependentUpon>TypeTreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\VsbControlMetadata.cs" />
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\VsbElementMetadata.cs" />
+    <Compile Include="TPF\Theming\Themes\VSBMetadata\VsbItemMetadata.cs" />
+    <Compile Include="TPF\Theming\Themes\VisualStyleBuilder\IThemeBuilder.cs">
+    </Compile>
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\InnerObjectConverter.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\StyleSerializationAttributeAttribute.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlVisualStateSelector.cs" />
+    <Compile Include="Serialization\XmlSerialization\ControlXmlSerializationInfo.cs" />
+    <Compile Include="Serialization\XmlSerialization\DesignTimeInstanceFactory.cs" />
+    <Compile Include="Serialization\XmlSerialization\DictionarySerializationListWrapper.cs" />
+    <Compile Include="Serialization\XmlSerialization\InstanceFactory.cs" />
+    <Compile Include="Serialization\XmlSerialization\IProvideTargetValue.cs" />
+    <Compile Include="Serialization\XmlSerialization\IServiceProviderHelper.cs" />
+    <Compile Include="Serialization\XmlSerialization\ObjectSrializationInfo.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\StyleXmlSerializer.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\VSProjectHelper.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlAnimatedPropertySetting.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlAnimationStep.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlBuilderData.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlClassSelector.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlComplexCondition.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlCondition.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlGeneralSelector.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlNameSelector.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlPropertySetting.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlPropertySettingCollection.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlPropertySettingGroup.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlPropertySettingGroupCollection.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlPropertySettingValueConverter.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlRoutedEventCondition.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlSelector.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlSelectorBase.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlSelectorCollection.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlSimpleCondition.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlStyle.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlStyleBuilderRegistration.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlTypeSelector.cs" />
+    <Compile Include="TPF\Theming\Themes\Themes.cs" />
+    <Compile Include="TPF\Theming\Themes\XmlSerialization\XmlTheme.cs" />
+    <Compile Include="TPF\Element\RadElement.cs" />
+    <Compile Include="TPF\Theming\Styles\StyleSheet.cs" />
+    <Compile Include="TPF\Element\VisualElement.cs" />
+    <Compile Include="Collections\RadElementCollection.cs" />
+    <Compile Include="TPF\Element\RadElementTree.cs" />
+    <Compile Include="TPF\Element\RadElementPropertyMetadata.cs" />
+    <Compile Include="TPF\Theming\WindowAnimation\AnimationEngine.cs" />
+    <Compile Include="TPF\Theming\WindowAnimation\AnimationEventArgs.cs" />
+    <Compile Include="TPF\Theming\WindowAnimation\WindowAnimationEngine.cs" />
+    <Compile Include="Serialization\XmlSerialization\ComponentXmlSerializationInfo.cs" />
+    <Compile Include="Serialization\XmlSerialization\ComponentXmlSerializer.cs" />
+    <Compile Include="Serialization\XmlSerialization\ControlXmlSerializer.cs" />
+    <Compile Include="Serialization\XmlSerialization\ParameterReferenceExtension.cs" />
+    <Compile Include="Serialization\XmlSerialization\PropertySerializationMetadata.cs" />
+    <Compile Include="Serialization\XmlSerialization\PropertySerializationMetadataCollection.cs" />
+    <Compile Include="Serialization\XmlSerialization\ColorBlendExtension.cs" />
+    <Compile Include="Serialization\XmlSerialization\RuntimeInstanceFactory.cs" />
+    <Compile Include="Serialization\XmlSerialization\SerializationConverter.cs" />
+    <Compile Include="Serialization\XmlSerialization\SerializationConverterAttribute.cs" />
+    <Compile Include="Serialization\XmlSerialization\XmlSerializerDisposalBin.cs" />
+    <Compile Include="Serialization\XmlSerialization\XmlSerializerExtensionServiceProvider.cs" />
+    <Compile Include="Serialization\XmlSerialization\XmlSerializerExtention.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadControl.snk" />
+    <None Include="TPF\Theming\Styles\ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditorControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomShapeEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Shapes\CustomShape\OldShapeEditor\CustomShapeEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomShapeEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Themes\ConditionBuilderForm.resx">
+      <DependentUpon>ConditionBuilderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Themes\StyleDesigner.resx">
+      <DependentUpon>StyleDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Themes\TypeTreeForm.resx">
+      <DependentUpon>TypeTreeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\AnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\ColorAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\ColorComboBox.resx">
+      <DependentUpon>ColorComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\FontAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FontAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\FontComboBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FontComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\GeneralAnimationSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralAnimationSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\DigitAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DigitAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\PaddingAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PaddingAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\RectangleAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RectangleAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Keyboard\ChordKeysUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChordKeysUI.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Licensing\EvaluationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EvaluationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\PointAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\PointFAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PointFAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\SizeAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SizeAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Styles\Animation\Dialogs\SizeFAnimationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SizeFAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Themes\GradientDialog\GradientAngleControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GradientAngleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Themes\GradientDialog\RadGradientDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RadGradientDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TelerikCommon\TelerikCommon.csproj">
+      <Project>{DC9E1344-9F91-413E-94E4-97EC0AE26C56}</Project>
+      <Name>TelerikCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomShape.bmp" />
+    <EmbeddedResource Include="RadThemeManager.bmp" />
+    <EmbeddedResource Include="Shortcuts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Keyboard\Assistance\ScreenTipPresenter.resx">
+      <DependentUpon>ScreenTipPresenter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keyboard\Assistance\ScreenTipUI.resx">
+      <DependentUpon>ScreenTipUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\CustomShapeEditorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomShapeEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TPF\Theming\Shapes\CustomShape\NewShapeEditor\ShapeEditorControl.resx">
+      <DependentUpon>ShapeEditorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\DataDiagram.cd" />
+    <None Include="Resources\extToFit.bmp" />
+    <None Include="Resources\FitBounds.bmp" />
+    <None Include="Resources\FitShape.bmp" />
+    <EmbeddedResource Include="RadColorDialog.bmp" />
+    <EmbeddedResource Include="TPF\Theming\Themes\GradientDialog\GradientEditorControl.resx">
+      <DependentUpon>GradientEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Cursors\DragCopy.cur" />
+    <EmbeddedResource Include="Resources\Cursors\DragMove.cur" />
+    <EmbeddedResource Include="Resources\Cursors\DragNo.cur" />
+    <None Include="Resources\imageClosed.bmp" />
+    <None Include="Resources\imageOpened.bmp" />
+    <None Include="Resources\RadControls.png" />
+    <EmbeddedResource Include="Data\Expressions\DescribeItemsList\ExpressionItemsListData.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Resources\snapToCtrlBtn.bmp" />
+    <Content Include="Resources\snapToCurveBtn.bmp" />
+    <Content Include="Resources\snapToCurvesBtn.bmp" />
+    <Content Include="Resources\snapToExtBtn.bmp" />
+    <Content Include="Resources\snapToGridBtn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <GetFrameworkSdkPath>
+      <Output TaskParameter="Path" PropertyName="SdkPath" />
+    </GetFrameworkSdkPath>
+    <CreateItem Include="$(OutputPath)**\*WinControls.dll">
+      <Output TaskParameter="Include" ItemName="OutputFiles" />
+    </CreateItem>
+    <Exec Command="&quot;$(SdkPath)Bin\gacutil.exe&quot; /f /i &quot;$(MSBuildProjectDirectory)\@(OutputFiles)&quot;" />
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

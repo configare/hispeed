@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{530F3258-AE9C-4C12-A506-358F7021B345}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCell.Bricks</RootNamespace>
+    <AssemblyName>CodeCell.Bricks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModeFabric\ActionAttribute.cs" />
+    <Compile Include="ModeFabric\ActionBase.cs" />
+    <Compile Include="ModeFabric\ArgBindingHelper.cs" />
+    <Compile Include="ModeFabric\ATaskScript\ArgAutoBingdingEnvironment.cs" />
+    <Compile Include="ModeFabric\ATaskScript\TaskScriptParser.cs" />
+    <Compile Include="ModeFabric\BindingAttribute.cs" />
+    <Compile Include="ModeFabric\ContextMessage.cs" />
+    <Compile Include="ModeFabric\IAction.cs" />
+    <Compile Include="ModeFabric\IContextMessage.cs" />
+    <Compile Include="ModeFabric\ITask.cs" />
+    <Compile Include="ModeFabric\ITaskActivator.cs" />
+    <Compile Include="ModeFabric\IVarProvider.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgBoolean.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgDirectory.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgFile.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgFloat.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgFloatArray.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgInteger.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgNumber.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgRefType.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgSemanticType.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgString.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\ArgValueType.cs" />
+    <Compile Include="ModeFabric\SemanticTypes\Editor\ISemanticTypeEditor.cs" />
+    <Compile Include="ModeFabric\Task.cs" />
+    <Compile Include="ModeFabric\TaskActivator.cs" />
+    <Compile Include="ModeFabric\UI\ActionBox\UCActionBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModeFabric\UI\ActionBox\UCActionBox.Designer.cs">
+      <DependentUpon>UCActionBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeFabric\UI\ActionExecutor\frmActionExecutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeFabric\UI\ActionExecutor\frmActionExecutor.Designer.cs">
+      <DependentUpon>frmActionExecutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeFabric\UI\ActionFinder\ActionInfo.cs" />
+    <Compile Include="ModeFabric\UI\ActionFinder\ActionReflector.cs" />
+    <Compile Include="ModeFabric\UI\ActionFinder\IActionReflector.cs" />
+    <Compile Include="ModeFabric\UI\BindingPair.cs" />
+    <Compile Include="ModeFabric\UI\IActionExecutor.cs" />
+    <Compile Include="ModeFabric\UI\IBindingEnvironment.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\ActionElement.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\ActionElementLink.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\BindingEnvironment.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\GeometryHelper.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\IEventHandler.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\IInternalSelection.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\IModelEditor.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\IRenderable.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\ITransformControl.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\LocationEditor.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\ModelEditor.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\RenderArg.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\ScriptLoader.cs" />
+    <Compile Include="ModeFabric\UI\ModelEditor\UCModelEditorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModeFabric\UI\ModelEditor\ZoomEditor.cs" />
+    <Compile Include="ModeFabric\UI\PropertyEditor\frmPropertyEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeFabric\UI\PropertyEditor\frmPropertyEditorDialog.Designer.cs">
+      <DependentUpon>frmPropertyEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeFabric\UI\PropertyEditor\IPropertyEditorDialog.cs" />
+    <Compile Include="ModeFabric\UI\SimpleActionExecutor.cs" />
+    <Compile Include="RedoUndoSupport\dssStackStatus.cs" />
+    <Compile Include="RedoUndoSupport\IOperation.cs" />
+    <Compile Include="RedoUndoSupport\IOperationStack.cs" />
+    <Compile Include="RedoUndoSupport\OperationStack.cs" />
+    <Compile Include="RedoUndoSupport\StackStatusChangedHandler.cs" />
+    <Compile Include="Runtime\DiskHelper\DiskHelper.cs" />
+    <Compile Include="Runtime\DynamicMemoryAlloc.cs" />
+    <Compile Include="Runtime\IProgressReporter\IProgressTracker.cs" />
+    <Compile Include="Runtime\IQueueTaskItem.cs" />
+    <Compile Include="Runtime\Log\ILogHandler.cs" />
+    <Compile Include="Runtime\Log\Log.cs" />
+    <Compile Include="Runtime\Math\GeoCoordHelper.cs" />
+    <Compile Include="Runtime\Math\LineSpliter.cs" />
+    <Compile Include="Runtime\Math\MathHelper.cs" />
+    <Compile Include="AppFramework\Commands\cmdRecentFiles.cs" />
+    <Compile Include="AppFramework\Environment\Default\ClipboardEnvironmentDefault.cs" />
+    <Compile Include="AppFramework\Environment\Default\ShortcutProcessorDefault.cs" />
+    <Compile Include="AppFramework\Environment\Default\ShortcutProviderDefault.cs" />
+    <Compile Include="AppFramework\Environment\IClipboardEnvironment.cs" />
+    <Compile Include="AppFramework\Environment\ICommandProvider.cs" />
+    <Compile Include="AppFramework\Environment\IShortcutFilter.cs" />
+    <Compile Include="AppFramework\Environment\IShortcutFilterCollection.cs" />
+    <Compile Include="AppFramework\Environment\IShortcutProcessor.cs" />
+    <Compile Include="AppFramework\Environment\IShortcutProvider.cs" />
+    <Compile Include="AppFramework\Hook\Default\ApplicationDefault.cs" />
+    <Compile Include="AppFramework\Hook\Default\HookDefault.cs" />
+    <Compile Include="AppFramework\Hook\IApplication.cs" />
+    <Compile Include="AppFramework\Hook\IHook.cs" />
+    <Compile Include="AppFramework\ResourceLoader.cs" />
+    <Compile Include="AppFramework\UIBuilder\UIBuilder\Default\UIBuilder.cs" />
+    <Compile Include="AppFramework\UIBuilder\UIBuilder\IUIBuilder.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseCommand.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseCommandToolStripItem.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseControlItem.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseItem.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseMenu.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseTool.cs" />
+    <Compile Include="AppFramework\UIInferface\BaseToolbar.cs" />
+    <Compile Include="AppFramework\UIInferface\ICommand.cs" />
+    <Compile Include="AppFramework\UIInferface\ICommandHelper.cs" />
+    <Compile Include="AppFramework\UIInferface\IControlItem.cs" />
+    <Compile Include="AppFramework\UIInferface\IItem.cs" />
+    <Compile Include="AppFramework\UIInferface\IMenu.cs" />
+    <Compile Include="AppFramework\UIInferface\ITimerHandler.cs" />
+    <Compile Include="AppFramework\UIInferface\ITimerHandlerMgr.cs" />
+    <Compile Include="AppFramework\UIInferface\ITool.cs" />
+    <Compile Include="AppFramework\UIInferface\IToolbar.cs" />
+    <Compile Include="Runtime\MemoryHelper.cs" />
+    <Compile Include="Runtime\RecentFiles\RecentUsedFiles.cs" />
+    <Compile Include="Runtime\RelativePathHelper.cs" />
+    <Compile Include="Runtime\TaskQueue.cs" />
+    <Compile Include="Runtime\TemporalFileManager.cs" />
+    <Compile Include="Runtime\ToLocalEndian\ToLocalEndian.cs" />
+    <Compile Include="Runtime\TopmostFormsManager.cs" />
+    <Compile Include="Serial\ColorHelper.cs" />
+    <Compile Include="Serial\FontHelper.cs" />
+    <Compile Include="Serial\ObjectToDisk.cs" />
+    <Compile Include="Serial\ObjectToXml.cs" />
+    <Compile Include="UIs\Dockables\Controls\DockContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Controls\DockContainer.Designer.cs">
+      <DependentUpon>DockContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Engine\DockPanel.cs" />
+    <Compile Include="UIs\Dockables\Engine\DockPanelsLayout.cs" />
+    <Compile Include="UIs\Dockables\Engine\DockPanelsResizer.cs" />
+    <Compile Include="UIs\Dockables\Engine\DockPreviewEngine.cs" />
+    <Compile Include="UIs\Dockables\Engine\SideDockPanel.cs" />
+    <Compile Include="UIs\Dockables\Engine\TabButton.cs" />
+    <Compile Include="UIs\Dockables\Enums\zDockMode.cs" />
+    <Compile Include="UIs\Dockables\EventArgs\AutoHideEventArgs.cs" />
+    <Compile Include="UIs\Dockables\EventArgs\ContextMenuEventArg.cs" />
+    <Compile Include="UIs\Dockables\EventArgs\ToolSelectionChangedEventArgs.cs" />
+    <Compile Include="UIs\Dockables\Forms\DockableToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockBottom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockBottom.Designer.cs">
+      <DependentUpon>ButtonToDockBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockLeft.Designer.cs">
+      <DependentUpon>ButtonToDockLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockRight.Designer.cs">
+      <DependentUpon>ButtonToDockRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\ButtonToDockUp.Designer.cs">
+      <DependentUpon>ButtonToDockUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonsGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonsGroup.Designer.cs">
+      <DependentUpon>CenterButtonsGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockBottom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockBottom.Designer.cs">
+      <DependentUpon>CenterButtonToDockBottom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockFill.Designer.cs">
+      <DependentUpon>CenterButtonToDockFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockLeft.Designer.cs">
+      <DependentUpon>CenterButtonToDockLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockRight.Designer.cs">
+      <DependentUpon>CenterButtonToDockRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\CenterButtonToDockUp.Designer.cs">
+      <DependentUpon>CenterButtonToDockUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\DockButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\DockPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\Dockables\Forms\Internals\DockPreview.Designer.cs">
+      <DependentUpon>DockPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Dockables\Interfaces\ITitleData.cs" />
+    <Compile Include="UIs\Dockables\NamespaceDoc.cs" />
+    <Compile Include="UIs\HierarchicalListBox\HierItem.cs" />
+    <Compile Include="UIs\HierarchicalListBox\UCHierarchicalListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIs\HierarchicalListBox\UCHierarchicalListBox.Designer.cs">
+      <DependentUpon>UCHierarchicalListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\TopForm\StickyForm.cs" />
+    <Compile Include="UIs\Dockables\Utilities\DrawUtility.cs" />
+    <Compile Include="UIs\Dockables\Utilities\EnumUtility.cs" />
+    <Compile Include="UIs\Dockables\Utilities\TextUtility.cs" />
+    <Compile Include="IO\BitStream\BitStream.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIs\ExceptionSupport\ExceptionHandler.cs" />
+    <Compile Include="UIs\ExceptionSupport\frmException.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\MessageBoxSupport\MsgBox.cs" />
+    <Compile Include="UIs\ToolbarExs\ToolStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIs\TopForm\TopFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIs\TopForm\TopFormBase.Designer.cs">
+      <DependentUpon>TopFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\UCLayerManager\LayerItem.cs" />
+    <Compile Include="UIs\UCLayerManager\UCLayersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIs\UCLayerManager\UCLayersControl.Designer.cs">
+      <DependentUpon>UCLayersControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModeFabric\UI\ActionBox\UCActionBox.resx">
+      <DependentUpon>UCActionBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeFabric\UI\ActionExecutor\frmActionExecutor.resx">
+      <DependentUpon>frmActionExecutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeFabric\UI\PropertyEditor\frmPropertyEditorDialog.resx">
+      <DependentUpon>frmPropertyEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Controls\DockContainer.resx">
+      <DependentUpon>DockContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\DockableToolWindow.resx">
+      <DependentUpon>DockableToolWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\ButtonToDockBottom.resx">
+      <DependentUpon>ButtonToDockBottom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\ButtonToDockLeft.resx">
+      <DependentUpon>ButtonToDockLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\ButtonToDockRight.resx">
+      <DependentUpon>ButtonToDockRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\ButtonToDockUp.resx">
+      <DependentUpon>ButtonToDockUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\CenterButtonsGroup.resx">
+      <DependentUpon>CenterButtonsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\CenterButtonToDockBottom.resx">
+      <DependentUpon>CenterButtonToDockBottom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\CenterButtonToDockFill.resx">
+      <DependentUpon>CenterButtonToDockFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\CenterButtonToDockLeft.resx">
+      <DependentUpon>CenterButtonToDockLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\CenterButtonToDockRight.resx">
+      <DependentUpon>CenterButtonToDockRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\CenterButtonToDockUp.resx">
+      <DependentUpon>CenterButtonToDockUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\Dockables\Forms\Internals\DockPreview.resx">
+      <DependentUpon>DockPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\BitStream\BitStream.resx">
+      <DependentUpon>BitStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\ExceptionSupport\frmException.resx">
+      <DependentUpon>frmException.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\HierarchicalListBox\UCHierarchicalListBox.resx">
+      <DependentUpon>UCHierarchicalListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\TopForm\TopFormBase.resx">
+      <DependentUpon>TopFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIs\UCLayerManager\UCLayersControl.resx">
+      <DependentUpon>UCLayersControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UIs\UCLayerManager\move.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

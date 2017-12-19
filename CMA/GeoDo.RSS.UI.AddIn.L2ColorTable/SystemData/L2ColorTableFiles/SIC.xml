@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="SIC" applyfor = "SIC,VSI" description="海冰"  matchstring="\S+_SIC_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="DailyConverage" datasets= "Daily Sea Ice Coverage Grid" refdatasets="">
+      <Segment values = "-999~-999" indexes = "0" />
+      <Segment values = "0~0" indexes = "0" />
+      <Segment values = "0~100" indexes = "1" />
+    </BandValueRange>
+    <BandValueRange name="DailyBothSouth" datasets="Daily Sea Ice both-South" refdatasets="">
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "-56~-56" indexes = "1" />
+      <Segment values = "1~1" indexes = "2" />
+      <Segment values = "-128~-128" indexes = "3" />
+      <Segment values = "-1~-1" indexes = "4" />
+    </BandValueRange>
+    <BandValueRange name="DailyBothNorth" datasets="Daily Sea Ice both-North" refdatasets="">
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "-56~-56" indexes = "1" />
+      <Segment values = "1~1" indexes = "2" />
+      <Segment values = "-128~-128" indexes = "3" />
+      <Segment values = "-1~-1" indexes = "4" />
+    </BandValueRange>
+    <BandValueRange name="10DaysGrids" datasets="10Days_Seaice_GridSDS" refdatasets="">
+      <Segment values = "-999~-999" indexes = "0" />
+      <Segment values = "0~0" indexes = "0" />
+      <Segment values = "0~100" indexes = "1" />
+    </BandValueRange>
+    <BandValueRange name="10DaysNorth" datasets="10Days_Both_Seaice_NorthSDS" refdatasets="">
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "-56~-56" indexes = "1" />
+      <Segment values = "1~1" indexes = "2" />
+      <Segment values = "-128~-128" indexes = "3" />
+      <Segment values = "-1~-1" indexes = "4" />
+    </BandValueRange>
+    <BandValueRange name="10DaysSouth" datasets="10Days_Both_Seaice_SouthSDS" refdatasets="">
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "-56~-56" indexes = "1" />
+      <Segment values = "1~1" indexes = "2" />
+      <Segment values = "-128~-128" indexes = "3" />
+      <Segment values = "-1~-1" indexes = "4" />
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="NorthSouth" applyfor="DailyBothSouth,DailyBothNorth,10DaysNorth,10DaysSouth" description="">
+      <Color index = "0" rgb = "0,0,0"/>
+      <Color index = "1" rgb = "0,0,255"/>
+      <Color index = "2" rgb = "60,160,160"/>
+      <Color index = "3" rgb = "43,182,205"/>
+      <Color index = "4" rgb = "255,255,255"/>
+    </ColorTable>
+    <ColorTable name="ConverageGrid" applyfor="DailyConverage,10DaysGrids" description="">
+      <Color index = "0" rgb = "0,0,0"/>
+      <Color index = "1" rgb = "255,255,255"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

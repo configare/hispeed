@@ -1,0 +1,28 @@
+﻿算法描述：
+1、采用种子填充算法（漫水算法）实现单个区域的拾取
+   Flood-fill (node, target-color, replacement-color):
+	 Set Q to the empty queue.
+	 If the color of node is not equal to target-color, return.
+	 Add node to Q.
+	 For each element n of Q:
+	     If the color of n is equal to target-color:
+	         Set w and e equal to n.
+	         Move w to the west until the color of the node to the west of w no longer matches target-color.
+	         Move e to the east until the color of the node to the east of e no longer matches target-color.
+	         Set the color of nodes between w and e to replacement-color.
+	         For each node n between w and e:
+	             If the color of the node to the north of n is target-color, add that node to Q.
+	             If the color of the node to the south of n is target-color, add that node to Q.
+	Continue looping until Q is exhausted.
+	Return.
+2、种子点的选取方法
+  （1）、如选项为“连续”填充，则使用鼠标所击点为种子点；
+  （2）、如选项为“非连续”填充，则使用扫描线算法全图扫描
+	     符合容差且未被使用的点作为种子点。
+3、位图几何形状矢量的生成
+   在种子填充算法中对每一行都记录(row,beginCol,endCol）三元组，
+   完成本次种子填充后：a、将所有三元组转换为一个矢量多边形（元素索引int[]）；
+	                   b、将所有几何形状内的像素标记为已使用。
+4、将位图几何形状矢量[]转换到栅格原图几何形状矢量
+5、新建图层将几何形状矢量轮廓画出来
+6、将栅格原图几何形状矢量转换为判识二值图

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.Core" />
+  <xs:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="MapImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bottom" type="xs:double" />
+      <xs:element minOccurs="0" name="Height" type="xs:double" />
+      <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Left" type="xs:double" />
+      <xs:element minOccurs="0" name="Width" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MapImage" nillable="true" type="tns:MapImage" />
+  <xs:complexType name="MapInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpatialRef" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MapInfo" nillable="true" type="tns:MapInfo" />
+  <xs:complexType name="ArrayOfLayerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LayerInfo" nillable="true" type="tns:LayerInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLayerInfo" nillable="true" type="tns:ArrayOfLayerInfo" />
+  <xs:complexType name="LayerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.Core" minOccurs="0" name="ShapeType" type="q1:enumShapeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LayerInfo" nillable="true" type="tns:LayerInfo" />
+  <xs:complexType name="ArrayOfFeatureInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FeatureInfo" nillable="true" type="tns:FeatureInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeatureInfo" nillable="true" type="tns:ArrayOfFeatureInfo" />
+  <xs:complexType name="FeatureInfo">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.Core" minOccurs="0" name="Envelope" nillable="true" type="q2:Envelope" />
+      <xs:element minOccurs="0" name="OID" type="xs:int" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Properties" nillable="true" type="q3:ArrayOfKeyValueOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FeatureInfo" nillable="true" type="tns:FeatureInfo" />
+</xs:schema>

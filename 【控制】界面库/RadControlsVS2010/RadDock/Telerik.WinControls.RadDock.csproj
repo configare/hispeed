@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C514DFF-A83D-4F79-86D4-CCE2E42C7B5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Telerik.WinControls.UI.Docking</RootNamespace>
+    <AssemblyName>Telerik.WinControls.RadDock</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>RadControl.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>..\..\bin\Debug\Telerik.WinControls.RadDock.XML</DocumentationFile>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Release\Telerik.WinControls.RadDock.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>..\..\bin\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>..\..\bin\ReleaseTrial\Telerik.WinControls.RadDock.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x86' ">
+    <OutputPath>bin\x86\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\NextDocumentCommand.cs" />
+    <Compile Include="Commands\PredefinedCommandNames.cs" />
+    <Compile Include="Commands\PreviousDocumentCommand.cs">
+    </Compile>
+    <Compile Include="Commands\RadDockCommand.cs" />
+    <Compile Include="Commands\RadDockCommandManager.cs" />
+    <Compile Include="ContextMenus\ContextMenuItemClickEventArgs.cs" />
+    <Compile Include="ContextMenus\ContextMenuService.cs" />
+    <Compile Include="ContextMenus\ContextMenuDisplayingEventArgs.cs" />
+    <Compile Include="ContextMenus\ContextMenuType.cs" />
+    <Compile Include="Design\RadDockThemeDesignerData.cs" />
+    <Compile Include="Commands\ActiveDocumentCloseCommand.cs" />
+    <Compile Include="Docking\AllowedDockPosition.cs" />
+    <Compile Include="Docking\AutoHideGroup.cs" />
+    <Compile Include="Docking\AutoHideStripLayout.cs" />
+    <Compile Include="Docking\AutoHideTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\AutoHideGroupCollection.cs" />
+    <Compile Include="Docking\AutoHideTabStripElement.cs" />
+    <Compile Include="Docking\DockAutoHideSerializationContainer.cs" />
+    <Compile Include="Docking\AutoHidePosition.cs" />
+    <Compile Include="Docking\DocumentContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DocumentManager.cs" />
+    <Compile Include="Docking\Enumerations.cs" />
+    <Compile Include="Docking\Events\AutoHideWindowDisplayingEventArgs.cs" />
+    <Compile Include="Docking\Events\DockStateChangingEventHandler.cs" />
+    <Compile Include="Docking\Events\DockTabStripNeededEventArgs.cs" />
+    <Compile Include="Docking\Events\DockWindowCancelEventArgs.cs" />
+    <Compile Include="Docking\Events\DockWindowEventArgs.cs" />
+    <Compile Include="Docking\Events\DockWindowSnapShotEventArgs.cs" />
+    <Compile Include="Docking\Events\FloatingWindowEventArgs.cs" />
+    <Compile Include="Docking\Events\RadDockTransactionCancelEventArgs.cs" />
+    <Compile Include="Docking\Events\RadDockTransactionEventArgs.cs" />
+    <Compile Include="Docking\Events\SelectedTabChangedEventArgs.cs" />
+    <Compile Include="Docking\Events\SelectedTabChangingEventArgs.cs" />
+    <Compile Include="Docking\Events\SplitContainerNeededEventArgs.cs" />
+    <Compile Include="Docking\FloatingWindowCollection.cs" />
+    <Compile Include="Docking\FloatingWindowList.cs" />
+    <Compile Include="Docking\GuidToNameMappingCollection.cs" />
+    <Compile Include="Docking\MdiController.cs" />
+    <Compile Include="Docking\OverflowDropDownButtonElement.cs" />
+    <Compile Include="Docking\SerializableFloatingWindow.cs" />
+    <Compile Include="Docking\ToolWindowCaptionElementStateManager.cs" />
+    <Compile Include="Docking\Transactions\AutoHideTransaction.cs" />
+    <Compile Include="Docking\Transactions\CloseTransaction.cs" />
+    <Compile Include="Docking\Transactions\DockTransactionType.cs" />
+    <Compile Include="Docking\Transactions\DockWindowTransaction.cs" />
+    <Compile Include="Docking\Transactions\DragDropTransaction.cs" />
+    <Compile Include="Docking\Transactions\FloatTransaction.cs" />
+    <Compile Include="Docking\Transactions\PerformDockTransaction.cs" />
+    <Compile Include="Docking\Transactions\RadDockTransaction.cs" />
+    <Compile Include="Docking\Transactions\RedockTransaction.cs" />
+    <Compile Include="DragDrop\DragDropDockPositionEventArgs.cs" />
+    <Compile Include="DragDrop\DragDropHitTestEventArgs.cs" />
+    <Compile Include="DragDrop\DragDropTargetEventArgs.cs" />
+    <Compile Include="DragDrop\Enumerations.cs" />
+    <Compile Include="Guides\DockingGuideImage.cs" />
+    <Compile Include="Docking\ToolWindowCaptionElement.cs" />
+    <Compile Include="Guides\GuideElements\DockingGuideImageElement.cs" />
+    <Compile Include="Guides\GuideElements\DockingGuidesElement.cs" />
+    <Compile Include="Guides\GuideElements\DockingGuidesControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\Templates\ControlDefaultDockingGuidesTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\Templates\DockingGuidesTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\Templates\IDockingGuideImage.cs" />
+    <Compile Include="Guides\Templates\IDockingGuidesTemplate.cs" />
+    <Compile Include="Guides\Templates\Office2010DockingGuidsTemplete.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\Templates\PredefinedDockingGuidesTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\Templates\ThemedDockingGuidesTemplate.cs" />
+    <Compile Include="Guides\Templates\VS2008DockingGuidesTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\Templates\VS2010DockingGuidesTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DockHelper.cs" />
+    <Compile Include="Localization\RadDockLocalizationProvider.cs" />
+    <Compile Include="Localization\RadDockStringId.cs" />
+    <Compile Include="QuickNavigator\QuickNavigatorListItemStateManager.cs" />
+    <Compile Include="QuickNavigator\QuickNavigatorThemeDesignerData.cs">
+    </Compile>
+    <Compile Include="Docking\AutoHidePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindowCollection.cs" />
+    <Compile Include="Guides\DockingGuideHitTest.cs" />
+    <Compile Include="Guides\DockingGuidePopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Guides\DockingHintPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RedockSupport\RedockFloatingState.cs" />
+    <Compile Include="RedockSupport\RedockService.cs" />
+    <Compile Include="RedockSupport\RedockState.cs" />
+    <Compile Include="Serialization\DockWindowPlaceholder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Serialization\DockWindowSerializableCollection.cs" />
+    <Compile Include="Serialization\DockXmlSerializer.cs" />
+    <Compile Include="Serialization\DockXmlSerializerBase.cs" />
+    <Compile Include="Serialization\FloatingWindowsXmlNonResolvingSerializer.cs" />
+    <Compile Include="Serialization\FloatingWindowsXmlResolvingSerializer.cs" />
+    <Compile Include="DragDrop\DragDropService.cs" />
+    <Compile Include="Guides\DockingGuidesPosition.cs" />
+    <Compile Include="Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPosition.cs" />
+    <Compile Include="Docking\DockState.cs" />
+    <Compile Include="Docking\DockTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockType.cs" />
+    <Compile Include="Docking\DocumentWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DocumentTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\FloatingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\HostDockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\RadDock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\ToolWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\ToolTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuickNavigator\QuickNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QuickNavigator\QuickNavigatorList.cs" />
+    <Compile Include="QuickNavigator\Enumerations.cs" />
+    <Compile Include="QuickNavigator\QuickNavigatorListItem.cs" />
+    <Compile Include="QuickNavigator\QuickNavigatorPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commands\QuickNavigatorDisplayCommand.cs" />
+    <Compile Include="QuickNavigator\QuickNavigatorElement.cs" />
+    <Compile Include="QuickNavigator\QuickNavigatorSettings.cs" />
+    <Compile Include="Services\RadDockService.cs" />
+    <Compile Include="Services\StateService.cs" />
+    <Compile Include="Serialization\XmlDockingManager.cs" />
+    <Compile Include="Serialization\XmlDockingManagerSerializer.cs" />
+    <Compile Include="Serialization\XmlSerializationReader1.cs" />
+    <Compile Include="Serialization\XmlSerializationWriter1.cs" />
+    <Compile Include="Serialization\XmlSerializer1.cs" />
+    <Compile Include="Services\Enumerations.cs" />
+    <Compile Include="Services\ServiceConstants.cs" />
+    <Compile Include="Services\StateServiceStartingEventArgs.cs" />
+    <Compile Include="Services\StateServiceStoppingEventArgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RadControlsUI\Telerik.WinControls.UI.csproj">
+      <Project>{F5033417-9972-4283-9E08-94AE9134D8F6}</Project>
+      <Name>Telerik.WinControls.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RadControl\Telerik.WinControls.csproj">
+      <Project>{AD6A4B81-5455-49E3-82D9-5B392B5E2242}</Project>
+      <Name>Telerik.WinControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TelerikCommon\TelerikCommon.csproj">
+      <Project>{DC9E1344-9F91-413E-94E4-97EC0AE26C56}</Project>
+      <Name>TelerikCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CloseButton.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CloseButtonW.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ControlDefault\SplitContainer.xml" />
+    <EmbeddedResource Include="RadDock.bmp" />
+    <EmbeddedResource Include="Resources\ControlDefault\QuickNavigator.xml" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Bottom.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Bottom_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Left.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Left_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Right.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Right_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Top.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Top_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Fill_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Center_Background.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2008\Fill.png" />
+    <EmbeddedResource Include="Resources\ControlDefault\FloatingWindow.xml" />
+    <EmbeddedResource Include="Resources\ControlDefault\AutoHideTabStrip.xml" />
+    <EmbeddedResource Include="Resources\ControlDefault\DocumentTabStrip.xml" />
+    <EmbeddedResource Include="Resources\ControlDefault\DocumentContainer.xml" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Bottom_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Bottom.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Fill_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Fill.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Left_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Left.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Right_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Right.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Top_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Top.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\ControlDefault\Center_Background.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Bottom_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Bottom.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Center_Background.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Fill_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Fill.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Left_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Left.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Right_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Right.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Top_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\Office2010\Top.png" />
+    <Content Include="Resources\HorizontalTabGroup.ico" />
+    <EmbeddedResource Include="Resources\ControlDefault\ToolTabStrip.xml" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Center_Background.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Bottom.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Bottom_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Fill.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Fill_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Left.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Left_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Right.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Right_Hot.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Top.png" />
+    <EmbeddedResource Include="Resources\DockingGuides\VS2010\Top_Hot.png" />
+    <Content Include="Resources\VerticalTabGroup.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="RadControl.snk" />
+    <None Include="Resources\VerticalTabGroup.bmp" />
+    <EmbeddedResource Include="Resources\UnpinButtonW.ico" />
+    <EmbeddedResource Include="Resources\UnpinButton.ico" />
+    <EmbeddedResource Include="Resources\PinButtonW.ico" />
+    <EmbeddedResource Include="Resources\PinButton.ico" />
+    <None Include="Resources\HorizontalTabGroup.bmp" />
+    <EmbeddedResource Include="Resources\DocumentValid.cur" />
+    <EmbeddedResource Include="Resources\DocumentInvalid.cur" />
+    <EmbeddedResource Include="Resources\DockPanel.bmp" />
+    <EmbeddedResource Include="Resources\DockingManagerIcon.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesTop1.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesTop.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesRight1.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesRight.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesLeft1.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesLeft.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesCenter1.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesCenter.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesBottom1.bmp" />
+    <EmbeddedResource Include="Resources\DockingGuidesBottom.bmp" />
+    <EmbeddedResource Include="Resources\DockDocument.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

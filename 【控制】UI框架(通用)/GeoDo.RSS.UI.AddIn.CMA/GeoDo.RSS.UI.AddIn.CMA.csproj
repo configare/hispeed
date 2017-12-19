@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A716AF60-9275-4F0B-8A21-B6291EBEC91A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.AddIn.CMA</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.AddIn.CMA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.FileProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.FileProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project">
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.LDF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.LDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout">
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.DataFrm">
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.DataFrm.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.GDIPlus">
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoGenerate\AutoGenretateProvider.cs" />
+    <Compile Include="AutoGenerate\frmAutoGeneratorSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoGenerate\frmAutoGeneratorSetting.Designer.cs">
+      <DependentUpon>frmAutoGeneratorSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Command\CommProductCompute.cs" />
+    <Compile Include="Command\CommPruductTimes.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Stat\frmMonitorShowSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stat\frmMonitorShowSetting.Designer.cs">
+      <DependentUpon>frmMonitorShowSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stat\MIFCommAnalysis.cs" />
+    <Compile Include="Stat\MIFVgtAnalysis.cs" />
+    <Compile Include="Stat\MonitorShowSettings.cs" />
+    <Compile Include="Stat\TemplateTypeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stat\TemplateTypeSelector.Designer.cs">
+      <DependentUpon>TemplateTypeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\BAG\UITabBag.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\BAG\UITabBag.designer.cs">
+      <DependentUpon>UITabBag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\DRT\UITabDRT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\DRT\UITabDRT.designer.cs">
+      <DependentUpon>UITabDRT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\FIR\masGbalFireCorrectPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FIR\UCGbalFireCorrect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FIR\UCGbalFireCorrect.designer.cs">
+      <DependentUpon>UCGbalFireCorrect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\FLD\frmChangeWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FLD\frmChangeWater.designer.cs">
+      <DependentUpon>frmChangeWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\FLD\UCChangeWater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FLD\UCChangeWater.designer.cs">
+      <DependentUpon>UCChangeWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\FLD\UITabWater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FLD\UITabWater.designer.cs">
+      <DependentUpon>UITabWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\UHI\UITabUhi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\UHI\UITabUhi.designer.cs">
+      <DependentUpon>UITabUhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\FIR\UITabFire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FIR\UITabFire.designer.cs">
+      <DependentUpon>UITabFire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\FOG\UITabFog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\FOG\UITabFog.designer.cs">
+      <DependentUpon>UITabFog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\LST\UITabLST.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\LST\UITabLST.designer.cs">
+      <DependentUpon>UITabLST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\DST\UITabSandDust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\DST\UITabSandDust.designer.cs">
+      <DependentUpon>UITabSandDust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\ICE\UITabSeaIce.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\ICE\UITabSeaIce.designer.cs">
+      <DependentUpon>UITabSeaIce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\SNW\UITabSnow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\SNW\UITabSnow.designer.cs">
+      <DependentUpon>UITabSnow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIProvider\VGT\UITabVegetation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\VGT\UITabVegetation.designer.cs">
+      <DependentUpon>UITabVegetation.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.CanvasViewer\00.GeoDo.RSS.UI.AddIn.CanvasViewer.csproj">
+      <Project>{D471C8B7-A9B1-4321-A10E-E8E399FE1AB2}</Project>
+      <Name>00.GeoDo.RSS.UI.AddIn.CanvasViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.DataPro\02.GeoDo.RSS.UI.AddIn.DataPro.csproj">
+      <Project>{9627ABEA-7D9D-4A85-9944-E5E72D2AAEE8}</Project>
+      <Name>02.GeoDo.RSS.UI.AddIn.DataPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.Layout\05.GeoDo.RSS.UI.AddIn.Layout.csproj">
+      <Project>{45B555B2-E36A-4077-BDE4-60E591B9C9BB}</Project>
+      <Name>05.GeoDo.RSS.UI.AddIn.Layout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.Theme\20.GeoDo.RSS.UI.AddIn.Theme.csproj">
+      <Project>{AA1D6CF7-01C3-4178-BEDB-C1CD87584E11}</Project>
+      <Name>20.GeoDo.RSS.UI.AddIn.Theme</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.Bricks\GeoDo.RSS.UI.Bricks.csproj">
+      <Project>{4A10E304-EEBA-43A9-9B1C-A521683B772D}</Project>
+      <Name>GeoDo.RSS.UI.Bricks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.WinForm\1.GeoDo.RSS.UI.WinForm.csproj">
+      <Project>{F3253808-AF13-4D99-A632-E3896CB8A544}</Project>
+      <Name>1.GeoDo.RSS.UI.WinForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutoGenerate\frmAutoGeneratorSetting.resx">
+      <DependentUpon>frmAutoGeneratorSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stat\frmMonitorShowSetting.resx">
+      <DependentUpon>frmMonitorShowSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stat\TemplateTypeSelector.resx">
+      <DependentUpon>TemplateTypeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProvider\FIR\UCGbalFireCorrect.resx">
+      <DependentUpon>UCGbalFireCorrect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProvider\FLD\frmChangeWater.resx">
+      <DependentUpon>frmChangeWater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIProvider\FLD\UCChangeWater.resx">
+      <DependentUpon>UCChangeWater.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmdOpen.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

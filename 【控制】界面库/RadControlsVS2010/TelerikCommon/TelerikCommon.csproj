@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC9E1344-9F91-413E-94E4-97EC0AE26C56}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TelerikCommon</RootNamespace>
+    <AssemblyName>TelerikCommon</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>RadControl.snk</AssemblyOriginatorKeyFile>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Debug\TelerikCommon.XML</DocumentationFile>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Release\TelerikCommon.XML</DocumentationFile>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>..\..\bin\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>618</WarningsAsErrors>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>..\..\bin\ReleaseTrial\TelerikCommon.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x86' ">
+    <OutputPath>bin\x86\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\TelerikCommon.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x64' ">
+    <OutputPath>bin\x64\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningsAsErrors>618</WarningsAsErrors>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IGeoDoFree.cs" />
+    <Compile Include="Internal\WindowsFormsUtils.cs" />
+    <Compile Include="Native\DllWrapper.cs" />
+    <Compile Include="Native\Graphics\DirectShow\amstream.cs" />
+    <Compile Include="Native\Graphics\DirectShow\amvideo.cs" />
+    <Compile Include="Native\Graphics\DirectShow\austream.cs" />
+    <Compile Include="Native\Graphics\DirectShow\AxCore.cs" />
+    <Compile Include="Native\Graphics\DirectShow\AXExtend.cs" />
+    <Compile Include="Native\Graphics\DirectShow\BDAIface.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Bdatif.cs" />
+    <Compile Include="Native\Graphics\DirectShow\BDATypes.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Control.cs" />
+    <Compile Include="Native\Graphics\DirectShow\DES.cs" />
+    <Compile Include="Native\Graphics\DirectShow\DevEnum.cs" />
+    <Compile Include="Native\Graphics\DirectShow\DMODShow.cs" />
+    <Compile Include="Native\Graphics\DirectShow\DsUtils.cs" />
+    <Compile Include="Native\Graphics\DirectShow\DVDIf.cs" />
+    <Compile Include="Native\Graphics\DirectShow\DynGraph.cs" />
+    <Compile Include="Native\Graphics\DirectShow\EvCode.cs" />
+    <Compile Include="Native\Graphics\DirectShow\IL21Dec.cs" />
+    <Compile Include="Native\Graphics\DirectShow\MediaObj.cs" />
+    <Compile Include="Native\Graphics\DirectShow\MediaParam.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Misc.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Mixerocx.cs" />
+    <Compile Include="Native\Graphics\DirectShow\mmstream.cs" />
+    <Compile Include="Native\Graphics\DirectShow\mpconfig.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Mpeg2Data.cs" />
+    <Compile Include="Native\Graphics\DirectShow\other.cs" />
+    <Compile Include="Native\Graphics\DirectShow\PlayList.cs" />
+    <Compile Include="Native\Graphics\DirectShow\QEdit.cs" />
+    <Compile Include="Native\Graphics\DirectShow\qnetwork.cs" />
+    <Compile Include="Native\Graphics\DirectShow\RegBag.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Sbe.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Tuner.cs" />
+    <Compile Include="Native\Graphics\DirectShow\TvRatings.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Uuids.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Vidcap.cs" />
+    <Compile Include="Native\Graphics\DirectShow\VidPort.cs" />
+    <Compile Include="Native\Graphics\DirectShow\Vmr9.cs" />
+    <Compile Include="Native\Graphics\DirectShow\VmRender.cs" />
+    <Compile Include="Native\Graphics\DWMAPI.cs" />
+    <Compile Include="Native\Graphics\RadHdcWrapper.cs" />
+    <Compile Include="Native\Graphics\UXTheme.cs" />
+    <Compile Include="Native\Hooks\HookEventArgs.cs" />
+    <Compile Include="Native\Hooks\IKeyboardListener.cs" />
+    <Compile Include="Native\Hooks\IMessageListener.cs" />
+    <Compile Include="Native\Hooks\RadMessageFilter.cs" />
+    <Compile Include="Native\Hooks\RadMessageListener.cs" />
+    <Compile Include="Native\Hooks\WeakReferenceList.cs" />
+    <Compile Include="Native\Hooks\WindowsHook.cs" />
+    <Compile Include="Native\NativeMethods.cs" />
+    <Compile Include="Native\NativeTimeZone.cs" />
+    <Compile Include="Native\SafeLibraryHandle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\HandleChangeEventHandler.cs" />
+    <Compile Include="Public\HandleCollector.cs" />
+    <Compile Include="Public\IOleDropSource.cs" />
+    <Compile Include="Public\IOleDropTarget.cs" />
+    <Compile Include="Public\RadBitVector64.cs" />
+    <Compile Include="Public\RadMatrix.cs" />
+    <Compile Include="Public\RegionCombineMode.cs" />
+    <Compile Include="Internal\SR.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadControl.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <GetFrameworkSdkPath>
+      <Output TaskParameter="Path" PropertyName="SdkPath" />
+    </GetFrameworkSdkPath>
+    <CreateItem Include="$(OutputPath)**\*TelerikCommon.dll">
+      <Output TaskParameter="Include" ItemName="OutputFiles" />
+    </CreateItem>
+    <Exec Command="&quot;$(SdkPath)Bin\gacutil.exe&quot; /f /i &quot;$(MSBuildProjectDirectory)\@(OutputFiles)&quot;" />
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

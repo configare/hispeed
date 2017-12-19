@@ -1,0 +1,15 @@
+﻿<Themes>
+  <Theme name="" identify="CMA" productdefdir="Themes\CMA">
+    <SystemAOIs>
+      <DeaultAOI name="" provider=""/>
+      <AOI name="中国" provider="vector:China"/>
+      <AOI name="北京" provider="中国行政区.shp,Chinese_Ch,北京"/>
+      <AOI name="xxxx" provider="assembly,class"/>
+      <AOI name="省级行政区" provider="省级行政区_面.shp,Name"/>
+      <AOI name="省级行政区+县级行政区" provider="省级行政区_面.shp,Name"/>
+      <AOI name="县级行政区" provider="县级行政区_面.shp,Name"/>
+    </SystemAOIs>
+    <Products>
+    </Products>
+  </Theme>
+</Themes>

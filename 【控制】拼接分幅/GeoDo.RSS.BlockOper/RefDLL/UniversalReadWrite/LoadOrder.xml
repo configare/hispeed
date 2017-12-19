@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Components>
+  <Component fullname="GeoDo.RSS.DF.LDF.LdfDriver" description=""/>
+  <Component fullname="GeoDo.RSS.DF.NOAA.D1BDDriver" description=""/>
+  <Component fullname="GeoDo.RSS.DF.NOAA.D1A5Driver" description=""/>
+  <Component fullname="GeoDo.RSS.DF.MVG.MvgDriver" description=""/>
+  <Component fullname="GeoDo.RSS.DF.GDAL.GDALRasterDriver" description=""/>  
+</Components>

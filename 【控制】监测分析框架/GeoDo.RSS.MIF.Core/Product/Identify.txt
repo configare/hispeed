@@ -1,0 +1,15 @@
+﻿ThemeIdentify:
+     CMA:气象专题
+ProductIdentify:
+     FIR:火
+	 ......
+SubProductIdentify:
+     BIN:二值图
+	 ......
+Satellite:
+    FY3A,FY/3A ,FY-3A:风云三号
+	......
+Sensor:
+    VIRR,VIRRX:可见光与红外计数器
+	MERSI,MERSID:中分辨率光谱成像仪
+    ......

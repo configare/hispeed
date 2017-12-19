@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.LdfToTiff.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.LdfToTiff.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.LdfToTiff.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.LdfToTiff\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.LdfToTiff\obj\x86\Release\GeoDo.Smart.LdfToTiff.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.LdfToTiff\obj\x86\Release\GeoDo.Smart.LdfToTiff.pdb

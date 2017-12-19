@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FeatureListWndContent>
+  <StatContent identify="FLD_FLOD" layerfilter="FLD_FLOD\\.*">
+    <StatItem name="未变化水体" value="1"/>
+    <StatItem name="扩大水体" value="4"/>
+    <StatItem name="缩小水体" value="5"/>
+  </StatContent>
+</FeatureListWndContent>

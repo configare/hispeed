@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1132A5A7-11E0-41A1-BC38-8F84DB9892BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.DF.GDAL.H4BandPrd</RootNamespace>
+    <AssemblyName>GeoDo.RSS.DF.GDAL.H4BandPrd</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdal_csharp, Version=1.0.4499.30545, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\RefDLL\GDAL CSharp\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BandNameParser\BandName.cs" />
+    <Compile Include="BandNameParser\DefaultBandNameParser.cs" />
+    <Compile Include="BandNameParser\IBandNameParser.cs" />
+    <Compile Include="BandProviderHDF4.cs" />
+    <Compile Include="Config\BandProviderDef.cs" />
+    <Compile Include="Config\DefaultBandDatasetDef.cs" />
+    <Compile Include="Config\IdentifyAttDef.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H4BandProviderXmlParser.cs" />
+    <Compile Include="IH4BandProviderConfiger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\GeoDo.RSS.Core.DF\GeoDo.RSS.Core.DF.csproj">
+      <Project>{29E4664D-8930-4A57-A8BC-2B2ABD43C733}</Project>
+      <Name>GeoDo.RSS.Core.DF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.GDAL\GeoDo.RSS.DF.GDAL.csproj">
+      <Project>{C9DBBDBD-3BA7-4FF3-B9F7-14B71DA31BD6}</Project>
+      <Name>GeoDo.RSS.DF.GDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HDF Helper\GeoDo.HDF4\GeoDo.HDF4.csproj">
+      <Project>{2F2E1E62-054D-42B3-B212-20D8E8A1F8F2}</Project>
+      <Name>GeoDo.HDF4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HDF Helper\GeoDo.HDF\GeoDo.HDF.csproj">
+      <Project>{318580C6-FF1F-42EF-8576-31E1C8068EE6}</Project>
+      <Name>GeoDo.HDF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GeoDo.RSS.DF.GDAL.H4BandPrd.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

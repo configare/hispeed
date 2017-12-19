@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!--DataBase-->
+    <server>localhost</server>
+    <database>longtimeseries</database>
+    <uid>root</uid>
+    <password>123456</password>
+    <!--Pagination-->
+    <page>50</page>
+    <!--Directory-->
+    <input>D:\</input>
+    <output>D:\</output>
+    <outputExport>E:\</outputExport>
+  </appSettings>
+</configuration>

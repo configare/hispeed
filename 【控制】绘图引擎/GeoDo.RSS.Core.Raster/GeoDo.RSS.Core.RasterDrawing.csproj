@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF416821-C24B-415D-B68B-32D75E78E819}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.Core.RasterDrawing</RootNamespace>
+    <AssemblyName>GeoDo.RSS.Core.RasterDrawing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DefDLL\Core\GeoDo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project">
+      <HintPath>..\DefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA">
+      <HintPath>..\DefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\DefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL">
+      <HintPath>..\DefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="0.Tile\ITileComputer.cs" />
+    <Compile Include="0.Tile\LevelDef.cs" />
+    <Compile Include="1.BitmapBuilder\Array2Bitmap.cs" />
+    <Compile Include="1.BitmapBuilder\BitmapBuilder.cs" />
+    <Compile Include="1.BitmapBuilder\BitmapBuilderFactory.cs" />
+    <Compile Include="1.BitmapBuilder\IArray2Bitmap.cs" />
+    <Compile Include="1.BitmapBuilder\IBitmapBuilder.cs" />
+    <Compile Include="0.Tile\ITile.cs" />
+    <Compile Include="0.Tile\Tile.cs" />
+    <Compile Include="0.Tile\TileComputer.cs" />
+    <Compile Include="0.Tile\TileIdentify.cs" />
+    <Compile Include="3.Drawing\ColorMap\ColorMapTable.cs" />
+    <Compile Include="3.Drawing\ColorMap\ColorMapItem.cs" />
+    <Compile Include="3.Drawing\ColorMap\ColorMapTableGetter.cs" />
+    <Compile Include="3.Drawing\ColorMap\IColorMapTableGetter.cs" />
+    <Compile Include="3.Drawing\ColorMap\IRgbStretcherProvider.cs" />
+    <Compile Include="3.Drawing\DiskCacheManager\FileDiskCacheManager.cs" />
+    <Compile Include="3.Drawing\DiskCacheManager\FileIndexer.cs" />
+    <Compile Include="3.Drawing\DiskCacheManager\IFileDiskCacheManager.cs" />
+    <Compile Include="3.Drawing\DiskCacheManager\FileDiskCacheManagerFactory.cs" />
+    <Compile Include="3.Drawing\IBitmapInteractiveHelper.cs" />
+    <Compile Include="3.Drawing\IGeoPanAdjust.cs" />
+    <Compile Include="3.Drawing\IRasterDrawing.cs" />
+    <Compile Include="3.Drawing\IRasterDrawingExport.cs" />
+    <Compile Include="3.Drawing\MemEstimatorOfRasterDrawing.cs" />
+    <Compile Include="3.Drawing\ReadPixelHelper.cs" />
+    <Compile Include="3.Drawing\TileBitmapProvider\DataProviderReader\DataProviderReader.cs" />
+    <Compile Include="3.Drawing\TileBitmapProvider\DataProviderReader\IDataProviderReader.cs" />
+    <Compile Include="4.Layer\AVILayer.cs" />
+    <Compile Include="4.Layer\BitmapObject.cs" />
+    <Compile Include="4.Layer\IMemoryBitmapLayer.cs" />
+    <Compile Include="4.Layer\MaskLayer.cs" />
+    <Compile Include="4.Layer\ScaleRulerLayer.cs" />
+    <Compile Include="4.Layer\SimpleBitmapLayer.cs" />
+    <Compile Include="4.Layer\BinaryBitmapLayer.cs" />
+    <Compile Include="7.Scehduler\DiskTileScheduler\CacheNameHelper.cs" />
+    <Compile Include="7.Scehduler\DiskTileScheduler\ITileDiskCacheManager.cs" />
+    <Compile Include="7.Scehduler\DiskTileScheduler\TileDiskCacheManager.cs" />
+    <Compile Include="7.Scehduler\MemoTileScheduler\BandMemoryCache.cs" />
+    <Compile Include="7.Scehduler\MemoTileScheduler\IBandMemoryCache.cs" />
+    <Compile Include="7.Scehduler\MemoTileScheduler\IMemoryCacheControler.cs" />
+    <Compile Include="7.Scehduler\MemoTileScheduler\IRequestTileAgent.cs" />
+    <Compile Include="7.Scehduler\MemoTileScheduler\ITileMemoryCacheManager.cs" />
+    <Compile Include="7.Scehduler\MemoTileScheduler\TileMemoryCacheManager.cs" />
+    <Compile Include="7.Scehduler\TilesToBitmap\IWindowBitmapBuilder.cs" />
+    <Compile Include="7.Scehduler\TilesToBitmap\WindowBitmapBuilder.cs" />
+    <Compile Include="7.Scehduler\Tiles\CacheSettings.cs" />
+    <Compile Include="7.Scehduler\Tiles\LevelTileComputer.cs" />
+    <Compile Include="7.Scehduler\Tiles\TileData.cs" />
+    <Compile Include="8.Tools\PanAdjustControlLayer.cs" />
+    <Compile Include="Persist\DrawingPropertyConverter.cs" />
+    <Compile Include="WinAPI.cs" />
+    <Compile Include="3.Drawing\TileCacheManager\ITileBitmapCacheManager.cs" />
+    <Compile Include="3.Drawing\TileBitmapProvider\ITileBitmapProvider.cs" />
+    <Compile Include="3.Drawing\TileBitmapProvider\TileBitmap.cs" />
+    <Compile Include="3.Drawing\TileBitmapProvider\TileBitmapProvider.cs" />
+    <Compile Include="3.Drawing\TileCacheManager\TileBitmapCacheManager.cs" />
+    <Compile Include="3.Drawing\TilesLocator\INearestTilesLocator.cs" />
+    <Compile Include="3.Drawing\TilesLocator\NearestTilesLocator.cs" />
+    <Compile Include="4.Layer\IMemoryRaster.cs" />
+    <Compile Include="4.Layer\MemoryBitmapLayer.cs" />
+    <Compile Include="4.Layer\MemoryRaster.cs" />
+    <Compile Include="5.Exception\Exceptions.cs" />
+    <Compile Include="6.OrbitPrjection\OrbitProjection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="3.Drawing\RasterDrawing.cs" />
+    <Compile Include="4.Layer\RasterLayer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="7.Scehduler\Tiles\调度策略.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.DrawEngine\GeoDo.RSS.Core.DrawEngine.csproj">
+      <Project>{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}</Project>
+      <Name>GeoDo.RSS.Core.DrawEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

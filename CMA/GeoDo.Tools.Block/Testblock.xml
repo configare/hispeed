@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml identify="blockarg">
+  <!--<InputFilename>E:\MAS\FY3A_MERSI_GBAL_GLL_L1_20110426_0245_1000M_MS_MOSAIC.ldf</InputFilename>-->
+  <InputFilename>E:\SMARTData\ORBIT\FY3A_VIRR\FY3A_VIRRX_GBAL_GLL_L1_20090107_0220_1000M_MS_MOSAIC.ldf</InputFilename>  
+  <OutputDir>E:\MAS\Out</OutputDir>
+  <!--<BlockType>identify</BlockType>-->
+  <BlockType>custom</BlockType>  
+  <BlockIdentify>005</BlockIdentify>
+  <Blocks>
+    <Envelope name="1" minx="60" maxx="150" miny="10" maxy="70"/>
+    <Envelope name="2" minx="60" maxx="150" miny="10" maxy="70"/>
+    <Envelope name="3" minx="60" maxx="150" miny="10" maxy="70"/>
+  	<!--
+  	 <Envelope name="HHLY" minx="" maxx="" miny="" maxy=""/>
+  	 -->
+  </Blocks>
+</xml>

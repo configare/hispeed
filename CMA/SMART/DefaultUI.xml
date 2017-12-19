@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UIFrameworkDef>
+  <AppInfo>
+    <TileInfo tile="卫星监测分析与遥感应用系统（Smart）V1.2" backcolor=""></TileInfo>
+  </AppInfo>
+  <Fonts>
+    <Font name="tabfont" family="微软雅黑" size="10.5"/>
+    <Font name="menufont" family="微软雅黑" size="8.5"/>
+  </Fonts>
+  <ResourceLocations>
+    <EmmbedResourceProvider name="system" assembly="GeoDo.RSS.UI.WinForm.Resource.dll" namespace="GeoDo.RSS.UI.WinForm.Resource.Images"/>
+    <EmmbedResourceProvider name="cma" assembly="GeoDo.RSS.CMA.Resources.dll" namespace="GeoDo.RSS.CMA.Resources.Images"/>
+    <DirResourceProvider name="systemroot" dir="$systemroot$"/>
+  </ResourceLocations>
+  <PlugIns>
+    <PlugIn name="" image="" arguments="" provider="assembly:class"/>
+  </PlugIns>
+  <OperationContextViews>
+    <OperationContextView name="" defaulttab="">
+      <Windows>
+        <Window identify="" position="Left:False"/>
+        <Window identify="" position=""/>
+      </Windows>
+    </OperationContextView>
+  </OperationContextViews>
+  <UITabs default="">
+    <QuickAccessBar>
+      <UIButton name="openfile" text="打开文件" image="system:cmdOpen.png" identify="2000" imagealignment="" textalignment=""/>
+      <UIButton name="OpenHDF5" text="打开hdf5文件" image="cma:cmdOpenH5.png" identify="2010" imagealignment="" textalignment=""/>
+      <UIButton name="firstPage" text="首页" image="system:house.png" identify="39001" imagealignment="" textalignment=""/>
+      <UIButton name="picWordfile" text="图片配准" image="system:folder_picture_16.png" identify="19001" imagealignment="" textalignment=""/>
+      <UIButton name="colorTable" text="产品颜色表" image="system:ProductColorTable_16x16.png" identify="10012" imagealignment="" textalignment=""/>
+    </QuickAccessBar>
+    <FileMenuView>
+      <Items>
+        <MenuItem name="Open" text="打开" image="system:open24.png" font="tabfont" identify="2000" imagealignment="MiddleLeft" textalignment="MiddleLeft"/>
+        <MenuItem name="OpenHDF5" text="hdf5打开" image="cma:cmdOpenH5_24.png" font="tabfont" identify="2010" imagealignment="MiddleLeft" textalignment="MiddleLeft"/>
+        <MenuItem name="AddLayer" text="添加图层" image="system:layer_open.png" font="tabfont" identify="2004" imagealignment="MiddleLeft" textalignment="MiddleLeft"/>
+        <MenuItem name="SaveAsImage" text="另存为(原始影像)" image="system:save24.png" font="tabfont" identify="2001" imagealignment="MiddleLeft" textalignment="MiddleLeft"/>
+        <MenuItem name="SaveAsImageWithVector" text="另存为(原始影像+矢量)" image="system:save24.png" font="tabfont" identify="2002" imagealignment="MiddleLeft" textalignment="MiddleLeft"/>
+        <!--<MenuItem name="Open" text="另存为(屏幕)" image="" font="tabfont" identify="2003" imagealignment="MiddleLeft" textalignment="MiddleLeft"/>-->
+        <!--<MenuItem name="SaveAs" text="另存为(整个栅格区域输出到图像)" image="" font="tabfont" identify="2006" imagealignment="MiddleLeft" textalignment="MiddleLeft" />
+        <MenuItem name="Print" text="打印" image="system:printer24.png" font="tabfont" identify="" imagealignment="MiddleLeft" textalignment="MiddleLeft" />-->
+        <MenuItem name="RecentFiles" text="最近使用的文件" select="true" page="GeoDo.RSS.UI.WinForm.Dll:GeoDo.RSS.UI.WinForm.UCRecentFileList" font="tabfont" image="system:recent24.png" imagealignment="MiddleLeft" textalignment="MiddleLeft" textimagerelation="ImageBeforeText"/>
+        <!--<MenuItem name="Configs" text="选项" select ="true" font="tabfont" page="assembly:class" image="system:config24.png" imagealignment="MiddleLeft" textalignment="MiddleLeft" textimagerelation="ImageBeforeText"/>-->
+        <MenuItem name ="Exit" text ="退出" image ="system:exit24.png" font="tabfont" identify="-1" imagealignment="MiddleLeft" textalignment="MiddleLeft" />
+      </Items>
+    </FileMenuView>
+    <UITab name="home" text="开始" font="tabfont">
+      <UIItems>
+        <UICommandGroup name="zoomtools" text="缩放控制">
+          <UIButton name="zoomin" text="放大" image="system:zoom_in2.png" identify="1001" imagealignment="" textalignment=""/>
+          <UIButton name="zoomout" text="缩小" image="system:zoom_out2.png" identify="1002" imagealignment="" textalignment=""/>
+          <UIButton name="zoompan" text="漫游" image="system:zoom_pan2.png" identify="1003" imagealignment="" textalignment=""/>
+          <UIDropDownButton name="toscale" text="" font="tabfont" image="system:percent32.png" imagealignment="TopCenter" textaligment="BottomCenter" dropdowndirection="Down" arrowposition="Bottom" expandarrowbutton="false">
+            <MenuHeaderItem text="适合窗口"/>
+            <MenuItem text="适合窗口(Q)" image="" identify="1004" argument="0"/>
+            <MenuHeaderItem text="缩小"/>
+            <MenuItem text="10%" image="" identify="1005" argument="0.1"/>
+            <MenuItem text="20%" image="" identify="1005" argument="0.2"/>
+            <MenuItem text="30%" image="" identify="1005" argument="0.3"/>
+            <MenuItem text="40%" image="" identify="1005" argument="0.4"/>
+            <MenuItem text="50%" image="" identify="1005" argument="0.5"/>
+            <MenuItem text="60%" image="" identify="1005" argument="0.6"/>
+            <MenuItem text="70%" image="" identify="1005" argument="0.7"/>
+            <MenuItem text="80%" image="" identify="1005" argument="0.8"/>
+            <MenuItem text="90%" image="" identify="1005" argument="0.9"/>
+            <MenuHeaderItem text="原分辨率"/>
+            <MenuItem text="100%(G)" image="" identify="1005" argument="1"/>
+            <MenuHeaderItem text="放大"/>
+            <MenuItem text="150%" image="" identify="1005" argument="1.5"/>
+            <MenuItem text="200%" image="" identify="1005" argument="2"/>
+            <MenuItem text="300%" image="" identify="1005" argument="3"/>
+            <MenuItem text="400%" image="" identify="1005" argument="4"/>
+            <MenuItem text="500%" image="" identify="1005" argument="5"/>
+            <MenuItem text="1000%" image="" identify="1005" argument="10"/>
+          </UIDropDownButton>
+        </UICommandGroup>
+        <UICommandGroup name="imageprocess" text="图像处理" provider="GeoDo.RSS.UI.AddIn.ImgPro.dll:GeoDo.RSS.UI.AddIn.ImgPro.UIGroupImgPro">
+          <UIDropDownButton name="percentStretcher" text="百分比拉伸" font="menufont" image="system:PercentXStretcher.png" imagealignment="TopCenter" textaligment="BottomCenter" dropdowndirection="Down" arrowposition="Bottom" expandarrowbutton="false">
+            <MenuItem text="0%拉伸" image="" identify="7111" argument="0"/>
+            <MenuItem text="1%拉伸" image="" identify="7111" argument="0.01"/>
+            <MenuItem text="2%拉伸" image="" identify="7111" argument="0.02"/>
+          </UIDropDownButton>
+          <UIButton name="ExpEnhance" text="指数增强" identify="3022" image="system:NSMCExp.png" imagealignment="MiddleCenter" textaligment="MiddleCenter" textimagerelation="ImageAboveText"/>
+        </UICommandGroup>
+        <UICommandGroup name="prjtools" text="投影工具" provider="GeoDo.RSS.UI.AddIn.DataPro.dll:GeoDo.RSS.UI.AddIn.DataPro.UIGroupProjection">
+          <UIButton name="panadjust" text="轨道数据投影" image="system:orbitProductProj32_32.png" identify="4011" imagealignment="" textalignment="" argument=""/>
+        </UICommandGroup>
+        <UICommandGroup name="rstools" text="遥感基础工具" provider="GeoDo.RSS.UI.AddIn.DataPro.dll:GeoDo.RSS.UI.AddIn.DataPro.UIGroupClip">
+        </UICommandGroup>
+        <UICommandGroup name="geoadjust" text="几何校正" allowcollapsed="false">
+          <UIButton name="panadjust" text="平移校正" image="system:AdjustByPan.png" identify="30001" imagealignment="" textalignment="" argument="GeoAdjustByPan"/>
+          <UIButton name="panadjust" text="平移校正2" image="system:AdjustByPan.png" identify="30101" imagealignment="" textalignment="" argument="GeoAdjustByPan2"/>
+          <!--<UIButton name="panadjust" text="平移校正3" image="system:AdjustByPan.png" identify="30201" imagealignment="" textalignment="" argument="GeoAdjustByPan3"/>-->
+        </UICommandGroup>
+        <UICommandGroup name="GeoAdjustByPan" text="平移校正" visible="false" allowcollapsed="false">
+          <UIButton name="startPan" text="开始平移" identify="30002" image="system:play.png"/>
+          <UIButton name="saveAdjustResult" text="保存校正" identify="30003" image="system:save.png"/>
+          <UIButton name="cancelAdjustResult" text="取消校正" identify="30004" image="system:Extracting_撤销.png"/>
+          <UIButton name="" text="退出校正" identify="30006" image="system:delete32.png"/>
+        </UICommandGroup>
+        <UICommandGroup name="GeoAdjustByPan2" text="平移校正2" visible="false" allowcollapsed="false">
+          <UIButton name="" text="开始平移" identify="30102" image="system:play.png"/>
+          <UIButton name="" text="保存校正" identify="30103" image="system:save.png"/>
+          <UIButton name="" text="取消校正" identify="30104" image="system:Extracting_撤销.png"/>
+          <UIButton name="" text="退出校正" identify="30106" image="system:delete32.png"/>
+        </UICommandGroup>
+        <UICommandGroup name="GeoAdjustByPan3" text="平移校正3" visible="false" allowcollapsed="false">
+          <UIButton name="" text="开始平移" identify="30202" image="system:play.png"/>
+          <!--<UIButton name="" text="保存校正" identify="30203" image="system:save.png"/>-->
+          <UIButton name="" text="取消校正" identify="30204" image="system:Extracting_撤销.png"/>
+          <UIButton name="" text="结束校正" identify="30206" image="system:delete32.png"/>
+          <UIButton name="" text="导出专题图并退出" identify="30207" image="system:exportBmp.png"/>
+        </UICommandGroup>
+      </UIItems>
+    </UITab>
+    <UITab name="home" text="基本工具" font="tabfont">
+      <UIItems>
+        <UICommandGroup name="RSTools" text="栅格基本工具">
+          <UIButton name="bandmath" text="波段运算" image="system:Tool_BandMath.png" identify="7100" imagealignment="" textalignment=""/>
+          <UIButton name="RasterHistgoram" text="直方图统计" image="system:Tool_Histogram.png" identify="7101" imagealignment="" textalignment=""/>
+          <UIButton name="BandsScatter" text="波段散点图" image="system:Tool_Scatter.png" identify="7102" imagealignment="" textalignment=""/>
+          <UIButton name="ColorTable" text="线性填色" image="system:Tool_ColorTable.png" identify="7104" imagealignment="" textalignment=""/>
+          <UIButton name="DensitySlice" text="密度分割" image="system:Tool_DensitySlice.png" identify="7110" imagealignment="" textalignment=""/>
+          <UIButton name="Contour" text="等值线" image="system:Tool_Contour.png" identify="7105" imagealignment="" textalignment=""/>
+          <UIButton name="VectorToRaster" text="矢量栅格化" image="system:Tool_Vector2Raster.png" identify="7112" imagealignment="" textalignment=""/>
+          <UIButton name="CreatePyramids" text="建立金字塔" image="system:Tool_CreatePyramids.png" identify="7106" imagealignment="" textalignment=""/>
+          <UIButton name="CreatePyramids" text="冰缘线绘制" image="system:Tool_CreatePyramids.png" identify="78000" imagealignment="" textalignment=""/>
+          <UIButton name="PointInterpolation" text="空间插值" image="system:Tool_Interpolation.png" identify="50001" imagealignment="" textalignment=""/>
+          <UIButton name="PointContour" text="散点图->等值线" image="system:Tool_Scatter_Contour.png" identify="50002" imagealignment="" textalignment=""/>
+          <UIButton name="" text="L2L3坐标订正" image="cma:L2L3_edit.png" identify="31100"  argument="" imagealignment="" textalignment=""/>
+          <UIButton name="" text="定量产品分段填色" image="cma:L2L3ProductColorTable.png" identify="31101"  argument="" imagealignment="" textalignment=""/>
+        </UICommandGroup>
+        <UICommandGroup name="measureTools" text="量测工具">
+          <UIButton name="measure" text="量测" image="system:measure_32x32.png" identify="2101" imagealignment="" textalignment="" argument=""/>
+          <UIButton name="measureClear" text="清除" image="system:measure_clear_32x32.png" identify="2102" imagealignment="" textalignment="" argument=""/>
+        </UICommandGroup>
+        <UICommandGroup name="profileTools" text="剖面图工具">
+          <UIButton name="profile" text="剖面图" image="system:rasterProfile.png" identify="2103" imagealignment="" textalignment="" argument=""/>
+          <UIButton name="profileClear" text="清除" image="system:rasterProfile_remove.png" identify="2104" imagealignment="" textalignment="" argument=""/>
+        </UICommandGroup>
+        <UICommandGroup name="prjTools" text="投影工具" provider="GeoDo.RSS.UI.AddIn.DataPro.dll:GeoDo.RSS.UI.AddIn.DataPro.UIGroupProjection">
+          <UIButton name="panadjust" text="轨道产品投影" image="system:orbitProductProj32_32.png" identify="4011" imagealignment="" textalignment="" argument=""/>
+        </UICommandGroup>h
+        <UICommandGroup name="rsTools" text="遥感基础工具">
+          <UIButton name="HDF5RemoveLine" text="去条带(MersiL1)" identify="78002" image="system:removeline.png" imagealignment="MiddleCenter" textalignment="MiddleCenter"/>
+          <UIButton name="GeoCorrection" text="几何精校正" identify="40001" image="system:GeoCorrection.png" imagealignment="MiddleCenter" textalignment="MiddleCenter"/>
+        </UICommandGroup>
+        <!--<UICommandGroup name="GeoCorrection" text="几何精校正" provider="GeoDo.RSS.UI.AddIn.GeoCorrection.dll:GeoDo.RSS.UI.AddIn.GeoCorrection.UIGroupGeoCorrection">
+        </UICommandGroup>-->
+      </UIItems>
+    </UITab>
+    <UITab name="theme" text="监测分析专题" font="tabfont" provider="GeoDo.RSS.UI.AddIn.Theme.dll:GeoDo.RSS.UI.AddIn.Theme.UITabProcuct">
+      <UIItems>
+        <UICommandGroup name="ProductTools" text="产品配置">
+          <UIButton name="cmdProductColorTable" text="产品颜色表" identify="10012" image="system:ProductColorTable.png" imagealignment="MiddleCenter" textalignment="MiddleCenter" textimagerelation="ImageAboveText"/>
+          <UIButton name="AreaStatSetting" text="统计分析设置" identify="19021" image="cma:chartSetting.png" imagealignment="MiddleCenter" textalignment="MiddleCenter" textimagerelation="ImageAboveText"/>
+        </UICommandGroup>
+      </UIItems>      
+    </UITab>
+    <UITab name="dataRef" text="地理信息" font="tabfont" provider ="GeoDo.RSS.UI.AddIn.DataRef.dll:GeoDo.RSS.UI.AddIn.DataRef.UITabDataRef"/>
+    <UITab name="themegraphic" text="专题制图" font="tabfont"  provider="GeoDo.RSS.UI.AddIn.Layout.dll:GeoDo.RSS.UI.AddIn.Layout.UIThemeToolBar">
+      <UIItems>
+        <UICommandGroup name="ProductTools" text="专题图">
+          <UIButton name="cmdProductColorTable" text="通用专题图" identify="2005" image="system:mulImage.png" imagealignment="MiddleCenter" textalignment="MiddleCenter" textimagerelation="ImageAboveText"/>
+        </UICommandGroup>
+      </UIItems>
+    </UITab>
+    <!--<UITab name="statanalysis" text="长时间序列" font="tabfont">
+    </UITab>-->
+    <!--<UITab name="theme" text="自动化处理" font="tabfont" provider="GeoDo.RSS.UI.WinF.UIAddin.Script.exe:GeoDo.RSS.UI.WinF.UIAddin.Script.AutoProcessUC"/>-->
+    <UITab name="theme" text="脚本开发" font="tabfont" provider="GeoDo.RSS.UI.AddIn.Python.dll:GeoDo.RSS.UI.AddIn.Python.UITabScript"/>
+    <UITab name="dataManager" text="数据管理" font="tabfont">
+      <UIItems>
+        <UICommandGroup name="dataSearch" text="数据检索" provider="GeoDo.RSS.UI.AddIn.HdService.dll:GeoDo.RSS.UI.AddIn.HdService.queryUIProvider">
+        </UICommandGroup>
+      </UIItems>
+    </UITab>
+    <UITab name="views" text="视图" font="tabfont">
+      <UIItems>
+        <UICommandGroup name="windows" text="信息窗口">
+          <UIButton name="" text="像元信息" image="system:wndcursorinfo.png" identify="9000"  argument="Left:true" imagealignment="" textalignment=""/>
+          <UIButton name="" text="波段选择" image="system:wndselectband.png" identify="9003"  argument="Left:false" imagealignment="" textalignment=""/>
+          <UIButton name="" text="层管理器" image="system:layermanager.png" identify="9002"  argument="Left:false" imagealignment="" textalignment=""/>
+          <!--<UIButton name="" text="文件属性" image="system:fileinfo2.png" identify="9001"  argument="Left:True" imagealignment="" textalignment=""/>-->
+          <UIButton name="" text="工作空间" image="system:workspace2.png" identify="9020"  argument="Right:True" imagealignment="" textalignment=""/>
+          <UIButton name="" text="监测分析面板" image="system:Extracting_Do.png" identify="9019"  argument="Right:True" imagealignment="" textalignment=""/>
+          <UIButton name="" text="消息窗口" image="system:Window_ContextInfo.png" identify="9006"  argument="Bottom:false" imagealignment="" textalignment=""/>
+          <UIButton name="" text="交互统计窗口" image="system:Window_FeatureList.png" identify="9008"  argument="Bottom:false" imagealignment="" textalignment=""/>
+          <UIButton name="" text="鹰眼视图" image="system:Window_Overview.png" identify="9007"  argument="Float" imagealignment="" textalignment=""/>
+          <UIButton name="" text="坐标标尺" image="system:Tool_Ruler.png" identify="7109"  argument="Float" imagealignment="" textalignment=""/>
+        </UICommandGroup>
+        <UICommandGroup name="windowlink" text="窗口联动">
+          <UIButton name="" text="取消联动" image="system:link_break.png" identify="9100"  argument="" imagealignment="" textalignment=""/>
+          <UIButton name="" text="左右分屏" image="system:WndSplitLeftRight.png" identify="9101"  argument="" imagealignment="" textalignment=""/>
+          <UIButton name="" text="上下分屏" image="system:WndSplitTopBottom.png" identify="9102"  argument="" imagealignment="" textalignment=""/>
+          <UIButton name="" text="左右分屏" image="system:WndSplitLeftRightBand.png" identify="9103"  argument="" imagealignment="" textalignment=""/>
+          <UIButton name="" text="上下分屏" image="system:WndSplitTopBottomBand.png" identify="9104"  argument="" imagealignment="" textalignment=""/>
+        </UICommandGroup>
+      </UIItems>
+    </UITab>
+    <UITab name="addins" text="插件" font="tabfont">
+      <PluginGroup>
+        <Plugin name="WORD" index="0" initDir="" parameter="" command=""/>
+      </PluginGroup>
+      <UIItems>
+        <UICommandGroup name="addPlugin" text="添加插件" provider="GeoDo.RSS.UI.AddIn.AddInMgr.dll:GeoDo.RSS.UI.AddIn.AddInMgr.UITabPlugin"/>
+        <UICommandGroup name="geoVis" text="数字地球" provider="GeoDo.RSS.UI.AddIn.GeoVIS.dll:GeoDo.RSS.UI.AddIn.GeoVIS.UITabGrpGeoVis"/>
+        <UICommandGroup name="maxCsr" text="晴空数据集" provider="GeoDo.RSS.UI.AddIn.MaxCsr.dll:GeoDo.RSS.UI.AddIn.MaxCsr.UITabGrpMaxCsr"/>
+        <UICommandGroup name="maxCsd" text="晴空反射数据集" provider="GeoDo.RSS.UI.AddIn.MaxCsr.dll:GeoDo.RSS.UI.AddIn.MaxCsr.UITabGrpMaxCsd"/>
+        <UICommandGroup name="TrueColorImageWorldFile" text="FY3真彩图配准" provider="GeoDo.Smart.TrueColorImageWorldFile.exe:GeoDo.Smart.TrueColorImageWorldFile.UIGroup"/>
+        <UICommandGroup name="ProDataCollect" text="产品数据收集" provider="GeoDo.Smart.ProDataCollect.exe:GeoDo.Smart.ProDataCollect.UIGroup"/>
+        <UICommandGroup name="windows" text="信息窗口">
+          <UIButton name="" text="批量裁切" image="system:wndcursorinfo.png" identify="27101"  argument="" imagealignment="" textalignment=""/>
+        </UICommandGroup>
+      </UIItems>
+    </UITab>
+    <UITab name="help" text="帮助" font="tabfont">
+      <UIItems>
+        <UICommandGroup name="HelpDoc" text="帮助手册">
+          <UIButton name="" text="算法手册" image="system:SFHelp.png" identify="21001" imagealignment="" textalignment=""/>
+          <UIButton name="" text="操作手册" image="system:help.png" identify="21002" imagealignment="" textalignment=""/>
+          <!--<UIButton name="" text="问题集锦" image="system:dialog-question.png" identify="21003"  imagealignment="" textalignment=""/>-->
+          <UIButton name="" text="帮助视频" image="cma:helpvideolink32.png" identify="21006" imagealignment="" textalignment="" argument="http://pan.baidu.com/share/link?shareid=975248210&amp;uk=3660796242"/>
+        </UICommandGroup>
+        <UICommandGroup name="ContactInfo" text="联系方式">
+          <UIButton name="" text="联系我们" image="system:ContactsInfo.png" identify="21004" imagealignment="" textalignment=""/>
+          <UIButton name="" text=" 关于.. " image="system:About.png" identify="21005" imagealignment="" textalignment=""/>
+        </UICommandGroup>
+        <UICommandGroup name="SystemConfig" text="系统配置">
+          <UIButton name="" text="系统配置" image="system:settings.png" identify="2" imagealignment="" textalignment=""/>
+        </UICommandGroup>        
+      </UIItems>
+    </UITab>
+  </UITabs>
+</UIFrameworkDef>

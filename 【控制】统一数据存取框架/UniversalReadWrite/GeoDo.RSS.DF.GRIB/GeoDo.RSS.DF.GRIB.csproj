@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{557DB61B-D08C-48AE-B158-F1707CBC57B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.DF.GRIB</RootNamespace>
+    <AssemblyName>GeoDo.RSS.DF.GRIB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.Project">
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayRasterDataProviderBuilder.cs" />
+    <Compile Include="GRIB1\Grib1BitMapSection.cs" />
+    <Compile Include="GRIB1\Grib1DataDriver.cs" />
+    <Compile Include="GRIB1\GRIB1DataProvider.cs" />
+    <Compile Include="GRIB1\Grib1GridDefinitionSection.cs" />
+    <Compile Include="GRIB1\Grib1ProductDefinitionSection.cs" />
+    <Compile Include="GRIB1\IGRIB1DataProvider.cs" />
+    <Compile Include="GRIB2\Category.cs" />
+    <Compile Include="GRIB2\Discipline.cs" />
+    <Compile Include="GRIB2\GRIB2BitMapSection.cs" />
+    <Compile Include="GRIB2\GRIB2DataDriver.cs" />
+    <Compile Include="GRIB2\GRIB2DataProvider.cs" />
+    <Compile Include="GRIB2\GRIB2DataRepresentationSection.cs" />
+    <Compile Include="GRIB2\GRIB2DataSection.cs" />
+    <Compile Include="GRIB2\GRIB2GridDefinitionSection.cs" />
+    <Compile Include="GRIB2\GRIB2IdentificationSection.cs" />
+    <Compile Include="GRIB2\GRIB2IndicatorSection.cs" />
+    <Compile Include="GRIB2\GRIB2LocalUseSection.cs" />
+    <Compile Include="GRIB2\GRIB2ProductDefinitionSection.cs" />
+    <Compile Include="GRIB2\GRIB2Record.cs" />
+    <Compile Include="GRIB2\IGRIB2DataProvider.cs" />
+    <Compile Include="GRIB2\IGRIB2DataRepresentationSection.cs" />
+    <Compile Include="GRIB2\IGRIB2GridDefinitionSection.cs" />
+    <Compile Include="GRIB2\IGRIB2IndicatorSection.cs" />
+    <Compile Include="GRIB2\IGRIB2ProductDefinitionSection.cs" />
+    <Compile Include="GRIB2\IGRIB2Record.cs" />
+    <Compile Include="GRIB2\GRIB2SectionHeader.cs" />
+    <Compile Include="GRIB2\ParametersFactory.cs" />
+    <Compile Include="GRIBDefinition\GribEndSection.cs" />
+    <Compile Include="GRIBDefinition\GribIndicatorSection.cs" />
+    <Compile Include="GRIBDefinition\GribPDSLevel.cs" />
+    <Compile Include="GRIBDefinition\GribPDSParamTable.cs" />
+    <Compile Include="GRIBDefinition\IGribBitMapSection.cs" />
+    <Compile Include="GRIBDefinition\IGribDataSection.cs" />
+    <Compile Include="GRIBDefinition\IGribIndicatorSection.cs" />
+    <Compile Include="GRIBDefinition\Parameter.cs" />
+    <Compile Include="GribNumberHelper.cs" />
+    <Compile Include="GRIB_Definition.cs" />
+    <Compile Include="GRIB_Point.cs" />
+    <Compile Include="IGRIBDataProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StreamReadHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\GeoDo.RSS.Core.DF\GeoDo.RSS.Core.DF.csproj">
+      <Project>{29E4664D-8930-4A57-A8BC-2B2ABD43C733}</Project>
+      <Name>GeoDo.RSS.Core.DF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ParameterTable2GRIB2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

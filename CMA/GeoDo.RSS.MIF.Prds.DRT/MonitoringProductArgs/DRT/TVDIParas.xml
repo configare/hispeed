@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<TVDI>
+  <Length>5</Length>
+  <Flimit>0.8</Flimit>
+  <HGYZ>0.1</HGYZ>
+  <LSTFreq>5</LSTFreq>
+  <Zoom>100</Zoom>
+  <LST max="1500" min="-1000">
+    <Band>1</Band>
+    <Zoom>10</Zoom>
+    <Invaild>9999;-9000;9000;9998;9997</Invaild>
+    <Cloudy>-1</Cloudy>
+  </LST>
+  <NDVI max="1000" min="0">
+    <Band>1</Band>
+    <Zoom>1000</Zoom>
+    <Cloudy>-999</Cloudy>
+  </NDVI>
+</TVDI>

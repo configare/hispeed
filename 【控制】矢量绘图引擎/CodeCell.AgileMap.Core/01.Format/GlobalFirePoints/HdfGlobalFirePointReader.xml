@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HdfVectors>
+  <HdfVector bandname="FIRES" longrowindex="0" latrowindex="1">
+    <Fields>
+      <Field rowindex="2" name="火点数值1"></Field>
+      <Field rowindex="3" name="火点数值2"></Field>
+    </Fields>
+  </HdfVector>
+</HdfVectors>

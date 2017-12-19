@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="DST">
+<CatalogCN identify="DBLV" cnname="沙尘结果"/>
+<CatalogCN identify="MCSI" cnname="沙尘监测图"/>
+<CatalogCN identify="OMCS" cnname="沙尘监测图（无边框）"/>
+<CatalogCN identify="0MSI" cnname="沙尘监测示意图"/>
+<CatalogCN identify="MOSI" cnname="沙尘监测示意图（无边框）"/>
+<CatalogCN identify="VISY" cnname="能见度结果"/>
+<CatalogCN identify="0SDI" cnname="单时次二值图"/>
+<CatalogCN identify="CSDI" cnname="自定义二值图"/>
+<CatalogCN identify="VISI" cnname="能见度图"/>
+<CatalogCN identify="CCAR" cnname="区域面积统计"/>
+<CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+<CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+<CatalogCN identify="0CBP" cnname="省界面积统计"/>
+<CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+<CatalogCN identify="CYCI" cnname="周期合成图"/>
+<CatalogCN identify="CCYC" cnname="自定义周期图"/>
+<CatalogCN identify="FREQ" cnname="频次统计图"/>
+<CatalogCN identify="CFRE" cnname="自定义频次图"/>
+<CatalogCN identify="MEDI" cnname="动画"/>
+<CatalogCN identify="CMED" cnname="自定义动画"/>
+<CatalogCN identify="0CLM" cnname="云结果"/>
+<CatalogCN identify="IDDI" cnname="红外差值沙尘指数结果"/>
+<CatalogCN identify="PTST" cnname="沙尘监测结果"/>
+<CatalogCN identify="PSRE" cnname="沙尘分数结果"/>
+<CatalogCN identify="0DRE" cnname="沙尘光学厚度"/>
+<CatalogCN identify="0OPT" cnname="沙尘粒子半径"/>
+<CatalogCN identify="DDEN" cnname="载沙量"/>
+<CatalogCN identify="MSSI" cnname="沙尘监测图_加站点"/>
+<CatalogCN identify="0SSI" cnname="沙尘监测示意图_加站点"/>
+<CatalogCN identify="0MDS" cnname="沙尘日数统计"/>
+<CatalogCN identify="COMD" cnname="对比结果"/>
+<CatalogCN identify="CODI" cnname="对比分析专题图"/>
+  
+</ProductIdentify>

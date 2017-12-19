@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomAOISolutions>
+  <CustomAOISolution slsname="jingjinji" vectorName="省级行政区域" keyFieldName="NAME" statRegionNames="北京市,天津市,河北省" />
+  <CustomAOISolution slsname="jingjinji1" vectorName="省级行政区域1" keyFieldName="NAME1" statRegionNames="北京市,天津市,河北省1" />
+  <CustomAOISolution slsname="zhognguo" vectorName="中国边界" keyFieldName="CHINESE_CH" statRegionNames="中国" />
+  <CustomAOISolution slsname="东部">
+    <vectorName>省级行政区域</vectorName>
+    <keyFieldName>NAME</keyFieldName>
+    <statRegionNames>北京市,天津市,河北省,山西省,上海市,江苏省,浙江省,安徽省,福建省,江西省,山东省,河南省,湖北省,湖南省,广东省,广西壮族自治区,陕西省,台湾省,香港特别行政区</statRegionNames>
+  </CustomAOISolution>
+</CustomAOISolutions>

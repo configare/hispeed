@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="NormalButtonText,SegoeUIDefaultText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadButtonElement.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,WhiteBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="110, 153, 210" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="RadCalendarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SkyBlueBorder,CalendarNavigationElementFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderGradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderInnerColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderBoxStyle" Value="OuterInnerBorders" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="CalendarNavigationElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellNormalFill,CalCellNormalBorder,NormalButtonText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleRight" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellTodayFill,CalCellTodayBorder,RoundRectShape2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderBoxStyle" Value="SingleBorder" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="251, 141, 60" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderInnerColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.Today" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellSpecialDayFill,CalCellSpecialDayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.SpecialDay" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellSelectedBorder,CalCellSpecialDayFill,RoundRectShape2">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="251, 141, 60" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellMouseOverFill,CalCellMouseOverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="251, 141, 60" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,NoBorder(ShouldPaint)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderGradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderBoxStyle" Value="FourBorders" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderBottomColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderLeftColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderTopColor" Value="110, 153, 210" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderTopShadowColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderRightShadowColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderRightColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="CalendarTableElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellNormalFill,CalColumnHeaderBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ColumnHeaderVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellOtherMonthText,CalCellNormalFill,CalCellNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.OtherMonth" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellSpecialDayFill,CalCellSelectedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="251, 141, 60" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground(VisibleDefault)">
+            <Selectors>
+              <XmlClassSelector ElementClass="CalendarStatusElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellRowHeaderFill,CalCellRowHeaderlBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RowHeaderVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NormalButtonText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.Header" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.Header.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.Header.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellMouseOverFill,CalCellMouseOverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="153, 153, 153" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="251, 141, 60" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.OtherMonth.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalCellMouseOverFill,CalCellMouseOverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="153, 153, 153" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="251, 141, 60" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CalendarCellElement.OtherMonth.Weekend.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavigationBackwardArrowImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavigationForwardArrowImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden),Margin(0;-1;0;-2)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder,NoBorder(Hidden),Margin(0;-1;0;-2)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateForwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;-1;0;-2),NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;-1;0;-2),NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NavigateBackwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;-1;0;-2),NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(-1;-1;0;-2),NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;-1;-1;-2),NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(0;-1;-1;-2),NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CalNavButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 0, 5, 2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="MonthViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigateForwardImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateForwardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NavigateBackwardImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FastNavigateBackwardButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadCalendar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCalendarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

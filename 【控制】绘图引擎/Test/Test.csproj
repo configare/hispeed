@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D32E0042-A415-4B53-8BF0-700B66109D8D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Components">
+      <HintPath>..\DefDLL\AgileMap\CodeCell.AgileMap.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCell.AgileMap.Core">
+      <HintPath>..\DefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCell.Bricks">
+      <HintPath>..\DefDLL\AgileMap\CodeCell.Bricks.dll</HintPath>
+    </Reference>
+    <Reference Include="gdal_csharp">
+      <HintPath>..\..\..\【控制】GDAL\GDAL CSharp\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DefDLL\Core\GeoDo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDO.RSS.CA">
+      <HintPath>..\DefDLL\ImageProcess\GeoDO.RSS.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\DefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeoGridLayer_I.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Cor.Grid\GeoDo.RSS.Core.Grid.csproj">
+      <Project>{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}</Project>
+      <Name>GeoDo.RSS.Core.Grid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.Core.DrawEngine.GDIPlus\GeoDo.RSS.Core.DrawEngine.GDIPlus.csproj">
+      <Project>{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}</Project>
+      <Name>GeoDo.RSS.Core.DrawEngine.GDIPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.Core.DrawEngine\GeoDo.RSS.Core.DrawEngine.csproj">
+      <Project>{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}</Project>
+      <Name>GeoDo.RSS.Core.DrawEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.Core.Raster\GeoDo.RSS.Core.RasterDrawing.csproj">
+      <Project>{CF416821-C24B-415D-B68B-32D75E78E819}</Project>
+      <Name>GeoDo.RSS.Core.RasterDrawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.Core.VectorDrawing\GeoDo.RSS.Core.VectorDrawing.csproj">
+      <Project>{F64BFC10-C658-462B-A2C5-19B5372E5D49}</Project>
+      <Name>GeoDo.RSS.Core.VectorDrawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.Core.View\GeoDo.RSS.Core.View.csproj">
+      <Project>{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}</Project>
+      <Name>GeoDo.RSS.Core.View</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

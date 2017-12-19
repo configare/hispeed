@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="Style is the main unit for customizing properties of a VisualElement runtime. These changes can be declared dependend on elment' state">
+    <Position X="2.021" Y="1.813" Height="0.938" Width="1.648" />
+  </Comment>
+  <Comment CommentText="Each VisualElement can be assigned a Style. You can think of Style as a &quot;StyleSheet&quot; document compared to web developmenet. ">
+    <Position X="0.5" Y="1.25" Height="0.406" Width="3.856" />
+  </Comment>
+  <Comment CommentText="Style uses selectors (ISelector) to identify the elements in the subtree that should be applied the corresponding PropertySettings in a PropertySettingsGroup">
+    <Position X="8.292" Y="0.5" Height="1.333" Width="1.45" />
+  </Comment>
+  <Comment CommentText="Selects elements from the hierarhcy having a specified name">
+    <Position X="6.521" Y="5.198" Height="0.531" Width="1.481" />
+  </Comment>
+  <Comment CommentText="Selects only the element that is applied a Style">
+    <Position X="4.51" Y="5.208" Height="0.52" Width="1.481" />
+  </Comment>
+  <Comment CommentText="Selects elements from the hierarhcy by type">
+    <Position X="8.292" Y="5.187" Height="0.52" Width="1.481" />
+  </Comment>
+  <Comment CommentText="PropertySetting store value of a given property of any RadElement. It also has the ability to Apply/Reset this value to the property when needed, generally used by a Style">
+    <Position X="5.01" Y="0.5" Height="1.395" Width="1.429" />
+  </Comment>
+  <Comment CommentText="Style contains property setting groups, which contain property settings and element selectors.">
+    <Position X="0.5" Y="4.344" Height="1.042" Width="1.2" />
+  </Comment>
+  <Class Name="Telerik.WinControls.PropertySetting" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\PropertySettings\PropertySetting.cs</FileName>
+      <HashCode>AAAAAAAEAAAAEAAAAAAAAAAAACAAACgAAAAgAAAAAIA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Telerik.WinControls.PropertySettingBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="2.759" />
+        <Point X="5" Y="2.88" />
+        <Point X="5" Y="2.88" />
+        <Point X="5" Y="3" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Telerik.WinControls.PropertySettingBase" Collapsed="true">
+    <Position X="4.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Styles\PropertySettings\PropertySettingBase.cs</FileName>
+      <HashCode>CAAAAgAEiAAAEAAAAAAAAAACACAAAAhAAAAAAQIAgYE=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Telerik.WinControls.PropertySettingCollection" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Styles\PropertySettings\PropertySettingCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.PropertySettingGroup" Collapsed="true">
+    <Position X="1.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Styles\PropertySettings\PropertySettingGroup.cs</FileName>
+      <HashCode>AIAAAACAAAAAAAAACAAAIAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.PropertySettingGroupCollection" Collapsed="true">
+    <Position X="2" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Styles\PropertySettings\PropertySettingGroupCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.VisualElement" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Elements\VisualElement.cs</FileName>
+      <HashCode>ABCAAQEAAACAQAEAIAAQABBIEIAAABNAQAAACAADAAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.AnimatedPropertySetting" Collapsed="true">
+    <Position X="5.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <FileName>Styles\Animation\AnimatedPropertySetting.cs</FileName>
+      <HashCode>jEAAAAAEIIAA0AAgAOAAAECgADAgiAgSIAAAAIAACKA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Telerik.WinControls.PropertySettingBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="2.562" />
+        <Point X="6.438" Y="2.562" />
+        <Point X="6.438" Y="3" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Telerik.WinControls.SelectorBase" Collapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\Selectors\SelectorBase.cs</FileName>
+      <HashCode>QAQAAIACQBSAggAAAAACQAAAQEAAAAAAAAABAQAkEAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Telerik.WinControls.GeneralSelector" Collapsed="true">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\Selectors\GeneralSelector.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Telerik.WinControls.SelectorBase" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="8.562" Y="3.509" />
+        <Point X="8.562" Y="4.087" />
+        <Point X="5.25" Y="4.087" />
+        <Point X="5.25" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Telerik.WinControls.NameSelector" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\Selectors\NameSelector.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAQAAAAgAAAAIAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.TypeSelector" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\Selectors\TypeSelector.cs</FileName>
+      <HashCode>AAAABAAAAAQAAAAAAAACAAAAQAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.StyleSheet">
+    <Position X="0.5" Y="1.75" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Styles\StyleSheet.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEAEAASAAAAEAADACAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Telerik.WinControls.StyleSheet.NotAppliedSelector" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Styles\StyleSheet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Interface Name="Telerik.WinControls.IPropertySetting">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\PropertySettings\IPropertySetting.cs</FileName>
+      <HashCode>AAAAAAAEAAAAEAAAAAAAAAAAACAAAAgAAAAAAQAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Telerik.WinControls.IElementSelector" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Styles\Selectors\IElementSelector.cs</FileName>
+      <HashCode>AAQAAAAAABQAAAAAAAAAAAAAACAAAAAAAAABAQAgEAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml identify="blockarg">
+  <!--必填,输入文件绝对路径-->
+  <InputFilename></InputFilename>
+  <!--必填,输出目录-->
+  <OutputDir></OutputDir>  
+  <!-- 预定义：identify 、自定义：custom -->
+  <BlockType>identify</BlockType>  
+  <!--identify场合 分幅标识 ：5度-005、10度-010 -->
+  <BlockIdentify></BlockIdentify>
+  <!--custom场合 -->
+  <Blocks>
+    <!--<Envelope name="1" minx="60" maxx="150" miny="10" maxy="70"/>
+    <Envelope name="2" minx="60" maxx="150" miny="10" maxy="70"/>
+    <Envelope name="3" minx="60" maxx="150" miny="10" maxy="70"/>-->
+  	<!--
+  	 <Envelope name="HHLY" minx="" maxx="" miny="" maxy=""/>
+  	 -->
+  </Blocks>
+  
+</xml>

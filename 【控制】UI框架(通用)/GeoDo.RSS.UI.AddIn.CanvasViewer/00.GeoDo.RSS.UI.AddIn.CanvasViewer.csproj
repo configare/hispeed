@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D471C8B7-A9B1-4321-A10E-E8E399FE1AB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.AddIn.CanvasViewer</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.AddIn.CanvasViewer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core">
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Core\GeoDo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA">
+      <HintPath>..\RefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine.GDIPlus">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.View">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.View.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOI\AOIProvider.cs" />
+    <Compile Include="CanvasViewer\CanvasViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CanvasViewer\CanvasViewer.designer.cs">
+      <DependentUpon>CanvasViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CanvasViewer\CanvasViewerInitializer.cs" />
+    <Compile Include="CanvasViewer\CanvasContextMenuHandler.cs" />
+    <Compile Include="CanvasViewer\ContextToolBarEnv\ContextMenuToolbarManager.cs" />
+    <Compile Include="CanvasViewer\ContextToolBarEnv\IContextMenuArgProvider.cs" />
+    <Compile Include="CanvasViewer\ContextToolBarEnv\IContextMenuToolbarManager.cs" />
+    <Compile Include="CanvasViewer\enumCanvasViewerMenu.cs" />
+    <Compile Include="CanvasViewer\FeatureLabel\LabelLayer.cs" />
+    <Compile Include="CanvasViewer\FeatureLabel\LabelService.cs" />
+    <Compile Include="CanvasViewer\ICanvasViewerContextMenuHandler.cs" />
+    <Compile Include="CanvasViewer\RasterInteractiver\CurrentRasterInteractiver.cs" />
+    <Compile Include="CanvasViewer\RasterInteractiver\DrawedGeometry2Polygon.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommand.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomFull.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomIn.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomOut.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomPan.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomSuiteScale.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomXScale.cs" />
+    <Compile Include="FileSupport\Commands\CmdViewerToImgFullRaster.cs" />
+    <Compile Include="FileSupport\Commands\CommandViewerOutput.cs" />
+    <Compile Include="FileSupport\Commands\Layout\CommandWindowLink.cs" />
+    <Compile Include="FileSupport\Commands\Layout\CommandWindowLinkByBand.cs" />
+    <Compile Include="FileSupport\Commands\Layout\CommandWindowLinkByWnd.cs" />
+    <Compile Include="FileSupport\Commands\CanvasCommandZoomSuiteWidthScale.cs" />
+    <Compile Include="FileSupport\Commands\CommandViewWithVector.cs" />
+    <Compile Include="FileSupport\Commands\CommandImageOutput.cs" />
+    <Compile Include="MeasureTool\CanvasCommandMeasure.cs" />
+    <Compile Include="FileSupport\AVILayerBuilder.cs" />
+    <Compile Include="FileSupport\RasterLayerBuilder.cs" />
+    <Compile Include="LayerProvider\CanvasViewerLayerProviderFacader.cs" />
+    <Compile Include="LayerProvider\LayerItemCanvasViewer.cs" />
+    <Compile Include="MeasureTool\frmMeasure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeasureTool\frmMeasure.Designer.cs">
+      <DependentUpon>frmMeasure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeasureTool\MeasureLayer.cs" />
+    <Compile Include="MeasureTool\CanvasCommandClearMeasure.cs" />
+    <Compile Include="ProfileTool\RasterProfileData.cs" />
+    <Compile Include="ProfileTool\cmdActiveProfile.cs" />
+    <Compile Include="ProfileTool\ProfileLayer.cs" />
+    <Compile Include="ProfileTool\cmdClearProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CanvasViewer\CanvasViewer.resx">
+      <DependentUpon>CanvasViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

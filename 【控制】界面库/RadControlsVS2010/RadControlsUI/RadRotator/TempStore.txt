@@ -1,0 +1,39 @@
+/// <commentsfrom cref="RotatorElement.HomeItem" filter="##SUMMARY,##OVERLOADS,##REMARKS,##VALUE,##NOTES"/>
+
+
+//this.LoadFromXML(@"..\rotator.xml");
+
+
+        // This method is to be removed from the rotator 
+        private bool LoadFromXML(XmlNode reader)
+        {
+            if (reader == null)
+                return false;
+
+            XmlNodeList rotatorItems = reader.SelectNodes("Item");
+
+            for (int i = 0; i < rotatorItems.Count; i++)
+            {
+                RadRotatorItem item = new RadRotatorItem();
+                if (item.LoadXML(rotatorItems[i]))
+                    this.Items.Add(item);
+            }
+
+            return true;
+        }
+
+        // this method is to be removed from the rotator
+        private bool LoadFromXML(string fileName)
+        {
+            FileInfo file = new FileInfo(fileName);
+
+            if (!file.Exists)
+                return false;
+
+            XmlDocument reader = new XmlDocument();
+            reader.Load(file.FullName);
+
+            XmlNode rotatorItems = reader.SelectSingleNode("//RotatorItems");
+
+            return rotatorItems != null ? LoadFromXML(rotatorItems) : false;
+        }

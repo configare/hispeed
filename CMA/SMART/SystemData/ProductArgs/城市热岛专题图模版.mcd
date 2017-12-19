@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Map name="">
+  <MapArguments backcolor="0,255,255,255" smoothingmode="Default" spatialreference="" />
+  <ConflictDefinitionSymbol>
+    <ConflictDefinition gridsize="20,20" enabled="True" />
+  </ConflictDefinitionSymbol>
+  <ConflictDefinitionLabel>
+    <ConflictDefinition gridsize="60,16" enabled="True" />
+  </ConflictDefinitionLabel>
+  <Author author="" beginmaketime="0001-01-01 00:00:00" endmaketime="0001-01-01 00:00:00" />
+  <Version year="0" scaleofmapping="0" publisher="" source="" description="" />
+  <Layers>
+    <Layer name="标注矢量" visible="True" enabledisplayLevel="True" twostepflag="False">
+      <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      <LabelDef source="Label" enabled="true" field="编号" fields="编号,名称,经度,纬度,种类" ruler="Center" invalidvalue="" autotonewline="False" charcountperline="6">
+        <Font font="宋体,12,Regular" color="255,0,0,0" maskcolor="255,192,192,255" />
+        <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      </LabelDef>
+      <Renderer type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleFeatureRenderer">
+        <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleMarkerSymbol" style="Circle" size="5,5" color="255,255,0,0" />
+      </Renderer>
+      <RotateField rotatefield="" angleoffset="0" fields="编号,名称,经度,纬度,种类" />
+      <FeatureClass>
+        <GridDef spanx="360" spany="180" gridsonetimes="4" />
+        <MemoryLimiter type="None" maxcount="0" maxmemory="0" />
+        <DataSource type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.FileDataSource" name="标注矢量" fileurl="G:\工程项目\Smart二期\气象MAS二期\SMART\bin\Release\Workspace\UHI\标注矢量.shp">
+          <ArgsOfLeveling enabled="False" gridsize="80" beginlevel="0" />
+        </DataSource>
+      </FeatureClass>
+    </Layer>
+  </Layers>
+</Map> 

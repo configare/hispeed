@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartConfig>
+  <SimpleConfigItems>
+    <ConfigItem key="WorkspaceDir" value=""/>
+    <ConfigItem key="TemporalFileDir" value=""/>
+    <ConfigItem key="ToDBSpaceDir" value=""/>
+    <ConfigItem key="EnableAIOAgentEnvelope" value="true"/>
+    <ConfigItem key="IsAutoShowPixelInfoWnd" value="true"/>
+    <ConfigItem key="IsMultiAoi" value="false"/>
+  </SimpleConfigItems>
+</SmartConfig>

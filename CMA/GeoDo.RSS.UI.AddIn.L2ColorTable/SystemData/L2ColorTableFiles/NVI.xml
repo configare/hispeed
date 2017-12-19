@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="NVI" applyfor = "NVI,VVI" description="植被指数"  matchstring="\S+_NVI_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="NVI" datasets="250M_10day_NDVI,1KM_10day_NDVI" refdatasets="">
+      <Segment values = "-32768~-32760" indexes = "0" />
+      <Segment values = "-32760~-10010" indexes = "1" />
+      <Segment values = "-10010~-2100" indexes = "2" />
+      <Segment values = "-2100~0" indexes = "3" />
+      <Segment values = "0~660" indexes = "4" />
+      <Segment values = "660~990" indexes = "5" />
+      <Segment values = "990~1320" indexes = "8" />
+      <Segment values = "1320~1650" indexes = "9" />
+      <Segment values = "1650~1980" indexes = "10" />
+      <Segment values = "1980~2310" indexes = "11" />
+      <Segment values = "2310~2880" indexes = "12" />
+      <Segment values = "2880~3450" indexes = "13" />
+      <Segment values = "3450~4020" indexes = "14" />
+      <Segment values = "4020~4590" indexes = "15" />
+      <Segment values = "4590~5160" indexes = "16" />
+      <Segment values = "5160~5730" indexes = "17" />
+      <Segment values = "5730~6300" indexes = "18" />
+      <Segment values = "6300~6870" indexes = "19" />
+      <Segment values = "6870~7440" indexes = "20" />
+      <Segment values = "7440~8010" indexes = "21" />
+      <Segment values = "8010~8580" indexes = "22" />
+      <Segment values = "8580~9150" indexes = "23" />
+      <Segment values = "9150~9720" indexes = "24" />
+      <Segment values = "9720~10000" indexes = "25" />
+      <Segment values = "10000~11000" indexes = "26" />
+      <Segment values = "11000~12000" indexes = "27" />
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTableNVI" applyfor="NVI" description="">
+      <Color index = "0" rgb = "0,0,0"/>
+      <Color index = "1" rgb = "0,0,139"/>
+      <Color index = "2" rgb = "250,250,250"/>
+      <Color index = "3" rgb = "234,228,220"/>
+      <Color index = "4" rgb = "214,202,185"/>
+      <Color index = "5" rgb = "201,189,173"/>
+      <Color index = "8" rgb = "173,141,142"/>
+      <Color index = "9" rgb = "187,158,128"/>
+      <Color index = "10" rgb = "177,148,104"/>
+      <Color index = "11" rgb = "165,130,76"/>
+      <Color index = "12" rgb = "146,113,62"/>
+      <Color index = "13" rgb = "197,227,115"/>
+      <Color index = "14" rgb = "161,191,79"/>
+      <Color index = "15" rgb = "149,181,18"/>
+      <Color index = "16" rgb = "125,155,43"/>
+      <Color index = "17" rgb = "116,169,0"/>
+      <Color index = "18" rgb = "102,160,0"/>
+      <Color index = "19" rgb = "82,147,1"/>
+      <Color index = "20" rgb = "60,133,0"/>
+      <Color index = "21" rgb = "27,114,1"/>
+      <Color index = "22" rgb = "0,95,1"/>
+      <Color index = "23" rgb = "0,73,1"/>
+      <Color index = "24" rgb = "0,55,0"/>
+      <Color index = "25" rgb = "1,39,0"/>
+      <Color index = "26" rgb = "0,0,139"/>
+      <Color index = "27" rgb = "0,0,0"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

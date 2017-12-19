@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WindowsEnvDef>
+  <FileOpen>
+    <OpenWnd>
+      <Wnd name="" id="9000" catalog="" dsc="象元信息"/>
+      <Wnd name="" id="1004" catalog="" dsc="适合窗口"/>
+    </OpenWnd>
+    <CloseWnd>
+      <!--catalog不为空 其他为空 即关闭此类全部已有窗口!-->
+      <Wnd name="" id="" catalog=""/>
+    </CloseWnd>
+  </FileOpen>
+  <MonitoringProActive>
+    <OpenWnd>
+      <Wnd name="" id="" catalog=""/>
+    </OpenWnd>
+    <CloseWnd>
+      <!--catalog不为空 其他为空 即关闭此类全部已有窗口!-->
+      <Wnd name="" id="" catalog=""/>
+    </CloseWnd>
+  </MonitoringProActive>
+  <MonitoringProClose>
+    <OpenWnd/>
+    <CloseWnd/>
+  </MonitoringProClose>
+  <ThemeGraphActive>
+    <OpenWnd/>
+    <CloseWnd/>
+  </ThemeGraphActive>
+  <ThemeGraphClose>
+    <OpenWnd/>
+    <CloseWnd/>
+  </ThemeGraphClose>
+</WindowsEnvDef>

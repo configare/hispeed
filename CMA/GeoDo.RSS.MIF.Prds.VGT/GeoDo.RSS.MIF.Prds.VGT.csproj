@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6561E682-B35A-4390-B068-21F2ECECB4AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.VGT</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.VGT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.FileProject, Version=1.0.5.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.FileProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.HDF, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.HDF5, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF5.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.BlockOper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\BlockOper\GeoDo.RSS.BlockOper.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\SubProductAnalysisVgtNdvi.cs" />
+    <Compile Include="Analysis\SubProductAvgStatic.cs" />
+    <Compile Include="CmaVgtMonitoringSubProduct.cs" />
+    <Compile Include="Control\UCDefaultFilePath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UCDefaultFilePath.designer.cs">
+      <DependentUpon>UCDefaultFilePath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\UCFilesSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UCFilesSelector.Designer.cs">
+      <DependentUpon>UCFilesSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ucVgtDayProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ucVgtDayProduct.Designer.cs">
+      <DependentUpon>ucVgtDayProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubProductLayoutVgtImg.cs" />
+    <Compile Include="MonitoringProductVgt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\Compute\ComputeArgument.cs" />
+    <Compile Include="Raster\Compute\MultiFileComputer.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtAnomalies.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtAvgNdvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtDifference.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtDvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtEvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtMaxNdvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtMinNdvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtNdvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtRvi.cs" />
+    <Compile Include="Raster\New\SubProductRasterVgtVci.cs" />
+    <Compile Include="Raster\SubProductRasterVgtCYCA.cs" />
+    <Compile Include="Raster\SubProductRasterVgtAnomalies.cs" />
+    <Compile Include="Raster\SubProductRasterVgtAvgNdvi.cs" />
+    <Compile Include="Raster\SubProductRasterVgtChaZhi.cs" />
+    <Compile Include="Raster\Compute\SubProductRasterVgtDvi.cs" />
+    <Compile Include="Raster\Compute\SubProductRasterVgtEvi.cs" />
+    <Compile Include="Raster\SubProductRasterVgtMaxNdvi.cs" />
+    <Compile Include="Raster\SubProductRasterVgtMinNdvi.cs" />
+    <Compile Include="Raster\Compute\SubProductRasterVgtNdvi.cs" />
+    <Compile Include="Raster\Compute\SubProductRasterVgtRvi.cs" />
+    <Compile Include="Raster\SubRroductRasterVgtVci.cs" />
+    <Compile Include="Control\UCRegionNdvi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UCRegionNdvi.designer.cs">
+      <DependentUpon>UCRegionNdvi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\New\VaildRegionAndCloudyProcess.cs" />
+    <Compile Include="VGT\MERSI_LAI\ParseLAIConfigXml.cs" />
+    <Compile Include="VGT\MERSI_LAI\SubProductVgtMersiLAI.cs" />
+    <Compile Include="VGT\MERSI_LAI\UCLAIFilesSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VGT\MERSI_LAI\UCLAIFilesSelector.designer.cs">
+      <DependentUpon>UCLAIFilesSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VGT\MERSI_LAI\UCLAIPrjFilesSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VGT\MERSI_LAI\UCLAIPrjFilesSelector.Designer.cs">
+      <DependentUpon>UCLAIPrjFilesSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VGT\ToolSmooth\CommandToolSmooth.cs" />
+    <Compile Include="VGT\ToolSmooth\frmSmoothToolWindows.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VGT\ToolSmooth\frmSmoothToolWindows.designer.cs">
+      <DependentUpon>frmSmoothToolWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VGT\ToolSmooth\Smooth.NET.cs" />
+    <Compile Include="VGT\ToolSmooth\SmoothAPI.cs" />
+    <Compile Include="VGT\UITabVegetation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VGT\UITabVegetation.designer.cs">
+      <DependentUpon>UITabVegetation.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Binary\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\UCDefaultFilePath.resx">
+      <DependentUpon>UCDefaultFilePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UCFilesSelector.resx">
+      <DependentUpon>UCFilesSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UCRegionNdvi.resx">
+      <DependentUpon>UCRegionNdvi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ucVgtDayProduct.resx">
+      <DependentUpon>ucVgtDayProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VGT\MERSI_LAI\UCLAIFilesSelector.resx">
+      <DependentUpon>UCLAIFilesSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VGT\MERSI_LAI\UCLAIPrjFilesSelector.resx">
+      <DependentUpon>UCLAIPrjFilesSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VGT\ToolSmooth\frmSmoothToolWindows.resx">
+      <DependentUpon>frmSmoothToolWindows.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="deleteFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.Comm\GeoDo.RSS.MIF.Prds.Comm.csproj">
+      <Project>{9F3FE8A1-E2E1-4B99-8E3D-2EE977D132DF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Map name="新地图">
+  <MapArguments backcolor="0,255,255,255" smoothingmode="Default" spatialreference="">
+    <Extent MinX="113.27766418457" MinY="38.3241233825684" MaxX="117.182891845703" MaxY="42.2293472290039" />
+  </MapArguments>
+  <ConflictDefinitionSymbol>
+    <ConflictDefinition gridsize="20,20" enabled="True" />
+  </ConflictDefinitionSymbol>
+  <ConflictDefinitionLabel>
+    <ConflictDefinition gridsize="60,16" enabled="True" />
+  </ConflictDefinitionLabel>
+  <Author author="" beginmaketime="0001-01-01 00:00:00" endmaketime="0001-01-01 00:00:00" />
+  <Version year="0" scaleofmapping="0" publisher="" source="" description="" />
+  <Layers>
+    <Layer name="地表观测数据" visible="True" enabledisplayLevel="True" twostepflag="False">
+      <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      <LabelDef source="Label" enabled="True" field="ID" fields="ID,Longitude,Latitude" ruler="Center" invalidvalue="" autotonewline="True" charcountperline="6">
+        <Font font="Microsoft Sans Serif,9,Regular" color="255,255,255,0" maskcolor="0,0,0,0" />
+        <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      </LabelDef>
+      <Renderer type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleFeatureRenderer">
+        <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.TrueTypeFontSymbol" size="9" font="ESRI Business,12,Regular" code="34" color="255,255,0,0" />
+      </Renderer>
+      <RotateField rotatefield="" angleoffset="0" fields="OBJECTID,Bianma,NAME" />
+      <FeatureClass>
+        <GridDef spanx="360" spany="180" gridsonetimes="4" />
+        <MemoryLimiter type="None" maxcount="0" maxmemory="0" />
+        <DataSource type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.MemoryDataSource" name="地表观测数据" fileurl=".\*.00">
+          <ArgsOfLeveling enabled="False" gridsize="80" beginlevel="0" />
+        </DataSource>
+      </FeatureClass>
+    </Layer>
+  </Layers>
+</Map> 

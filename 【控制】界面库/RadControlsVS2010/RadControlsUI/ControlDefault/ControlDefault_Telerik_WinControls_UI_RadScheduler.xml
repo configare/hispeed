@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="NormalButtonText,SegoeUIDefaultText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="232, 241, 252" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RulerFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="101, 147, 207" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.TimePointerStyle" Value="SimpleLine" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.CurrentTimePointerColor" Value="0, 234, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="-1" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 13pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineColor" Value="101, 147, 207" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineStartPosition" Value="5" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.SectionLineColor" Value="212, 227, 246" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.MinutesFont" Value="Segoe UI, 7.2pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Ruler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RulerFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell3" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.DayViewHeader.HeaderHeight" Value="25" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="DayViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2;0;3;1),ButtonNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedFill(Month),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2,0,3,1),Padding(2;0;3;1),ButtonNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,Padding(2;0;3;1),SchedulerMonthCellTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedFill(Month),Padding(2;0;3;1),SchedulerMonthCellTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedFill(Month),Padding(2;0;3;1),ButtonNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellWorkTimeFill(Month),Padding(2;0;3;1),SchedulerMonthCellTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedFill(Month),Padding(2;0;3;1),SchedulerMonthCellTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellWorkTimeFill(Month),Padding(2;0;3;1),ButtonNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk2mAAAAAAAAADYAAAAoAAAABwAAAAQAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA1rWb/wAAAAAAAAAAAAAAAAAAAAAAAAAA0qaH/9Kmh//Spof/AAAAAAAAAAAAAAAAypt6/8qbev/Km3r/ypt6/8qbev8AAAAAwo9u/8KPbv/Cj27/wo9u/8KPbv/Cj27/wo9u/w==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerDayViewElement.AppointmentMargin" Value="3, 0, 4, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="DayViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RulerFill,TransparentBorderNoAnim,TimeZoneLableText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="BottomLeft" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell2" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadSchedulerElement.ExceptionIcon" Value="Qk3GAQAAAAAAADYAAAAoAAAACgAAAAoAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwkC////////f39of///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAATCQL/8y1pP+vim//r4pv/6+Kb/8AAAAA/f39mQAAAAAAAAAA/v7+Tcy1pP9MJAv//////wAAAAAAAAAA////gM+5qf////+AAAAAALefkKivim//AAAAAEwkC///////////gNfEt/+vim//18S3/////4CFXEGor4pv/wAAAAAAAAAAUScM/9fEt/+vim//r4pv/6+Kb/+viW+AYy4NTa+Kb//8/PzOAAAAAAAAAABZKg3//////6+Kb/8AAAAAAAAAAAAAAACuiG2huZSC7f///////////////2IuDv/MtaT/AAAAAAAAAAAAAAAAAAAAAK6IbaGvim//r4pv/6+Kb/+uiG2hbDMQ//////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1OBL/AAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadSchedulerElement.RecurrenceIcon" Value="Qk3GAQAAAAAAADYAAAAoAAAACgAAAAoAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/f39of///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAA/f39oYZqWe1MJAv/TCQL/0wkC/8AAAAA/f39mQAAAAAAAAAA/v7+TY51Zf9LIQvOAAAAAAAAAAAAAAAA////gJR8bf////+AAAAAAK2ZjqhMJAv/AAAAAAAAAAAAAAAA////gKWRhf9MJAv/pZGF/////4B5VkGoVCgM/wAAAAAAAAAAAAAAAFMnC4BUKAz/VCgM/1QoDP9TJwuAYC4NTV8tDv/8/PzOAAAAAAAAAAAAAAAA/Pz8zl8tDv8AAAAAAAAAAAAAAABrMg6heE0v7f///////////////3hNL+1rMg6hAAAAAAAAAAAAAAAAAAAAAHg5EaF4ORL/eDkS/3g5Ev94ORGhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadSchedulerElement.DefaultDateTimeTitleFont" Value="Segoe UI, 6pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadSchedulerElement.NavigatorsWidth" Value="26" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerMonthViewElement.AppointmentMargin" Value="3, 0, 3, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, 0, -1, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerMonthViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigationElementFill,NavigatorElementBorder,NavigatorElementShape,NavigationElementPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTHs07jyLO61Mi0/Ny7pf/dvaf/1Mi0/OPItMPlybVaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3cy7D+XGsrTUsJj/vI9z/7B9X/+1hWn/tINn/698Xv+5i2//0ayU/+PItMPmwrYVAAAAAAAAAAAAAAAA4sapCeXItMnKoor/vZF2/9aznP/kyLT/5cm1/+XJtf/kyLT/2Lag/8CUev/JoIj/5cez2Om/qgwAAAAAAAAAAOXItJbNpo7/1LGa/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/2Lag/82njv/kx7OlAAAAAOfIsSHUyLT82bii/+XJtf/lybX/5cm1/+XJtf/05dn/9OXZ/+XJtf/lybX/5cm1/+XJtf/cvaf/27qk/+TJtDDkx7R72rmj/+XJtf/lybX/5cm1/+XJtf/05dn/TCQL/0wkC//05dn/5cm1/+XJtf/lybX/5cm1/9q6pP/kyLOH5caytOTItP/lybX/5cm1/+XJtf/05dn/WisO/1orDv9aKw7/WisO//Tl2f/lybX/5cm1/+XJtf/lybX/48i0zOPItMzlybX/5cm1/+XJtf/05dn/aTIQ/2kyEP9pMhD/aTIQ/2kyEP9pMhD/9OXZ/+XJtf/lybX/5cm1/+PItMzjyLTD5cm1/+XJtf/lybX/dzgS/3c4Ev93OBL/dzgS/3c4Ev93OBL/dzgS/3c4Ev/lybX/5cm1/+XJtf/jyLTM5ci0jeXJtf/lybX/5cm1/+XJtf/lybX/5cm1/4M+FP+DPhT/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5MezpebGsj/lyLT/5cm1/+XJtf/lybX/5cm1/+XJtf+LQhX/i0IV/+XJtf/lybX/5cm1/+XJtf/lybX/5ci0/+XJs1EAAAAA5ce0xuXJtf/lybX/5cm1/+XJtf/lybX/i0IV/4tCFf/lybX/5cm1/+XJtf/lybX/5cm1/+XIstIAAAAAAAAAAOLGsSTlw7Lw5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XItPbmyLQzAAAAAAAAAAAAAAAA5MmyOeDIsOrlybX/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XDsvDlx7VFAAAAAAAAAAAAAAAAAAAAAAAAAADixrMb5cizn9TItPzlyLT/5ci0/+XItP/lyLT/1Mi0/OXItKjixrEkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmwrYV48izVOTItHXkx7Jy48izVOLGuBIAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextImageRelation" Value="ImageBeforeText" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigationElementHoveredFill,NavigatorElementShape,NavigationElementPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMr1/k7J9f26y9TU/L7x///A8f//y9TU/Mn0/MPL8/5aAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzO7/D8r1/bSz7f//k+P//4Ld//+K4P//iOD//4Hd//+P4v//r+z//8n0/MPO8v4VAAAAAAAAAAAAAAAAxv7+Ccjz/Mmm6f//leT//7fv///M9v//zfb//832///M9v//uvD//5nl//+k6f//y/X72NT//wwAAAAAAAAAAMr0/Zaq6///te7//832///N9v//zfb//832///N9v//zfb//832///N9v//uvD//6rq///K9f2lAAAAAMj3/iHL1NT8vPD//832///N9v//zfb//832///q+///6vv//832///N9v//zfb//832///B8v//vfD//8n0/zDL9P57vPD//832///N9v//zfb//832///q+///TCQL/0wkC//q+///zfb//832///N9v//zfb//73x///K9f2HyvX9tMz2///N9v//zfb//832///q+///WisO/1orDv9aKw7/WisO/+r7///N9v//zfb//832///N9v//yvX/zMr1/8zN9v//zfb//832///q+///aTIQ/2kyEP9pMhD/aTIQ/2kyEP9pMhD/6vv//832///N9v//zfb//8r1/8zJ9PzDzfb//832///N9v//dzgS/3c4Ev93OBL/dzgS/3c4Ev93OBL/dzgS/3c4Ev/N9v//zfb//832///K9f/MyvT9jcz2///N9v//zfb//832///N9v//zfb//4M+FP+DPhT/zfb//832///N9v//zfb//832///M9v//yvX9pcr2/j/L9f//zfb//832///N9v//zfb//832//+LQhX/i0IV/832///N9v//zfb//832///N9v//zPX//8n1/lEAAAAAy/P8xsz2///N9v//zfb//832///N9v//i0IV/4tCFf/N9v//zfb//832///N9v//zPb//8n1/NIAAAAAAAAAAM33/iTD9f/wzPb//832///N9v//zfb//832///N9v//zfb//832///N9v//zPb//8vw8PbN9f8zAAAAAAAAAAAAAAAAyfb+Ocj1+OrM9v//zfb//832///N9v//zfb//832///N9v//zPb//8P1//DL8/5FAAAAAAAAAAAAAAAAAAAAAAAAAADG9f4by/X9n8vU1PzM9f//zPX//8z1///M9f//y9TU/Mv0/ajN9/4kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADO8v4Vy/X+VMr0/nXL9v5yy/X+VMbw/hIAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextImageRelation" Value="ImageBeforeText" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigationElementFill,NavigatorElementBorder,NavigatorElementShape,NavigationElementPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextImageRelation" Value="TextBeforeImage" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTHs07jyLO61Mi0/Ny7pf/dvaf/1Mi0/OPItMPlybVaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA3cy7D+XGsrTUsJj/vI9z/7B9X/+1hWn/tINn/698Xv+5i2//0ayU/+PItMPmwrYVAAAAAAAAAAAAAAAA4sapCeXItMnKoor/vZF2/9aznP/kyLT/5cm1/+XJtf/kyLT/2Lag/8CUev/JoIj/5cez2Om/qgwAAAAAAAAAAOXItJbNpo7/1LGa/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/2Lag/82njv/kx7OlAAAAAOfIsSHUyLT82bii/+XJtf/lybX/5cm1/+XJtf/05dn/9OXZ/+XJtf/lybX/5cm1/+XJtf/cvaf/27qk/+TJtDDkx7R72rmj/+XJtf/lybX/5cm1/+XJtf/05dn/TCQL/0wkC//05dn/5cm1/+XJtf/lybX/5cm1/9q6pP/kyLOH5caytOTItP/lybX/5cm1/+XJtf/05dn/WisO/1orDv9aKw7/WisO//Tl2f/lybX/5cm1/+XJtf/lybX/48i0zOPItMzlybX/5cm1/+XJtf/05dn/aTIQ/2kyEP9pMhD/aTIQ/2kyEP9pMhD/9OXZ/+XJtf/lybX/5cm1/+PItMzjyLTD5cm1/+XJtf/lybX/dzgS/3c4Ev93OBL/dzgS/3c4Ev93OBL/dzgS/3c4Ev/lybX/5cm1/+XJtf/jyLTM5ci0jeXJtf/lybX/5cm1/+XJtf/lybX/5cm1/4M+FP+DPhT/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5MezpebGsj/lyLT/5cm1/+XJtf/lybX/5cm1/+XJtf+LQhX/i0IV/+XJtf/lybX/5cm1/+XJtf/lybX/5ci0/+XJs1EAAAAA5ce0xuXJtf/lybX/5cm1/+XJtf/lybX/i0IV/4tCFf/lybX/5cm1/+XJtf/lybX/5cm1/+XIstIAAAAAAAAAAOLGsSTlw7Lw5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XItPbmyLQzAAAAAAAAAAAAAAAA5MmyOeDIsOrlybX/5cm1/+XJtf/lybX/5cm1/+XJtf/lybX/5cm1/+XDsvDlx7VFAAAAAAAAAAAAAAAAAAAAAAAAAADixrMb5cizn9TItPzlyLT/5ci0/+XItP/lyLT/1Mi0/OXItKjixrEkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADmwrYV48izVOTItHXkx7Jy48izVOLGuBIAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement.NavigateForward" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigationElementHoveredFill,NavigatorElementShape,NavigationElementPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMr1/k7J9f26y9TU/L7x///A8f//y9TU/Mn0/MPL8/5aAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzO7/D8r1/bSz7f//k+P//4Ld//+K4P//iOD//4Hd//+P4v//r+z//8n0/MPO8v4VAAAAAAAAAAAAAAAAxv7+Ccjz/Mmm6f//leT//7fv///M9v//zfb//832///M9v//uvD//5nl//+k6f//y/X72NT//wwAAAAAAAAAAMr0/Zaq6///te7//832///N9v//zfb//832///N9v//zfb//832///N9v//uvD//6rq///K9f2lAAAAAMj3/iHL1NT8vPD//832///N9v//zfb//832///q+///6vv//832///N9v//zfb//832///B8v//vfD//8n0/zDL9P57vPD//832///N9v//zfb//832///q+///TCQL/0wkC//q+///zfb//832///N9v//zfb//73x///K9f2HyvX9tMz2///N9v//zfb//832///q+///WisO/1orDv9aKw7/WisO/+r7///N9v//zfb//832///N9v//yvX/zMr1/8zN9v//zfb//832///q+///aTIQ/2kyEP9pMhD/aTIQ/2kyEP9pMhD/6vv//832///N9v//zfb//8r1/8zJ9PzDzfb//832///N9v//dzgS/3c4Ev93OBL/dzgS/3c4Ev93OBL/dzgS/3c4Ev/N9v//zfb//832///K9f/MyvT9jcz2///N9v//zfb//832///N9v//zfb//4M+FP+DPhT/zfb//832///N9v//zfb//832///M9v//yvX9pcr2/j/L9f//zfb//832///N9v//zfb//832//+LQhX/i0IV/832///N9v//zfb//832///N9v//zPX//8n1/lEAAAAAy/P8xsz2///N9v//zfb//832///N9v//i0IV/4tCFf/N9v//zfb//832///N9v//zPb//8n1/NIAAAAAAAAAAM33/iTD9f/wzPb//832///N9v//zfb//832///N9v//zfb//832///N9v//zPb//8vw8PbN9f8zAAAAAAAAAAAAAAAAyfb+Ocj1+OrM9v//zfb//832///N9v//zfb//832///N9v//zPb//8P1//DL8/5FAAAAAAAAAAAAAAAAAAAAAAAAAADG9f4by/X9n8vU1PzM9f//zPX//8z1///M9f//y9TU/Mv0/ajN9/4kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADO8v4Vy/X+VMr0/nXL9v5yy/X+VMbw/hIAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextImageRelation" Value="TextBeforeImage" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement.MouseOver.NavigateForward" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellNormalBorder,SchedulerCellNormalFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellIsWholeHourBorder,SchedulerCellNormalFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayBorder,SchedulerCellNormalFill,SchedulerCellTodayWholeHourBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayWholeHourBorder,SchedulerCellNormalFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellIsWholeHourBorder,WhiteBackground">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsWorkTime.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayWholeHourBorder,WhiteBackground">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday.IsWorkTime.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,SchedulerCellNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellMouseOverFill,SchedulerCellMouseOverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedBorder,SchedulerCellSelectedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedBorder,SchedulerCellSelectedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellMouseOverBorder,SchedulerCellMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedBorder,SchedulerCellSelectedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsWorkTime.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellMouseOverBorder,SchedulerCellMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsWorkTime.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayMouseOverBorder,SchedulerCellMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedTodayBorder,SchedulerCellSelectedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedTodayBorder,SchedulerCellSelectedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayMouseOverBorder,SchedulerCellMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsToday.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedTodayBorder,SchedulerCellSelectedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday.IsWorkTime.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayMouseOverBorder,SchedulerCellMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsToday.IsWorkTime.IsWholeHour" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMkdDZ0FBQUFBQUFEWUFBQUFvQUFBQUlRQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9ROC8vLzBUUS8vOUUwZi8vUnRILy8wZlMvLzlJMC8vL1N0VC8vMHZWLy85TTF2Ly9UdGYvLzAvWS8vOVEyZi8vVXRyLy8xUGIvLzlVMi8vL1ZOei8vMVhkLy85VTNQLy9WTnYvLzFQYi8vOVMydi8vVU5uLy8wL1kvLzlPMS8vL1ROYi8vMHZWLy85SzFQLy9TTlAvLzBmUy8vOUcwZi8vUk5ILy8wVFEvLzlEei8vL1E4Ly8vMFRRLy85RTBmLy9SdEgvLzBmUy8vOUkwLy8vU3RULy8wdlYvLzlNMXYvL1R0Zi8vMC9ZLy85UTJmLy9VdHIvLzFQYi8vOVUyLy8vVk56Ly8xWGQvLzlVM1AvL1ZOdi8vMVBiLy85UzJ2Ly9VTm4vLzAvWS8vOU8xLy8vVE5iLy8wdlYvLzlLMVAvL1NOUC8vMGZTLy85RzBmLy9STkgvLzBUUS8vOUR6Ly8vUTgvLy8wVFEvLzlFMGYvL1J0SC8vMGZTLy85STAvLy9TdFQvLzB2Vi8vOU0xdi8vVHRmLy8wL1kvLzlRMmYvL1V0ci8vMVBiLy85VTIvLy9WTnovLzFYZC8vOVUzUC8vVk52Ly8xUGIvLzlTMnYvL1VObi8vMC9ZLy85TzEvLy9UTmIvLzB2Vi8vOUsxUC8vU05QLy8wZlMvLzlHMGYvL1JOSC8vMFRRLy85RHovLy9ROC8vLzBUUS8vOUUwZi8vUnRILy8wZlMvLzlJMC8vL1N0VC8vMHZWLy85TTF2Ly9UdGYvLzAvWS8vOVEyZi8vVXRyLy8xUGIvLzlVMi8vL1ZOei8vMVhkLy85VTNQLy9WTnYvLzFQYi8vOVMydi8vVU5uLy8wL1kvLzlPMS8vL1ROYi8vMHZWLy85SzFQLy9TTlAvLzBmUy8vOUcwZi8vUk5ILy8wVFEvLzlEei8vL1JNNy8vMFhQLy85RzBQLy9SOUgvLzBuUi8vOUswdi8vUzlQLy8wM1YvLzlPMXYvL1Q5Zi8vMURZLy85UzJmLy9VOW4vLzFUYS8vOVYyLy8vVmR6Ly8xYmMvLzlWM1AvL1Zkdi8vMVRhLy85VDJmLy9VdG4vLzFEWS8vOVAxLy8vVHRiLy8wM1YvLzlMMC8vL1N0TC8vMG5SLy85SDBmLy9SdEQvLzBYUC8vOUV6di8vUnN6Ly8wZk4vLzlJenYvL1NjLy8vMHJRLy85TDBmLy9UZEwvLzA3VC8vOVAxUC8vVWRYLy8xTFcvLzlUMS8vL1ZOai8vMVhaLy85VzJ2Ly9WOXYvLzFmYi8vOVgyLy8vVnRyLy8xWFovLzlVMlAvL1U5Zi8vMUxXLy85UjFmLy9UOVQvLzA3VC8vOU4wdi8vUzlILy8wclEvLzlKei8vL1NNNy8vMGZOLy85R3pQLy9TY3IvLzByTC8vOUx6UC8vVE0zLy8wM08vLzlPei8vL1Q5RC8vMURTLy85UjAvLy9VOVQvLzFUVi8vOVYxdi8vVnRmLy8xYlkvLzlYMmYvL1dOci8vMW5hLy85WTJ2Ly9WOW4vLzFiWS8vOVcxLy8vVmRiLy8xVFYvLzlUMVAvL1VkUC8vMURTLy85UDBQLy9Ucy8vLzAzTy8vOU16Zi8vUzh6Ly8wckwvLzlKeXYvL1RNai8vMDNKLy85T3l2Ly9UOHYvLzAvTS8vOVF6Zi8vVWMvLy8xUFEvLzlVMGYvL1ZkUC8vMWJVLy85WDFmLy9WOWIvLzFqWC8vOVoyUC8vV3RuLy8xclovLzlhMmYvL1dkai8vMWpYLy85WDF2Ly9WOVgvLzFiVS8vOVYwLy8vVk5ILy8xUFEvLzlSei8vL1VNMy8vMC9NLy85UHkvLy9Uc3IvLzAzSi8vOU15UC8vVDhiLy8xREgvLzlReVAvL1Vjbi8vMUxMLy85VHpQLy9WTTMvLzFYUC8vOVcwUC8vVjlILy8xalMvLzlZMVAvL1dkWC8vMXJXLy85YTEvLy9XOWYvLzF6WS8vOWIxLy8vV3RmLy8xclcvLzlaMWYvL1dOVC8vMWpTLy85WDBmLy9WdEQvLzFYUC8vOVV6Zi8vVTh6Ly8xTEwvLzlSeWYvL1VNai8vMURILy85UHh2Ly9VOFgvLzFQRy8vOVV4di8vVmNqLy8xWEovLzlXeXYvL1Y4ei8vMWpOLy85Wnp2Ly9XZEQvLzFyUi8vOWIwdi8vWE5ULy8xelYvLzlkMXYvL1hkYi8vMTdYLy85ZDF2Ly9YZGIvLzF6Vi8vOWMxUC8vVzlMLy8xclIvLzlaMFAvL1djNy8vMWpOLy85WHpQLy9Wc3IvLzFYSi8vOVZ5UC8vVk1iLy8xUEcvLzlUeGYvL1Y4VC8vMWZGLy85WXh2Ly9XTWYvLzFuSS8vOVp5Zi8vV3N2Ly8xdk0vLzlienYvL1hNLy8vMTNRLy85ZDB2Ly9YdFAvLzE3VS8vOWYxZi8vWDliLy8yRFgvLzlmMXYvL1g5WC8vMTdVLy85ZTAvLy9YZEwvLzEzUS8vOWN6Ly8vVzg3Ly8xdk0vLzlheS8vL1djbi8vMW5JLy85WXgvLy9XTWIvLzFmRi8vOVh4UC8vVzhQLy8xdkUvLzlieGYvL1hNYi8vMXpILy85ZHlmLy9YY3IvLzE3TS8vOWV6Zi8vWDgvLy8xL1EvLzlnMGYvL1lOTC8vMkhULy85aDFQLy9ZZFgvLzJMVy8vOWgxZi8vWWRULy8ySFQvLzlnMHYvL1lOSC8vMS9RLy85ZnovLy9YczMvLzE3TS8vOWR5di8vWGNuLy8xekgvLzljeHYvL1c4WC8vMXZFLy85YncvLy9YOFAvLzJERS8vOWd4Zi8vWU1iLy8yREgvLzloeWYvL1ljci8vMkxNLy85aXpmLy9Zcy8vLzJQUS8vOWowZi8vWTlMLy8yUFQvLzlrMVAvL1pOWC8vMlRXLy85azFmLy9aTlQvLzJQVC8vOWowdi8vWTlILy8yUFEvLzlpei8vL1lzMy8vMkxNLy85aHl2Ly9ZY24vLzJESC8vOWd4di8vWU1YLy8yREUvLzlmdy8vL2xkdjgvNVRiL1ArVDIvei9rdHo4LzVEZC9QK1AzZjMvamQ3OS80dmUvZitLMy8zL2lOLzkvNGZnL2YrRjRmMy9oT0g5LzRQaC9mK0M0djMvZ2VMOS80RGovditCNHYzL2d1TDkvNFBoL2YrRTRmMy9oZUg5LzRmZy9mK0kzLzMvaXQvOS80dmUvZitOM3YzL2o5MzkvNURkL1ArUzNQei9rOXY4LzVUYi9QK1YyL3ovbGR2OC81VGIvUCtUMi96L2t0ejgvNURkL1ArUDNmMy9qZDc5LzR2ZS9mK0szLzMvaU4vOS80ZmcvZitGNGYzL2hPSDkvNFBoL2YrQzR2My9nZUw5LzREai92K0I0djMvZ3VMOS80UGgvZitFNGYzL2hlSDkvNGZnL2YrSTMvMy9pdC85LzR2ZS9mK04zdjMvajkzOS81RGQvUCtTM1B6L2s5djgvNVRiL1ArVjIvei9sTnY4LzVQYi9QK1MyL3ova2R6OC80L2QvUCtPM2YzL2pONzkvNHZlL2YrSjMvMy9pTi85LzRiZy9mK0Y0ZjMvZytIOS80TGgvZitCNHYzL2dPTDkvMy9qL3YrQTR2My9nZUw5LzRMaC9mK0Q0ZjMvaGVIOS80YmcvZitJMy8zL2lkLzkvNHZlL2YrTTN2My9qdDM5LzQvZC9QK1IzUHova3R2OC81UGIvUCtVMi96L2tkdjgvNURiL1ArUDIvei9qdHo4LzQzZC9QK0wzZjMvaXQ3OS80amUvZitIMy8zL2hkLzkvNFRnL2YrRDRmMy9ndUg5LzRIaC9mK0E0djMvZitMOS8zN2ovdjkvNHYzL2dPTDkvNEhoL2YrQzRmMy9nK0g5LzRUZy9mK0YzLzMvaDkvOS80amUvZitLM3YzL2k5MzkvNDNkL1ArTzNQei9qOXY4LzVEYi9QK1IyL3ova2R2OC81RGIvUCtQMi96L2p0ejgvNDNkL1ArTDNmMy9pdDc5LzRqZS9mK0gzLzMvaGQvOS80VGcvZitENGYzL2d1SDkvNEhoL2YrQTR2My9mK0w5LzM3ai92OS80djMvZ09MOS80SGgvZitDNGYzL2crSDkvNFRnL2YrRjMvMy9oOS85LzRqZS9mK0szdjMvaTkzOS80M2QvUCtPM1B6L2o5djgvNURiL1ArUjIvei88L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjM8L0JvdHRvbT48TGVmdD4xPC9MZWZ0PjxSaWdodD4yPC9SaWdodD48VG9wPjQ8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, -2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayAllDayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMkdCUUFBQUFBQUFEWUFBQUFvQUFBQUNnQUFBQ0lBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQUFITC8vd0J5Ly8vbHliai81Y200LytYSnVQL2x5YmovNWMvQi8rWFB3ZjhBY3YvL0FITC8vd0J5Ly84QWN2Ly81Y3E1LytYS3VmL2x5cm4vNWNxNS8rWFB3Zi9sejhIL0FITC8vd0J5Ly84QWN2Ly9BSEwvLytYTHV2L2x5N3IvNWN1Ni8rWEx1di9sejhILzVjL0Ivd0J5Ly84QWN2Ly9BSEwvL3dCeS8vL2x6THYvNWN5Ny8rWE11Ly9sekx2LzVjL0IvK1hQd2Y4QWN2Ly9BSEwvL3dCeS8vOEFjdi8vNWMyOS8rWE52Zi9semIzLzVjMjkvK1hQd2YvbHo4SC9BSEwvL3dCeS8vOEFjdi8vQUhMLy8rWE52Ly9semIvLzVjMi8vK1hOdi8vbHo4SC81Yy9CL3dCeS8vOEFjdi8vQUhMLy93QnkvLy9senIvLzVjNi8vK1hPdi8vbHpyLy81Yy9CLytYUHdmOEFjdi8vQUhMLy93QnkvLzhBY3YvLzVjN0EvK1hPd1AvbHpzRC81YzdBLytYUHdmL2x6OEgvQUhMLy93QnkvLzhBY3YvL0FITC8vK1hQd2YvbHo4SC81Yy9CLytYUHdmL2x6OEgvNWMvQi93QnkvLzhBY3YvL0FITC8vd0J5Ly8vbHo4SC81Yy9CLytYUHdmL2x6OEgvNWMvQi8rWFB3ZjhBY3YvL0FITC8vd0J5Ly84QWN2Ly81Yy9CLytYUHdmL2x6OEgvNWMvQi8rWFB3Zi9sejhIL0FITC8vd0J5Ly84QWN2Ly9BSEwvLytYUHdmL2x6OEgvNWMvQi8rWFB3Zi9sejhILzVjL0Ivd0J5Ly84QWN2Ly9BSEwvL3dCeS8vL2x6OEgvNWMvQi8rWFB3Zi9sejhILzVjL0IvK1hQd2Y4QWN2Ly9BSEwvL3dCeS8vOEFjdi8vNWMvQi8rWFB3Zi9sejhILzVjL0IvK1hQd2YvbHo4SC9BSEwvL3dCeS8vOEFjdi8vQUhMLy8rWFB3Zi9sejhILzVjL0IvK1hQd2YvbHo4SC81Yy9CL3dCeS8vOEFjdi8vQUhMLy93QnkvLy9sejhILzVjL0IvK1hQd2YvbHo4SC81Yy9CLytYUHdmOEFjdi8vQUhMLy93QnkvLzhBY3YvLzVjL0IvK1hQd2YvbHo4SC81Yy9CLytYUHdmL2x6OEgvQUhMLy93QnkvLzhBY3YvL0FITC8vK1hQd2YvbHo4SC81Yy9CLytYUHdmL2x6OEgvNWMvQi93QnkvLzhBY3YvL0FITC8vd0J5Ly8vbHo4SC81Yy9CLytYUHdmL2x6OEgvNWMvQi8rWFB3ZjhBY3YvL0FITC8vd0J5Ly84QWN2Ly81Yy9CLytYUHdmL2x6OEgvNWMvQi8rWFB3Zi9sejhIL0FITC8vd0J5Ly84QWN2Ly9BSEwvLytYUHdmL2x6OEgvNWMvQi8rWFB3Zi9sejhILzVjL0Ivd0J5Ly84QWN2Ly9BSEwvL3dCeS8vL2x6OEgvNWMvQi8rWFB3Zi9sejhILzVjL0IvK1hQd2Y4QWN2Ly9BSEwvL3dCeS8vOEFjdi8vNWMvQi8rWFB3Zi9sejhILzVjL0IvK1hQd2YvbHo4SC9BSEwvL3dCeS8vOEFjdi8vQUhMLy8rWFB3Zi9sejhILzVjL0IvK1hQd2YvbHo4SC81Yy9CL3dCeS8vOEFjdi8vQUhMLy93QnkvLy9sejhILzVjL0IvK1hQd2YvbHo4SC81Yy9CLytYUHdmOEFjdi8vQUhMLy93QnkvLzhBY3YvLzVjL0IvK1hQd2YvbHo4SC81Yy9CLytYUHdmL2x6OEgvQUhMLy93QnkvLzhBY3YvL0FITC8vK1hQd2YvbHo4SC81Yy9CLytYUHdmL2x6OEgvNWMvQi93QnkvLzhBY3YvL0FITC8vd0J5Ly8vbHo4SC81Yy9CLytYUHdmL2x6OEgvNWMvQi8rWFB3ZjhBY3YvL0FITC8vd0J5Ly84QWN2Ly81Yy9CLytYUHdmL2x6OEgvNWMvQi8rWFB3Zi9sejhIL0FITC8vd0J5Ly84QWN2Ly9BSEwvLytYUHdmL2x6OEgvNWMvQi8rWFB3Zi9sejhILzVjL0Ivd0J5Ly84QWN2Ly9BSEwvL3dCeS8vL2x6OEgvNWMvQi8rWFB3Zi9sejhILzVjL0IvK1hQd2Y4QWN2Ly9BSEwvL3dCeS8vOEFjdi8vNWMvQi8rWFB3Zi9sejhILzVjL0IvK1hQd2YvbHo4SC9BSEwvL3dCeS8vOEFjdi8vQUhMLy8rWFB3Zi9sejhILzVjL0IvK1hQd2YvbHo4SC81Yy9CL3dCeS8vOEFjdi8vQUhMLy93QnkvLy9sejhILzVjL0IvK1hQd2YvbHo4SC81Yy9CLytYUHdmOEFjdi8vQUhMLy93PT08L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD4yPC9MZWZ0PjxSaWdodD40PC9SaWdodD48VG9wPjA8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerTimelineViewElement.AppointmentMargin" Value="3, 0, 3, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerTimelineViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCellNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLy83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvKytUVy8vdmsxdi83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvK3VQVS8vcmoxUC82NDlULyt1UFUvL25oMGYvNTRkSC8rZUhSLy9uaDBmLzMzODcvOTkvTy8vZmZ6di8zMzg3LzlkekwvL1hjeS8vMTNNdi85ZHpMLy9UYXlQLzAyc2ovOU5ySS8vVGF5UC95MThULzh0ZkUvL0xYeFAveTE4VC84TlhCLy9EVndmL3cxY0gvOE5YQi8rL1R2di92MDc3Lzc5TysvKy9UdnYvdTA3My83dE85Lys3VHZmL3UwNzMvL2ViWS8vM20yUC85NXRqLy9lYlkvLzNuMmYvOTU5bi8vZWZaLy8zbjJmLzk1OXIvL2VmYS8vM24ydi85NTlyLy9lamIvLzNvMi8vOTZOdi8vZWpiLy8zcTNmLzk2dDMvL2VyZC8vM3EzZjg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4zPC9Cb3R0b20+PExlZnQ+MTwvTGVmdD48UmlnaHQ+MjwvUmlnaHQ+PFRvcD41PC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, -2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCellNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNWJzLy8rVzdQLy9sdXovLzVicy8vK1c2Ly8vbHV2Ly81YnIvLytXNi8vL2x1ci8vNWJxLy8rVzZ2Ly9sdXIvLzViby8vK1c2UC8vbHVqLy81Ym8vLytYNS8vL2wrZi8vNWZuLy8rWDUvLy9tT1gvLzVqbC8vK1k1Zi8vbU9YLy81bmsvLytaNVAvL21lVC8vNW5rLy8rYjVQLy9tK1QvLzV2ay8vK2I1UC8veWZULy84bjAvLy9KOVAvL3lmVC8vOHoxLy8vTTlmLy96UFgvLzh6MS8vL085di8venZiLy84NzIvLy9POXYvLzBQZi8vOUQzLy8vUTkvLy8wUGYvLzlMNC8vL1MrUC8vMHZqLy85TDQvLzg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4zPC9Cb3R0b20+PExlZnQ+MTwvTGVmdD48UmlnaHQ+MjwvUmlnaHQ+PFRvcD41PC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayHeaderCellNormalBorder,SchedulerAllDayHeaderFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedFill,SchedulerCellSelectedTodayBorder,SchedulerCellMouseOverFill,SchedulerCellTodayMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellSelectedFill,SchedulerCellSelectedBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,SchedulerCellTodayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellMouseOverFill,SchedulerCellMouseOverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellMouseOverFill,SchedulerCellTodayMouseOverBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMkdDZ0FBQUFBQUFEWUFBQUFvQUFBQUlRQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9Rcy8vLzBUUS8vOUYwZi8vUjlQLy8wblUvLzlNMXYvL1R0Zi8vMUhaLy85VDIvLy9WdDMvLzFqZi8vOWE0UC8vWGVMLy8xL2svLzloNWYvL1l1Yi8vMlRuLy85bDZQLy9aT2YvLzJMbS8vOWg1Zi8vWCtULy8xM2kvLzlhNFAvL1dOLy8vMWJkLy85VDIvLy9VZG4vLzA3WC8vOU0xdi8vU2RULy8wZlQvLzlGMGYvL1FzLy8vMFRRLy85RjBmLy9SOVAvLzBuVS8vOU0xdi8vVHRmLy8xSFovLzlUMi8vL1Z0My8vMWpmLy85YTRQLy9YZUwvLzEvay8vOWg1Zi8vWXViLy8yVG4vLzlsNlAvL1pPZi8vMkxtLy85aDVmLy9YK1QvLzEzaS8vOWE0UC8vV04vLy8xYmQvLzlUMi8vL1Vkbi8vMDdYLy85TTF2Ly9TZFQvLzBmVC8vOUYwZi8vUXMvLy8wVFEvLzlGMGYvL1I5UC8vMG5VLy85TTF2Ly9UdGYvLzFIWi8vOVQyLy8vVnQzLy8xamYvLzlhNFAvL1hlTC8vMS9rLy85aDVmLy9ZdWIvLzJUbi8vOWw2UC8vWk9mLy8yTG0vLzloNWYvL1grVC8vMTNpLy85YTRQLy9XTi8vLzFiZC8vOVQyLy8vVWRuLy8wN1gvLzlNMXYvL1NkVC8vMGZULy85RjBmLy9Rcy8vLzBUUS8vOUYwZi8vUjlQLy8wblUvLzlNMXYvL1R0Zi8vMUhaLy85VDIvLy9WdDMvLzFqZi8vOWE0UC8vWGVMLy8xL2svLzloNWYvL1l1Yi8vMlRuLy85bDZQLy9aT2YvLzJMbS8vOWg1Zi8vWCtULy8xM2kvLzlhNFAvL1dOLy8vMWJkLy85VDIvLy9VZG4vLzA3WC8vOU0xdi8vU2RULy8wZlQvLzlGMGYvL1JNNy8vMGJQLy85SDBQLy9TZEwvLzB2VC8vOU4xZi8vVDlmLy8xTFovLzlVMi8vL1Y5ei8vMW5lLy85YjRQLy9YZUwvLzEvai8vOWg1Zi8vWStiLy8yVG4vLzlsNlAvL1pPZi8vMlBtLy85aDVmLy9YK1AvLzEzaS8vOWI0UC8vV2Q3Ly8xZmMvLzlVMi8vL1V0bi8vMC9YLy85TjFmLy9TOVAvLzBuUy8vOUgwUC8vUnN6Ly8wZk4vLzlKei8vL1M5RC8vMHpTLy85UDFQLy9VZFgvLzFQWC8vOVYyZi8vVjl2Ly8xcmQvLzljMy8vL1h1SC8vMkRqLy85aTVQLy9ZK2IvLzJUbi8vOWw2UC8vWk9mLy8yUG0vLzlpNVAvL1lPUC8vMTdoLy85YzMvLy9XdDMvLzFmYi8vOVYyZi8vVTlmLy8xSFYvLzlQMVAvL1ROTC8vMHZRLy85SnovLy9TY3IvLzByTC8vOU16Zi8vVGM3Ly8wL1EvLzlSMHYvL1U5VC8vMVhXLy85WDJQLy9XZHIvLzF2ZC8vOWQzdi8vWCtILy8ySGkvLzlpNVAvL1pPWC8vMlhuLy85bTZQLy9aZWYvLzJUbC8vOWk1UC8vWWVMLy8xL2gvLzlkM3YvL1c5My8vMW5hLy85WDJQLy9WZGIvLzFQVS8vOVIwdi8vVDlELy8wM08vLzlNemYvL1RNai8vMDNKLy85T3kvLy9VTTMvLzFITy8vOVQwZi8vVmRQLy8xZlYvLzlaMS8vL1d0bi8vMXpjLy85ZTN2Ly9ZT0QvLzJIaS8vOWo1UC8vWk9YLy8yWG0vLzltNS8vL1plYi8vMlRsLy85ajVQLy9ZZUwvLzJEZy8vOWUzdi8vWE56Ly8xclovLzlaMS8vL1Y5WC8vMVhULy85VDBmLy9VYzcvLzFETi8vOU95Ly8vVDhiLy8xREkvLzlSeWYvL1Vzdi8vMVROLy85VnovLy9WOUgvLzFqVS8vOWExdi8vWE5uLy8xN2IvLzlmM2YvL1lkLy8vMkxoLy85ajQvLy9aZVgvLzJibS8vOW01Ly8vWnViLy8yWGwvLzlqNC8vL1l1SC8vMkhmLy85ZjNmLy9YdHYvLzF6Wi8vOWExdi8vV05ULy8xZlIvLzlWei8vL1ZNMy8vMUxMLy85UnlmLy9VOFQvLzFURy8vOVZ4Ly8vVnNuLy8xZkwvLzlZenYvL1dkRC8vMXZULy85YzFmLy9YdGovLzEvYS8vOWgzUC8vWXQvLy8yUGgvLzlrNC8vL1plVC8vMmJtLy85bjUvLy9adWIvLzJYay8vOWs0Ly8vWStILy8yTGYvLzloM1AvL1g5ci8vMTdZLy85YzFmLy9XOVAvLzFuUS8vOVl6di8vVjh2Ly8xYkovLzlWeC8vL1Y4UC8vMWZGLy85WXgvLy9XY2ovLzFyTC8vOWJ6Zi8vWE0vLy8xM1MvLzlmMVAvL1lOZi8vMkhhLy85aTNQLy9ZOTcvLzJUaC8vOWw0di8vWnVULy8yZm0vLzluNS8vL1orYi8vMmJrLy85bDR2Ly9aT0gvLzJQZS8vOWkzUC8vWWRyLy8yRFgvLzlmMVAvL1hkTC8vMXpQLy85YnpmLy9Xc3YvLzFuSS8vOVl4Ly8vV3NMLy8xdkUvLzljeHYvL1hNai8vMTNLLy85ZXpQLy9YOC8vLzJEUi8vOWgxUC8vWXRmLy8yUFovLzlqM1AvL1pONy8vMlhnLy85bTR2Ly9aK1QvLzJmbS8vOW81Ly8vWitiLy8yZmsvLzltNHYvL1plRC8vMlRlLy85ajNQLy9ZOW4vLzJMWC8vOWgxUC8vWU5ILy8xL1AvLzllelAvL1hjci8vMXpJLy85Y3h2Ly9YOEwvLzJERS8vOWd4di8vWWNqLy8ySEsvLzlpelAvL1lzLy8vMlBSLy85azFQLy9aTmYvLzJYWi8vOWwzUC8vWnQ3Ly8yYmcvLzluNHYvL1orVC8vMmptLy85bzUvLy9hT2IvLzJmay8vOW40di8vWnVELy8yYmUvLzlsM1AvL1pkbi8vMlRYLy85azFQLy9ZOUgvLzJMUC8vOWl6UC8vWWNyLy8ySEkvLzlneHYvL2x0cjgvNVRiL1ArUzNQei9rTjM4LzQzZS9mK0wzLzMvaU9EOS80WGgvZitDNHYzL2YrUCsvM3prL3Y5NjVmNy9kK2IrLzNYbi92OXo1LzcvY2VqLy8yL3AvLzl1NmYvL2Irbi8vM0hvLy85ejUvNy9kZWYrLzNmbS92OTY1ZjcvZk9UKy8zL2ovditDNHYzL2hlSDkvNGpnL2YrTDMvMy9qZDc5LzVEZC9QK1MzUHovbHRyOC81VGIvUCtTM1B6L2tOMzgvNDNlL2YrTDMvMy9pT0Q5LzRYaC9mK0M0djMvZitQKy8zemsvdjk2NWY3L2QrYisvM1huL3Y5ejUvNy9jZWovLzIvcC8vOXU2Zi8vYituLy8zSG8vLzl6NS83L2RlZisvM2ZtL3Y5NjVmNy9mT1QrLzMvai92K0M0djMvaGVIOS80amcvZitMMy8zL2pkNzkvNURkL1ArUzNQei9sZHI4LzVQYi9QK1IzUHovajkzOC80M2UvZitLMy8zL2grRDkvNFhoL2YrQzR2My9mK1ArLzN6ay92OTY1ZjcvZCtiKy8zVG4vdjl5NS83L2NPai8vMi9wLy85dDZmLy9iK24vLzNEby8vOXk1LzcvZE9mKy8zZm0vdjk2NWY3L2ZPVCsvMy9qL3YrQzR2My9oZUg5LzRmZy9mK0szLzMvamQ3OS80L2QvUCtSM1B6L2t0cjgvNURiL1ArTzNQei9qTjM4LzRyZS9mK0kzLzMvaGVEOS80UGgvZitBNHYzL2ZlUCsvM3ZrL3Y5NDVmNy9kdWIrLzNUbi92OXk1LzcvY09qLy8yN3AvLzl0NmYvL2J1bi8vM0RvLy85eTUvNy9kT2YrLzNibS92OTQ1ZjcvZStUKy8zM2ovditBNHYzL2crSDkvNFhnL2YrSTMvMy9pdDc5LzR6ZC9QK08zUHovanRyOC80emIvUCtMM1B6L2lkMzgvNGZlL2YrRjMvMy9nK0Q5LzREaC9mOSs0djMvZStQKy8zbmsvdjkzNWY3L2RlYisvM1BuL3Y5eDUvNy9iK2ovLzI3cC8vOXQ2Zi8vYnVuLy8yL28vLzl4NS83L2MrZisvM1htL3Y5MzVmNy9lZVQrLzN2ai92OSs0djMvZ09IOS80UGcvZitGMy8zL2g5NzkvNG5kL1ArTDNQei88L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjM8L0JvdHRvbT48TGVmdD4xPC9MZWZ0PjxSaWdodD4yPC9SaWdodD48VG9wPjQ8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCelVerticallNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48Um90YXRlRmxpcD5Sb3RhdGUyNzBGbGlwTm9uZTwvUm90YXRlRmxpcD48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLy83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvKytUVy8vdmsxdi83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvK3VQVS8vcmoxUC82NDlULyt1UFUvL25oMGYvNTRkSC8rZUhSLy9uaDBmLzMzODcvOTkvTy8vZmZ6di8zMzg3LzlkekwvL1hjeS8vMTNNdi85ZHpMLy9UYXlQLzAyc2ovOU5ySS8vVGF5UC95MThULzh0ZkUvL0xYeFAveTE4VC84TlhCLy9EVndmL3cxY0gvOE5YQi8rL1R2di92MDc3Lzc5TysvKy9UdnYvdTA3My83dE85Lys3VHZmL3UwNzMvL2ViWS8vM20yUC85NXRqLy9lYlkvLzNuMmYvOTU5bi8vZWZaLy8zbjJmLzk1OXIvL2VmYS8vM24ydi85NTlyLy9lamIvLzNvMi8vOTZOdi8vZWpiLy8zcTNmLzk2dDMvL2VyZC8vM3EzZjg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4yPC9Cb3R0b20+PExlZnQ+NTwvTGVmdD48UmlnaHQ+MzwvUmlnaHQ+PFRvcD4xPC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.FlipText" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCelVerticallNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48Um90YXRlRmxpcD5Sb3RhdGUyNzBGbGlwTm9uZTwvUm90YXRlRmxpcD48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNWJzLy8rVzdQLy9sdXovLzVicy8vK1c2Ly8vbHV2Ly81YnIvLytXNi8vL2x1ci8vNWJxLy8rVzZ2Ly9sdXIvLzViby8vK1c2UC8vbHVqLy81Ym8vLytYNS8vL2wrZi8vNWZuLy8rWDUvLy9tT1gvLzVqbC8vK1k1Zi8vbU9YLy81bmsvLytaNVAvL21lVC8vNW5rLy8rYjVQLy9tK1QvLzV2ay8vK2I1UC8veWZULy84bjAvLy9KOVAvL3lmVC8vOHoxLy8vTTlmLy96UFgvLzh6MS8vL085di8venZiLy84NzIvLy9POXYvLzBQZi8vOUQzLy8vUTkvLy8wUGYvLzlMNC8vL1MrUC8vMHZqLy85TDQvLzg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4yPC9Cb3R0b20+PExlZnQ+NTwvTGVmdD48UmlnaHQ+MzwvUmlnaHQ+PFRvcD4xPC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.MouseOver.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerRulerBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RulerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayAllDayBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMkdCUUFBQUFBQUFEWUFBQUFvQUFBQUNnQUFBQ0lBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQUFITC8veU45N2YrMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUDhqZmUzL0FITC8vd0J5Ly84amZlMy90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL0kzM3Qvd0J5Ly84QWN2Ly9JMzN0LzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcveU45N2Y4QWN2Ly9BSEwvL3lOOTdmKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1A4amZlMy9BSEwvL3dCeS8vOGpmZTMvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC9JMzN0L3dCeS8vOEFjdi8vSTMzdC83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnL3lOOTdmOEFjdi8vQUhMLy95Tjk3ZisycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QOGpmZTMvQUhMLy93QnkvLzhqZmUzL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QKzJxcUQvSTMzdC93QnkvLzhBY3YvL0kzM3QvN2Fxb1ArMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy95Tjk3ZjhBY3YvL0FITC8veU45N2YrMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUDhqZmUzL0FITC8vd0J5Ly84amZlMy90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL0kzM3Qvd0J5Ly84QWN2Ly9JMzN0LzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcveU45N2Y4QWN2Ly9BSEwvL3lOOTdmKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1A4amZlMy9BSEwvL3dCeS8vOGpmZTMvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC9JMzN0L3dCeS8vOEFjdi8vSTMzdC83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnL3lOOTdmOEFjdi8vQUhMLy95Tjk3ZisycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QOGpmZTMvQUhMLy93QnkvLzhqZmUzL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QKzJxcUQvSTMzdC93QnkvLzhBY3YvL0kzM3QvN2Fxb1ArMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy95Tjk3ZjhBY3YvL0FITC8veU45N2YrMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUDhqZmUzL0FITC8vd0J5Ly84amZlMy90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL0kzM3Qvd0J5Ly84QWN2Ly9JMzN0LzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcveU45N2Y4QWN2Ly9BSEwvL3lOOTdmKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1A4amZlMy9BSEwvL3dCeS8vOGpmZTMvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC9JMzN0L3dCeS8vOEFjdi8vSTMzdC83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnL3lOOTdmOEFjdi8vQUhMLy95Tjk3ZisycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QOGpmZTMvQUhMLy93QnkvLzhqZmUzL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QKzJxcUQvSTMzdC93QnkvLzhBY3YvL0kzM3QvN2Fxb1ArMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy95Tjk3ZjhBY3YvL0FITC8veU45N2YrMnFxRC90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUDhqZmUzL0FITC8vd0J5Ly84amZlMy90cXFnLzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL0kzM3Qvd0J5Ly84QWN2Ly9JMzN0LzdhcW9QKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcveU45N2Y4QWN2Ly9BSEwvL3lOOTdmKzJxcUQvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1A4amZlMy9BSEwvL3dCeS8vOGpmZTMvdHFxZy83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC9JMzN0L3dCeS8vOEFjdi8vSTMzdC83YXFvUCsycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnL3lOOTdmOEFjdi8vQUhMLy95Tjk3ZisycXFEL3RxcWcvN2Fxb1ArMnFxRC90cXFnLzdhcW9QOGpmZTMvQUhMLy93PT08L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD4yPC9MZWZ0PjxSaWdodD40PC9SaWdodD48VG9wPjA8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerAllDayHeaderCellNormalBorder,SchedulerAllDaySelectedHeaderFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMkdDZ0FBQUFBQUFEWUFBQUFvQUFBQUlRQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9ROC8vLzBUUS8vOUUwZi8vUnRILy8wZlMvLzlJMC8vL1N0VC8vMHZWLy85TTF2Ly9UdGYvLzAvWS8vOVEyZi8vVXRyLy8xUGIvLzlVMi8vL1ZOei8vMVhkLy85VTNQLy9WTnYvLzFQYi8vOVMydi8vVU5uLy8wL1kvLzlPMS8vL1ROYi8vMHZWLy85SzFQLy9TTlAvLzBmUy8vOUcwZi8vUk5ILy8wVFEvLzlEei8vL1E4Ly8vMFRRLy85RTBmLy9SdEgvLzBmUy8vOUkwLy8vU3RULy8wdlYvLzlNMXYvL1R0Zi8vMC9ZLy85UTJmLy9VdHIvLzFQYi8vOVUyLy8vVk56Ly8xWGQvLzlVM1AvL1ZOdi8vMVBiLy85UzJ2Ly9VTm4vLzAvWS8vOU8xLy8vVE5iLy8wdlYvLzlLMVAvL1NOUC8vMGZTLy85RzBmLy9STkgvLzBUUS8vOUR6Ly8vUTgvLy8wVFEvLzlFMGYvL1J0SC8vMGZTLy85STAvLy9TdFQvLzB2Vi8vOU0xdi8vVHRmLy8wL1kvLzlRMmYvL1V0ci8vMVBiLy85VTIvLy9WTnovLzFYZC8vOVUzUC8vVk52Ly8xUGIvLzlTMnYvL1VObi8vMC9ZLy85TzEvLy9UTmIvLzB2Vi8vOUsxUC8vU05QLy8wZlMvLzlHMGYvL1JOSC8vMFRRLy85RHovLy9ROC8vLzBUUS8vOUUwZi8vUnRILy8wZlMvLzlJMC8vL1N0VC8vMHZWLy85TTF2Ly9UdGYvLzAvWS8vOVEyZi8vVXRyLy8xUGIvLzlVMi8vL1ZOei8vMVhkLy85VTNQLy9WTnYvLzFQYi8vOVMydi8vVU5uLy8wL1kvLzlPMS8vL1ROYi8vMHZWLy85SzFQLy9TTlAvLzBmUy8vOUcwZi8vUk5ILy8wVFEvLzlEei8vL1JNNy8vMFhQLy85RzBQLy9SOUgvLzBuUi8vOUswdi8vUzlQLy8wM1YvLzlPMXYvL1Q5Zi8vMURZLy85UzJmLy9VOW4vLzFUYS8vOVYyLy8vVmR6Ly8xYmMvLzlWM1AvL1Zkdi8vMVRhLy85VDJmLy9VdG4vLzFEWS8vOVAxLy8vVHRiLy8wM1YvLzlMMC8vL1N0TC8vMG5SLy85SDBmLy9SdEQvLzBYUC8vOUV6di8vUnN6Ly8wZk4vLzlJenYvL1NjLy8vMHJRLy85TDBmLy9UZEwvLzA3VC8vOVAxUC8vVWRYLy8xTFcvLzlUMS8vL1ZOai8vMVhaLy85VzJ2Ly9WOXYvLzFmYi8vOVgyLy8vVnRyLy8xWFovLzlVMlAvL1U5Zi8vMUxXLy85UjFmLy9UOVQvLzA3VC8vOU4wdi8vUzlILy8wclEvLzlKei8vL1NNNy8vMGZOLy85R3pQLy9TY3IvLzByTC8vOUx6UC8vVE0zLy8wM08vLzlPei8vL1Q5RC8vMURTLy85UjAvLy9VOVQvLzFUVi8vOVYxdi8vVnRmLy8xYlkvLzlYMmYvL1dOci8vMW5hLy85WTJ2Ly9WOW4vLzFiWS8vOVcxLy8vVmRiLy8xVFYvLzlUMVAvL1VkUC8vMURTLy85UDBQLy9Ucy8vLzAzTy8vOU16Zi8vUzh6Ly8wckwvLzlKeXYvL1RNai8vMDNKLy85T3l2Ly9UOHYvLzAvTS8vOVF6Zi8vVWMvLy8xUFEvLzlVMGYvL1ZkUC8vMWJVLy85WDFmLy9WOWIvLzFqWC8vOVoyUC8vV3RuLy8xclovLzlhMmYvL1dkai8vMWpYLy85WDF2Ly9WOVgvLzFiVS8vOVYwLy8vVk5ILy8xUFEvLzlSei8vL1VNMy8vMC9NLy85UHkvLy9Uc3IvLzAzSi8vOU15UC8vVDhiLy8xREgvLzlReVAvL1Vjbi8vMUxMLy85VHpQLy9WTTMvLzFYUC8vOVcwUC8vVjlILy8xalMvLzlZMVAvL1dkWC8vMXJXLy85YTEvLy9XOWYvLzF6WS8vOWIxLy8vV3RmLy8xclcvLzlaMWYvL1dOVC8vMWpTLy85WDBmLy9WdEQvLzFYUC8vOVV6Zi8vVTh6Ly8xTEwvLzlSeWYvL1VNai8vMURILy85UHh2Ly9VOFgvLzFQRy8vOVV4di8vVmNqLy8xWEovLzlXeXYvL1Y4ei8vMWpOLy85Wnp2Ly9XZEQvLzFyUi8vOWIwdi8vWE5ULy8xelYvLzlkMXYvL1hkYi8vMTdYLy85ZDF2Ly9YZGIvLzF6Vi8vOWMxUC8vVzlMLy8xclIvLzlaMFAvL1djNy8vMWpOLy85WHpQLy9Wc3IvLzFYSi8vOVZ5UC8vVk1iLy8xUEcvLzlUeGYvL1Y4VC8vMWZGLy85WXh2Ly9XTWYvLzFuSS8vOVp5Zi8vV3N2Ly8xdk0vLzlienYvL1hNLy8vMTNRLy85ZDB2Ly9YdFAvLzE3VS8vOWYxZi8vWDliLy8yRFgvLzlmMXYvL1g5WC8vMTdVLy85ZTAvLy9YZEwvLzEzUS8vOWN6Ly8vVzg3Ly8xdk0vLzlheS8vL1djbi8vMW5JLy85WXgvLy9XTWIvLzFmRi8vOVh4UC8vVzhQLy8xdkUvLzlieGYvL1hNYi8vMXpILy85ZHlmLy9YY3IvLzE3TS8vOWV6Zi8vWDgvLy8xL1EvLzlnMGYvL1lOTC8vMkhULy85aDFQLy9ZZFgvLzJMVy8vOWgxZi8vWWRULy8ySFQvLzlnMHYvL1lOSC8vMS9RLy85ZnovLy9YczMvLzE3TS8vOWR5di8vWGNuLy8xekgvLzljeHYvL1c4WC8vMXZFLy85YncvLy9YOFAvLzJERS8vOWd4Zi8vWU1iLy8yREgvLzloeWYvL1ljci8vMkxNLy85aXpmLy9Zcy8vLzJQUS8vOWowZi8vWTlMLy8yUFQvLzlrMVAvL1pOWC8vMlRXLy85azFmLy9aTlQvLzJQVC8vOWowdi8vWTlILy8yUFEvLzlpei8vL1lzMy8vMkxNLy85aHl2Ly9ZY24vLzJESC8vOWd4di8vWU1YLy8yREUvLzlmdy8vL2xkdjgvNVRiL1ArVDIvei9rdHo4LzVEZC9QK1AzZjMvamQ3OS80dmUvZitLMy8zL2lOLzkvNGZnL2YrRjRmMy9oT0g5LzRQaC9mK0M0djMvZ2VMOS80RGovditCNHYzL2d1TDkvNFBoL2YrRTRmMy9oZUg5LzRmZy9mK0kzLzMvaXQvOS80dmUvZitOM3YzL2o5MzkvNURkL1ArUzNQei9rOXY4LzVUYi9QK1YyL3ovbGR2OC81VGIvUCtUMi96L2t0ejgvNURkL1ArUDNmMy9qZDc5LzR2ZS9mK0szLzMvaU4vOS80ZmcvZitGNGYzL2hPSDkvNFBoL2YrQzR2My9nZUw5LzREai92K0I0djMvZ3VMOS80UGgvZitFNGYzL2hlSDkvNGZnL2YrSTMvMy9pdC85LzR2ZS9mK04zdjMvajkzOS81RGQvUCtTM1B6L2s5djgvNVRiL1ArVjIvei9sTnY4LzVQYi9QK1MyL3ova2R6OC80L2QvUCtPM2YzL2pONzkvNHZlL2YrSjMvMy9pTi85LzRiZy9mK0Y0ZjMvZytIOS80TGgvZitCNHYzL2dPTDkvMy9qL3YrQTR2My9nZUw5LzRMaC9mK0Q0ZjMvaGVIOS80YmcvZitJMy8zL2lkLzkvNHZlL2YrTTN2My9qdDM5LzQvZC9QK1IzUHova3R2OC81UGIvUCtVMi96L2tkdjgvNURiL1ArUDIvei9qdHo4LzQzZC9QK0wzZjMvaXQ3OS80amUvZitIMy8zL2hkLzkvNFRnL2YrRDRmMy9ndUg5LzRIaC9mK0E0djMvZitMOS8zN2ovdjkvNHYzL2dPTDkvNEhoL2YrQzRmMy9nK0g5LzRUZy9mK0YzLzMvaDkvOS80amUvZitLM3YzL2k5MzkvNDNkL1ArTzNQei9qOXY4LzVEYi9QK1IyL3ova2R2OC81RGIvUCtQMi96L2p0ejgvNDNkL1ArTDNmMy9pdDc5LzRqZS9mK0gzLzMvaGQvOS80VGcvZitENGYzL2d1SDkvNEhoL2YrQTR2My9mK0w5LzM3ai92OS80djMvZ09MOS80SGgvZitDNGYzL2crSDkvNFRnL2YrRjMvMy9oOS85LzRqZS9mK0szdjMvaTkzOS80M2QvUCtPM1B6L2o5djgvNURiL1ArUjIvei88L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjM8L0JvdHRvbT48TGVmdD4xPC9MZWZ0PjxSaWdodD4yPC9SaWdodD48VG9wPjQ8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, -2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCellNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLy83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvKytUVy8vdmsxdi83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvK3VQVS8vcmoxUC82NDlULyt1UFUvL25oMGYvNTRkSC8rZUhSLy9uaDBmLzMzODcvOTkvTy8vZmZ6di8zMzg3LzlkekwvL1hjeS8vMTNNdi85ZHpMLy9UYXlQLzAyc2ovOU5ySS8vVGF5UC95MThULzh0ZkUvL0xYeFAveTE4VC84TlhCLy9EVndmL3cxY0gvOE5YQi8rL1R2di92MDc3Lzc5TysvKy9UdnYvdTA3My83dE85Lys3VHZmL3UwNzMvL2ViWS8vM20yUC85NXRqLy9lYlkvLzNuMmYvOTU5bi8vZWZaLy8zbjJmLzk1OXIvL2VmYS8vM24ydi85NTlyLy9lamIvLzNvMi8vOTZOdi8vZWpiLy8zcTNmLzk2dDMvL2VyZC8vM3EzZjg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4zPC9Cb3R0b20+PExlZnQ+MTwvTGVmdD48UmlnaHQ+MjwvUmlnaHQ+PFRvcD41PC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, -2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCellNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNWJzLy8rVzdQLy9sdXovLzVicy8vK1c2Ly8vbHV2Ly81YnIvLytXNi8vL2x1ci8vNWJxLy8rVzZ2Ly9sdXIvLzViby8vK1c2UC8vbHVqLy81Ym8vLytYNS8vL2wrZi8vNWZuLy8rWDUvLy9tT1gvLzVqbC8vK1k1Zi8vbU9YLy81bmsvLytaNVAvL21lVC8vNW5rLy8rYjVQLy9tK1QvLzV2ay8vK2I1UC8veWZULy84bjAvLy9KOVAvL3lmVC8vOHoxLy8vTTlmLy96UFgvLzh6MS8vL085di8venZiLy84NzIvLy9POXYvLzBQZi8vOUQzLy8vUTkvLy8wUGYvLzlMNC8vL1MrUC8vMHZqLy85TDQvLzg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4zPC9Cb3R0b20+PExlZnQ+MTwvTGVmdD48UmlnaHQ+MjwvUmlnaHQ+PFRvcD41PC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerCellTodayHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMkdDZ0FBQUFBQUFEWUFBQUFvQUFBQUlRQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9BSEwvL3dCeS8vOEFjdi8vQUhMLy93QnkvLzhBY3YvL0FITC8vd0J5Ly84QWN2Ly9Rcy8vLzBUUS8vOUYwZi8vUjlQLy8wblUvLzlNMXYvL1R0Zi8vMUhaLy85VDIvLy9WdDMvLzFqZi8vOWE0UC8vWGVMLy8xL2svLzloNWYvL1l1Yi8vMlRuLy85bDZQLy9aT2YvLzJMbS8vOWg1Zi8vWCtULy8xM2kvLzlhNFAvL1dOLy8vMWJkLy85VDIvLy9VZG4vLzA3WC8vOU0xdi8vU2RULy8wZlQvLzlGMGYvL1FzLy8vMFRRLy85RjBmLy9SOVAvLzBuVS8vOU0xdi8vVHRmLy8xSFovLzlUMi8vL1Z0My8vMWpmLy85YTRQLy9YZUwvLzEvay8vOWg1Zi8vWXViLy8yVG4vLzlsNlAvL1pPZi8vMkxtLy85aDVmLy9YK1QvLzEzaS8vOWE0UC8vV04vLy8xYmQvLzlUMi8vL1Vkbi8vMDdYLy85TTF2Ly9TZFQvLzBmVC8vOUYwZi8vUXMvLy8wVFEvLzlGMGYvL1I5UC8vMG5VLy85TTF2Ly9UdGYvLzFIWi8vOVQyLy8vVnQzLy8xamYvLzlhNFAvL1hlTC8vMS9rLy85aDVmLy9ZdWIvLzJUbi8vOWw2UC8vWk9mLy8yTG0vLzloNWYvL1grVC8vMTNpLy85YTRQLy9XTi8vLzFiZC8vOVQyLy8vVWRuLy8wN1gvLzlNMXYvL1NkVC8vMGZULy85RjBmLy9Rcy8vLzBUUS8vOUYwZi8vUjlQLy8wblUvLzlNMXYvL1R0Zi8vMUhaLy85VDIvLy9WdDMvLzFqZi8vOWE0UC8vWGVMLy8xL2svLzloNWYvL1l1Yi8vMlRuLy85bDZQLy9aT2YvLzJMbS8vOWg1Zi8vWCtULy8xM2kvLzlhNFAvL1dOLy8vMWJkLy85VDIvLy9VZG4vLzA3WC8vOU0xdi8vU2RULy8wZlQvLzlGMGYvL1JNNy8vMGJQLy85SDBQLy9TZEwvLzB2VC8vOU4xZi8vVDlmLy8xTFovLzlVMi8vL1Y5ei8vMW5lLy85YjRQLy9YZUwvLzEvai8vOWg1Zi8vWStiLy8yVG4vLzlsNlAvL1pPZi8vMlBtLy85aDVmLy9YK1AvLzEzaS8vOWI0UC8vV2Q3Ly8xZmMvLzlVMi8vL1V0bi8vMC9YLy85TjFmLy9TOVAvLzBuUy8vOUgwUC8vUnN6Ly8wZk4vLzlKei8vL1M5RC8vMHpTLy85UDFQLy9VZFgvLzFQWC8vOVYyZi8vVjl2Ly8xcmQvLzljMy8vL1h1SC8vMkRqLy85aTVQLy9ZK2IvLzJUbi8vOWw2UC8vWk9mLy8yUG0vLzlpNVAvL1lPUC8vMTdoLy85YzMvLy9XdDMvLzFmYi8vOVYyZi8vVTlmLy8xSFYvLzlQMVAvL1ROTC8vMHZRLy85SnovLy9TY3IvLzByTC8vOU16Zi8vVGM3Ly8wL1EvLzlSMHYvL1U5VC8vMVhXLy85WDJQLy9XZHIvLzF2ZC8vOWQzdi8vWCtILy8ySGkvLzlpNVAvL1pPWC8vMlhuLy85bTZQLy9aZWYvLzJUbC8vOWk1UC8vWWVMLy8xL2gvLzlkM3YvL1c5My8vMW5hLy85WDJQLy9WZGIvLzFQVS8vOVIwdi8vVDlELy8wM08vLzlNemYvL1RNai8vMDNKLy85T3kvLy9VTTMvLzFITy8vOVQwZi8vVmRQLy8xZlYvLzlaMS8vL1d0bi8vMXpjLy85ZTN2Ly9ZT0QvLzJIaS8vOWo1UC8vWk9YLy8yWG0vLzltNS8vL1plYi8vMlRsLy85ajVQLy9ZZUwvLzJEZy8vOWUzdi8vWE56Ly8xclovLzlaMS8vL1Y5WC8vMVhULy85VDBmLy9VYzcvLzFETi8vOU95Ly8vVDhiLy8xREkvLzlSeWYvL1Vzdi8vMVROLy85VnovLy9WOUgvLzFqVS8vOWExdi8vWE5uLy8xN2IvLzlmM2YvL1lkLy8vMkxoLy85ajQvLy9aZVgvLzJibS8vOW01Ly8vWnViLy8yWGwvLzlqNC8vL1l1SC8vMkhmLy85ZjNmLy9YdHYvLzF6Wi8vOWExdi8vV05ULy8xZlIvLzlWei8vL1ZNMy8vMUxMLy85UnlmLy9VOFQvLzFURy8vOVZ4Ly8vVnNuLy8xZkwvLzlZenYvL1dkRC8vMXZULy85YzFmLy9YdGovLzEvYS8vOWgzUC8vWXQvLy8yUGgvLzlrNC8vL1plVC8vMmJtLy85bjUvLy9adWIvLzJYay8vOWs0Ly8vWStILy8yTGYvLzloM1AvL1g5ci8vMTdZLy85YzFmLy9XOVAvLzFuUS8vOVl6di8vVjh2Ly8xYkovLzlWeC8vL1Y4UC8vMWZGLy85WXgvLy9XY2ovLzFyTC8vOWJ6Zi8vWE0vLy8xM1MvLzlmMVAvL1lOZi8vMkhhLy85aTNQLy9ZOTcvLzJUaC8vOWw0di8vWnVULy8yZm0vLzluNS8vL1orYi8vMmJrLy85bDR2Ly9aT0gvLzJQZS8vOWkzUC8vWWRyLy8yRFgvLzlmMVAvL1hkTC8vMXpQLy85YnpmLy9Xc3YvLzFuSS8vOVl4Ly8vV3NMLy8xdkUvLzljeHYvL1hNai8vMTNLLy85ZXpQLy9YOC8vLzJEUi8vOWgxUC8vWXRmLy8yUFovLzlqM1AvL1pONy8vMlhnLy85bTR2Ly9aK1QvLzJmbS8vOW81Ly8vWitiLy8yZmsvLzltNHYvL1plRC8vMlRlLy85ajNQLy9ZOW4vLzJMWC8vOWgxUC8vWU5ILy8xL1AvLzllelAvL1hjci8vMXpJLy85Y3h2Ly9YOEwvLzJERS8vOWd4di8vWWNqLy8ySEsvLzlpelAvL1lzLy8vMlBSLy85azFQLy9aTmYvLzJYWi8vOWwzUC8vWnQ3Ly8yYmcvLzluNHYvL1orVC8vMmptLy85bzUvLy9hT2IvLzJmay8vOW40di8vWnVELy8yYmUvLzlsM1AvL1pkbi8vMlRYLy85azFQLy9ZOUgvLzJMUC8vOWl6UC8vWWNyLy8ySEkvLzlneHYvL2x0cjgvNVRiL1ArUzNQei9rTjM4LzQzZS9mK0wzLzMvaU9EOS80WGgvZitDNHYzL2YrUCsvM3prL3Y5NjVmNy9kK2IrLzNYbi92OXo1LzcvY2VqLy8yL3AvLzl1NmYvL2Irbi8vM0hvLy85ejUvNy9kZWYrLzNmbS92OTY1ZjcvZk9UKy8zL2ovditDNHYzL2hlSDkvNGpnL2YrTDMvMy9qZDc5LzVEZC9QK1MzUHovbHRyOC81VGIvUCtTM1B6L2tOMzgvNDNlL2YrTDMvMy9pT0Q5LzRYaC9mK0M0djMvZitQKy8zemsvdjk2NWY3L2QrYisvM1huL3Y5ejUvNy9jZWovLzIvcC8vOXU2Zi8vYituLy8zSG8vLzl6NS83L2RlZisvM2ZtL3Y5NjVmNy9mT1QrLzMvai92K0M0djMvaGVIOS80amcvZitMMy8zL2pkNzkvNURkL1ArUzNQei9sZHI4LzVQYi9QK1IzUHovajkzOC80M2UvZitLMy8zL2grRDkvNFhoL2YrQzR2My9mK1ArLzN6ay92OTY1ZjcvZCtiKy8zVG4vdjl5NS83L2NPai8vMi9wLy85dDZmLy9iK24vLzNEby8vOXk1LzcvZE9mKy8zZm0vdjk2NWY3L2ZPVCsvMy9qL3YrQzR2My9oZUg5LzRmZy9mK0szLzMvamQ3OS80L2QvUCtSM1B6L2t0cjgvNURiL1ArTzNQei9qTjM4LzRyZS9mK0kzLzMvaGVEOS80UGgvZitBNHYzL2ZlUCsvM3ZrL3Y5NDVmNy9kdWIrLzNUbi92OXk1LzcvY09qLy8yN3AvLzl0NmYvL2J1bi8vM0RvLy85eTUvNy9kT2YrLzNibS92OTQ1ZjcvZStUKy8zM2ovditBNHYzL2crSDkvNFhnL2YrSTMvMy9pdDc5LzR6ZC9QK08zUHovanRyOC80emIvUCtMM1B6L2lkMzgvNGZlL2YrRjMvMy9nK0Q5LzREaC9mOSs0djMvZStQKy8zbmsvdjkzNWY3L2RlYisvM1BuL3Y5eDUvNy9iK2ovLzI3cC8vOXQ2Zi8vYnVuLy8yL28vLzl4NS83L2MrZisvM1htL3Y5MzVmNy9lZVQrLzN2ai92OSs0djMvZ09IOS80UGcvZitGMy8zL2g5NzkvNG5kL1ArTDNQei88L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjM8L0JvdHRvbT48TGVmdD4xPC9MZWZ0PjxSaWdodD4yPC9SaWdodD48VG9wPjQ8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="MiddleCenter" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCelVerticallNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48Um90YXRlRmxpcD5Sb3RhdGUyNzBGbGlwTm9uZTwvUm90YXRlRmxpcD48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLy83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvKytUVy8vdmsxdi83NU5iLysrVFcvL3ZrMXYvNzVOYi8rK1RXLy92azF2Lzc1TmIvK3VQVS8vcmoxUC82NDlULyt1UFUvL25oMGYvNTRkSC8rZUhSLy9uaDBmLzMzODcvOTkvTy8vZmZ6di8zMzg3LzlkekwvL1hjeS8vMTNNdi85ZHpMLy9UYXlQLzAyc2ovOU5ySS8vVGF5UC95MThULzh0ZkUvL0xYeFAveTE4VC84TlhCLy9EVndmL3cxY0gvOE5YQi8rL1R2di92MDc3Lzc5TysvKy9UdnYvdTA3My83dE85Lys3VHZmL3UwNzMvL2ViWS8vM20yUC85NXRqLy9lYlkvLzNuMmYvOTU5bi8vZWZaLy8zbjJmLzk1OXIvL2VmYS8vM24ydi85NTlyLy9lamIvLzNvMi8vOTZOdi8vZWpiLy8zcTNmLzk2dDMvL2VyZC8vM3EzZjg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4yPC9Cb3R0b20+PExlZnQ+NTwvTGVmdD48UmlnaHQ+MzwvUmlnaHQ+PFRvcD4xPC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.FlipText" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerHeaderCelVerticallNormalBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48Um90YXRlRmxpcD5Sb3RhdGUyNzBGbGlwTm9uZTwvUm90YXRlRmxpcD48SW50ZXJwb2xhdGlvbk1vZGU+QmljdWJpYzwvSW50ZXJwb2xhdGlvbk1vZGU+PEltYWdlU3RyZWFtPlFrMTJBUUFBQUFBQUFEWUFBQUFvQUFBQUJBQUFBQlFBQUFBQkFDQUFBQUFBQUFBQUFBREVEZ0FBeEE0QUFBQUFBQUFBQUFBQS8vLy8vLy8vLy8vLy8vLy8vLy8vLzZCbVAvK2daai8vb0dZLy82Qm1QLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNVh1Ly8rVjd2Ly9sZTcvLzVYdS8vK1Y3di8vbGU3Ly81WHUvLytWN3YvL2xlNy8vNWJzLy8rVzdQLy9sdXovLzVicy8vK1c2Ly8vbHV2Ly81YnIvLytXNi8vL2x1ci8vNWJxLy8rVzZ2Ly9sdXIvLzViby8vK1c2UC8vbHVqLy81Ym8vLytYNS8vL2wrZi8vNWZuLy8rWDUvLy9tT1gvLzVqbC8vK1k1Zi8vbU9YLy81bmsvLytaNVAvL21lVC8vNW5rLy8rYjVQLy9tK1QvLzV2ay8vK2I1UC8veWZULy84bjAvLy9KOVAvL3lmVC8vOHoxLy8vTTlmLy96UFgvLzh6MS8vL085di8venZiLy84NzIvLy9POXYvLzBQZi8vOUQzLy8vUTkvLy8wUGYvLzlMNC8vL1MrUC8vMHZqLy85TDQvLzg9PC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4yPC9Cb3R0b20+PExlZnQ+NTwvTGVmdD48UmlnaHQ+MzwvUmlnaHQ+PFRvcD4xPC9Ub3A+PC9NYXJnaW5zPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.MouseOver.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBackgroundNoAnim,TransparentBorderNoAnim,TimeZoneLableText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextAlignment" Value="BottomLeft" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewMainHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadScheduler" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

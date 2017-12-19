@@ -1,0 +1,5 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.MutiClip.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.MutiClip.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.MutiClip\obj\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.MutiClip\obj\Release\GeoDo.Smart.MutiClip.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.MutiClip\obj\Release\GeoDo.Smart.MutiClip.pdb

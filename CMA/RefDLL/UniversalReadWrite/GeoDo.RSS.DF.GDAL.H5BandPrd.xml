@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BandProviders>
+  <BandProvider category="风云三A轨道数据" name="可见光与红外辐射计(VIRR)" satellite="FY3A" sensor="VIRR">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3A"/>
+      <IdentifyAtt name="File Alias Name" value="VIRR_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="VIRR"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_RefSB" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三B轨道数据" name="可见光与红外辐射计(VIRR)"  satellite="FY3B" sensor="VIRR">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3B"/>
+      <IdentifyAtt name="File Alias Name" value="VIRR_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="VIRR"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_RefSB" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三A轨道数据" name="中分辨率光谱成像仪(MERSI)"  satellite="FY3A" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3A"/>
+      <IdentifyAtt name="File Alias Name" value="MERSI_1KM_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Aggr.1KM_Emissive" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Aggr.1KM_RefSB" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三B轨道数据" name="中分辨率光谱成像仪(MERSI)"  satellite="FY3B" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3B"/>
+      <IdentifyAtt name="File Alias Name" value="MERSI_1KM_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Aggr.1KM_Emissive" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Aggr.1KM_RefSB" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三A轨道数据" name="中分辨率光谱成像仪(MERSI)QKM"  satellite="FY3A" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3A"/>
+      <IdentifyAtt name="File Alias Name" value="MERSI_QKM_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB_b1" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b2" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b3" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b4" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三A轨道数据" name="中分辨率光谱成像仪(MERSI)QKM"  satellite="FY3A" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3A"/>
+      <IdentifyAtt name="File Alias Name" value="MERSI_250M_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB_b1" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b2" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b3" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b4" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三B轨道数据" name="中分辨率光谱成像仪(MERSI)250M"  satellite="FY3B" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3B"/>
+      <IdentifyAtt name="File Alias Name" value="MERSI_250M_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB_b1" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b2" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b3" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b4" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="风云三B轨道数据" name="中分辨率光谱成像仪(MERSI)QKM"  satellite="FY3B" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3B"/>
+      <IdentifyAtt name="File Alias Name" value="MERSI_QKM_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB_b1" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b2" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b3" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_RefSB_b4" bandnoatt="band_name"/>
+      <DefaultBandDataset name="EV_250_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--文件名约定： FY3C_VIRRX_GBAL_L1_YYYYMMDD_HHmm_1000M_MS.HDF-->
+  <BandProvider category="风云三C轨道数据" name="FY-3C扫描辐射计L1数据"  satellite="FY3C" sensor="VIRR">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3C"/>
+      <IdentifyAtt name="File Alias Name" value="VIRR_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="VIRR"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Data/EV_RefSB" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--文件名约定： FY3C_VIRRX_GBAL_L1_YYYYMMDD_HHmm_GEOXX_MS.HDF-->
+  <BandProvider category="风云3C轨道数据" name="FY-3C 扫描辐射计L1数据(GEO)" satellite="FY3C" sensor="VIRR">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3C"/>
+      <IdentifyAtt name="File Alias Name" value="VIRR_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="VIRR"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Geolocation/Longitude" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/Latitude" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--文件名约定： FY3C_MERSI_GBAL_L1_YYYYMMDD_HHmm_1000M_MS.HDF-->
+  <BandProvider category="风云三C轨道数据" name="FY-3C 中分辨率光谱成像仪L1数据(1KM)"  satellite="FY3C" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3C"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Data/EV_1KM_RefSB" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_250_Aggr.1KM_Emissive" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_250_Aggr.1KM_RefSB" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--文件名约定： FY3C_MERSI_GBAL_L1_YYYYMMDD_HHmm_0250M_MS.HDF-->
+  <BandProvider category="风云三C轨道数据" name="FY-3C 中分辨率光谱成像仪L1数据(250M)"  satellite="FY3C" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3C"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Data/EV_250_RefSB_b1" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_250_RefSB_b2" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_250_RefSB_b3" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_250_RefSB_b4" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Data/EV_250_Emissive" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--文件名约定：FY3C_MERSI_GBAL_L1_YYYYMMDD_HHmm_GEO1K_MS.HDF-->
+  <BandProvider category="风云三C轨道数据" name="FY-3C 中分辨率光谱成像仪L1数据(1KM_GEO)"  satellite="FY3C" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3C"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Geolocation/Latitude" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/Longitude" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/SensorAzimuth" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/SensorZenith" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/SolarAzimuth" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/SolarAzimuth" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--文件名约定：FY3C_MERSI_GBAL_L1_YYYYMMDD_HHmm_GEOQK_MS.HDF-->
+  <BandProvider category="风云三C轨道数据" name="FY-3C 中分辨率光谱成像仪L1数据(QKM_GEO)"  satellite="FY3C" sensor="MERSI">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="NSMC"/>
+      <IdentifyAtt name="Satellite Name" value="FY-3C"/>
+      <IdentifyAtt name="Sensor Identification Code" value="MERSI"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Geolocation/Latitude" bandnoatt="band_name"/>
+      <DefaultBandDataset name="Geolocation/Longitude" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="云海1号轨道数据" name="微光" satellite="YH1" sensor="IRSR">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="Here"/>
+      <IdentifyAtt name="Satellite Name" value="YH1"/>
+      <IdentifyAtt name="File Alias Name" value="IRSR_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="IRSR"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Earth_View" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="云海1号轨道数据" name="微波" satellite="YH1" sensor="PMWR">
+    <IdentifyAtts>
+      <IdentifyAtt name="Responser" value="Here"/>
+      <IdentifyAtt name="Satellite Name" value="YH1"/>
+      <IdentifyAtt name="File Alias Name" value="PMWR_L1"/>
+      <IdentifyAtt name="Sensor Identification Code" value="PMWR"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="Earth_View" bandnoatt="band_name"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+</BandProviders>

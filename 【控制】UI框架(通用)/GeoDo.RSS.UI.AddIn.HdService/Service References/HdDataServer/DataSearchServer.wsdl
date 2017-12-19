@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://dataserver.service.webservice.hdht.org" xmlns:ns5="http://bean.monitorProductInfo.business.hdht.org" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:ns2="http://bean.projection.geodo.business.hdht.org" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns3="http://beans.mosaic.geodo.business.hdht.org" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns4="http://bean.block.geodo.business.hdht.org" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="http://bean.orbit.geodo.business.hdht.org" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://dataserver.service.webservice.hdht.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://dataserver.service.webservice.hdht.org">
+      <xsd:complexType name="Extent">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xmax" type="xsd:float" />
+          <xsd:element minOccurs="0" name="xmin" type="xsd:float" />
+          <xsd:element minOccurs="0" name="ymax" type="xsd:float" />
+          <xsd:element minOccurs="0" name="ymin" type="xsd:float" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="getOrbits">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:float" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="tns:Extent" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getOrbitsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns1:ArrayOfOrbitInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getBlock">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getBlockResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns4:BlockInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMosaics">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:float" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="tns:Extent" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMosaicsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns3:ArrayOfMosaicInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMosaicDatas">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getMosaicDatasResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns2:ArrayOfProjectionInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getProjection">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getProjectionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns2:ProjectionInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDataDir">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="ns5:MonitorProductInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getDataDirResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="saveProductInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="ns5:MonitorProductInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="saveProductInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getProjections">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:float" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="tns:Extent" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getProjectionsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns2:ArrayOfProjectionInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getBlocks">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" type="xsd:dateTime" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:float" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="tns:Extent" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="getBlocksResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="ns4:ArrayOfBlockInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="saveProductInfos">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="ns5:ArrayOfMonitorProductInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="saveProductInfosResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bean.orbit.geodo.business.hdht.org">
+      <xsd:complexType name="ArrayOfOrbitInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="OrbitInfo" nillable="true" type="ns1:OrbitInfo" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="OrbitInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="bz" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="createTime" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="datalevel" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="dayOrNight" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="fileSize" type="xsd:long" />
+          <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="lastModified" type="xsd:long" />
+          <xsd:element minOccurs="0" name="observationdate" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="observationtime" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="orbitIdentify" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="path" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="projectionInfo" nillable="true" type="ns2:ProjectionInfo" />
+          <xsd:element minOccurs="0" name="satellite" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="sensor" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="station" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bean.projection.geodo.business.hdht.org">
+      <xsd:complexType name="ProjectionInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="createTime" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="datapath" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="extendfiles" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="fileSize" type="xsd:long" />
+          <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="maxx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="maxy" type="xsd:float" />
+          <xsd:element minOccurs="0" name="messageinfo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="messagetype" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="minx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="miny" type="xsd:float" />
+          <xsd:element minOccurs="0" name="orbitInfo" nillable="true" type="ns1:OrbitInfo" />
+          <xsd:element minOccurs="0" name="projectionIdentify" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="resolutionx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="resolutiony" type="xsd:float" />
+          <xsd:element minOccurs="0" name="thumbnail" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfProjectionInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ProjectionInfo" nillable="true" type="ns2:ProjectionInfo" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bean.block.geodo.business.hdht.org">
+      <xsd:complexType name="BlockInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="blockidentify" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="createTime" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="datapath" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="envname" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="extendfiles" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="fileSize" type="xsd:long" />
+          <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="maxx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="maxy" type="xsd:float" />
+          <xsd:element minOccurs="0" name="messageinfo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="messagetype" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="minx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="miny" type="xsd:float" />
+          <xsd:element minOccurs="0" name="mosaicInfo" nillable="true" type="ns3:MosaicInfo" />
+          <xsd:element minOccurs="0" name="resolutionx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="resolutiony" type="xsd:float" />
+          <xsd:element minOccurs="0" name="thumbnail" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfBlockInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BlockInfo" nillable="true" type="ns4:BlockInfo" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://beans.mosaic.geodo.business.hdht.org">
+      <xsd:complexType name="MosaicInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="createTime" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="datalevel" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="datapath" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="dayOrNight" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="envname" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="extendfiles" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="fileSize" type="xsd:long" />
+          <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="maxx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="maxy" type="xsd:float" />
+          <xsd:element minOccurs="0" name="messageinfo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="messagetype" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="minx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="miny" type="xsd:float" />
+          <xsd:element minOccurs="0" name="observationdate" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="orbitIdentify" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="projectionIdentify" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="projectionIds" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="resolutionx" type="xsd:float" />
+          <xsd:element minOccurs="0" name="resolutiony" type="xsd:float" />
+          <xsd:element minOccurs="0" name="satellite" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="sensor" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="station" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="thumbnail" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfMosaicInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="MosaicInfo" nillable="true" type="ns3:MosaicInfo" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://bean.monitorProductInfo.business.hdht.org">
+      <xsd:complexType name="MonitorProductInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="extendFiles" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="id" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="info" nillable="true" type="ns5:Info" />
+          <xsd:element minOccurs="0" name="orbitDateTime" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="productDataType" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="productFileName" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="productFilePath" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="productIdentify" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="productIdentifyName" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="productType" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="satellite" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="sensor" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="subProductType" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Info">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="orbitDateTime" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="satellite" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="sensor" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ArrayOfMonitorProductInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="MonitorProductInfo" nillable="true" type="ns5:MonitorProductInfo" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getProjectionRequest">
+    <wsdl:part name="parameters" element="tns:getProjection" />
+  </wsdl:message>
+  <wsdl:message name="getMosaicsResponse">
+    <wsdl:part name="parameters" element="tns:getMosaicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProjectionResponse">
+    <wsdl:part name="parameters" element="tns:getProjectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOrbitsRequest">
+    <wsdl:part name="parameters" element="tns:getOrbits" />
+  </wsdl:message>
+  <wsdl:message name="saveProductInfosRequest">
+    <wsdl:part name="parameters" element="tns:saveProductInfos" />
+  </wsdl:message>
+  <wsdl:message name="getDataDirRequest">
+    <wsdl:part name="parameters" element="tns:getDataDir" />
+  </wsdl:message>
+  <wsdl:message name="getMosaicsRequest">
+    <wsdl:part name="parameters" element="tns:getMosaics" />
+  </wsdl:message>
+  <wsdl:message name="saveProductInfosResponse">
+    <wsdl:part name="parameters" element="tns:saveProductInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProjectionsRequest">
+    <wsdl:part name="parameters" element="tns:getProjections" />
+  </wsdl:message>
+  <wsdl:message name="saveProductInfoResponse">
+    <wsdl:part name="parameters" element="tns:saveProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMosaicDatasRequest">
+    <wsdl:part name="parameters" element="tns:getMosaicDatas" />
+  </wsdl:message>
+  <wsdl:message name="getDataDirResponse">
+    <wsdl:part name="parameters" element="tns:getDataDirResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBlocksRequest">
+    <wsdl:part name="parameters" element="tns:getBlocks" />
+  </wsdl:message>
+  <wsdl:message name="getBlockResponse">
+    <wsdl:part name="parameters" element="tns:getBlockResponse" />
+  </wsdl:message>
+  <wsdl:message name="getProjectionsResponse">
+    <wsdl:part name="parameters" element="tns:getProjectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMosaicDatasResponse">
+    <wsdl:part name="parameters" element="tns:getMosaicDatasResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOrbitsResponse">
+    <wsdl:part name="parameters" element="tns:getOrbitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBlocksResponse">
+    <wsdl:part name="parameters" element="tns:getBlocksResponse" />
+  </wsdl:message>
+  <wsdl:message name="getBlockRequest">
+    <wsdl:part name="parameters" element="tns:getBlock" />
+  </wsdl:message>
+  <wsdl:message name="saveProductInfoRequest">
+    <wsdl:part name="parameters" element="tns:saveProductInfo" />
+  </wsdl:message>
+  <wsdl:portType name="DataSearchServerPortType">
+    <wsdl:operation name="getOrbits">
+      <wsdl:input name="getOrbitsRequest" message="tns:getOrbitsRequest" />
+      <wsdl:output name="getOrbitsResponse" message="tns:getOrbitsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getBlock">
+      <wsdl:input name="getBlockRequest" message="tns:getBlockRequest" />
+      <wsdl:output name="getBlockResponse" message="tns:getBlockResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getMosaics">
+      <wsdl:input name="getMosaicsRequest" message="tns:getMosaicsRequest" />
+      <wsdl:output name="getMosaicsResponse" message="tns:getMosaicsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getMosaicDatas">
+      <wsdl:input name="getMosaicDatasRequest" message="tns:getMosaicDatasRequest" />
+      <wsdl:output name="getMosaicDatasResponse" message="tns:getMosaicDatasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjection">
+      <wsdl:input name="getProjectionRequest" message="tns:getProjectionRequest" />
+      <wsdl:output name="getProjectionResponse" message="tns:getProjectionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getDataDir">
+      <wsdl:input name="getDataDirRequest" message="tns:getDataDirRequest" />
+      <wsdl:output name="getDataDirResponse" message="tns:getDataDirResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="saveProductInfo">
+      <wsdl:input name="saveProductInfoRequest" message="tns:saveProductInfoRequest" />
+      <wsdl:output name="saveProductInfoResponse" message="tns:saveProductInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProjections">
+      <wsdl:input name="getProjectionsRequest" message="tns:getProjectionsRequest" />
+      <wsdl:output name="getProjectionsResponse" message="tns:getProjectionsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getBlocks">
+      <wsdl:input name="getBlocksRequest" message="tns:getBlocksRequest" />
+      <wsdl:output name="getBlocksResponse" message="tns:getBlocksResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="saveProductInfos">
+      <wsdl:input name="saveProductInfosRequest" message="tns:saveProductInfosRequest" />
+      <wsdl:output name="saveProductInfosResponse" message="tns:saveProductInfosResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataSearchServerHttpBinding" type="tns:DataSearchServerPortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getOrbits">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getOrbitsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOrbitsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBlock">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getBlockRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBlockResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMosaics">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMosaicsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMosaicsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMosaicDatas">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMosaicDatasRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMosaicDatasResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjection">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getProjectionRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getProjectionResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDataDir">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getDataDirRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getDataDirResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveProductInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="saveProductInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveProductInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProjections">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getProjectionsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getProjectionsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBlocks">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getBlocksRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBlocksResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveProductInfos">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="saveProductInfosRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveProductInfosResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataSearchServer">
+    <wsdl:port name="DataSearchServerHttpPort" binding="tns:DataSearchServerHttpBinding">
+      <wsdlsoap:address location="http://192.168.1.136/mas2-dms/services/DataSearchServer" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

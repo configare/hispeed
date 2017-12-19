@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="SNW">
+<CatalogCN identify="DBLV" cnname="积雪结果"/>
+<CatalogCN identify="MCSI" cnname="积雪监测图"/>
+<CatalogCN identify="OMCS" cnname="积雪监测图（原始分辩率）"/>
+<CatalogCN identify="NCSI" cnname="网络专题图"/>
+<CatalogCN identify="NMCS" cnname="网络合成图"/>
+<CatalogCN identify="0SDI" cnname="单时次二值图"/>
+<CatalogCN identify="CSDI" cnname="自定义二值图"/>
+<CatalogCN identify="NSDI" cnname="网络灰度图"/>
+<CatalogCN identify="NSNI" cnname="网络灰度图（无边框）"/>
+<CatalogCN identify="CCAR" cnname="区域面积统计"/>
+<CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+<CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+<CatalogCN identify="0CBP" cnname="省界面积统计"/>
+<CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+<CatalogCN identify="0CCA" cnname="变化积雪区域面积统计"/>
+<CatalogCN identify="COCA" cnname="变化积雪自定义面积统计"/>
+<CatalogCN identify="LUTC" cnname="变化积雪土地类型面积统计"/>
+<CatalogCN identify="CCBP" cnname="变化积雪省界面积统计"/>
+<CatalogCN identify="COCC" cnname="变化积雪省市县面积统计"/>
+<CatalogCN identify="FREQ" cnname="频次统计图"/>
+<CatalogCN identify="CFRI" cnname="自定义频次图"/>
+<CatalogCN identify="0SDC" cnname="当前区域程度指数统计"/>
+<CatalogCN identify="PSDC" cnname="省界程度指数统计"/>
+<CatalogCN identify="TSDC" cnname="省市界程度指数统计"/>
+<CatalogCN identify="LSDC" cnname="土地类型程度指数统计"/>
+<CatalogCN identify="CSDC" cnname="自定义程度指数统计"/>
+<CatalogCN identify="MEDI" cnname="动画"/>
+<CatalogCN identify="CMED" cnname="自定义动画"/>
+<CatalogCN identify="COMP" cnname="对比分析结果"/>
+<CatalogCN identify="COMI" cnname="对比分析专题图"/>
+<CatalogCN identify="MAXI" cnname="全国日合成图"/>
+<CatalogCN identify="0CLM" cnname="云结果"/>
+<CatalogCN identify="0SSD" cnname="积雪雪深（光学）"/>
+<CatalogCN identify="MSWE" cnname="雪水当量"/>
+<CatalogCN identify="MSDC" cnname="雪深监测图（自定义）"/>
+<CatalogCN identify="SSDI" cnname="雪深监测图（光学）"/>
+<CatalogCN identify="SSDC" cnname="雪深监测图（自定义）"/>
+<CatalogCN identify="ADLU" cnname="积雪行政区划+地类面积统计"/>
+</ProductIdentify>

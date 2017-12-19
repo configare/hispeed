@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Drawing" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Drawing" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfPointF">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PointF" type="tns:PointF" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPointF" nillable="true" type="tns:ArrayOfPointF" />
+  <xs:complexType name="PointF">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="x" type="xs:float" />
+      <xs:element name="y" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PointF" nillable="true" type="tns:PointF" />
+</xs:schema>

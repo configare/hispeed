@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitterFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlClassSelector ElementClass="SplitContainerFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden)">
+            <Selectors>
+              <XmlClassSelector ElementClass="SplitContainerBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockSplitGrip">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.UI.SplitterElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockSplitGripVertical">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement.IsVertical">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.UI.SplitterElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitterFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitterFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="DockSplitContainer" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

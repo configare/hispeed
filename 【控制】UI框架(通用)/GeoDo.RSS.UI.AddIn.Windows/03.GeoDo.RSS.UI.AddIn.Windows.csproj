@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BBE5041-06ED-421B-8C5A-9C853810DACC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.AddIn.Windows</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.AddIn.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.MEF">
+      <HintPath>..\RefDLL\MEF\GeoDo.MEF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandToolWindow.cs" />
+    <Compile Include="ContextMessage\CommandOpenContextMessage.cs" />
+    <Compile Include="ContextMessage\ContextMessageWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContextMessage\ContextMessageWindow.Designer.cs">
+      <DependentUpon>ContextMessageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CursorInfoWnd\CommandCursorWindow.cs" />
+    <Compile Include="CursorInfoWnd\CursorInfoWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CursorInfoWnd\CursorInfoWindow.Designer.cs">
+      <DependentUpon>CursorInfoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CursorInfoWnd\CursorInfoWndContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CursorInfoWnd\CursorInfoWndContent.Designer.cs">
+      <DependentUpon>CursorInfoWndContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CursorInfoWnd\ICursorInfoWindow.cs" />
+    <Compile Include="FeatureListWnd\CommandFeatureListWnd.cs" />
+    <Compile Include="FeatureListWnd\ExtMethod_Feature.cs" />
+    <Compile Include="FeatureListWnd\FeatureListContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureListWnd\FeatureListContent.Designer.cs">
+      <DependentUpon>FeatureListContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureListWnd\FeatureListStatConfig.cs" />
+    <Compile Include="FeatureListWnd\FeatureListWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FeatureListWnd\FeatureListWindow.Designer.cs">
+      <DependentUpon>FeatureListWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileAttributeWnd\CommandFileAttributeWindow.cs" />
+    <Compile Include="FileAttributeWnd\FileAttributeWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileAttributeWnd\FileAttributeWindow.Designer.cs">
+      <DependentUpon>FileAttributeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileAttributeWnd\IFileAttributeWindow.cs" />
+    <Compile Include="IToolWindowContent.cs" />
+    <Compile Include="LayerManagerWnd\CommandLayerManagerWindow.cs" />
+    <Compile Include="LayerManagerWnd\ILayerManagerWindow.cs" />
+    <Compile Include="LayerManagerWnd\frmLayerManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LayerManagerWnd\frmLayerManager.Designer.cs">
+      <DependentUpon>frmLayerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayerManagerWnd\LayerMamager\ItemDrawHelper.cs" />
+    <Compile Include="LayerManagerWnd\LayerMamager\UCLayerManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayerManagerWnd\LayerMamager\UCLayerManager.designer.cs">
+      <DependentUpon>UCLayerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayerManagerWnd\LayerMamager\UCLayerManagerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayerManagerWnd\LayerMamager\UCLayerManagerPanel.Designer.cs">
+      <DependentUpon>UCLayerManagerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverviewWnd\CommandOverviewWnd.cs" />
+    <Compile Include="OverviewWnd\OverviewContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OverviewWnd\OverviewContent.Designer.cs">
+      <DependentUpon>OverviewContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverviewWnd\OverviewWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OverviewWnd\OverviewWindow.Designer.cs">
+      <DependentUpon>OverviewWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\CommandRasterPropertyWindow.cs" />
+    <Compile Include="RasterPropertyWnd\IRasterPropertyWindow.cs" />
+    <Compile Include="RasterPropertyWnd\RasterPropertyWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\RasterPropertyWindow.Designer.cs">
+      <DependentUpon>RasterPropertyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\RasterPropertyWndContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\RasterPropertyWndContent.Designer.cs">
+      <DependentUpon>RasterPropertyWndContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\UCRasterInfoTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\UCRasterInfoTree.Designer.cs">
+      <DependentUpon>UCRasterInfoTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\UCSelectBandForRgb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RasterPropertyWnd\UCSelectBandForRgb.Designer.cs">
+      <DependentUpon>UCSelectBandForRgb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolWindowBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolWindowBase.designer.cs">
+      <DependentUpon>ToolWindowBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.Theme\20.GeoDo.RSS.UI.AddIn.Theme.csproj">
+      <Project>{AA1D6CF7-01C3-4178-BEDB-C1CD87584E11}</Project>
+      <Name>20.GeoDo.RSS.UI.AddIn.Theme</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CursorInfoWnd\CursorInfoWndContent.resx">
+      <DependentUpon>CursorInfoWndContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeatureListWnd\FeatureListContent.resx">
+      <DependentUpon>FeatureListContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerManagerWnd\LayerMamager\UCLayerManager.resx">
+      <DependentUpon>UCLayerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerManagerWnd\LayerMamager\UCLayerManagerPanel.resx">
+      <DependentUpon>UCLayerManagerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverviewWnd\OverviewContent.resx">
+      <DependentUpon>OverviewContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterPropertyWnd\RasterPropertyWndContent.resx">
+      <DependentUpon>RasterPropertyWndContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterPropertyWnd\UCRasterInfoTree.resx">
+      <DependentUpon>UCRasterInfoTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterPropertyWnd\UCSelectBandForRgb.resx">
+      <DependentUpon>UCSelectBandForRgb.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LayerManagerWnd\LayerMamager\Resources\Delete.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\arrow_down.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\arrow_up.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\lock-unlock.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\lock.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\open-file.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\property-blue.png" />
+    <Content Include="LayerManagerWnd\LayerMamager\Resources\Refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

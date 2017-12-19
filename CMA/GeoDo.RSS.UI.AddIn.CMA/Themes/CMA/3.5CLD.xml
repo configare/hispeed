@@ -1,0 +1,77 @@
+﻿<Product name=" 云 " group="天气" identify="CLD" image="system:cloud.png" uiprovider="GeoDo.RSS.MIF.Prds.CLD.dll:GeoDo.RSS.MIF.Prds.CLD.UITabCloud">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="ISCCP D2云参数产品专题图" identify="0IMG" color="255,255,0" isuseaoitemplate="true" aoitemplates="vector:海陆模版" isdisplaypanel="false" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="ISCCP" sensor="" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="" reffilter="提取产品数据(*.ldf)|*.ldf|所有文件(*.*)|*.*"  ismultiselect="false" datatype="Float" defaultvalue="" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="MTCA"/>
+            <!--<Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="月平均总云量专题图模板"/>-->
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="SVD分解模态专题图" colortablename="CLDMSVD"
+          outfileidentify="MSVD" layoutname="SVD分解模态专题图模板"
+          aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均总云量专题图" colortablename="CLDTCAM"
+                  outfileidentify="TCAM" layoutname="ISCCP月平均总云量专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="云光学厚度专题图" colortablename="CLDTAUM"
+                  outfileidentify="TAUM" layoutname="ISCCP月平均云光学厚度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="云顶温度专题图" colortablename="CLD0TCM"
+                  outfileidentify="0TCM" layoutname="ISCCP月平均云顶温度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="云顶压力专题图" colortablename="CLD0PCM"
+                  outfileidentify="0PCM" layoutname="ISCCP月平均云顶压力专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="云水路径专题图" colortablename="CLD0WPM"
+                  outfileidentify="0WPM" layoutname="ISCCP月平均云水路径专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均地表温度专题图" colortablename="CLD0TSM"
+          outfileidentify="0TSM" layoutname="ISCCP月平均地表温度专题图模板"
+          aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均可见光波段地表反射率专题图" colortablename="CLD0RSM"
+                  outfileidentify="0RSM" layoutname="ISCCP月平均可见光波段地表反射率专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均冰雪覆盖度专题图" colortablename="CLDMSIA"
+                  outfileidentify="MSIA" layoutname="ISCCP月平均冰雪覆盖度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均臭氧柱状浓度专题图" colortablename="CLDMOCA"
+                  outfileidentify="MOCA" layoutname="ISCCP月平均臭氧柱状浓度专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均大气可降水(680-310mb)专题图" colortablename="CLDMPWH"
+                  outfileidentify="MPWH" layoutname="ISCCP月平均大气可降水(680-310mb)专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均大气可降水(1000-680mb)专题图" colortablename="CLDMPWL"
+                  outfileidentify="MPWL" layoutname="ISCCP月平均大气可降水(1000-680mb)专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+        <Instance name="月平均总柱状水汽专题图" colortablename="CLDTCWV"
+                  outfileidentify="TCWV" layoutname="ISCCP月平均总柱状水汽专题图模板"
+                  aoiprovider="SystemAOI:DefaultAOI"  fileprovider="ContextEnvironment:CurrentRasterFile"/>
+      </Instances>
+
+    </SubProduct>
+    <!--<SubProduct name="SVD分解模态专题图" identify="0IMG" color="255,255,0" isuseaoitemplate="true" aoitemplates="vector:海陆模版" isdisplaypanel="false" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="" reffilter="SVD分解模态结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="false" datatype="Double" defaultvalue="" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="MSVD"/>
+            --><!--<Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="SVD分解模态专题图模板"/>--><!--
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="SVD分解模态专题图" colortablename="CLDMSVD"
+          outfileidentify="MSVD" layoutname="SVD分解模态专题图模板"
+          aoiprovider="SystemAOI:DefaultAOI" fileprovider="ContextEnvironment:CurrentRasterFile"/>
+      </Instances>
+    </SubProduct>-->
+
+  </SubProducts>
+</Product>

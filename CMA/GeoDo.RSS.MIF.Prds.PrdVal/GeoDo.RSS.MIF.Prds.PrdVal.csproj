@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{922708C7-7AC8-44A3-8E38-B024AFE59629}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.PrdVal</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.PrdVal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.FileProject, Version=1.0.5.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.FileProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.HDF, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.HDF5, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF5.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.MathAlg, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MathLib\GeoDo.MathAlg.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.ProjectDefine, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.ProjectDefine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI">
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL.HDF4Universal, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.HDF4Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL.HDF5Universal, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.HDF5Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MEM, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.MEM.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Prds.Comm">
+      <HintPath>..\SMART\bin\Release\GeoDo.RSS.MIF.Prds.Comm.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.RasterTools, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\RsTools\GeoDo.RSS.RasterTools.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme">
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExportStaticResultToChart.cs" />
+    <Compile Include="MonitoringProductVAL.cs" />
+    <Compile Include="Products\SubProductDataProcess.cs" />
+    <Compile Include="Products\SubProductValCLD.cs" />
+    <Compile Include="Products\SubProductValASL.cs" />
+    <Compile Include="Products\SubProductValLST.cs" />
+    <Compile Include="Products\SubProductValSST.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StaticComputer.cs" />
+    <Compile Include="UCControl\UCAeronetSiteArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCAeronetSiteArgs.designer.cs">
+      <DependentUpon>UCAeronetSiteArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCCLDdataset.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCCLDdataset.Designer.cs">
+      <DependentUpon>UCCLDdataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCCLDSatelliteArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCCLDSatelliteArgs.Designer.cs">
+      <DependentUpon>UCCLDSatelliteArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCModLSTProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCModLSTProcess.Designer.cs">
+      <DependentUpon>UCModLSTProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCSatelliteArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCSatelliteArgs.Designer.cs">
+      <DependentUpon>UCSatelliteArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCLSTSatelliteArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCLSTSatelliteArgs.Designer.cs">
+      <DependentUpon>UCLSTSatelliteArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCSiteArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCSiteArgs.Designer.cs">
+      <DependentUpon>UCSiteArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\UCSSTSiteArgs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCControl\UCSSTSiteArgs.designer.cs">
+      <DependentUpon>UCSSTSiteArgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCControl\ValArguments.cs" />
+    <Compile Include="UniversalDataProcess.cs" />
+    <Compile Include="VAL\SubProductValASL.cs" />
+    <Compile Include="VAL\SubProductSiteVal.cs" />
+    <Compile Include="VAL\UITabVAL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VAL\UITabVAL.Designer.cs">
+      <DependentUpon>UITabVAL.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Raster\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCAeronetSiteArgs.resx">
+      <DependentUpon>UCAeronetSiteArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCCLDdataset.resx">
+      <DependentUpon>UCCLDdataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCCLDSatelliteArgs.resx">
+      <DependentUpon>UCCLDSatelliteArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCLSTSatelliteArgs.resx">
+      <DependentUpon>UCLSTSatelliteArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCModLSTProcess.resx">
+      <DependentUpon>UCModLSTProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCSatelliteArgs.resx">
+      <DependentUpon>UCSatelliteArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCSiteArgs.resx">
+      <DependentUpon>UCSiteArgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCControl\UCSSTSiteArgs.resx">
+      <DependentUpon>UCSSTSiteArgs.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.DF.AeronetData\GeoDo.RSS.DF.AeronetData.csproj">
+      <Project>{2D35C7C4-3DC5-4BC6-83E9-66B7DAD4B221}</Project>
+      <Name>GeoDo.RSS.DF.AeronetData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

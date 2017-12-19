@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,NormalButtonText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="191, 219, 255" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor" Value="151, 165, 183" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor1" Value="194, 217, 247" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonFormElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor" Value="151, 165, 183" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor1" Value="194, 217, 247" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonFormElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor" Value="59, 90, 130" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor1" Value="194, 217, 247" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonFormElement.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor" Value="59, 90, 130" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RibbonFormBorderPrimitive.BorderColor1" Value="194, 217, 247" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RibbonFormElement.MouseOver.IsRibbonFormActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RibbonFormBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadRibbonForm" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

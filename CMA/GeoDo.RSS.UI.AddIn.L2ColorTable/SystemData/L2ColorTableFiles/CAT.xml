@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="CAT" applyfor = "CAT,VCT" description="云分类/云量" matchstring="\S+_CAT_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="CloudAmount" datasets="Global Total Cloud Amount,Global High Cloud Amount,5Mins_CLOUD_AMOUT" refdatasets="">
+      <Segment values = "-999~-1" indexes = "0" />
+      <Segment values = "0~0" indexes = "21" />
+      <Segment values = "0~5" indexes = "1" />
+      <Segment values = "6~10" indexes = "2" />
+      <Segment values = "11~15" indexes = "3" />
+      <Segment values = "16~20" indexes = "4" />
+      <Segment values = "21~25" indexes = "5" />
+      <Segment values = "26~30" indexes = "6" />
+      <Segment values = "31~35" indexes = "7" />
+      <Segment values = "36~40" indexes = "8" />
+      <Segment values = "41~45" indexes = "9" />
+      <Segment values = "46~50" indexes = "10" />
+      <Segment values = "51~55" indexes = "11" />
+      <Segment values = "56~60" indexes = "12" />
+      <Segment values = "61~65" indexes = "13" />
+      <Segment values = "66~70" indexes = "14" />
+      <Segment values = "71~75" indexes = "15" />
+      <Segment values = "76~80" indexes = "16" />
+      <Segment values = "81~85" indexes = "17" />
+      <Segment values = "86~90" indexes = "18" />
+      <Segment values = "91~95" indexes = "19" />
+      <Segment values = "96~100" indexes = "20" />
+    </BandValueRange>
+    <BandValueRange name="CloudPhase" datasets="Global Cloud Phase,5Mins_CLOUD_PHASE" refdatasets="">
+      <Segment values = "-999~-1" indexes = "0" />
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "100~100" indexes = "2" />
+      <Segment values = "101~101" indexes = "3" />
+      <Segment values = "102~102" indexes = "4" />
+      <Segment values = "104~104" indexes = "5" />
+    </BandValueRange>
+    <BandValueRange name="CloudType" datasets="Global Cloud Type,5Mins_CLOUD_Type" refdatasets="">
+      <Segment values = "-999~-1" indexes = "0" />
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "101~101" indexes = "2" />
+      <Segment values = "102~102" indexes = "3" />
+      <Segment values = "103~103" indexes = "4" />
+      <Segment values = "104~104" indexes = "5" />
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTableCloudAmount" applyfor="CloudAmount," description="">
+      <Color index = "0" rgb = "0,0,0"/>
+      <Color index = "1" rgb = "160,0,0"/>
+      <Color index = "2" rgb = "200,23,10"/>
+      <Color index = "3" rgb = "240,49,20"/>
+      <Color index = "4" rgb = "240,72,30"/>
+      <Color index = "5" rgb = "240,97,40"/>
+      <Color index = "6" rgb = "240,123,50"/>
+      <Color index = "7" rgb = "240,150,60"/>
+      <Color index = "8" rgb = "240,175,70"/>
+      <Color index = "9" rgb = "245,208,80"/>
+      <Color index = "10" rgb = "240,240,90"/>
+      <Color index = "11" rgb = "200,240,80"/>
+      <Color index = "12" rgb = "152,240,70"/>
+      <Color index = "13" rgb = "100,225,75"/>
+      <Color index = "14" rgb = "70,155,139"/>
+      <Color index = "15" rgb = "30,90,255"/>
+      <Color index = "16" rgb = "55,115,255"/>
+      <Color index = "17" rgb = "78,146,255"/>
+      <Color index = "18" rgb = "102,173,255"/>
+      <Color index = "19" rgb = "126,199,255"/>
+      <Color index = "20" rgb = "150,225,255"/>
+      <Color index = "21" rgb = "255,255,255"/>
+    </ColorTable>
+    <ColorTable name="ColorTableCloudPhaseType" applyfor="CloudPhase,CloudType,5Mins_CLOUD_Type" description="">
+      <Color index = "0" rgb = "0,0,0"/>
+      <Color index = "1" rgb = "0,0,255"/>
+      <Color index = "2" rgb = "46,139,87"/>
+      <Color index = "3" rgb = "139,139,0"/>
+      <Color index = "4" rgb = "255,255,255"/>
+      <Color index = "5" rgb = "0,255,255"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

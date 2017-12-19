@@ -1,0 +1,9 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\镶嵌输入.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\testMosaic.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\镶嵌输出.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Mosaic.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Mosaic.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Mosaic.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Mosaic\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Mosaic\obj\x86\Release\GeoDo.Tools.Mosaic.exe
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Mosaic\obj\x86\Release\GeoDo.Tools.Mosaic.pdb

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SmartMefConfig>
+  <MefCatalogs>
+    <MefCatalog name="数据驱动">
+      <MefCatalogItem assembly="GeoDo.RSS.DF.LDF.DLL"/>
+    </MefCatalog>
+    <MefCatalog name="图像处理">
+      <MefCatalogItem assembly=""/>
+    </MefCatalog>
+  </MefCatalogs>
+</SmartMefConfig>

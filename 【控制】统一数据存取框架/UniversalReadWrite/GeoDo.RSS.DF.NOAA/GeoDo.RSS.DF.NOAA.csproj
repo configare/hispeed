@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFF65F94-C1B8-450C-8A1B-E4DF0FD7ECF4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.DF.NOAA</RootNamespace>
+    <AssemblyName>GeoDo.RSS.DF.NOAA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdal_csharp">
+      <HintPath>..\RefDLL\GDAL CSharp\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Driver\D1A5Driver.cs" />
+    <Compile Include="Driver\D1BDDriver.cs" />
+    <Compile Include="Driver\I1A5Driver.cs" />
+    <Compile Include="Driver\I1BDDriver.cs" />
+    <Compile Include="Header\D1A5Header.cs" />
+    <Compile Include="Header\D1BDHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NOAABandNamesXmlParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\D1A5DataProvider.cs" />
+    <Compile Include="Provider\D1BDDataProvider.cs" />
+    <Compile Include="Provider\ID1A5DataProvider.cs" />
+    <Compile Include="Provider\ID1BDDataProvider.cs" />
+    <Compile Include="SetFileHeaders\NomalHeaderInfo.cs" />
+    <Compile Include="SetFileHeaders\SecHlder1A5FileHeader.cs" />
+    <Compile Include="SetFileHeaders\SecHlder1BDFileHeader.cs" />
+    <Compile Include="SetFileHeaders\SectionHandler.cs" />
+    <Compile Include="SetFileHeaders\SetFileHeader.cs" />
+    <Compile Include="SetFileHeaders\ToLocalEndian_Core.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\GeoDo.RSS.Core.DF\GeoDo.RSS.Core.DF.csproj">
+      <Project>{29E4664D-8930-4A57-A8BC-2B2ABD43C733}</Project>
+      <Name>GeoDo.RSS.Core.DF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\GeoDo.RSS.DF.GDAL\GeoDo.RSS.DF.GDAL.csproj">
+      <Project>{C9DBBDBD-3BA7-4FF3-B9F7-14B71DA31BD6}</Project>
+      <Name>GeoDo.RSS.DF.GDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GeoDo.Rss.DF.NOAA.BandNames.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

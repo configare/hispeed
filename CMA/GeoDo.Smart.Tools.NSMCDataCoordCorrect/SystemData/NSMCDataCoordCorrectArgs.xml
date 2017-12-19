@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataCoorrect>
+  <Data identify="VIRR_1Km_LST" name="VIRR陆表温度日产品（白天/晚上）">
+    <Arg indir="" filter="*L2_LST*POAD*.HDF" datasets="VIRR_1Km_LST" resolution="1000" outdir=""/>
+  </Data>
+  <Data identify="VIRR_1Km_LST_Ten" name="VIRR陆表温度旬产品（白天/晚上）">
+    <Arg indir="" filter="*L3_LST*AOTD*.HDF" datasets="VIRR_1Km_LST_Ten" resolution="1000" outdir=""/>
+  </Data>
+  <Data identify="1KM_10day_NDVI" name="VIRR植被指数旬产品">
+    <Arg indir="" filter="**L3_NVI*AOTD*.HDF" datasets="1KM_10day_NDVI" resolution="1000" outdir=""/>
+  </Data>
+  <Data identify="1KM_Monthly_NDVI" name="VIRR植被指数月产品">
+    <Arg indir="" filter="*L3_NVI*AOAM*.HDF" datasets="1KM_Monthly_NDVI" resolution="1000" outdir=""/>
+  </Data>
+  <Data identify="250M_10day_NDVI" name="MERSI植被指数旬产品250M">
+    <Arg indir="" filter="*MERSI*L3_NVI*AOTD*.HDF" datasets="250M_10day_NDVI" resolution="250"  outdir=""/>
+  </Data>
+  <Data identify="250M_Monthly_NDVI" name="MERSI植被指数月产品250M">
+    <Arg indir="" filter="*MERSI*L3_NVI*AOAM*.HDF" datasets="250M_Monthly_NDVI" resolution="250" outdir=""/>
+  </Data>
+</DataCoorrect>

@@ -1,0 +1,31 @@
+﻿
+/// 地理数据拼接:地理坐标，投影坐标
+/// 拼接输出ldf
+/// 支持按高度角数据拼接,高度角数据为后缀为".SolarZenith.ldf"的附加文件，值为扩大了100倍的short类型的高度角值。
+/// 本拼接程序会判断是否有高度角数据：“.SolarZenith.ldf”，如果有，则拼接时候会依据高度角的大小关系执行是否覆盖操作，如果没有，则按照有无数据执行拼接。
+
+"E:\Smart\OrbitData\FY3C_VIRR
+
+参数说明： 
+指定目录[|搜索模式] 拼接后文件名 要拼接的波段 地理坐标（x分辨率,y分辨率,左上角经度,左上角纬度,宽度,高度）
+例如：
+GeoDo.Smart.GlobalMosaic.exe "E:\Smart\OrbitData\FY3C_VIRR|*_1000M.ldf" "D:\\20131003GBAL\\FY3C_VIRR_GBAL_20130925_1000M.LDF" "1,2,3" "0.01,0.01,-180,90,36000,18000"
+
+拼接后输出ldf，
+如果需要输出为tiff，请使用GeoDo.Smart.LdfToTiff.exe
+然后再使用如下命令可以转为jpeg
+
+
+gdal_translate -of JPEG -outsize 0.1066666666666667% 0.1066666666666667% 
+
+[-ot {Byte/Int16/UInt16/UInt32/Int32/Float32/Float64/
+      CInt16/CInt32/CFloat32/CFloat64}] [-strict]
+[-of format] [-b band] [-mask band] [-expand {gray|rgb|rgba}]
+[-outsize xsize[%] ysize[%]]
+[-unscale] [-scale [src_min src_max [dst_min dst_max]]]
+[-srcwin xoff yoff xsize ysize] [-projwin ulx uly lrx lry]
+[-a_srs srs_def] [-a_ullr ulx uly lrx lry] [-a_nodata value]
+[-gcp pixel line easting northing [elevation]]*
+[-mo "META-TAG=VALUE"]* [-q] [-sds]
+[-co "NAME=VALUE"]* [-stats]
+src_dataset dst_dataset

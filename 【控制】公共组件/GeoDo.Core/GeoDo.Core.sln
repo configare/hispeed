@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.Core", "GeoDo.Core\GeoDo.Core.csproj", "{7435953A-C0BF-44ED-87C9-17BBA2FD36E0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://agileserver:8080/tfs/smart_w520_20120716
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GeoDo.Core\\GeoDo.Core.csproj
+		SccProjectName1 = GeoDo.Core
+		SccLocalPath1 = GeoDo.Core
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7435953A-C0BF-44ED-87C9-17BBA2FD36E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7435953A-C0BF-44ED-87C9-17BBA2FD36E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7435953A-C0BF-44ED-87C9-17BBA2FD36E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7435953A-C0BF-44ED-87C9-17BBA2FD36E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

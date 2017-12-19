@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ExtractParameters>23V89Vmin=5,18V36Vmin=5,23Vmax=260,18Vsec36Vmin=20,si1si2thickmin=-35,si1thinsi2min=8</ExtractParameters>
+  <sdParameters>a1=-5.69,a2=0.345,a3=0.817,b1=4.320,b2=0.506,b3=0.131,b4=0.183,b5=0.123,c1=3.418,c2=0.411,c3=0.212,d1=10.766,d2=0.421,d3=1.121,d4=0.673</sdParameters>
+</xml>

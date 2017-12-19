@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BandnameTables>
+  <BandnameRefTable satellite="FY1C" sensor="AVHRR">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.84" max="0.89" type="NearInfrared" />
+    <BandnameItem index="3" originalindex="3" name="短波红外" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true"/>
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true"/>
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY1D" sensor="AVHRR">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.84" max="0.89" type="NearInfrared" />
+    <BandnameItem index="3" originalindex="3" name="短波红外" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true"/>
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true"/>
+  </BandnameRefTable>
+</BandnameTables>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StatItems>
+  <!--filename为相对路径-->
+  <StatItem name="行政区划"  menuname="省界分类" filename="数据引用\基础矢量\行政区划\面\省级行政区域_面.shp" filetype="vector" infofilename="" statfield="NAME"/>
+  <StatItem name="三级行政区划"  menuname="市界分级" filename="SystemData\RasterTemplate\China_XjRaster.dat" filetype="raster" infofilename="SystemData\RasterTemplate\China_XjRaster_Code.txt" columnnames="省/直辖市,市/区,县"/>
+  <StatItem name="土地利用类型" menuname="土地分类" filename="数据引用\基础矢量\矢量模版\土地利用类型_合并.shp" filetype="vector" infofilename="" statfield="NAME"/>
+  <StatItem name="土地利用类型(栅格)" menuname="土地分类(栅格)" filename="SystemData\RasterTemplate\NortheastChina_LandRaster.tif" filetype="raster" infofilename="SystemData\RasterTemplate\NortheastChina_LandRaster_Code.txt" columnnames="土地类型"/>
+</StatItems>

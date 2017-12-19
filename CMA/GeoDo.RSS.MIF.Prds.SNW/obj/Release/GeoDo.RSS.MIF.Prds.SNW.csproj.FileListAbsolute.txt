@@ -1,0 +1,10 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.RSS.MIF.Prds.SNW.dll
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.RSS.MIF.Prds.SNW.pdb
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GeoDo.RSS.MIF.Prds.SNW.UCPolarSnowArg.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GeoDo.RSS.MIF.Prds.SNW.UCSnowDepthArg.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GeoDo.RSS.MIF.Prds.SNW.Properties.Resources.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GenerateResource.write.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GeoDo.RSS.MIF.Prds.SNW.dll
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.SNW\obj\Release\GeoDo.RSS.MIF.Prds.SNW.pdb

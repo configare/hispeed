@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="DST" subIdentify="DBLV"  colortablename="DSTDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无沙" displaylengend="false"/>
+        <Color color="190,168,65" maxValue="2" minValue="1" labeltext="沙尘"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="VISY"  colortablename="DSTVISY" description="沙尘能见度产品" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="170,0,0" maxValue="50" minValue="1" labeltext="50m"/>
+        <Color color="255,85,0" maxValue="100" minValue="50" labeltext="100m"/>
+        <Color color="255,170,85" maxValue="200" minValue="100" labeltext="200m"/>
+        <Color color="255,255,0" maxValue="300" minValue="200" labeltext="300m"/>
+        <Color color="0,170,85" maxValue="500" minValue="300" labeltext="500m"/>
+        <Color color="0,85,0" maxValue="1000" minValue="500" labeltext="1000m"/>
+        <Color color="85,255,255" maxValue="5000" minValue="1000" labeltext="5000m"/>
+        <Color color="0,0,255" maxValue="10000" minValue="5000" labeltext="10000m"/>
+        <Color color="85,0,170" maxValue="" minValue="10000" labeltext=">10000m"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="CYCI"  colortablename="DSTCYCI" description="沙尘周期合成图" labeltext="">
+      <!--<Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="253,224,149" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="253,217,121" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="252,208,95" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="252,201,67" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="251,193,40" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="251,185,13" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="232,169,4" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="198,143,2" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="181,132,2" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="166,121,2" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="129,94,1" maxValue="" minValue="11" labeltext="11"/>
+      </Colors>-->
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="253,217,121" maxValue="" minValue="1" labeltext="1"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="FREQ"  colortablename="DSTFREQ" description="沙尘频次统计图" labeltext="">
+      <!--<Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="2" minValue="1" labeltext="1天"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2天"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3天"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4天"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5天"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6天"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7天"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8天以上"/>
+      </Colors>-->
+      <Colors>
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="1" labeltext="1" displaylengend="false" />
+        <Color color="192,192,0" minValue="1" maxValue="2" labeltext="1" displaylengend="true" />
+        <Color color="172,255,46" minValue="2" maxValue="3" labeltext="2" displaylengend="true" />
+        <Color color="255,255,83" minValue="3" maxValue="4" labeltext="3" displaylengend="true" />
+        <Color color="254,204,81" minValue="4" maxValue="5" labeltext="4" displaylengend="true" />
+        <Color color="255,162,82" minValue="5" maxValue="6" labeltext="5" displaylengend="true" />
+        <Color color="255,82,83" minValue="6" maxValue="7" labeltext="6" displaylengend="true" />
+        <Color color="192,0,0" minValue="7" maxValue="8" labeltext="7" displaylengend="true" />
+        <Color color="255,0,255" minValue="8" maxValue="9" labeltext="8" displaylengend="true" />
+        <Color color="123,104,238" minValue="9" maxValue="3.402823E+38" labeltext="8天以上" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="0MDS"  colortablename="DST0MDS" description="沙尘日数统计图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="1" labeltext="1" displaylengend="false" />
+        <Color color="250,227,134" minValue="1" maxValue="3" labeltext="1~3" displaylengend="true" />
+        <Color color="224,186,115" minValue="3" maxValue="5" labeltext="3~5" displaylengend="true" />
+        <Color color="202,160,22" minValue="5" maxValue="10" labeltext="5~10" displaylengend="true" />
+        <Color color="177,118,16" minValue="10" maxValue="15" labeltext="10~15" displaylengend="true" />
+        <Color color="162,108,18" minValue="15" maxValue="20" labeltext="15~20" displaylengend="true" />
+        <Color color="140,96,21" minValue="20" maxValue="9999" labeltext="&gt;20" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="IDDI"  colortablename="DSTIDDI" description="沙尘红外差值沙尘指数产品" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="&lt;0" displaylengend="false"/>
+        <Color color="3,3,3" maxValue="1" minValue="0" labeltext="50m"/>
+        <Color color="30,10,224" maxValue="2" minValue="1" labeltext="100m"/>
+        <Color color="28,34,209" maxValue="3" minValue="2" labeltext="200m"/>
+        <Color color="26,58,194" maxValue="4" minValue="3" labeltext="300m"/>
+        <Color color="23,81,179" maxValue="5" minValue="4" labeltext="500m"/>
+        <Color color="21,105,164" maxValue="6" minValue="5" labeltext="1000m"/>
+        <Color color="19,129,150" maxValue="7" minValue="6" labeltext="5000m"/>
+        <Color color="17,153,135" maxValue="8" minValue="7" labeltext="10000m"/>
+        <Color color="14,176,120" maxValue="9" minValue="8" labeltext=">10000m"/>
+        <Color color="12,200,105" maxValue="10" minValue="9" labeltext=">10000m"/>
+        <Color color="10,224,90" maxValue="11" minValue="10" labeltext=">10000m"/>
+        <Color color="40,224,74" maxValue="12" minValue="11" labeltext=">10000m"/>
+        <Color color="78,224,66" maxValue="13" minValue="12" labeltext=">10000m"/>
+        <Color color="116,224,57" maxValue="14" minValue="13" labeltext=">10000m"/>
+        <Color color="154,224,49" maxValue="15" minValue="14" labeltext=">10000m"/>
+        <Color color="167,219,44" maxValue="16" minValue="15" labeltext=">10000m"/>
+        <Color color="180,215,38" maxValue="17" minValue="16" labeltext=">10000m"/>
+        <Color color="193,210,33" maxValue="18" minValue="17" labeltext=">10000m"/>
+        <Color color="205,206,27" maxValue="19" minValue="18" labeltext=">10000m"/>
+        <Color color="218,201,22" maxValue="20" minValue="19" labeltext=">10000m"/>
+        <Color color="231,197,16" maxValue="21" minValue="20" labeltext=">10000m"/>
+        <Color color="244,192,11" maxValue="22" minValue="21" labeltext=">10000m"/>
+        <Color color="244,187,11" maxValue="23" minValue="22" labeltext=">10000m"/>
+        <Color color="244,181,11" maxValue="24" minValue="23" labeltext=">10000m"/>
+        <Color color="244,176,11" maxValue="25" minValue="24" labeltext=">10000m"/>
+        <Color color="244,165,11" maxValue="26" minValue="25" labeltext=">10000m"/>
+        <Color color="244,154,11" maxValue="27" minValue="26" labeltext=">10000m"/>
+        <Color color="244,143,11" maxValue="28" minValue="27" labeltext=">10000m"/>
+        <Color color="244,132,11" maxValue="29" minValue="28" labeltext=">10000m"/>
+        <Color color="244,121,11" maxValue="30" minValue="29" labeltext=">10000m"/>
+        <Color color="244,121,11" maxValue="" minValue="30" labeltext=">10000m"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="0DRE"  colortablename="DST0DRE" description="沙尘光学厚度" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="&lt;0" displaylengend="false"/>
+        <Color color="0,0,159" maxValue="0.2" minValue="0.0001" labeltext=""/>
+        <Color color="0,0,175" maxValue="0.4" minValue="0.2" labeltext=""/>
+        <Color color="0,0,191" maxValue="0.6" minValue="0.4" labeltext=""/>
+        <Color color="0,0,207" maxValue="0.8" minValue="0.6" labeltext=""/>
+        <Color color="0,0,223" maxValue="1" minValue="0.8" labeltext="1"/>
+        <Color color="0,0,239" maxValue="1.2" minValue="1" labeltext=""/>
+        <Color color="0,0,255" maxValue="1.4" minValue="1.2" labeltext=""/>
+        <Color color="0,15,255" maxValue="1.6" minValue="1.4" labeltext=""/>
+        <Color color="0,31,255" maxValue="1.8" minValue="1.6" labeltext=""/>
+        <Color color="0,79,255" maxValue="2" minValue="1.8" labeltext="2"/>
+        <Color color="0,99,255" maxValue="2.2" minValue="2" labeltext=""/>
+        <Color color="0,117,255" maxValue="2.4" minValue="2.2" labeltext=""/>
+        <Color color="0,137,255" maxValue="2.6" minValue="2.4" labeltext=""/>
+        <Color color="0,156,255" maxValue="2.8" minValue="2.6" labeltext=""/>
+        <Color color="0,175,255" maxValue="3" minValue="2.8" labeltext="3"/>
+        <Color color="0,191,255" maxValue="3.2" minValue="3" labeltext=""/>
+        <Color color="0,207,255" maxValue="3.4" minValue="3.2" labeltext=""/>
+        <Color color="0,223,255" maxValue="3.6" minValue="3.4" labeltext=""/>
+        <Color color="15,255,239" maxValue="3.8" minValue="3.6" labeltext=""/>
+        <Color color="31,255,223" maxValue="4" minValue="3.8" labeltext="4"/>
+        <Color color="127,255,127" maxValue="4.2" minValue="4" labeltext=""/>
+        <Color color="10,224,90" maxValue="4.4" minValue="4.2" labeltext=""/>
+        <Color color="239,255,15" maxValue="4.6" minValue="4.4" labeltext=""/>
+        <Color color="78,224,66" maxValue="4.8" minValue="4.6" labeltext=""/>
+        <Color color="127,255,127" maxValue="5" minValue="4.8" labeltext="5"/>
+        <Color color="154,224,49" maxValue="5.2" minValue="5" labeltext=""/>
+        <Color color="255,79,0" maxValue="5.4" minValue="5.2" labeltext=""/>
+        <Color color="180,215,38" maxValue="5.6" minValue="5.4" labeltext=""/>
+        <Color color="223,0,0" maxValue="5.8" minValue="5.6" labeltext=""/>
+        <Color color="223,255,31" maxValue="6" minValue="5.8" labeltext="6"/>
+        <Color color="255,255,0" maxValue="6.2" minValue="6" labeltext=""/>
+        <Color color="255,235,0" maxValue="6.4" minValue="6.2" labeltext=""/>
+        <Color color="255,215,0" maxValue="6.6" minValue="6.4" labeltext=""/>
+        <Color color="255,195,0" maxValue="6.8" minValue="6.6" labeltext=""/>
+        <Color color="255,175,0" maxValue="7" minValue="6.8" labeltext="7"/>
+        <Color color="205,156,0" maxValue="7.2" minValue="7" labeltext=""/>
+        <Color color="255,137,0" maxValue="7.4" minValue="7.2" labeltext=""/>
+        <Color color="255,117,0" maxValue="7.6" minValue="7.4" labeltext=""/>
+        <Color color="255,98,0" maxValue="7.8" minValue="7.6" labeltext=""/>
+        <Color color="255,79,0" maxValue="8" minValue="7.8" labeltext="8"/>
+        <Color color="255,53,0" maxValue="8.2" minValue="8" labeltext=""/>
+        <Color color="255,26,0" maxValue="8.4" minValue="8.2" labeltext=""/>
+        <Color color="255,0,0" maxValue="8.6" minValue="8.4" labeltext=""/>
+        <Color color="239,0,0" maxValue="8.8" minValue="8.6" labeltext=""/>
+        <Color color="223,0,0" maxValue="9" minValue="8.8" labeltext="9"/>
+        <Color color="204,0,0" maxValue="9.2" minValue="9" labeltext=""/>
+        <Color color="185,0,0" maxValue="9.4" minValue="9.2" labeltext=""/>
+        <Color color="165,0,0" maxValue="9.6" minValue="9.4" labeltext=""/>
+        <Color color="146,0,0" maxValue="9.8" minValue="9.6" labeltext=""/>
+        <Color color="127,0,0" maxValue="10" minValue="9.8" labeltext="10"/>
+        <Color color="127,0,0" maxValue="" minValue="10" labeltext="" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="0OPT"  colortablename="DST0OPT" description="沙尘粒子半径" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="&lt;0" displaylengend="false"/>
+        <Color color="0,0,159" maxValue="0.2" minValue="0.0001" labeltext=""/>
+        <Color color="0,0,175" maxValue="0.4" minValue="0.2" labeltext=""/>
+        <Color color="0,0,191" maxValue="0.6" minValue="0.4" labeltext=""/>
+        <Color color="0,0,207" maxValue="0.8" minValue="0.6" labeltext=""/>
+        <Color color="0,0,223" maxValue="1" minValue="0.8" labeltext="1"/>
+        <Color color="0,0,239" maxValue="1.2" minValue="1" labeltext=""/>
+        <Color color="0,0,255" maxValue="1.4" minValue="1.2" labeltext=""/>
+        <Color color="0,15,255" maxValue="1.6" minValue="1.4" labeltext=""/>
+        <Color color="0,31,255" maxValue="1.8" minValue="1.6" labeltext=""/>
+        <Color color="0,79,255" maxValue="2" minValue="1.8" labeltext="2"/>
+        <Color color="0,99,255" maxValue="2.2" minValue="2" labeltext=""/>
+        <Color color="0,117,255" maxValue="2.4" minValue="2.2" labeltext=""/>
+        <Color color="0,137,255" maxValue="2.6" minValue="2.4" labeltext=""/>
+        <Color color="0,156,255" maxValue="2.8" minValue="2.6" labeltext=""/>
+        <Color color="0,175,255" maxValue="3" minValue="2.8" labeltext="3"/>
+        <Color color="0,191,255" maxValue="3.2" minValue="3" labeltext=""/>
+        <Color color="0,207,255" maxValue="3.4" minValue="3.2" labeltext=""/>
+        <Color color="0,223,255" maxValue="3.6" minValue="3.4" labeltext=""/>
+        <Color color="15,255,239" maxValue="3.8" minValue="3.6" labeltext=""/>
+        <Color color="31,255,223" maxValue="4" minValue="3.8" labeltext="4"/>
+        <Color color="127,255,127" maxValue="4.2" minValue="4" labeltext=""/>
+        <Color color="10,224,90" maxValue="4.4" minValue="4.2" labeltext=""/>
+        <Color color="239,255,15" maxValue="4.6" minValue="4.4" labeltext=""/>
+        <Color color="78,224,66" maxValue="4.8" minValue="4.6" labeltext=""/>
+        <Color color="127,255,127" maxValue="5" minValue="4.8" labeltext="5"/>
+        <Color color="154,224,49" maxValue="5.2" minValue="5" labeltext=""/>
+        <Color color="255,79,0" maxValue="5.4" minValue="5.2" labeltext=""/>
+        <Color color="180,215,38" maxValue="5.6" minValue="5.4" labeltext=""/>
+        <Color color="223,0,0" maxValue="5.8" minValue="5.6" labeltext=""/>
+        <Color color="223,255,31" maxValue="6" minValue="5.8" labeltext="6"/>
+        <Color color="255,255,0" maxValue="6.2" minValue="6" labeltext=""/>
+        <Color color="255,235,0" maxValue="6.4" minValue="6.2" labeltext=""/>
+        <Color color="255,215,0" maxValue="6.6" minValue="6.4" labeltext=""/>
+        <Color color="255,195,0" maxValue="6.8" minValue="6.6" labeltext=""/>
+        <Color color="255,175,0" maxValue="7" minValue="6.8" labeltext="7"/>
+        <Color color="205,156,0" maxValue="7.2" minValue="7" labeltext=""/>
+        <Color color="255,137,0" maxValue="7.4" minValue="7.2" labeltext=""/>
+        <Color color="255,117,0" maxValue="7.6" minValue="7.4" labeltext=""/>
+        <Color color="255,98,0" maxValue="7.8" minValue="7.6" labeltext=""/>
+        <Color color="255,79,0" maxValue="8" minValue="7.8" labeltext="8"/>
+        <Color color="255,53,0" maxValue="8.2" minValue="8" labeltext=""/>
+        <Color color="255,26,0" maxValue="8.4" minValue="8.2" labeltext=""/>
+        <Color color="255,0,0" maxValue="8.6" minValue="8.4" labeltext=""/>
+        <Color color="239,0,0" maxValue="8.8" minValue="8.6" labeltext=""/>
+        <Color color="223,0,0" maxValue="9" minValue="8.8" labeltext="9"/>
+        <Color color="204,0,0" maxValue="9.2" minValue="9" labeltext=""/>
+        <Color color="185,0,0" maxValue="9.4" minValue="9.2" labeltext=""/>
+        <Color color="165,0,0" maxValue="9.6" minValue="9.4" labeltext=""/>
+        <Color color="146,0,0" maxValue="9.8" minValue="9.6" labeltext=""/>
+        <Color color="127,0,0" maxValue="10" minValue="9.8" labeltext="10"/>
+        <Color color="127,0,0" maxValue="" minValue="10" labeltext="" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="DDEN"  colortablename="DSTDDEN" description="载沙量" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,159" maxValue="1" minValue="0.0001" labeltext=""/>
+        <Color color="0,0,175" maxValue="2" minValue="1" labeltext=""/>
+        <Color color="0,0,191" maxValue="3" minValue="2" labeltext=""/>
+        <Color color="0,0,207" maxValue="4" minValue="3" labeltext=""/>
+        <Color color="0,0,223" maxValue="5" minValue="4" labeltext=""/>
+        <Color color="0,0,239" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="0,0,255" maxValue="7" minValue="6" labeltext=""/>
+        <Color color="0,15,255" maxValue="8" minValue="7" labeltext=""/>
+        <Color color="0,31,255" maxValue="9" minValue="8" labeltext=""/>
+        <Color color="0,47,255" maxValue="10" minValue="9" labeltext=""/>
+        <Color color="0,79,255" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="0,101,255" maxValue="12" minValue="11" labeltext=""/>
+        <Color color="0,124,255" maxValue="13" minValue="12" labeltext=""/>
+        <Color color="0,146,255" maxValue="14" minValue="13" labeltext=""/>
+        <Color color="0,169,255" maxValue="15" minValue="14" labeltext=""/>
+        <Color color="0,191,255" maxValue="16" minValue="15" labeltext="15"/>
+        <Color color="0,207,255" maxValue="17" minValue="16" labeltext=""/>
+        <Color color="0,223,255" maxValue="18" minValue="17" labeltext=""/>
+        <Color color="0,239,255" maxValue="19" minValue="18" labeltext=""/>
+        <Color color="0,255,255" maxValue="20" minValue="19" labeltext=""/>
+        <Color color="31,255,223" maxValue="21" minValue="20" labeltext="20"/>
+        <Color color="50,255,204" maxValue="22" minValue="21" labeltext=""/>
+        <Color color="69,255,185" maxValue="23" minValue="22" labeltext=""/>
+        <Color color="89,255,165" maxValue="24" minValue="23" labeltext=""/>
+        <Color color="108,255,146" maxValue="25" minValue="24" labeltext=""/>
+        <Color color="127,255,127" maxValue="26" minValue="25" labeltext="25"/>
+        <Color color="149,255,105" maxValue="27" minValue="26" labeltext=""/>
+        <Color color="172,255,82" maxValue="28" minValue="27" labeltext=""/>
+        <Color color="194,255,60" maxValue="29" minValue="28" labeltext=""/>
+        <Color color="217,255,37" maxValue="30" minValue="29" labeltext=""/>
+        <Color color="239,255,15" maxValue="31" minValue="30" labeltext="30"/>
+        <Color color="255,255,0" maxValue="32" minValue="31" labeltext=""/>
+        <Color color="255,235,0" maxValue="33" minValue="32" labeltext=""/>
+        <Color color="255,215,0" maxValue="34" minValue="33" labeltext=""/>
+        <Color color="255,195,0" maxValue="35" minValue="34" labeltext=""/>
+        <Color color="255,175,0" maxValue="36" minValue="35" labeltext="35"/>
+        <Color color="255,153,0" maxValue="37" minValue="36" labeltext=""/>
+        <Color color="255,130,0" maxValue="38" minValue="37" labeltext=""/>
+        <Color color="255,108,0" maxValue="39" minValue="38" labeltext=""/>
+        <Color color="255,85,0" maxValue="40" minValue="39" labeltext=""/>
+        <Color color="255,63,0" maxValue="41" minValue="40" labeltext="40"/>
+        <Color color="255,47,0" maxValue="42" minValue="41" labeltext=""/>
+        <Color color="255,31,0" maxValue="43" minValue="42" labeltext=""/>
+        <Color color="255,15,0" maxValue="44" minValue="43" labeltext=""/>
+        <Color color="255,0,0" maxValue="45" minValue="44" labeltext=""/>
+        <Color color="223,0,0" maxValue="46" minValue="45" labeltext="45"/>
+        <Color color="204,0,0" maxValue="47" minValue="46" labeltext=""/>
+        <Color color="185,0,0" maxValue="48" minValue="47" labeltext=""/>
+        <Color color="165,0,0" maxValue="49" minValue="48" labeltext=""/>
+        <Color color="146,0,0" maxValue="50" minValue="49" labeltext=""/>
+        <Color color="127,0,0" maxValue="" minValue="50" labeltext="50" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DST" subIdentify="COMD" colortablename="DSTCOMD" description="沙尘对比分析图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无沙尘" displaylengend="false"/>
+        <Color color="123, 252, 252" maxValue="2" minValue="1" labeltext="持续沙尘" />
+        <Color color="255,0,0" maxValue="5" minValue="4" labeltext="新生沙尘"/>
+        <Color color="255,255,0" maxValue="6" minValue="5" labeltext="消失沙尘"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

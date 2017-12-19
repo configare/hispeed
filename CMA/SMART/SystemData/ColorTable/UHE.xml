@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="UHE" subIdentify="LMCZ" colortablename="LSTLMCZ" description="热岛效应图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="    水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="     云" displaylengend="true" />
+        <Color color="102,255,102" minValue="-9999" maxValue="-0.0001" labeltext="  无热效应" displaylengend="false" />
+        <Color color="102,255,102" minValue="0.0001" maxValue="30" labeltext="  无热效应" displaylengend="true" />
+        <Color color="255,255,0" minValue="30" maxValue="50" labeltext="  弱热效应" displaylengend="true" />
+        <Color color="254,146,0" minValue="50" maxValue="70" labeltext="  较强热效应" displaylengend="true" />
+        <Color color="255,0,0" minValue="70" maxValue="9998" labeltext="  强热效应" displaylengend="true" />
+        <Color color="255,255,255" minValue="9998" maxValue="9999" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="UHE" subIdentify="HFII" colortablename="LSTHFII" description="强度指数图" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="    水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="     云" displaylengend="true" />
+        <Color color="0,0,255" minValue="1E-05" maxValue="10" labeltext="   低温区" displaylengend="true" />
+        <Color color="128,255,255" minValue="10" maxValue="30" labeltext="  次低温区" displaylengend="true" />
+        <Color color="102,255,102" minValue="30" maxValue="70" labeltext="   常温区" displaylengend="true" />
+        <Color color="255,169,0" minValue="70" maxValue="90" labeltext="  次高温区" displaylengend="true" />
+        <Color color="255,0,0" minValue="90" maxValue="9998" labeltext="   高温区" displaylengend="true" />
+        <Color color="255,255,255" minValue="9998" maxValue="9999" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="UHE" subIdentify="DBLV"  colortablename="UHESU" description="陆表高温专题图（夏）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="206,200,200" maxValue="3130" minValue="1000" labeltext="&lt;40"/>
+        <Color color="249,231,54" maxValue="3180" minValue="3130" labeltext="40"/>
+        <Color color="255,184,60" maxValue="3230" minValue="3180" labeltext="45"/>
+        <Color color="255,120,1" maxValue="3280" minValue="3230" labeltext="50"/>
+        <Color color="187,72,16" maxValue="3330" minValue="3280" labeltext="55"/>
+        <Color color="255,3,3" maxValue="3380" minValue="3330" labeltext="60"/>
+        <Color color="143,37,37" maxValue="3730" minValue="3380" labeltext=">65"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="UHE" subIdentify="DBLV"  colortablename="UHESP" description="陆表高温专题图（春）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="165,200,248" maxValue="3030" minValue="1000" labeltext="&lt;30"/>
+        <Color color="105,247,121" maxValue="3080" minValue="3030" labeltext="30"/>
+        <Color color="240,240,60" maxValue="3130" minValue="3080" labeltext="35"/>
+        <Color color="250,180,75" maxValue="3180" minValue="3130" labeltext="40"/>
+        <Color color="220,120,20" maxValue="3230" minValue="3180" labeltext="45"/>
+        <Color color="241,164,184" maxValue="3280" minValue="3230" labeltext="50"/>
+        <Color color="237,101,136" maxValue="3330" minValue="3280" labeltext="55"/>
+        <Color color="255,10,10" maxValue="3380" minValue="3330" labeltext="60"/>
+        <Color color="143,37,37" maxValue="9998" minValue="3380" labeltext=">65"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="UHE" subIdentify="DBLV"  colortablename="UHEFA" description="陆表高温专题图（秋）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="206,200,200" maxValue="3130" minValue="1000" labeltext="&lt;40"/>
+        <Color color="249,231,54" maxValue="3180" minValue="3130" labeltext="40"/>
+        <Color color="255,184,60" maxValue="3230" minValue="3180" labeltext="45"/>
+        <Color color="255,120,1" maxValue="3280" minValue="3230" labeltext="50"/>
+        <Color color="187,72,16" maxValue="3330" minValue="3280" labeltext="55"/>
+        <Color color="255,3,3" maxValue="3380" minValue="3330" labeltext="60"/>
+        <Color color="143,37,37" maxValue="3730" minValue="3380" labeltext=">65"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="UHE" subIdentify="DBLV"  colortablename="UHEWI" description="陆表高温专题图（冬）" labeltext="">
+      <Colors>
+        <Color color="160,190,228" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+        <Color color="0,0,0" maxValue="0" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="2330" minValue="1000" labeltext="-40"/>
+        <Color color="0,228,255" maxValue="2430" minValue="2330" labeltext="-30"/>
+        <Color color="" maxValue="2480" minValue="2430" labeltext="-25" displaylengend="false"/>
+        <Color color="178,248,248" maxValue="2530" minValue="2430" labeltext="-20"/>
+        <Color color="22,83,3" maxValue="2670" minValue="2530" labeltext="-6"/>
+        <Color color="0,255,0" maxValue="2710" minValue="2670" labeltext="-2"/>
+        <Color color="165,248,100" maxValue="2750" minValue="2710" labeltext="2"/>
+        <Color color="240,240,60" maxValue="2790" minValue="2750" labeltext="6"/>
+        <Color color="250,180,75" maxValue="2830" minValue="2790" labeltext="10"/>
+        <Color color="220,120,20" maxValue="2880" minValue="2830" labeltext="15"/>
+        <Color color="241,164,184" maxValue="2930" minValue="2880" labeltext="20"/>
+        <Color color="" maxValue="2960" minValue="2930" labeltext="35" displaylengend="false"/>
+        <Color color="" maxValue="2990" minValue="2960" labeltext="35" displaylengend="false"/>
+        <Color color="237,101,136" maxValue="3030" minValue="2930" labeltext="40"/>
+        <Color color="255,10,10" maxValue="3430" minValue="3030" labeltext="70"/>
+        <Color color="143,37,37" maxValue="9998" minValue="3430" labeltext=">70"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

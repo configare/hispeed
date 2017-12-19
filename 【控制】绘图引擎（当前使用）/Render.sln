@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.RasterDrawing", "GeoDo.RSS.Core.Raster\GeoDo.RSS.Core.RasterDrawing.csproj", "{CF416821-C24B-415D-B68B-32D75E78E819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.View", "GeoDo.RSS.Core.View\GeoDo.RSS.Core.View.csproj", "{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.DrawEngine", "GeoDo.RSS.Core.DrawEngine\GeoDo.RSS.Core.DrawEngine.csproj", "{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.DrawEngine.GDIPlus", "GeoDo.RSS.Core.DrawEngine.GDIPlus\GeoDo.RSS.Core.DrawEngine.GDIPlus.csproj", "{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.DrawEngine.Direct2D", "GeoDo.RSS.Core.DrawEngine.Direct2D\GeoDo.RSS.Core.DrawEngine.Direct2D.csproj", "{2633A8DB-6D47-439C-8204-64B152354DA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.VectorDrawing", "GeoDo.RSS.Core.VectorDrawing\GeoDo.RSS.Core.VectorDrawing.csproj", "{F64BFC10-C658-462B-A2C5-19B5372E5D49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDo.RSS.Core.Grid", "GeoDo.RSS.Cor.Grid\GeoDo.RSS.Core.Grid.csproj", "{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{D32E0042-A415-4B53-8BF0-700B66109D8D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://agileserver:8080/tfs/smart_w520_20120716
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GeoDo.RSS.Cor.Grid\\GeoDo.RSS.Core.Grid.csproj
+		SccProjectName1 = GeoDo.RSS.Cor.Grid
+		SccLocalPath1 = GeoDo.RSS.Cor.Grid
+		SccProjectUniqueName2 = GeoDo.RSS.Core.DrawEngine.Direct2D\\GeoDo.RSS.Core.DrawEngine.Direct2D.csproj
+		SccProjectName2 = GeoDo.RSS.Core.DrawEngine.Direct2D
+		SccLocalPath2 = GeoDo.RSS.Core.DrawEngine.Direct2D
+		SccProjectUniqueName3 = GeoDo.RSS.Core.DrawEngine.GDIPlus\\GeoDo.RSS.Core.DrawEngine.GDIPlus.csproj
+		SccProjectName3 = GeoDo.RSS.Core.DrawEngine.GDIPlus
+		SccLocalPath3 = GeoDo.RSS.Core.DrawEngine.GDIPlus
+		SccProjectUniqueName4 = GeoDo.RSS.Core.DrawEngine\\GeoDo.RSS.Core.DrawEngine.csproj
+		SccProjectName4 = GeoDo.RSS.Core.DrawEngine
+		SccLocalPath4 = GeoDo.RSS.Core.DrawEngine
+		SccProjectUniqueName5 = GeoDo.RSS.Core.Raster\\GeoDo.RSS.Core.RasterDrawing.csproj
+		SccProjectName5 = GeoDo.RSS.Core.Raster
+		SccLocalPath5 = GeoDo.RSS.Core.Raster
+		SccProjectUniqueName6 = GeoDo.RSS.Core.VectorDrawing\\GeoDo.RSS.Core.VectorDrawing.csproj
+		SccProjectName6 = GeoDo.RSS.Core.VectorDrawing
+		SccLocalPath6 = GeoDo.RSS.Core.VectorDrawing
+		SccProjectUniqueName7 = GeoDo.RSS.Core.View\\GeoDo.RSS.Core.View.csproj
+		SccProjectName7 = GeoDo.RSS.Core.View
+		SccLocalPath7 = GeoDo.RSS.Core.View
+		SccProjectUniqueName8 = Test\\Test.csproj
+		SccProjectName8 = Test
+		SccLocalPath8 = Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CF416821-C24B-415D-B68B-32D75E78E819}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4A2B31A4-DC3E-48CC-822A-7912D3D4F981}.Release|x86.ActiveCfg = Release|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}.Release|x86.ActiveCfg = Release|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F737A99B-0F35-4DBB-A78A-28A3DC0734D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2633A8DB-6D47-439C-8204-64B152354DA8}.Release|x86.ActiveCfg = Release|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F64BFC10-C658-462B-A2C5-19B5372E5D49}.Release|x86.ActiveCfg = Release|Any CPU
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Debug|x86.ActiveCfg = Debug|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Debug|x86.Build.0 = Debug|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Release|Any CPU.ActiveCfg = Release|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Release|Mixed Platforms.Build.0 = Release|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Release|x86.ActiveCfg = Release|x86
+		{435FD5B3-3F6E-4B17-B421-B84CAB26D0AF}.Release|x86.Build.0 = Release|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Debug|x86.ActiveCfg = Debug|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Debug|x86.Build.0 = Debug|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Release|Any CPU.ActiveCfg = Release|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Release|x86.ActiveCfg = Release|x86
+		{D32E0042-A415-4B53-8BF0-700B66109D8D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

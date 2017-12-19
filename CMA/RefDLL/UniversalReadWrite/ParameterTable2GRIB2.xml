@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_table4-1.shtml#0-->
+<Disciplines>
+  <Discipline number="0" name="Meteorological Products">
+    <Category number="0" name="Temperature">
+      <Parameter number="0" name="Temperature" unit="K" abbrev="TMP"/>
+    </Category>
+    <Category number="1" name="Moisture">
+      <Parameter number="0" name="Specific Humidity" unit="kg kg-1" abbrev="SPFH" />
+      <Parameter number="1" name="Relative Humidity" unit="%" abbrev="RH" />
+    </Category>
+    <Category number="2" name="Momentum">
+      <Parameter number="0" name="Wind Direction" unit="°" abbrev="WDIR"/>
+      <Parameter number="1" name="Wind Speed" unit="m2 s-1" abbrev="WIND"/>
+      <Parameter number="2" name="U-Component of Wind" unit="m2 s-1" abbrev="UGRD"/>
+      <Parameter number="3" name="V-Component of Wind" unit="m2 s-1" abbrev="VGRD"/>
+      <Parameter number="4" name="Stream Function" unit="m2 s-1" abbrev="STRM"/>
+      <Parameter number="5" name="Velocity Potential" unit="m2 s-1" abbrev="VPOT"/>
+      <Parameter number="6" name="Montgomery Stream Function" unit="m2 s-2" abbrev="MNTSF"/>
+      <Parameter number="7" name="Sigma Coordinate Vertical Velocity" unit="s-1" abbrev="SGCVV"/>
+      <Parameter number="8" name="Vertical Velocity (Pressure)" unit="Pa s-1" abbrev="VVEL"/>
+    </Category>
+    <Category number="3" name="Mass ">
+      <Parameter number="0" name="Pressure" unit="Pa" abbrev="PRES"/>
+      <Parameter number="1" name="Pressure Reduced to MSL" unit="Pa" abbrev="PRMSL"/>
+      <Parameter number="2" name="Pressure Tendency" unit="Pa s-1" abbrev="PTEND"/>
+      <Parameter number="3" name="ICAO Standard Atmosphere Reference Height" unit="m" abbrev="ICAHT"/>
+      <Parameter number="4" name="Geopotential" unit="m2 s-2" abbrev="GP"/>
+      <Parameter number="5" name="Geopotential Height" unit="gpm" abbrev="HGT"/>
+    </Category>
+    <Category number="4" name="Short-wave radiation">
+    </Category>
+    <Category number="5" name="Long-wave radiation">
+    </Category>
+    <Category number="6" name="Cloud">
+    </Category>
+    <Category number="7" name="Thermodynamic Stability indicies">
+    </Category>
+    <Category number="8" name="Kinematic Stability indicies">
+    </Category>
+    <Category number="9" name="Temperature Probabilities">
+
+    </Category>
+    <Category number="10" name="Moisture Probabilities">
+
+    </Category>
+    <Category number="11" name="Momentum Probabilities">
+
+    </Category>
+    <Category number="12" name="Mass Probabilities">
+
+    </Category>
+    <Category number="13" name="Aerosols">
+
+    </Category>
+    <Category number="14" name="Trace gases">
+
+    </Category>
+    <Category number="15" name="Radar">
+
+    </Category>
+    <Category number="16" name="Forecast Radar Imagery">
+
+    </Category>
+    <Category number="17" name="Electrodynamics">
+
+    </Category>
+    <Category number="18" name="Nuclear/radiology">
+ 
+    </Category>
+    <Category number="19" name="Physical atmospheric properties">
+  
+    </Category>
+    <Category number="20" name="Atmospheric chemical Constituents">
+    
+    </Category>
+    <Category number="190" name="CCITT IA5 string">
+   
+    </Category>
+    <Category number="191" name="Miscellaneous">
+  
+    </Category>
+    <Category number="192" name="Covariance">
+   
+    </Category>
+  </Discipline>
+  <Discipline number="1" name="Hydrological Products">
+    <Category number="0" name="Hydrology basic products">
+     
+    </Category>
+    <Category number="1" name="Hydrology probabilities">
+  
+    </Category>
+    <Category number="2" name="Inland water and sediment properties">
+     
+    </Category>
+  </Discipline>
+  <Discipline number="2" name="Land Surface Products">
+    <Category number="0" name="Vegetation/Biomass">
+    
+    </Category>
+    <Category number="1" name="Agricultural/Aquacultural Special Products">
+     
+    </Category>
+    <Category number="2" name="Transportation-related Products">
+     
+    </Category>
+    <Category number="3" name="Soil Products">
+     
+    </Category>
+    <Category number="4" name="Fire Weather">
+     
+    </Category>
+  </Discipline>
+  <Discipline number="3" name="Space Products">
+    <Category number="0" name="Image format products">
+      
+    </Category>
+    <Category number="1" name="Quantitative products">
+      
+    </Category>
+    <Category number="192" name="Forecast Satellite Imagery">
+      
+    </Category>
+  </Discipline>
+  <Discipline number="4" name="Space Weather Products">
+    <Category number="0" name="Temperature ">
+      
+    </Category>
+    <Category number="1" name="Momentum ">
+      
+    </Category>
+    <Category number="2" name="Charged Particle Mass and Number">
+      
+    </Category>
+    <Category number="3" name="Electric and Magnetic Fields">
+      
+    </Category>
+    <Category number="4" name="Energetic Particles">
+      
+    </Category>
+    <Category number="5" name="Waves">
+      
+    </Category>
+    <Category number="6" name="Solar Electromagnetic Emissions">
+      
+    </Category>
+    <Category number="7" name="Terrestrial Electromagnetic Emissions">
+      
+    </Category>
+    <Category number="8" name="Imagery">
+      
+    </Category>
+    <Category number="9" name="Ion-Neutral Coupling">
+      
+    </Category>
+  </Discipline>
+  <Discipline number="10" name="Oceanographic Products">
+    <Category number="0" name="Waves">
+      
+    </Category>
+    <Category number="1" name="Currents">
+      
+    </Category>
+    <Category number="2" name="Ice ">
+      
+    </Category>
+    <Category number="3" name="Surface Properties">
+      
+    </Category>
+    <Category number="4" name="Sub-surface Properties">
+      
+    </Category>
+    <Category number="191" name="Miscellaneous">
+      
+    </Category>
+  </Discipline>
+</Disciplines> 

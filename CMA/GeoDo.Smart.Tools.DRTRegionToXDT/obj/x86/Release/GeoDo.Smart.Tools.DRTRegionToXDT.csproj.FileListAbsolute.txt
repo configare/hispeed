@@ -1,0 +1,10 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.Tools.DRTRegionToXDT.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.Tools.DRTRegionToXDT.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.Tools.DRTRegionToXDT.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\GeoDo.Smart.Tools.DRTRegionToXDT.Main.resources
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\GeoDo.Smart.Tools.DRTRegionToXDT.Properties.Resources.resources
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\GenerateResource.write.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\GeoDo.Smart.Tools.DRTRegionToXDT.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.Tools.DRTRegionToXDT\obj\x86\Release\GeoDo.Smart.Tools.DRTRegionToXDT.pdb

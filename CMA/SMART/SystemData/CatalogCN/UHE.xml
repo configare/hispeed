@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="UHE">
+  <CatalogCN identify="DBLV" cnname="陆表高温"/>
+  <CatalogCN identify="0CLM" cnname="云结果"/>
+  <CatalogCN identify="0SDI" cnname="陆表高温专题图"/>
+  <CatalogCN identify="MCSI" cnname="陆表高温监测示意图"/>
+  <CatalogCN identify="OMCS" cnname="陆表高温监测示意图（原始分辩率）"/>
+  <CatalogCN identify="LMCZ" cnname="城市热岛结果"/>
+  <CatalogCN identify="0LMC" cnname="城市热岛监测图"/>
+  <CatalogCN identify="HFII" cnname="热岛强度指数"/>
+  <CatalogCN identify="0HFI" cnname="热岛强度指数图"/>
+  <CatalogCN identify="CCAR" cnname="城市热岛当前区域面积统计"/>
+  <CatalogCN identify="CLUT" cnname="城市热岛土地类型面积统计"/>
+  <CatalogCN identify="0CCC" cnname="城市热岛省市县面积统计"/>
+  <CatalogCN identify="0CBP" cnname="城市热岛分省面积统计"/>
+  <CatalogCN identify="CARC" cnname="城市热岛当前区域面积统计差异结果"/>
+  <CatalogCN identify="LUTC" cnname="城市热岛土地类型面积统计差异结果"/>
+  <CatalogCN identify="CCCC" cnname="城市热岛省市县面积统计差异结果"/>
+  <CatalogCN identify="CBPC" cnname="城市热岛分省面积统计差异结果"/>
+</ProductIdentify>

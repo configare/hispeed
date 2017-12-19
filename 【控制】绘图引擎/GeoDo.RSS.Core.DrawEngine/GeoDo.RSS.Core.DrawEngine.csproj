@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBE3B6E0-E8B7-4746-B25B-C4406BFDB98E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.Core.DrawEngine</RootNamespace>
+    <AssemblyName>GeoDo.RSS.Core.DrawEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CanvasHost\ICanvasHost.cs" />
+    <Compile Include="Canvas\GeometryOfDrawed.cs" />
+    <Compile Include="Canvas\IControlMessageAccepter.cs" />
+    <Compile Include="Canvas\IDummyRenderModeSupport.cs" />
+    <Compile Include="Canvas\ILoadingPrecentSubscriber.cs" />
+    <Compile Include="Canvas\IPerformanceWath.cs" />
+    <Compile Include="Canvas\IPixelInfoSubscriber.cs" />
+    <Compile Include="Canvas\IPrimaryDrawObject.cs" />
+    <Compile Include="Canvas\IRenderBehavior.cs" />
+    <Compile Include="Canvas\PixelInfo.cs" />
+    <Compile Include="Config\CacheSetting.cs" />
+    <Compile Include="Config\CanvasSetting.cs" />
+    <Compile Include="Config\CanvasSettingParser.cs" />
+    <Compile Include="Config\ICanvasSettingParser.cs" />
+    <Compile Include="Config\RenderSetting.cs" />
+    <Compile Include="Config\TileSetting.cs" />
+    <Compile Include="Config\ZoomSetting.cs" />
+    <Compile Include="Config\ZoomStepByScale.cs" />
+    <Compile Include="Controls\ZoomControlLayerWithBox.cs" />
+    <Compile Include="Controls\ZoomStepsCalculator.cs" />
+    <Compile Include="Layer\IAOIContainerLayer.cs" />
+    <Compile Include="Layer\IAOILayer.cs" />
+    <Compile Include="Layer\IAVILayer.cs" />
+    <Compile Include="Layer\IBackgroundLayer.cs" />
+    <Compile Include="Layer\IBinaryBitampLayer.cs" />
+    <Compile Include="Layer\IGridLayer.cs" />
+    <Compile Include="Layer\ILayerFlashControler.cs" />
+    <Compile Include="Layer\IMaskLayer.cs" />
+    <Compile Include="Layer\IToolboxLayer.cs" />
+    <Compile Include="Layer\IVectorHostLayer.cs" />
+    <Compile Include="Layer\LayerFlashControler.cs" />
+    <Compile Include="Render\CacheBitmap.cs" />
+    <Compile Include="Render\CacheBitmapManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Render\DummyCacheBitmap.cs" />
+    <Compile Include="Render\enumRefreshType.cs" />
+    <Compile Include="Canvas\ICanvasViewControl.cs" />
+    <Compile Include="Controls\SystemCanvasViewControlFactory.cs" />
+    <Compile Include="Controls\DefaultControlLayer.cs" />
+    <Compile Include="CoordEnvelope.cs" />
+    <Compile Include="CoordPoint.cs" />
+    <Compile Include="Canvas\ICanvas.cs" />
+    <Compile Include="Transform\enumCanvasCoordType.cs" />
+    <Compile Include="Transform\ICoordinateTransform.cs" />
+    <Compile Include="Render\IDrawArgs.cs" />
+    <Compile Include="Event\DrawingMouseEventArgs.cs" />
+    <Compile Include="Event\enumCanvasEventType.cs" />
+    <Compile Include="Event\ICanvasEvent.cs" />
+    <Compile Include="Layer\IControlLayer.cs" />
+    <Compile Include="Layer\ILayerOrderAdjustable.cs" />
+    <Compile Include="Layer\ILayerContainer.cs" />
+    <Compile Include="Layer\ILayerGroup.cs" />
+    <Compile Include="Layer\IRenderLayer.cs" />
+    <Compile Include="Layer\IElementLayer.cs" />
+    <Compile Include="Layer\IFeatureLayer.cs" />
+    <Compile Include="Layer\IFlyLayer.cs" />
+    <Compile Include="Layer\ILayer.cs" />
+    <Compile Include="Layer\IRasterLayer.cs" />
+    <Compile Include="Layer\IVectorLayer.cs" />
+    <Compile Include="Layer\Layer.cs" />
+    <Compile Include="Layer\LayerContainer.cs" />
+    <Compile Include="Layer\LayerGroup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transform\IReversedCoordinateTransform.cs" />
+    <Compile Include="Transform\QuickTransform.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

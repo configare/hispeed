@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BandnameRefTables>
+  <!--
+         BandnameRefTable->satellite:[FY1D,FY2C,FY2D,FY3A,NOAA17,NOAA18,MODIS,Unknow]
+         BandNameRefTable->sensor:[VIRR,MERSI,EOSA,EOST,AVHRR,Unknow]
+         BandnameItem->type:[Visible,NearInfrared,MiddleInfrared,FarInfrared,ShortInfrared,Unknow]
+    -->
+  <BandnameRefTable satellite="FY3A,FY3B,FY3C" sensor="VIRR" >
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible" centerwavenum="0.63" display="true" />
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.84" max="0.89" type="NearInfrared" centerwavenum="0.63" display="true" />
+    <BandnameItem index="3" originalindex="3" name="中波红外" resolution="1100" min="3.55" max="3.95" type="MiddleInfrared" centerwavenum="2699.119" display="true" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="923.427053" display="true" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="830.241775" display="true" />
+    <BandnameItem index="6" originalindex="6" name="短波红外" resolution="1100" min="1.58" max="1.64" type="ShortInfrared" centerwavenum="0.63" display="true" />
+    <BandnameItem index="7" originalindex="7" name="可见光" resolution="1100" min="0.43" max="0.48" type="Visible" centerwavenum="0.63" display="true" />
+    <BandnameItem index="8" originalindex="8" name="可见光" resolution="1100" min="0.48" max="0.53" type="Visible" centerwavenum="0.63" display="true" />
+    <BandnameItem index="9" originalindex="9" name="可见光" resolution="1100" min="0.53" max="0.58" type="Visible" centerwavenum="0.63" display="true" />
+    <BandnameItem index="10" originalindex="10" name="可见光" resolution="1100" min="1.325" max="1.395" type="Visible" centerwavenum="0.63" display="true" />
+    <BandnameItem index="11" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="12" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="13" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="14" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="15" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="16" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="17" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="18" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY3A,FY3B,FY3C" sensor="MERSI">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="250" min="0.445" max="0.475" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="可见光" resolution="250" min="0.525" max="0.575" type="Visible" />
+    <BandnameItem index="3" originalindex="3" name="可见光" resolution="250" min="0.650" max="0.680" type="Visible" />
+    <BandnameItem index="4" originalindex="4" name="可见光" resolution="250" min="0.84" max="0.89" type="Visible" centerwavenum="" display="true" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="250" min="10.3" max="11.55" type="FarInfrared" centerwavenum="888.89" display="true" />
+    <BandnameItem index="6" originalindex="6" name="短波红外" resolution="1000" min="1.60" max="1.69" type="ShortInfrared" centerwavenum="" display="true" />
+    <BandnameItem index="7" originalindex="7" name="中波红外" resolution="1000" min="2.130" max="3.950" type="MiddleInfrared" centerwavenum="4694.8357" display="true" />
+    <BandnameItem index="8" originalindex="8" name="可见光" resolution="1000" min="0.412" max="0.412" type="Visible" />
+    <BandnameItem index="9" originalindex="9" name="可见光" resolution="1000" min="0.443" max="0.443" type="Visible" />
+    <BandnameItem index="10" originalindex="10" name="可见光" resolution="1000" min="0.490" max="0.490" type="Visible" />
+    <BandnameItem index="11" originalindex="11" name="可见光" resolution="1000" min="0.520" max="0.520" type="Visible" />
+    <BandnameItem index="12" originalindex="12" name="可见光" resolution="1000" min="0.56" max="0.565" type="Visible" />
+    <BandnameItem index="13" originalindex="13" name="可见光" resolution="1000" min="0.650" max="0.665" type="Visible" />
+    <BandnameItem index="14" originalindex="14" name="可见光" resolution="1000" min="0.665" max="0.685" type="Visible" />
+    <BandnameItem index="15" originalindex="15" name="近红外" resolution="1000" min="0.765" max="0.765" type="NearInfrared" />
+    <BandnameItem index="16" originalindex="16" name="近红外" resolution="1000" min="0.89" max="0.89" type="NearInfrared" />
+    <BandnameItem index="17" originalindex="17" name="近红外" resolution="1000" min="0.905" max="0.905" type="NearInfrared" />
+    <BandnameItem index="18" originalindex="18" name="近红外" resolution="1000" min="0.940" max="0.940" type="NearInfrared" />
+    <BandnameItem index="19" originalindex="19" name="近红外" resolution="1000" min="0.980" max="0.980" type="NearInfrared" />
+    <BandnameItem index="20" originalindex="20" name="近红外" resolution="1000" min="1.030" max="1.030" type="NearInfrared" />
+    <BandnameItem index="21" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="22" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="23" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="24" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="25" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="26" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="27" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="28" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY1D" sensor="VIRR">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.84" max="0.89" type="NearInfrared" />
+    <BandnameItem index="3" originalindex="3" name="中波红外" resolution="1100" min="3.55" max="3.95" type="MiddleInfrared" centerwavenum="2656.8193359" display="true" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="909.3479614" display="true" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="827.6102295" display="true" />
+    <BandnameItem index="6" originalindex="6" name="短波红外" resolution="1100" min="1.58" max="1.64" type="ShortInfrared" />
+    <BandnameItem index="7" originalindex="7" name="可见光" resolution="1100" min="0.43" max="0.48" type="Visible" />
+    <BandnameItem index="8" originalindex="8" name="可见光" resolution="1100" min="0.48" max="0.53" type="Visible" />
+    <BandnameItem index="9" originalindex="9" name="可见光" resolution="1100" min="0.53" max="0.58" type="Visible" />
+    <BandnameItem index="10" originalindex="10" name="可见光" resolution="1100" min="0.9" max="0.985" type="Visible" />
+    <BandnameItem index="11" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="12" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="13" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="14" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="15" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="16" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="17" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="18" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="EOSA,TERRA,EOS" sensor="MODIS,MOD">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="250" min="0.62" max="0.67" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="可见光" resolution="250" min="0.841" max="0.876" type="Visible" />
+    <BandnameItem index="3" originalindex="3" name="可见光" resolution="500" min="0.459" max="0.479" type="Visible" />
+    <BandnameItem index="4" originalindex="4" name="可见光" resolution="500" min="0.545" max="0.565" type="Visible" />
+    <BandnameItem index="5" originalindex="5" name="近红外" resolution="500" min="1.230" max="1.250" type="NearInfrared" />
+    <BandnameItem index="6" originalindex="6" name="短波红外" resolution="500" min="1.628" max="1.652" type="ShortInfrared" />
+    <BandnameItem index="7" originalindex="7" name="短波红外" resolution="500" min="2.105" max="2.155" type="ShortInfrared" />
+    <BandnameItem index="8" originalindex="8" name="可见光" resolution="1000" min="0.405" max="0.420" type="Visible" />
+    <BandnameItem index="9" originalindex="9" name="可见光" resolution="1000" min="0.438" max="0.448" type="Visible" />
+    <BandnameItem index="10" originalindex="10" name="可见光" resolution="1000" min="0.483" max="0.493" type="Visible" />
+    <BandnameItem index="11" originalindex="11" name="可见光" resolution="1000" min="0.526" max="0.536" type="Visible" />
+    <BandnameItem index="12" originalindex="12" name="可见光" resolution="1000" min="0.546" max="0.556" type="Visible" />
+    <BandnameItem index="13" originalindex="13" name="可见光" resolution="1000" min="0.662" max="0.672" type="Visible" />
+    <BandnameItem index="14" originalindex="14" name="可见光" resolution="1000" min="0.673" max="0.683" type="Visible" />
+    <BandnameItem index="17" originalindex="17" name="可见光" resolution="1000" min="0.743" max="0.753" type="Visible" />
+    <BandnameItem index="18" originalindex="18" name="近红外" resolution="1000" min="0.862" max="0.877" type="NearInfrared" />
+    <BandnameItem index="19" originalindex="19" name="近红外" resolution="1000" min="0.890" max="0.920" type="NearInfrared" />
+    <BandnameItem index="20" originalindex="20" name="近红外" resolution="1000" min="0.931" max="0.941" type="NearInfrared" />
+    <BandnameItem index="21" originalindex="21" name="近红外" resolution="1000" min="0.915" max="0.965" type="NearInfrared" />
+    <BandnameItem index="22" originalindex="22" name="中波红外" resolution="1000" min="3.660" max="3.840" type="MiddleInfrared" centerwavenum="2639.7065" display="true" />
+    <BandnameItem index="23" originalindex="23" name="中波红外" resolution="1000" min="3.929" max="3.9890" type="MiddleInfrared" />
+    <BandnameItem index="24" originalindex="24" name="中波红外" resolution="1000" min="3.929" max="3.989" type="MiddleInfrared" />
+    <BandnameItem index="25" originalindex="25" name="中波红外" resolution="1000" min="4.020" max="4.080" type="MiddleInfrared" />
+    <BandnameItem index="26" originalindex="26" name="中波红外" resolution="1000" min="4.433" max="4.498" type="MiddleInfrared" />
+    <BandnameItem index="27" originalindex="27" name="中波红外" resolution="1000" min="4.482" max="4.549" type="MiddleInfrared" />
+    <BandnameItem index="28" originalindex="28" name="短波红外" resolution="1000" min="1.360" max="1.390" type="ShortInfrared" />
+    <BandnameItem index="29" originalindex="29" name="中波红外" resolution="1000" min="6.535" max="6.895" type="MiddleInfrared" />
+    <BandnameItem index="30" originalindex="30" name="中波红外" resolution="1000" min="7.175" max="7.475" type="MiddleInfrared" />
+    <BandnameItem index="31" originalindex="31" name="中波红外" resolution="1000" min="8.400" max="8.700" type="MiddleInfrared" />
+    <BandnameItem index="32" originalindex="32" name="远红外" resolution="1000" min="9.580" max="9.880" type="FarInfrared" />
+    <BandnameItem index="33" originalindex="33" name="远红外" resolution="1000" min="10.780" max="11.280" type="FarInfrared" centerwavenum="9075.316" display="true" />
+    <BandnameItem index="34" originalindex="34" name="远红外" resolution="1000" min="11.770" max="12.270" type="FarInfrared" centerwavenum="8311.1011" display="true" />
+    <BandnameItem index="35" originalindex="35" name="远红外" resolution="1000" min="13.185" max="13.485" type="FarInfrared" centerwavenum="7482.23" display="true" />
+    <BandnameItem index="36" originalindex="36" name="远红外" resolution="1000" min="13.485" max="13.785" type="FarInfrared" />
+    <BandnameItem index="37" originalindex="37" name="远红外" resolution="1000" min="13.785" max="14.085" type="FarInfrared" />
+    <BandnameItem index="38" originalindex="38" name="远红外" resolution="1000" min="14.085" max="14.385" type="FarInfrared" />
+    <BandnameItem index="39" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="40" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="41" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="42" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="43" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="44" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="45" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="46" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="EOST,AQUA" sensor="MODIS,MOD,MYD">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="250" min="0.62" max="0.67" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="可见光" resolution="250" min="0.841" max="0.876" type="Visible" />
+    <BandnameItem index="3" originalindex="3" name="可见光" resolution="500" min="0.459" max="0.479" type="Visible" />
+    <BandnameItem index="4" originalindex="4" name="可见光" resolution="500" min="0.545" max="0.565" type="Visible" />
+    <BandnameItem index="5" originalindex="5" name="近红外" resolution="500" min="1.230" max="1.250" type="NearInfrared" />
+    <BandnameItem index="6" originalindex="6" name="短波红外" resolution="500" min="1.628" max="1.652" type="ShortInfrared" />
+    <BandnameItem index="7" originalindex="7" name="短波红外" resolution="500" min="2.105" max="2.155" type="ShortInfrared" />
+    <BandnameItem index="8" originalindex="8" name="可见光" resolution="1000" min="0.405" max="0.420" type="Visible" />
+    <BandnameItem index="9" originalindex="9" name="可见光" resolution="1000" min="0.438" max="0.448" type="Visible" />
+    <BandnameItem index="10" originalindex="10" name="可见光" resolution="1000" min="0.483" max="0.493" type="Visible" />
+    <BandnameItem index="11" originalindex="11" name="可见光" resolution="1000" min="0.526" max="0.536" type="Visible" />
+    <BandnameItem index="12" originalindex="12" name="可见光" resolution="1000" min="0.546" max="0.556" type="Visible" />
+    <BandnameItem index="13" originalindex="13" name="可见光" resolution="1000" min="0.662" max="0.672" type="Visible" />
+    <BandnameItem index="14" originalindex="14" name="可见光" resolution="1000" min="0.673" max="0.683" type="Visible" />
+    <BandnameItem index="17" originalindex="17" name="可见光" resolution="1000" min="0.743" max="0.753" type="Visible" />
+    <BandnameItem index="18" originalindex="18" name="近红外" resolution="1000" min="0.862" max="0.877" type="NearInfrared" />
+    <BandnameItem index="19" originalindex="19" name="近红外" resolution="1000" min="0.890" max="0.920" type="NearInfrared" />
+    <BandnameItem index="20" originalindex="20" name="近红外" resolution="1000" min="0.931" max="0.941" type="NearInfrared" />
+    <BandnameItem index="21" originalindex="21" name="近红外" resolution="1000" min="0.915" max="0.965" type="NearInfrared" />
+    <BandnameItem index="22" originalindex="22" name="中波红外" resolution="1000" min="3.660" max="3.840" type="MiddleInfrared" />
+    <BandnameItem index="23" originalindex="23" name="中波红外" resolution="1000" min="3.929" max="3.9890" type="MiddleInfrared" />
+    <BandnameItem index="24" originalindex="24" name="中波红外" resolution="1000" min="3.929" max="3.989" type="MiddleInfrared" />
+    <BandnameItem index="25" originalindex="25" name="中波红外" resolution="1000" min="4.020" max="4.080" type="MiddleInfrared" />
+    <BandnameItem index="26" originalindex="26" name="中波红外" resolution="1000" min="4.433" max="4.498" type="MiddleInfrared" />
+    <BandnameItem index="27" originalindex="27" name="中波红外" resolution="1000" min="4.482" max="4.549" type="MiddleInfrared" />
+    <BandnameItem index="28" originalindex="28" name="短波红外" resolution="1000" min="1.360" max="1.390" type="ShortInfrared" />
+    <BandnameItem index="29" originalindex="29" name="中波红外" resolution="1000" min="6.535" max="6.895" type="MiddleInfrared" />
+    <BandnameItem index="30" originalindex="30" name="中波红外" resolution="1000" min="7.175" max="7.475" type="MiddleInfrared" />
+    <BandnameItem index="31" originalindex="31" name="中波红外" resolution="1000" min="8.400" max="8.700" type="MiddleInfrared" />
+    <BandnameItem index="32" originalindex="32" name="远红外" resolution="1000" min="9.580" max="9.880" type="FarInfrared" />
+    <BandnameItem index="33" originalindex="33" name="远红外" resolution="1000" min="10.780" max="11.280" type="FarInfrared" />
+    <BandnameItem index="34" originalindex="34" name="远红外" resolution="1000" min="11.770" max="12.270" type="FarInfrared" />
+    <BandnameItem index="35" originalindex="35" name="远红外" resolution="1000" min="13.185" max="13.485" type="FarInfrared" />
+    <BandnameItem index="36" originalindex="36" name="远红外" resolution="1000" min="13.485" max="13.785" type="FarInfrared" />
+    <BandnameItem index="37" originalindex="37" name="远红外" resolution="1000" min="13.785" max="14.085" type="FarInfrared" />
+    <BandnameItem index="38" originalindex="38" name="远红外" resolution="1000" min="14.085" max="14.385" type="FarInfrared" />
+    <BandnameItem index="39" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="40" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="41" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="42" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="43" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="44" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="45" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="46" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="NOAA11,NOAA14,NOAA16" sensor="AVHRR">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+    <BandnameItem index="3" originalindex="3" name="短波红外(3A或者3B)" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="838.1255" display="true" />
+    <BandnameItem index="6" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="7" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="8" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="9" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="10" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="11" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="12" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="13" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="NOAA17" sensor="AVHRR">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+    <BandnameItem index="3" originalindex="3" name="短波红外" resolution="1100" min="1.58" max="1.64" type="NearInfrared" centerwavenum="2669.3554" display="true" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="926.2947" display="true" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="839.8246" display="true" />
+    <BandnameItem index="6" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="7" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="8" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="9" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="10" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="11" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="12" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="13" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="NOAA18,NA18,NOAA19,NA19,NOAA,NA" sensor="AVHRR">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+    <BandnameItem index="3" originalindex="3" name="短波红外" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2659.7952" display="true" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="928.1460" display="true" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="833.2532" display="true" />
+    <BandnameItem index="6" originalindex="40000" name="原始轨道行号" resolution="1100" min="110" max="110" type="OrbitRow" display="false" />
+    <BandnameItem index="7" originalindex="40001" name="原始轨道列号" resolution="1100" min="120" max="120" type="OrbitCol" display="false" />
+    <BandnameItem index="8" originalindex="30000" name="太阳天顶角" resolution="1100" min="130" max="130" type="SolarZenith" display="false" />
+    <BandnameItem index="9" originalindex="30001" name="太阳方位角" resolution="1100" min="140" max="140" type="SolarAzimuth" display="false" />
+    <BandnameItem index="10" originalindex="30002" name="卫星天顶角" resolution="1100" min="150" max="150" type="SensorZenith" display="false" />
+    <BandnameItem index="11" originalindex="30003" name="卫星方位角" resolution="1100" min="160" max="160" type="SensorAzimuth" display="false" />
+    <BandnameItem index="12" originalindex="30010" name="海拔高度" resolution="1100" min="170" max="170" type="Altitude" display="false" />
+    <BandnameItem index="13" originalindex="30011" name="地表特征" resolution="1100" min="180" max="180" type="SurfaceFeatures" display="false" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY2C,FY2D,FY2E" sensor="VISSR">
+    <BandnameItem index="1" originalindex="1" name="远红外" resolution="5000" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true" />
+    <BandnameItem index="2" originalindex="2" name="远红外" resolution="5000" min="11.5" max="12.5" type="FarInfrared" centerwavenum="838.1255" display="true" />
+    <BandnameItem index="3" originalindex="3" name="中波红外" resolution="5000" min="6.3" max="7.6" type="MiddleInfrared" />
+    <BandnameItem index="4" originalindex="4" name="中波红外" resolution="5000" min="3.5" max="4.0" type="MiddleInfrared" centerwavenum="2699.119" display="true" />
+    <BandnameItem index="5" originalindex="5" name="可见光" resolution="5000" min="0.50" max="0.86" type="Visible" />
+    <BandnameItem index="6" originalindex="6" name="云分类" resolution="5000" min="1000" max="1000" type="Cloud" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY2D" sensor="UNKNOW">
+    <BandnameItem index="1" originalindex="1" name="云顶亮温" resolution="10000" min="10.3" max="11.3" type="TBB" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY2C" sensor="UNKNOW">
+    <BandnameItem index="1" originalindex="1" name="云顶亮温" resolution="10000" min="10.3" max="11.3" type="TBB" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="FY2E" sensor="UNKNOW" >
+    <BandnameItem index="1" originalindex="1" name="云顶亮温" resolution="10000" min="10.3" max="11.3" type="TBB" />
+  </BandnameRefTable>
+  <!--BEGIN 测试使用-->
+  <BandnameRefTable satellite="EOSA" sensor="UNKNOW">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="250" min="0.62" max="0.67" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="可见光" resolution="250" min="0.841" max="0.876" type="Visible" />
+    <BandnameItem index="3" originalindex="3" name="短波红外" resolution="500" min="1.628" max="1.652" type="ShortInfrared" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1000" min="10.780" max="11.280" type="FarInfrared" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1000" min="11.770" max="12.270" type="FarInfrared" />
+  </BandnameRefTable>
+  <BandnameRefTable satellite="EOST" sensor="UNKNOW">
+    <BandnameItem index="1" originalindex="1" name="可见光" resolution="250" min="0.62" max="0.67" type="Visible" />
+    <BandnameItem index="2" originalindex="2" name="可见光" resolution="250" min="0.841" max="0.876" type="Visible" />
+    <BandnameItem index="3" originalindex="3" name="短波红外" resolution="500" min="1.628" max="1.652" type="ShortInfrared" />
+    <BandnameItem index="4" originalindex="4" name="远红外" resolution="1000" min="10.780" max="11.280" type="FarInfrared" />
+    <BandnameItem index="5" originalindex="5" name="远红外" resolution="1000" min="11.770" max="12.270" type="FarInfrared" />
+  </BandnameRefTable>
+  <!--END 测试使用-->
+</BandnameRefTables>

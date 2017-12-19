@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Telerik.WinControls.UI.Docking.ActiveDocumentCloseCommand" Collapsed="true">
+    <Position X="0.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\ActiveDocumentCloseCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.NextDocumentCommand" Collapsed="true">
+    <Position X="3" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\NextDocumentCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.PredefinedCommandNames" Collapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAIAAAAACAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Commands\PredefinedCommandNames.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.PreviousDocumentCommand" Collapsed="true">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\PreviousDocumentCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorDisplayCommand" Collapsed="true">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\QuickNavigatorDisplayCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockCommand" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAEAEAAAABAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RadDockCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockCommandManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IoQCBhAAAAKAAIABEACCAQQEBAAABCCAAGAAAAAAAAA=</HashCode>
+      <FileName>Commands\RadDockCommandManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockShortcut" Collapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAgAAAAIAACAAAAAAgAAAAEAAAAAAAAAAAQ=</HashCode>
+      <FileName>Commands\RadDockShortcut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ContextMenuDisplayingEventArgs" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAQAQAAEAAQAAAAAIDAAAAAwAAAA=</HashCode>
+      <FileName>ContextMenus\ContextMenuDisplayingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ContextMenuItemClickEventArgs" Collapsed="true">
+    <Position X="2.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContextMenus\ContextMenuItemClickEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ContextMenuService" Collapsed="true">
+    <Position X="0.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAIAQRgAAACAATEQCJhgCQSAAJAABAAA7AiCACBBAII=</HashCode>
+      <FileName>ContextMenus\ContextMenuService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockHelper" Collapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAQCAACAAIAAAAQCAGQBAMBAAAhAgAAAQAAAAA=</HashCode>
+      <FileName>DockHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.AutoHideGroup" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAA=</HashCode>
+      <FileName>Docking\AutoHideGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.AutoHideGroupCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoIIAAAAAIAEAJABGAAABKQQQAUAAgAAAAAAAAhEIAI=</HashCode>
+      <FileName>Docking\AutoHideGroupCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.AutoHidePopup" Collapsed="true">
+    <Position X="13.5" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkAAAEAACBAAAAhAAAAFAAAAAAAAQAAAAAABAAAA=</HashCode>
+      <FileName>Docking\AutoHidePopup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.AutoHideTabStrip" Collapsed="true">
+    <Position X="13.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgghCBMAAIABAAEYACAAAFAAFAJECCAKBAAARACEgA=</HashCode>
+      <FileName>Docking\AutoHideTabStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.AutoHideTabStripElement" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Docking\AutoHideTabStripElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockAutoHideSerializationContainer" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIBAIAAgAAAgEAAAABAAAEhAAgEAQAAAEAAAAA=</HashCode>
+      <FileName>Docking\DockAutoHideSerializationContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockPopupForm" Collapsed="true">
+    <Position X="14.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAAABAAAAAAgCAAAAEAAAAAAAACAAAAA=</HashCode>
+      <FileName>Docking\DockPopupForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockTabStrip" Collapsed="true">
+    <Position X="14.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAggAgAEApAgAAQBhEAAAAAgBAACACAIAAgASQBISA=</HashCode>
+      <FileName>Docking\DockTabStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindow" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICASIAACkCIBggAHkqSAgo2gGAAgAlAAIsIASiCCgAE=</HashCode>
+      <FileName>Docking\DockWindow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAEgBAACAAAAAQAAAABBAAAAAAAAAAAIAI=</HashCode>
+      <FileName>Docking\DockWindowCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DocumentContainer" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACgAAAAAAAAACAAAAAEAAAgAAAAAACAAAIA=</HashCode>
+      <FileName>Docking\DocumentContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DocumentManager" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAACIQAGAnAQAkCQAIAAAQwJJBBQEAAAAECMKgAA=</HashCode>
+      <FileName>Docking\DocumentManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DocumentTabStrip" Collapsed="true">
+    <Position X="15.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAIAQAAJCpAAAAQMgAADEAAlAAAAAGIIgACAAAAABA=</HashCode>
+      <FileName>Docking\DocumentTabStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DocumentWindow" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAgAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\DocumentWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockStateChangingEventArgs" Collapsed="true">
+    <Position X="15.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockStateChangingEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockTabStripNeededEventArgs" Collapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAEEAAABACAAAIIgAAAAAAAAAEAAAAIQAAAAAAAAg=</HashCode>
+      <FileName>Docking\Events\DockTabStripNeededEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowCancelEventArgs" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockWindowCancelEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowEventArgs" Collapsed="true">
+    <Position X="1.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockWindowEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowSnapshotEventArgs" Collapsed="true">
+    <Position X="0.5" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockWindowSnapShotEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockTransactionCancelEventArgs" Collapsed="true">
+    <Position X="15.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\RadDockTransactionCancelEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockTransactionEventArgs" Collapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Docking\Events\RadDockTransactionEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.SplitContainerNeededEventArgs" Collapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\SplitContainerNeededEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.FloatingWindow" Collapsed="true">
+    <Position X="15.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAIABCBQFAAAEAQAgABDAALAAAgAAAAEwAAAAEA=</HashCode>
+      <FileName>Docking\FloatingWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.FloatingWindowCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEABAACAAAAAQAAAAAAAAAAEAAAABAIAI=</HashCode>
+      <FileName>Docking\FloatingWindowCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.FloatingWindowList" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Docking\FloatingWindowList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.GuidToNameMapping" Collapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQEAAAEBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\GuidToNameMappingCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.GuidToNameMappingCollection" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAABAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Docking\GuidToNameMappingCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.HostWindow" Collapsed="true">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIgACAQAAAgAAgIAAAAAEAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Docking\HostDockWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.MdiController" Collapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KgAAkAAAACAAAIAREACCAAAAAAAAgCAAgIBgAAAACiA=</HashCode>
+      <FileName>Docking\MdiController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/7/3vjM2NHN/t/8zzz+ui7cb15rN3T/73fo398uf/8Y=</HashCode>
+      <FileName>Docking\RadDock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.SerializableFloatingWindow" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAACAAgAAAAAAAEAQAABAEg=</HashCode>
+      <FileName>Docking\SerializableFloatingWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ToolTabStrip" Collapsed="true">
+    <Position X="13.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKBQIAAAICsAAQIVOgCIKEACEAgICBKoIAQEIAgEIQA=</HashCode>
+      <FileName>Docking\ToolTabStrip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ToolWindow" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAkAAAAAAAAAAEAAAAAAAACAEgAAA=</HashCode>
+      <FileName>Docking\ToolWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ToolWindowCaptionElement" Collapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Docking\ToolWindowCaptionElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.AutoHideTransaction" Collapsed="true">
+    <Position X="12.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Transactions\AutoHideTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.CloseTransaction" Collapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Transactions\CloseTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowTransaction" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAQAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Transactions\DockWindowTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DragDropTransaction" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAQBAAAEAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Transactions\DragDropTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.FloatTransaction" Collapsed="true">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAEAAAAAAAAAAAAAEAAAACAAAAAgA=</HashCode>
+      <FileName>Docking\Transactions\FloatTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.PerformDockTransaction" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAgAABAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Transactions\PerformDockTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockTransaction" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIEACAAAACAAAAAAAAAAAAAAAAAAkAEAAIAAIACAA=</HashCode>
+      <FileName>Docking\Transactions\RadDockTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RedockTransaction" Collapsed="true">
+    <Position X="10" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Transactions\RedockTransaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DragDropDockPositionEventArgs" Collapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAIAAAEAAEABAABAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropDockPositionEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DragDropHitTestEventArgs" Collapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAgAAAAIAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropHitTestEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DragDropService" Collapsed="true">
+    <Position X="5.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8AQJAcAuxCLgUykIsBpBCIgyAHCAFBDoMmJkCAwSoSI=</HashCode>
+      <FileName>DragDrop\DragDropService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DragDropTargetEventArgs" Collapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropTargetEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockingGuideImage" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAgCAIAAAAAAhAAAiEIAAJBQAAAAAAQAAAAE=</HashCode>
+      <FileName>Guides\DockingGuideImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockingGuidePopup" Collapsed="true">
+    <Position X="8.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKAAAAAAAABAgABgAAkQIQAEAAAAAAECEAABAIAAAAA=</HashCode>
+      <FileName>Guides\DockingGuidePopup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockingHintPopup" Collapsed="true">
+    <Position X="10.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAACAAAAAgAAAA=</HashCode>
+      <FileName>Guides\DockingHintPopup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadLayeredWindow" Collapsed="true">
+    <Position X="9.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BwKCQCoAYgAQAEBAEQAEgABEAABEABAAQAAQwEBAAAE=</HashCode>
+      <FileName>Guides\RadLayeredWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockingGuidesTemplate" Collapsed="true">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCEAAAABBAAAIgRAADAgAAAQAAAEIoAABACAAAQAAAA=</HashCode>
+      <FileName>Guides\Templates\DockingGuidesTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.PredefinedDockingGuidesTemplate" Collapsed="true">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIQAAAAABSAJAFAAIgAAAAAAAAEwAAAgAAAAAQAAA=</HashCode>
+      <FileName>Guides\Templates\PredefinedDockingGuidesTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.VS2008DockingGuidesTemplate" Collapsed="true">
+    <Position X="10.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAABAAAAAgAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Guides\Templates\VS2008DockingGuidesTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.VS2010DockingGuidesTemplate" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAABAAAAAgAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Guides\Templates\VS2010DockingGuidesTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ImageHelper" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAACAQAAAAAAAAAAAIAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ImageHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigator" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCBByAxABioAAUAMUAAIgARGACCUFRCAIRQUABBYAAg=</HashCode>
+      <FileName>QuickNavigator\QuickNavigator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorElement" Collapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEAQAAADQEAAIAAAAAAgAAQAIBgQAAAQECAAAABA=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorList" Collapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAABAAAAAAAAAAACAAAAAAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorListItem" Collapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAkAAAMAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorPopup" Collapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAEAAAABACAAAAAAAAAAQggAAIQAAAAAAAAAAEEAAA=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorPopup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorSettings" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBCAIAAAADAAIAHgSKQAIUDOACGQCwoggCEKAUAxAI=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.QuickNavigatorThemeDesignerData" Collapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorThemeDesignerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RedockFloatingState" Collapsed="true">
+    <Position X="15.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>RedockSupport\RedockFloatingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RedockService" Collapsed="true">
+    <Position X="3" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AqAAAEABAQgAAAAIAAgAAAAgIACAACAAQAAAAEABACI=</HashCode>
+      <FileName>RedockSupport\RedockService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RedockState" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAACBYAAAAgAACAAAQAAAAEAAAAAACIAgAI=</HashCode>
+      <FileName>RedockSupport\RedockState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowPlaceholder" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\DockWindowPlaceholder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DockWindowSerializableCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAIAAYCUABABCAAAFCQQTAUAAAAEQAAQAABAIAA=</HashCode>
+      <FileName>Serialization\DockWindowSerializableCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockComponentFactory" Collapsed="true">
+    <Position X="9.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAQABAAgAAAAAAIAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.DesignTimeRadDockComponentFactory" Collapsed="true">
+    <Position X="8.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAQABAAgAAAAAAIAAAAAABAAAAAgAAAAABAA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RunTimeRadDockComponentFactory" Collapsed="true">
+    <Position X="10.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAQABAAgAAAAAAIAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.XmlDockable" Collapsed="true">
+    <Position X="28.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAFAAiAAAIAEAQAAAAARAgIAAAQQZCAAECAA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.XmlDockNode" Collapsed="true">
+    <Position X="18.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAECEQAAgAAAABAAAIAAAAADAAAACACAAAAIABA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.XmlDockSite" Collapsed="true">
+    <Position X="20" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAIAAAAAAAAAAAABAAIAIAQAAAAAAAAA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.XmlDockingManager" Collapsed="true">
+    <Position X="30.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAUAAAEABAAAAgBAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\XmlDockingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.RadDockService" Collapsed="true">
+    <Position X="3" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAAAAAAAAIAAIgAAACAAAAAAAAAAAAAAAAAACQAAAA=</HashCode>
+      <FileName>Services\RadDockService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.ServiceConstants" Collapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAo=</HashCode>
+      <FileName>Services\ServiceConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.StateService" Collapsed="true">
+    <Position X="5.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>giAqAGAAGiIgASAAAABBAAAAAAIQACAEIAAEBAwAgAQ=</HashCode>
+      <FileName>Services\StateService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.StateServiceStartingEventArgs" Collapsed="true">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\StateServiceStartingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.StateServiceStoppingEventArgs" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\StateServiceStoppingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.Themes.Design.RadDockThemeDesignerData" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Design\RadDockThemeDesignerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.OverflowDropDownButtonElement" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAEAAAgQAA=</HashCode>
+      <FileName>Docking\OverflowDropDownButtonElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.QuickNavigatorListItemStateManagerFactory" Collapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAQAAAAAAAEAAAAA=</HashCode>
+      <FileName>QuickNavigator\QuickNavigatorListItemStateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Localization.RadDockLocalizationProvider" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Localization\RadDockLocalizationProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Localization.RadDockStringId" Collapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAgAICAABAAAAACACAgEAEEgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Localization\RadDockStringId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.Properties.Resources" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.Properties.Settings" Collapsed="true">
+    <Position X="20" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.Serialization.DockXmlSerializer" Collapsed="true">
+    <Position X="10.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACEAAAAAAAAAAAAAAAAIAIAABBEAAAACAABAAAAA=</HashCode>
+      <FileName>Serialization\DockXmlSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.Serialization.DockXmlSerializerBase" Collapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAARAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Serialization\DockXmlSerializerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.Serialization.FloatingWindowsXmlNonResolvingSerializer" Collapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\FloatingWindowsXmlNonResolvingSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Telerik.WinControls.UI.Docking.Serialization.FloatingWindowsXmlResolvingSerializer" Collapsed="true">
+    <Position X="12.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\FloatingWindowsXmlResolvingSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Xml.Serialization.GeneratedAssembly.XmlDockingManagerSerializer" Collapsed="true">
+    <Position X="5.5" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\XmlDockingManagerSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReader1" Collapsed="true">
+    <Position X="21.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AETQwIACKhBCIBKAABeRAjAsZDAEIAAISLRHAEQIwUQ=</HashCode>
+      <FileName>Serialization\XmlSerializationReader1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializer1" Collapsed="true">
+    <Position X="5.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\XmlSerializer1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Telerik.WinControls.UI.Docking.DockingGuideHitTest" Collapsed="true">
+    <Position X="18.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAABAAAAAAgAIAAAAAAAAEAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Guides\DockingGuideHitTest.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Telerik.WinControls.UI.Docking.IDockWindow" Collapsed="true">
+    <Position X="18.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACCAAAAA=</HashCode>
+      <FileName>Docking\DockWindow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Telerik.WinControls.UI.Docking.ContextMenuType" Collapsed="true">
+    <Position X="27" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContextMenus\ContextMenuType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.AllowedDockPosition" Collapsed="true">
+    <Position X="20" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAICAAACICAAAEAAAA=</HashCode>
+      <FileName>Docking\AllowedDockPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.AutoHidePosition" Collapsed="true">
+    <Position X="25.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAACACAACAAAAA=</HashCode>
+      <FileName>Docking\AutoHidePosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockPosition" Collapsed="true">
+    <Position X="30.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAICAAACACAAAAAAAA=</HashCode>
+      <FileName>Docking\DockPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockState" Collapsed="true">
+    <Position X="18.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAACAAAAAAAEAAAAAAAAAAAAAAAAAAEEAAA=</HashCode>
+      <FileName>Docking\DockState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.AllowedDockState" Collapsed="true">
+    <Position X="21.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAACAAAAAAAEAAAAAAAAAAAAAIAAAAEEAAA=</HashCode>
+      <FileName>Docking\DockState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockType" Collapsed="true">
+    <Position X="21.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\DockType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DocumentStripButtons" Collapsed="true">
+    <Position X="28.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAIAAAAGAAAQ=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.ActiveDocumentListSortOrder" Collapsed="true">
+    <Position X="18.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEIAAA=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockWindowCloseAction" Collapsed="true">
+    <Position X="23.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAgAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.ToolStripCaptionButtons" Collapsed="true">
+    <Position X="25.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAGAAAQ=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.AutoHideAnimateMode" Collapsed="true">
+    <Position X="23.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAgAAAAAAAAAAAgAAAAAAAAEAAAA=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockWindowInsertOrder" Collapsed="true">
+    <Position X="25.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DocumentCloseActivation" Collapsed="true">
+    <Position X="27" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockTransactionType" Collapsed="true">
+    <Position X="20" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAGgAAI=</HashCode>
+      <FileName>Docking\Transactions\DockTransactionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DragDropMode" Collapsed="true">
+    <Position X="20" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAAA=</HashCode>
+      <FileName>DragDrop\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DragDropContext" Collapsed="true">
+    <Position X="18.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAgAAFAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DragDropBehavior" Collapsed="true">
+    <Position X="30.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>DragDrop\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.DockingGuidesPosition" Collapsed="true">
+    <Position X="28.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAACACAAAAIAAA=</HashCode>
+      <FileName>Guides\DockingGuidesPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.QuickNavigatorDisplayPosition" Collapsed="true">
+    <Position X="21.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuickNavigator\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Telerik.WinControls.UI.Docking.ServiceState" Collapsed="true">
+    <Position X="23.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Services\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Telerik.WinControls.UI.Docking.ContextMenuDisplayingEventHandler" Collapsed="true">
+    <Position X="18.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ContextMenus\ContextMenuDisplayingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.ContextMenuItemClickEventHandler" Collapsed="true">
+    <Position X="20" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContextMenus\ContextMenuItemClickEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DockStateChangingEventHandler" Collapsed="true">
+    <Position X="21.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockStateChangingEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DockTabStripNeededEventHandler" Collapsed="true">
+    <Position X="23.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockTabStripNeededEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DockWindowCancelEventHandler" Collapsed="true">
+    <Position X="25.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Docking\Events\DockWindowCancelEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DockWindowEventHandler" Collapsed="true">
+    <Position X="27" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockWindowEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DockWindowSnapshotEventHandler" Collapsed="true">
+    <Position X="28.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\DockWindowSnapShotEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.RadDockTransactionCancelEventHandler" Collapsed="true">
+    <Position X="21.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\RadDockTransactionCancelEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.RadDockTransactionEventHandler" Collapsed="true">
+    <Position X="23.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\RadDockTransactionEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.SplitContainerNeededEventHandler" Collapsed="true">
+    <Position X="25.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Docking\Events\SplitContainerNeededEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DragDropDockPositionEventHandler" Collapsed="true">
+    <Position X="30.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropDockPositionEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DragDropHitTestEventHandler" Collapsed="true">
+    <Position X="18.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>DragDrop\DragDropHitTestEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.DragDropTargetEventHandler" Collapsed="true">
+    <Position X="20" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DragDrop\DragDropTargetEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.StateServiceStartingEventHandler" Collapsed="true">
+    <Position X="27" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\StateServiceStartingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Telerik.WinControls.UI.Docking.StateServiceStoppingEventHandler" Collapsed="true">
+    <Position X="28.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Services\StateServiceStoppingEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

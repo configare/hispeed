@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Seasons>
+  <Spring>
+    <Month>3</Month>
+    <Month>4</Month>
+    <Month>5</Month>
+  </Spring>
+  <Summer>
+    <Month>6</Month>
+    <Month>7</Month>
+    <Month>8</Month>
+  </Summer>
+  <Autumn>
+    <Month>9</Month>
+    <Month>10</Month>
+    <Month>11</Month>
+  </Autumn>
+  <Winter>
+    <Month>12</Month>
+    <Month>1</Month>
+    <Month>2</Month>
+  </Winter>
+</Seasons> 

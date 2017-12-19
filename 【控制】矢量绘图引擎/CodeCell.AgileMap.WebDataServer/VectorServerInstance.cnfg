@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VectorServerInstances>
+  <Instance id="0" name="基础矢量服务(127.0.0.1)" description="" args ="MySql$Database=fdc;Data Source=127.0.0.1;User Id=root;Password=106087;CharSet=utf8"/>
+  <Instance id="1" name="基础矢量服务(192.168.0.241)" description="" args ="MySql$Database=sdb;Data Source=192.168.0.241;User Id=root;Password=123;CharSet=utf8"/>
+</VectorServerInstances>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="SLR" applyfor = "SLR,MLR" description="陆表反射比" matchstring="\S+_SLR_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="SLR" datasets= "MERSI_LSR_Q1KMSDS1,MERSI_LSR_Q1KMSDS2,MERSI_LSR_Q1KMSDS3,MERSI_LSR_Q1KMSDS4" refdatasets="">
+      <Segment values = "0~5000" indexes = "0~255" />
+      <Segment values = "5001~10000" indexes = "255" />
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables displayBands="MERSI_LSR_Q1KMSDS2,MERSI_LSR_Q1KMSDS1,MERSI_LSR_Q1KMSDS0">
+  </ColorTables>
+</MASL2ColorTable>

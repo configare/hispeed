@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A967B272-8C1D-4F7F-8963-BA7DBEC258EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.AddIn.Python</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.AddIn.Python</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\RefDLL\PythonEngine\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.PythonEngine">
+      <HintPath>..\RefDLL\PythonEngine\GeoDo.PythonEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\CommandCloseScriptEnvironment.cs" />
+    <Compile Include="Commands\CommandExecuteScript.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIProvider\UITabScript.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIProvider\UITabScript.designer.cs">
+      <DependentUpon>UITabScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\CommandSaveCurrentScript.cs" />
+    <Compile Include="Commands\CommandOpenScriptEditor.cs" />
+    <Compile Include="Windows\PythonEditorWnd\IPythonEditorWindow.cs" />
+    <Compile Include="Windows\PythonEditorWnd\PythonEditorWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\PythonEditorWnd\PythonEditorWindow.Designer.cs">
+      <DependentUpon>PythonEditorWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\CommandNewScript.cs" />
+    <Compile Include="Commands\CommandDeleteScript.cs" />
+    <Compile Include="Commands\CommandOpenScriptManager.cs" />
+    <Compile Include="Windows\PythonManagerWnd\IPythonManagerWindow.cs" />
+    <Compile Include="Windows\PythonManagerWnd\PythonManagerWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\PythonManagerWnd\PythonManagerWindow.Designer.cs">
+      <DependentUpon>PythonManagerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\CommandPythonMonitorWindow.cs" />
+    <Compile Include="Windows\PythonMonitorWnd\IPythonMonitorWindow.cs" />
+    <Compile Include="Windows\PythonMonitorWnd\PythonMonitorWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\PythonMonitorWnd\PythonMonitorWindow.Designer.cs">
+      <DependentUpon>PythonMonitorWindow.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UIProvider\UITabScript.resx">
+      <DependentUpon>UITabScript.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

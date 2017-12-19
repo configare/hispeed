@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TransDef>
+  <Product name="大雾" smartidentify="FIR" fileidentify="FOG">
+    <SubProduct name="雾" smartidentify="DBLV" fileidentify="FOG" DataSetName="FOGS" Description="大雾" BandIndex="1">
+      <MapInfo>
+        <Projection name="Orbit"></Projection>
+      </MapInfo>
+      <Table smartvalue="1" filevalue="1"/>
+    </SubProduct>
+  </Product>
+</TransDef>

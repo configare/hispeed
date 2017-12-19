@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3253808-AF13-4D99-A632-E3896CB8A544}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.WinForm</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCell.Bricks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.Bricks.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.MEF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MEF\GeoDo.MEF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.PythonEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\PythonEngine\GeoDo.PythonEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine.GDIPlus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL.HDF5Universal">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.HDF5Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout">
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.DataFrm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.DataFrm.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.GDIPlus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\CommandConfig.cs" />
+    <Compile Include="Config\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSupport\HJ\HJXMLFileProcessor.cs" />
+    <Compile Include="ViewerToLayout\CmdViewerToLayout.cs" />
+    <Compile Include="Commands\CommandAddLayer.cs" />
+    <Compile Include="Commands\CommandExit.cs" />
+    <Compile Include="Hdf5UniProcess\CommandHdf5Open.cs" />
+    <Compile Include="FileOpenAs\FileDrivers.cs" />
+    <Compile Include="FileSupport\GeoEye\frmComponentFileSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileSupport\GeoEye\frmComponentFileSelect.Designer.cs">
+      <DependentUpon>frmComponentFileSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSupport\GeoEye\GeoEyeTxtFileProcessor.cs" />
+    <Compile Include="FileSupport\MemoryIsEnoughChecker.cs" />
+    <Compile Include="FileSupport\Processors\ImageFileProcessor.cs" />
+    <Compile Include="FileSupport\Processors\OrbitFileProcessor.cs" />
+    <Compile Include="FileSupport\Processors\RasterFileProcessor.cs" />
+    <Compile Include="FileSupport\RasterPrdProcessor\RasterProductFileProcessor.cs" />
+    <Compile Include="FileSupport\RasterPrdProcessor\RgbStretcherProvidercs.cs" />
+    <Compile Include="FileSupport\Processors\ThemeFileProcessor.cs" />
+    <Compile Include="FileSupport\Processors\VectorFileProcessor.cs" />
+    <Compile Include="frmMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainForm.Designer.cs">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalInitlializer\GeoVISIdxBuilder.cs" />
+    <Compile Include="GlobalInitlializer\GlobaCacherlInitializer.cs" />
+    <Compile Include="GlobalInitlializer\LayoutDataFrameInitlializer.cs" />
+    <Compile Include="Hdf5UniProcess\HdfFileProcessor.cs" />
+    <Compile Include="ProgressTracker\frmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressTracker\ProgressMonitorManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\SmartSession.cs" />
+    <Compile Include="SmartWindowManager\SmartToolWindowFactory.cs" />
+    <Compile Include="SmartWindowManager\UCSmartWindowManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SmartWindowManager\UCSmartWindowManager.Designer.cs">
+      <DependentUpon>UCSmartWindowManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FileMenuView\IRecentFileContainer.cs" />
+    <Compile Include="UI\FileMenuView\PinnedListVisualItem.cs" />
+    <Compile Include="UI\FileMenuView\UCRecentFileList.cs" />
+    <Compile Include="UI\UIFrameworkBuilder.cs" />
+    <Compile Include="ViewerToLayout\ThemeGraphHelper.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.CanvasViewer\00.GeoDo.RSS.UI.AddIn.CanvasViewer.csproj">
+      <Project>{D471C8B7-A9B1-4321-A10E-E8E399FE1AB2}</Project>
+      <Name>00.GeoDo.RSS.UI.AddIn.CanvasViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.DataPro\02.GeoDo.RSS.UI.AddIn.DataPro.csproj">
+      <Project>{9627ABEA-7D9D-4A85-9944-E5E72D2AAEE8}</Project>
+      <Name>02.GeoDo.RSS.UI.AddIn.DataPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.Layout\05.GeoDo.RSS.UI.AddIn.Layout.csproj">
+      <Project>{45B555B2-E36A-4077-BDE4-60E591B9C9BB}</Project>
+      <Name>05.GeoDo.RSS.UI.AddIn.Layout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.Theme\20.GeoDo.RSS.UI.AddIn.Theme.csproj">
+      <Project>{AA1D6CF7-01C3-4178-BEDB-C1CD87584E11}</Project>
+      <Name>20.GeoDo.RSS.UI.AddIn.Theme</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FileSupport\GeoEye\frmComponentFileSelect.resx">
+      <DependentUpon>frmComponentFileSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainForm.resx">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressTracker\frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmartWindowManager\UCSmartWindowManager.resx">
+      <DependentUpon>UCSmartWindowManager.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

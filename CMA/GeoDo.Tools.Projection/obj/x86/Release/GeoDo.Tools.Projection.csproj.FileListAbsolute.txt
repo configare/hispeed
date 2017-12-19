@@ -1,0 +1,10 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\Testprj.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\投影输入.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\投影输出.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\拼接镶嵌输出.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Projection.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Projection.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.Projection.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Projection\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Projection\obj\x86\Release\GeoDo.Tools.Projection.exe
+D:\监测分析平台\Code\CMA\GeoDo.Tools.Projection\obj\x86\Release\GeoDo.Tools.Projection.pdb

@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9627ABEA-7D9D-4A85-9944-E5E72D2AAEE8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.AddIn.DataPro</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.AddIn.DataPro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;PUB</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.FileProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.FileProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.ProjectDefine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.ProjectDefine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.BlockOper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\BlockOper\GeoDo.RSS.BlockOper.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.Grid, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MEM, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.MEM.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockOper\Commands\CommandClip.cs" />
+    <Compile Include="BlockOper\Commands\CommandCut.cs" />
+    <Compile Include="BlockOper\Commands\CommandMoasic.cs" />
+    <Compile Include="BlockOper\Controls\DoubleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BlockOper\Moasic\MoasicFileProvider.cs" />
+    <Compile Include="BlockOper\Moasic\MosaicItem.cs" />
+    <Compile Include="BlockOper\Windows\frmImageClip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlockOper\Windows\frmImageClip.designer.cs">
+      <DependentUpon>frmImageClip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockOper\Controls\GroupLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockOper\Controls\GroupLine.designer.cs">
+      <DependentUpon>GroupLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockOper\RasterClip.cs" />
+    <Compile Include="BlockOper\Controls\UCGeoRangeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockOper\Controls\UCGeoRangeControl.designer.cs">
+      <DependentUpon>UCGeoRangeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockOper\UIProvider\UIGroupClip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockOper\UIProvider\UIGroupClip.designer.cs">
+      <DependentUpon>UIGroupClip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockOper\Windows\frmDataMoasic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BlockOper\Windows\frmDataMoasic.Designer.cs">
+      <DependentUpon>frmDataMoasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileFilter.cs" />
+    <Compile Include="GeoAdjust2\Commands\cmdActivePanAdjustTool2.cs" />
+    <Compile Include="GeoAdjust2\Commands\cmdCancelPanAdjustResult2.cs" />
+    <Compile Include="GeoAdjust2\Commands\cmdClosePanAdjustTool2.cs" />
+    <Compile Include="GeoAdjust2\Commands\cmdSavePanAdjustResult2.cs" />
+    <Compile Include="GeoAdjust2\Commands\cmdStartPanAdjusting2.cs" />
+    <Compile Include="GeoAdjust2\PanAdjustTool.cs" />
+    <Compile Include="GeoAdjust2\AdjustConfig\AdjustConfig.cs" />
+    <Compile Include="GeoAdjust2\AdjustConfig\UCAdjustConfigEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeoAdjust2\AdjustConfig\UCAdjustConfigEdit.Designer.cs">
+      <DependentUpon>UCAdjustConfigEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageRegistration\UI\frmImageRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageRegistration\UI\frmImageRegistration.Designer.cs">
+      <DependentUpon>frmImageRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeoAdjust\Commands\cmdActivePanAdjustTool.cs" />
+    <Compile Include="GeoAdjust\Commands\cmdCancelPanAdjustResult.cs" />
+    <Compile Include="GeoAdjust\Commands\cmdClosePanAdjustTool.cs" />
+    <Compile Include="GeoAdjust\Commands\cmdSaveAdjustArgsToSolution.cs" />
+    <Compile Include="GeoAdjust\Commands\cmdSavePanAdjustResult.cs" />
+    <Compile Include="GeoAdjust\Commands\cmdStartPanAdjusting.cs" />
+    <Compile Include="ImageRegistration\Commands\CommandImageRegistration.cs" />
+    <Compile Include="Projection\AOISystem.cs" />
+    <Compile Include="Projection\Commands\CommandProjectionSetting.cs" />
+    <Compile Include="Projection\Commands\CommandProject.cs" />
+    <Compile Include="Projection\Commands\CommandProjectAOI.cs" />
+    <Compile Include="Projection\Commands\CommandProjectBlock.cs" />
+    <Compile Include="Projection\Commands\CommandProjectInput.cs" />
+    <Compile Include="Projection\Commands\CommandProjectOther.cs" />
+    <Compile Include="Projection\Commands\CommandProjectMosaic.cs" />
+    <Compile Include="Projection\Commands\CommandProjectCacheClear.cs" />
+    <Compile Include="Projection\Commands\CommandRegionUserDefined.cs" />
+    <Compile Include="Projection\Commands\CommandFileRename.cs" />
+    <Compile Include="Projection\Commands\CommandHDFProductProject.cs" />
+    <Compile Include="Projection\DefinedRegion\BlockItemGroup.cs" />
+    <Compile Include="Projection\DefinedRegion\Chinese2PY.cs" />
+    <Compile Include="Projection\DefinedRegion\Controls\GeoRegionEditCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\Controls\GeoRegionEditCenter.designer.cs">
+      <DependentUpon>GeoRegionEditCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\Controls\GeoRange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\Controls\GeoRange.Designer.cs">
+      <DependentUpon>GeoRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\DefinedRegionParse.cs" />
+    <Compile Include="Projection\DefinedRegion\frmDefinedRegionGroupName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\frmDefinedRegionGroupName.Designer.cs">
+      <DependentUpon>frmDefinedRegionGroupName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\frmDefinedRegionManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\frmDefinedRegionManager.Designer.cs">
+      <DependentUpon>frmDefinedRegionManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\ucDefinedRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\ucDefinedRegion.Designer.cs">
+      <DependentUpon>ucDefinedRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\DefinedRegion\BlockDefined.cs" />
+    <Compile Include="Projection\MosiacProjection\FileHelper.cs" />
+    <Compile Include="Projection\MosiacProjection\frmMosaicProjection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\frmMosaicProjection.designer.cs">
+      <DependentUpon>frmMosaicProjection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\MosaicProjectionFileProvider.cs" />
+    <Compile Include="Projection\MosiacProjection\mosaicProjectionPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\MosaicProjectItem.cs" />
+    <Compile Include="Projection\Commands\frmProjectionMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Projection\Commands\frmProjectionMode.designer.cs">
+      <DependentUpon>frmProjectionMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\PrjArgsSelectBand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\PrjArgsSelectBand.designer.cs">
+      <DependentUpon>PrjArgsSelectBand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\PrjFileName.cs" />
+    <Compile Include="Projection\MosiacProjection\ucPrjEnvelopeSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\MosiacProjection\ucPrjEnvelopeSet.Designer.cs">
+      <DependentUpon>ucPrjEnvelopeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\ProjectConfig\ProjectConfig.cs" />
+    <Compile Include="Projection\ProjectConfig\UCProjectConfigEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\ProjectConfig\UCProjectConfigEdit.Designer.cs">
+      <DependentUpon>UCProjectConfigEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\UIProvider\UIGroupProjection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Projection\UIProvider\UIGroupProjection.designer.cs">
+      <DependentUpon>UIGroupProjection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GeoAdjust\IDs.txt" />
+    <Content Include="Projection\DefinedRegion\readme.txt" />
+    <Content Include="Resources\folder_picture.png" />
+    <None Include="Resources\cmdOpen.png" />
+    <None Include="Resources\cmdOK.png" />
+    <None Include="Resources\cmdNone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.UI\0.GeoDo.RSS.Core.UI.csproj">
+      <Project>{C0D492CA-06E9-4F65-BEE6-4F42EAF84D4E}</Project>
+      <Name>0.GeoDo.RSS.Core.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.Bricks\GeoDo.RSS.UI.Bricks.csproj">
+      <Project>{4A10E304-EEBA-43A9-9B1C-A521683B772D}</Project>
+      <Name>GeoDo.RSS.UI.Bricks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlockOper\Windows\frmDataMoasic.resx">
+      <DependentUpon>frmDataMoasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockOper\Windows\frmImageClip.resx">
+      <DependentUpon>frmImageClip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockOper\Controls\GroupLine.resx">
+      <DependentUpon>GroupLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockOper\Controls\UCGeoRangeControl.resx">
+      <DependentUpon>UCGeoRangeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlockOper\UIProvider\UIGroupClip.resx">
+      <DependentUpon>UIGroupClip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeoAdjust2\AdjustConfig\UCAdjustConfigEdit.resx">
+      <DependentUpon>UCAdjustConfigEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRegistration\UI\frmImageRegistration.resx">
+      <DependentUpon>frmImageRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\DefinedRegion\frmDefinedRegionGroupName.resx">
+      <DependentUpon>frmDefinedRegionGroupName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\DefinedRegion\frmDefinedRegionManager.resx">
+      <DependentUpon>frmDefinedRegionManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\DefinedRegion\ucDefinedRegion.resx">
+      <DependentUpon>ucDefinedRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\MosiacProjection\frmMosaicProjection.resx">
+      <DependentUpon>frmMosaicProjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\Commands\frmProjectionMode.resx">
+      <DependentUpon>frmProjectionMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\MosiacProjection\PrjArgsSelectBand.resx">
+      <DependentUpon>PrjArgsSelectBand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\MosiacProjection\ucPrjEnvelopeSet.resx">
+      <DependentUpon>ucPrjEnvelopeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\ProjectConfig\UCProjectConfigEdit.resx">
+      <DependentUpon>UCProjectConfigEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Projection\UIProvider\UIGroupProjection.resx">
+      <DependentUpon>UIGroupProjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Moasic\Commands\" />
+    <Folder Include="Moasic\UIProvider\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

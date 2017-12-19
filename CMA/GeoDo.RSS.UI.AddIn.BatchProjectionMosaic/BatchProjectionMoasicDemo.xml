@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <InputFilename>G:\批量拼接投影\FY3A_VIRRX_GBAL_L1_20130409_0310_1000M_MS.HDF;G:\批量拼接投影\FY3A_VIRRX_GBAL_L1_20130409_0315_1000M_MS.HDF;G:\批量拼接投影\FY3A_VIRRX_GBAL_L1_20130522_0315_1000M_MS.HDF;</InputFilename><!--可设置文件列表形式，以;分隔-->
+  <OutputDir>G:\Smart\Fog_yingji</OutputDir><!--投影文件输出路径-->
+  <ValidEnvelopes><!--//筛选输入文件有效范围，可设置多个-->
+    <Envelope name="内蒙古" minx="96.5" maxx="126.5" miny="37" maxy="54" />
+  </ValidEnvelopes>
+  <Bands>3,4</Bands>
+  <ProjectionIdentify>GLL</ProjectionIdentify>
+  <Envelopes>//输出范围，可设置多个
+    <Envelope name="内蒙古" minx="96.5" maxx="126.5" miny="37" maxy="54" />
+  </Envelopes>
+  <ResolutionX>0.01</ResolutionX>
+  <ResolutionY>0.01</ResolutionY>
+  <IsOnlySaveMosaicFile>false</IsOnlySaveMosaicFile>
+  <Mosaic>//拼接参数，单节点
+    <OutputDir>G:\Smart\Fog_yingji</OutputDir> //拼接输出路径
+    <Envelope name="内蒙古" minx="96.5" maxx="126.5" miny="37" maxy="54" />//
+  </Mosaic>
+</xml>

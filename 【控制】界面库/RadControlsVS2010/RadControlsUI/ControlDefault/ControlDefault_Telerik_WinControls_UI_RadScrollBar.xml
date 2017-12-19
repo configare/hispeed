@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBatThumbMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbMouseDownBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarNormalFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadScrollBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 85, 112" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape1">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarPressedFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarOuterFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ThumbImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 1, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbImagePrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbNormalBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbMouseDownBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 85, 112" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarBorder1">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisableBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisableBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="148, 155, 162" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="148, 155, 162" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisableBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarDisabledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape1">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisableBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarPressedFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadScrollBarElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ThumbVerticalImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbImagePrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBatThumbMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarThumbMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarThumb.ScrollType=Vertical.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarThumbFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 85, 112" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarVerticalButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarVerticalButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarFirstButton.ScrollType=Vertical.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 85, 112" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarVerticalButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarVerticalButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ScrollBarButtonMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder(OuterInner)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ScrollBarSecondButton.ScrollType=Vertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ScrollBarButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadScrollBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadScrollBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

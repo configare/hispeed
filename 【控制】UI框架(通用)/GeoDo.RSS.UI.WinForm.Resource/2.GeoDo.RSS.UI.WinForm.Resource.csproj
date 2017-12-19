@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4E0BC66-816D-41A9-B76C-B36CAF69074C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.UI.WinForm.Resource</RootNamespace>
+    <AssemblyName>GeoDo.RSS.UI.WinForm.Resource</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\AOI.png" />
+    <EmbeddedResource Include="Images\AOI2.png" />
+    <EmbeddedResource Include="Images\AOI_AOI2Mask.png" />
+    <EmbeddedResource Include="Images\AOI_RemoveMask.png" />
+    <EmbeddedResource Include="Images\buttonDelete16.png" />
+    <EmbeddedResource Include="Images\buttonDelete32.png" />
+    <EmbeddedResource Include="Images\CancleSelect.png" />
+    <EmbeddedResource Include="Images\CSR.png" />
+    <EmbeddedResource Include="Images\cybBloom.png" />
+    <EmbeddedResource Include="Images\DataRef_DefaultBkgrd.png" />
+    <EmbeddedResource Include="Images\drought.png" />
+    <EmbeddedResource Include="Images\dust.png" />
+    <EmbeddedResource Include="Images\editTemplateElement.png" />
+    <EmbeddedResource Include="Images\Eraser.png" />
+    <EmbeddedResource Include="Images\fire1.png" />
+    <EmbeddedResource Include="Images\fog.png" />
+    <EmbeddedResource Include="Images\ice.png" />
+    <EmbeddedResource Include="Images\L1Proj32_32.png" />
+    <EmbeddedResource Include="Images\L1Projs32_32.png" />
+    <EmbeddedResource Include="Images\rain.png" />
+    <EmbeddedResource Include="Images\save.png" />
+    <EmbeddedResource Include="Images\Select.png" />
+    <EmbeddedResource Include="Images\snow.png" />
+    <EmbeddedResource Include="Images\strenFreq.png" />
+    <EmbeddedResource Include="Images\surTemp.png" />
+    <EmbeddedResource Include="Images\TOUImage.png" />
+    <EmbeddedResource Include="Images\typhoon.png" />
+    <EmbeddedResource Include="Images\uHIsland.png" />
+    <EmbeddedResource Include="Images\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\77.png" />
+    <EmbeddedResource Include="Images\activity_window.png" />
+    <EmbeddedResource Include="Images\chart-xy.png" />
+    <EmbeddedResource Include="Images\cmyk.png" />
+    <EmbeddedResource Include="Images\communication.png" />
+    <EmbeddedResource Include="Images\config.png" />
+    <EmbeddedResource Include="Images\config24.png" />
+    <EmbeddedResource Include="Images\edge.png" />
+    <EmbeddedResource Include="Images\exit.png" />
+    <EmbeddedResource Include="Images\exit24.png" />
+    <EmbeddedResource Include="Images\exit32.png" />
+    <EmbeddedResource Include="Images\fileinfo2.png" />
+    <EmbeddedResource Include="Images\filterwave.png" />
+    <EmbeddedResource Include="Images\go-jump.png" />
+    <EmbeddedResource Include="Images\google_webmaster_tools.png" />
+    <EmbeddedResource Include="Images\hdf.png" />
+    <EmbeddedResource Include="Images\image-brightContrast.png" />
+    <EmbeddedResource Include="Images\image-colorLever.png" />
+    <EmbeddedResource Include="Images\image-curve.png" />
+    <EmbeddedResource Include="Images\image-edge.png" />
+    <EmbeddedResource Include="Images\image-elimination.png" />
+    <EmbeddedResource Include="Images\image-filter.png" />
+    <EmbeddedResource Include="Images\image-hisEquilibria.png" />
+    <EmbeddedResource Include="Images\image-histogram.png" />
+    <EmbeddedResource Include="Images\image-hue.png" />
+    <EmbeddedResource Include="Images\image-replaceColor.png" />
+    <EmbeddedResource Include="Images\image-reverse.png" />
+    <EmbeddedResource Include="Images\image-selectColor.png" />
+    <EmbeddedResource Include="Images\image-sharpen.png" />
+    <EmbeddedResource Include="Images\image-x-generic.png" />
+    <EmbeddedResource Include="Images\layermanager.png" />
+    <EmbeddedResource Include="Images\link32.png" />
+    <EmbeddedResource Include="Images\link_break.png" />
+    <EmbeddedResource Include="Images\open32.png" />
+    <EmbeddedResource Include="Images\percent32.png" />
+    <EmbeddedResource Include="Images\picture.png" />
+    <EmbeddedResource Include="Images\pixels.png" />
+    <EmbeddedResource Include="Images\printer24.png" />
+    <EmbeddedResource Include="Images\recent24.png" />
+    <EmbeddedResource Include="Images\redo.png" />
+    <EmbeddedResource Include="Images\RepaceColor.png" />
+    <EmbeddedResource Include="Images\reset.png" />
+    <EmbeddedResource Include="Images\reset2.png" />
+    <EmbeddedResource Include="Images\save24.png" />
+    <EmbeddedResource Include="Images\save32.png" />
+    <EmbeddedResource Include="Images\select_by_color.png" />
+    <EmbeddedResource Include="Images\settings.png" />
+    <EmbeddedResource Include="Images\site.png" />
+    <EmbeddedResource Include="Images\slide.png" />
+    <EmbeddedResource Include="Images\small_tiles.png" />
+    <EmbeddedResource Include="Images\undo.png" />
+    <EmbeddedResource Include="Images\window-move.png" />
+    <EmbeddedResource Include="Images\wndcursorinfo.png" />
+    <EmbeddedResource Include="Images\wndselectband.png" />
+    <EmbeddedResource Include="Images\WndSplitLeftRight.png" />
+    <EmbeddedResource Include="Images\WndSplitLeftRightBand.png" />
+    <EmbeddedResource Include="Images\WndSplitTopBottom.png" />
+    <EmbeddedResource Include="Images\WndSplitTopBottomBand.png" />
+    <EmbeddedResource Include="Images\workspace.png" />
+    <EmbeddedResource Include="Images\wydclear.png" />
+    <EmbeddedResource Include="Images\wydff.png" />
+    <EmbeddedResource Include="Images\wydgjx.png" />
+    <EmbeddedResource Include="Images\wydgrid.png" />
+    <EmbeddedResource Include="Images\wydgrid1.png" />
+    <EmbeddedResource Include="Images\wydgrid2.png" />
+    <EmbeddedResource Include="Images\wydgzqy.png" />
+    <EmbeddedResource Include="Images\wydgzqy1.png" />
+    <EmbeddedResource Include="Images\wydgzqy2.png" />
+    <EmbeddedResource Include="Images\wydhbgzq.png" />
+    <EmbeddedResource Include="Images\wydhbgzq1.png" />
+    <EmbeddedResource Include="Images\wydhlhp2.png" />
+    <EmbeddedResource Include="Images\wydhupo.png" />
+    <EmbeddedResource Include="Images\wydlsgcqy.png" />
+    <EmbeddedResource Include="Images\wydmoredata.png" />
+    <EmbeddedResource Include="Images\wydOther1.png" />
+    <EmbeddedResource Include="Images\wydpz.png" />
+    <EmbeddedResource Include="Images\wydremove.png" />
+    <EmbeddedResource Include="Images\wydsatelite.png" />
+    <EmbeddedResource Include="Images\wydsettings.png" />
+    <EmbeddedResource Include="Images\wydwg.png" />
+    <EmbeddedResource Include="Images\wydwg1.png" />
+    <EmbeddedResource Include="Images\wydxzqy.png" />
+    <EmbeddedResource Include="Images\wydzdsy3.png" />
+    <EmbeddedResource Include="Images\wydzdyff.png" />
+    <EmbeddedResource Include="Images\wydzdyff1.png" />
+    <EmbeddedResource Include="Images\wydzdyff2.png" />
+    <EmbeddedResource Include="Images\zoom-fit-best %281%29.png" />
+    <EmbeddedResource Include="Images\zoom_extend.png" />
+    <EmbeddedResource Include="Images\zoom_extend2.png" />
+    <EmbeddedResource Include="Images\zoom_full.png" />
+    <EmbeddedResource Include="Images\zoom_full2.png" />
+    <EmbeddedResource Include="Images\zoom_in.png" />
+    <EmbeddedResource Include="Images\zoom_in2.png" />
+    <EmbeddedResource Include="Images\zoom_out.png" />
+    <EmbeddedResource Include="Images\zoom_out2.png" />
+    <EmbeddedResource Include="Images\zoom_pan.png" />
+    <EmbeddedResource Include="Images\zoom_pan2.png" />
+    <EmbeddedResource Include="Images\滤波.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\newProduct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\adddata.png" />
+    <EmbeddedResource Include="Images\comChart.png" />
+    <EmbeddedResource Include="Images\comList.png" />
+    <EmbeddedResource Include="Images\delete32.png" />
+    <EmbeddedResource Include="Images\do.png" />
+    <EmbeddedResource Include="Images\fileinfo.png" />
+    <EmbeddedResource Include="Images\findfile.png" />
+    <EmbeddedResource Include="Images\flowdoc.png" />
+    <EmbeddedResource Include="Images\map.png" />
+    <EmbeddedResource Include="Images\open24.png" />
+    <EmbeddedResource Include="Images\pause.png" />
+    <EmbeddedResource Include="Images\percent48.png" />
+    <EmbeddedResource Include="Images\play.png" />
+    <EmbeddedResource Include="Images\step.png" />
+    <EmbeddedResource Include="Images\stop.png" />
+    <EmbeddedResource Include="Images\taskscript.png" />
+    <EmbeddedResource Include="Images\mulImage.png" />
+    <EmbeddedResource Include="Images\zoom_pan1.png" />
+    <EmbeddedResource Include="Images\area_current.png" />
+    <EmbeddedResource Include="Images\bitImage.png" />
+    <EmbeddedResource Include="Images\custom.png" />
+    <EmbeddedResource Include="Images\firePointList.png" />
+    <EmbeddedResource Include="Images\fireRigionList.png" />
+    <EmbeddedResource Include="Images\import.png" />
+    <EmbeddedResource Include="Images\interactive.png" />
+    <EmbeddedResource Include="Images\landType.png" />
+    <EmbeddedResource Include="Images\PGS.png" />
+    <EmbeddedResource Include="Images\transform.png" />
+    <EmbeddedResource Include="Images\demo.png" />
+    <EmbeddedResource Include="Images\save_all.png" />
+    <EmbeddedResource Include="Images\issue.png" />
+    <EmbeddedResource Include="Images\zoom.png" />
+    <EmbeddedResource Include="Images\ToolCircle.png" />
+    <EmbeddedResource Include="Images\ToolCurve.png" />
+    <EmbeddedResource Include="Images\ToolIdentify.png" />
+    <EmbeddedResource Include="Images\ToolLine.png" />
+    <EmbeddedResource Include="Images\ToolPoint.png" />
+    <EmbeddedResource Include="Images\ToolPolygon.png" />
+    <EmbeddedResource Include="Images\ToolRectangle.png" />
+    <EmbeddedResource Include="Images\ToolText.png" />
+    <EmbeddedResource Include="Images\scale.png" />
+    <EmbeddedResource Include="Images\vegetation.png" />
+    <EmbeddedResource Include="Images\Grid.png" />
+    <EmbeddedResource Include="Images\AdsorbTool.png" />
+    <EmbeddedResource Include="Images\clip.png" />
+    <EmbeddedResource Include="Images\color-balance.png" />
+    <EmbeddedResource Include="Images\AdjustByGCP.png" />
+    <EmbeddedResource Include="Images\AdjustByPan.png" />
+    <EmbeddedResource Include="Images\AdjustByPanEnvelope.png" />
+    <EmbeddedResource Include="Images\AdjustByPanImage.png" />
+    <EmbeddedResource Include="Images\agt_resume.png" />
+    <EmbeddedResource Include="Images\agt_runit.png" />
+    <EmbeddedResource Include="Images\agt_stop1.png" />
+    <EmbeddedResource Include="Images\document-library.png" />
+    <EmbeddedResource Include="Images\computer.png" />
+    <EmbeddedResource Include="Images\emblem-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\alignBottom.png" />
+    <EmbeddedResource Include="Images\alignHei.png" />
+    <EmbeddedResource Include="Images\alignLeft.png" />
+    <EmbeddedResource Include="Images\alignMiddle.png" />
+    <EmbeddedResource Include="Images\alignRight.png" />
+    <EmbeddedResource Include="Images\alignTop.png" />
+    <EmbeddedResource Include="Images\alignVerMid.png" />
+    <EmbeddedResource Include="Images\alignWid.png" />
+    <EmbeddedResource Include="Images\circleH.png" />
+    <EmbeddedResource Include="Images\circleLeft.png" />
+    <EmbeddedResource Include="Images\circleRight.png" />
+    <EmbeddedResource Include="Images\circleV.png" />
+    <EmbeddedResource Include="Images\FileType_LDF.png" />
+    <EmbeddedResource Include="Images\gear.png" />
+    <EmbeddedResource Include="Images\moreElements.png" />
+    <EmbeddedResource Include="Images\printer32.png" />
+    <EmbeddedResource Include="Images\themeElements.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\plugin_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\otherRaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\brush2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\dem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\measure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\picture16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\group.png" />
+    <EmbeddedResource Include="Images\unGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\deleteTemplates.png" />
+    <EmbeddedResource Include="Images\moreTemplates.png" />
+    <EmbeddedResource Include="Images\newTemplate.png" />
+    <EmbeddedResource Include="Images\saveTemplates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\exportBmp.png" />
+    <EmbeddedResource Include="Images\exportTemplate.png" />
+    <EmbeddedResource Include="Images\exportVedio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\toolDrawBezierCurve.png" />
+    <EmbeddedResource Include="Images\toolDrawEllipticArc.png" />
+    <EmbeddedResource Include="Images\toolDrawPie.png" />
+    <EmbeddedResource Include="Images\toolDrawPolyLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\SelectAOI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ReportDoc.png" />
+    <EmbeddedResource Include="Images\ReportModel.png" />
+    <EmbeddedResource Include="Images\reportResource.png" />
+    <EmbeddedResource Include="Images\Report.png" />
+    <EmbeddedResource Include="Images\Traffic.png" />
+    <EmbeddedResource Include="Images\PDIImage.png" />
+    <EmbeddedResource Include="Images\mwsnw.png" />
+    <EmbeddedResource Include="Images\rasterProfile.png" />
+    <EmbeddedResource Include="Images\rasterProfile_remove.png" />
+    <EmbeddedResource Include="Images\profile.png" />
+    <EmbeddedResource Include="Images\profile2.png" />
+    <EmbeddedResource Include="Images\LstCalc.png" />
+    <EmbeddedResource Include="Images\measure_clear_32x32.png" />
+    <EmbeddedResource Include="Images\measure_16x16.png" />
+    <EmbeddedResource Include="Images\measure_32x32.png" />
+    <EmbeddedResource Include="Images\Aerosol.png" />
+    <EmbeddedResource Include="Images\HFII.png" />
+    <Content Include="iceTimeFreq.png" />
+    <EmbeddedResource Include="Images\iceTimeFreq.png" />
+    <EmbeddedResource Include="Images\cloud.png" />
+    <Content Include="Images\L2L3ProductColorTable.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Images\orbitProductProj32_32.png" />
+    <EmbeddedResource Include="Images\Tool_Interpolation.png" />
+    <EmbeddedResource Include="Images\Tool_Scatter_Contour.png" />
+    <EmbeddedResource Include="Images\rexiaoying.png" />
+    <EmbeddedResource Include="Images\removeline.png" />
+    <EmbeddedResource Include="Images\NSMCExp.png" />
+    <EmbeddedResource Include="Images\Tool_Vector2Raster.png" />
+    <EmbeddedResource Include="Images\ProductColorTable_16x16.png" />
+    <EmbeddedResource Include="Images\ProductColorTable.png" />
+    <EmbeddedResource Include="Images\GeoCorrection.png" />
+    <EmbeddedResource Include="Images\globe.png" />
+    <EmbeddedResource Include="Images\globe32_32.png" />
+    <EmbeddedResource Include="Images\globeSetting32_32.png" />
+    <EmbeddedResource Include="Images\grid2.png" />
+    <EmbeddedResource Include="Images\grid3.png" />
+    <EmbeddedResource Include="Images\PercentXStretcher.png" />
+    <EmbeddedResource Include="Images\Tool_DensitySlice.png" />
+    <EmbeddedResource Include="Images\Extracting_魔术棒判识.png" />
+    <EmbeddedResource Include="Images\layer_open.png" />
+    <EmbeddedResource Include="Images\DataRef_RemoveBkgrd.png" />
+    <EmbeddedResource Include="Images\Tool_Ruler.png" />
+    <EmbeddedResource Include="Images\Extracting_checked.png" />
+    <EmbeddedResource Include="Images\Extracting_uncheck.png" />
+    <EmbeddedResource Include="Images\Tool_CreatePyramids.png" />
+    <EmbeddedResource Include="Images\Tool_Contour.png" />
+    <EmbeddedResource Include="Images\Tool_ColorTable.png" />
+    <EmbeddedResource Include="Images\Tool_Scatter.png" />
+    <EmbeddedResource Include="Images\folder_picture_16.png" />
+    <EmbeddedResource Include="Images\Tool_Histogram.png" />
+    <EmbeddedResource Include="Images\Tool_BandMath.png" />
+    <EmbeddedResource Include="Images\bookMarkManager.png" />
+    <EmbeddedResource Include="Images\creatBookMark.png" />
+    <EmbeddedResource Include="Images\cmdDelete.png" />
+    <EmbeddedResource Include="Images\About.png" />
+    <EmbeddedResource Include="Images\ContactsInfo.png" />
+    <EmbeddedResource Include="Images\dialog-question.png" />
+    <EmbeddedResource Include="Images\help.png" />
+    <EmbeddedResource Include="Images\SFHelp.png" />
+    <EmbeddedResource Include="Images\database_save.png" />
+    <EmbeddedResource Include="Images\search-green.png" />
+    <EmbeddedResource Include="Images\search-red.png" />
+    <EmbeddedResource Include="Images\house.png" />
+    <EmbeddedResource Include="Images\Window_ContextInfo.png" />
+    <EmbeddedResource Include="Images\Window_FeatureList.png" />
+    <EmbeddedResource Include="Images\mixPixel.png" />
+    <EmbeddedResource Include="Images\Window_Overview.png" />
+    <EmbeddedResource Include="Images\Layout_ToFullEnvelope.png" />
+    <EmbeddedResource Include="Images\FileType_Dir.png" />
+    <EmbeddedResource Include="Images\FileType_Excel.png" />
+    <EmbeddedResource Include="Images\FileType_HDF.png" />
+    <EmbeddedResource Include="Images\FileType_Image.png" />
+    <EmbeddedResource Include="Images\FileType_Map.png" />
+    <EmbeddedResource Include="Images\FileType_Normal.png" />
+    <EmbeddedResource Include="Images\FileType_Template.png" />
+    <EmbeddedResource Include="Images\FileType_Vector.png" />
+    <EmbeddedResource Include="Images\FileType_Word.png" />
+    <EmbeddedResource Include="Images\cmdOpen.png" />
+    <Content Include="element.png" />
+    <EmbeddedResource Include="Images\SWIImage.png" />
+    <EmbeddedResource Include="Images\TVDIImage.png" />
+    <EmbeddedResource Include="Images\VTIImage.png" />
+    <EmbeddedResource Include="Images\TVDI32.png" />
+    <EmbeddedResource Include="Images\VTI32.png" />
+    <EmbeddedResource Include="Images\SWI32.png" />
+    <EmbeddedResource Include="Images\Layout_RefreshData.png" />
+    <EmbeddedResource Include="Images\Extracting_Auto.png" />
+    <EmbeddedResource Include="Images\Extracting_Batch.png" />
+    <EmbeddedResource Include="Images\Extracting_Manual.png" />
+    <EmbeddedResource Include="Images\Extracting_Do.png" />
+    <EmbeddedResource Include="Images\Extracting_AOIArrow.png" />
+    <EmbeddedResource Include="Images\Extracting_输入AOI.png" />
+    <EmbeddedResource Include="Images\Extracting_导入AOI.png" />
+    <EmbeddedResource Include="Images\Extracting_矩形.png" />
+    <EmbeddedResource Include="Images\Extracting_笔.png" />
+    <EmbeddedResource Include="Images\AdjustSolution.png" />
+    <EmbeddedResource Include="Images\quickgenerate.png" />
+    <EmbeddedResource Include="Images\workspace2.png" />
+    <EmbeddedResource Include="Images\HStrech.png" />
+    <EmbeddedResource Include="Images\VStrech.png" />
+    <EmbeddedResource Include="Images\panLayout.png" />
+    <EmbeddedResource Include="Images\wydcloud.png" />
+    <EmbeddedResource Include="Images\Extracting_Save.png" />
+    <EmbeddedResource Include="Images\Extracting_删除AOI.png" />
+    <EmbeddedResource Include="Images\Extracting_圆形.png" />
+    <EmbeddedResource Include="Images\Extracting_多边形.png" />
+    <EmbeddedResource Include="Images\Extracting_撤销.png" />
+    <EmbeddedResource Include="Images\Extracting_橡皮檫.png" />
+    <EmbeddedResource Include="Images\Extracting_清除判识结果.png" />
+    <EmbeddedResource Include="Images\Extracting_重做.png" />
+    <EmbeddedResource Include="Images\Extracting_闪烁.png" />
+    <EmbeddedResource Include="Images\Extracting_魔术棒.png" />
+    <EmbeddedResource Include="Images\openTemplate.png" />
+    <EmbeddedResource Include="Images\TimesByArea.png" />
+    <EmbeddedResource Include="Images\TimesGraph.png" />
+    <EmbeddedResource Include="Images\sand_visibility.png" />
+    <EmbeddedResource Include="Images\area_converDegree.png" />
+    <EmbeddedResource Include="Images\CoverDegreeCustom.png" />
+    <EmbeddedResource Include="Images\coverDegree_current.png" />
+    <EmbeddedResource Include="Images\image-exEnhance.png" />
+    <EmbeddedResource Include="Images\image-logEnhance.png" />
+    <EmbeddedResource Include="Images\CoverDegree32.png" />
+    <EmbeddedResource Include="Images\fogCustomCycTime.png" />
+    <EmbeddedResource Include="Images\fogCycTime.png" />
+    <EmbeddedResource Include="Images\customVedio.png" />
+    <EmbeddedResource Include="Images\fogCSR.png" />
+    <EmbeddedResource Include="Images\fogQuantifyCalc.png" />
+    <EmbeddedResource Include="Images\fogQuantify.png" />
+    <EmbeddedResource Include="Images\fogErad.png" />
+    <EmbeddedResource Include="Images\fogLwp.png" />
+    <EmbeddedResource Include="Images\fogOPTD.png" />
+    <EmbeddedResource Include="Images\iceCycTime.png" />
+    <EmbeddedResource Include="Images\iceQuantify.png" />
+    <EmbeddedResource Include="Images\iceConver.png" />
+    <EmbeddedResource Include="Images\iceTemp.png" />
+    <EmbeddedResource Include="Images\iceBrinK.png" />
+    <EmbeddedResource Include="Images\wydFlood.png" />
+    <EmbeddedResource Include="Images\intensityImage.png" />
+    <EmbeddedResource Include="Images\coverDegree.png" />
+    <EmbeddedResource Include="Images\wydmovies_alt.png" />
+    <EmbeddedResource Include="Images\wydVgtCndvi.png" />
+    <EmbeddedResource Include="Images\wydVgtVci.png" />
+    <EmbeddedResource Include="Images\wydVgtNdvi.png" />
+    <EmbeddedResource Include="Images\map_edit.png" />
+    <EmbeddedResource Include="Images\move.cur" />
+    <EmbeddedResource Include="Images\addDataframe.png" />
+    <EmbeddedResource Include="Images\addText.png" />
+    <EmbeddedResource Include="Images\lock.png" />
+    <EmbeddedResource Include="Images\unlock.png" />
+    <EmbeddedResource Include="Images\element.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

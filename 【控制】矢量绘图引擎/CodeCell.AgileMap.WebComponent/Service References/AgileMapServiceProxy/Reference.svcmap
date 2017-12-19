@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0716d660-6e7b-4b5d-9bde-0d2f32e41d00" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/AgileMapService/MapService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MapService3.xsd" MetadataType="Schema" ID="4618b233-0871-44c8-b038-7f43e7eca506" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MapService.xsd" MetadataType="Schema" ID="e1593767-9ebf-404a-bd78-13a961d3ef7d" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MapService.disco" MetadataType="Disco" ID="85ebf97f-232d-4d7c-8e1e-e99cc05f4b9b" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?disco" />
+    <MetadataFile FileName="MapService1.xsd" MetadataType="Schema" ID="e639660f-50a6-4a1c-af80-20c1cf4be41f" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MapService5.xsd" MetadataType="Schema" ID="1294003f-c79f-4f6f-9ae3-369c25b0a6bc" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?xsd=xsd5" />
+    <MetadataFile FileName="MapService4.xsd" MetadataType="Schema" ID="d2ce188f-313e-49d7-89e1-0afec45e05d8" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?xsd=xsd4" />
+    <MetadataFile FileName="MapService2.xsd" MetadataType="Schema" ID="9b40f4cd-cd52-486e-8195-ad9f235b3e86" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MapService.wsdl" MetadataType="Wsdl" ID="20c1bcd0-cf2a-4240-9b97-137bc077503d" SourceId="1" SourceUrl="http://localhost/AgileMapService/MapService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<L2Products>
+  <!--name:产品名称 desc：产品描述  identify：文件标识，用于判断是否是当前定义产品文件  product：所属产品，用于自动调用ColorTabel-->
+  <L2Product name="LSR" desc="地表反射率日产品" identify="\S*FY3C\S*LSR\S*POAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=latlong +datum=WGS84 +a=6378137 +b=6356752.31424518 +f=0.00335281066474748 +nodefs">
+      <!--location 坐标属性所在位置【file|dataset】 文件属性或数据集属性-->
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+      <!--默认地理信息设定节点-->
+      <GeoDef lefttoplon="-180" lefttoplat="90" rightbottomlon="180"  rightbottomlat="-90"/>
+    </GeoInfo>
+    <ProInfo>
+      <!--默认打开数据集-->
+      <ProDataSets datasets="MERSI_Land_Surface"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SIC" desc="北极海冰覆盖度产品" identify="\S*FY3\S*SIC\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +k_0=1 +x_0=0 +y_0=0 +a=6378273 +b=6356889.449 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+      <GeoDef lefttoplon="-3850000" lefttoplat=" 5850000" rightbottomlon=" 3750000"  rightbottomlat="-5350000"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="icecon_north_asc,icecon_north_des,icecon_north_avg"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SIC" desc="南极海冰覆盖度产品" identify="\S*FY3\S*SIC\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=stere +lat_0=-90 +lat_ts=-70 +lon_0=0 +k=1 +x_0=0 +y_0=0 +a=6378273 +b=6356889.449 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+      <GeoDef lefttoplon="-3950000" lefttoplat="4350000" rightbottomlon="3950000"  rightbottomlat="-3950000"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="icecon_south_asc,icecon_south_des,icecon_south_avg"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SWE" desc="北半球积雪产品" identify="\S*FY3\S*SWE\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=laea +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +a=6371228 +b=6371228 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+      <GeoDef lefttoplon="-9036842.762" lefttoplat="9036842.762" rightbottomlon=" 9036842.762"  rightbottomlat="-9036842.762"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="SD_NorthernDaily_A,SD_NorthernDaily_D,SWE_NorthernDaily_A,SWE_NorthernDaily_D,SD_Flags_NorthernDaily_A,SD_Flags_NorthernDaily_D,SWE_Flags_NorthernDaily_A,SWE_Flags_NorthernDaily_D"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SWE" desc="南半球积雪产品" identify="\S*FY3\S*SWE\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=laea +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +a=6371228 +b=6371228 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+      <GeoDef lefttoplon="-9036842.762" lefttoplat="9036842.762" rightbottomlon="9036842.762"  rightbottomlat="-9036842.762"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="SD_SouthernDaily_A,SD_SouthernDaily_D,SWE_SouthernDaily_A,SWE_SouthernDaily_D,SD_Flags_SouthernDaily_A,SD_Flags_SouthernDaily_D,SWE_Flags_SouthernDaily_A,SWE_Flags_SouthernDaily_D"/>
+    </ProInfo>
+  </L2Product>
+</L2Products>

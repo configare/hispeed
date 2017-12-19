@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="PWV" applyfor = "VPW,MPW,TPW" description="大气可降水"  matchstring="\S+_PWV_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="GBAL" datasets="MERSI_PWV_0p940" refdatasets="">
+      <Segment values = "0~0" indexes = "0" />
+      <Segment values = "1~7000" indexes = "1~70" />
+      <Segment values = "7001~32767" indexes = "76" />
+    </BandValueRange>
+    <BandValueRange name="ORBT" datasets="MERSI_PWV_0p940:0,Cloud_Mask:0" refdatasets="">
+      <Segment values = "0~0" indexes = "77" />
+      <Segment values = "1~7000" indexes = "1~70" />
+      <Segment values = "7001~32767" indexes = "76~76" />
+    </BandValueRange>
+  </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTable" applyfor="GBAL,ORBT" description="">
+      <Color index = "0" rgb = "166,168,180"/>
+      <Color index = "1" rgb = "30,10,224"/>
+      <Color index = "2" rgb = "28,20,210"/>
+      <Color index = "3" rgb = "27,30,196"/>
+      <Color index = "4" rgb = "25,40,181"/>
+      <Color index = "5" rgb = "24,50,167"/>
+      <Color index = "6" rgb = "22,60,153"/>
+      <Color index = "7" rgb = "21,70,139"/>
+      <Color index = "8" rgb = "19,80,125"/>
+      <Color index = "9" rgb = "17,89,110"/>
+      <Color index = "10" rgb = "16,99,96"/>
+      <Color index = "11" rgb = "14,109,82"/>
+      <Color index = "12" rgb = "13,119,68"/>
+      <Color index = "13" rgb = "11,129,53"/>
+      <Color index = "14" rgb = "10,139,39"/>
+      <Color index = "15" rgb = "8,149,25"/>
+      <Color index = "16" rgb = "22,155,24"/>
+      <Color index = "17" rgb = "37,161,23"/>
+      <Color index = "18" rgb = "51,167,22"/>
+      <Color index = "19" rgb = "66,173,21"/>
+      <Color index = "20" rgb = "80,179,20"/>
+      <Color index = "21" rgb = "94,185,19"/>
+      <Color index = "22" rgb = "109,191,18"/>
+      <Color index = "23" rgb = "123,198,17"/>
+      <Color index = "24" rgb = "137,204,16"/>
+      <Color index = "25" rgb = "152,210,15"/>
+      <Color index = "26" rgb = "166,216,14"/>
+      <Color index = "27" rgb = "181,222,13"/>
+      <Color index = "28" rgb = "195,228,12"/>
+      <Color index = "29" rgb = "209,234,11"/>
+      <Color index = "30" rgb = "224,240,10"/>
+      <Color index = "31" rgb = "238,246,9"/>
+      <Color index = "32" rgb = "238,234,17"/>
+      <Color index = "33" rgb = "239,223,26"/>
+      <Color index = "34" rgb = "239,211,34"/>
+      <Color index = "35" rgb = "240,200,43"/>
+      <Color index = "36" rgb = "240,188,51"/>
+      <Color index = "37" rgb = "240,177,59"/>
+      <Color index = "38" rgb = "241,165,68"/>
+      <Color index = "39" rgb = "241,154,76"/>
+      <Color index = "40" rgb = "241,142,84"/>
+      <Color index = "41" rgb = "242,130,93"/>
+      <Color index = "42" rgb = "242,119,101"/>
+      <Color index = "43" rgb = "243,107,110"/>
+      <Color index = "44" rgb = "243,96,118"/>
+      <Color index = "45" rgb = "243,84,126"/>
+      <Color index = "46" rgb = "242,77,120"/>
+      <Color index = "47" rgb = "241,70,115"/>
+      <Color index = "48" rgb = "241,62,109"/>
+      <Color index = "49" rgb = "240,55,104"/>
+      <Color index = "50" rgb = "239,48,98"/>
+      <Color index = "51" rgb = "238,41,93"/>
+      <Color index = "52" rgb = "237,34,87"/>
+      <Color index = "53" rgb = "236,27,82"/>
+      <Color index = "54" rgb = "236,19,76"/>
+      <Color index = "55" rgb = "235,12,71"/>
+      <Color index = "56" rgb = "234,5,65"/>
+      <Color index = "57" rgb = "226,5,63"/>
+      <Color index = "58" rgb = "217,5,61"/>
+      <Color index = "59" rgb = "209,6,59"/>
+      <Color index = "60" rgb = "201,6,57"/>
+      <Color index = "61" rgb = "193,6,55"/>
+      <Color index = "62" rgb = "184,6,53"/>
+      <Color index = "63" rgb = "176,6,51"/>
+      <Color index = "64" rgb = "168,7,49"/>
+      <Color index = "65" rgb = "159,7,47"/>
+      <Color index = "66" rgb = "151,7,45"/>
+      <Color index = "67" rgb = "143,7,42"/>
+      <Color index = "68" rgb = "134,7,40"/>
+      <Color index = "69" rgb = "126,8,38"/>
+      <Color index = "70" rgb = "68,8,24"/>
+      <Color index = "71" rgb = "110,8,34"/>
+      <Color index = "72" rgb = "101,8,32"/>
+      <Color index = "73" rgb = "93,8,30"/>
+      <Color index = "74" rgb = "85,9,28"/>
+      <Color index = "75" rgb = "76,9,26"/>
+      <Color index = "76" rgb = "68,9,24"/>
+      <Color index = "77" rgb = "0,0,0"/>
+      <Color index = "78" rgb = "255,255,255"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

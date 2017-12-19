@@ -1,0 +1,420 @@
+﻿<Product name="蓝藻水华" group="环境" identify="BAG" image="system:cybBloom.png" uiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UITabBag">
+  <AOITemplates>
+    <AOITemplate name="太湖无水草" template="vector:太湖无水草" ischecked="true"/>
+    <AOITemplate name="太湖" template="vector:太湖" ischecked="false"/>
+    <AOITemplate name="巢湖" template="vector:巢湖" ischecked="true"/>
+    <AOITemplate name="滇池" template="vector:滇池" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="水草判识" identify="WTGS" color="" isuseaoitemplate="true" aoitemplates="vector:太湖无水草,vector:巢湖,vector:滇池" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="阈值判识" identify="AquaticExtract" satellite="FY3A,FY3B" sensor="VIRR,VIRRX" customidentify="">
+          <Bands>
+            <Band identify="Visible"  wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="ShortInfrared"  wavelength="1.6" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared"  wavelength="11" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="水草阈值" datatype="float" minvalue="-1" maxvalue="1">
+              <Argument name="AquaExtractMin" endpointtype="min" description="水草阈值低端值" defaultvalue="0.583" />
+              <Argument name="AquaExtractMax" endpointtype="max" description="水草阈值高端值" defaultvalue="1" />
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="蓝藻判识" identify="DBLV" color="255,0,0" isuseaoitemplate="true" aoitemplates="vector:太湖无水草" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+         <Algorithm name="蓝藻判识改进" identify="BAGExtract_New" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+            <Band identify="ShortInfrared" wavelength="1.64" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="UCSetNearTool" description="近红外提取"
+                     editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCSetNearTool">
+              <DefaultValue>
+                <ValueItemA value="0.5"/>
+                <ValueItemB value="-0.03"/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="isAppCloud" description="合并交互云" datatype="bool" defaultvalue="true"/>
+            <Argument name="MinVisiable" datatype="double"  description="可见光阈值低端值" visible="false"  defaultvalue="30"  />
+            <Argument name="MinNearInFrared" datatype="double"  description="近红外阈值低端值" visible="false"  defaultvalue="15" />
+            <Argument name="MaxNSVI" datatype="double"  description="近红外/短波红外阈值低端值" visible="false"  defaultvalue="2" />
+            <Argument name="MinNDVI" datatype="double"  description="可见光阈值低端值" visible="false"  defaultvalue="-0.05" />
+            <!--当端元值中有任一参数为-1时表示使用界面NDVI阈值参数值-->
+            <!--<ArgumentGroup name="NDVISetting" description="端元值设置" visible="false">
+                    <Argument name="AvgNDVIMin" description="端元最小值" datatype="float" defaultvalue="-1"/>
+                    <Argument name="AvgNDVIMax" description="端元最大值" datatype="float" defaultvalue="-1"/>
+                  </ArgumentGroup>-->
+            <Argument name="NDVISetting" description="端元值设置" editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCNDVISetting" visible ="false">
+              <DefaultValue>
+                <ValueItem name="太湖" envelope="119.892,120.635,30.925,31.541" minvalue="0" maxvalue="0" isuse="false"/>
+                <ValueItem name="巢湖" envelope="117.291,117.839,31.425,31.711" minvalue="0" maxvalue="0" isuse="false"/>
+                <ValueItem name="滇池" envelope="102.596,102.785,24.663,25.022" minvalue="0" maxvalue="0" isuse="false"/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="阈值判识固定矢量" identify="BAGExtract_Test" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+            <Band identify="ShortInfrared" wavelength="1.64" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ucSetNDVITool" description="NDVI提取"
+                     editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.ucSetNDVITool">
+              <DefaultValue>
+                <ValueItemA value="0.3"/>
+                <ValueItemB value="-0.04"/>
+                <ValueItemMax value="0.81"/>
+              </DefaultValue>
+            </Argument>
+            <!--当端元值中有任一参数为-1时表示使用界面NDVI阈值参数值-->
+            <!--<ArgumentGroup name="NDVISetting" description="端元值设置" visible="false">
+                    <Argument name="AvgNDVIMin" description="端元最小值" datatype="float" defaultvalue="-1"/>
+                    <Argument name="AvgNDVIMax" description="端元最大值" datatype="float" defaultvalue="-1"/>
+                  </ArgumentGroup>-->
+            <Argument name="NDVISetting" description="端元值设置" editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCNDVISetting" visible ="false">
+              <DefaultValue>
+                <ValueItem name="太湖" envelope="119.892,120.635,30.925,31.541" minvalue="0" maxvalue="0" isuse="false"/>
+                <ValueItem name="巢湖" envelope="117.291,117.839,31.425,31.711" minvalue="0" maxvalue="0" isuse="false"/>
+                <ValueItem name="滇池" envelope="102.596,102.785,24.663,25.022" minvalue="0" maxvalue="0" isuse="false"/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="HistoryDBLVImport" description="历史判识结果替换"
+                     editoruiprovider="GeoDo.RSS.MIF.Prds.Bag.dll:GeoDo.RSS.MIF.Prds.Bag.UCHistoryDBLVImport" isoptional="true"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="阈值判识" identify="BAGExtract" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="NDVI阈值" datatype="double" minvalue="-1" maxvalue="1">
+              <Argument name="NDVIMin" endpointtype="min" description="NDVI阈值低端值"  defaultvalue="0.17" />
+              <Argument name="NDVIMax" endpointtype="max" description="NDVI阈值高端值" defaultvalue="0.81" />
+            </ArgumentPair>
+            <!--当端元值中有任一参数为-1时表示使用界面NDVI阈值参数值-->
+            <!--<ArgumentGroup name="NDVISetting" description="端元值设置" visible="false">
+                    <Argument name="AvgNDVIMin" description="端元最小值" datatype="float" defaultvalue="-1"/>
+                    <Argument name="AvgNDVIMax" description="端元最大值" datatype="float" defaultvalue="-1"/>
+                  </ArgumentGroup>-->
+            <Argument name="NDVISetting" description="端元值设置" editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCNDVISetting" visible ="false">
+              <DefaultValue>
+                <ValueItem name="太湖" envelope="119.892,120.635,30.925,31.541" minvalue="0" maxvalue="0" isuse="false"/>
+                <ValueItem name="巢湖" envelope="117.291,117.839,31.425,31.711" minvalue="0" maxvalue="0" isuse="false"/>
+                <ValueItem name="滇池" envelope="102.596,102.785,24.663,25.022" minvalue="0" maxvalue="0" isuse="false"/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="HistoryDBLVImport" description="历史判识结果替换"
+                     editoruiprovider="GeoDo.RSS.MIF.Prds.Bag.dll:GeoDo.RSS.MIF.Prds.Bag.UCHistoryDBLVImport" isoptional="true"/>
+          </Arguments>
+        </Algorithm>
+       
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="255,255,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="BAGCLMAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA,NOAA,NOAA16,NOAA17,NOAA18,NOAA19" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="ShortInfrared" wavelength="1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.67,0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCCloud">
+              <DefaultValue>
+                <MinVisiable value="30"/>
+                <MinNearInFrared value="15"/>
+                <MaxNSVI value="2"/>
+                <MinNDVI value="-0.05"/>
+                <PrintFeatrue value="true"/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="像元覆盖度" identify="BPCD" color="" isuseaoitemplate="false" isdisplaypanel="true" aoitemplates="" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="BPCD" identify="BPCD" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+          </Bands>
+          <Arguments>
+            <Argument name="mainfiles" description="NDVI文件"
+                      refdatatype="file" refidentify="NDVI"
+                      reffilter="NDVI数据文件(*.dat)|*.dat"
+                      fileprovider="ContextEnvironment:NDVI"
+                      ismultiselect="false"></Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="覆盖度统计" identify="BACD" color=""
+                isuseaoitemplate="true" aoitemplates="vector:太湖,vector:巢湖,vector:滇池" aoiseconaryinfofromarg="BPCDFile"
+                isdisplaypanel="true" autogenerategroup="Dis">
+      <Algorithms>
+        <Algorithm name="覆盖度统计" identify="BACD" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="BPCDFile" description="像元覆盖度文件"
+                      refdatatype="file" refidentify="BPCD"
+                      reffilter="像元覆盖度文件(*.dat)|*.dat"
+                      fileprovider="ContextEnvironment:BPCD"
+                      ismultiselect="false"></Argument>
+            <Argument name="CLMFile" description="云检测结果文件"
+                      refdatatype="file" refidentify="0DST"
+                      reffilter="云检测结果文件(*.dat)|*.dat"
+                      ismultiselect="false"
+                      isoptional="true"></Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件"
+                      refdatatype="file" refidentify="DBLV"
+                      reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="0SDI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="蓝藻多通道合成图"/>
+            <Argument name="ThemeEnvelope" description="数据区域" datatype="string" defaultvalue="119.72,120.77,30.75,31.80"/>
+            <!--原系统400*400专题图范围-->
+            <!--<Argument name="ThemeEnvelope" description="数据区域" datatype="string" defaultvalue="119.6875,120.6875,30.7375,31.7375"/>-->
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="MCSI" layoutname="蓝藻多通道合成图"
+                  aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="OMCS" layoutname="蓝藻多通道合成图" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="EMCS" layoutname="浒苔多通道合成图"
+                  aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="ESDI" layoutname="浒苔监测示意图"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename="BAGDBLV" isautogenerate="false"/>
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0SDI" layoutname="蓝藻监测专题图"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename="BAGDBLV" autogenerategroup="All,Dis"/>
+        <Instance name="覆盖度图" fileprovider="ContextEnvironment:BPCD"
+                  outfileidentify="PCDI" layoutname="蓝藻覆盖度专题图"
+                  aoiprovider="SystemAOI:DefaultAOI" colortablename="PCDI" autogenerategroup="All,Dis"/>
+        <Instance name="强度图(10级)" fileprovider="ContextEnvironment:BPCD"
+                 outfileidentify="QD10" layoutname="蓝藻强度专题图（十级）"
+                 aoiprovider="SystemAOI:DefaultAOI" colortablename="QD10" autogenerategroup="All,Dis"/>
+        <Instance name="强度图(3级)" fileprovider="ContextEnvironment:BPCD"
+                 outfileidentify="0QD3" layoutname="蓝藻强度专题图（三级）"
+                 aoiprovider="SystemAOI:DefaultAOI" colortablename="0QD3" />
+        <Instance name="均值频次" fileprovider="ContextEnvironment:TFRV"
+                 outfileidentify="TFRI" layoutname="蓝藻均值频次监测专题图"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false" />
+      </Instances>
+    </SubProduct>
+    <SubProduct name="面积统计" identify="STAT" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="STATAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" />
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CCAR"
+                  aoiprovider="" autogenerategroup="All,Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="按覆盖度统计面积" identify="BCDA" color="" isuseaoitemplate="false" isdisplaypanel="true" >
+      <Algorithms>
+        <Algorithm name="按覆盖度统计面积" identify="BCDA" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="像元覆盖度文件"
+                      refdatatype="file" refidentify="BPCD"
+                      reffilter="像元覆盖度文件(*.dat)|*.dat"
+                      fileprovider="ContextEnvironment:BPCD"
+                      ismultiselect="false" />
+            <Argument name="CLMFile" description="云检测结果文件"
+                      refdatatype="file" refidentify="0DST"
+                      reffilter="云检测结果文件(*.dat)|*.dat" ismultiselect="false"
+                      isoptional="true"></Argument>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="BCDA" visible="false"/>
+            <Argument name="CovertDegreeRegion" description="覆盖度范围"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCCoverDegreeRegion">
+              <DefaultValue>
+                <ValueItem value="0%~30%"/>
+                <ValueItem value="30%~60%"/>
+                <ValueItem value="60%~100%"/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="三级强度面积统计" fileprovider="ContextEnvironment:BPCD"
+                  outfileidentify="CDAH"
+                  aoiprovider="" autogenerategroup="Dis"/>
+        <Instance name="十级强度面积统计" fileprovider="ContextEnvironment:BPCD"
+                        outfileidentify="CDAE"
+                        aoiprovider="" autogenerategroup="Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="按强度统计面积" identify="BCDE"  isuseaoitemplate="false" isdisplaypanel="false" aoitemplates="" autogenerategroup="Dis">
+      <Algorithms>
+        <Algorithm name="按强度统计面积" identify="BCDA" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="像元覆盖度文件"
+                      refdatatype="file" refidentify="BPCD"
+                      reffilter="像元覆盖度文件(*.dat)|*.dat"
+                      fileprovider="ContextEnvironment:BPCD"
+                      ismultiselect="false" />
+            <Argument name="CLMFile" description="云检测结果文件"
+                      refdatatype="file" refidentify="0DST"
+                      reffilter="云检测结果文件(*.dat)|*.dat" ismultiselect="false"
+                      isoptional="true"></Argument>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="CDAE" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="频次统计" identify="FREQ" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="频次统计" identify="FREQAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="频次统计文件"
+                      refdatatype="file" refidentify="DBLV"
+                      reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true"
+                            />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="LWPI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="蓝藻频次统计模板"/>
+            <Argument name="ThemeEnvelope" description="数据区域" datatype="string" defaultvalue="119.72,120.77,30.75,31.80"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="FREQ"  extinfo="_POTD" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="FREQ" extinfo="_POAM" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="FREQ" extinfo="_POAQ" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="FREQ" extinfo="_POAY" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="覆盖度频次统计" identify="BCDF" isuseaoitemplate="false"  isdisplaypanel="true" aoitemplates="" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="覆盖度频次统计" identify="BCDF" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="像元覆盖度文件" refdatatype="file" refidentify="BPCD" reffilter="像元覆盖度文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                      ismultiselect="true" fileprovider="ContextEnvironment:BPCD"/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue="" visible ="false"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="BCDF" visible ="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="蓝藻频次统计模板" visible ="false"/>
+            <Argument name="CovertDegreeRegion" description="覆盖度范围"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCCoverDegreeRegion">
+              <DefaultValue>
+                <ValueItem value="0%~30%"/>
+                <ValueItem value="30%~60%"/>
+                <ValueItem value="60%~100%"/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=BPCD,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="BCDF"  extinfo="_POTD" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=BPCD,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="BCDF" extinfo="_POAM" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=BPCD,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="BCDF" extinfo="_POAQ" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=BAG,SubPrd=BPCD,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="BCDF" extinfo="_POAY" layoutname="蓝藻频次监测专题图" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="覆盖面积频次统计" identify="BCAF" isuseaoitemplate="false"  isdisplaypanel="true" aoitemplates="" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="覆盖面积频次统计" identify="BCAF" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="像元覆盖度文件" refdatatype="file" refidentify="BPCD"
+                      reffilter="像元覆盖度文件(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" fileprovider="ContextEnvironment:BPCD"/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue="" visible ="false"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="BCAF" visible ="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="蓝藻频次统计模板" visible ="false"/>
+            <Argument name="CovertAreaRegion" description="覆盖面积"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCConvertAreaRegion">
+              <DefaultValue>
+                <ValueItem value="0~100"/>
+                <ValueItem value="100~1000"/>
+                <ValueItem value="1000~2500"/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频次-均值" identify="TFRV" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频次-均值" identify="TFRVAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="DBLV"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:DBLV"
+                       ismultiselect="true"></Argument>
+            <Argument name="Zoom" description="放大倍数" datatype="double" defaultvalue="1" visible="false"/>
+            <Argument name="defaultCount" description="默认除数" datatype="float" defaultvalue="-1"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="阈值分析" identify="THAN" color="" isuseaoitemplate="true" aoitemplates="vector:太湖无水草,vector:巢湖,vector:滇池" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="阈值判识" identify="THANExtract" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+            <Band identify="ShortInfrared" wavelength="1.64" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="thAnlysis" description="阈值分析工具"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.BAG.dll:GeoDo.RSS.MIF.Prds.BAG.UCAnlysisTool">
+              <DefaultValue>
+                <ValueItem value="水体"/>
+                <ValueItem value="蓝藻"/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="OnlyTxt" description="只保存文本" datatype="bool" defaultvalue="true" visible="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+  </SubProducts>
+</Product>

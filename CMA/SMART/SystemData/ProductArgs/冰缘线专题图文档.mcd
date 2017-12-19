@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map name="">
+  <MapArguments backcolor="0,255,255,255" smoothingmode="AntiAlias" spatialreference="">
+    <Extent MinX="117.44" MinY="36.44" MaxX="122.56" MaxY="41.56" />
+  </MapArguments>
+  <ConflictDefinitionSymbol>
+    <ConflictDefinition gridsize="20,20" enabled="True" />
+  </ConflictDefinitionSymbol>
+  <ConflictDefinitionLabel>
+    <ConflictDefinition gridsize="60,16" enabled="True" />
+  </ConflictDefinitionLabel>
+  <Author author="" beginmaketime="0001-01-01 00:00:00" endmaketime="0001-01-01 00:00:00" />
+  <Version year="0" scaleofmapping="0" publisher="" source="" description="" />
+  <Layers>
+    <Layer name="EDGE" visible="True" enabledisplayLevel="True" twostepflag="False">
+      <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      <LabelDef source="Label" enabled="False" field="NAME" fields="NAME" ruler="Center" invalidvalue="" autotonewline="False" charcountperline="6">
+        <Font font="宋体,9,Regular" color="255,0,0,0" maskcolor="255,166,208,255" />
+        <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      </LabelDef>
+      <Renderer type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleFeatureRenderer">
+        <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleLineSymbol" color="255,166,208,255" width="2" startcap="Flat" endcap="Flat" linejoin="Miter" />
+      </Renderer>
+      <RotateField rotatefield="" angleoffset="0" fields="NAME" />
+      <FeatureClass>
+        <GridDef spanx="360" spany="180" gridsonetimes="4" />
+        <MemoryLimiter type="None" maxcount="0" maxmemory="0" />
+        <DataSource type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.FileDataSource" name="ICE_EDGE_FY3A_VIRR_1000M_20110119031000" fileurl="D:\WORKFOLDER\SMART二期\1.联机开发@SMART\SMART\BIN\RELEASE\WORKSPACE\ICE\2013-03-11\矢量产品\ICE_EDGE_FY3A_VIRR_1000M_20110119031000.SHP">
+          <ArgsOfLeveling enabled="False" gridsize="80" beginlevel="0" />
+        </DataSource>
+      </FeatureClass>
+    </Layer>
+    <Layer name="EDGE.CONTROLPOINT" visible="True" enabledisplayLevel="True" twostepflag="False">
+      <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      <LabelDef source="Label" enabled="True" field="NO" fields="NO,TEMP" ruler="RightCenter" invalidvalue="" autotonewline="False" charcountperline="6">
+        <Font font="Microsoft Sans Serif,9,Regular" color="255,255,0,0" maskcolor="0,255,255,255" />
+        <DisplayScaleRange enabled="False" minscale="-1" maxscale="1" />
+      </LabelDef>
+      <Renderer type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleFeatureRenderer">
+        <Symbol type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.SimpleMarkerSymbol" style="Circle" size="4,4" color="255,255,0,0"/>
+      </Renderer>
+      <RotateField rotatefield="" angleoffset="0" fields="NO,TEMP" />
+      <FeatureClass>
+        <GridDef spanx="360" spany="180" gridsonetimes="4" />
+        <MemoryLimiter type="None" maxcount="0" maxmemory="0" />
+        <DataSource type="CodeCell.AgileMap.Core.dll,CodeCell.AgileMap.Core.FileDataSource" name="ICE_EDGE_FY3A_VIRR_1000M_20110119031000.CONTROLPOINT" fileurl="D:\WORKFOLDER\SMART二期\1.联机开发@SMART\SMART\BIN\RELEASE\WORKSPACE\ICE\2013-03-11\矢量产品\ICE_EDGE_FY3A_VIRR_1000M_20110119031000.CONTROLPOINT.SHP">
+          <ArgsOfLeveling enabled="False" gridsize="80" beginlevel="0" />
+        </DataSource>
+      </FeatureClass>
+    </Layer>
+  </Layers>
+</Map>

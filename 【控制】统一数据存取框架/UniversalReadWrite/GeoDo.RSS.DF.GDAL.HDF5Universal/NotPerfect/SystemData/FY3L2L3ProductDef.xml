@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--必填项：identify，MatchCondition中必须有一个条件，DefaultDatasets-->
+<L2L3ProductDataDef>
+  <Product identify="FY3A_VIRR_L2_CLM" name="VIRR云产品">
+    <MatchCondition filename="^(?&lt;satellite&gt;FY3A)_(?&lt;sensor&gt;VIRR(?&lt;DayOrNight&gt;\S*))_(?&lt;bound&gt;\S+)_(?&lt;level&gt;L2)_(?&lt;prodtype&gt;CLM\S*)_(?&lt;instrument&gt;\S+)_(?&lt;project&gt;\S+)_(?&lt;year&gt;\d{4})(?&lt;month&gt;\d{2})(?&lt;day&gt;\d{2})_(?&lt;utc&gt;\S+)_(?&lt;resolution&gt;\d+)(?&lt;units&gt;\S+)_MS.HDF$">
+      <DataSets>SDS1,SDS2,SDS3,SDS4,SDS5</DataSets>
+      <Attributes>
+        <Attribute name="" value=""/>
+      </Attributes>
+    </MatchCondition>
+    <DefaultDatasets>SDS1,SDS2,SDS3,SDS4,SDS5</DefaultDatasets>
+  </Product>
+  <Product identify="">
+  </Product>
+</L2L3ProductDataDef>

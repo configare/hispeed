@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="HAZ" subIdentify="LAOD" colortablename="HAZLAOD" description="雾霾强度（AOD）" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0.1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="82,255,236" maxValue="2" minValue="0.1" labeltext=" 未定级"/>
+        <Color color="205,255,82"  maxValue="3" minValue="2" labeltext="   优   "/>
+        <Color color="255,255,83" maxValue="4" minValue="3" labeltext="  轻微  "/>
+        <Color color="255,162,82"  maxValue="5" minValue="4" labeltext="  轻度  "/>
+        <Color color="255,82,83" maxValue="6" minValue="5" labeltext="  中度  "/>
+        <Color color="255,0,0" maxValue="" minValue="6" labeltext="  重度  "/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="HAZ" subIdentify="TFRE" colortablename="HAZTFRE" description="雾霾频次图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="81,255,158" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="205,255,82" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="255,255,83" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="254,204,81" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="255,162,82" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="255,82,83" maxValue="" minValue="8" labeltext="8"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="HAZ" subIdentify="DBLV"  colortablename="HAZDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="霾" displaylengend="false"/>
+        <Color color="100, 255, 255" maxValue="2" minValue="1" labeltext="霾"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="HAZ" subIdentify="HAZE"  colortablename="HAEHAZE" description="雾霾监测示意图" labeltext="">
+      <Colors>
+        <Color color="0,0,159" maxValue="-0.000000001" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,0" maxValue="0.00000001" minValue="" labeltext="-0.000000001" displaylengend="false"/>
+        <Color color="0,0,159" maxValue="500" minValue="0.00000001" labeltext="0.5"/>
+        <Color color="0,0,191" maxValue="700" minValue="500" labeltext=""/>
+        <Color color="0,0,223" maxValue="900" minValue="700" labeltext=""/>
+        <Color color="0,47,255" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="0,95,255" maxValue="1300" minValue="1100" labeltext=""/>
+        <Color color="0,127,255" maxValue="1500" minValue="1300" labeltext=""/>
+        <Color color="0,143,255" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="0,191,255" maxValue="1900" minValue="1700" labeltext=""/>
+        <Color color="0,255,255" maxValue="2100" minValue="1900" labeltext=""/>
+        <Color color="31,255,223" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="47,255,207" maxValue="2500" minValue="2300" labeltext=""/>
+        <Color color="79,255,175" maxValue="2700" minValue="2500" labeltext=""/>
+        <Color color="127,255,127" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="159,255,95" maxValue="3100" minValue="2900" labeltext=""/>
+        <Color color="191,255,63" maxValue="3300" minValue="3100" labeltext=""/>
+        <Color color="239,255,15" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="255,223,0" maxValue="3700" minValue="3500" labeltext=""/>
+        <Color color="255,207,0" maxValue="3900" minValue="3700" labeltext=""/>
+        <Color color="255,175,0" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,159,0" maxValue="4300" minValue="4100" labeltext=""/>
+        <Color color="255,117,0" maxValue="4500" minValue="4300" labeltext=""/>
+        <Color color="255,111,0" maxValue="4700" minValue="4500" labeltext="4.5"/>
+        <Color color="255,63,0" maxValue="4900" minValue="4700" labeltext=""/>
+        <Color color="255,31,0" maxValue="5100" minValue="4900" labeltext=""/>
+        <Color color="255,0,0" maxValue="5300" minValue="5100" labeltext="5.1"/>
+        <Color color="239,0,0" maxValue="5500" minValue="5300" labeltext=""/>
+        <Color color="207,0,0" maxValue="5700" minValue="5500" labeltext=""/>
+        <Color color="175,0,0" maxValue="5900" minValue="5700" labeltext="5.7"/>
+        <Color color="143,0,0" maxValue="6100" minValue="5900" labeltext=""/>
+        <Color color="128,0,0" maxValue="9999" minValue="6100" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

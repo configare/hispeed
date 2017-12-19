@@ -1,0 +1,199 @@
+******************************************************************************  
+                      D 2   V A R I A B L E   L I S T                             
+******************************************************************************  
+                                                                                
+Variables labeled with 'd' are defined only for local daytime, and              
+are undefined at night (undefined=255).                                         
+                                                                                
+cloudy = IR or VIS or NI cloudy                                                 
+VIS/IR-cloudy = IR or VIS cloudy                                                
+IR-cloudy = IR cloudy                                                           
+IR-only-cloudy = IR cloudy and VIS clear                                        
+NI-cloudy = NI cloudy                                                           
+NI-only-cloudy = NI cloudy and ( IR and VIS clear )                             
+VIS-only-cloudy = VIS cloudy and IR clear                                       
+IR-marginally-cloudy = IR marginally cloudy                                     
+VIS/IR-marginally-cloudy = VIS or IR marginally cloudy                          
+NI-marginally-cloudy = NI marginally cloudy                                     
+NI-only-marginally-cloudy = NI marginally cloudy and ( IR and VIS clear )       
+clear = IR and VIS and NI clear                                                 
+IR-clear = IR clear                                                             
+VIS/IR-clear = IR and VIS clear                                                 
+                                                                                
+------------------------------------------------------------------------------- 
+Box identification                                   地图格点单元基本信息                           
+------------------------------------------------------------------------------- 
+  1  Latitude index (equal-area and equal-angle)     等面积、等角度投影下格点的纬度索引值                           
+  2  Longitude index (equal-area)                    等面积投影下格点的经度索引值                                     
+  3  Western-most longitude index (equal-angle)      等角投影下格点最西侧的经度索引值                
+  4  Eastern-most longitude index (equal-angle)      等角投影下格点最东侧的经度索引值                           
+  5  Land/water/coast code                           格点处的土地覆盖类型
+	(see Table 2.5.6，(based on Masaki 1972).
+	/// 格点处的土地覆盖类型      WATER(Land fraction ≤ 35%)     LAND(Land fraction ≥ 65%)       COAST
+	/// Stage D2：                       1                               2                           3
+	/// Stage D1 -- Day                 1                               2                           3
+	/// Stage D1 -- Night             101                             102                         103               
+  6  Number of observations                           格点数据中的观测量个数                          
+  7  Number of day-time observations                  格点数据中的白天的观测量个数                          
+------------------------------------------------------------------------------- 
+Cloud amount (CA)                                     云量标识(0-100%)                           
+------------------------------------------------------------------------------- 
+  8  Mean cloud amount                                平均云量                          
+  9  Mean IR-marginal cloud amount                                              
+ 10  Frequency of mean cloud amount  0-10%            平均云量在0-10%的统计频率                         
+ 11  Frequency of mean cloud amount 10-20%                                      
+ 12  Frequency of mean cloud amount 20-30%                                      
+ 13  Frequency of mean cloud amount 30-40%                                      
+ 14  Frequency of mean cloud amount 40-50%                                      
+ 15  Frequency of mean cloud amount 50-60%                                      
+ 16  Frequency of mean cloud amount 60-70%                                      
+ 17  Frequency of mean cloud amount 70-80%                                      
+ 18  Frequency of mean cloud amount 80-90%                                      
+ 19  Frequency of mean cloud amount 90-100%                                     
+------------------------------------------------------------------------------- 
+Mean cloud top pressure (PC)                          平均云顶气压(5-1000 millibars)                          
+------------------------------------------------------------------------------- 
+ 20  Mean cloud pressure          平均云顶气压(5-1000 millibars)                                              
+ 21  Standard deviation over time                                               
+ 22  Mean standard deviation over space                                         
+------------------------------------------------------------------------------- 
+Mean cloud top temperature (TC)    平均云顶温度(165-345 K)                                             
+------------------------------------------------------------------------------- 
+ 23  Mean cloud temperature    平均云顶温度(165-345 K)                                                 
+ 24  Standard deviation over time                                               
+ 25  Mean standard deviation over space                                         
+------------------------------------------------------------------------------- 
+Mean cloud optical thickness (TAU)    云的平均光学厚度(0.02-378.65)                                          
+------------------------------------------------------------------------------- 
+ 26  Mean cloud TAU   云的平均光学厚度(0.02-378.65)                                                          
+ 27  Standard deviation over time                                               
+ 28  Mean standard deviation over space                                         
+------------------------------------------------------------------------------- 
+Mean cloud water path (WP)     云的平均水路径(g/m2)                                                 
+------------------------------------------------------------------------------- 
+ 29  Mean cloud WP     云的平均水路径(g/m2)                                                         
+ 30  Standard deviation over time         各个时间数据进行空间平均的标准差                                      
+ 31  Mean standard deviation over space   空间平均标准差的时间平均                                      
+------------------------------------------------------------------------------- 
+IR cloud types红外通道探测的云类型(see Table 2.5.7)                                                                  
+------------------------------------------------------------------------------- 
+ 32  Mean low cloud amount                                                      
+ 33  Mean PC for low clouds                                                     
+ 34  Mean TC for low clouds                                                     
+ 35  Mean middle cloud amount                                                   
+ 36  Mean PC for middle clouds                                                  
+ 37  Mean TC for middle clouds                                                  
+ 38  Mean high cloud amount                                                     
+ 39  Mean PC for high clouds                                                    
+ 40  Mean TC for high clouds                                                    
+------------------------------------------------------------------------------- 
+LOW cloud types (vis-adjusted TC) 可见光/红外/近红外通道探测的低云类型（仅白天有效）(see Table 2.5.7)                                              
+------------------------------------------------------------------------------- 
+ 41d Mean CA for cloud type 1 = Cumulus,liquid                                  
+ 42d Mean PC for cloud type 1                                                   
+ 43d Mean TC for cloud type 1                                                   
+ 44d Mean TAU for cloud type 1                                                  
+ 45d Mean WP for cloud type 1                                                   
+ 46d Mean CA for cloud type 2 = Stratocumulus,liquid                            
+ 47d Mean PC for cloud type 2                                                   
+ 48d Mean TC for cloud type 2                                                   
+ 49d Mean TAU for cloud type 2                                                  
+ 50d Mean WP for cloud type 2                                                   
+ 51d Mean CA for cloud type 3 = Stratus,liquid                                  
+ 52d Mean PC for cloud type 3                                                   
+ 53d Mean TC for cloud type 3                                                   
+ 54d Mean TAU for cloud type 3                                                  
+ 55d Mean WP for cloud type 3                                                   
+ 56d Mean CA for cloud type 4 = Cumulus,ice                                     
+ 57d Mean PC for cloud type 4                                                   
+ 58d Mean TC for cloud type 4                                                   
+ 59d Mean TAU for cloud type 4                                                  
+ 60d Mean WP for cloud type 4                                                   
+ 61d Mean CA for cloud type 5 = Stratocumulus,ice                               
+ 62d Mean PC for cloud type 5                                                   
+ 63d Mean TC for cloud type 5                                                   
+ 64d Mean TAU for cloud type 5                                                  
+ 65d Mean WP for cloud type 5                                                   
+ 66d Mean CA for cloud type 6 = Stratus,ice                                     
+ 67d Mean PC for cloud type 6                                                   
+ 68d Mean TC for cloud type 6                                                   
+ 69d Mean TAU for cloud type 6                                                  
+ 70d Mean WP for cloud type 6                                                   
+------------------------------------------------------------------------------- 
+MIDDLE cloud types (VIS-adjusted TC)    可见光/红外/近红外通道探测的中等高度云类型（仅白天有效）                                        
+------------------------------------------------------------------------------- 
+ 71d Mean CA for cloud type 7 = Altocumulus,liquid                              
+ 72d Mean PC for cloud type 7                                                   
+ 73d Mean TC for cloud type 7                                                   
+ 74d Mean TAU for cloud type 7                                                  
+ 75d Mean WP for cloud type 7                                                   
+ 76d Mean CA for cloud type 8 = Altostratus,liquid                              
+ 77d Mean PC for cloud type 8                                                   
+ 78d Mean TC for cloud type 8                                                   
+ 79d Mean TAU for cloud type 8                                                  
+ 80d Mean WP for cloud type 8                                                   
+ 81d Mean CA for cloud type 9 = Nimbostratus,liquid                             
+ 82d Mean PC for cloud type 9                                                   
+ 83d Mean TC for cloud type 9                                                   
+ 84d Mean TAU for cloud type 9                                                  
+ 85d Mean WP for cloud type 9                                                   
+ 86d Mean CA for cloud type 10 = Altocumulus,ice                                
+ 87d Mean PC for cloud type 10                                                  
+ 88d Mean TC for cloud type 10                                                  
+ 89d Mean TAU for cloud type 10                                                 
+ 90d Mean WP for cloud type 10                                                  
+ 91d Mean CA for cloud type 11 = Altostratus,ice                                
+ 92d Mean PC for cloud type 11                                                  
+ 93d Mean TC for cloud type 11                                                  
+ 94d Mean TAU for cloud type 11                                                 
+ 95d Mean WP for cloud type 11                                                  
+ 96d Mean CA for cloud type 12 = Nimbostratus,ice                               
+ 97d Mean PC for cloud type 12                                                  
+ 98d Mean TC for cloud type 12                                                  
+ 99d Mean TAU for cloud type 12                                                 
+100d Mean WP for cloud type 12                                                  
+------------------------------------------------------------------------------- 
+HIGH cloud types (VIS-adjusted TC)      可见光/红外/近红外通道探测的高云类型（仅白天有效）                                        
+------------------------------------------------------------------------------- 
+101d Mean CA for cloud type 13 = Cirrus                                         
+102d Mean PC for cloud type 13                                                  
+103d Mean TC for cloud type 13                                                  
+104d Mean TAU for cloud type 13                                                 
+105d Mean WP for cloud type 13                                                  
+106d Mean CA for cloud type 14 = Cirrostratus                                   
+107d Mean PC for cloud type 14                                                  
+108d Mean TC for cloud type 14                                                  
+109d Mean TAU for cloud type 14                                                 
+110d Mean WP for cloud type 14                                                  
+111d Mean CA for cloud type 15 = Deep convective                                
+112d Mean PC for cloud type 15                                                  
+113d Mean TC for cloud type 15                                                  
+114d Mean TAU for cloud type 15                                                 
+115d Mean WP for cloud type 15                                                  
+------------------------------------------------------------------------------- 
+Mean surface temperature (TS) 地表表层平均温度(165-345 K)                                                  
+------------------------------------------------------------------------------- 
+116  Mean TS from clear sky composite       地表表层平均温度(165-345 K)                                    
+117  Standard deviation over space                                              
+------------------------------------------------------------------------------- 
+Mean surface reflectance (RS)   可见光波段地表的平均反射率(0-1.108)（仅白天有效）                                                
+------------------------------------------------------------------------------- 
+118d Mean RS from clear sky composite  可见光波段地表的平均反射率(0-1.108)（仅白天有效）                                         
+------------------------------------------------------------------------------- 
+Snow/Ice cover    冰雪覆盖程度                                                              
+------------------------------------------------------------------------------- 
+119d Mean snow/ice amount  平均冰雪覆盖程度                                                     
+------------------------------------------------------------------------------- 
+TOVS atmospheric information  从TOVS数据中获取的大气温度、湿度信息                                                  
+------------------------------------------------------------------------------- 
+120  Mean Surface pressure                                                      
+121  Mean Near-surface air temperature                                          
+122  Mean Temperature at 740 mb                                                 
+123  Mean Temperature at 500 mb                                                 
+124  Mean Temperature at 375 mb                                                 
+125  Mean Tropopause pressure                  对流层气压                                 
+126  Mean Tropopause temperature               对流层温度                                 
+127  Mean Stratosphere temperature at 50 mb   平流层温度at 50 mb                                  
+128  Mean Precipitable water for 1000-680 mb  平均可降水量for 1000-680 mb                                  
+129  Mean Precipitable water for 680-310 mb   平均可降水量for 680-310 mb (PW)                                  
+130  Mean Ozone abundance                     平均臭氧柱状浓度                                  

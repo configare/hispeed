@@ -1,0 +1,5 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.SMART.CSDatasets.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.SMART.CSDatasets.pdb
+D:\监测分析平台\Code\CMA\GeoDo.SMART.CSDatasets\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.SMART.CSDatasets\obj\x86\Release\GeoDo.SMART.CSDatasets.exe
+D:\监测分析平台\Code\CMA\GeoDo.SMART.CSDatasets\obj\x86\Release\GeoDo.SMART.CSDatasets.pdb

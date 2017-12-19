@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29E4664D-8930-4A57-A8BC-2B2ABD43C733}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.Core.DF</RootNamespace>
+    <AssemblyName>GeoDo.RSS.Core.DF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.MEF">
+      <HintPath>..\..\RefDLL\MEF\GeoDo.MEF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IBandNameRaster.cs" />
+    <Compile Include="LogicalDataProvider\ArrayDataProvider\ArrayRasterBand.cs" />
+    <Compile Include="LogicalDataProvider\ArrayDataProvider\ArrayRasterDataProvider.cs" />
+    <Compile Include="BandProvider\BandProvider.cs" />
+    <Compile Include="BandProvider\IBandProvider.cs" />
+    <Compile Include="BandProvider\IOpenArgumentSetting.cs" />
+    <Compile Include="BandProvider\OpenArgumentSetting.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CoordEnvelope.cs" />
+    <Compile Include="CoordPoint.cs" />
+    <Compile Include="CoordTransform\CoordTransoformFactory.cs" />
+    <Compile Include="CoordTransform\ICoordTransform.cs" />
+    <Compile Include="CoordTransform\IRasterCoordTransform.cs" />
+    <Compile Include="CoordTransform\LinearCoordTransform.cs" />
+    <Compile Include="CoordTransform\RasterCoordTransform.cs" />
+    <Compile Include="CoordTransform\UndressedCoordTransform.cs" />
+    <Compile Include="DataDriver\GeoDataDriver.cs" />
+    <Compile Include="DataDriver\IGeoDataDriver.cs" />
+    <Compile Include="DataDriver\IRasterDataDriver.cs" />
+    <Compile Include="DataDriver\RasterDataDriver.cs" />
+    <Compile Include="DataDriver\IVectorDataDriver.cs" />
+    <Compile Include="DataIdentiyMatcher\DataIdentifyMatcher.cs" />
+    <Compile Include="DataProvider\AttributeManager.cs" />
+    <Compile Include="DataIdentiyMatcher\DataIdentify.cs" />
+    <Compile Include="DataProvider\GeoDataProvider.cs" />
+    <Compile Include="DataProvider\IFileDataProvider.cs" />
+    <Compile Include="DataProvider\IUpdateCoordEnvelope.cs" />
+    <Compile Include="DataProvider\IVirtualScan0.cs" />
+    <Compile Include="DataProvider\RasterBand.cs" />
+    <Compile Include="DataProvider\RasterDataProvider.cs" />
+    <Compile Include="DataTypeHelper.cs" />
+    <Compile Include="DriverFinder.cs" />
+    <Compile Include="Hdr\enumHdrByteOder.cs" />
+    <Compile Include="enumDataProviderAccess.cs" />
+    <Compile Include="enumDataType.cs" />
+    <Compile Include="enumCoordType.cs" />
+    <Compile Include="DataProvider\IGeoDataProvider.cs" />
+    <Compile Include="DataProvider\IRasterBand.cs" />
+    <Compile Include="DataProvider\IRasterDataProvider.cs" />
+    <Compile Include="DataProvider\IVectorDataProvider.cs" />
+    <Compile Include="enumInterleave.cs" />
+    <Compile Include="Exception\Exceptions.cs" />
+    <Compile Include="Hdr\enumHdrCoordUnits.cs" />
+    <Compile Include="Hdr\HdrFileParser.cs" />
+    <Compile Include="Hdr\HdrGeoPointCoord.cs" />
+    <Compile Include="Hdr\HdrFile.cs" />
+    <Compile Include="Hdr\HdrGeoPoint.cs" />
+    <Compile Include="Hdr\HdrMapInfo.cs" />
+    <Compile Include="Hdr\HdrProjectionInfo.cs" />
+    <Compile Include="LogicalDataProvider\ArrayDataProvider\IArrayRasterBand.cs" />
+    <Compile Include="LogicalDataProvider\ArrayDataProvider\IArrayRasterDataProvider.cs" />
+    <Compile Include="LogicalDataProvider\LogicalDataProvider\ILogicalRasterDataProvider.cs" />
+    <Compile Include="LogicalDataProvider\LogicalDataProvider\LogicalRasterDataProvider.cs" />
+    <Compile Include="LogicalDataProvider\TileDataProvider\ITileRasterDataProvider.cs" />
+    <Compile Include="OrbitProjectionTransform\IOrbitProjectionTransform.cs" />
+    <Compile Include="OrbitProjectionTransform\IOrbitProjectionTransformControl.cs" />
+    <Compile Include="OrbitProjectionTransform\OrbitProjectionTransform.cs" />
+    <Compile Include="Overview\IOverviewGenerator.cs" />
+    <Compile Include="Overview\OverviewGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RgbStretcher\Config\StretcherConfigItem.cs" />
+    <Compile Include="RgbStretcher\Config\StretcherConfigParser.cs" />
+    <Compile Include="RgbStretcher\IRgbStretcher.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherUInt16.cs" />
+    <Compile Include="RgbStretcher\RgbStretcher.cs" />
+    <Compile Include="RgbStretcher\RgbStretcherFactory.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherInt16.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherInt32.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherUInt32.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherInt64.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherUInt64.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherFloat.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherDouble.cs" />
+    <Compile Include="RgbStretcher\LinearRgbStretcherByte.cs" />
+    <Compile Include="SpatialReferenceBuilder.cs" />
+    <Compile Include="Tools\DataTypeConverter\IRasterDataProviderConverter.cs" />
+    <Compile Include="Tools\DataTypeConverter\RasterDataProviderConverter.cs" />
+    <Compile Include="Tools\Satics\BandPixelsVisitor.cs" />
+    <Compile Include="Tools\Satics\IBandOperator.cs" />
+    <Compile Include="Tools\Satics\MaxMinValuesComputer.cs" />
+    <Compile Include="Tools\Satics\StatValuesComputer.cs" />
+    <Compile Include="WinAPI.cs" />
+    <Compile Include="WorldFile\WorldFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SystemData\DataStretchers.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Algorithm\GeoDo.Oribit.Algorithm\GeoDo.Oribit.Algorithm.csproj">
+      <Project>{8F8E7333-1A67-45E6-A11E-9E0F35806679}</Project>
+      <Name>GeoDo.Oribit.Algorithm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

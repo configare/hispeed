@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,StripViewItemForeColor,StackViewBorder,EmptyPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemSpacing" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBtQkFBQUFBQUFBRFlBQUFBb0FBQUFGUUFBQUF3QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjRILy8vL0lQNysvaXIvLy84Zy92NytCd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUQvLy84Zy92NytRdjcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9rTCsvdjVUL3Y3K1F2Ly8veUFBQUFBQUFBQUFBQUFBQUFEKy92NHEvdjcrVTNJMkVmLysvdjVUL3Y3K1F2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUFBQUFBQVA3Ky9nZi8vLzhnL3Y3K1F2NysvbE5pTGcvLy92NytVLzcrL2lvQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K1UzSTJFZjlpTGcvLy92NytVLzcrL2tMLy8vOGd6NU5sLzgrVFpmL1BrMlgvejVObC8vLy8veUQrL3Y1Qy92NytVM0kyRWY5aUxnLy8vdjcrVS83Ky9pci8vLzhnLy8vL0lQNysva0wrL3Y1VC92NytVM0kyRWY5aUxnLy9VQ1lNLy83Ky9sUCsvdjVDOHM2eC8vTE9zZi95enJILytlblAvLzcrL2tMKy92NVRnVDBULzNJMkVmOWlMZy8vL3Y3K1UvNysvbFArL3Y1Qy92NytLdjcrL2xPTFFoWC9nVDBULzNJMkVmOWlMZy8vVUNZTS8wSWZDdi8rL3Y1VDhzNngvL0xPc2YvNTZjLy84czZ4Ly83Ky9sT0xRaFgvZ1QwVC8zSTJFZjlpTGcvL1VDWU0vMElmQ3YvKy92NVQvdjcrS3Y3Ky9sT0xRaFgvZ1QwVC8zSTJFZjlpTGcvL1VDWU0vMElmQ3YvKy92NVQ4czZ4Ly9ucHovL3l6ckgvOHM2eC8vNysvbE9MUWhYL2dUMFQvM0kyRWY5aUxnLy9VQ1lNLzBJZkN2LysvdjVULy8vL0lQNysva0wrL3Y1VC92NytVM0kyRWY5aUxnLy9VQ1lNLy83Ky9sUCsvdjVDK2VuUC8vTE9zZi95enJILzhzNngvLzcrL2tMKy92NVRnVDBULzNJMkVmOWlMZy8vL3Y3K1UvNysvbFArL3Y1Qy92NytCLy8vL3lEKy92NHEvdjcrVTNJMkVmOWlMZy8vL3Y3K1UvNysva0wvLy84Z3o1TmwvOCtUWmYvUGsyWC96NU5sLy8vLy95RCsvdjVDL3Y3K1UzSTJFZjlpTGcvLy92NytVLzcrL2lyLy8vOGdBQUFBQUFBQUFBRCsvdjRxL3Y3K1UzSTJFZi8rL3Y1VC92NytRdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBQUFBQUFQNysvZ2YvLy84Zy92NytRdjcrL2xOaUxnLy8vdjcrVS83Ky9pb0FBQUFBQUFBQUFBQUFBQUQvLy84Zy92NytRdjcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9rTCsvdjVUL3Y3K1F2Ly8veUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9pci8vLzhnL3Y3K0J3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS8vLy9JUDcrL2djQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjM8L0JvdHRvbT48TGVmdD45PC9MZWZ0PjxSaWdodD44PC9SaWdodD48VG9wPjM8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackElement.BottomStackPosition" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlueGradient1,StackViewHeaderFont,StackViewHeaderBorder,Margin(-1;-1;-1;-1),1111Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemFillNormal,StackViewItemBorder,Padding(4;7;4;7),StackViewItemText,Margin(-1;-1;-1;-1)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemFillSelected,StackViewItemBorder,Padding(4;7;4;7),StackViewItemText,Margin(-1;-1;-1;-1)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemFillHovered">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemFillSelectedHovered">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="StackViewItemFillMouseDown">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,StripViewItemForeColor,StackViewBorder,EmptyPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemSpacing" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,StripViewItemForeColor,StackViewBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemSpacing" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBtQkFBQUFBQUFBRFlBQUFBb0FBQUFEQUFBQUJVQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBLy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2tMLy8vOGdBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS92NytLdjcrL2xOQ0h3ci9RaDhLLy83Ky9sUCsvdjRxL3Y3K0t2Ly8veUQrL3Y0SC8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9sTlFKZ3ovVUNZTS8vNysvbFArL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrS3Y3Ky9sTmlMZy8vWWk0UC8ySXVELzlpTGcvL1lpNFAvMkl1RC85aUxnLy9ZaTRQLy83Ky9sUCsvdjRxLy8vL0lQNysva0wrL3Y1VGNqWVIvM0kyRWY5eU5oSC9jallSLzNJMkVmOXlOaEgvL3Y3K1UvNysva0wvLy84Zy92NytCLy8vL3lEKy92NUMvdjcrVTRFOUUvK0JQUlAvZ1QwVC80RTlFLy8rL3Y1VC92NytRdi8vL3lEKy92NEhBQUFBQVA3Ky9nZi8vLzhnL3Y3K1F2NysvbE9MUWhYL2kwSVYvLzcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUQrL3Y0SC8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnL3Y3K0J3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUF6NU5sLy9ucHovL3l6ckgvOHM2eC8vTE9zZi9QazJYL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBejVObC8vTE9zZi81NmMvLzhzNngvL0xPc2YvUGsyWC9BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQXo1TmwvL0xPc2YveXpySC8rZW5QLy9MT3NmL1BrMlgvQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUF6NU5sLy9MT3NmL3l6ckgvOHM2eC8vbnB6Ly9QazJYL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjRILy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrQndBQUFBQUFBQUFBQUFBQUFQNysvZ2YvLy84Zy92NytRdjcrL2xOQ0h3ci9RaDhLLy83Ky9sUCsvdjVDLy8vL0lQNysvZ2NBQUFBQS92NytCLy8vL3lEKy92NUMvdjcrVTFBbURQOVFKZ3ovVUNZTS8xQW1EUC8rL3Y1VC92NytRdi8vL3lEKy92NEgvLy8vSVA3Ky9rTCsvdjVUWWk0UC8ySXVELzlpTGcvL1lpNFAvMkl1RC85aUxnLy8vdjcrVS83Ky9rTC8vLzhnL3Y3K0t2NysvbE55TmhIL2NqWVIvM0kyRWY5eU5oSC9jallSLzNJMkVmOXlOaEgvY2pZUi8vNysvbFArL3Y0cS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9sT0JQUlAvZ1QwVC8vNysvbFArL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrQi8vLy95RCsvdjRxL3Y3K0t2NysvbE9MUWhYL2kwSVYvLzcrL2xQKy92NHEvdjcrS3YvLy95RCsvdjRIQUFBQUFBQUFBQUFBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K0t2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjg8L0JvdHRvbT48TGVmdD4zPC9MZWZ0PjxSaWdodD4zPC9SaWdodD48VG9wPjk8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackElement.LeftStackPosition" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,StripViewItemForeColor,StackViewBorder,EmptyPadding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemSpacing" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBtQkFBQUFBQUFBRFlBQUFBb0FBQUFGUUFBQUF3QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjRILy8vL0lQNysvaXIvLy84Zy92NytCd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS92NytCLy8vL3lEKy92NHEvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUQvLy84Zy92NytRdjcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9rTCsvdjVUL3Y3K1F2Ly8veUFBQUFBQUFBQUFBQUFBQUFEKy92NHEvdjcrVTNJMkVmLysvdjVUL3Y3K1F2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUFBQUFBQVA3Ky9nZi8vLzhnL3Y3K1F2NysvbE5pTGcvLy92NytVLzcrL2lvQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K1UzSTJFZjlpTGcvLy92NytVLzcrL2tMLy8vOGd6NU5sLzgrVFpmL1BrMlgvejVObC8vLy8veUQrL3Y1Qy92NytVM0kyRWY5aUxnLy8vdjcrVS83Ky9pci8vLzhnLy8vL0lQNysva0wrL3Y1VC92NytVM0kyRWY5aUxnLy9VQ1lNLy83Ky9sUCsvdjVDOHM2eC8vTE9zZi95enJILytlblAvLzcrL2tMKy92NVRnVDBULzNJMkVmOWlMZy8vL3Y3K1UvNysvbFArL3Y1Qy92NytLdjcrL2xPTFFoWC9nVDBULzNJMkVmOWlMZy8vVUNZTS8wSWZDdi8rL3Y1VDhzNngvL0xPc2YvNTZjLy84czZ4Ly83Ky9sT0xRaFgvZ1QwVC8zSTJFZjlpTGcvL1VDWU0vMElmQ3YvKy92NVQvdjcrS3Y3Ky9sT0xRaFgvZ1QwVC8zSTJFZjlpTGcvL1VDWU0vMElmQ3YvKy92NVQ4czZ4Ly9ucHovL3l6ckgvOHM2eC8vNysvbE9MUWhYL2dUMFQvM0kyRWY5aUxnLy9VQ1lNLzBJZkN2LysvdjVULy8vL0lQNysva0wrL3Y1VC92NytVM0kyRWY5aUxnLy9VQ1lNLy83Ky9sUCsvdjVDK2VuUC8vTE9zZi95enJILzhzNngvLzcrL2tMKy92NVRnVDBULzNJMkVmOWlMZy8vL3Y3K1UvNysvbFArL3Y1Qy92NytCLy8vL3lEKy92NHEvdjcrVTNJMkVmOWlMZy8vL3Y3K1UvNysva0wvLy84Z3o1TmwvOCtUWmYvUGsyWC96NU5sLy8vLy95RCsvdjVDL3Y3K1UzSTJFZjlpTGcvLy92NytVLzcrL2lyLy8vOGdBQUFBQUFBQUFBRCsvdjRxL3Y3K1UzSTJFZi8rL3Y1VC92NytRdi8vL3lEKy92NEhBQUFBQUFBQUFBQUFBQUFBQUFBQUFQNysvZ2YvLy84Zy92NytRdjcrL2xOaUxnLy8vdjcrVS83Ky9pb0FBQUFBQUFBQUFBQUFBQUQvLy84Zy92NytRdjcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9rTCsvdjVUL3Y3K1F2Ly8veUFBQUFBQUFBQUFBQUFBQUFEKy92NEgvLy8vSVA3Ky9pci8vLzhnL3Y3K0J3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS8vLy9JUDcrL2djQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjM8L0JvdHRvbT48TGVmdD45PC9MZWZ0PjxSaWdodD44PC9SaWdodD48VG9wPjM8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackElement.TopStackPosition" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,StripViewItemForeColor,StackViewBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemSpacing" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPlN0cmV0Y2hYWVRpbGVJbm5lcjwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBtQkFBQUFBQUFBRFlBQUFBb0FBQUFEQUFBQUJVQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBLy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2tMLy8vOGdBQUFBQUFBQUFBQUFBQUFBL3Y3K0IvLy8veUQrL3Y0cS92NytLdjcrL2xOQ0h3ci9RaDhLLy83Ky9sUCsvdjRxL3Y3K0t2Ly8veUQrL3Y0SC8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9sTlFKZ3ovVUNZTS8vNysvbFArL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrS3Y3Ky9sTmlMZy8vWWk0UC8ySXVELzlpTGcvL1lpNFAvMkl1RC85aUxnLy9ZaTRQLy83Ky9sUCsvdjRxLy8vL0lQNysva0wrL3Y1VGNqWVIvM0kyRWY5eU5oSC9jallSLzNJMkVmOXlOaEgvL3Y3K1UvNysva0wvLy84Zy92NytCLy8vL3lEKy92NUMvdjcrVTRFOUUvK0JQUlAvZ1QwVC80RTlFLy8rL3Y1VC92NytRdi8vL3lEKy92NEhBQUFBQVA3Ky9nZi8vLzhnL3Y3K1F2NysvbE9MUWhYL2kwSVYvLzcrL2xQKy92NUMvLy8vSVA3Ky9nY0FBQUFBQUFBQUFBQUFBQUQrL3Y0SC8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnL3Y3K0J3QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUF6NU5sLy9ucHovL3l6ckgvOHM2eC8vTE9zZi9QazJYL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBejVObC8vTE9zZi81NmMvLzhzNngvL0xPc2YvUGsyWC9BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQXo1TmwvL0xPc2YveXpySC8rZW5QLy9MT3NmL1BrMlgvQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUF6NU5sLy9MT3NmL3l6ckgvOHM2eC8vbnB6Ly9QazJYL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRCsvdjRILy8vL0lQNysva0wrL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrQndBQUFBQUFBQUFBQUFBQUFQNysvZ2YvLy84Zy92NytRdjcrL2xOQ0h3ci9RaDhLLy83Ky9sUCsvdjVDLy8vL0lQNysvZ2NBQUFBQS92NytCLy8vL3lEKy92NUMvdjcrVTFBbURQOVFKZ3ovVUNZTS8xQW1EUC8rL3Y1VC92NytRdi8vL3lEKy92NEgvLy8vSVA3Ky9rTCsvdjVUWWk0UC8ySXVELzlpTGcvL1lpNFAvMkl1RC85aUxnLy8vdjcrVS83Ky9rTC8vLzhnL3Y3K0t2NysvbE55TmhIL2NqWVIvM0kyRWY5eU5oSC9jallSLzNJMkVmOXlOaEgvY2pZUi8vNysvbFArL3Y0cS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9sT0JQUlAvZ1QwVC8vNysvbFArL3Y1VC92NytVLzcrL2tMLy8vOGcvdjcrQi8vLy95RCsvdjRxL3Y3K0t2NysvbE9MUWhYL2kwSVYvLzcrL2xQKy92NHEvdjcrS3YvLy95RCsvdjRIQUFBQUFBQUFBQUFBQUFBQS8vLy9JUDcrL2tMKy92NVQvdjcrVS83Ky9rTC8vLzhnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvdjcrQi8vLy95RCsvdjRxL3Y3K0t2Ly8veUQrL3Y0SEFBQUFBQUFBQUFBQUFBQUE8L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjg8L0JvdHRvbT48TGVmdD4zPC9MZWZ0PjxSaWdodD4zPC9SaWdodD48VG9wPjk8L1RvcD48L01hcmdpbnM+PC9SYWRJbWFnZVNoYXBlPg==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackElement.RightStackPosition" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,NoBorder(BorderWidth)">
+            <Selectors>
+              <XmlClassSelector ElementClass="StackViewContentArea" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlueGradient1,StackViewHeaderFont,StackViewHeaderBorder,Margin(0;0;0;-1)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PageViewHeader.BottomStackPosition" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlueGradient1,StackViewHeaderBorder,Margin(-1;-1;-1;-1),StackViewFooterFont,2222Padding">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewFooter" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(BorderWidth),WhiteBackground">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPageView" ElementType="Telerik.WinControls.UI.RadPageViewExplorerBarElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadPageViewExplorerBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

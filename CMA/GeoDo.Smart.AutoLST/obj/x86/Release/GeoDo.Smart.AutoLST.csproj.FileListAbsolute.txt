@@ -1,0 +1,7 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoLST.Args.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoLST.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoLST.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.AutoLST.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoLST\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoLST\obj\x86\Release\GeoDo.Smart.AutoLST.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.AutoLST\obj\x86\Release\GeoDo.Smart.AutoLST.pdb

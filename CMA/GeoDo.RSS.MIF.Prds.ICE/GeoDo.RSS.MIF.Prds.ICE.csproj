@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A1426B8-E46F-46B9-BBAA-C6AAC73CDCA2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.ICE</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.ICE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine.GDIPlus, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.Elements, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.GDIPlus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.GDIPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.RasterTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\RsTools\GeoDo.RSS.RasterTools.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.DataPro, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.DataPro.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Windows, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\SubProductCompStatICE.cs" />
+    <Compile Include="Analysis\SubProductCYCIICE.cs" />
+    <Compile Include="Analysis\SubProductFREQICE.cs" />
+    <Compile Include="Analysis\SubProductSTATICE.cs" />
+    <Compile Include="Analysis\SubProductTFREICE.cs" />
+    <Compile Include="Analysis\SubProductTFRQICE.cs" />
+    <Compile Include="Binary\SubProductBinaryICE.cs" />
+    <Compile Include="Controls\UCDBLVImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCDBLVImport.Designer.cs">
+      <DependentUpon>UCDBLVImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCIceCoverage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCIceCoverage.Designer.cs">
+      <DependentUpon>UCIceCoverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICE\Commands\CommandIceDegree.cs" />
+    <Compile Include="ICE\Commands\CommandIceFreeCurve.cs" />
+    <Compile Include="ICE\frmCustomIceDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICE\frmCustomIceDegree.Designer.cs">
+      <DependentUpon>frmCustomIceDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICE\IceFeatureWnd\CommandIceFeatureListWnd.cs" />
+    <Compile Include="ICE\IceFeatureWnd\IceEdgeFileNameHelper.cs" />
+    <Compile Include="ICE\IceFeatureWnd\IceFeatureListContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICE\IceFeatureWnd\IceFeatureListContent.Designer.cs">
+      <DependentUpon>IceFeatureListContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICE\IceFeatureWnd\IceFeatureListWnd.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ICE\Layer\IceFreeCurveInfoLayer.cs" />
+    <Compile Include="ICE\UITabSeaIce.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ICE\UITabSeaIce.designer.cs">
+      <DependentUpon>UITabSeaIce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\GenerateContourLines.cs" />
+    <Compile Include="Layout\SubProductAEDGICE.cs" />
+    <Compile Include="Layout\SubProductIMGICE.cs" />
+    <Compile Include="Layout\SubProductISOIICE.cs" />
+    <Compile Include="Layout\SubProductEDGIICE.cs" />
+    <Compile Include="Layout\SubProductPICIICE.cs" />
+    <Compile Include="Layout\SubProductSIAIICE.cs" />
+    <Compile Include="Layout\SubProductSITIICE.cs" />
+    <Compile Include="Layout\SubProductTFRIICE.cs" />
+    <Compile Include="Layout\SubProductTFQIICE.cs" />
+    <Compile Include="MonitoringProductICE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Layout\SubProductDEGRICE.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\SubProduct0SITICE.cs" />
+    <Compile Include="Raster\SubProductCOMPICE.cs" />
+    <Compile Include="Vector\SubProductISOTICE.cs" />
+    <Compile Include="Vector\SubProductIEDGICE.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\UCDBLVImport.resx">
+      <DependentUpon>UCDBLVImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCIceCoverage.resx">
+      <DependentUpon>UCIceCoverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICE\frmCustomIceDegree.resx">
+      <DependentUpon>frmCustomIceDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICE\IceFeatureWnd\IceFeatureListContent.resx">
+      <DependentUpon>IceFeatureListContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.Comm\GeoDo.RSS.MIF.Prds.Comm.csproj">
+      <Project>{9F3FE8A1-E2E1-4B99-8E3D-2EE977D132DF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.Comm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.UI.AddIn.CMA\GeoDo.RSS.UI.AddIn.CMA.csproj">
+      <Project>{A716AF60-9275-4F0B-8A21-B6291EBEC91A}</Project>
+      <Name>GeoDo.RSS.UI.AddIn.CMA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

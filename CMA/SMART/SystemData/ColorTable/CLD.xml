@@ -1,0 +1,412 @@
+﻿<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="CLD" subIdentify="MSVD"  colortablename="CLDMSVD" description="云参数SVD分解模态专题图" labeltext="SVD分解模态">
+      <Colors>
+        <Color color="160,10,0"  minValue="0.9" maxValue="1" labeltext="1" displaylengend="true"/>
+        <Color color="200,25,10"  minValue="0.8" maxValue="0.9" labeltext="0.9" displaylengend="true"/>
+        <Color color="240,50,20"  minValue="0.7" maxValue="0.8" labeltext="0.8" displaylengend="true" />
+        <Color color="240,75,30"  minValue="0.6" maxValue="0.7" labeltext="0.7" displaylengend="true"/>
+        <Color color="240,100,40"  minValue="0.5" maxValue="0.6" labeltext="0.6" displaylengend="true"/>
+        <Color color="240,125,50"  minValue="0.4" maxValue="0.5" labeltext="0.5" displaylengend="true"/>
+        <Color color="240,150,60"  minValue="0.3" maxValue="0.4" labeltext="0.4" displaylengend="true"/>
+        <Color color="240,175,70"  minValue="0.2" maxValue="0.3" labeltext="0.3" displaylengend="true"/>
+        <Color	color="240,210,80" minValue="0.1" maxValue="0.2"	labeltext="0.2" displaylengend="true"/>
+        <Color	color="240,240,90" minValue="0.0001" maxValue="0.1"	labeltext="0.1" displaylengend="true"/>
+        <Color	color="0,0,0" minValue="-0.0001" maxValue="0.0001"	labeltext="0"	displaylengend="false"/>
+        <Color	color="200,240,80" minValue="-0.1" maxValue="-0.0001"	labeltext="0"	displaylengend="true"/>
+        <Color	color="150,240,70" minValue="-0.2" maxValue="-0.1"	labeltext="-0.1"/>
+        <Color	color="100,225,75" minValue="-0.3" maxValue="-0.2"	labeltext="-0.2"/>
+        <Color	color="70,155,140" minValue="-0.4" maxValue="-0.3"	labeltext="-0.3"/>
+        <Color	color="30,90,255" minValue="-0.5" maxValue="-0.4"	labeltext="-0.4"/>
+        <Color	color="55,155,255" minValue="-0.6" maxValue="-0.5"	labeltext="-0.5"	displaylengend="true"/>
+        <Color	color="78,144,255" minValue="-0.7" maxValue="-0.6"	labeltext="-0.6"/>
+        <Color	color="102,171,255" minValue="-0.8" maxValue="-0.7"	labeltext="-0.7"/>
+        <Color	color="126,198,255" minValue="-0.9" maxValue="-0.8"	labeltext="-0.8"/>
+        <Color	color="150,255,255" minValue="-1" maxValue="-0.9"	labeltext="-0.9"	displaylengend="true"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="CLD" subIdentify="TCAM"  colortablename="CLDTCAM" description="月平均总云量专题图" labeltext="Total Cloud Amount (%)">
+      <Colors>
+        <Color color="0,0,0"  minValue="-32768" maxValue="0" labeltext=""/>
+        <Color color="160,10,0"  minValue="0" maxValue="5" labeltext=" 0" displaylengend="true"/>
+        <Color color="200,25,10"  minValue="5" maxValue="10" labeltext=""/>
+        <Color color="240,50,20"  minValue="10" maxValue="15" labeltext="" />
+        <Color color="240,75,30"  minValue="15" maxValue="20" labeltext=""/>
+        <Color color="240,100,40"  minValue="20" maxValue="25" labeltext=""/>
+        <Color color="240,125,50"  minValue="25" maxValue="30" labeltext="25" displaylengend="true"/>
+        <Color color="240,150,60"  minValue="30" maxValue="35" labeltext=""/>
+        <Color color="240,175,70"  minValue="35" maxValue="40" labeltext=""/>
+        <Color	color="240,210,80" minValue="40" maxValue="45"	labeltext=""/>
+        <Color	color="240,240,90" minValue="45" maxValue="50"	labeltext=""/>
+        <Color	color="200,240,80" minValue="50" maxValue="55"	labeltext="50"	displaylengend="true"/>
+        <Color	color="150,240,70" minValue="55" maxValue="60"	labeltext=""/>
+        <Color	color="100,225,75" minValue="60" maxValue="65"	labeltext=""/>
+        <Color	color="70,155,140" minValue="65" maxValue="70"	labeltext=""/>
+        <Color	color="30,90,255" minValue="70" maxValue="75"	labeltext=""/>
+        <Color	color="55,155,255" minValue="75" maxValue="80"	labeltext="75"	displaylengend="true"/>
+        <Color	color="78,144,255" minValue="80" maxValue="85"	labeltext=""/>
+        <Color	color="102,171,255" minValue="85" maxValue="90"	labeltext=""/>
+        <Color	color="126,198,255" minValue="90" maxValue="95"	labeltext=""/>
+        <Color	color="150,255,255" minValue="95" maxValue="100"	labeltext="100"	displaylengend="true"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="TAUM"  colortablename="CLDTAUM" description="月平均云光学厚度专题图" labeltext="Cloud Optical Depth">
+      <Colors>
+        <Color color="50,50,50"  minValue="-1000" maxValue="0" labeltext="" />
+        <Color color="255,255,255"  minValue="0" maxValue="0" labeltext=""/>
+        <Color color="255,255,255"  minValue="0" maxValue="0" labeltext=""/>
+        <Color color="32,90,255"  minValue="0" maxValue="0.5" labeltext="0" displaylengend="true"/>
+        <Color color="51,107,242"  minValue="0.5" maxValue="1" labeltext="" />
+        <Color color="71,151,223"  minValue="1" maxValue="1.5" labeltext=""/>
+        <Color color="86,183,127"  minValue="1.5" maxValue="2" labeltext=""/>
+        <Color color="102,219,59"  minValue="2" maxValue="2.5" labeltext="" />
+        <Color color="127,226,45"  minValue="2.5" maxValue="3" labeltext="2" displaylengend="true"/>
+        <Color color="153,234,34"  minValue="3" maxValue="3.5" labeltext=""/>
+        <Color	color="204,237,51" minValue="3.5" maxValue="4"	labeltext=""/>
+        <Color	color="204,237,51" minValue="4" maxValue="4.5"	labeltext=""/>
+        <Color	color="247,247,14" minValue="4.5" maxValue="5"	labeltext=""/>
+        <Color	color="247,247,14" minValue="5" maxValue="5.5"	labeltext="5" displaylengend="true"/>
+        <Color	color="247,247,14" minValue="5.5" maxValue="6"	labeltext=""/>
+        <Color	color="247,247,14" minValue="6" maxValue="6.5"	labeltext=""/>
+        <Color	color="247,247,14" minValue="6.5" maxValue="7"	labeltext=""/>
+        <Color	color="243,155,73" minValue="7" maxValue="7.5"	labeltext=""/>
+        <Color	color="243,155,73" minValue="7.5" maxValue="8"	labeltext="8" displaylengend="true"/>
+        <Color	color="243,155,73" minValue="8" maxValue="8.5"	labeltext=""/>
+        <Color	color="243,155,73" minValue="8.5" maxValue="9"	labeltext=""/>
+        <Color	color="242,120,36" minValue="9" maxValue="9.5"	labeltext=""/>
+        <Color	color="212,95,90" minValue="9.5" maxValue="10"	labeltext="10" displaylengend="true"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="0PCM"  colortablename="CLD0PCM" description="月平均云顶压力专题图" labeltext="Cloud Top Pressure (mb)">
+      <Colors>
+        <Color color=	"25,45,255"	minValue="0"	maxValue="50"	labeltext="0"	displaylengend="true"/>
+        <Color color=	"25,45,255"	minValue="50"	maxValue="100"	labeltext=""	/>
+        <Color color=	"25,45,255"	minValue="100"	maxValue="150"	labeltext=""/>
+        <Color color=	"25,45,255"	minValue="150"	maxValue="200"	labeltext=""/>
+        <Color color=	"70,145,255"	minValue="200"	maxValue="250"	labeltext=""	/>
+        <Color color=	"70,145,255"	minValue="250"	maxValue="300"	labeltext="250"	displaylengend="true"/>
+        <Color color=	"70,145,255"	minValue="300"	maxValue="350"	labeltext=""/>
+        <Color color=	"70,145,255"	minValue="350"	maxValue="400"	labeltext=""/>
+        <Color color=	"155,185,255"	minValue="400"	maxValue="450"	labeltext=""/>
+        <Color color=	"155,185,255"	minValue="450"	maxValue="500"	labeltext=""/>
+        <Color color=	"185,205,255"	minValue="500"	maxValue="550"	labeltext="500"	displaylengend="true"/>
+        <Color color=	"185,205,255"	minValue="550"	maxValue="600"	labeltext=""/>
+        <Color color=	"215,180,230"	minValue="600"	maxValue="650"	labeltext=""/>
+        <Color color=	"245,180,80"	minValue="650"	maxValue="700"	labeltext=""/>
+        <Color color=	"247,191,75"	minValue="700"	maxValue="750"	labeltext=""/>
+        <Color color=	"249,202,60"	minValue="750"	maxValue="800"	labeltext="750"	displaylengend="true"/>
+        <Color color=	"251,123,45"	minValue="800"	maxValue="850"	labeltext=""/>
+        <Color color=	"253,224,30"	minValue="850"	maxValue="900"	labeltext=""/>
+        <Color color=	"254,235,15"	minValue="900"	maxValue="950"	labeltext=""/>
+        <Color color=	"255,255,75"	minValue="950"	maxValue="1000"	labeltext="1000"	displaylengend="true"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="0TCM"  colortablename="CLD0TCM" description="月平均云顶温度专题图" labeltext="Cloud Top Temperature (K)">
+      <Colors>
+        <Color color=	"16,31,255"	minValue=	"190"	maxValue=	"196"	labeltext=	"190"	displaylengend="true"	/>
+        <Color color=	"23,47,255"	minValue=	"196"	maxValue=	"202"	labeltext=	""		/>
+        <Color color=	"31,56,255"	minValue=	"202"	maxValue=	"208"	labeltext=	""		/>
+        <Color color=	"31,71,255"	minValue=	"208"	maxValue=	"214"	labeltext=	""		/>
+        <Color color=	"31,87,255"	minValue=	"214"	maxValue=	"220"	labeltext=	""		/>
+        <Color color=	"73,102,255"	minValue=	"220"	maxValue=	"226"	labeltext=	"220"	displaylengend="true"	/>
+        <Color color=	"64,135,255"	minValue=	"226"	maxValue=	"232"	labeltext=	""		/>
+        <Color color=	"107,164,255"	minValue=	"232"	maxValue=	"238"	labeltext=	""		/>
+        <Color color=	"128,199,255"	minValue=	"238"	maxValue=	"244"	labeltext=	""		/>
+        <Color color=	"128,199,255"	minValue=	"244"	maxValue=	"250"	labeltext=	""		/>
+        <Color color=	"178,209,255"	minValue=	"250"	maxValue=	"256"	labeltext=	"250"	displaylengend="true"	/>
+        <Color color=	"178,209,255"	minValue=	"256"	maxValue=	"262"	labeltext=	""		/>
+        <Color color=	"239,239,80"	minValue=	"262"	maxValue=	"268"	labeltext=	""		/>
+        <Color color=	"239,188,63"	minValue=	"268"	maxValue=	"274"	labeltext=	""		/>
+        <Color color=	"239,159,47"	minValue=	"274"	maxValue=	"280"	labeltext=	""		/>
+        <Color color=	"239,122,47"	minValue=	"280"	maxValue=	"286"	labeltext=	"280"	displaylengend="true"	/>
+        <Color color=	"239,80,47"	minValue=	"286"	maxValue=	"292"	labeltext=	""		/>
+        <Color color=	"239,63,45"	minValue=	"292"	maxValue=	"298"	labeltext=	""		/>
+        <Color color=	"239,51,42"	minValue=	"298"	maxValue=	"304"	labeltext=	""		/>
+        <Color color=	"239,45,40"	minValue=	"304"	maxValue=	"310"	labeltext=	"310"	displaylengend="true"	/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="0WPM"  colortablename="CLD0WPM" description="月平均云水路径专题图" labeltext="Mean Cloud Water Path">
+      <Colors>
+        <Color color=	"50,50,50"	minValue=	"-1000"	maxValue=	"0"	labeltext=	""			/>
+        <Color color=	"255,255,255"	minValue=	"0"	maxValue=	"0"	labeltext=	""			/>
+        <Color color=	"255,255,255"	minValue=	"0"	maxValue=	"0"	labeltext=	""			/>
+        <Color color=	"32,90,255"	minValue=	"0"	maxValue=	"15"	labeltext=	"0"	displaylengend=	"true"	/>
+        <Color color=	"51,107,242"	minValue=	"15"	maxValue=	"30"	labeltext=	""			/>
+        <Color color=	"71,151,223"	minValue=	"30"	maxValue=	"45"	labeltext=	""			/>
+        <Color color=	"86,183,127"	minValue=	"45"	maxValue=	"60"	labeltext=	""			/>
+        <Color color=	"102,219,59"	minValue=	"60"	maxValue=	"75"	labeltext=	""			/>
+        <Color color=	"127,226,45"	minValue=	"75"	maxValue=	"90"	labeltext=	"75"	displaylengend=	"true"	/>
+        <Color color=	"153,234,34"	minValue=	"90"	maxValue=	"105"	labeltext=	""			/>
+        <Color color=	"204,237,51"	minValue=	"105"	maxValue=	"120"	labeltext=	""			/>
+        <Color color=	"204,237,51"	minValue=	"120"	maxValue=	"135"	labeltext=	""			/>
+        <Color color=	"247,247,14"	minValue=	"135"	maxValue=	"150"	labeltext=	""			/>
+        <Color color=	"247,247,14"	minValue=	"150"	maxValue=	"165"	labeltext=	"150"	displaylengend=	"true"	/>
+        <Color color=	"247,247,14"	minValue=	"165"	maxValue=	"180"	labeltext=	""			/>
+        <Color color=	"247,247,14"	minValue=	"180"	maxValue=	"195"	labeltext=	""			/>
+        <Color color=	"247,247,14"	minValue=	"195"	maxValue=	"210"	labeltext=	""			/>
+        <Color color=	"243,155,73"	minValue=	"210"	maxValue=	"225"	labeltext=	""			/>
+        <Color color=	"243,155,73"	minValue=	"225"	maxValue=	"240"	labeltext=	"225"	displaylengend=	"true"	/>
+        <Color color=	"243,155,73"	minValue=	"240"	maxValue=	"255"	labeltext=	""			/>
+        <Color color=	"243,155,73"	minValue=	"255"	maxValue=	"270"	labeltext=	""			/>
+        <Color color=	"242,120,36"	minValue=	"270"	maxValue=	"285"	labeltext=	""			/>
+        <Color color=	"212,95,90"	minValue=	"285"	maxValue=	"300"	labeltext=	"300"	displaylengend=	"true"	/>
+      </Colors>
+    </ProductColorTable>    
+    <ProductColorTable identify="CLD" subIdentify="0TSM"  colortablename="CLD0TSM" description="月平均地表温度专题图" labeltext="Surface Temperature (K)">
+      <Colors>
+        <Color	color="16,31,255"	minValue="200"	maxValue="206"	labeltext="200"	displaylengend="true"/>
+        <Color	color="23,47,255"	minValue="206"	maxValue="212"	labeltext=""	/>
+        <Color	color="31,56,255"	minValue="212"	maxValue="218"	labeltext=""/>
+        <Color	color="31,71,255"	minValue="218"	maxValue="224"	labeltext=""/>
+        <Color	color="31,87,255"	minValue="224"	maxValue="230"	labeltext=""	/>
+        <Color	color="73,102,255"	minValue="230"	maxValue="236"	labeltext="230"	displaylengend="true"/>
+        <Color	color="64,135,255"	minValue="236"	maxValue="242"	labeltext=""/>
+        <Color	color="107,164,255"	minValue="242"	maxValue="248"	labeltext=""/>
+        <Color	color="128,199,255"	minValue="248"	maxValue="254"	labeltext=""/>
+        <Color	color="128,199,255"	minValue="254"	maxValue="260"	labeltext=""/>
+        <Color	color="178,209,255"	minValue="260"	maxValue="266"	labeltext="260"	displaylengend="true"/>
+        <Color	color="178,209,255"	minValue="266"	maxValue="272"	labeltext=""/>
+        <Color	color="239,239,80"	minValue="272"	maxValue="278"	labeltext=""/>
+        <Color	color="239,188,63"	minValue="278"	maxValue="284"	labeltext=""/>
+        <Color	color="239,159,47"	minValue="284"	maxValue="290"	labeltext=""/>
+        <Color	color="239,122,47"	minValue="290"	maxValue="296"	labeltext="290"	displaylengend="true"/>
+        <Color	color="239,80,47"	minValue="296"	maxValue="302"	labeltext=""/>
+        <Color	color="239,63,45"	minValue="302"	maxValue="308"	labeltext=""/>
+        <Color	color="239,51,42"	minValue="308"	maxValue="314"	labeltext=""/>
+        <Color	color="239,45,40"	minValue="314"	maxValue="320"	labeltext="320"	displaylengend="true"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="0RSM"  colortablename="CLD0RSM" description="月平均可见光波段地表反射率专题图" labeltext="Surface Reflectance">
+      <Colors>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="MSIA"  colortablename="CLDMSIA" description="月平均冰雪覆盖度专题图" labeltext="Mean Snow/Ice Cover Fraction(%)">
+      <Colors>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="CLD" subIdentify="MOCA"  colortablename="CLDMOCA" description="月平均臭氧柱状浓度专题图" labeltext="Mean Ozone Column Abundance (Dobson)">
+      <Colors>
+      </Colors>
+    </ProductColorTable>
+        <ProductColorTable identify="CLD" subIdentify="MPWH"  colortablename="CLDMPWH" description="月平均大气可降水(680-310mb)专题图" labeltext="Mean Precipitable Water for 680-310mb">
+      <Colors>
+      </Colors>
+          </ProductColorTable>
+
+    <ProductColorTable identify="CLD" subIdentify="MPWL"  colortablename="CLDMPWL" description="月平均大气可降水(1000-680mb)专题图" labeltext="Mean Precipitable Water for 1000-680mb">
+      <Colors>
+      </Colors>
+          </ProductColorTable>
+
+    <ProductColorTable identify="CLD" subIdentify="TCWV"  colortablename="CLDTCWV" description="月平均总柱状水汽专题图" labeltext="Total Column Water Vapor (cm)">
+      <Colors>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="CLD" subIdentify="CGRR"  colortablename="Cloudsat.2B-GEOPROF.Radar_Reflectivity" description="雷达反射率" labeltext="Radar Reflectivity Factor">
+      <Colors>
+        <Color color="255, 182, 29,181" minValue="-3000" maxValue="-2975" labeltext="" displaylengend=""/>
+        <Color color="255, 182, 29,181" minValue="-2975" maxValue="-2950" labeltext="" displaylengend=""/>
+        <Color color="255, 178, 28,183" minValue="-2950" maxValue="-2925" labeltext="" displaylengend=""/>
+        <Color color="255, 173, 27,185" minValue="-2925" maxValue="-2900" labeltext="" displaylengend=""/>
+        <Color color="255, 169, 27,186" minValue="-2900" maxValue="-2875" labeltext="" displaylengend=""/>
+        <Color color="255, 165, 26,188" minValue="-2875" maxValue="-2850" labeltext="" displaylengend=""/>
+        <Color color="255, 158, 25,190" minValue="-2850" maxValue="-2825" labeltext="" displaylengend=""/>
+        <Color color="255, 155, 24,192" minValue="-2825" maxValue="-2800" labeltext="" displaylengend=""/>
+        <Color color="255, 150, 24,194" minValue="-2800" maxValue="-2775" labeltext="" displaylengend=""/>
+        <Color color="255, 146, 23,195" minValue="-2775" maxValue="-2750" labeltext="" displaylengend=""/>
+        <Color color="255, 142, 23,197" minValue="-2750" maxValue="-2725" labeltext="" displaylengend=""/>
+        <Color color="255, 137, 21,199" minValue="-2725" maxValue="-2700" labeltext="" displaylengend=""/>
+        <Color color="255, 131, 21,202" minValue="-2700" maxValue="-2675" labeltext="" displaylengend=""/>
+        <Color color="255, 127, 20,203" minValue="-2675" maxValue="-2650" labeltext="" displaylengend=""/>
+        <Color color="255, 122, 19,205" minValue="-2650" maxValue="-2625" labeltext="" displaylengend=""/>
+        <Color color="255, 119, 19,207" minValue="-2625" maxValue="-2600" labeltext="" displaylengend=""/>
+        <Color color="255, 114, 18,208" minValue="-2600" maxValue="-2575" labeltext="" displaylengend=""/>
+        <Color color="255, 110, 17,210" minValue="-2575" maxValue="-2550" labeltext="" displaylengend=""/>
+        <Color color="255, 103, 16,213" minValue="-2550" maxValue="-2525" labeltext="" displaylengend=""/>
+        <Color color="255, 100, 16,214" minValue="-2525" maxValue="-2500" labeltext="" displaylengend=""/>
+        <Color color="255, 95, 15,216" minValue="-2500" maxValue="-2475" labeltext="" displaylengend=""/>
+        <Color color="255, 91, 15,218" minValue="-2475" maxValue="-2450" labeltext="" displaylengend=""/>
+        <Color color="255, 86, 13,220" minValue="-2450" maxValue="-2425" labeltext="" displaylengend=""/>
+        <Color color="255, 80, 13,222" minValue="-2425" maxValue="-2400" labeltext="" displaylengend=""/>
+        <Color color="255, 76, 12,224" minValue="-2400" maxValue="-2375" labeltext="" displaylengend=""/>
+        <Color color="255, 72, 11,226" minValue="-2375" maxValue="-2350" labeltext="" displaylengend=""/>
+        <Color color="255, 68, 11,227" minValue="-2350" maxValue="-2325" labeltext="" displaylengend=""/>
+        <Color color="255, 63, 10,229" minValue="-2325" maxValue="-2300" labeltext="" displaylengend=""/>
+        <Color color="255, 59, 10,231" minValue="-2300" maxValue="-2275" labeltext="" displaylengend=""/>
+        <Color color="255, 53, 8,233" minValue="-2275" maxValue="-2250" labeltext="" displaylengend=""/>
+        <Color color="255, 49, 8,235" minValue="-2250" maxValue="-2225" labeltext="" displaylengend=""/>
+        <Color color="255, 44, 7,237" minValue="-2225" maxValue="-2200" labeltext="" displaylengend=""/>
+        <Color color="255, 40, 6,239" minValue="-2200" maxValue="-2175" labeltext="" displaylengend=""/>
+        <Color color="255, 36, 6,241" minValue="-2175" maxValue="-2150" labeltext="" displaylengend=""/>
+        <Color color="255, 32, 5,242" minValue="-2150" maxValue="-2125" labeltext="" displaylengend=""/>
+        <Color color="255, 25, 4,245" minValue="-2125" maxValue="-2100" labeltext="" displaylengend=""/>
+        <Color color="255, 21, 3,247" minValue="-2100" maxValue="-2075" labeltext="" displaylengend=""/>
+        <Color color="255, 17, 3,248" minValue="-2075" maxValue="-2050" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 2,250" minValue="-2050" maxValue="-2025" labeltext="" displaylengend=""/>
+        <Color color="255, 8, 2,251" minValue="-2025" maxValue="-2000" labeltext="" displaylengend=""/>
+        <Color color="255, 4, 0,253" minValue="-2000" maxValue="-1975" labeltext="" displaylengend=""/>
+        <Color color="255, 0, 3,254" minValue="-1975" maxValue="-1950" labeltext="" displaylengend=""/>
+        <Color color="255, 1, 8,252" minValue="-1950" maxValue="-1925" labeltext="" displaylengend=""/>
+        <Color color="255, 1, 13,251" minValue="-1925" maxValue="-1900" labeltext="" displaylengend=""/>
+        <Color color="255, 2, 19,250" minValue="-1900" maxValue="-1875" labeltext="" displaylengend=""/>
+        <Color color="255, 2, 23,248" minValue="-1875" maxValue="-1850" labeltext="" displaylengend=""/>
+        <Color color="255, 3, 31,246" minValue="-1850" maxValue="-1825" labeltext="" displaylengend=""/>
+        <Color color="255, 3, 37,244" minValue="-1825" maxValue="-1800" labeltext="" displaylengend=""/>
+        <Color color="255, 3, 43,243" minValue="-1800" maxValue="-1775" labeltext="" displaylengend=""/>
+        <Color color="255, 4, 48,241" minValue="-1775" maxValue="-1750" labeltext="" displaylengend=""/>
+        <Color color="255, 4, 53,239" minValue="-1750" maxValue="-1725" labeltext="" displaylengend=""/>
+        <Color color="255, 5, 59,238" minValue="-1725" maxValue="-1700" labeltext="" displaylengend=""/>
+        <Color color="255, 6, 67,236" minValue="-1700" maxValue="-1675" labeltext="" displaylengend=""/>
+        <Color color="255, 6, 72,234" minValue="-1675" maxValue="-1650" labeltext="" displaylengend=""/>
+        <Color color="255, 6, 77,233" minValue="-1650" maxValue="-1625" labeltext="" displaylengend=""/>
+        <Color color="255, 7, 82,231" minValue="-1625" maxValue="-1600" labeltext="" displaylengend=""/>
+        <Color color="255, 7, 88,230" minValue="-1600" maxValue="-1575" labeltext="" displaylengend=""/>
+        <Color color="255, 7, 93,228" minValue="-1575" maxValue="-1550" labeltext="" displaylengend=""/>
+        <Color color="255, 8, 101,226" minValue="-1550" maxValue="-1525" labeltext="" displaylengend=""/>
+        <Color color="255, 8, 106,225" minValue="-1525" maxValue="-1500" labeltext="" displaylengend=""/>
+        <Color color="255, 9, 112,223" minValue="-1500" maxValue="-1475" labeltext="" displaylengend=""/>
+        <Color color="255, 10, 117,221" minValue="-1475" maxValue="-1450" labeltext="" displaylengend=""/>
+        <Color color="255, 10, 122,220" minValue="-1450" maxValue="-1425" labeltext="" displaylengend=""/>
+        <Color color="255, 11, 130,217" minValue="-1425" maxValue="-1400" labeltext="" displaylengend=""/>
+        <Color color="255, 11, 135,216" minValue="-1400" maxValue="-1375" labeltext="" displaylengend=""/>
+        <Color color="255, 11, 141,214" minValue="-1375" maxValue="-1350" labeltext="" displaylengend=""/>
+        <Color color="255, 12, 146,213" minValue="-1350" maxValue="-1325" labeltext="" displaylengend=""/>
+        <Color color="255, 12, 151,212" minValue="-1325" maxValue="-1300" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 157,210" minValue="-1300" maxValue="-1275" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 164,208" minValue="-1275" maxValue="-1250" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 170,206" minValue="-1250" maxValue="-1225" labeltext="" displaylengend=""/>
+        <Color color="255, 14, 175,204" minValue="-1225" maxValue="-1200" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 180,203" minValue="-1200" maxValue="-1175" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 186,201" minValue="-1175" maxValue="-1150" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 191,200" minValue="-1150" maxValue="-1125" labeltext="" displaylengend=""/>
+        <Color color="255, 16, 199,198" minValue="-1125" maxValue="-1100" labeltext="" displaylengend=""/>
+        <Color color="255, 16, 204,196" minValue="-1100" maxValue="-1075" labeltext="" displaylengend=""/>
+        <Color color="255, 17, 209,195" minValue="-1075" maxValue="-1050" labeltext="" displaylengend=""/>
+        <Color color="255, 17, 215,193" minValue="-1050" maxValue="-1025" labeltext="" displaylengend=""/>
+        <Color color="255, 18, 220,191" minValue="-1025" maxValue="-1000" labeltext="" displaylengend=""/>
+        <Color color="255, 18, 225,190" minValue="-1000" maxValue="-975" labeltext="" displaylengend=""/>
+        <Color color="255, 19, 233,188" minValue="-975" maxValue="-950" labeltext="" displaylengend=""/>
+        <Color color="255, 19, 235,185" minValue="-950" maxValue="-925" labeltext="" displaylengend=""/>
+        <Color color="255, 19, 235,180" minValue="-925" maxValue="-900" labeltext="" displaylengend=""/>
+        <Color color="255, 18, 234,177" minValue="-900" maxValue="-875" labeltext="" displaylengend=""/>
+        <Color color="255, 18, 233,172" minValue="-875" maxValue="-850" labeltext="" displaylengend=""/>
+        <Color color="255, 18, 232,165" minValue="-850" maxValue="-825" labeltext="" displaylengend=""/>
+        <Color color="255, 17, 231,161" minValue="-825" maxValue="-800" labeltext="" displaylengend=""/>
+        <Color color="255, 17, 230,156" minValue="-800" maxValue="-775" labeltext="" displaylengend=""/>
+        <Color color="255, 17, 229,152" minValue="-775" maxValue="-750" labeltext="" displaylengend=""/>
+        <Color color="255, 16, 228,148" minValue="-750" maxValue="-725" labeltext="" displaylengend=""/>
+        <Color color="255, 16, 227,143" minValue="-725" maxValue="-700" labeltext="" displaylengend=""/>
+        <Color color="255, 16, 226,137" minValue="-700" maxValue="-675" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 225,133" minValue="-675" maxValue="-650" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 224,129" minValue="-650" maxValue="-625" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 223,124" minValue="-625" maxValue="-600" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 222,120" minValue="-600" maxValue="-575" labeltext="" displaylengend=""/>
+        <Color color="255, 14, 221,116" minValue="-575" maxValue="-550" labeltext="" displaylengend=""/>
+        <Color color="255, 14, 220,109" minValue="-550" maxValue="-525" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 219,105" minValue="-525" maxValue="-500" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 218,100" minValue="-500" maxValue="-475" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 217,95" minValue="-475" maxValue="-450" labeltext="" displaylengend=""/>
+        <Color color="255, 13, 216,92" minValue="-450" maxValue="-425" labeltext="" displaylengend=""/>
+        <Color color="255, 12, 215,85" minValue="-425" maxValue="-400" labeltext="" displaylengend=""/>
+        <Color color="255, 12, 214,81" minValue="-400" maxValue="-375" labeltext="" displaylengend=""/>
+        <Color color="255, 12, 213,76" minValue="-375" maxValue="-350" labeltext="" displaylengend=""/>
+        <Color color="255, 11, 213,72" minValue="-350" maxValue="-325" labeltext="" displaylengend=""/>
+        <Color color="255, 11, 211,68" minValue="-325" maxValue="-300" labeltext="" displaylengend=""/>
+        <Color color="255, 11, 210,63" minValue="-300" maxValue="-275" labeltext="" displaylengend=""/>
+        <Color color="255, 10, 210,57" minValue="-275" maxValue="-250" labeltext="" displaylengend=""/>
+        <Color color="255, 10, 208,52" minValue="-250" maxValue="-225" labeltext="" displaylengend=""/>
+        <Color color="255, 10, 207,49" minValue="-225" maxValue="-200" labeltext="" displaylengend=""/>
+        <Color color="255, 9, 207,44" minValue="-200" maxValue="-175" labeltext="" displaylengend=""/>
+        <Color color="255, 9, 206,39" minValue="-175" maxValue="-150" labeltext="" displaylengend=""/>
+        <Color color="255, 9, 205,36" minValue="-150" maxValue="-125" labeltext="" displaylengend=""/>
+        <Color color="255, 8, 204,29" minValue="-125" maxValue="-100" labeltext="" displaylengend=""/>
+        <Color color="255, 8, 203,24" minValue="-100" maxValue="-75" labeltext="" displaylengend=""/>
+        <Color color="255, 8, 202,20" minValue="-75" maxValue="-50" labeltext="" displaylengend=""/>
+        <Color color="255, 7, 201,15" minValue="-50" maxValue="-25" labeltext="" displaylengend=""/>
+        <Color color="255, 7, 200,12" minValue="-25" maxValue="0" labeltext="" displaylengend=""/>
+        <Color color="255, 7, 199,7" minValue="0" maxValue="25" labeltext="" displaylengend=""/>
+        <Color color="255, 15, 201,7" minValue="25" maxValue="50" labeltext="" displaylengend=""/>
+        <Color color="255, 20, 202,7" minValue="50" maxValue="75" labeltext="" displaylengend=""/>
+        <Color color="255, 26, 203,7" minValue="75" maxValue="100" labeltext="" displaylengend=""/>
+        <Color color="255, 30, 204,6" minValue="100" maxValue="125" labeltext="" displaylengend=""/>
+        <Color color="255, 35, 205,6" minValue="125" maxValue="150" labeltext="" displaylengend=""/>
+        <Color color="255, 43, 207,6" minValue="150" maxValue="175" labeltext="" displaylengend=""/>
+        <Color color="255, 48, 208,6" minValue="175" maxValue="200" labeltext="" displaylengend=""/>
+        <Color color="255, 53, 210,6" minValue="200" maxValue="225" labeltext="" displaylengend=""/>
+        <Color color="255, 59, 211,6" minValue="225" maxValue="250" labeltext="" displaylengend=""/>
+        <Color color="255, 64, 212,5" minValue="250" maxValue="275" labeltext="" displaylengend=""/>
+        <Color color="255, 69, 213,5" minValue="275" maxValue="300" labeltext="" displaylengend=""/>
+        <Color color="255, 77, 215,5" minValue="300" maxValue="325" labeltext="" displaylengend=""/>
+        <Color color="255, 82, 216,5" minValue="325" maxValue="350" labeltext="" displaylengend=""/>
+        <Color color="255, 87, 217,5" minValue="350" maxValue="375" labeltext="" displaylengend=""/>
+        <Color color="255, 92, 218,5" minValue="375" maxValue="400" labeltext="" displaylengend=""/>
+        <Color color="255, 97, 220,4" minValue="400" maxValue="425" labeltext="" displaylengend=""/>
+        <Color color="255, 103, 221,4" minValue="425" maxValue="450" labeltext="" displaylengend=""/>
+        <Color color="255, 110, 223,4" minValue="450" maxValue="475" labeltext="" displaylengend=""/>
+        <Color color="255, 116, 224,4" minValue="475" maxValue="500" labeltext="" displaylengend=""/>
+        <Color color="255, 121, 225,4" minValue="500" maxValue="525" labeltext="" displaylengend=""/>
+        <Color color="255, 125, 226,4" minValue="525" maxValue="550" labeltext="" displaylengend=""/>
+        <Color color="255, 131, 227,4" minValue="550" maxValue="575" labeltext="" displaylengend=""/>
+        <Color color="255, 139, 229,3" minValue="575" maxValue="600" labeltext="" displaylengend=""/>
+        <Color color="255, 144, 230,3" minValue="600" maxValue="625" labeltext="" displaylengend=""/>
+        <Color color="255, 149, 231,3" minValue="625" maxValue="650" labeltext="" displaylengend=""/>
+        <Color color="255, 154, 233,3" minValue="650" maxValue="675" labeltext="" displaylengend=""/>
+        <Color color="255, 160, 234,3" minValue="675" maxValue="700" labeltext="" displaylengend=""/>
+        <Color color="255, 165, 235,3" minValue="700" maxValue="725" labeltext="" displaylengend=""/>
+        <Color color="255, 172, 237,2" minValue="725" maxValue="750" labeltext="" displaylengend=""/>
+        <Color color="255, 177, 238,2" minValue="750" maxValue="775" labeltext="" displaylengend=""/>
+        <Color color="255, 183, 239,2" minValue="775" maxValue="800" labeltext="" displaylengend=""/>
+        <Color color="255, 188, 240,2" minValue="800" maxValue="825" labeltext="" displaylengend=""/>
+        <Color color="255, 193, 241,2" minValue="825" maxValue="850" labeltext="" displaylengend=""/>
+        <Color color="255, 198, 243,2" minValue="850" maxValue="875" labeltext="" displaylengend=""/>
+        <Color color="255, 206, 244,1" minValue="875" maxValue="900" labeltext="" displaylengend=""/>
+        <Color color="255, 211, 246,1" minValue="900" maxValue="925" labeltext="" displaylengend=""/>
+        <Color color="255, 216, 247,1" minValue="925" maxValue="950" labeltext="" displaylengend=""/>
+        <Color color="255, 221, 248,1" minValue="950" maxValue="975" labeltext="" displaylengend=""/>
+        <Color color="255, 226, 249,1" minValue="975" maxValue="1000" labeltext="" displaylengend=""/>
+        <Color color="255, 232, 250,1" minValue="1000" maxValue="1025" labeltext="" displaylengend=""/>
+        <Color color="255, 240, 252,0" minValue="1025" maxValue="1050" labeltext="" displaylengend=""/>
+        <Color color="255, 245, 253,0" minValue="1050" maxValue="1075" labeltext="" displaylengend=""/>
+        <Color color="255, 250, 254,0" minValue="1075" maxValue="1100" labeltext="" displaylengend=""/>
+        <Color color="255, 254, 253,0" minValue="1100" maxValue="1125" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 250,0" minValue="1125" maxValue="1150" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 241,0" minValue="1150" maxValue="1175" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 235,0" minValue="1175" maxValue="1200" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 230,0" minValue="1200" maxValue="1225" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 224,0" minValue="1225" maxValue="1250" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 218,0" minValue="1250" maxValue="1275" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 212,0" minValue="1275" maxValue="1300" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 205,0" minValue="1300" maxValue="1325" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 199,0" minValue="1325" maxValue="1350" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 193,0" minValue="1350" maxValue="1375" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 187,0" minValue="1375" maxValue="1400" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 182,0" minValue="1400" maxValue="1425" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 176,0" minValue="1425" maxValue="1450" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 167,0" minValue="1450" maxValue="1475" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 162,0" minValue="1475" maxValue="1500" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 156,0" minValue="1500" maxValue="1525" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 151,0" minValue="1525" maxValue="1550" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 145,0" minValue="1550" maxValue="1575" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 137,0" minValue="1575" maxValue="1600" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 131,0" minValue="1600" maxValue="1625" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 123,0" minValue="1625" maxValue="1650" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 115,0" minValue="1650" maxValue="1675" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 106,0" minValue="1675" maxValue="1700" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 97,0" minValue="1700" maxValue="1725" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 84,0" minValue="1725" maxValue="1750" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 75,0" minValue="1750" maxValue="1775" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 66,0" minValue="1775" maxValue="1800" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 57,0" minValue="1800" maxValue="1825" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 48,0" minValue="1825" maxValue="1850" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 40,0" minValue="1850" maxValue="1875" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 26,0" minValue="1875" maxValue="1900" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 17,0" minValue="1900" maxValue="1925" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 9,0" minValue="1925" maxValue="1950" labeltext="" displaylengend=""/>
+        <Color color="255, 251, 0,0" minValue="1950" maxValue="2000" labeltext="" displaylengend=""/>
+        <Color color="255, 255, 0,0" minValue="2000" maxValue="10000" labeltext="" displaylengend=""/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

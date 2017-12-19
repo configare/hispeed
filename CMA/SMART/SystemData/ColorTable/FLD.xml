@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="FLD" subIdentify="DBLV" colortablename="FLDDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无水" displaylengend="false"/>
+        <Color color="0, 0, 255" maxValue="2" minValue="1" labeltext="判识水体" />
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="FLOD"  colortablename="FLDFLOD" description="泛滥缩小水体" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="无水" displaylengend="false"/>
+        <Color color="0,0,255" maxValue="2" minValue="1" labeltext="未变化水体"/>
+        <Color color="255,0,0" maxValue="5" minValue="4" labeltext="扩大水体"/>
+        <Color color="255,255,0" maxValue="6" minValue="5" labeltext="缩小水体"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="FLDC"  colortablename="FLDFLDC" description="泛滥水体天数" labeltext="">
+      <Colors>
+        <!--<Color color="255,255,0" maxValue="-1" minValue="-2" labeltext="缩小水体"/>-->
+        <Color color="0,0,255" maxValue="0" minValue="-1" labeltext="未变化水体"/>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="无水" displaylengend="false"/>
+        <Color color="255,0,0" maxValue="9999" minValue="1" labeltext="泛滥水体"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="LS3J"  colortablename="FLDLS3J" description="淹没历时三级" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="5" minValue="1" labeltext="1-5天"/>
+        <Color color="255,128,0" maxValue="10" minValue="6" labeltext="6-10天"/>
+        <Color color="255,0,0" maxValue="100" minValue="10" labeltext="10天以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="LS6J"  colortablename="FLDLS6J" description="淹没历时六级" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="1-2天"/>
+        <Color color="255,192,128" maxValue="4" minValue="2" labeltext="3-4天"/>
+        <Color color="255,128,128" maxValue="6" minValue="4" labeltext="5-6天"/>
+        <Color color="255,128,0" maxValue="8" minValue="6" labeltext="7-8天"/>
+        <Color color="255,0,0" maxValue="10" minValue="8" labeltext="9-10天"/>
+        <Color color="192,0,0" maxValue="" minValue="10" labeltext=">10天"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="MUTI"  colortablename="FLDMUTI" description="多时次洪涝" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="0" labeltext="0" displaylengend="false"/>
+        <Color color="128,255,255" maxValue="2" minValue="1" labeltext="1天"/>
+        <Color color="255,255,128" maxValue="3" minValue="2" labeltext="2天"/>
+        <Color color="128,255,128" maxValue="4" minValue="3" labeltext="3天"/>
+        <Color color="255,128,128" maxValue="5" minValue="4" labeltext="4天"/>
+        <Color color="0,128,255" maxValue="6" minValue="5" labeltext="5天"/>
+        <Color color="255,128,192" maxValue="7" minValue="6" labeltext="6天"/>
+        <Color color="0,128,0" maxValue="8" minValue="7" labeltext="7天"/>
+        <Color color="128,0,128" maxValue="9" minValue="8" labeltext="8天"/>
+        <Color color="128,0,255" maxValue="10" minValue="9" labeltext="9天"/>
+        <Color color="128,64,0" maxValue="11" minValue="10" labeltext="10天"/>
+        <Color color="0,64,0" maxValue="12" minValue="11" labeltext="11天"/>
+        <Color color="128,64,64" maxValue="" minValue="12" labeltext=">12天"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="0MIX"  colortablename="FLD0MIX" description="混合像元" labeltext="">
+      <Colors>
+        <Color color="168,168,168" maxValue="10" minValue="0" labeltext="0"/>
+        <Color color="192,192,192" maxValue="20" minValue="10" labeltext="10%"/>
+        <Color color="216,216,216" maxValue="30" minValue="20" labeltext="20%"/>
+        <Color color="228,228,228" maxValue="40" minValue="30" labeltext="30%"/>
+        <Color color="200,255,255" maxValue="50" minValue="40" labeltext="40%"/>
+        <Color color="0,85,170" maxValue="60" minValue="50" labeltext="50%"/>
+        <Color color="0,90,120" maxValue="70" minValue="60" labeltext="60%"/>
+        <Color color="0,64,128" maxValue="80" minValue="70" labeltext="70%"/>
+        <Color color="0,0,255" maxValue="90" minValue="80" labeltext="80%"/>
+        <Color color="0,0,160" maxValue="100" minValue="90" labeltext="90%"/>
+        <Color color="0,0,160" maxValue="" minValue="100" labeltext="100%"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="TFRI" colortablename="FLDTFRI" description="长序列边缘线频次" labeltext="">
+      <Colors>
+        <Color color="0,0,202" minValue="1"  maxValue="2" labeltext="1" displaylengend="false"/>
+        <Color color="120,34, 45" minValue="2"  maxValue="3" labeltext="2" displaylengend="false"/>
+        <Color color="0, 128, 128" minValue="3"  maxValue="4" labeltext="3" displaylengend="false"/>
+        <Color color="0, 0, 0" minValue="4"  maxValue="5" labeltext="4" displaylengend="false"/>
+        <Color color="0, 255, 255" minValue="5"  maxValue="6" labeltext="5" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="TFQI" colortablename="FLDTFQI" description="长序列边缘线频率" labeltext="">
+      <Colors>
+        <Color color="0,0,202" minValue="1"  maxValue="2" labeltext="1" displaylengend="false"/>
+        <Color color="120,34, 45" minValue="2"  maxValue="3" labeltext="2" displaylengend="false"/>
+        <Color color="0, 128, 128" minValue="3"  maxValue="4" labeltext="3" displaylengend="false"/>
+        <Color color="0, 0, 0" minValue="4"  maxValue="5" labeltext="4" displaylengend="false"/>
+        <Color color="0, 255, 255" minValue="5"  maxValue="6" labeltext="5" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="TFRE"  colortablename="FLDTFRE" description="水情长时间频次图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="4" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="7" minValue="4" labeltext="3"/>
+        <Color color="81,255,158" maxValue="10" minValue="7" labeltext="6"/>
+        <Color color="205,255,82" maxValue="13" minValue="10" labeltext="9"/>
+        <Color color="255,255,83" maxValue="16" minValue="13" labeltext="12"/>
+        <Color color="254,204,81" maxValue="19" minValue="16" labeltext="15"/>
+        <Color color="255,162,82" maxValue="22" minValue="19" labeltext="18"/>
+        <Color color="255,82,83" maxValue="32767" minValue="22" labeltext="21"/>
+        <Color color="255,255,255" maxValue="" minValue="32767" labeltext="次"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FLD" subIdentify="TFRQ"  colortablename="FLDTFRQ" description="水情长时间频率图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="0.00001" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="82,255,236" maxValue="200" minValue="0.00001" labeltext="0"/>
+        <Color color="205,255,82" maxValue="400" minValue="200" labeltext="20"/>
+        <Color color="255,255,83" maxValue="600" minValue="400" labeltext="40"/>
+        <Color color="255,162,82" maxValue="800" minValue="600" labeltext="60"/>
+        <Color color="255,82,83" maxValue="32767" minValue="800" labeltext="80"/>
+        <Color color="255,255,255" maxValue="" minValue="32767" labeltext="100%"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FLD" subIdentify="EDGE" colortablename="FLDEDGE" description="水体边缘线" labeltext="">
+      <Colors>
+        <Color color="166, 208, 255" minValue="1"  maxValue="2" labeltext="1" displaylengend="false"/>
+        <Color color="120,34, 45" minValue="2"  maxValue="3" labeltext="2" displaylengend="false"/>
+        <Color color="0, 128, 128" minValue="3"  maxValue="4" labeltext="3" displaylengend="false"/>
+        <Color color="0, 0, 0" minValue="4"  maxValue="5" labeltext="4" displaylengend="false"/>
+        <Color color="0, 255, 255" minValue="5"  maxValue="6" labeltext="5" displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FLD" subIdentify="FLDS"  colortablename="FLDFLDS" description="洪涝持续日数" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="180,255,236" maxValue="4" minValue="1" labeltext="1"/>
+        <Color color="82,255,236" maxValue="7" minValue="4" labeltext="4"/>
+        <Color color="81,255,158" maxValue="10" minValue="7" labeltext="7"/>
+        <Color color="205,255,82" maxValue="13" minValue="10" labeltext="10"/>
+        <Color color="255,255,83" maxValue="16" minValue="13" labeltext="13"/>
+        <Color color="254,204,81" maxValue="19" minValue="16" labeltext="16"/>
+        <Color color="255,162,82" maxValue="22" minValue="19" labeltext="19"/>
+        <Color color="255,82,83" maxValue="9998" minValue="22" labeltext=">22天"/>
+        <Color color="0,0,255" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+
+    <ProductColorTable identify="FLD" subIdentify="FLSI"  colortablename="FLDFLSI" description="洪涝持续日数图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="1" displaylengend="false"/>
+        <Color color="82,255,236" maxValue="4" minValue="1" labeltext="4"/>
+        <Color color="205,255,82" maxValue="10" minValue="4" labeltext="10"/>
+        <Color color="255,162,82" maxValue="16" minValue="10" labeltext="16"/>
+        <Color color="255,82,83" maxValue="9998" minValue="16" labeltext=">16天"/>
+        <Color color="0,0,255" maxValue="9999" minValue="9998" labeltext="水体"/>
+        <Color color="255,255,255" maxValue="10000" minValue="9999" labeltext="云"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

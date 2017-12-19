@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="VGT" subIdentify="NDVI" colortablename="VGTNDVI" description="NDVI图" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="0,0,139" minValue="-1" maxValue="-1E-05" labeltext="-1" displaylengend="false" />
+        <Color color="0,0,139" minValue="-1E-05" maxValue="0" labeltext="0" displaylengend="false" />
+        <Color color="0,0,139" minValue="1E-05" maxValue="0.0001" labeltext="0.0001" displaylengend="false" />
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66" displaylengend="true" />
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99" displaylengend="true" />
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132" displaylengend="true" />
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165" displaylengend="true" />
+        <Color color="177,148,104" minValue="165" maxValue="198" labeltext="198" displaylengend="true" />
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231" displaylengend="true" />
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288" displaylengend="true" />
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345" displaylengend="true" />
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402" displaylengend="true" />
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459" displaylengend="true" />
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516" displaylengend="true" />
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573" displaylengend="true" />
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630" displaylengend="true" />
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687" displaylengend="true" />
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744" displaylengend="true" />
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801" displaylengend="true" />
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858" displaylengend="true" />
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915" displaylengend="true" />
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972" displaylengend="true" />
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="255,255,255" minValue="1000" maxValue="3.40282347E+38" labeltext="1100" displaylengend="false" />
+        <Color color="0,0,0" minValue="0" maxValue="1E-05" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0AVG" colortablename="VGT0AVG" description="平均值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.1" maxValue="0" labeltext="-0.10001" displaylengend="false" />
+        <Color color="234,228,220" minValue="1E-06" maxValue="0.0001" labeltext="0" displaylengend="true" />
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66" displaylengend="true" />
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99" displaylengend="true" />
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132" displaylengend="true" />
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165" displaylengend="true" />
+        <Color color="177,148,104" minValue="165" maxValue="198" labeltext="198" displaylengend="true" />
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231" displaylengend="true" />
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288" displaylengend="true" />
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345" displaylengend="true" />
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402" displaylengend="true" />
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459" displaylengend="true" />
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516" displaylengend="true" />
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573" displaylengend="true" />
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630" displaylengend="true" />
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687" displaylengend="true" />
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744" displaylengend="true" />
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801" displaylengend="true" />
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858" displaylengend="true" />
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915" displaylengend="true" />
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972" displaylengend="true" />
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100" displaylengend="true" />
+        <Color color="0,0,0" minValue="1100" maxValue="5000" labeltext="1200" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0MAX" colortablename="VGT0MAX" description="最大值合成" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="0,0,139" minValue="-9998" maxValue="0" labeltext="" displaylengend="false" />
+        <Color color="234,228,220" minValue="1E-06" maxValue="0.0001" labeltext="0" displaylengend="true" />
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66" displaylengend="true" />
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99" displaylengend="true" />
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132" displaylengend="true" />
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165" displaylengend="true" />
+        <Color color="177,148,104" minValue="165" maxValue="198" labeltext="198" displaylengend="true" />
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231" displaylengend="true" />
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288" displaylengend="true" />
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345" displaylengend="true" />
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402" displaylengend="true" />
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459" displaylengend="true" />
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516" displaylengend="true" />
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573" displaylengend="true" />
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630" displaylengend="true" />
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687" displaylengend="true" />
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744" displaylengend="true" />
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801" displaylengend="true" />
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858" displaylengend="true" />
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915" displaylengend="true" />
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972" displaylengend="true" />
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100" displaylengend="true" />
+        <Color color="0,0,0" minValue="1100" maxValue="5000" labeltext="1200" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0MIN" colortablename="VGT0MIN" description="最小值合成" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-10000" maxValue="-9999" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="0,0,139" minValue="-9998" maxValue="0" labeltext="-0.10001" displaylengend="false" />
+        <Color color="234,228,220" minValue="1E-06" maxValue="0.0001" labeltext="0" displaylengend="true" />
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66" displaylengend="true" />
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99" displaylengend="true" />
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132" displaylengend="true" />
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165" displaylengend="true" />
+        <Color color="177,148,104" minValue="165" maxValue="198" labeltext="198" displaylengend="true" />
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231" displaylengend="true" />
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288" displaylengend="true" />
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345" displaylengend="true" />
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402" displaylengend="true" />
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459" displaylengend="true" />
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516" displaylengend="true" />
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573" displaylengend="true" />
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630" displaylengend="true" />
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687" displaylengend="true" />
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744" displaylengend="true" />
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801" displaylengend="true" />
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858" displaylengend="true" />
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915" displaylengend="true" />
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972" displaylengend="true" />
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100" displaylengend="true" />
+        <Color color="0,0,0" minValue="1100" maxValue="5000" labeltext="5000" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0EVI" colortablename="VGT0EVI" description="EVI图" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="0,0,139" minValue="-9998" maxValue="0" labeltext="&lt;0" displaylengend="true" />
+        <Color color="0,0,139" minValue="1E-05" maxValue="0.0001" labeltext="0.0001" displaylengend="false" />
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66" displaylengend="true" />
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99" displaylengend="true" />
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132" displaylengend="true" />
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165" displaylengend="true" />
+        <Color color="177,148,104" minValue="165" maxValue="198" labeltext="198" displaylengend="true" />
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231" displaylengend="true" />
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288" displaylengend="true" />
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345" displaylengend="true" />
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402" displaylengend="true" />
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459" displaylengend="true" />
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516" displaylengend="true" />
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573" displaylengend="true" />
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630" displaylengend="true" />
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687" displaylengend="true" />
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744" displaylengend="true" />
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801" displaylengend="true" />
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858" displaylengend="true" />
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915" displaylengend="true" />
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972" displaylengend="true" />
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="255,255,255" minValue="1000" maxValue="3.40282347E+38" labeltext="1100" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0DVI" colortablename="VGT0DVI" description="DVI图" labeltext="">
+      <Colors>
+        <Color color="194,82,60" minValue="-10000" maxValue="-9999" labeltext="0" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="194,82,60" minValue="-9998" maxValue="-1E-05" labeltext="&lt;=0" displaylengend="true" />
+        <Color color="0,0,0" minValue="-1E-05" maxValue="1E-05" labeltext="1" displaylengend="false" />
+        <Color color="214,111,43" minValue="1E-05" maxValue="400" labeltext="400" displaylengend="true" />
+        <Color color="237,160,20" minValue="400" maxValue="800" labeltext="800" displaylengend="true" />
+        <Color color="245,200,10" minValue="800" maxValue="1200" labeltext="1200" displaylengend="true" />
+        <Color color="255,255,0" minValue="1200" maxValue="1600" labeltext="1600" displaylengend="true" />
+        <Color color="120,240,0" minValue="1600" maxValue="2000" labeltext="2000" displaylengend="true" />
+        <Color color="0,220,0" minValue="2000" maxValue="2400" labeltext="2400" displaylengend="true" />
+        <Color color="20,185,95" minValue="2400" maxValue="2800" labeltext="2800" displaylengend="true" />
+        <Color color="30,155,145" minValue="2800" maxValue="3200" labeltext="3200" displaylengend="true" />
+        <Color color="20,105,140" minValue="3200" maxValue="3600" labeltext="3600" displaylengend="true" />
+        <Color color="10,45,120" minValue="3600" maxValue="4000" labeltext="4000" displaylengend="true" />
+        <Color color="255,255,255" minValue="4000" maxValue="10000" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0RVI" colortablename="VGT0RVI" description="RVI图" labeltext="">
+      <Colors>
+        <Color color="100,100,100" minValue="-10000" maxValue="-9999" labeltext="1" displaylengend="true" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="100,100,100" minValue="-9998" maxValue="-1E-05" labeltext="1" displaylengend="true" />
+        <Color color="0,0,0" minValue="-1E-05" maxValue="1E-05" labeltext="1" displaylengend="false" />
+        <Color color="194,82,60" minValue="1E-05" maxValue="400" labeltext="400" displaylengend="true" />
+        <Color color="214,111,43" minValue="400" maxValue="800" labeltext="800" displaylengend="true" />
+        <Color color="237,160,20" minValue="800" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="245,200,10" minValue="1000" maxValue="1050" labeltext="1050" displaylengend="true" />
+        <Color color="255,255,0" minValue="1050" maxValue="1100" labeltext="1100" displaylengend="true" />
+        <Color color="120,240,0" minValue="1100" maxValue="1200" labeltext="1200" displaylengend="true" />
+        <Color color="0,220,0" minValue="1200" maxValue="1250" labeltext="1250" displaylengend="true" />
+        <Color color="20,185,95" minValue="1250" maxValue="1400" labeltext="1400" displaylengend="true" />
+        <Color color="30,30,145" minValue="1400" maxValue="1550" labeltext="1550" displaylengend="true" />
+        <Color color="20,105,140" minValue="1550" maxValue="1800" labeltext="1800" displaylengend="true" />
+        <Color color="10,45,120" minValue="1800" maxValue="10000" labeltext="10000" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="CHAZ" colortablename="VGTCHAZ" description="植被指数差值图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="-9999" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="255,255,255" minValue="-1000" maxValue="-650" labeltext="-1.0" displaylengend="false" />
+        <Color color="219,100,36" minValue="-650" maxValue="-500" labeltext="-0.50" displaylengend="true" />
+        <Color color="238,120,70" minValue="-500" maxValue="-450" labeltext="-0.50" displaylengend="true" />
+        <Color color="211,141,24" minValue="-450" maxValue="-400" labeltext="-0.45" displaylengend="true" />
+        <Color color="242,172,43" minValue="-400" maxValue="-350" labeltext="-0.40" displaylengend="true" />
+        <Color color="253,215,134" minValue="-350" maxValue="-300" labeltext="-0.35" displaylengend="true" />
+        <Color color="255,255,10" minValue="-300" maxValue="-250" labeltext="-0.30" displaylengend="true" />
+        <Color color="247,248,152" minValue="-250" maxValue="-200" labeltext="-0.25" displaylengend="true" />
+        <Color color="203,191,175" minValue="-200" maxValue="-150" labeltext="-0.20" displaylengend="true" />
+        <Color color="173,141,142" minValue="-150" maxValue="-100" labeltext="-0.15" displaylengend="true" />
+        <Color color="187,156,125" minValue="-100" maxValue="-50" labeltext="-0.10" displaylengend="true" />
+        <Color color="177,148,104" minValue="-50" maxValue="-1E-05" labeltext="-0.05" displaylengend="true" />
+        <Color color="0,0,0" minValue="-1E-05" maxValue="0" labeltext="0" displaylengend="false" />
+        <Color color="226,248,167" minValue="0" maxValue="1E-05" labeltext="10" displaylengend="false" />
+        <Color color="197,227,115" minValue="1E-05" maxValue="50" labeltext="0.05" displaylengend="true" />
+        <Color color="161,191,79" minValue="50" maxValue="100" labeltext="0.1" displaylengend="true" />
+        <Color color="149,181,18" minValue="100" maxValue="150" labeltext="0.15" displaylengend="true" />
+        <Color color="125,155,43" minValue="150" maxValue="200" labeltext="0.20" displaylengend="true" />
+        <Color color="116,169,0" minValue="200" maxValue="250" labeltext="0.25" displaylengend="true" />
+        <Color color="102,160,0" minValue="250" maxValue="300" labeltext="0.30" displaylengend="true" />
+        <Color color="82,147,1" minValue="300" maxValue="350" labeltext="0.35" displaylengend="true" />
+        <Color color="60,133,0" minValue="350" maxValue="400" labeltext="0.40" displaylengend="true" />
+        <Color color="27,114,1" minValue="400" maxValue="450" labeltext="0.45" displaylengend="true" />
+        <Color color="0,95,1" minValue="450" maxValue="500" labeltext="0.50" displaylengend="true" />
+        <Color color="0,72,0" minValue="500" maxValue="550" labeltext="0.55" displaylengend="true" />
+        <Color color="0,55,0" minValue="550" maxValue="600" labeltext="0.60" displaylengend="true" />
+        <Color color="1,39,0" minValue="600" maxValue="650" labeltext="0.65" displaylengend="true" />
+        <Color color="0,19,0" minValue="650" maxValue="1000" labeltext="1.0" displaylengend="true" />
+        <Color color="0,0,0" minValue="1000" maxValue="3.40282347E+38" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="ANMI" colortablename="VGTANMI" description="植被指数距平图" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-3.40282347E+38" maxValue="-10000" labeltext="-10000" displaylengend="false" />
+        <Color color="254,105,3" minValue="-9998" maxValue="-650" labeltext="-650" displaylengend="true" />
+        <Color color="255,135,4" minValue="-650" maxValue="-640" labeltext="-640" displaylengend="true" />
+        <Color color="255,165,4" minValue="-640" maxValue="-630" labeltext="-630" displaylengend="true" />
+        <Color color="255,195,5" minValue="-630" maxValue="-620" labeltext="-620" displaylengend="true" />
+        <Color color="255,255,3" minValue="-620" maxValue="-610" labeltext="-610" displaylengend="true" />
+        <Color color="203,191,175" minValue="-610" maxValue="-60" labeltext="-60" displaylengend="true" />
+        <Color color="173,141,142" minValue="-60" maxValue="-30" labeltext="-30" displaylengend="true" />
+        <Color color="187,156,125" minValue="-30" maxValue="-10" labeltext="-10" displaylengend="true" />
+        <Color color="177,148,104" minValue="-10" maxValue="0" labeltext="10" displaylengend="true" />
+        <Color color="0,0,0" minValue="0" maxValue="1E-05" labeltext="10" displaylengend="false" />
+        <Color color="177,148,104" minValue="1E-05" maxValue="10" labeltext="10" displaylengend="false" />
+        <Color color="165,130,76" minValue="10" maxValue="30" labeltext="30" displaylengend="true" />
+        <Color color="146,113,62" minValue="30" maxValue="60" labeltext="60" displaylengend="true" />
+        <Color color="197,227,115" minValue="60" maxValue="75" labeltext="75" displaylengend="true" />
+        <Color color="161,191,79" minValue="75" maxValue="90" labeltext="90" displaylengend="true" />
+        <Color color="149,181,18" minValue="90" maxValue="115" labeltext="115" displaylengend="true" />
+        <Color color="125,155,43" minValue="115" maxValue="130" labeltext="130" displaylengend="true" />
+        <Color color="116,169,0" minValue="130" maxValue="150" labeltext="150" displaylengend="true" />
+        <Color color="102,160,0" minValue="150" maxValue="170" labeltext="170" displaylengend="true" />
+        <Color color="82,147,1" minValue="170" maxValue="200" labeltext="200" displaylengend="true" />
+        <Color color="60,133,0" minValue="200" maxValue="230" labeltext="230" displaylengend="true" />
+        <Color color="27,114,1" minValue="230" maxValue="250" labeltext="250" displaylengend="true" />
+        <Color color="0,95,1" minValue="250" maxValue="270" labeltext="270" displaylengend="true" />
+        <Color color="0,72,0" minValue="270" maxValue="290" labeltext="290" displaylengend="true" />
+        <Color color="0,55,0" minValue="290" maxValue="500" labeltext="500" displaylengend="true" />
+        <Color color="1,39,0" minValue="500" maxValue="700" labeltext="700" displaylengend="true" />
+        <Color color="0,19,0" minValue="700" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,0" minValue="1000" maxValue="3.40282347E+38" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="-10000" maxValue="-9999" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0VCI" colortablename="VGT0VCI" description="VCI图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-10000" maxValue="1E-05" labeltext="1" displaylengend="false" />
+        <Color color="196,79,54" minValue="1E-05" maxValue="150" labeltext="150" displaylengend="true" />
+        <Color color="255,145,79" minValue="150" maxValue="300" labeltext="300" displaylengend="true" />
+        <Color color="255,255,102" minValue="300" maxValue="400" labeltext="400" displaylengend="true" />
+        <Color color="172,255,69" minValue="400" maxValue="800" labeltext="800" displaylengend="true" />
+        <Color color="48,255,61" minValue="800" maxValue="9999" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,0" minValue="9999" maxValue="3.40282347E+38" labeltext="10000" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="CYCA" colortablename="VGTCYCA" description="NDVI镶嵌图" labeltext="">
+      <Colors>
+        <Color color="0,0,139" minValue="-0.10002" maxValue="-0.10001" labeltext="-0.10001" displaylengend="false" />
+        <Color color="0,0,139" minValue="-0.10001" maxValue="0" labeltext="0" displaylengend="false" />
+        <Color color="0,0,0" minValue="0" maxValue="1E-06" labeltext="0.000001" displaylengend="false" />
+        <Color color="234,228,220" minValue="1E-06" maxValue="0.0001" labeltext="0" displaylengend="true" />
+        <Color color="214,202,185" minValue="0.0001" maxValue="66" labeltext="66" displaylengend="true" />
+        <Color color="201,189,173" minValue="66" maxValue="99" labeltext="99" displaylengend="true" />
+        <Color color="173,141,142" minValue="99" maxValue="132" labeltext="132" displaylengend="true" />
+        <Color color="187,158,128" minValue="132" maxValue="165" labeltext="165" displaylengend="true" />
+        <Color color="177,148,104" minValue="165" maxValue="198" labeltext="198" displaylengend="true" />
+        <Color color="165,130,76" minValue="198" maxValue="231" labeltext="231" displaylengend="true" />
+        <Color color="146,113,62" minValue="231" maxValue="288" labeltext="288" displaylengend="true" />
+        <Color color="197,227,115" minValue="288" maxValue="345" labeltext="345" displaylengend="true" />
+        <Color color="161,191,79" minValue="345" maxValue="402" labeltext="402" displaylengend="true" />
+        <Color color="149,181,18" minValue="402" maxValue="459" labeltext="459" displaylengend="true" />
+        <Color color="125,155,43" minValue="459" maxValue="516" labeltext="516" displaylengend="true" />
+        <Color color="116,169,0" minValue="516" maxValue="573" labeltext="573" displaylengend="true" />
+        <Color color="102,160,0" minValue="573" maxValue="630" labeltext="630" displaylengend="true" />
+        <Color color="82,147,1" minValue="630" maxValue="687" labeltext="687" displaylengend="true" />
+        <Color color="60,133,0" minValue="687" maxValue="744" labeltext="744" displaylengend="true" />
+        <Color color="27,114,1" minValue="744" maxValue="801" labeltext="801" displaylengend="true" />
+        <Color color="0,95,1" minValue="801" maxValue="858" labeltext="858" displaylengend="true" />
+        <Color color="0,73,1" minValue="858" maxValue="915" labeltext="915" displaylengend="true" />
+        <Color color="0,55,0" minValue="915" maxValue="972" labeltext="972" displaylengend="true" />
+        <Color color="1,139,0" minValue="972" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,139" minValue="1000" maxValue="1100" labeltext="1100" displaylengend="true" />
+        <Color color="0,0,0" minValue="1100" maxValue="1200" labeltext="1200" displaylengend="false" />
+        <Color color="0,0,0" minValue="1200" maxValue="5000" labeltext="5000" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="VGT" subIdentify="0LAI"  colortablename="VGT0LAI" description="叶面积指数图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="" maxValue="0" labeltext="0" displaylengend="false"/>
+        <!--由于目前程序中0不恰当的作为了背景值。故暂时加次色标-->
+        <Color color="254,255,153" minValue="0.00001" maxValue="25" labeltext="0.25"/>
+        <Color color="255,247,0" minValue="25" maxValue="50" labeltext="0.50"/>
+        <Color color="254,153,1" minValue="50" maxValue="75" labeltext="0.75"/>
+        <Color color="0,230,0" minValue="75" maxValue="100" labeltext="1.0"/>
+        <Color color="38,255,0" maxValue="100" minValue="200" labeltext="2.0"/>
+        <Color color="0,150,0" minValue="200" maxValue="300" labeltext="3.0"/>
+        <Color color="2,100,1" minValue="300" maxValue="400" labeltext="4.0"/>
+        <Color color="203,126,96" minValue="400" maxValue="500" labeltext="5.0"/>
+        <Color color="255,0,4" minValue="500" maxValue="600" labeltext="6.0"/>
+        <Color color="255,0,208" minValue="600" maxValue="700" labeltext="7.0"/>
+        <Color color="230,0,168" minValue="700" maxValue="800" labeltext="8.0"/>
+        <Color color="129,0,127" minValue="800" maxValue="10000" labeltext=">8.0"/>
+        <Color color="0,0,0" minValue="10000" maxValue="" labeltext=""  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

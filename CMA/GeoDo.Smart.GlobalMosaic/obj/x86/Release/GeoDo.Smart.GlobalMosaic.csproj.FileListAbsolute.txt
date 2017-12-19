@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.GlobalMosaic.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.GlobalMosaic.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.GlobalMosaic.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.GlobalMosaic\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.GlobalMosaic\obj\x86\Release\GeoDo.Smart.GlobalMosaic.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.GlobalMosaic\obj\x86\Release\GeoDo.Smart.GlobalMosaic.pdb

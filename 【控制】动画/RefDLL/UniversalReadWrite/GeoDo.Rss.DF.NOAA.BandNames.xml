@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BandnameTables>
+	<BandnameRefTable satellite="NOAA12" sensor="AVHRR">
+		<BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+		<BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+		<BandnameItem index="3" originalindex="3" name="短波红外(3A或者3B)" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true"/>
+		<BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true"/>
+		<BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="838.1255" display="true"/>
+	</BandnameRefTable>
+	<BandnameRefTable satellite="NOAA14" sensor="AVHRR">
+		<BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+		<BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+		<BandnameItem index="3" originalindex="3" name="短波红外(3A或者3B)" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true"/>
+		<BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true"/>
+		<BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="838.1255" display="true"/>
+	</BandnameRefTable>
+	<BandnameRefTable satellite="NOAA15" sensor="AVHRR">
+		<BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+		<BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+		<BandnameItem index="3" originalindex="3" name="短波红外(3A或者3B)" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true"/>
+		<BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true"/>
+		<BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="838.1255" display="true"/>
+	</BandnameRefTable>
+	<BandnameRefTable satellite="NOAA16" sensor="AVHRR">
+		<BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+		<BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared" />
+		<BandnameItem index="3" originalindex="3" name="短波红外(3A或者3B)" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2700.1148" display="true"/>
+		<BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="917.2289" display="true"/>
+		<BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="838.1255" display="true"/>	
+	</BandnameRefTable>
+	<BandnameRefTable satellite="NOAA17" sensor="AVHRR">
+		<BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+		<BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared"/>
+		<BandnameItem index="3" originalindex="3" name="短波红外" resolution="1100" min="1.58" max="1.64" type="NearInfrared" centerwavenum="2669.3554" display="true"/>
+		<BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="926.2947" display="true"/>
+		<BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="839.8246" display="true"/>
+	</BandnameRefTable>
+	<BandnameRefTable satellite="NOAA18" sensor="AVHRR">
+		<BandnameItem index="1" originalindex="1" name="可见光" resolution="1100" min="0.58" max="0.68" type="Visible"/>
+		<BandnameItem index="2" originalindex="2" name="近红外" resolution="1100" min="0.725" max="1.00" type="NearInfrared"/>
+		<BandnameItem index="3" originalindex="3" name="短波红外" resolution="1100" min="3.55" max="3.95" type="NearInfrared" centerwavenum="2659.7952" display="true"/>
+		<BandnameItem index="4" originalindex="4" name="远红外" resolution="1100" min="10.3" max="11.3" type="FarInfrared" centerwavenum="928.1460" display="true"/>
+		<BandnameItem index="5" originalindex="5" name="远红外" resolution="1100" min="11.5" max="12.5" type="FarInfrared" centerwavenum="833.2532" display="true"/>
+	</BandnameRefTable>
+</BandnameTables>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataDefines name="常规观测数据">
+  <DataDefine name="地面观测数据" identify="GroundObserveData" fieldcount="24" beginIndex="3" splitChar=" ">
+    <!--index从0开始,经度identify="Longitude"纬度identify="Latitude"-->
+    <Field index="0" identify="ID" name="序号"/>
+    <Field index="1" identify="Longitude" name="经度"/>
+    <Field index="2" identify="Latitude" name="纬度"/>
+    <Field index="3" identify="3" name="3"/>
+    <Field index="4" identify="4" name="4"/>
+    <Field index="5" identify="5" name="5"/>
+    <Field index="6" identify="6" name="6"/>
+    <Field index="7" identify="7" name="7"/>
+    <Field index="8" identify="8" name="8"/>
+    <Field index="9" identify="9" name="9"/>
+    <Field index="10" identify="10" name="10"/>
+    <Field index="11" identify="11" name="11"/>
+    <Field index="12" identify="12" name="12"/>
+    <Field index="13" identify="13" name="13"/>
+    <Field index="14" identify="14" name="14"/>
+    <Field index="15" identify="15" name="15"/>
+    <Field index="16" identify="16" name="16"/>
+    <Field index="17" identify="17" name="17"/>
+    <Field index="18" identify="18" name="18"/>
+    <Field index="19" identify="19" name="19"/>
+    <Field index="20" identify="20" name="20"/>
+    <Field index="21" identify="21" name="21"/>
+    <Field index="22" identify="22" name="22"/>
+    <Field index="23" identify="23" name="23"/>
+  </DataDefine>
+  <!--beginIndex:数据开始行序号，从1开始计数；splitChar:数据各属性间间隔符；-->
+  <DataDefine name="火点信息列表" identify="FirePointInfoData" fieldcount="12" beginIndex="1" splitChar="&#09;">
+    <!--index从0开始,经度identify="Longitude"纬度identify="Latitude"-->
+    <Field index="0" identify="ID" name="火点序号"/>
+    <Field index="1" identify="Latitude" name="纬度"/>
+    <Field index="2" identify="Longitude" name="经度"/>
+    <Field index="3" identify="FireAreaID" name="火区号"/>
+    <Field index="4" identify="RegionCode" name="地区码"/>
+    <Field index="5" identify="LandUseType" name="土地利用类型"/>
+    <Field index="6" identify="FirePixelArea" name="火点像元面积"/>
+    <Field index="7" identify="SubPixelArea" name="亚像元面积"/>
+    <Field index="8" identify="Confidence" name="置信度"/>
+    <Field index="9" identify="Time" name="时间"/>
+    <Field index="10" identify="PointStrengthLevel" name="火点强度等级"/>
+    <Field index="11" identify="FirePointStrength" name="火点强度"/>
+  </DataDefine>
+  <DataDefine name="浮标站点观测数据" identify="BuoyObserveData" fieldcount="42" beginIndex="3" splitChar=" ">
+    <!--index从0开始,经度identify="Longitude"纬度identify="Latitude"-->
+    <Field index="0" identify="ID" name="台站号"/>
+    <Field index="1" identify="Longitude" name="经度"/>
+    <Field index="2" identify="Latitude" name="纬度"/>
+    <Field index="3" identify="style" name="台站类型"/>
+    <Field index="4" identify="movedir" name="观测平台移动方向"/>
+    <Field index="5" identify="movespd" name="观测平台移动速度"/>
+    <Field index="6" identify="pres" name="本站气压"/>
+    <Field index="7" identify="mslp" name="海平面气压"/>
+    <Field index="8" identify="dp3h" name="3小时变压"/>
+    <Field index="9" identify="detap" name="气压倾向"/>
+    <Field index="10" identify="winddir" name="风向"/>
+    <Field index="11" identify="windspd" name="风速"/>
+    <Field index="12" identify="temperature" name="气温"/>
+    <Field index="13" identify="dew" name="露点温度"/>
+    <Field index="14" identify="rh" name="相对湿度"/>
+    <Field index="15" identify="visibility" name="水平能见度"/>
+    <Field index="16" identify="nowweather" name="现在天气"/>
+    <Field index="17" identify="pastweather1" name="过去天气1"/>
+    <Field index="18" identify="pastweather2" name="过去天气2"/>
+    <Field index="19" identify="allcloud" name="总云量"/>
+    <Field index="20" identify="middlelowcloud" name="中低云累结云量"/>
+    <Field index="21" identify="cloudhigh" name="云底高度"/>
+    <Field index="22" identify="lowcloudstyle" name="低云状"/>
+    <Field index="23" identify="middlecloudstyle" name="中云状"/>
+    <Field index="24" identify="highcloudstyle" name="高云状"/>
+    <Field index="25" identify="sst" name="海表温度"/>
+    <Field index="26" identify="wavedir" name="风浪方向"/>
+    <Field index="27" identify="wavetime" name="风浪时段"/>
+    <Field index="28" identify="wavehigh" name="风浪高度"/>
+    <Field index="29" identify="swell1dir" name="第一涌浪方向"/>
+    <Field index="30" identify="swell1time" name="第一涌浪时段"/>
+    <Field index="31" identify="swell1high" name="第一涌浪高度"/>
+    <Field index="32" identify="swell2dir" name="第二涌浪方向"/>
+    <Field index="33" identify="swell2time" name="第二涌浪时段"/>
+    <Field index="34" identify="swell2high" name="第二涌浪高度"/>
+    <Field index="35" identify="icereason" name="积冰原因"/>
+    <Field index="36" identify="icethick" name="积冰厚度"/>
+    <Field index="37" identify="icepercent" name="积冰率"/>
+    <Field index="38" identify="icecrowd" name="海冰密集度"/>
+    <Field index="39" identify="icegrowth" name="冰情发展"/>
+    <Field index="40" identify="iceline" name="冰缘方位"/>
+    <Field index="41" identify="ice3h" name="冰情和3小时内变化趋势"/>
+  </DataDefine>
+  <DataDefine name="云参数地面观测数据" identify="CLDGroundObserveData" fieldcount="24" beginIndex="3" splitChar=" ">
+    <!--index从0开始,经度identify="Longitude"纬度identify="Latitude"-->
+    <Field index="0" identify="ID" name="区站号"/>
+    <Field index="1" identify="Longitude" name="经度"/>
+    <Field index="2" identify="Latitude" name="纬度"/>
+    <Field index="3" identify="3" name="海拔高度"/>
+    <Field index="4" identify="4" name="站点级别"/>
+    <Field index="5" identify="5" name="总云量"/>
+    <Field index="6" identify="6" name="风向"/>
+    <Field index="7" identify="7" name="风速"/>
+    <Field index="8" identify="8" name="本站气压"/>
+    <Field index="9" identify="9" name="3小时变压"/>
+    <Field index="10" identify="10" name="过去天气1"/>
+    <Field index="11" identify="11" name="过去天气2"/>
+    <Field index="12" identify="12" name="6小时降水"/>
+    <Field index="13" identify="13" name="低云状"/>
+    <Field index="14" identify="14" name="低云量"/>
+    <Field index="15" identify="15" name="低云高"/>
+    <Field index="16" identify="16" name="露点"/>
+    <Field index="17" identify="17" name="能见度"/>
+    <Field index="18" identify="18" name="现在天气"/>
+    <Field index="19" identify="19" name="温度"/>
+    <Field index="20" identify="20" name="20"/>
+    <Field index="21" identify="21" name="21"/>
+    <Field index="22" identify="22" name="22"/>
+    <Field index="23" identify="23" name="23"/>
+  </DataDefine>
+  <DataDefine name="0cm地温" identify="StationData0mtemp" fieldcount="5" beginIndex="3" splitChar=" ">
+    <!--index从0开始,经度identify="Longitude"纬度identify="Latitude"-->
+    <Field index="0" identify="ID" name="站点ID"/>
+    <Field index="1" identify="Longitude" name="经度"/>
+    <Field index="2" identify="Latitude" name="纬度"/>
+    <Field index="3" identify="Altitude" name="海拔"/>
+    <Field index="4" identify="Temperature" name="地表温度"/>
+  </DataDefine>
+  <DataDefine name="细颗粒物PM2.5" identify="PM2.5" fieldcount="5" beginIndex="4" splitChar=" ">
+    <!--index从0开始,经度identify="Longitude"纬度identify="Latitude"-->
+    <Field index="0" identify="ID" name="站点ID"/>
+    <Field index="1" identify="Longitude" name="经度"/>
+    <Field index="2" identify="Latitude" name="纬度"/>
+    <Field index="3" identify="Altitude" name="未知"/>
+    <Field index="4" identify="PM2.5" name="PM2.5"/>
+  </DataDefine>
+</DataDefines>

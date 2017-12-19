@@ -1,0 +1,6 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\AreaStat.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.AreaStat.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Tools.AreaStat.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Tools.AreaStat\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Tools.AreaStat\obj\x86\Release\GeoDo.Tools.AreaStat.exe
+D:\监测分析平台\Code\CMA\GeoDo.Tools.AreaStat\obj\x86\Release\GeoDo.Tools.AreaStat.pdb

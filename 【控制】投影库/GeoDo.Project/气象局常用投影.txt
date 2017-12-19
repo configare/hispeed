@@ -1,0 +1,50 @@
+﻿下面资料列举了气象局常用投影对应的proj.4字符串.
++proj=latlong +a=6370997 +b=6370997
+哈默投影
+*lon_0 ->中央子午线精度
+*x_0   ->伪东
+*y_0   ->伪北
+"+proj=hammer +a=6370997 +b=6370997 +lon_0=%lf +x_0=%lf +y_0=%lf",lon_0,x_0,y_0); 
+//+proj=hammer +datum=WGS84 +lon_0=%lf +ellps=sphere +x_0=%lf +y_0=%lf
+默卡托投影
+*lon_0 ->中央子午线精度
+*lat_ts
+*x_0   ->伪东
+*y_0   ->伪北
++proj=latlong +datum=WGS84 +ellps=WGS84
+"+proj=merc +datum=WGS84 +lon_0=%lf +lat_ts=%lf +x_0=%lf +y_0=%lf",lon_0,lat_ts, x_0, y_0);
+横轴默卡托投影
+*lon_0 ->中央子午线精度
+*k
+*x_0   ->伪东
+*y_0   ->伪北
+"+proj=tmerc +ellps=WGS84 +lon_0=%lf +lat_0=%lf +k=%lf, +x_0=%lf, +y_0=%lf +towgs84=0,0,0 +units=m +no_defs",lon_0,lat_0,k,x_0,y_0);
+
+Laea_s
+*lon_0 ->中央子午线经度
+*lat_0 ->原点纬度
+*x_0   ->伪东
+*y_0   ->伪北
+"+proj=latlong +datum=WGS84 +ellps=WGS84"
+"+proj=laea +datum=WGS84 +lon_0=%lf +lat_0=%lf +ellps=sphere +x_0=%lf +y_0=%lf",lon_0, lat_0,x_0,y_0);
+
+Laea_e
+*lon_0 ->中央子午线经度
+*lat_0 ->原点纬度
+*x_0   ->伪东
+*y_0   ->伪北
+"+proj=laea +datum=WGS84 +lon_0=%lf +lat_0=%lf +x_0=%lf +y_0=%lf",lon_0, lat_0,x_0,y_0);
+
+气象局常用投影名字缩写：
+AEA Albers Equal Area         Albers 等面积投影（等面积正割圆锥投影）
+EDC EquiDistance Cylindrial   等距圆柱投影
+ESG EASE-Grid                 等积割圆柱投影
+HAM Hammer                    Hammer等面积投影
+LBT Lambert Conformal Conic   Lambert 等角圆锥投影（等角正割圆锥投影）
+MCT Mercator                  Mercator投影（等角正轴圆柱投影）
+NOM Normalized                标称投影
+OTG Orthographic              正射投影（平行投影）
+PSG Polar Stereographic       极射赤面投影
+MCW Miller Cylindrical World  Miller圆柱投影
+GAK Gauss-Kruger              高斯-克吕格投影（等角横切椭圆柱投影）
+UTM Universal Transcerse Mercator UTM投影（通用横轴墨卡托投影）

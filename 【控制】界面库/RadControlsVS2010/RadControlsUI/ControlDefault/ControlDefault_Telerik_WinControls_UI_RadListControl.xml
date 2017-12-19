@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground,ButtonNormalBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorderNoAnim,TransparentBackgroundNoAnim,BlackText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,ButtonNormalBorderNoAnim,BlackText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText,TreeViewNodeMouseOverFill,TreeViewNodeMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText,TreeViewNodeSelectedFill,TreeViewNodeCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText,TreeViewNodeSelectedFill,TreeViewNodeCurrentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Selected.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BlackText,SegoeUIDefaultText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorderNoAnim,TransparentFill1,SegoeUIDefaultDisabledText">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ListControlHeaderFont,ListControlHeaderNonCollapsibleFill,ListControlHeaderNonCollapsibleBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.LinePrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder,ListControlHeaderFont">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk3eAAAAAAAAADYAAAAoAAAABwAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAi0IV/4M+FP8AAAAAAAAAAAAAAABMJAv/QB4K/4tCFf+DPhT/dzgS/wAAAABaKw7/TCQL/0AeCv/c4uj/gz4U/3c4Ev9pMhD/WisO/0wkC//c4uj/AAAAANzi6P93OBL/aTIQ/1orDv/c4uj/AAAAAAAAAAAAAAAA3OLo/2kyEP/c4uj/AAAAAAAAAAAAAAAAAAAAAAAAAADc4uj/AAAAAAAAAAAAAAAA" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.Collapsible" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="207, 214, 225" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.Collapsible">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.LinePrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk3eAAAAAAAAADYAAAAoAAAABwAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA3OLo/wAAAAAAAAAAAAAAAAAAAAAAAAAA3OLo/2kyEP/c4uj/AAAAAAAAAAAAAAAA3OLo/3c4Ev9pMhD/WisO/9zi6P8AAAAA3OLo/4M+FP93OBL/aTIQ/1orDv9MJAv/3OLo/4tCFf+DPhT/dzgS/wAAAABaKw7/TCQL/0AeCv+LQhX/gz4U/wAAAAAAAAAAAAAAAEwkC/9AHgr/" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.Collapsible.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ItemMouseOverFill,ButtonMouseOverBorderNoAnim">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk3eAAAAAAAAADYAAAAoAAAABwAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAi0IV/4M+FP8AAAAAAAAAAAAAAABMJAv/QB4K/4tCFf+DPhT/dzgS/wAAAABaKw7/TCQL/0AeCv/c4uj/gz4U/3c4Ev9pMhD/WisO/0wkC//c4uj/AAAAANzi6P93OBL/aTIQ/1orDv/c4uj/AAAAAAAAAAAAAAAA3OLo/2kyEP/c4uj/AAAAAAAAAAAAAAAAAAAAAAAAAADc4uj/AAAAAAAAAAAAAAAA" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.MouseOver.Collapsible" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ItemMouseDownFill,ButtonMouseDownBorderNoAnim">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk3eAAAAAAAAADYAAAAoAAAABwAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAi0IV/4M+FP8AAAAAAAAAAAAAAABMJAv/QB4K/4tCFf+DPhT/dzgS/wAAAABaKw7/TCQL/0AeCv/c4uj/gz4U/3c4Ev9pMhD/WisO/0wkC//c4uj/AAAAANzi6P93OBL/aTIQ/1orDv/c4uj/AAAAAAAAAAAAAAAA3OLo/2kyEP/c4uj/AAAAAAAAAAAAAAAAAAAAAAAAAADc4uj/AAAAAAAAAAAAAAAA" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.MouseDown.Collapsible" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverBorderNoAnim,ItemMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk3eAAAAAAAAADYAAAAoAAAABwAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA3OLo/wAAAAAAAAAAAAAAAAAAAAAAAAAA3OLo/2kyEP/c4uj/AAAAAAAAAAAAAAAA3OLo/3c4Ev9pMhD/WisO/9zi6P8AAAAA3OLo/4M+FP93OBL/aTIQ/1orDv9MJAv/3OLo/4tCFf+DPhT/dzgS/wAAAABaKw7/TCQL/0AeCv+LQhX/gz4U/wAAAAAAAAAAAAAAAEwkC/9AHgr/" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.MouseOver.Collapsible.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownBorderNoAnim,ItemMouseDownFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.Image" Value="Qk3eAAAAAAAAADYAAAAoAAAABwAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAA3OLo/wAAAAAAAAAAAAAAAAAAAAAAAAAA3OLo/2kyEP/c4uj/AAAAAAAAAAAAAAAA3OLo/3c4Ev9pMhD/WisO/9zi6P8AAAAA3OLo/4M+FP93OBL/aTIQ/1orDv9MJAv/3OLo/4tCFf+DPhT/dzgS/wAAAABaKw7/TCQL/0AeCv+LQhX/gz4U/wAAAAAAAAAAAAAAAEwkC/9AHgr/" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualGroupItem.MouseDown.Collapsible.Collapsed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadListControl" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadListElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadRadListElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

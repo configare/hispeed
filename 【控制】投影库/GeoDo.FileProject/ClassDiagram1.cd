@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GeoDo.FileProject.EOS_FileProjector" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwAAIAEQAAgoxQEAMCIACWAiCARCA0ABAIEKAIAI=</HashCode>
+      <FileName>EOS_FileProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.FileProjector" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIBAIIAAAgIAgAAAACAYAAAAAAAAAEAAAAAAAIAA=</HashCode>
+      <FileName>FileProjector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GeoDo.FileProject.FY3_MERSIFileProjector" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAEAAIgMQAAhKwwEAMCIABSAkCBUAAgAIAIkIQIAA=</HashCode>
+      <FileName>FY3_MERSIFileProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.FY3_VIRRFileProjector" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkQAIAEQAAgI4QEAMCIAgWAgCBVACgCAAqFKgIIA=</HashCode>
+      <FileName>FY3_VIRRFileProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.NOAA_1BDFileProjector" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAEAAIIIwAAgIgUEAECIAASAgCgEAAgCIAIEIgMAA=</HashCode>
+      <FileName>NOAA_1BDFileProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.BandMap" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAgAAAAAAACIAAAAAEAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>PrjSettings\BandMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.EOS_MODIS_PrjSettings" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAMRAAAAAAAAAAAAAAAAAAIAEAAAgAJAQAAA=</HashCode>
+      <FileName>PrjSettings\EOS_MODIS_PrjSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.FilePrjSettings" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAACACAAAAAAAAAAACAIAAAAIAFAAAAAAAAQCI=</HashCode>
+      <FileName>PrjSettings\FilePrjSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.FY3_MERSI_PrjSettings" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAMBAAAAAAAAAAAAAAAAAAIAEAAAgABAQAAA=</HashCode>
+      <FileName>PrjSettings\FY3_MERSI_PrjSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.FY3_VIRR_PrjSettings" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAABAAAAAAAAAAAAAAAAAAIAEAAAgABAQAAA=</HashCode>
+      <FileName>PrjSettings\FY3_VIRR_PrjSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.NOAA_PrjSettings" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAQAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAgABAQAAA=</HashCode>
+      <FileName>PrjSettings\NOAA_PrjSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeoDo.FileProject.SingleFileProjector" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>SingleFileProjector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GeoDo.FileProject.OutArgs" Collapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrjSettings\FilePrjSettings.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="GeoDo.FileProject.IFileProjector" Collapsed="true">
+    <Position X="12" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAIAAAAgIAAAAAACAQAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>IFileProjector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GeoDo.FileProject.IPrjSettingsEditor" Collapsed="true">
+    <Position X="13.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PrjSettingsEditor\IPrjSettingsEditor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="宋体" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,265 @@
+﻿<Product name="城市热岛" group="环境" identify="UHI" image="system:uHIsland.png" uiprovider="GeoDo.RSS.MIF.Prds.UHI.dll:GeoDo.RSS.MIF.Prds.UHI.UITabUhi">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="计算" identify="DBLV" color="100,255,255" isdisplaypanel="true" isneedcurrentraster="true"  isuseaoitemplate="true" aoitemplates="vector:海陆模版" >
+      <Algorithms>
+        <Algorithm name="(LST)NOAA16" identify="NOAA16Algorithm" satellite="NOAA16" sensor="AVHRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+            <Band identify="MiddInfrared" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared12" wavelength="12" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="LSTZoom" description="放大倍数" datatype="double" defaultvalue="100"/>
+
+            <Argument name="defCloudy" description="缺省值(云)" datatype="UInt16" defaultvalue="9999"/>
+            <Argument name="defWater" description="缺省值(水)" datatype="UInt16" defaultvalue="9998"/>
+
+            <Argument name="A0" description="系数A0" datatype="float" defaultvalue="-1.1999" visible ="false"/>
+            <Argument name="alfa" description="系数α" datatype="float" defaultvalue="0.1315" visible ="false"/>
+            <Argument name="beta" description="系数β" datatype="float" defaultvalue="-0.5176" visible ="false"/>
+            <Argument name="gama" description="系数γ" datatype="float" defaultvalue="6.0441" visible ="false"/>
+            <Argument name="alfa2" description="系数α2" datatype="float" defaultvalue="3.7319" visible ="false"/>
+            <Argument name="beta2" description="系数β2" datatype="float" defaultvalue="11.0475" visible ="false"/>
+
+            <Argument name="b4m" description="4通道m" datatype="float" defaultvalue="0.0101" visible ="false"/>
+            <Argument name="b4n" description="4通道n" datatype="float" defaultvalue="0.9799" visible ="false"/>
+
+            <Argument name="b5m" description="5通道m" datatype="float" defaultvalue="0.0031" visible ="false"/>
+            <Argument name="b5n" description="5通道n" datatype="float" defaultvalue="0.9869" visible ="false"/>
+
+            <Argument name="b4Water" description="4通道比辐射率(水体)" datatype="float" defaultvalue="0.9905" visible ="false"/>
+            <Argument name="b5Water" description="5通道比辐射率(水体)" datatype="float" defaultvalue="0.9865" visible ="false"/>
+            <Argument name="b4Soil" description="4通道比辐射率(裸土)" datatype="float" defaultvalue="0.9559" visible ="false"/>
+            <Argument name="b5Soil" description="5通道比辐射率(裸土)" datatype="float" defaultvalue="0.9712" visible ="false"/>
+            <Argument name="b4VGT" description="4通道比辐射率(植被)" datatype="float" defaultvalue="0.99" visible ="false"/>
+            <Argument name="b5VGT" description="5通道比辐射率(植被)" datatype="float" defaultvalue="0.99" visible ="false"/>
+
+            <!--<Argument name="clmFile" description="云数据文件" datatype="byte" refdatatype="file" refidentify="CTA" reffilter="云数据文件(*.dat,*.raw)|*.dat;*.raw|所有文件(*.*)|*.*"  ismultiselect="false" defaultvalue=""/>-->
+
+            <ArgumentGroup name="云检测" description="云检测">
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+            <ArgumentGroup name="水监测" description="水监测">
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11WaterMin" description="远红外低端值" endpointtype="min" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="NDVI阈值" datatype="float" minvalue="-1" maxvalue="1">
+                <Argument name="NDVIWaterMax" description="NDVI高端值" endpointtype="max" defaultvalue="-0.2" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="(LST)NOAA18" identify="NOAA18Algorithm" satellite="NOAA18" sensor="AVHRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+            <Band identify="MiddInfrared" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared12" wavelength="12" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="LSTZoom" description="放大倍数" datatype="double" defaultvalue="100"/>
+
+            <Argument name="defCloudy" description="缺省值(云)" datatype="UInt16" defaultvalue="9999"/>
+            <Argument name="defWater" description="缺省值(水)" datatype="UInt16" defaultvalue="9998"/>
+
+            <Argument name="A0" description="系数A0" datatype="float" defaultvalue="-0.0118" visible ="false"/>
+            <Argument name="alfa" description="系数α" datatype="float" defaultvalue="0.1377" visible ="false"/>
+            <Argument name="beta" description="系数β" datatype="float" defaultvalue="-0.4659" visible ="false"/>
+            <Argument name="gama" description="系数γ" datatype="float" defaultvalue="5.7318" visible ="false"/>
+            <Argument name="alfa2" description="系数α2" datatype="float" defaultvalue="0.3840" visible ="false"/>
+            <Argument name="beta2" description="系数β2" datatype="float" defaultvalue="6.7264" visible ="false"/>
+
+            <Argument name="b4m" description="4通道m" datatype="float" defaultvalue="0.0108" visible ="false"/>
+            <Argument name="b4n" description="4通道n" datatype="float" defaultvalue="0.9792" visible ="false"/>
+
+            <Argument name="b5m" description="5通道m" datatype="float" defaultvalue="0.0028" visible ="false"/>
+            <Argument name="b5n" description="5通道n" datatype="float" defaultvalue="0.9872" visible ="false"/>
+
+            <Argument name="b4Water" description="4通道比辐射率(水体)" datatype="float" defaultvalue="0.9905" visible ="false"/>
+            <Argument name="b5Water" description="5通道比辐射率(水体)" datatype="float" defaultvalue="0.9865" visible ="false"/>
+            <Argument name="b4Soil" description="4通道比辐射率(裸土)" datatype="float" defaultvalue="0.9544" visible ="false"/>
+            <Argument name="b5Soil" description="5通道比辐射率(裸土)" datatype="float" defaultvalue="0.9719" visible ="false"/>
+            <Argument name="b4VGT" description="4通道比辐射率(植被)" datatype="float" defaultvalue="0.99" visible ="false"/>
+            <Argument name="b5VGT" description="5通道比辐射率(植被)" datatype="float" defaultvalue="0.99" visible ="false"/>
+
+            <!--<Argument name="clmFile" description="云数据文件" datatype="byte" refdatatype="file" refidentify="CTA" reffilter="云数据文件(*.dat,*.raw)|*.dat;*.raw|所有文件(*.*)|*.*"  ismultiselect="false" defaultvalue=""/>-->
+
+            <ArgumentGroup name="云检测" description="云检测">
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+            <ArgumentGroup name="水监测" description="水监测">
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11WaterMin" description="远红外低端值" endpointtype="min" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="NDVI阈值" datatype="float" minvalue="-1" maxvalue="1">
+                <Argument name="NDVIWaterMax" description="NDVI高端值" endpointtype="max" defaultvalue="-0.2" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="(LST)FY3 VIRR" identify="FY3Algorithm" satellite="FY3A,FY3B" sensor="VIRR" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+            <Band identify="MiddInfrared" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared11" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared12" wavelength="12" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="LSTZoom" description="放大倍数" datatype="double" defaultvalue="100"/>
+
+            <Argument name="defCloudy" description="缺省值(云)" datatype="UInt16" defaultvalue="9999"/>
+            <Argument name="defWater" description="缺省值(水)" datatype="UInt16" defaultvalue="9998"/>
+
+            <Argument name="A0" description="系数A0" datatype="float" defaultvalue="-0.1400" visible ="false"/>
+            <Argument name="alfa" description="系数α" datatype="float" defaultvalue="0.1197" visible ="false"/>
+            <Argument name="beta" description="系数β" datatype="float" defaultvalue="-0.4891" visible ="false"/>
+            <Argument name="gama" description="系数γ" datatype="float" defaultvalue="5.6538" visible ="false"/>
+            <Argument name="alfa2" description="系数α2" datatype="float" defaultvalue="5.6543" visible ="false"/>
+            <Argument name="beta2" description="系数β2" datatype="float" defaultvalue="12.9238" visible ="false"/>
+
+            <Argument name="b4m" description="4通道m" datatype="float" defaultvalue="0.0107" visible ="false"/>
+            <Argument name="b4n" description="4通道n" datatype="float" defaultvalue="0.9793" visible ="false"/>
+
+            <Argument name="b5m" description="5通道m" datatype="float" defaultvalue="0.0030" visible ="false"/>
+            <Argument name="b5n" description="5通道n" datatype="float" defaultvalue="0.9870" visible ="false"/>
+
+            <Argument name="b4Water" description="4通道比辐射率(水体)" datatype="float" defaultvalue="0.9905" visible ="false"/>
+            <Argument name="b5Water" description="5通道比辐射率(水体)" datatype="float" defaultvalue="0.9865" visible ="false"/>
+            <Argument name="b4Soil" description="4通道比辐射率(裸土)" datatype="float" defaultvalue="0.9545" visible ="false"/>
+            <Argument name="b5Soil" description="5通道比辐射率(裸土)" datatype="float" defaultvalue="0.9714" visible ="false"/>
+            <Argument name="b4VGT" description="4通道比辐射率(植被)" datatype="float" defaultvalue="0.99" visible ="false"/>
+            <Argument name="b5VGT" description="5通道比辐射率(植被)" datatype="float" defaultvalue="0.99" visible ="false"/>
+
+            <!--<Argument name="clmFile" description="云数据文件" datatype="byte" refdatatype="file" refidentify="CTA" reffilter="云数据文件(*.dat,*.raw)|*.dat;*.raw|所有文件(*.*)|*.*"  ismultiselect="false" defaultvalue=""/>-->
+
+            <ArgumentGroup name="云检测" description="云检测">
+              <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+                <Argument name="NearInfraredCLMMin" description="近红外低端值" endpointtype="min" defaultvalue="45"/>
+              </ArgumentPair>
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11CLMMax" description="远红外高端值" endpointtype="max" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="远红外差值" datatype="float" minvalue="0" maxvalue="150">
+                <Argument name="FarInfrared1112CLMMin" description="远红外差低端值" endpointtype="min" defaultvalue="15" />
+              </ArgumentPair>
+            </ArgumentGroup>
+            <ArgumentGroup name="水监测" description="水监测">
+              <ArgumentPair description="远红外阈值" datatype="float" minvalue="200" maxvalue="350">
+                <Argument name="FarInfrared11WaterMin" description="远红外低端值" endpointtype="min" defaultvalue="273.16" />
+              </ArgumentPair>
+              <ArgumentPair description="NDVI阈值" datatype="float" minvalue="-1" maxvalue="1">
+                <Argument name="NDVIWaterMax" description="NDVI高端值" endpointtype="max" defaultvalue="-0.2" />
+              </ArgumentPair>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="(CMA)红外" identify="CMAAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MOD,MODIS" customidentify="">
+          <Bands>
+            <Band identify="FarInfrared11" wavelength="11.3,11" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentGroup name="观测点设置" description="观测点设置">
+              <Argument name="FixedPointSetting" description="FixedPointSetting" editoruiprovider="GeoDo.RSS.MIF.Prds.UHI.dll:GeoDo.RSS.MIF.Prds.UHI.UCAverSetting"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="密度分割设置" description="密度分割设置">
+              <Argument name="DensitySetting" description="DensitySetting" editoruiprovider="GeoDo.RSS.MIF.Prds.UHI.dll:GeoDo.RSS.MIF.Prds.UHI.UCDensitySetting"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="矢量点信息" description="矢量点信息">
+              <Argument name="InfosFile" description="矢量点文件" refdatatype="file" refidentify="SPIF" reffilter="矢量点文件(*.txt)|*.txt|所有文件(*.*)|*.*"  ismultiselect="false" datatype="Int32" defaultvalue=""/>
+            </ArgumentGroup>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="255,255,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="CLMAlgorithm" satellite="FY3A,FY3B,EOST,EOS,EOSA,TERRA,AQUA,NOAA,NOAA16,NOAA17,NOAA18,NOAA19" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11.3" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="0.865,1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.67,0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>true</FarInfrared>
+                <NearVisiable>false</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,NOAA" sensor="VIRR,MERSI,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="0SDI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="城市热岛专题图"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0SDI" layoutname="城市热岛专题图"
+                  aoiprovider="SystemAOI:DefaultAOI"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="OMCS" layoutname="城市热岛原始分辨率多通道合成图" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="热岛专题图（CMA）" identify="CMAI" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="(CMA)红外" identify="CMAAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,MERSI,AVHRR,MOD,MODIS" customidentify="">
+          <Bands>
+            <Band identify="FarInfrared11" wavelength="11.3,11" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentGroup name="观测点设置" description="观测点设置">
+              <Argument name="FixedPointSetting" description="FixedPointSetting" editoruiprovider="GeoDo.RSS.MIF.Prds.UHI.dll:GeoDo.RSS.MIF.Prds.UHI.UCAverSetting"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="密度分割设置" description="密度分割设置">
+              <Argument name="DensitySetting" description="DensitySetting" editoruiprovider="GeoDo.RSS.MIF.Prds.UHI.dll:GeoDo.RSS.MIF.Prds.UHI.UCDensitySetting"/>
+            </ArgumentGroup>
+            <ArgumentGroup name="矢量点信息" description="矢量点信息" isoptional="true">
+              <Argument name="ShpFile" description="矢量点文件" editoruiprovider="GeoDo.RSS.MIF.Prds.UHI.dll:GeoDo.RSS.MIF.Prds.UHI.UCShpFileSetting" />
+            </ArgumentGroup>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="0SDI" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="热岛专题图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="0SDI" layoutname="城市热岛专题图"
+                  aoiprovider="SystemAOI:DefaultAOI" iscurrentview="true"/>
+      </Instances>
+    </SubProduct>
+  </SubProducts>
+</Product>

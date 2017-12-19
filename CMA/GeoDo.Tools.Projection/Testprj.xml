@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml identify="projectionarg">
+  <!--必填,输入文件绝对路径-->
+  <InputFilename>E:\MAS\FY3A_MERSI_GBAL_L1_20110322_0235_1000M_MS.HDF</InputFilename>
+  <!--必填,输出目录-->
+  <OutputDir>E:\TTT</OutputDir>
+  <!--必填,有效范围：[中国区域]60,150,10,70  节点数：1个或多个-->
+  <ValidEnvelopes>
+    <Envelope name="中国及周边" minx="60" maxx="150" miny="10" maxy="70"/>
+  </ValidEnvelopes>
+  <!--指定通道-->
+  <!--<Bands>3,4</Bands>-->
+  <!--指定投影标识 GLL|ABS|...-->
+  <!--<ProjectionIdentify></ProjectionIdentify>
+  -->
+  <!--指定输出文件坐标范围 节点数：0个或多个<Envelope name="HHLY" minx="" maxx="" miny="" maxy=""/> -->
+  <!--
+  <Envelopes></Envelopes>
+  -->
+  <!--指定输出文件经度方向分辨率-->
+  
+  <ResolutionX>0.01</ResolutionX>
+  
+  <!--指定输出文件纬度方向分辨率-->
+  
+  <ResolutionY>0.01</ResolutionY>
+  <IsOnlySaveMosaicFile>false</IsOnlySaveMosaicFile>
+  <!--<Mosaic>
+    <OutputDir>E:\Mosaic</OutputDir>
+    <Envelope name="CHINA" minx="60" maxx="150" miny="10" maxy="70"/>
+  </Mosaic>-->
+</xml>

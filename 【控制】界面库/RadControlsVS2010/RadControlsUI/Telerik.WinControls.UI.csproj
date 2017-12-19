@@ -1,0 +1,2643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5033417-9972-4283-9E08-94AE9134D8F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Telerik.WinControls.UI</RootNamespace>
+    <AssemblyName>Telerik.WinControls.UI</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>RadControl.snk</AssemblyOriginatorKeyFile>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Debug\Telerik.WinControls.UI.XML</DocumentationFile>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\output\</OutputPath>
+    <DefineConstants>TRACE;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>..\..\bin\Release\Telerik.WinControls.UI.XML</DocumentationFile>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|AnyCPU' ">
+    <OutputPath>..\..\bin\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20;EVALUATION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>..\..\bin\ReleaseTrial\Telerik.WinControls.UI.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x86' ">
+    <OutputPath>bin\x86\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Telerik.WinControls.UI.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseTrial|x64' ">
+    <OutputPath>bin\x64\ReleaseTrial\</OutputPath>
+    <DefineConstants>TRACE;ALLOW_UNTESTED_STRUCTS;ALLOW_UNTESTED_INTERFACES;USING_NET20</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <NoWarn>1591, 3001, 3003, 3005, 3021</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessibility\RadApplicationMenuButtonElementAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadDropDownButtonElementAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadDropDownPopupFormAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadListControlAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadListDataItemAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadButtonAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadButtonElementAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadCalendarAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadCheckBoxAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadCommandBarAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadCommandBarItemAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadDateTimePickerAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadDropDownButtonAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadDropDownListAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadDropDownMenuAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadMaskedEditBoxAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadMenuAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadMenuItemAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadPageViewAccessibilityObject.cs" />
+    <Compile Include="Accessibility\RadPageViewPageAccessibilityObject.cs" />
+    <Compile Include="Accessibility\RadRadioButtonAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadRibbonBarAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadRibbonBarItemAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadSpinEditorAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadStatusStripAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadStatusStripItemAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadTextBoxAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadTextBoxElementAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadTitleBarAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadToggleButtonAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadTreeNodeAccessibleObject.cs" />
+    <Compile Include="Accessibility\RadTreeViewAccessibleObject.cs" />
+    <Compile Include="ComboBox\ComboBoxPopupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBox\ComboListBoxElement.cs" />
+    <Compile Include="ComboBox\RadComboBoxArrowButtonElement.cs" />
+    <Compile Include="ComboBox\RadComboBoxBindingProvider.cs" />
+    <Compile Include="ControlDefault\Carousel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\Carousel.Designer.cs">
+      <DependentUpon>Carousel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\CarouselItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\CarouselItem.Designer.cs">
+      <DependentUpon>CarouselItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_DockSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_DockSplitContainer.Designer.cs">
+      <DependentUpon>ControlDefault_DockSplitContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.Designer.cs">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.Designer.cs">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.Designer.cs">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.Designer.cs">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_Wizard97View.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_Wizard97View.Designer.cs">
+      <DependentUpon>ControlDefault_RadWizard_Telerik_WinControls_UI_Wizard97View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_WizardAeroView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_WizardAeroView.Designer.cs">
+      <DependentUpon>ControlDefault_RadWizard_Telerik_WinControls_UI_WizardAeroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_OLD_RadTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_OLD_RadTreeView.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_OLD_RadTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_DesktopAlertPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_DesktopAlertPopup.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_DesktopAlertPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCommandBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCommandBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCommandBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownList.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListControl.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.Designer.cs">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_RootRadElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_RootRadElement.Designer.cs">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_RootRadElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonForm.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRibbonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenu.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadApplicationMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadButton.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCheckBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadComboBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefaultThemeComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadCheckmark.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_RadCheckmark.Designer.cs">
+      <DependentUpon>ControlDefault_RadCheckmark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_AutoHideTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_AutoHideTabStrip.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_AutoHideTabStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentContainer.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_DocumentContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentTabStrip.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_DocumentTabStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_FloatingWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_FloatingWindow.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_FloatingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_QuickNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_QuickNavigator.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_QuickNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_RadDock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_RadDock.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_RadDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_ToolTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_ToolTabStrip.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_ToolTabStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenuDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenuDropDown.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadApplicationMenuDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendarFastNavigationControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendarFastNavigationControl.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCalendarFastNavigationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDateTimePicker.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownButton.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDropDownButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownMenu.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDropDownMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadForm.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadGroupBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadLabel.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSchedulerNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSchedulerNavigator.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSchedulerNavigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSeparator.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSeparator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitContainer.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSplitContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBarBackstageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBarBackstageView.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRibbonBarBackstageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_SplitPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_SplitPanel.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_SplitPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskedEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskedEditBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadMaskedEditBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMenu.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanel.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanelBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanelBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadPanelBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadProgressBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRadioButton.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRepeatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRepeatButton.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRepeatButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRibbonBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollablePanel.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadScrollablePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadScrollBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSizablePopupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSizablePopupControl.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSizablePopupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSpinEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSpinEditor.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSpinEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitButton.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSplitButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadStatusStrip.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadStatusStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTabStrip.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTabStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTextBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTitleBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTitleBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadToggleButton.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadToggleButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListView.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPropertyGrid.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadPropertyGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskEditBox.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadMaskEditBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ExternalControlsThemeHelper.cs" />
+    <Compile Include="ControlDefault\Gallery.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\Gallery.Designer.cs">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ScrollViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ScrollViewer.Designer.cs">
+      <DependentUpon>ScrollViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ToolStrip.Designer.cs">
+      <DependentUpon>ToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTrackBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTreeView.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadWaitingBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadWaitingBar.Designer.cs">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadWaitingBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BindingProviderBase.cs" />
+    <Compile Include="Data\IBindingProvider.cs" />
+    <Compile Include="Data\IDataBoundItem.cs" />
+    <Compile Include="Data\IPropertyMappingInfo.cs" />
+    <Compile Include="Data\ListChangedEventArgs.cs" />
+    <Compile Include="Data\PositionChangedEventArgs.cs" />
+    <Compile Include="Data\PositionChangingCancelEventArgs.cs" />
+    <Compile Include="Data\PropertyMapping.cs" />
+    <Compile Include="Data\PropertyMappingInfo.cs" />
+    <Compile Include="Data\ValueChangedEventArgs.cs" />
+    <Compile Include="Docking\RadDockObject.cs" />
+    <Compile Include="DropDownButton\ActionButtonElement.cs" />
+    <Compile Include="DropDownButton\DropDownButtonMouseOverState.cs" />
+    <Compile Include="DropDownButton\RadDropDownButtonPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBox\ComboPopupForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBox\BaseComboBoxElement.cs" />
+    <Compile Include="Editors\BaseDateTimeEditor\BaseDateTimeEditor.cs" />
+    <Compile Include="Editors\BaseDateTimeEditor\BaseDateTimeEditorElement.cs" />
+    <Compile Include="Editors\BaseDropDownListEditor\BaseDropDownListEditor.cs" />
+    <Compile Include="Editors\BaseDropDownListEditor\BaseDropDownListEditorElement.cs" />
+    <Compile Include="Editors\BaseInputEditor.cs" />
+    <Compile Include="Editors\BaseSpinEditor\BaseSpinEditor.cs" />
+    <Compile Include="Editors\BaseSpinEditor\BaseSpinEditorElement.cs" />
+    <Compile Include="Editors\BaseTextBoxEditor\BaseTextBoxEditor.cs" />
+    <Compile Include="Editors\BaseTextBoxEditor\BaseTextBoxEditorElement.cs" />
+    <Compile Include="Editors\Base\EditorBaseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\Base\EditorBaseElement.cs" />
+    <Compile Include="Editors\Base\PopupManager.cs" />
+    <Compile Include="ComboBox\RadComboBoxElement.cs" />
+    <Compile Include="ComboBox\RadComboBoxItem.cs" />
+    <Compile Include="Editors\EditorElementStateManager.cs" />
+    <Compile Include="Editors\RadEditorElement.cs" />
+    <Compile Include="GenericPopup\Design\FadeAnimationTypeEditor.cs" />
+    <Compile Include="GenericPopup\PopupCloseInfo.cs" />
+    <Compile Include="GenericPopup\RadEditorPopupControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Licensing\RadEvaluationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licensing\RadEvaluationForm.Designer.cs">
+      <DependentUpon>RadEvaluationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskEditBox\MaskType.cs" />
+    <Compile Include="MaskEditBox\Providers\EMailMaskTextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\IMaskProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\CharacterProviders\IMaskCharacterProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\IPMaskTextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\KeyEventArgsWithMinMax.cs" />
+    <Compile Include="MaskEditBox\Providers\MaskDateTimeProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\MaskPart.cs" />
+    <Compile Include="MaskEditBox\Providers\NumericMaskTextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\CharacterProviders\NumericCharacterTextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\PartTypes.cs" />
+    <Compile Include="MaskEditBox\Providers\CharacterProviders\StandartCharacterMaskEditBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\RegexMaskTextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\StandartMaskTextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\Providers\TextBoxProvider.cs" />
+    <Compile Include="MaskEditBox\RadMaskEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaskEditBox\RadMaskedEditBoxElement.cs" />
+    <Compile Include="Menu\ActivateMenuItemCommand.cs" />
+    <Compile Include="Menu\ApplicationMenu\ApplicationMenuButtonStateManagerFactory.cs" />
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenuButtonElement.cs" />
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenuDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenuBottomStripLayout.cs" />
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenuContentElement.cs" />
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenuDropDownElement.cs" />
+    <Compile Include="Menu\ApplicationMenu\RadApplicationMenuDropDownMenuElement.cs" />
+    <Compile Include="Menu\RadContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\RadContextMenuDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\RadDropDownMenuElement.cs">
+    </Compile>
+    <Compile Include="Menu\RadDropDownMenuLayout.cs" />
+    <Compile Include="Menu\RadItemsPopupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\RadMenuButtonItem.cs" />
+    <Compile Include="Menu\RadMenuHeaderItem.cs">
+    </Compile>
+    <Compile Include="Menu\RadMenuHostItem.cs">
+    </Compile>
+    <Compile Include="Menu\RadMenuImageAndTextLayout.cs" />
+    <Compile Include="Menu\RadMenuItemBaseStateManagerFactory.cs" />
+    <Compile Include="Menu\RadMenuItemLayout.cs" />
+    <Compile Include="Editors\Base\EditorBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\Base\PopupEditorBaseElement.cs">
+    </Compile>
+    <Compile Include="Editors\Base\RadSizablePopupForm.cs">
+    </Compile>
+    <Compile Include="Menu\RadMenuItemPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\RadMenuRecentItem.cs">
+    </Compile>
+    <Compile Include="Menu\RadSubMenuLayoutPanel.cs" />
+    <Compile Include="GenericPopup\Enumerators.cs" />
+    <Compile Include="GenericPopup\IPopupControl.cs" />
+    <Compile Include="GenericPopup\RadPopupControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GenericPopup\RadSizablePopupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelBar\UI\RadPanelBarGroupElementStateManager.cs" />
+    <Compile Include="ProgressBar\ProgressBarTextElement.cs" />
+    <Compile Include="ProgressBar\ProgressIndicatorElement.cs" />
+    <Compile Include="ProgressBar\ProgressIndicatorStateManager.cs" />
+    <Compile Include="ProgressBar\RadProgressBarStateManager.cs" />
+    <Compile Include="ProgressBar\SeparatorsElement.cs" />
+    <Compile Include="ProgressBar\UpperProgressIndicatorElement.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyAccessors\ArrayItemAccessor.cs" />
+    <Compile Include="PropertyGrid\Data\Collections\PropertyGridGroupItemCollection.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyAccessors\IItemAccessor.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyAccessors\ImmutableItemAccessor.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyAccessors\DescriptorItemAccessor.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyAccessors\ItemAccessor.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridGroup.cs" />
+    <Compile Include="PropertyGrid\Data\Collections\PropertyGridGroupCollection.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridGroupFactory.cs" />
+    <Compile Include="PropertyGrid\Data\Collections\PropertyGridGroupItemWrappedItems.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridItem.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridItemBase.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridItemCollection.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridItemComparer.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridItemProvider.cs" />
+    <Compile Include="PropertyGrid\Data\Collections\PropertyGridFilterDescriptorCollection.cs" />
+    <Compile Include="PropertyGrid\Data\PropertyGridGroupItem.cs" />
+    <Compile Include="PropertyGrid\Editors\BaseBrowseEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\BaseBrowseEditorElement.cs" />
+    <Compile Include="PropertyGrid\Editors\BaseColorEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\BaseColorEditorColorBox.cs" />
+    <Compile Include="PropertyGrid\Editors\BaseColorEditorElement.cs" />
+    <Compile Include="PropertyGrid\Editors\DialogClosedEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\OpenFileDialogOpeningEventArgs.cs" />
+    <Compile Include="PropertyGrid\Editors\PropertyGridBrowseEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\PropertyGridColorEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\PropertyGridDateTimeEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\PropertyGridDropDownListEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\PropertyGridSpinEditor.cs" />
+    <Compile Include="PropertyGrid\Editors\PropertyGridTextBoxEditor.cs" />
+    <Compile Include="PropertyGrid\Events\CreatePropertyGridItemElementEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\CreatePropertyGridItemEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridContextMenuOpeningEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridEditorRequiredEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemEditedEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemEditingEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemEditorInitializedEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemFormattingEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemValidatingEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemValueChangedEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridItemValueChangingEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridMouseEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridSelectedObjectChangedEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridSelectedObjectChangingEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyGridVisualItemEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyValidatedEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\PropertyValidatingEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\RadPropertyGridCancelEventArgs.cs" />
+    <Compile Include="PropertyGrid\Events\RadPropertyGridEventArgs.cs" />
+    <Compile Include="PropertyGrid\Localization\PropertyGridLocalizationProvider.cs" />
+    <Compile Include="PropertyGrid\Localization\PropertyGridStringId.cs" />
+    <Compile Include="PropertyGrid\Menus\PropertyGridDefaultContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\Menus\PropertyGridMenuItem.cs" />
+    <Compile Include="PropertyGrid\SelectedObjectConverter.cs" />
+    <Compile Include="PropertyGrid\Data\Collections\PropertyGridRootItemsCollection.cs" />
+    <Compile Include="PropertyGrid\Themes\PropertyGridHeaderElementStateManager.cs" />
+    <Compile Include="PropertyGrid\Themes\PropertyGridValueButtonStateManager.cs" />
+    <Compile Include="PropertyGrid\Themes\PropertyGridValueElementStateManager.cs" />
+    <Compile Include="PropertyGrid\Themes\SearchBarTextBoxButtonStateManager.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridErrorIndicatorElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyValueButtonElement.cs" />
+    <Compile Include="PropertyGrid\UI\RadPropertyGridBeginEditModes.cs" />
+    <Compile Include="PropertyGrid\UI\ToolBar\AlphabeticalToggleButton.cs" />
+    <Compile Include="PropertyGrid\UI\ToolBar\CategorizedAlphabeticalToggleButton.cs" />
+    <Compile Include="PropertyGrid\UI\ToolBar\PropertyGridToolbarElement.cs" />
+    <Compile Include="PropertyGrid\UI\PropertyGridSplitElement.cs" />
+    <Compile Include="PropertyGrid\UI\PropertyGridElement.cs" />
+    <Compile Include="PropertyGrid\RadPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PropertyGrid\Themes\PropertyGridItemElementStateManager.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridContentElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridRowHeaderElement.cs" />
+    <Compile Include="PropertyGrid\Themes\PropertyGridExpanderElementStateManager.cs" />
+    <Compile Include="PropertyGrid\Themes\PropertyGridExpanderStateManager.cs" />
+    <Compile Include="PropertyGrid\Themes\PropertyGridItemElementBaseStateManager.cs" />
+    <Compile Include="PropertyGrid\Traversal\PropertyGridTraverser.cs" />
+    <Compile Include="PropertyGrid\Traversal\PropertyGridTraverserState.cs" />
+    <Compile Include="PropertyGrid\Traversal\PropertyGridTraversingEventArgs.cs" />
+    <Compile Include="PropertyGrid\UI\Help\PropertyGridHelpContentElement.cs" />
+    <Compile Include="PropertyGrid\UI\Help\PropertyGridHelpElement.cs" />
+    <Compile Include="PropertyGrid\UI\PropertyGridSizeGripElement.cs" />
+    <Compile Include="PropertyGrid\UI\Help\PropertyGridHelpTitleElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridExpanderElement.cs" />
+    <Compile Include="PropertyGrid\UI\Groups\PropertyGridGroupElement.cs" />
+    <Compile Include="PropertyGrid\UI\Groups\PropertyGridGroupExpanderElement.cs" />
+    <Compile Include="PropertyGrid\UI\Groups\PropertyGridGroupTextElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridIndentElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridTextElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridValueElement.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridItemElement.cs" />
+    <Compile Include="PropertyGrid\UI\PropertyGridItemElementBase.cs" />
+    <Compile Include="PropertyGrid\UI\Items\PropertyGridItemElementProvider.cs" />
+    <Compile Include="PropertyGrid\UI\PropertyGridTableElement.cs" />
+    <Compile Include="PropertyGrid\UI\ToolBar\ToolbarTextBoxButton.cs" />
+    <Compile Include="PropertyGrid\UI\ToolBar\ToolbarTextBoxElement.cs" />
+    <Compile Include="RadCalendar\Events\DatesEventArgs.cs" />
+    <Compile Include="RadCalendar\Events\DatesEventHandler.cs" />
+    <Compile Include="RadCalendar\Events\DayRenderEventArgs.cs" />
+    <Compile Include="RadCalendar\Events\DayRenderEventHandler.cs" />
+    <Compile Include="RadCalendar\Events\ViewChangingEventArgs.cs" />
+    <Compile Include="RadCalendar\Events\ViewChangingEventHandler.cs" />
+    <Compile Include="RadCalendar\Logic\CalendarDay.cs" />
+    <Compile Include="RadCalendar\Logic\CalendarDayCollection.cs" />
+    <Compile Include="RadCalendar\Logic\CalendarView.cs" />
+    <Compile Include="RadCalendar\Logic\CalendarViewCollection.cs" />
+    <Compile Include="RadCalendar\Logic\Enumerations\DayNameFormat.cs" />
+    <Compile Include="RadCalendar\Logic\Enumerations\FirstDayOfWeek.cs" />
+    <Compile Include="RadCalendar\Logic\Enumerations\MonthLayout.cs" />
+    <Compile Include="RadCalendar\Logic\Enumerations\RecurringEvents.cs" />
+    <Compile Include="RadCalendar\Logic\MonthView.cs" />
+    <Compile Include="RadCalendar\Logic\MultiMonthView.cs" />
+    <Compile Include="RadCalendar\Logic\RadDateTimeCollection.cs" />
+    <Compile Include="RadCalendar\RadCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadCalendar\RadCalendarDesignTimeData.cs" />
+    <Compile Include="RadCalendar\UI\CalendarCellElement.cs" />
+    <Compile Include="RadCalendar\UI\CalendarHeaderCellElement.cs" />
+    <Compile Include="RadCalendar\UI\CalendarMouseOverBehavior.cs" />
+    <Compile Include="RadCalendar\UI\CalendarMultiMonthViewTableElement.cs" />
+    <Compile Include="RadCalendar\UI\CalendarNavigationElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadCalendar\UI\CalendarStatusElement.cs" />
+    <Compile Include="RadCalendar\UI\CalendarTableElement.cs" />
+    <Compile Include="RadCalendar\UI\CalendarVisualElement.cs" />
+    <Compile Include="RadCalendar\UI\MonthViewElement.cs" />
+    <Compile Include="RadCalendar\UI\MultiMonthViewElement.cs" />
+    <Compile Include="RadCalendar\UI\NavigationButton.cs" />
+    <Compile Include="RadCalendar\UI\RadCalendarElement.cs" />
+    <Compile Include="RadCalendar\UI\TitleElement.cs" />
+    <Compile Include="RadCarousel\CarouselEnums.cs" />
+    <Compile Include="RadCarousel\CarouselGenericItem.cs" />
+    <Compile Include="RadCarousel\ItemEnteringEvent.cs" />
+    <Compile Include="RadCarousel\ItemLeavingEvent.cs" />
+    <Compile Include="RadCarousel\OpacityChangeConditions.cs" />
+    <Compile Include="RadCarousel\CarouselPathEditor.cs" />
+    <Compile Include="RadCarousel\CarouselPathAnimationData.cs" />
+    <Compile Include="RadCarousel\CarouselPathConverter.cs" />
+    <Compile Include="RadCarousel\RadCarouselThemeDesignerData.cs" />
+    <Compile Include="RadCarousel\CreateNewCarouselItemEvent.cs" />
+    <Compile Include="RadCarousel\CarouselEllipsePath.cs">
+    </Compile>
+    <Compile Include="RadCarousel\IPathCalculatorAnimationData.cs" />
+    <Compile Include="RadCarousel\CarouselAnimationTypes.cs" />
+    <Compile Include="RadCarousel\CarouselContentItem.cs" />
+    <Compile Include="RadCarousel\CarouselParameterPath.cs">
+    </Compile>
+    <Compile Include="RadCarousel\Point3DConverter.cs" />
+    <Compile Include="RadCarousel\Range.cs" />
+    <Compile Include="RadCarousel\RangeMapper.cs" />
+    <Compile Include="RadCarousel\ReflectionPrimitive.cs" />
+    <Compile Include="RadColorPicker\ColorDialogLocalizationProvider.cs" />
+    <Compile Include="RadColorPicker\Components\ColorListBoxElementProvider.cs" />
+    <Compile Include="RadColorPicker\Components\ColorListBoxItem.cs" />
+    <Compile Include="RadCommandBar\Collections\RadCommandBarBaseItemCollection.cs" />
+    <Compile Include="RadCommandBar\Collections\RadCommandBarLinesElementCollection.cs" />
+    <Compile Include="RadCommandBar\Collections\RadCommandBarStripElementCollection.cs" />
+    <Compile Include="RadCommandBar\CommandBarCustomizeDialogClasses.cs" />
+    <Compile Include="RadCommandBar\CommandBarCustomizeDialogProvider.cs" />
+    <Compile Include="RadCommandBar\CommandBarCustomizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadCommandBar\CommandBarFloatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadCommandBar\CommandBarFloatingForm.Designer.cs">
+      <DependentUpon>CommandBarFloatingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadCommandBar\CommandBarLocalizationProvider.cs" />
+    <Compile Include="RadCommandBar\CommandBarStringId.cs" />
+    <Compile Include="RadCommandBar\CommandBarStripInfoHolder.cs" />
+    <Compile Include="RadCommandBar\Elements\RadCommandBarDropDownMenuItem.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\OverflowButton\RadCommandBarOverflowPanelElement.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\OverflowButton\RadCommandBarOverflowPanelHostContol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadCommandBar\Items\RadCommandBarArrowButton.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarDropDownListItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarBaseItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarButtonItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarDropDownItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarHostItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarLabelItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarSeparatorItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarSplitButtonItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarTextBoxItem.cs" />
+    <Compile Include="RadCommandBar\Items\RadCommandBarToggleButtonItem.cs" />
+    <Compile Include="RadCommandBar\RadCommandBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadCommandBar\Elements\RadCommandBarElement.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\RadCommandBarGrip.cs" />
+    <Compile Include="RadCommandBar\Layouts\RadCommandBarMultilineToolstripHolderPanel.cs" />
+    <Compile Include="RadCommandBar\Layouts\RadCommandBarOverflowPanel.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\RadCommandBarStripElement.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\RadCommandBarStripPanelLayoutInfo.cs" />
+    <Compile Include="RadCommandBar\Layouts\RadCommandBarItemsPanel.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\OverflowButton\RadCommandBarOverflowButton.cs" />
+    <Compile Include="RadCommandBar\Elements\StripElement\OverflowButton\RadCommandBarOverflowMenuItem.cs" />
+    <Compile Include="RadCommandBar\Layouts\RadCommandBarToolstripsHolderFactory.cs" />
+    <Compile Include="RadCommandBar\Layouts\RadCommandBarLineElement.cs" />
+    <Compile Include="RadCommandBar\Elements\RadCommandBarVisualElement.cs" />
+    <Compile Include="RadDesktopAlert\DesktopAlertManager\DesktopAlertManager.cs" />
+    <Compile Include="RadDesktopAlert\DesktopAlertManager\DesktopAlertManagerEventArgs.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Controls\DesktopAlertPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadDesktopAlert\Implementation\Elements\AlertWindowButtonsPanel.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Elements\AlertWindowCaptionElement.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Elements\AlertWindowCaptionGrip.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Elements\AlertWindowContentElement.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Elements\AlertWindowTextAndSystemButtonsElement.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Elements\RadDesktopAlertElement.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Utils\AlertInfo.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Utils\AlertScreenPosition.cs" />
+    <Compile Include="RadDesktopAlert\Implementation\Utils\SoundToPlayEditor.cs" />
+    <Compile Include="RadDesktopAlert\RadDesktopAlert.cs">
+    </Compile>
+    <Compile Include="RadDropDownList\DropDownPopupForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadDropDownList\Elements\RadDropDownListEditableAreaElementStateManagerFactory.cs" />
+    <Compile Include="RadDropDownList\Elements\PopupEditorElement.cs" />
+    <Compile Include="RadDropDownList\Elements\RadDropDownListEditableAreaElement.cs" />
+    <Compile Include="RadDropDownList\RadDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadDropDownList\Elements\RadDropDownListElement.cs" />
+    <Compile Include="RadDropDownList\Utils\AutoCompleteAppendHelper.cs" />
+    <Compile Include="RadDropDownList\Utils\AutoCompleteSuggestHelper.cs" />
+    <Compile Include="RadDropDownList\Utils\BaseAutoComplete.cs" />
+    <Compile Include="RadDropDownList\Utils\PopupEditorNotificationData.cs" />
+    <Compile Include="RadForm\OfficeShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\Design\RadFormThemeDesignerData.cs" />
+    <Compile Include="RadForm\RadFormNew\FormRootElement.cs" />
+    <Compile Include="RadForm\RadFormNew\RadFormElementStateManager.cs" />
+    <Compile Include="RadForm\RadFormNew\RadRibbonFormMainMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RibbonFormElementStateManager.cs" />
+    <Compile Include="RadForm\RadFormNew\StructuresAndHelperClasses.cs" />
+    <Compile Include="RadForm\RadFormNew\ThemedFormBehavior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\Design\Forms\RadFormDesignerRibbonDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\Design\Forms\RadFormDesignerRibbonDialog.Designer.cs">
+      <DependentUpon>RadFormDesignerRibbonDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\Design\RadRibbonFormThemeDesignerData.cs" />
+    <Compile Include="RadForm\RadFormNew\FormBorderPrimitive.cs" />
+    <Compile Include="RadForm\RadFormNew\FormImageBorderPrimitive.cs" />
+    <Compile Include="RadForm\RadFormNew\RadFormBehavior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\FormControlBehavior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RadFormControlBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RadFormElement.cs" />
+    <Compile Include="RadForm\RadFormNew\RadFormMdiControlStripItem.cs" />
+    <Compile Include="RadForm\RadFormNew\RadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RadForm.Designer.cs">
+      <DependentUpon>RadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RadRibbonFormBehavior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RadRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm\RadFormNew\RibbonFormBorderPrimitive.cs" />
+    <Compile Include="RadForm\RadFormNew\RibbonFormElement.cs" />
+    <Compile Include="RadForm\RadFormTitleBarElement.cs" />
+    <Compile Include="RadCarousel\CarouselBezierPath.cs">
+    </Compile>
+    <Compile Include="RadCarousel\ICarouselPath.cs" />
+    <Compile Include="RadCarousel\Point3D.cs" />
+    <Compile Include="RadCarousel\RadCarousel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadCarousel\RadCarouselElement.cs">
+    </Compile>
+    <Compile Include="RadCarousel\CarouselItemsContainer.cs" />
+    <Compile Include="RadCarousel\CarouselItemsLocationBehavior.cs" />
+    <Compile Include="Editors\Base\RadPopupForm.cs">
+    </Compile>
+    <Compile Include="RadForm\RadFormTitleBarElementStateManager.cs" />
+    <Compile Include="RadListControl\Data\ListDataLayer.cs" />
+    <Compile Include="RadListControl\Grouping\ListGroup.cs" />
+    <Compile Include="RadListControl\Grouping\ListGroupCollection.cs" />
+    <Compile Include="RadListControl\Grouping\ListGroupFactory.cs" />
+    <Compile Include="RadListControl\Grouping\RadListDataGroupItem.cs" />
+    <Compile Include="RadListControl\Data\RadListDataItem.cs" />
+    <Compile Include="RadListControl\Data\RadListDataItemCollection.cs" />
+    <Compile Include="RadListControl\Data\RadListDataItemSelectedCollection.cs" />
+    <Compile Include="RadListControl\RadListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadListControl\UI\DefaultListControlStackContainer.cs" />
+    <Compile Include="RadListControl\UI\Enums.cs" />
+    <Compile Include="RadListControl\Grouping\ListGroupedItemsTraverser.cs" />
+    <Compile Include="RadListControl\UI\ListBindingCompleteEventArgs.cs" />
+    <Compile Include="RadListControl\UI\ListControlDragDropService.cs" />
+    <Compile Include="RadListControl\UI\RadListElement.cs" />
+    <Compile Include="RadListControl\UI\ListElementProvider.cs" />
+    <Compile Include="RadListControl\Grouping\RadListVisualGroupItem.cs" />
+    <Compile Include="RadListControl\UI\RadListVisualItem.cs" />
+    <Compile Include="RadListControl\UI\RadListVisualItemStateManager.cs" />
+    <Compile Include="RadListView\Data\ListViewAccessor.cs" />
+    <Compile Include="RadListView\Data\ListViewBoundAccessor.cs" />
+    <Compile Include="RadListView\Data\ListViewCheckedItemCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewColumnCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewDataItem.cs" />
+    <Compile Include="RadListView\Data\ListViewDataItemCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewDataItemGroup.cs" />
+    <Compile Include="RadListView\Data\ListViewDataItemGroupCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewDataItemStyle.cs" />
+    <Compile Include="RadListView\Data\ListViewDetailColumn.cs" />
+    <Compile Include="RadListView\Data\ListViewDetailsCache.cs" />
+    <Compile Include="RadListView\Data\ListViewFilterDescriptorCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewGroupedItemsCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewGroupFactory.cs" />
+    <Compile Include="RadListView\Data\ListViewListSource.cs" />
+    <Compile Include="RadListView\Data\ListViewSelectedItemCollection.cs" />
+    <Compile Include="RadListView\Data\ListViewSubDataItemCollection.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewCellElementCreatingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewCellFormattingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewColumnCreatingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewColumnEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemCancelEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemChangingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemCreatingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemEditedEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemEditingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemEditorInitializedEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemEditorRequiredEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemMouseEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemValidatingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemValueChangedEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewItemValueChangingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewTraversingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewVisualItemCancelEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewVisualItemCreatingEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ListViewVisualItemEventArgs.cs" />
+    <Compile Include="RadListView\EventArgs\ViewTypeChangingEventArgs.cs" />
+    <Compile Include="RadListView\RadListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadListView\RadListViewElement.cs" />
+    <Compile Include="RadListView\TypeConverters\ListViewColumnTypeConverter.cs" />
+    <Compile Include="RadListView\TypeConverters\ListViewDataItemGroupTypeConverter.cs" />
+    <Compile Include="RadListView\TypeConverters\ListViewDataItemTypeConverter.cs" />
+    <Compile Include="RadListView\UI\BaseListViewContainer.cs" />
+    <Compile Include="RadListView\UI\BaseListViewElement.cs" />
+    <Compile Include="RadListView\UI\DetailsView\ColumnResizingBehavior.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewCellElement.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewColumnContainer.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewColumnScroller.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewDataCellElement.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewDataCellElementProvider.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewDragDropService.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewElement.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewGroupVisualItem.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewHeaderCellElement.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewHeaderCellElementProvider.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailListViewVisualItem.cs" />
+    <Compile Include="RadListView\UI\DetailsView\DetailsListViewContainer.cs" />
+    <Compile Include="RadListView\UI\DetailsView\ListViewColumnTraverser.cs" />
+    <Compile Include="RadListView\UI\Editors\ListViewDateTimeEditor.cs" />
+    <Compile Include="RadListView\UI\Editors\ListViewDropDownListEditor.cs" />
+    <Compile Include="RadListView\UI\Editors\ListViewSpinEditor.cs" />
+    <Compile Include="RadListView\UI\Editors\ListViewTextBoxEditor.cs" />
+    <Compile Include="RadListView\UI\IconsView\IconListViewContainer.cs" />
+    <Compile Include="RadListView\UI\IconsView\IconListViewElement.cs" />
+    <Compile Include="RadListView\UI\IconsView\IconListViewGroupVisualItem.cs" />
+    <Compile Include="RadListView\UI\IconsView\IconListViewScroller.cs" />
+    <Compile Include="RadListView\UI\IconsView\IconListViewVisualItem.cs" />
+    <Compile Include="RadListView\UI\ListViewTraverser.cs" />
+    <Compile Include="RadListView\UI\ListViewType.cs" />
+    <Compile Include="RadListView\UI\ListViewVirtualizedElementProvider.cs" />
+    <Compile Include="RadListView\UI\SimpleListView\SimpleListViewContainer.cs" />
+    <Compile Include="RadListView\UI\SimpleListView\SimpleListViewElement.cs" />
+    <Compile Include="RadListView\UI\SimpleListView\SimpleListViewGroupVisualItem.cs" />
+    <Compile Include="RadListView\UI\SimpleListView\SimpleListViewVisualItem.cs" />
+    <Compile Include="RadListView\UI\StateManagement\ListViewCellStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagement\ListViewDataCellStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagement\ListViewGroupVisualItemStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagement\ListViewVisualItemStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagerFactories\ListViewCellStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagerFactories\ListViewDataCellStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagerFactories\ListViewGroupVisualItemStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\StateManagerFactories\ListViewVisualItemStateManagerFactory.cs" />
+    <Compile Include="RadListView\UI\VisualItems\BaseListViewGroupVisualItem.cs" />
+    <Compile Include="RadListView\UI\VisualItems\BaseListViewVisualItem.cs" />
+    <Compile Include="RadListView\UI\VisualItems\ListViewItemCheckbox.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewExpandedChangedEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewItemsChangedEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewItemSelectedEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewItemSelectingEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewMenuDisplayingEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewModeChangingEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewModeEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewItemCreatingEventArgs.cs" />
+    <Compile Include="RadPageView\RadPageViewLocalizationProvider.cs" />
+    <Compile Include="RadPageView\Views\Backstage\RadPageViewBackstageElement.cs" />
+    <Compile Include="RadPageView\Views\Backstage\RadPageViewItemPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadPageView\Views\Backstage\RadPageViewStripGroupItem.cs" />
+    <Compile Include="RadPageView\Views\ContentAreaLayoutInfo.cs" />
+    <Compile Include="RadPageView\Views\ExplorerBar\ExplorerBarContentSizeMode.cs" />
+    <Compile Include="RadPageView\Views\ExplorerBar\ExplorerBarItemSizeInfo.cs" />
+    <Compile Include="RadPageView\Views\ExplorerBar\ExplorerBarLayoutInfo.cs" />
+    <Compile Include="RadPageView\Views\ExplorerBar\RadPageViewExplorerBarElement.cs" />
+    <Compile Include="RadPageView\Views\ExplorerBar\RadPageViewExplorerBarItem.cs" />
+    <Compile Include="RadPageView\Views\Outlook\Events.cs" />
+    <Compile Include="RadPageView\Views\Outlook\OutlookViewOverflowGrip.cs" />
+    <Compile Include="RadPageView\Views\Outlook\OverflowAssociatedButtonStateManager.cs" />
+    <Compile Include="RadPageView\Views\Outlook\OverflowButtonStateManager.cs" />
+    <Compile Include="RadPageView\Views\Outlook\OverflowItemsContainer.cs" />
+    <Compile Include="RadPageView\Views\Outlook\RadPageViewOutlookAssociatedButton.cs" />
+    <Compile Include="RadPageView\Views\Outlook\RadPageViewOutlookElement.cs" />
+    <Compile Include="RadPageView\Views\Outlook\RadPageViewOutlookItem.cs" />
+    <Compile Include="RadPageView\Views\Outlook\RadPageViewOutlookOverflowButton.cs" />
+    <Compile Include="RadPageView\Views\PageViewItemButtonsAlignment.cs" />
+    <Compile Include="RadPageView\Views\PageViewItemDragDropMode.cs" />
+    <Compile Include="RadPageView\Views\PageViewItemSizeInfo.cs" />
+    <Compile Include="RadPageView\Views\PageViewLayoutInfo.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewButtonElement.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewDragDropService.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewButtonsPanel.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewInDockDragDropService.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewItemButtonsPanel.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewLabelElement.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewReadonlyCollection.cs" />
+    <Compile Include="RadPageView\Views\Stack\RadPageViewStackElement.cs" />
+    <Compile Include="RadPageView\Views\Stack\RadPageViewStackItem.cs" />
+    <Compile Include="RadPageView\Views\Stack\StackViewElementStateManager.cs" />
+    <Compile Include="RadPageView\Views\Stack\StackViewItemSelectionMode.cs" />
+    <Compile Include="RadPageView\Views\Stack\StackViewLayoutInfo.cs" />
+    <Compile Include="RadPageView\Views\Stack\StackViewPosition.cs" />
+    <Compile Include="RadPageView\Views\Strip\RadPageViewStripNewItem.cs" />
+    <Compile Include="RadPageView\Views\Strip\StripViewElementStateManager.cs" />
+    <Compile Include="RadPageView\Views\Strip\StripViewNewItemVisibility.cs" />
+    <Compile Include="RadSeparator\RadSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadSeparator\SeparatorElement.cs" />
+    <Compile Include="RadWizard\CommandArea\Wizard97CommandArea.cs" />
+    <Compile Include="RadWizard\CommandArea\WizardCommandArea.cs" />
+    <Compile Include="RadWizard\CommandArea\BaseWizardElementStateManagerFactory.cs" />
+    <Compile Include="RadWizard\CommandArea\WizardCommandAreaButtonElement.cs" />
+    <Compile Include="RadWizard\Elements\WizardAeroButtonElement.cs" />
+    <Compile Include="RadWizard\Elements\WizardAeroTopElement.cs" />
+    <Compile Include="RadWizard\Elements\BaseWizardElement.cs" />
+    <Compile Include="RadWizard\Elements\WizardPageHeaderElement.cs" />
+    <Compile Include="RadWizard\Elements\WizardTextElement.cs" />
+    <Compile Include="RadWizard\Events\ModeChangedEventArgs.cs" />
+    <Compile Include="RadWizard\Events\ModeChangingEventArgs.cs" />
+    <Compile Include="RadWizard\Events\WizardCancelEventArgs.cs" />
+    <Compile Include="RadWizard\Events\SelectedPageChangedEventArgs.cs" />
+    <Compile Include="RadWizard\Events\SelectedPageChangingEventArgs.cs" />
+    <Compile Include="RadWizard\Localization\RadWizardLocalizationProvider.cs" />
+    <Compile Include="RadWizard\Localization\RadWizardStringId.cs" />
+    <Compile Include="RadWizard\Pages\WizardCompletionPage.cs" />
+    <Compile Include="RadWizard\Pages\WizardPage.cs" />
+    <Compile Include="RadWizard\Pages\WizardPageCollection.cs" />
+    <Compile Include="RadWizard\Pages\WizardWelcomePage.cs" />
+    <Compile Include="RadWizard\RadWizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadWizard\RadWizardElement.cs" />
+    <Compile Include="RadWizard\Views\Wizard97View.cs" />
+    <Compile Include="RadWizard\Views\WizardAeroView.cs" />
+    <Compile Include="RadWizard\Views\WizardView.cs" />
+    <Compile Include="RadWizard\WizardMode.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageButtonItem.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageContentPanelElement.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageVisualElement.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageItemEventArgs.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageItemsPanelElement.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageViewPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\BackstageView\BackstageTabItem.cs" />
+    <Compile Include="RibbonBar\BackstageView\RadRibbonBarBackstageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\BackstageView\BackstageViewElement.cs" />
+    <Compile Include="RibbonBar\BackstageView\BackstageItemStateManagerFactory.cs" />
+    <Compile Include="ScrollBars\ScrollService.cs" />
+    <Compile Include="ScrollBars\ScrollServiceBehavior.cs" />
+    <Compile Include="SplitContainer\PageViewInstanceCreatedEventArgs.cs" />
+    <Compile Include="SplitContainer\RadPageViewTabStripElement.cs" />
+    <Compile Include="SplitContainer\SplitContainerElementStateManager.cs" />
+    <Compile Include="RadSplitter\SplitterManager.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewIndexChangedEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewCancelEventArgs.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewIndexChangingEventArgs.cs" />
+    <Compile Include="RadPageView\RadPageView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadPageView\RadPageViewControlCollection.cs">
+    </Compile>
+    <Compile Include="RadPageView\RadPageViewObject.cs" />
+    <Compile Include="RadPageView\RadPageViewPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadPageView\RadPageViewPageCollection.cs" />
+    <Compile Include="RadPageView\Events\RadPageViewEventArgs.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewContentAreaElement.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewContentElement.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewElementBase.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewItem.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewItemStateManager.cs" />
+    <Compile Include="RadPageView\Views\RadPageViewButtonElementStateManager.cs" />
+    <Compile Include="RadPageView\Views\Strip\Layout\StripViewButtonsPanel.cs" />
+    <Compile Include="RadPageView\Views\Strip\Layout\StripViewItemExpandStrategy.cs" />
+    <Compile Include="RadPageView\Views\Strip\Layout\StripViewItemShrinkStrategy.cs" />
+    <Compile Include="RadPageView\Views\Strip\Layout\StripViewLayoutInfo.cs" />
+    <Compile Include="RadPageView\Views\Strip\Layout\StripViewItemContainer.cs" />
+    <Compile Include="RadPageView\Views\Strip\RadPageViewStripButtonElement.cs" />
+    <Compile Include="RadPageView\Views\Strip\RadPageViewStripItem.cs" />
+    <Compile Include="RadPageView\Views\Strip\Layout\StripViewItemLayout.cs" />
+    <Compile Include="RadPageView\Views\Strip\RadPageViewStripElement.cs">
+    </Compile>
+    <Compile Include="RadPageView\Views\RadPageViewElement.cs" />
+    <Compile Include="RadPageView\Views\Strip\StripViewAlignment.cs" />
+    <Compile Include="RadPageView\Views\Strip\StripViewItemAlignment.cs" />
+    <Compile Include="RadPageView\Views\Strip\StripViewItemFitMode.cs" />
+    <Compile Include="RadPageView\Views\Strip\StripViewButtons.cs" />
+    <Compile Include="RadPageView\Views\PageViewItemSizeMode.cs" />
+    <Compile Include="RadPageView\Views\PageViewContentOrientation.cs" />
+    <Compile Include="RadPageView\Views\PageViewMode.cs" />
+    <Compile Include="RibbonBar\ItemInButtonGroupStateManager.cs" />
+    <Compile Include="RibbonBar\CollapsableButtonAdapter.cs" />
+    <Compile Include="RibbonBar\CollapsibleAdapterFactory.cs" />
+    <Compile Include="RibbonBar\CollapsibleElement.cs" />
+    <Compile Include="RibbonBar\CommandTabsEditor.cs" />
+    <Compile Include="RibbonBar\CommandTabsUITypeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\CommandTabsUITypeEditorForm.Designer.cs">
+      <DependentUpon>CommandTabsUITypeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonBar\ContextulTabGroupsUITypeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\ContextulTabGroupsUITypeEditorForm.Designer.cs">
+      <DependentUpon>ContextulTabGroupsUITypeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonBar\ExpandableStackLayout.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarElementStateManager.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarGroupDropDownButtonElement.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarGroupDropDownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\RibbonBarCaptionFillPrimitive.cs" />
+    <Compile Include="RibbonBar\RibbonBarGroupSeparator.cs" />
+    <Compile Include="RibbonBar\RibbonBarPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\RibbonBarSystemButtonStateManager.cs" />
+    <Compile Include="RibbonBar\RibbonTab.cs" />
+    <Compile Include="RibbonBar\RibbonTabStripElement.cs" />
+    <Compile Include="ScrollBars\GradientAngleBehavior.cs" />
+    <Compile Include="ScrollBars\ScrollBarButtonStateManager.cs" />
+    <Compile Include="ScrollBars\ScrollBarThumbStateManager.cs" />
+    <Compile Include="ScrollBars\ScrollButtonDirection.cs" />
+    <Compile Include="ScrollBars\ScrollType.cs" />
+    <Compile Include="SplitContainer\Enumerations.cs" />
+    <Compile Include="SplitContainer\RadSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitContainer\SplitContainerElement.cs" />
+    <Compile Include="SplitContainer\SplitContainerLayoutInfo.cs" />
+    <Compile Include="SplitContainer\SplitContainerLayoutStrategy.cs" />
+    <Compile Include="SplitContainer\SplitPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitContainer\SplitPanelCollection.cs" />
+    <Compile Include="SplitContainer\SplitPanelElement.cs" />
+    <Compile Include="SplitContainer\SplitPanelEventArgs.cs" />
+    <Compile Include="SplitContainer\SplitPanelSizeInfo.cs" />
+    <Compile Include="SplitContainer\SplitterCollection.cs" />
+    <Compile Include="SplitContainer\TabPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitContainer\TabPanelCollection.cs" />
+    <Compile Include="SplitContainer\TabStripItem.cs" />
+    <Compile Include="SplitContainer\TabStripPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitContainer\TabStripPanelCancelEventArgs.cs" />
+    <Compile Include="SplitContainer\TabStripPanelEventArgs.cs" />
+    <Compile Include="SplitContainer\TabStripPanelSelectedIndexChangingEventArgs.cs" />
+    <Compile Include="TabStrip\TabStripElementStateManager.cs" />
+    <Compile Include="TitleBar\RadTitleBarElementStateManager.cs" />
+    <Compile Include="TitleBar\TitleBarButtonStateManager.cs" />
+    <Compile Include="TreeView\Data\BindingProvider.cs" />
+    <Compile Include="TreeView\Data\CheckedTreeNodeCollection.cs" />
+    <Compile Include="TreeView\Data\CheckedTreeNodeEnumerator.cs" />
+    <Compile Include="TreeView\Data\ObjectRelationalProvider.cs" />
+    <Compile Include="TreeView\Data\RelationBinding.cs" />
+    <Compile Include="TreeView\Data\RelationBindingCollection.cs" />
+    <Compile Include="TreeView\Data\SelectedTreeNodeCollection.cs" />
+    <Compile Include="TreeView\Data\TreeNodeCollection.cs" />
+    <Compile Include="TreeView\Data\TreeNodeComparer.cs" />
+    <Compile Include="TreeView\Data\TreeNodeDataView.cs" />
+    <Compile Include="TreeView\Data\TreeNodeDescriptor.cs" />
+    <Compile Include="TreeView\Data\TreeNodeProvider.cs" />
+    <Compile Include="TreeView\Data\TreeViewFilterDescriptorCollection.cs" />
+    <Compile Include="TreeView\Data\VisualNodeList.cs" />
+    <Compile Include="TreeView\Enums.cs" />
+    <Compile Include="TreeView\Events\RadTreeViewNodeElementEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeDataErrorEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeEditedEventArgs.cs" />
+    <Compile Include="TreeView\Events\CreateTreeNodeEventArgs.cs" />
+    <Compile Include="TreeView\Events\CreateTreeNodeElementEventArgs.cs" />
+    <Compile Include="TreeView\Events\NodesNeededEventArgs.cs" />
+    <Compile Include="TreeView\Events\RadTreeViewCancelEventArgs.cs" />
+    <Compile Include="TreeView\Events\RadTreeViewEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeEditorRequiredEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeFormattingEventArgs.cs" />
+    <Compile Include="TreeView\Events\RadTreeVewMouseEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeEditingEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeEditorInitializedEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeValidatingEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeValueChangedEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeNodeValueChangingEventArgs.cs" />
+    <Compile Include="TreeView\Events\TreeViewContextMenuOpeningEventArgs.cs" />
+    <Compile Include="TreeView\Legacy\Commands.cs" />
+    <Compile Include="TreeView\Legacy\RadBreadCrumb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\Legacy\RadBreadCrumbElement.cs" />
+    <Compile Include="TreeView\Legacy\RadTreeViewDragCancelEventArgs.cs" />
+    <Compile Include="TreeView\Legacy\RadTreeViewDragEventArgs.cs" />
+    <Compile Include="TreeView\Localization\TreeViewLocalizationProvider.cs" />
+    <Compile Include="TreeView\Localization\TreeViewStringId.cs" />
+    <Compile Include="TreeView\RadTreeNode.cs" />
+    <Compile Include="TreeView\RadTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\Serialize\IXmlTreeSerializable.cs" />
+    <Compile Include="TreeView\Serialize\XmlTreeSerializer.cs" />
+    <Compile Include="TreeView\Serialize\XmlTreeNode.cs" />
+    <Compile Include="TreeView\Serialize\XmlTreeView.cs" />
+    <Compile Include="TreeView\Themes\ExpanderElementStateManager.cs" />
+    <Compile Include="TreeView\Themes\TreeExpanderStateManager.cs" />
+    <Compile Include="TreeView\Themes\TreeNodeContentElementStateManager.cs" />
+    <Compile Include="TreeView\Themes\TreeNodeElementStateManager.cs" />
+    <Compile Include="TreeView\Themes\TreeNodeExpanderItemStateManager.cs" />
+    <Compile Include="TreeView\Themes\TreeNodeImageElementStateManager.cs" />
+    <Compile Include="TreeView\Themes\TreeViewElementStateManager.cs" />
+    <Compile Include="TreeView\UI\DragDrop\TreeViewDragDropService.cs" />
+    <Compile Include="TreeView\UI\Editors\DateTimeEditor\TreeViewDateTimeEditor.cs" />
+    <Compile Include="TreeView\UI\Editors\DropDownList\TreeViewDropDownListEditor.cs" />
+    <Compile Include="TreeView\UI\Editors\SpinEditor\TreeViewSpinEditor.cs" />
+    <Compile Include="TreeView\UI\Editors\TextBox\TreeViewTextBoxEditor.cs" />
+    <Compile Include="TreeView\UI\Menus\TreeViewMenuItem.cs" />
+    <Compile Include="TreeView\UI\Traversal\TreeViewEnumerator.cs" />
+    <Compile Include="TreeView\UI\Traversal\TreeViewTraversingEventArgs.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeCheckBoxElement.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\RadTreeViewVirtualizedContainer.cs" />
+    <Compile Include="TreeView\UI\TreeNodeStyle.cs" />
+    <Compile Include="TreeView\UI\Menus\TreeViewDefaultContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeContentElement.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeExpanderElement.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeImageElement.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeLineElement.cs" />
+    <Compile Include="TreeView\UI\TreeNodeEditor.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeElement.cs" />
+    <Compile Include="TreeView\UI\RadTreeViewElement.cs" />
+    <Compile Include="TreeView\UI\TreeViewElementProvider.cs" />
+    <Compile Include="TreeView\UI\TreeViewElement\TreeNodeLinesContainer.cs" />
+    <Compile Include="TreeView\UI\Traversal\TreeViewTraverser.cs" />
+    <Compile Include="TreeView\UI\TreeViewVisual.cs" />
+    <Compile Include="TreeView\UI\VisualEffects\TreeAnimatedPropertySetting.cs" />
+    <Compile Include="TreeView\UI\VisualEffects\TreeExpandAnimation.cs" />
+    <Compile Include="TreeView\UI\VisualEffects\TreeExpandAnimationOpacity.cs" />
+    <Compile Include="UIElements\Buttons\ButtonItemStateManager.cs" />
+    <Compile Include="RadCalendar\UI\CalendarCellStateManager.cs" />
+    <Compile Include="DropDownButton\DropDownButtonStateManagerFatory.cs" />
+    <Compile Include="TabStrip\TabItemStateManager.cs" />
+    <Compile Include="UIElements\Buttons\RadButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadCheckmarkStateManager.cs" />
+    <Compile Include="UIElements\Buttons\ToggleButtonStateManager.cs" />
+    <Compile Include="RadSplitter\RadSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadSplitter\SplitterElement.cs" />
+    <Compile Include="ToolStrip\LocalizationProvider\LocalizationStrings.cs" />
+    <Compile Include="ToolStrip\LocalizationProvider\RadToolStripLocalizationProvider.cs" />
+    <Compile Include="TabStrip\TabStripShrinkInfo.cs" />
+    <Compile Include="UIElements\ExpanderItem.cs" />
+    <Compile Include="UIElements\ExpanderItemStateManager.cs" />
+    <Compile Include="UIElements\Gallery\GalleryItemHoverEventArgs.cs" />
+    <Compile Include="UIElements\Gallery\GalleryItemStateManager.cs" />
+    <Compile Include="UIElements\Gallery\GalleryMouseOverBehavior.cs" />
+    <Compile Include="UIElements\Gallery\RadGalleryDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\GroupBox\GroupBoxContent.cs" />
+    <Compile Include="UIElements\GroupBox\GroupBoxFooter.cs" />
+    <Compile Include="UIElements\GroupBox\GroupBoxHeader.cs" />
+    <Compile Include="UIElements\GroupBox\GroupBoxVisualElement.cs" />
+    <Compile Include="UIElements\GroupBox\HeaderAlignment.cs" />
+    <Compile Include="UIElements\GroupBox\HeaderPosition.cs" />
+    <Compile Include="UIElements\GroupBox\RadGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\GroupBox\RadGroupBoxElement.cs" />
+    <Compile Include="UIElements\GroupBox\GroupBoxVisualElementStateManagerFactory.cs" />
+    <Compile Include="UIElements\GroupBox\RadGroupBoxStyles.cs" />
+    <Compile Include="UIElements\GroupBox\RadGroupBoxThemeDesignerData.cs" />
+    <Compile Include="UIElements\Label\RadLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\LightVisualElementLayout\LayoutManagerPart.cs" />
+    <Compile Include="UIElements\LightVisualElementLayout\GridElementPart.cs" />
+    <Compile Include="UIElements\LightVisualElementLayout\GridImagePart.cs" />
+    <Compile Include="UIElements\LightVisualElementLayout\TextPart.cs" />
+    <Compile Include="UIElements\LightVisualElementLayout\IGridCellLayoutPart.cs" />
+    <Compile Include="UIElements\ListBox\Data\RadListBoxBindingProvider.cs" />
+    <Compile Include="UIElements\ListBox\Data\RadListBoxItemOwnerCollection.cs" />
+    <Compile Include="UIElements\ListBox\Data\RadListBoxItemPropertyMappingInfo.cs" />
+    <Compile Include="UIElements\ListBox\ItemDataBindingEventArgs.cs" />
+    <Compile Include="UIElements\ListBox\ItemDataBoundEventArgs.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxItemDesignTimeIndexComparer.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxItemDesignTimeTextComparer.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxItemIndexComparer.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxItemTextComparer.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxSelectionChangeEventArgs.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxStateManager.cs" />
+    <Compile Include="UIElements\ListBox\SelectedIndexChangedEventArgs.cs" />
+    <Compile Include="ComboBox\SizeGripElement.cs" />
+    <Compile Include="ComboBox\SizeGripItem.cs" />
+    <Compile Include="Design\FormatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Design\FormatStringDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\FormatStringEditor.cs" />
+    <Compile Include="Editors\EditorRequiredEventArgs.cs" />
+    <Compile Include="Editors\EditorSupportedType.cs" />
+    <Compile Include="Editors\EditorVisualMode.cs" />
+    <Compile Include="Editors\IEditorHandler.cs" />
+    <Compile Include="Editors\IEditorManager.cs" />
+    <Compile Include="Editors\IEditorProvider.cs" />
+    <Compile Include="Editors\IInputEditor.cs" />
+    <Compile Include="Editors\IInputElement.cs" />
+    <Compile Include="Editors\IValueEditor.cs" />
+    <Compile Include="Layouts\RadStackViewport.cs" />
+    <Compile Include="PanelBar\Designers\RadPanelBarDesignData.cs" />
+    <Compile Include="PanelBar\EventArguments\PanelBarGroupCancelEventArgs.cs" />
+    <Compile Include="PanelBar\EventArguments\PanelBarGroupCancelEventHandler.cs" />
+    <Compile Include="PanelBar\EventArguments\PanelBarGroupEventArgs.cs" />
+    <Compile Include="PanelBar\EventArguments\PanelBarGroupEventHandler.cs" />
+    <Compile Include="PanelBar\ExplorerBarStyle\ExplorerBarLayout.cs" />
+    <Compile Include="PanelBar\ExplorerBarStyle\ExplorerBarStyle.cs" />
+    <Compile Include="PanelBar\ListBarStyle\ListBarLayout.cs" />
+    <Compile Include="PanelBar\ListBarStyle\ListBarStyle.cs" />
+    <Compile Include="PanelBar\OutLookStyle\ItemsControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelBar\OutLookStyle\OutLookStyle.cs" />
+    <Compile Include="PanelBar\OutLookStyle\OutLookStyleLayout.cs" />
+    <Compile Include="PanelBar\OutLookStyle\OverFlowAssociatedButton.cs" />
+    <Compile Include="PanelBar\OutLookStyle\radNavigationPaneOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelBar\OutLookStyle\radNavigationPaneOptions.designer.cs">
+      <DependentUpon>radNavigationPaneOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelBar\OutLookStyle\RadPanelBarOverFlow.cs" />
+    <Compile Include="PanelBar\PanelBarBaseLayout.cs" />
+    <Compile Include="PanelBar\PanelBarStyleBase.cs" />
+    <Compile Include="PanelBar\RadPanelBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelBar\UI\RadPanelBarCaptionButton.cs" />
+    <Compile Include="PanelBar\UI\RadPanelBarElement.cs" />
+    <Compile Include="PanelBar\UI\RadPanelBarGroupElement.cs">
+    </Compile>
+    <Compile Include="PanelBar\UI\RadPanelBarVisualElement.cs" />
+    <Compile Include="PanelBar\VS2005Style\VS2005Style.cs" />
+    <Compile Include="PanelBar\VS2005Style\VS2005StyleLayout.cs" />
+    <Compile Include="Layouts\RadVirtualizedStackViewport.cs" />
+    <Compile Include="RadColorPicker\Components\CaptureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\CaptureBox.Designer.cs">
+      <DependentUpon>CaptureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ColorListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ColorPalette.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ColorPalette.Designer.cs">
+      <DependentUpon>ColorPalette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ColorProvider.cs" />
+    <Compile Include="RadColorPicker\Components\ColorServices.cs" />
+    <Compile Include="RadColorPicker\Components\ColorWheel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ColorWheel.Designer.cs">
+      <DependentUpon>ColorWheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\DiscreteColorHexagon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ProffesionalColors2DBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ProffesionalColors2DBox.Designer.cs">
+      <DependentUpon>ProffesionalColors2DBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ProffesionalColorsSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ProffesionalColorsSlider.Designer.cs">
+      <DependentUpon>ProffesionalColorsSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\RadarColors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\RadarColors.Designer.cs">
+      <DependentUpon>RadarColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ProffesionalColors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\ProffesionalColors.Designer.cs">
+      <DependentUpon>ProffesionalColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\RadColorSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\RadColorSelector.Designer.cs">
+      <DependentUpon>RadColorSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\CustomColors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\CustomColors.Designer.cs">
+      <DependentUpon>CustomColors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RadColorPicker\Components\TransparentColorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadDateTimePicker\RadDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadDateTimePicker\RadDateTimePickerBehaviorDirector.cs" />
+    <Compile Include="RadDateTimePicker\RadDateTimePickerCalendar.cs" />
+    <Compile Include="RadDateTimePicker\RadDateTimePickerDesignTimeDate.cs" />
+    <Compile Include="RadDateTimePicker\RadDateTimePickerDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadDateTimePicker\RadDateTimePickerElement.cs" />
+    <Compile Include="RadDateTimePicker\RadDateTimePickerSpinEdit.cs" />
+    <Compile Include="RadRotator\EventArgsAndDelegates.cs" />
+    <Compile Include="RadRotator\RadRotator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadRotator\RadRotatorElement.cs" />
+    <Compile Include="RadRotator\RadItemsContainer.cs" />
+    <Compile Include="RadRotator\RadRotatorItem.cs" />
+    <Compile Include="RadScreenTip\RadOffice2007ScreenTipDesignTimeData.cs" />
+    <Compile Include="TabStrip\TabCancelEventArgs.cs" />
+    <Compile Include="TabStrip\TabDragCancelEventArgs.cs" />
+    <Compile Include="TabStrip\TabDragCancelEventHandler.cs" />
+    <Compile Include="TabStrip\TabDragEventArgs.cs" />
+    <Compile Include="TabStrip\TabDragEventHandler.cs" />
+    <Compile Include="TabStrip\TabStripEditManager.cs" />
+    <Compile Include="TabStrip\TabStripTextEditor.cs" />
+    <Compile Include="Editors\ValidationErrorEventArgs.cs" />
+    <Compile Include="Editors\ValidationErrorEventHandler.cs" />
+    <Compile Include="Editors\ValueChangingEventArgs.cs" />
+    <Compile Include="Editors\ValueChangingEventHandler.cs" />
+    <Compile Include="Menu\RadContextMenuManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DropDownButton\RadSplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DropDownButton\RadSplitButtonElement.cs" />
+    <Compile Include="Layouts\ComboBoxEditorLayoutPanel.cs" />
+    <Compile Include="Menu\BackGroundLayout.cs" />
+    <Compile Include="Menu\IDropDownMenuOwner.cs" />
+    <Compile Include="Menu\ISiteProvider.cs" />
+    <Compile Include="Menu\RadDropDownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\RadMenuCheckmark.cs" />
+    <Compile Include="Menu\RadMenuComboItem.cs">
+    </Compile>
+    <Compile Include="Menu\RadMenuContentItem.cs" />
+    <Compile Include="Menu\RadMenuItemBase.cs" />
+    <Compile Include="Layouts\IRadScrollViewport.cs" />
+    <Compile Include="Layouts\RadCanvasViewport.cs" />
+    <Compile Include="Layouts\RadStripViewport.cs" />
+    <Compile Include="Layouts\ScrollPanelEvents.cs" />
+    <Compile Include="Layouts\ScrollPanelParameters.cs" />
+    <Compile Include="Menu\RadMenuElement.cs" />
+    <Compile Include="Menu\RadMenuItem.cs" />
+    <Compile Include="Menu\RadModalFilter.cs" />
+    <Compile Include="Menu\RadPopupEvents.cs" />
+    <Compile Include="Menu\RadPopupHelper.cs" />
+    <Compile Include="Multimedia\MediaTypes.cs" />
+    <Compile Include="Multimedia\RadPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Multimedia\RadPlayerEvents.cs">
+    </Compile>
+    <Compile Include="ProgressBar\RadProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressBar\RadProgressBarElement.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RadScreenTip\RadOffice2007ScreenTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadScreenTip\RadOffice2007ScreenTipElement.cs" />
+    <Compile Include="RibbonBar\CommandTabEventHandler.cs" />
+    <Compile Include="RibbonBar\ContextualTabGroup.cs" />
+    <Compile Include="RibbonBar\ContextualTabGroupCollection.cs" />
+    <Compile Include="RibbonBar\ContextualTabGroupsEditor.cs" />
+    <Compile Include="RibbonBar\ExpandCollapseCommand.cs" />
+    <Compile Include="RibbonBar\RadMDIControls.cs" />
+    <Compile Include="RibbonBar\RadQuickAccessToolBar.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarCaption.cs">
+    </Compile>
+    <Compile Include="RibbonBar\RadRibbonBarLocalizationSettings.cs" />
+    <Compile Include="RibbonBar\RibbonBarCaptionLayoutPanel.cs" />
+    <Compile Include="ScrollBars\RadScrollBarDesignTimeData.cs" />
+    <Compile Include="ScrollBars\RadVScrollBarDesignTimeData.cs" />
+    <Compile Include="ScrollBars\ScrollBarParameters.cs" />
+    <Compile Include="ShapedForm\ShapedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShapedForm\ShapedForm.Designer.cs">
+      <DependentUpon>ShapedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabStrip\ItemsOverflowDropDown.cs" />
+    <Compile Include="TabStrip\PositionPointer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabStrip\RadRepeatScrollButtonElement.cs" />
+    <Compile Include="TabStrip\RadTabStripContentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabStrip\TabIEShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabStrip\TabStripDragDropBuilder.cs" />
+    <Compile Include="TabStrip\TabStripElementScrolling.cs" />
+    <Compile Include="TitleBar\RadTitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TitleBar\RadTitleBarElement.cs" />
+    <Compile Include="TitleBar\RadTitleBarStyleBuilderData.cs" />
+    <Compile Include="ToolStrip\FloatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\FloatingForm.Designer.cs">
+      <DependentUpon>FloatingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStrip\RadToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\RadToolStripDockSite.cs" />
+    <Compile Include="ToolStrip\ToolStripChangedEventArgs.cs" />
+    <Compile Include="ToolStrip\Design-time\RadToolStripDesignTimeData.cs" />
+    <Compile Include="ToolStrip\ToolStripDragEventArgs.cs" />
+    <Compile Include="ToolStrip\RadToolStripGripElement.cs" />
+    <Compile Include="ToolStrip\RadToolStripItem.cs" />
+    <Compile Include="ToolStrip\RadToolStripElement.cs" />
+    <Compile Include="ToolStrip\RadToolStripLabelElement.cs" />
+    <Compile Include="ToolStrip\RadToolStripManager.cs" />
+    <Compile Include="ToolStrip\ToolStripElementLayout.cs" />
+    <Compile Include="ToolStrip\ToolStripFlowLayout.cs" />
+    <Compile Include="ToolStrip\ToolStripItemControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\ToolStripOrientationEventArgs.cs" />
+    <Compile Include="ToolStrip\RadToolStripSeparatorItem.cs" />
+    <Compile Include="ToolStrip\ToolStripDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStrip\ToolStripDialogForm.Designer.cs">
+      <DependentUpon>ToolStripDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStrip\ToolStripItemLayout.cs" />
+    <Compile Include="ToolStrip\RadToolStripOverFlowButtonElement.cs" />
+    <Compile Include="ToolStrip\ToolStripItemsOverFlow.cs" />
+    <Compile Include="TrackBar\RadTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBar\RadTrackBarDesignTimeData.cs" />
+    <Compile Include="TrackBar\RadTrackBarElement.cs" />
+    <Compile Include="TrackBar\RadTrackBarItem.cs" />
+    <Compile Include="TrackBar\TrackBarDThumbShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBar\TrackBarLThumbShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBar\TrackBarRThumbShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrackBar\TrackBarThumb.cs" />
+    <Compile Include="TrackBar\TrackBarUThumbShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadCheckBoxStyleBuilderData.cs" />
+    <Compile Include="UIElements\Buttons\RadImageButtonElement.cs" />
+    <Compile Include="UIElements\Buttons\RadButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadButtonElement.cs" />
+    <Compile Include="UIElements\Buttons\RadArrowButtonElement.cs" />
+    <Compile Include="DropDownButton\DropDownPanel.cs" />
+    <Compile Include="DropDownButton\RadDropDownButtonElement.cs">
+    </Compile>
+    <Compile Include="DropDownButton\RadDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\DropDownEditorLayoutPanel.cs" />
+    <Compile Include="ComboBox\RadComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Menu\RadMenuSeparatorItem.cs" />
+    <Compile Include="UIElements\Buttons\RadRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadRadioButtonElement.cs">
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadRadioButtonStyleBuilderData.cs" />
+    <Compile Include="UIElements\Buttons\RadRadioMark.cs" />
+    <Compile Include="UIElements\Gallery\FilteredGalleryGroupsEditor.cs" />
+    <Compile Include="UIElements\Gallery\FilteredItemsEditorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\Gallery\FilteredItemsEditorUI.Designer.cs">
+      <DependentUpon>FilteredItemsEditorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIElements\Gallery\Gallery control\RadGallery.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Gallery\GroupedGalleryItemsEditor.cs" />
+    <Compile Include="UIElements\Gallery\GroupedItemsEditorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\Gallery\GroupedItemsEditorUI.Designer.cs">
+      <DependentUpon>GroupedItemsEditorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIElements\Gallery\RadGalleryButtonsLayoutPanel.cs" />
+    <Compile Include="UIElements\Gallery\RadGalleryElement.cs">
+    </Compile>
+    <Compile Include="UIElements\Gallery\RadGalleryGroupFilter.cs" />
+    <Compile Include="UIElements\Gallery\RadGalleryGroupItem.cs" />
+    <Compile Include="UIElements\Gallery\RadGalleryItem.cs" />
+    <Compile Include="UIElements\Gallery\RadGalleryMenuLayoutPanel.cs" />
+    <Compile Include="UIElements\Gallery\RadGalleryStripViewport.cs" />
+    <Compile Include="UIElements\Label\RadLabelThemeDesignerData.cs" />
+    <Compile Include="UIElements\Label\RadLabelElement.cs" />
+    <Compile Include="UIElements\LightVisualElement.cs" />
+    <Compile Include="UIElements\ListBox\ListBoxItemCollection.cs" />
+    <Compile Include="UIElements\ListBox\ListBoxItemIndexCollection.cs" />
+    <Compile Include="UIElements\ListBox\RadListBoxItem.cs" />
+    <Compile Include="UIElements\Buttons\RadButtonItem.cs" />
+    <Compile Include="UIElements\Buttons\RadCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadCheckBoxElement.cs" />
+    <Compile Include="UIElements\Buttons\RadCheckmark.cs" />
+    <Compile Include="UIElements\Buttons\RadRepeatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Buttons\RadToggleButtonElement.cs" />
+    <Compile Include="UIElements\Buttons\RadRepeatButtonElement.cs" />
+    <Compile Include="UIElements\Buttons\StateChangedEventArgs.cs" />
+    <Compile Include="UIElements\ListBox\RadListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\ListBox\RadListBoxElement.cs" />
+    <Compile Include="UIElements\Panel\PanelStateManager.cs" />
+    <Compile Include="UIElements\Panel\RadPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Panel\RadPanelElement.cs" />
+    <Compile Include="UIElements\Panel\RadScrollablePanel\PanelRootElement.cs" />
+    <Compile Include="UIElements\Panel\RadScrollablePanel\RadScrollablePanelContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Panel\RadScrollablePanel\RadScrollablePanelControlCollection.cs">
+    </Compile>
+    <Compile Include="UIElements\Panel\RadScrollablePanel\RadScrollablePanelElement.cs" />
+    <Compile Include="UIElements\Panel\RadScrollablePanel\RadScrollablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Panel\RadPanelThemeDesignerData.cs" />
+    <Compile Include="UIElements\Panel\RadScrollablePanel\RadScrollablePanelThemeDesignerData.cs" />
+    <Compile Include="RadColorPicker\RadColorDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadColorPicker\RadColorDialogForm.Designer.cs">
+      <DependentUpon>RadColorDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIElements\RadGalleryPopupElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIElements\RadMessageBox\RadMessageBox.cs" />
+    <Compile Include="UIElements\RadMessageBox\RadMessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\RadMessageBox\RadMessageIcon.cs" />
+    <Compile Include="UIElements\RadMessageBox\RadMessageLocalizationProvider.cs" />
+    <Compile Include="UIElements\RadMessageBox\RadMessageStringID.cs" />
+    <Compile Include="UIElements\RadStatusStrip\RadGripElement.cs" />
+    <Compile Include="UIElements\RadStatusStrip\RadStatusStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\RadStatusStrip\RadStatusBarClickEventArgs.cs" />
+    <Compile Include="UIElements\RadStatusStrip\RadStatusBarDesignTimeData.cs" />
+    <Compile Include="UIElements\RadStatusStrip\RadStatusBarElement.cs" />
+    <Compile Include="UIElements\RadStatusStrip\RadStatusBarLayoutStyle.cs" />
+    <Compile Include="UIElements\RadStatusStrip\RadStatusBarPanelElement.cs" />
+    <Compile Include="UIElements\RadStatusStrip\StatusBarBoxLayout.cs" />
+    <Compile Include="UIElements\ScreenTipItems\RadImageItem.cs" />
+    <Compile Include="UIElements\ScreenTipItems\RadLineItem.cs" />
+    <Compile Include="UIElements\SpinEdit\RadRepeatArrowElement.cs" />
+    <Compile Include="UIElements\SpinEdit\RadSpinArrowElement.cs" />
+    <Compile Include="UIElements\SpinEdit\RadSpinControlButtonsElement.cs" />
+    <Compile Include="UIElements\SpinEdit\RadSpinControlDesignTimeData.cs" />
+    <Compile Include="UIElements\SpinEdit\RadSpinEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\SpinEdit\RadSpinElement.cs" />
+    <Compile Include="UIElements\SpinEdit\RadSpinControlElementDesignTimeData.cs" />
+    <Compile Include="UIElements\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIElements\TextBox\RadTextBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\TextBox\HostedTextBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\TextBox\RadTextBoxDesignTimeData.cs" />
+    <Compile Include="UIElements\TextBox\RadTextBoxElementStateManager.cs" />
+    <Compile Include="UIElements\TextBox\RadTextBoxItem.cs">
+    </Compile>
+    <Compile Include="UIElements\TextBox\RadTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\TextBox\RadTextBoxElement.cs" />
+    <Compile Include="Layouts\CheckBoxLayoutPanel.cs" />
+    <Compile Include="Layouts\RadScrollLayoutPanel.cs">
+    </Compile>
+    <Compile Include="Layouts\RadScrollViewer.cs" />
+    <Compile Include="Menu\RadMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResFinder.cs" />
+    <Compile Include="RibbonBar\RadRibbonBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RibbonBar\RadRibbonBarButtonGroup.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarGroup.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarCommandTab.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarCommandTabCollection.cs" />
+    <Compile Include="RibbonBar\RadRibbonBarElement.cs" />
+    <Compile Include="ScrollBars\RadHScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollBars\RadScrollBarElement.cs">
+    </Compile>
+    <Compile Include="ScrollBars\RadVScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollBars\ScrollBarButton.cs" />
+    <Compile Include="ScrollBars\RadScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollBars\ScrollBarThumb.cs" />
+    <Compile Include="TabStrip\RadTabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabStrip\RadTabStripDesignTimeData.cs" />
+    <Compile Include="TabStrip\RadTabStripElement.cs" />
+    <Compile Include="TabStrip\TabItem.cs" />
+    <Compile Include="TabStrip\TabLayoutPanel.cs" />
+    <Compile Include="TabStrip\TabOffice12Shape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabStrip\TabSelectedEventHandler.cs" />
+    <Compile Include="TabStrip\TabVsShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\TextBox\RadTransparentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\UIItemBase.cs" />
+    <Compile Include="UIElements\WebBrowser\RadWebBrowserElement.cs" />
+    <Compile Include="UIElements\WebBrowser\RadWebBrowserItem.cs" />
+    <Compile Include="UIElements\WebBrowser\RadWebBrowserBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\ZoomPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VirtualizedPanel\BaseVirtualizedContainer.cs" />
+    <Compile Include="VirtualizedPanel\BaseVirtualizedElementProvider.cs" />
+    <Compile Include="VirtualizedPanel\Events\ItemScrollerToolTipTextNeededEventArgs.cs" />
+    <Compile Include="VirtualizedPanel\Interfaces\ITraversable.cs" />
+    <Compile Include="VirtualizedPanel\Interfaces\IVirtualizedElement.cs" />
+    <Compile Include="VirtualizedPanel\Interfaces\IVirtualizedElementProvider.cs" />
+    <Compile Include="VirtualizedPanel\ItemScroller.cs" />
+    <Compile Include="VirtualizedPanel\ItemsNavigatingEvent.cs" />
+    <Compile Include="VirtualizedPanel\ItemsTraverser.cs" />
+    <Compile Include="VirtualizedPanel\Interfaces\ITraverser.cs" />
+    <Compile Include="VirtualizedPanel\ScrollViewElement.cs" />
+    <Compile Include="VirtualizedPanel\StackLayoutElement.cs" />
+    <Compile Include="VirtualizedPanel\VirtualizedPanelElementProvider.cs" />
+    <Compile Include="VirtualizedPanel\VirtualizedScrollPanel.cs" />
+    <Compile Include="VirtualizedPanel\VirtualizedStackContainer.cs" />
+    <Compile Include="WaitingBar\WaitingBarContentElement.cs" />
+    <Compile Include="WaitingBar\RadWaitingBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WaitingBar\RadWaitingBarElement.cs" />
+    <Compile Include="WaitingBar\RadWaitingBarStateManager.cs" />
+    <Compile Include="WaitingBar\WaitingBarIndicatorElement.cs" />
+    <Compile Include="WaitingBar\WaitingBarIndicatorStateManager.cs" />
+    <Compile Include="WaitingBar\WaitingBarSeparatorStateManager.cs" />
+    <Compile Include="WaitingBar\WaitingBarTextElement.cs" />
+    <Compile Include="WaitingBar\WaitingBarSeparatorElement.cs" />
+    <Compile Include="WaitingBar\WaitingIndicatorCollection.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RadControl\Telerik.WinControls.csproj">
+      <Project>{AD6A4B81-5455-49E3-82D9-5B392B5E2242}</Project>
+      <Name>Telerik.WinControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TelerikCommon\TelerikCommon.csproj">
+      <Project>{DC9E1344-9F91-413E-94E4-97EC0AE26C56}</Project>
+      <Name>TelerikCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RadControl.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.resx">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.resx">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_Wizard97View.resx">
+      <DependentUpon>ControlDefault_RadWizard_Telerik_WinControls_UI_Wizard97View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_WizardAeroView.resx">
+      <DependentUpon>ControlDefault_RadWizard_Telerik_WinControls_UI_WizardAeroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_OLD_RadTreeView.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_OLD_RadTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCommandBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCommandBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSeparator.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSeparator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBarBackstageView.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRibbonBarBackstageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListView.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadListView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPropertyGrid.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadPropertyGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskEditBox.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadMaskEditBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\FormatControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadCommandBar\CommandBarCustomizeDialog.resx">
+      <DependentUpon>CommandBarCustomizeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadCommandBar\CommandBarFloatingForm.resx">
+      <DependentUpon>CommandBarFloatingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadScreenTip\RadOffice2007ScreenTip.resx">
+      <DependentUpon>RadOffice2007ScreenTip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadButton.bmp" />
+    <EmbeddedResource Include="RadCheckBox.bmp" />
+    <EmbeddedResource Include="RadComboBox.bmp" />
+    <EmbeddedResource Include="RadDropDownButton.bmp" />
+    <EmbeddedResource Include="RadHScrollBar.bmp" />
+    <EmbeddedResource Include="RadMenu.bmp" />
+    <EmbeddedResource Include="RadProgressBar.bmp" />
+    <EmbeddedResource Include="RadRepeatButton.bmp" />
+    <EmbeddedResource Include="RadRibbonBar.bmp" />
+    <EmbeddedResource Include="RadSplitButton.bmp" />
+    <EmbeddedResource Include="RadTabStrip.bmp" />
+    <EmbeddedResource Include="RadTextBox.bmp" />
+    <EmbeddedResource Include="RadToggleButton.bmp" />
+    <EmbeddedResource Include="RadToolStrip.bmp" />
+    <EmbeddedResource Include="RadTrackBar.bmp" />
+    <EmbeddedResource Include="RadVScrollBar.bmp" />
+    <EmbeddedResource Include="RadWaitingBar.bmp" />
+    <EmbeddedResource Include="RadListBox.bmp" />
+    <EmbeddedResource Include="RadTitleBar.bmp" />
+    <EmbeddedResource Include="PanelBar\arrowDown.gif" />
+    <EmbeddedResource Include="PanelBar\arrowUp.gif" />
+    <EmbeddedResource Include="PanelBar\2Telerik.bmp" />
+    <EmbeddedResource Include="RadPanelBar.bmp" />
+    <None Include="Resources\telerikLogo.png" />
+    <EmbeddedResource Include="Resources\dropDown.png" />
+    <EmbeddedResource Include="RadTreeView.bmp" />
+    <EmbeddedResource Include="ShapedForm\ShapedForm.resx">
+      <DependentUpon>ShapedForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStrip\ToolStripDialogForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolStripDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStrip\close2.png" />
+    <EmbeddedResource Include="ToolStrip\close.png" />
+    <EmbeddedResource Include="UIElements\Gallery\FilteredItemsEditorUI.resx">
+      <DependentUpon>FilteredItemsEditorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\Gallery\GroupedItemsEditorUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupedItemsEditorUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadColorPicker\RadColorDialogForm.resx">
+      <DependentUpon>RadColorDialogForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RadPanel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RadDropDownMenu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RadLabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ScreenTipThemes\Office2007Blue.xml" />
+    <None Include="Resources\telerikLogoSmall.png" />
+    <EmbeddedResource Include="ControlDefault\Carousel.resx">
+      <DependentUpon>Carousel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\CarouselItem.resx">
+      <DependentUpon>CarouselItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_DockSplitContainer.resx">
+      <DependentUpon>ControlDefault_DockSplitContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.resx">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.resx">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_DesktopAlertPopup.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_DesktopAlertPopup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenu.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadApplicationMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadButton.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCalendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCheckBox.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadComboBox.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadCheckmark.resx">
+      <DependentUpon>ControlDefault_RadCheckmark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_AutoHideTabStrip.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_AutoHideTabStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentContainer.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_DocumentContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentTabStrip.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_DocumentTabStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_FloatingWindow.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_FloatingWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_QuickNavigator.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_QuickNavigator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_RadDock.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_RadDock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_ToolTabStrip.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_Docking_ToolTabStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenuDropDown.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadApplicationMenuDropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendarFastNavigationControl.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadCalendarFastNavigationControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDateTimePicker.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDateTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownButton.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDropDownButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownList.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownMenu.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadDropDownMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadForm.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadGroupBox.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadGroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadLabel.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListControl.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadListControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.resx">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_RootRadElement.resx">
+      <DependentUpon>ControlDefault_RadPageView_Telerik_WinControls_RootRadElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonForm.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRibbonForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSchedulerNavigator.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSchedulerNavigator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitContainer.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSplitContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_SplitPanel.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_SplitPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListBox.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskedEditBox.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadMaskedEditBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMenu.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanel.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanelBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadPanelBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadProgressBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRadioButton.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRadioButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRepeatButton.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRepeatButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadRibbonBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollablePanel.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadScrollablePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadScrollBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSizablePopupControl.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSizablePopupControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSpinEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSpinEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitButton.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadSplitButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadStatusStrip.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadStatusStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTabStrip.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTabStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTitleBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTitleBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadToggleButton.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadToggleButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\Gallery.resx">
+      <DependentUpon>Gallery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ScrollViewer.resx">
+      <DependentUpon>ScrollViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ToolStrip.resx">
+      <DependentUpon>ToolStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTrackBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTrackBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTreeView.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadWaitingBar.resx">
+      <DependentUpon>ControlDefault_Telerik_WinControls_UI_RadWaitingBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licensing\RadEvaluationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RadEvaluationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelBar\OutLookStyle\radNavigationPaneOptions.resx">
+      <DependentUpon>radNavigationPaneOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadCalendar.bmp" />
+    <EmbeddedResource Include="RadColorPicker\Components\CaptureBox.resx">
+      <DependentUpon>CaptureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadColorPicker\Components\RadarColors.resx">
+      <DependentUpon>RadarColors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadColorPicker\Components\ProffesionalColors.resx">
+      <DependentUpon>ProffesionalColors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadColorPicker\RadColorSelector.resx">
+      <DependentUpon>RadColorSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadColorPicker\Components\CustomColors.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomColors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadForm\RadFormNew\Design\Forms\RadFormDesignerRibbonDialog.resx">
+      <DependentUpon>RadFormDesignerRibbonDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDefault\ControlDefault.tssp" />
+    <EmbeddedResource Include="RadBreadCrumb.bmp" />
+    <EmbeddedResource Include="RadDateTimePicker.bmp" />
+    <EmbeddedResource Include="RadMaskedEditBox.bmp" />
+    <EmbeddedResource Include="RadRadioButton.bmp" />
+    <EmbeddedResource Include="RadRotator.bmp" />
+    <EmbeddedResource Include="PanelBar\arrowDown.png" />
+    <EmbeddedResource Include="PanelBar\arrowUp.png" />
+    <EmbeddedResource Include="PanelBar\minus.png" />
+    <EmbeddedResource Include="PanelBar\plus.png" />
+    <EmbeddedResource Include="PanelBar\arrowDownDesert.png" />
+    <EmbeddedResource Include="PanelBar\arrowUpDesert.png" />
+    <EmbeddedResource Include="PanelBar\minusDesert.png" />
+    <EmbeddedResource Include="PanelBar\plusDesert.png" />
+    <EmbeddedResource Include="RadCarousel.bmp" />
+    <EmbeddedResource Include="RadApplicationMenu.bmp" />
+    <EmbeddedResource Include="RadContextMenuManager.bmp" />
+    <Content Include="ControlDefault\ControlDefault_DockSplitContainer.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadCheckmark.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Repository.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_DesktopAlertPopup.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_RootRadElement.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.xml" />
+    <Content Include="ControlDefault\ControlDefault_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_ColumnChooserControl.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_Wizard97View.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_RadWizard_Telerik_WinControls_UI_WizardAeroView.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_OLD_RadTreeView.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_AutoHideTabStrip.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentContainer.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_DocumentTabStrip.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_FloatingWindow.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_QuickNavigator.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_RadDock.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_Docking_ToolTabStrip.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenu.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadApplicationMenuDropDown.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadButton.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCalendarFastNavigationControl.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCheckBox.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadComboBox.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDateTimePicker.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadCommandBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownButton.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownList.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadDropDownMenu.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadForm.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadGridView.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadGroupBox.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadLabel.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListBox.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListControl.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadListView.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskedEditBox.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMenu.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanel.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPanelBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadProgressBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadPropertyGrid.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRadioButton.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRepeatButton.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBar.xml" />
+    <EmbeddedResource Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScheduler.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonForm.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSchedulerNavigator.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollablePanel.xml" />
+    <EmbeddedResource Include="RadGroupBox.bmp" />
+    <EmbeddedResource Include="RadAboutBox.bmp" />
+    <EmbeddedResource Include="RadForm.bmp" />
+    <EmbeddedResource Include="RadRibbonForm.bmp" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadScrollBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSeparator.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSizablePopupControl.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSpinEditor.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitButton.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadSplitContainer.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadStatusStrip.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTabStrip.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTextBox.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTitleBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadToggleButton.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTrackBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadTreeView.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadWaitingBar.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadRibbonBarBackstageView.xml" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_SplitPanel.xml" />
+    <EmbeddedResource Include="RadDesktopAlert.bmp" />
+    <EmbeddedResource Include="RadPageView.bmp" />
+    <EmbeddedResource Include="RadDropDownList.bmp" />
+    <EmbeddedResource Include="RadListControl.bmp" />
+    <EmbeddedResource Include="RadPageView\Views\Outlook\Resources\AssociatedButtonDefaultImage.png" />
+    <EmbeddedResource Include="RadCommandBar.bmp" />
+    <EmbeddedResource Include="RadRibbonBarBackstageView.bmp" />
+    <EmbeddedResource Include="RadListView.bmp" />
+    <EmbeddedResource Include="RadMaskEditBox.bmp" />
+    <Content Include="ControlDefault\ControlDefault_Telerik_WinControls_UI_RadMaskEditBox.xml" />
+    <EmbeddedResource Include="RadPropertyGrid.bmp" />
+    <Content Include="RadRotator\TempStore.txt" />
+    <EmbeddedResource Include="RadSplitContainer.bmp" />
+    <EmbeddedResource Include="RadScrollablePanel.bmp" />
+    <None Include="Resources\Back.png" />
+    <EmbeddedResource Include="RadWizard.bmp" />
+    <EmbeddedResource Include="RadSeparator.bmp" />
+    <Content Include="Resources\Checkerboard.jpg" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\DropDown2.png" />
+    <None Include="Resources\cursor-move.png" />
+    <Content Include="Resources\eyedropper.png" />
+    <Content Include="Resources\MDIclose.png" />
+    <Content Include="Resources\MDImaximize.png" />
+    <Content Include="Resources\MDIminimize.png" />
+    <EmbeddedResource Include="Resources\RadMessageBox\MessageError.png" />
+    <EmbeddedResource Include="Resources\RadMessageBox\MessageExclamation.png" />
+    <EmbeddedResource Include="Resources\RadMessageBox\MessageInfo.png" />
+    <EmbeddedResource Include="Resources\RadMessageBox\MessageQuestion.png" />
+    <None Include="Resources\ribbonBarHelpButton.png" />
+    <None Include="Resources\Next.png" />
+    <Content Include="Resources\ribbon_close.png" />
+    <Content Include="Resources\ribbon_maximize.png" />
+    <Content Include="Resources\ribbon_minimize.png" />
+    <None Include="Resources\ToolbarStrip.bmp" />
+    <EmbeddedResource Include="ToolStrip\Icons\copy.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\cut.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\help.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\new.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\open.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\paste.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\print.png" />
+    <EmbeddedResource Include="ToolStrip\Icons\save.png" />
+    <EmbeddedResource Include="RadSpinEditor.bmp" />
+    <EmbeddedResource Include="RadStatusStrip.bmp" />
+    <EmbeddedResource Include="Resources\RibbonDialogButton.png" />
+    <EmbeddedResource Include="RibbonBar\CommandTabsUITypeEditorForm.resx">
+      <DependentUpon>CommandTabsUITypeEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonBar\ContextulTabGroupsUITypeEditorForm.resx">
+      <DependentUpon>ContextulTabGroupsUITypeEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Design\ToolStrip\" />
+    <Folder Include="RadColorPicker\ColorDialog\" />
+    <Folder Include="RadDesktopAlert\Implementation\Interfaces\" />
+    <Folder Include="Resources\Icons\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+    <GetFrameworkSdkPath>
+      <Output TaskParameter="Path" PropertyName="SdkPath" />
+    </GetFrameworkSdkPath>
+    <CreateItem Include="$(OutputPath)**\*UI*.dll">
+      <Output TaskParameter="Include" ItemName="OutputFiles" />
+    </CreateItem>
+    <Exec Command="&quot;$(SdkPath)Bin\gacutil.exe&quot; /f /i &quot;$(MSBuildProjectDirectory)\@(OutputFiles)&quot;" />
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

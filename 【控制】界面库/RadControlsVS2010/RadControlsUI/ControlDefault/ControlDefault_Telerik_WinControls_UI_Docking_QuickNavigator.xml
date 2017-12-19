@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="RoundRectShape3,SegoeUIDefaultText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RootRadElement.ApplyShapeToControl" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorHeader">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorHeader">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorHeaderFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorBorder" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorHeaderBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorHeader">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorHeaderBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorFooter" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="QuickNavigatorContentFill" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorHeaderText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 8, 0, 4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorToolWindowListHeaderLabel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorHeaderText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="7, 7, 0, 4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorDocumentWindowListHeaderLabel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorItemFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorItemHoveredBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorItemActiveBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.IsActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.IsActive">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="QuickNavigatorListItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="15, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,QuickNavigatorActiveItemImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="15, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavigatorHeaderText,QuickNavigatorHoveredItemImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="15, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.IsActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="QuickNavigatorActiveItemImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorListItem.IsActive">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.ImagePrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavHeaderFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-4, 0, -5, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorToolWindowListHeaderLabel">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.FillPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DockQuickNavHeaderFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorDocumentWindowListHeaderLabel">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.FillPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="QuickNavToolHeaderBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, -6, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="QuickNavigatorToolWindowListHeaderLabel">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.Primitives.BorderPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 8, 4, 8" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DockQuickNavigatorHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.QuickNavigator" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,22 @@
+﻿
+            CloudsatDataProvider raster = GeoDataDriver.Open(fullfilename) as CloudsatDataProvider;
+            CloudSatRasterBand band = raster.GetRasterBand(1) as CloudSatRasterBand;
+            dtnx = band.Width;
+            dtny = band.Height;
+            short[] datas = readData(new int[] { x1, 0 }, new int[] { xn, dtnx }, band);
+            float[] times = raster.ReadVdata("Profile_time", null, x1, x2) as float[];
+
+            sw.Start();
+            float[] Latitude = raster.ReadVdata("Latitude", null, x1, x2) as float[];
+            float[] Longtitude = raster.ReadVdata("Longitude", null, x1, x2) as float[];
+            sw.Stop();
+            elapsed = sw.ElapsedMilliseconds;
+            Console.WriteLine("ReadVdata" + elapsed + "毫秒");
+            GeoDo.RSS.Core.DF.CoordEnvelope env = new RSS.Core.DF.CoordEnvelope(110, 150, 20, 60);
+            int cou = 0;
+            for (int i = 0; i < Latitude.Length; i++)
+            {
+                if (Longtitude[i] > env.MinX && Longtitude[i] < env.MaxX && Latitude[i] > env.MinY && Latitude[i] < env.MaxY)
+                    cou++;
+            }
+            Console.WriteLine(cou + "点在指定范围内");

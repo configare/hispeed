@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MASL2ColorTable name="SNC" applyfor = "MSC,SNC" description="积雪覆盖" matchstring="\S+_SNC_\S+$">
+  <BandValueRanges>
+    <BandValueRange name="SNC" datasets="SNC_DAILY" refdatasets="">
+      <Segment values = "0~0" indexes = "1" />
+      <Segment values = "1~1" indexes = "2" />
+      <Segment values = "11~11" indexes = "3" />
+      <Segment values = "25~25" indexes = "4" />
+      <Segment values = "37~37" indexes = "5" />
+      <Segment values = "39~39" indexes = "6" />
+      <Segment values = "50~50" indexes = "7" />
+      <Segment values = "100~100" indexes = "8" />
+      <Segment values = "200~200" indexes = "9" />
+      <Segment values = "254~254" indexes = "10" />
+      <Segment values = "255~255" indexes = "11" />
+      <Segment values = "240~240" indexes = "12" />
+    </BandValueRange>
+    <BandValueRange name="SNC" datasets="SNC_SWATH" refdatasets="">
+      <Segment values = "0~0" indexes = "1" description = "1" transValue = "0" Display = "true" transRGB = "0,0,0"/>
+      <Segment values = "5~5" indexes = "2" description = "黄色" transValue = "1" Display = "true" transRGB = "255,255,0"/>
+      <Segment values = "10~10" indexes = "3" description = "3" transValue = "2" Display = "true" transRGB = "216,191,216"/>
+      <Segment values = "15~15" indexes = "4" description = "4" transValue = "3" Display = "true" transRGB = "160,82,45"/>
+      <Segment values = "20~20" indexes = "5" description = "5" transValue = "4" Display = "true" transRGB = "0,0,255"/>
+      <Segment values = "30~30" indexes = "6" description = "6" transValue = "5" Display = "true" transRGB = "0,0,139"/>
+      <Segment values = "50~50" indexes = "7" description = "7" transValue = "6" Display = "true" transRGB = "255,255,255"/>
+      <Segment values = "100~100" indexes = "8" description = "8" transValue = "7" Display = "true" transRGB = "0,139,139"/>
+      <Segment values = "200~200" indexes = "9" description = "蓝色" transValue = "8" Display = "true" transRGB = "0,255,255"/>
+      <Segment values = "254~254" indexes = "10" />
+      <Segment values = "255~255" indexes = "11" />
+      <Segment values = "240~240" indexes = "12" />
+    </BandValueRange>
+  </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTable" applyfor="SNC" description="">
+      <Color index = "1" rgb = "100,100,100"/>
+      <Color index = "2" rgb = "255,255,0"/>
+      <Color index = "3" rgb = "216,191,216"/>
+      <Color index = "4" rgb = "160,82,45"/>
+      <Color index = "5" rgb = "0,0,255"/>
+      <Color index = "6" rgb = "0,0,139"/>
+      <Color index = "7" rgb = "255,255,255"/>
+      <Color index = "8" rgb = "0,139,139"/>
+      <Color index = "9" rgb = "0,0,238"/>
+      <Color index = "10" rgb = "139,0,0"/>
+      <Color index = "11" rgb = "0,0,0"/>
+      <Color index = "12" rgb = "176,48,96"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

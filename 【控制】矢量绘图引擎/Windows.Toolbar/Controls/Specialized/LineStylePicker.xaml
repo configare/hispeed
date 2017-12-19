@@ -1,0 +1,44 @@
+﻿<windowsToolbar:SelectionContainer x:Class="Windows.Toolbar.Controls.Specialized.LineStylePicker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:windowsToolbar="clr-namespace:Windows.Toolbar.Controls"
+    xmlns:windowsToolbarSpecialized="clr-namespace:Windows.Toolbar.Controls.Specialized"
+    Width="180" >
+
+    <windowsToolbar:SelectionContainer.Resources>
+        <windowsToolbarSpecialized:VisibleWhenNoStyleConverter x:Key="VisibleWhenNoStyleConverter" />
+
+        <windowsToolbarSpecialized:CollapsedWhenNoStyleConverter x:Key="CollapsedWhenNoStyleConverter" />
+    </windowsToolbar:SelectionContainer.Resources>
+
+    <Border BorderBrush="#868686" BorderThickness="1" CornerRadius="3" Background="White">
+        <StackPanel>
+            <ListBox x:Name="LinesListBox" SelectionChanged="LinesListBox_SelectionChanged"
+    			ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Grid Height="12">                                                                                                                       
+                                <Line X1="0" X2="168" Y1="0" Y2="0" Width="168" Height="1" VerticalAlignment="Center"  
+                                    Stroke="Black" 
+                                    StrokeDashArray="{Binding Value}" 
+                                    Visibility="{Binding Value, Converter={StaticResource CollapsedWhenNoStyleConverter}}" />
+                                                                  
+                                <TextBlock Text="No Line" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                    Visibility="{Binding Value, Converter={StaticResource VisibleWhenNoStyleConverter}}"/>                            
+                            </Grid>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+
+                <windowsToolbarSpecialized:LineStylePickerItem Value="0"/>
+                <windowsToolbarSpecialized:LineStylePickerItem Value=""/>
+                <windowsToolbarSpecialized:LineStylePickerItem Value="17,8"/>
+                <windowsToolbarSpecialized:LineStylePickerItem Value="9,4"/>
+                <windowsToolbarSpecialized:LineStylePickerItem Value="9,4,2,4"/>
+                <windowsToolbarSpecialized:LineStylePickerItem Value="9,4,2,4,2,4"/>
+                <windowsToolbarSpecialized:LineStylePickerItem Value="21,4,5,4"/>
+            </ListBox>
+        </StackPanel>
+    </Border>
+</windowsToolbar:SelectionContainer>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LAIConfig>
+  <LAIHDFConfig>
+    <Types satellite="FY3A" sensor="MERSI">
+    <L2_LSR Dataset="MERSI_LSR_1KMSDS" Redbandno="3" IRbandno="4" SWIRbandno="6"/>
+    <L1_GEO Latitude="Latitude" Longitude="Longitude" SolarZenith="SolarZenith" SolarAzimuth="SolarAzimuth" SensorZenith="SensorZenith" SensorAzimuth="SensorAzimuth"/>
+    </Types>
+    <Types satellite="FY3C" sensor="MERSI">
+      <L2_LSR Dataset="MERSI_LSR_SDS" Redbandno="3" IRbandno="4" SWIRbandno="6"/>
+      <L1_GEO Latitude="Geolocation//Latitude" Longitude="Geolocation//Longitude" SolarZenith="Geolocation//SolarZenith" SolarAzimuth="Geolocation//SolarAzimuth" SensorZenith="Geolocation//SensorZenith" SensorAzimuth="Geolocation//SensorAzimuth"/>
+    </Types>
+  </LAIHDFConfig>
+  <!--<LAIPrjConfig>
+    <Types satellite="FY3A" sensor="MERSI">
+      <L2_LSR_Prj Redbandno="3" IRbandno="4" SWIRbandno="6"/>
+      <L1_Angles_Prj  SolarZenithBandNo="1" SolarAzimuthBandNo="2" SensorZenithBandNo="3" SensorAzimuthBandNo="4"/>
+    </Types>
+    <Types satellite="FY3C" sensor="MERSI">
+      <L2_LSR_Prj Redbandno="3" IRbandno="4" SWIRbandno="6"/>
+      <L1_Angles_Prj  SolarZenithBandNo="1" SolarAzimuthBandNo="2" SensorZenithBandNo="3" SensorAzimuthBandNo="4"/>
+    </Types>
+  </LAIPrjConfig>-->
+</LAIConfig>

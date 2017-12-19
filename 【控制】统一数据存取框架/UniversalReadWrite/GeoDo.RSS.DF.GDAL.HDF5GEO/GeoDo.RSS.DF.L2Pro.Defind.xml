@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<L2Products>
+  <!--name:产品名称 desc：产品描述  identify：文件标识，用于判断是否是当前定义产品文件  product：所属产品，用于自动调用ColorTabel-->
+  <L2Product name="LSR" desc="地表反射率日产品" identify="\S*FY3C\S*LSR\S*POAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=latlong +datum=WGS84 +a=6378137 +b=6356752.31424518 +f=0.00335281066474748 +nodefs">
+      <!--location 坐标属性所在位置【File|Dataset】 文件属性或数据集属性-->
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat="" unit=""/>
+      <!--默认地理信息设定节点-->
+      <GeoDef lefttoplon="-180" lefttoplat="90" rightbottomlon="180"  rightbottomlat="-90"/>
+    </GeoInfo>
+    <ProInfo>
+      <!--默认打开数据集-->
+      <ProDataSets datasets="MERSI_Land_Surface"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SIC" desc="北极海冰覆盖度产品" identify="\S*FY3\S*SIC\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=stere +lat_0=90 +lat_ts=70 +lon_0=-45 +k_0=1 +x_0=0 +y_0=0 +a=6378273 +b=6356889.449 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat="" unit=""/>
+      <GeoDef lefttoplon="-3850000" lefttoplat=" 5850000" rightbottomlon=" 3750000"  rightbottomlat="-5350000"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="icecon_north_asc,icecon_north_des,icecon_north_avg"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SIC" desc="南极海冰覆盖度产品" identify="\S*FY3\S*SIC\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=stere +lat_0=-90 +lat_ts=-70 +lon_0=0 +k=1 +x_0=0 +y_0=0 +a=6378273 +b=6356889.449 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat="" unit=""/>
+      <GeoDef lefttoplon="-3950000" lefttoplat="4350000" rightbottomlon="3950000"  rightbottomlat="-3950000"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="icecon_south_asc,icecon_south_des,icecon_south_avg"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SWE" desc="北半球积雪产品" identify="\S*FY3\S*SWE\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=laea +lat_0=90 +lon_0=0 +x_0=0 +y_0=0 +a=6371228 +b=6371228 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat="" unit=""/>
+      <GeoDef lefttoplon="-9036842.762" lefttoplat="9036842.762" rightbottomlon=" 9036842.762"  rightbottomlat="-9036842.762"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="SD_NorthernDaily_A,SD_NorthernDaily_D,SWE_NorthernDaily_A,SWE_NorthernDaily_D,SD_Flags_NorthernDaily_A,SD_Flags_NorthernDaily_D,SWE_Flags_NorthernDaily_A,SWE_Flags_NorthernDaily_D"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="SWE" desc="南半球积雪产品" identify="\S*FY3\S*SWE\S*AOAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=laea +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +a=6371228 +b=6371228 +units=m +no_defs">
+      <GeoAtrrs location="" datasetname="" lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat="" unit=""/>
+      <GeoDef lefttoplon="-9036842.762" lefttoplat="9036842.762" rightbottomlon="9036842.762"  rightbottomlat="-9036842.762"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="SD_SouthernDaily_A,SD_SouthernDaily_D,SWE_SouthernDaily_A,SWE_SouthernDaily_D,SD_Flags_SouthernDaily_A,SD_Flags_SouthernDaily_D,SWE_Flags_SouthernDaily_A,SWE_Flags_SouthernDaily_D"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="LST" desc="陆表温度日产品" identify="\S*FY3\S*LST\S*POAD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=hammer +lat_1=0 +lat_2=0 +lat_0=0 +lon_0=105 +x_0=0 +y_0=0">
+      <GeoAtrrs location="File" datasetname="" lefttoplon="Left-Top X" lefttoplat="Left-Top Y" rightbottomlon="Right-Top X"  rightbottomlat="Left-Bottom Y" unit="Coordinate Unit"/>
+      <GeoDef lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="VIRR_1Km_LST"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="NVI" desc="植被指数旬产品" identify="\S*FY3\S*NVI\S*AOTD\S*.HDF" product="">
+    <GeoInfo poj4="+proj=hammer +lat_1=0 +lat_2=0 +lat_0=0 +lon_0=105 +x_0=0 +y_0=0">
+      <GeoAtrrs location="File" datasetname="" lefttoplon="Left-Bottom X" lefttoplat="Right-Top Y" rightbottomlon="Right-Top X"  rightbottomlat="Left-Bottom Y" unit="Coordinate Unit"/>
+      <GeoDef lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="1000M_10day_NDVI"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="LST" desc="陆表温度MODIS转换产品(临时)" identify="\S*LST\S*TERRA\S*.HDF" product="">
+    <GeoInfo poj4="proj4 = +proj=sinu +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs">
+      <GeoAtrrs location="File" datasetname="" lefttoplon="Left-Bottom X" lefttoplat="Right-Top Y" rightbottomlon="Right-Top X"  rightbottomlat="Left-Bottom Y" unit="Coordinate Unit"/>
+      <GeoDef lefttoplon="5559752.598833" lefttoplat="6671703.118599" rightbottomlon="13343406.237198"  rightbottomlat="1111950.519767"/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="LST_Day_1km"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="LST" desc="陆表温度TERRA转换产品" identify="\S*MOD11\S*.h\S*.HDF" product="">
+    <GeoInfo poj4="proj4 = +proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs">
+      <GeoAtrrs location="File" datasetname="" lefttoplon="StructMetadata.0:UpperLeftPointMtrs" lefttoplat="StructMetadata.0:UpperLeftPointMtrs" rightbottomlon="StructMetadata.0:LowerRightMtrs"  rightbottomlat="StructMetadata.0:LowerRightMtrs" unit="Coordinate Unit"/>
+      <GeoDef lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="LST_Day_1km,LST_Night_1km"/>
+    </ProInfo>
+  </L2Product>
+  <L2Product name="LST" desc="陆表温度AQUA转换产品" identify="\S*MYD11\S*.h\S*.HDF" product="">
+    <GeoInfo poj4="proj4 = +proj=sinu +lon_0=0 +x_0=0 +y_0=0 +a=6371007.181 +b=6371007.181 +units=m +no_defs">
+      <GeoAtrrs location="File" datasetname="" lefttoplon="StructMetadata.0:UpperLeftPointMtrs" lefttoplat="StructMetadata.0:UpperLeftPointMtrs" rightbottomlon="StructMetadata.0:LowerRightMtrs"  rightbottomlat="StructMetadata.0:LowerRightMtrs" unit="Coordinate Unit"/>
+      <GeoDef lefttoplon="" lefttoplat="" rightbottomlon=""  rightbottomlat=""/>
+    </GeoInfo>
+    <ProInfo>
+      <ProDataSets datasets="LST_Day_1km,LST_Night_1km"/>
+    </ProInfo>
+  </L2Product>
+</L2Products>

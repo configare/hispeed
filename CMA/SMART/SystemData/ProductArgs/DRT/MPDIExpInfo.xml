@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<ExpInfos>
+  <EdgesFile>.\SystemData\RasterTemplate\\China_Province.dat</EdgesFile>
+  <ExpItems>
+    <ExpItem name="北京市" num="11" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="天津市" num="12" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="河北省" num="13" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="山西省" num="14" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="内蒙古自治区" num="15" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="辽宁省" num="21" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="吉林省" num="22" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="黑龙江省" num="23" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="上海市" num="31" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="江苏省" num="32" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="浙江省" num="33" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="安徽省" num="34" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="福建省" num="35" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="江西省" num="36" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="山东省" num="37" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="河南省" num="41" A="0.37" B="0.37" C="0">
+    </ExpItem>
+    <ExpItem name="湖北省" num="42" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="湖南省" num="43" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="广东省" num="44" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="广西壮族自治区" num="45" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="海南省" num="46" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="重庆市" num="50" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="四川省" num="51" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="贵州省" num="52" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="云南省" num="53" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="西藏自治区" num="54" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="陕西省" num="61" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="甘肃省" num="62" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="青海省" num="63" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="宁夏回族自治区" num="64" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="新疆维吾尔自治区" num="65" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="台湾省" num="71" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="香港特别行政区" num="81" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="澳门特别行政区" num="91" A="0.57" B="0.57" C="0">
+    </ExpItem>
+    <ExpItem name="境外" num="0" A="0.57" B="0.57" C="0">
+    </ExpItem>
+  </ExpItems>
+</ExpInfos>

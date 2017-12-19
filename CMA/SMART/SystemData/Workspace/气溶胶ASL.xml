@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Workspace text="气溶胶" identify="ASL" isenabled="true">
+  <ExtractCatalog text="当前监测分析" class="CurrentExtracting">
+    <CatalogNodeGroup text="2012-06-26" identify="OrbitDateTime">
+      <CatalogNodeGroup  text="局地文件" identify="OrbitFileName"/>
+      <CatalogNodeGroup text="气溶胶厚度数据" identify="U5TI" pattern="*_{0}_*.dat">
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="气溶胶厚度专题图" identify="0IMG,U5TT" pattern="*_{0}_*.gxd">
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="统计分析">
+        <CatalogNodeGroup text="面积统计" identify="CCAR,CCCA,CLUT,0CBP,0CCC" pattern="*_{0}_*.xlsx"/>
+      </CatalogNodeGroup>
+    </CatalogNodeGroup>
+  </ExtractCatalog>
+  <Catalog text="栅格产品" folder="栅格产品" class="RasterProduct" identify="U5TI" filter="气溶胶厚度数据 (*.dat)|*.dat" pattern="*_{0}_*.dat">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <!--<Attribute text="区域" identify="Region" format="" visible="true"/>-->
+      <!--<Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+        <Attribute text="传感器" identify="Sensor" format="" visible="true"/>-->
+      <!--<Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+        <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>-->
+      <!--<Attribute text="原始文件" identify="SourceFile" format="" visible="true"/>
+        <Attribute text="监测区域" identify="RegionIdentify" format="" visible="true"/>
+        <Attribute text="描述" identify="Description" format="" visible="true"/>-->
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="统计分析产品" folder="统计产品" class="ChartProduct" identify="CCAR,CCCA,CLUT,0CBP,0CCC" filter="Ms Office Files(*.xlsx)|*.xlsx" pattern="*_{0}_*.xlsx">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <!--<Attribute text="区域" identify="Region" format="" visible="true"/>
+        <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+        <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+        <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+        <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>-->
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="专题图产品" folder="专题产品" class="GraphicProduct" identify="0IMG,U5TT" filter="Smart Theme File(*.gxd)|*.gxd" pattern="*_{0}_*.gxd">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <!--<Attribute text="区域" identify="Region" format="" visible="true"/>
+        <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+        <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+        <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+        <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>-->
+      <Attribute text="原始文件" identify="SourceFile" format="" visible="true"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+</Workspace>

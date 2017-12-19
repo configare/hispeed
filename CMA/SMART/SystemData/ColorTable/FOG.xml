@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="FOG" subIdentify="DBLV"  colortablename="FOGDBLV" description="二值图" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无雾" displaylengend="false"/>
+        <Color color="100, 255, 255" maxValue="2" minValue="1" labeltext="大雾"/>
+        <Color color="255, 255, 255" maxValue="10000" minValue="9999" labeltext="云" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="0LWP"  colortablename="FOG0LWP" description="大雾液态水路径专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="155,255,227" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="96,255,211" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="38,255,196" maxValue="800" minValue="700" labeltext="0.8"/>
+        <Color color="79,201,253" maxValue="900" minValue="800" labeltext="0.9"/>
+        <Color color="40,189,253" maxValue="1000" minValue="900" labeltext="1"/>
+        <Color color="2,172,244" maxValue="1100" minValue="1000" labeltext="1.1"/>
+        <Color color="6,141,251" maxValue="1200" minValue="1100" labeltext="1.2"/>
+        <Color color="4,128,227" maxValue="1300" minValue="1200" labeltext="1.3"/>
+        <Color color="7,91,248" maxValue="1400" minValue="1300" labeltext="1.4"/>
+        <Color color="7,82,220" maxValue="1500" minValue="1400" labeltext="1.5"/>
+        <Color color="7,55,220" maxValue="1600" minValue="1500" labeltext="1.6"/>
+        <Color color="6,45,174" maxValue="1700" minValue="1600" labeltext="1.7"/>
+        <Color color="7,16,173" maxValue="1800" minValue="1700" labeltext="1.8"/>
+        <Color color="0,3,138" maxValue="" minValue="1800" labeltext=">1.8"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="OPTD"  colortablename="FOGOPTD" description="大雾光学厚度专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="191,86,254" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="170,31,254" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="135,1,216" maxValue="900" minValue="700" labeltext="0.9"/>
+        <Color color="105,1,167" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="69,2,208" maxValue="1300" minValue="1100" labeltext="1.3"/>
+        <Color color="57,2,172" maxValue="1500" minValue="1300" labeltext="1.5"/>
+        <Color color="13,138,251" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="3,203,245" maxValue="1900" minValue="1700" labeltext="1.9"/>
+        <Color color="138,233,253" maxValue="2100" minValue="1900" labeltext="2.1"/>
+        <Color color="104,253,175" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="92,239,92" maxValue="2500" minValue="2300" labeltext="2.5"/>
+        <Color color="146,253,130" maxValue="2700" minValue="2500" labeltext="2.7"/>
+        <Color color="187,249,83" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="223,249,102" maxValue="3100" minValue="2900" labeltext="3.1"/>
+        <Color color="250,250,95" maxValue="3300" minValue="3100" labeltext="3.3"/>
+        <Color color="248,233,54" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="235,200,35" maxValue="3700" minValue="3500" labeltext="3.7"/>
+        <Color color="220,183,7" maxValue="3900" minValue="3700" labeltext="3.9"/>
+        <Color color="226,116,5" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,45,6" maxValue="4300" minValue="4100" labeltext="4.3"/>
+        <Color color="255,0,0" maxValue="6000" minValue="4300" labeltext="6"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6000" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="OPTD"  colortablename="FOGGIMG" description="大雾强度专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="191,86,254" maxValue="500" minValue="1" labeltext="弱" displaylengend="false"/>
+        <Color color="170,31,254" maxValue="700" minValue="500" labeltext="0.7" displaylengend="false"/>
+        <Color color="135,1,216" maxValue="900" minValue="700" labeltext="0.9" displaylengend="false"/>
+        <Color color="105,1,167" maxValue="1100" minValue="900" labeltext="1.1" displaylengend="false"/>
+        <Color color="69,2,208" maxValue="1300" minValue="1100" labeltext="1.3" displaylengend="false"/>
+        <Color color="57,2,172" maxValue="1500" minValue="1300" labeltext="较弱"/>
+        <Color color="13,138,251" maxValue="1700" minValue="1500" labeltext="1.7" displaylengend="false"/>
+        <Color color="3,203,245" maxValue="1900" minValue="1700" labeltext="1.9" displaylengend="false"/>
+        <Color color="138,233,253" maxValue="2100" minValue="1900" labeltext="2.1" displaylengend="false"/>
+        <Color color="104,253,175" maxValue="2300" minValue="2100" labeltext="2.3" displaylengend="false"/>
+        <Color color="92,239,92" maxValue="2500" minValue="2300" labeltext="中等"/>
+        <Color color="146,253,130" maxValue="2700" minValue="2500" labeltext="2.7" displaylengend="false"/>
+        <Color color="187,249,83" maxValue="2900" minValue="2700" labeltext="2.9" displaylengend="false"/>
+        <Color color="223,249,102" maxValue="3100" minValue="2900" labeltext="3.1" displaylengend="false"/>
+        <Color color="250,250,95" maxValue="3300" minValue="3100" labeltext="3.3" displaylengend="false"/>
+        <Color color="248,233,54" maxValue="3500" minValue="3300" labeltext="3.5" displaylengend="false"/>
+        <Color color="235,200,35" maxValue="3700" minValue="3500" labeltext="较强"/>
+        <Color color="220,183,7" maxValue="3900" minValue="3700" labeltext="3.9" displaylengend="false"/>
+        <Color color="226,116,5" maxValue="4100" minValue="3900" labeltext="4.1" displaylengend="false"/>
+        <Color color="225,45,6" maxValue="4300" minValue="4100" labeltext="4.3" displaylengend="false"/>
+        <Color color="255,0,0" maxValue="6000" minValue="4300" labeltext="6" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6000" labeltext="强" />
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="0TOU"  colortablename="0TOU" description="雾霾监测示意图" labeltext="">
+      <!--<Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="191,86,254" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="170,31,254" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="135,1,216" maxValue="900" minValue="700" labeltext="0.9"/>
+        <Color color="105,1,167" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="69,2,208" maxValue="1300" minValue="1100" labeltext="1.3"/>
+        <Color color="57,2,172" maxValue="1500" minValue="1300" labeltext="1.5"/>
+        <Color color="13,138,251" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="3,203,245" maxValue="1900" minValue="1700" labeltext="1.9"/>
+        <Color color="138,233,253" maxValue="2100" minValue="1900" labeltext="2.1"/>
+        <Color color="104,253,175" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="92,239,92" maxValue="2500" minValue="2300" labeltext="2.5"/>
+        <Color color="146,253,130" maxValue="2700" minValue="2500" labeltext="2.7"/>
+        <Color color="187,249,83" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="223,249,102" maxValue="3100" minValue="2900" labeltext="3.1"/>
+        <Color color="250,250,95" maxValue="3300" minValue="3100" labeltext="3.3"/>
+        <Color color="248,233,54" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="235,200,35" maxValue="3700" minValue="3500" labeltext="3.7"/>
+        <Color color="220,183,7" maxValue="3900" minValue="3700" labeltext="3.9"/>
+        <Color color="226,116,5" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,45,6" maxValue="4300" minValue="4100" labeltext="4.3"/>
+        <Color color="255,0,0" maxValue="6000" minValue="4300" labeltext="6"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6000" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>-->
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="0,0,159" maxValue="500" minValue="1" labeltext="0.5"/>
+        <Color color="0,0,191" maxValue="700" minValue="500" labeltext="0.7"/>
+        <Color color="0,0,223" maxValue="900" minValue="700" labeltext="0.9"/>
+        <Color color="0,47,255" maxValue="1100" minValue="900" labeltext="1.1"/>
+        <Color color="0,95,255" maxValue="1300" minValue="1100" labeltext="1.3"/>
+        <Color color="0,127,255" maxValue="1500" minValue="1300" labeltext="1.5"/>
+        <Color color="0,143,255" maxValue="1700" minValue="1500" labeltext="1.7"/>
+        <Color color="0,191,255" maxValue="1900" minValue="1700" labeltext="1.9"/>
+        <Color color="0,255,255" maxValue="2100" minValue="1900" labeltext="2.1"/>
+        <Color color="31,255,223" maxValue="2300" minValue="2100" labeltext="2.3"/>
+        <Color color="47,255,207" maxValue="2500" minValue="2300" labeltext="2.5"/>
+        <Color color="79,255,175" maxValue="2700" minValue="2500" labeltext="2.7"/>
+        <Color color="127,255,127" maxValue="2900" minValue="2700" labeltext="2.9"/>
+        <Color color="159,255,95" maxValue="3100" minValue="2900" labeltext="3.1"/>
+        <Color color="191,255,63" maxValue="3300" minValue="3100" labeltext="3.3"/>
+        <Color color="239,255,15" maxValue="3500" minValue="3300" labeltext="3.5"/>
+        <Color color="255,223,0" maxValue="3700" minValue="3500" labeltext="3.7"/>
+        <Color color="255,207,0" maxValue="3900" minValue="3700" labeltext="3.9"/>
+        <Color color="255,175,0" maxValue="4100" minValue="3900" labeltext="4.1"/>
+        <Color color="225,159,0" maxValue="4300" minValue="4100" labeltext="4.3"/>
+        <Color color="255,117,0" maxValue="4500" minValue="4300" labeltext="4.3"/>
+        <Color color="255,111,0" maxValue="4700" minValue="4500" labeltext="4.5"/>
+        <Color color="255,63,0" maxValue="4900" minValue="4700" labeltext="4.7"/>
+        <Color color="255,31,0" maxValue="5100" minValue="4900" labeltext="4.9"/>
+        <Color color="255,0,0" maxValue="5300" minValue="5100" labeltext="5.1"/>
+        <Color color="239,0,0" maxValue="5500" minValue="5300" labeltext="5.3"/>
+        <Color color="207,0,0" maxValue="5700" minValue="5500" labeltext="5.5"/>
+        <Color color="175,0,0" maxValue="5900" minValue="5700" labeltext="5.7"/>
+        <Color color="143,0,0" maxValue="6100" minValue="5900" labeltext="5.9"/>
+        <Color color="128,0,0" maxValue="9999" minValue="6100" labeltext=">6"/>
+        <Color color="221,216,216" maxValue="10000" minValue="9999" labeltext="云" displaylengend="false"/>
+        <Color color="128,0,0" maxValue="" minValue="10000" labeltext=">6"  displaylengend="false"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="ERAD"  colortablename="FOGERAD" description="大雾雾滴尺度专题图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="-10000" labeltext="" displaylengend="false"/>
+        <Color color="200,252,137" maxValue="6" minValue="1" labeltext="0.05"/>
+        <Color color="179,251,89" maxValue="11" minValue="6" labeltext="0.1"/>
+        <Color color="160,250,52" maxValue="16" minValue="11" labeltext="0.15"/>
+        <Color color="140,249,9" maxValue="21" minValue="16" labeltext="0.2"/>
+        <Color color="126,226,5" maxValue="26" minValue="21" labeltext="0.25"/>
+        <Color color="115,205,5" maxValue="31" minValue="26" labeltext="0.3"/>
+        <Color color="112,199,5" maxValue="36" minValue="31" labeltext="0.35"/>
+        <Color color="100,179,4" maxValue="41" minValue="36" labeltext="0.4"/>
+        <Color color="87,155,4" maxValue="46" minValue="41" labeltext="0.45"/>
+        <Color color="77,137,3" maxValue="51" minValue="46" labeltext="0.5"/>
+        <Color color="58,104,2" maxValue="10000" minValue="50" labeltext=">0.5"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="FREQ"  colortablename="FOGFREQ" description="大雾频次统计" labeltext="">
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="238,254,90" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="184,253,91" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="73,252,167" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="94,200,251" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="94,160,251" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="92,113,252" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="50,50,255" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="243,94,251" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="250,80,70" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="255,10,0" maxValue="" minValue="10" labeltext="10次及以上"/>
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="FOG" subIdentify="CYCI"  colortablename="FOGCYCI" description="大雾周期合成图" labeltext="">
+      <!--<Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="253,224,149" maxValue="2" minValue="1" labeltext="1"/>
+        <Color color="253,217,121" maxValue="3" minValue="2" labeltext="2"/>
+        <Color color="252,208,95" maxValue="4" minValue="3" labeltext="3"/>
+        <Color color="252,201,67" maxValue="5" minValue="4" labeltext="4"/>
+        <Color color="251,193,40" maxValue="6" minValue="5" labeltext="5"/>
+        <Color color="251,185,13" maxValue="7" minValue="6" labeltext="6"/>
+        <Color color="232,169,4" maxValue="8" minValue="7" labeltext="7"/>
+        <Color color="198,143,2" maxValue="9" minValue="8" labeltext="8"/>
+        <Color color="181,132,2" maxValue="10" minValue="9" labeltext="9"/>
+        <Color color="166,121,2" maxValue="11" minValue="10" labeltext="10"/>
+        <Color color="129,94,1" maxValue="" minValue="11" labeltext=">10"/>
+      </Colors>-->
+      <Colors>
+        <Color color="0,0,0" maxValue="1" minValue="" labeltext="" displaylengend="false"/>
+        <Color color="100,255,255" maxValue="" minValue="1" labeltext="1"/>
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

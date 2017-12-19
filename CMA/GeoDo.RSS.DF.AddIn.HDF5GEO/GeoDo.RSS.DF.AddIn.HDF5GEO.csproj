@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D827D5AF-E0B4-42FF-AED6-102C47DD24F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.DF.AddIn.HDF5GEO</RootNamespace>
+    <AssemblyName>GeoDo.RSS.DF.AddIn.HDF5GEO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.HDF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.HDF5">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF5.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.CA">
+      <HintPath>..\RefDLL\ImageProcess\GeoDo.RSS.Core.CA.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.RasterDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.RasterDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI">
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL.HDF5GEO, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.HDF5GEO.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.CanvasViewer">
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.CanvasViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI">
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon">
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="L2Product\frmFY3L2ProDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L2Product\frmFY3L2ProDataSelect.designer.cs">
+      <DependentUpon>frmFY3L2ProDataSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L2Product\FY3HDFL2ProFileProcessor.cs" />
+    <Compile Include="MWRIX.SIC\frmIceConDataSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MWRIX.SIC\frmIceConDataSelect.designer.cs">
+      <DependentUpon>frmIceConDataSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MWRIX.SIC\FY3BIceConFileProcessor.cs" />
+    <Compile Include="MWRIX.SWE\frmFYSnowPrdDataSelecte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MWRIX.SWE\frmFYSnowPrdDataSelecte.designer.cs">
+      <DependentUpon>frmFYSnowPrdDataSelecte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MWRIX.SWE\FYSnowPrdFileProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="L2Product\frmFY3L2ProDataSelect.resx">
+      <DependentUpon>frmFY3L2ProDataSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MWRIX.SIC\frmIceConDataSelect.resx">
+      <DependentUpon>frmIceConDataSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MWRIX.SWE\frmFYSnowPrdDataSelecte.resx">
+      <DependentUpon>frmFYSnowPrdDataSelecte.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

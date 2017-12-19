@@ -1,0 +1,12 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.RSS.MIF.Prds.FOG.dll
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.RSS.MIF.Prds.FOG.pdb
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.FormNewFileName.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.UCCoverageFile.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.UCHistroyCSRSetting.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.UCNatrueColor.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.UCTimeZone.resources
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GenerateResource.write.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.dll
+D:\监测分析平台\Code\CMA\GeoDo.RSS.MIF.Prds.FOG\obj\Release\GeoDo.RSS.MIF.Prds.FOG.pdb

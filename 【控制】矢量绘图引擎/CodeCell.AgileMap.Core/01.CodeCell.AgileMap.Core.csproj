@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB472768-5291-45D1-B5B0-322539867D84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCell.AgileMap.Core</RootNamespace>
+    <AssemblyName>CodeCell.AgileMap.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdal_csharp, Version=1.0.4499.30545, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDll\GDAL CSharp\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00.Projection\PrjStdsMapTableParser\IPrjStdsMapTableParser.cs" />
+    <Compile Include="00.Projection\PrjStdsMapTableParser\PrjStdsMapTableParser.cs" />
+    <Compile Include="00.Projection\Proj4\Proj4Projection.cs" />
+    <Compile Include="00.Projection\Proj4\proj_api.cs" />
+    <Compile Include="00.Projection\Proj4\proj_api_test.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\CoordinateDomain.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\IProjectionTransform.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\PrjTranSimpleEquidistantCyclindrical.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\ProjectionTransform.cs" />
+    <Compile Include="00.Projection\ProjectionTransform\ProjectionTransformFactory.cs" />
+    <Compile Include="00.Projection\SpatialReferenceFactory.cs" />
+    <Compile Include="00.Projection\SpatialReference\enumWKTSource.cs" />
+    <Compile Include="00.Projection\SpatialReference\EnviPrjInfoArgDef.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\AngularUnit.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\Datum.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\GeographicCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\PrimeMeridian.cs" />
+    <Compile Include="00.Projection\SpatialReference\GeographicsCoordSystem\Spheroid.cs" />
+    <Compile Include="00.Projection\SpatialReference\IGeographicCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\IProjectionCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\ISpatialReference.cs" />
+    <Compile Include="00.Projection\SpatialReference\ISpatialReferenceStringParser.cs" />
+    <Compile Include="00.Projection\SpatialReference\ISpatialRefFormat.cs" />
+    <Compile Include="00.Projection\SpatialReference\NameMapItem.cs" />
+    <Compile Include="00.Projection\SpatialReference\NameValuePair.cs" />
+    <Compile Include="00.Projection\SpatialReference\OGCWkt2Proj4Mapper.cs" />
+    <Compile Include="00.Projection\SpatialReference\ProjectionCoordSystem\ProjectionCoordSystem.cs" />
+    <Compile Include="00.Projection\SpatialReference\SpatialReference.cs" />
+    <Compile Include="00.Projection\SpatialReference\WktParsers\WktParserBase.cs" />
+    <Compile Include="00.Projection\SpatialReference\WktParsers\WktProjectionCommonParser.cs" />
+    <Compile Include="00.Projection\SpatialReference\WktParsers\WktSpliter.cs" />
+    <Compile Include="01.Format\GlobalFirePoints\HdfGlobalFirePointReader.cs" />
+    <Compile Include="01.Format\IFeatureFetcher.cs" />
+    <Compile Include="03.Feature\Split\FeatureSplitterByProjection.cs" />
+    <Compile Include="03.Feature\Split\IFeatureSplitterByProjection.cs" />
+    <Compile Include="01.Format\IReaderInsideSession.cs" />
+    <Compile Include="01.Format\IUniversalVectorDataReader.cs" />
+    <Compile Include="01.Format\IVectorFeatureDataReader.cs" />
+    <Compile Include="01.Format\IVectorFeatureSpatialDbReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Read\AnnotationDbfReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Read\DBaseReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Read\IAnnotationDbfReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Read\IDbfReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Read\ParseDbfToDataTable.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Write\DbfWriter.cs" />
+    <Compile Include="01.Format\ShapeFile\Read\EsriShapeFilesFeatureReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Read\EsriShapeFilesReader.cs" />
+    <Compile Include="01.Format\ShapeFile\Read\MemoryEstimateOfShapeFile.cs" />
+    <Compile Include="01.Format\ShapeFile\Dbf\Write\DbfWriterII.cs" />
+    <Compile Include="01.Format\ShapeFile\Write\EsriShapeFilesWriter.cs" />
+    <Compile Include="01.Format\ShapeFile\Write\IEsriShapeFilesWriter.cs" />
+    <Compile Include="01.Format\ShapeFile\Write\EsriShapeFilesWriterII.cs" />
+    <Compile Include="01.Format\SpatialDb\VectorFeatureSpatialDbReader.cs" />
+    <Compile Include="01.Format\VectorDataReaderFactory.cs" />
+    <Compile Include="01.Format\VectorFeatureSpatialDbReaderFactory.cs" />
+    <Compile Include="02.Geometry\enumShapeTypes.cs" />
+    <Compile Include="02.Geometry\Geometry.cs" />
+    <Compile Include="02.Geometry\GeometryMathLib.cs" />
+    <Compile Include="02.Geometry\IOGCWktSupport.cs" />
+    <Compile Include="02.Geometry\ShapeTypeToString.cs" />
+    <Compile Include="03.Feature\Feature\Feature.cs" />
+    <Compile Include="03.Feature\Split\SplitRangesComputer.cs" />
+    <Compile Include="04.FeatureClass\IClass.cs" />
+    <Compile Include="05.DataSource\ExtendMethods.cs" />
+    <Compile Include="05.DataSource\FeatureDataSourceBase.cs" />
+    <Compile Include="05.DataSource\FileDataSource\FileDataSource.cs" />
+    <Compile Include="05.DataSource\FileDataSource\IFileDataSource.cs" />
+    <Compile Include="05.DataSource\GlobalCache\GlobalCacher.cs" />
+    <Compile Include="05.DataSource\GlobalCache\ICachedFeatures.cs" />
+    <Compile Include="05.DataSource\GlobalCache\ICachedVectorData.cs" />
+    <Compile Include="05.DataSource\GlobalCache\IVectorDataGlobalCacher.cs" />
+    <Compile Include="05.DataSource\IDataSource.cs" />
+    <Compile Include="05.DataSource\IFeatureDataSource.cs" />
+    <Compile Include="05.DataSource\MemoryDataSource\MemoryDataSource.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\Client\GetObjectFromHttpStream.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\FetClassIdentify.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\FetClassProperty.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\FetDatasetIdentify.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\HttpCommands.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\InstanceIdentify.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\RequestIndicator.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\RequestIsFailed.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IdentifyAndProperty\RequestIsOK.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\IServerDataSource.cs" />
+    <Compile Include="05.DataSource\ServerDataSource\ServerDataSource.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\DbConnectionPool.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\enumSpatialDatabaseType.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\ISpatialDbDataSource.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\MetaData\BudGISMetadata.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\MetaData\SystemField.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\MetaData\SystemTable.cs" />
+    <Compile Include="05.DataSource\SpatialDbDataSource\SpatialDbDataSource.cs" />
+    <Compile Include="04.FeatureClass\enumCoordinateType.cs" />
+    <Compile Include="04.FeatureClass\FeatureClass.cs" />
+    <Compile Include="04.FeatureClass\IFeatureClass.cs" />
+    <Compile Include="04.FeatureClass\IRuntimeProjecter.cs" />
+    <Compile Include="04.FeatureClass\Query\enumSpatialRelation.cs" />
+    <Compile Include="04.FeatureClass\Query\IQueryFeatures.cs" />
+    <Compile Include="04.FeatureClass\Query\QueryFilter.cs" />
+    <Compile Include="04.FeatureClass\RepeatFeatureRecorder.cs" />
+    <Compile Include="06.Index\GridReader\IGridReader.cs" />
+    <Compile Include="06.Index\Grid\enumGridLimitType.cs" />
+    <Compile Include="06.Index\Grid\Grid.cs" />
+    <Compile Include="06.Index\Grid\GridDefinition.cs" />
+    <Compile Include="06.Index\Grid\GridStateIndicator.cs" />
+    <Compile Include="06.Index\Grid\IGrid.cs" />
+    <Compile Include="06.Index\Grid\MemoryGridLimiter.cs" />
+    <Compile Include="06.Index\IOutsideIndicator.cs" />
+    <Compile Include="06.Index\IRasterReader.cs" />
+    <Compile Include="06.Index\ISupportOutsideIndicator.cs" />
+    <Compile Include="06.Index\Level\LevelAdjuster.cs" />
+    <Compile Include="06.Index\Level\ArgOfLeveling.cs" />
+    <Compile Include="06.Index\Level\LevelDefinition.cs" />
+    <Compile Include="06.Index\OutsideIndicator.cs" />
+    <Compile Include="07.Layer\FeatureLayer.cs" />
+    <Compile Include="07.Layer\IFeatureLayer.cs" />
+    <Compile Include="11.Map\ILayerDrawable.cs" />
+    <Compile Include="07.Layer\IIdentifyFeatures.cs" />
+    <Compile Include="07.Layer\ILayer.cs" />
+    <Compile Include="07.Layer\ILightLayer.cs" />
+    <Compile Include="07.Layer\LayerContainer\LayerContainer.cs" />
+    <Compile Include="07.Layer\LayerContainer\ILayerContainer.cs" />
+    <Compile Include="07.Layer\SystemLightLayers\ILocatingFocusLayer.cs" />
+    <Compile Include="07.Layer\SystemLightLayers\ILocationIconLayer.cs" />
+    <Compile Include="07.Layer\SystemLightLayers\LocationFocusLayer.cs" />
+    <Compile Include="07.Layer\SystemLightLayers\LocationIcon.cs" />
+    <Compile Include="07.Layer\SystemLightLayers\LocationIconLayer.cs" />
+    <Compile Include="08.Symbol\ICompositeSymbol.cs" />
+    <Compile Include="08.Symbol\IFillSymbol.cs" />
+    <Compile Include="08.Symbol\ISymbol.cs" />
+    <Compile Include="08.Symbol\ISymbolCacheable.cs" />
+    <Compile Include="08.Symbol\ITwoStepDrawSymbol.cs" />
+    <Compile Include="08.Symbol\LineSymbol.cs" />
+    <Compile Include="08.Symbol\MarkerSymbol.cs" />
+    <Compile Include="08.Symbol\UI\FeatureRendererCategory.cs" />
+    <Compile Include="08.Symbol\UI\frmFeatureRendererEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\frmFeatureRendererEditor.Designer.cs">
+      <DependentUpon>frmFeatureRendererEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\frmPictureBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\frmPictureBrowser.Designer.cs">
+      <DependentUpon>frmPictureBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\frmTrueTypeFontBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\frmTrueTypeFontBrowser.Designer.cs">
+      <DependentUpon>frmTrueTypeFontBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\IFeatureRendererProvider.cs" />
+    <Compile Include="08.Symbol\UI\IFeaureRenderEditorControl.cs" />
+    <Compile Include="08.Symbol\UI\SymbolTypeItem.cs" />
+    <Compile Include="08.Symbol\UI\SymbolTypeItemProvider.cs" />
+    <Compile Include="08.Symbol\UI\UCFeatureRendererComposite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererComposite.Designer.cs">
+      <DependentUpon>UCFeatureRendererComposite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererControlBase.Designer.cs">
+      <DependentUpon>UCFeatureRendererControlBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererSimple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererSimple.Designer.cs">
+      <DependentUpon>UCFeatureRendererSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererSimpleTwoStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererSimpleTwoStep.Designer.cs">
+      <DependentUpon>UCFeatureRendererSimpleTwoStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererUniqueValue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCFeatureRendererUniqueValue.Designer.cs">
+      <DependentUpon>UCFeatureRendererUniqueValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCPictureBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCPictureBrowser.Designer.cs">
+      <DependentUpon>UCPictureBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCTrueTypeBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UCTrueTypeBrowser.Designer.cs">
+      <DependentUpon>UCTrueTypeBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08.Symbol\UI\UIFeatureRendererTypeEditor.cs" />
+    <Compile Include="09.Renderer\BaseFeatureRenderer.cs" />
+    <Compile Include="09.Renderer\enumLogicOperator.cs" />
+    <Compile Include="09.Renderer\IExpressTuple.cs" />
+    <Compile Include="09.Renderer\IFeatureRenderer.cs" />
+    <Compile Include="09.Renderer\IFeatureTwoStepRenderer.cs" />
+    <Compile Include="09.Renderer\LogicExpressTuple.cs" />
+    <Compile Include="09.Renderer\QuickTransformArgs.cs" />
+    <Compile Include="09.Renderer\RotateFieldDef.cs" />
+    <Compile Include="09.Renderer\SimpleFeatureRenderer.cs" />
+    <Compile Include="09.Renderer\SimpleTwoStepFeatureRenderer.cs" />
+    <Compile Include="09.Renderer\UniqueFeatureRenderer.cs" />
+    <Compile Include="10.Label\Annotation\AnnotationDef.cs" />
+    <Compile Include="10.Label\LabelLocation\BaseLabelLocationService.cs" />
+    <Compile Include="10.Label\LabelLocation\ILabelLocationService.cs" />
+    <Compile Include="10.Label\LabelLocation\LabelLocation.cs" />
+    <Compile Include="10.Label\LabelLocation\LabelLocationServiceDefault.cs" />
+    <Compile Include="10.Label\Label\ComplexLabelDef.cs" />
+    <Compile Include="10.Label\Label\ContainerSymbol\ContainerSymbol.cs" />
+    <Compile Include="10.Label\Label\ContainerSymbol\IContainerSymbol.cs" />
+    <Compile Include="10.Label\Label\ContainerSymbol\RoundRectContainerSym.cs" />
+    <Compile Include="10.Label\Label\enumLabelSource.cs" />
+    <Compile Include="10.Label\Label\FieldTypeEditor\UIFieldTypeEditor.cs" />
+    <Compile Include="10.Label\Label\IFieldNamesProvider.cs" />
+    <Compile Include="10.Label\Label\ILabelDef.cs" />
+    <Compile Include="10.Label\Label\ILabelRender.cs" />
+    <Compile Include="10.Label\Label\LabelDef.cs" />
+    <Compile Include="10.Label\Label\LabelRender.cs" />
+    <Compile Include="10.Label\Label\ScaleRange.cs" />
+    <Compile Include="10.Label\Label\UIContainerSymbolEditor.cs" />
+    <Compile Include="11.Map\IMap.cs" />
+    <Compile Include="11.Map\Map.cs" />
+    <Compile Include="11.Map\MapArguments.cs" />
+    <Compile Include="11.Map\MapAuthor.cs" />
+    <Compile Include="11.Map\MapFactory.cs" />
+    <Compile Include="11.Map\MapToXML.cs" />
+    <Compile Include="11.Map\MapVersion.cs" />
+    <Compile Include="12.MapRuntime\Conflict\ConflictDefinition.cs" />
+    <Compile Include="12.MapRuntime\Conflict\IConflictor.cs" />
+    <Compile Include="12.MapRuntime\Conflict\PixelConflictor.cs" />
+    <Compile Include="12.MapRuntime\Conflict\SimpleConflictor.cs" />
+    <Compile Include="12.MapRuntime\Exchanger\IRuntimeExchanger.cs" />
+    <Compile Include="12.MapRuntime\Exchanger\RuntimeExchanger.cs" />
+    <Compile Include="12.MapRuntime\IAsyncDataArrivedNotify.cs" />
+    <Compile Include="12.MapRuntime\IFeatureRenderEnvironment.cs" />
+    <Compile Include="12.MapRuntime\ILocationService.cs" />
+    <Compile Include="12.MapRuntime\IMapRuntime.cs" />
+    <Compile Include="12.MapRuntime\IMapRuntimeRenderable.cs" />
+    <Compile Include="12.MapRuntime\LightLayerContainer\ILightLayerContainer.cs" />
+    <Compile Include="12.MapRuntime\LightLayerContainer\LightLayerContainer.cs" />
+    <Compile Include="12.MapRuntime\MapRuntime.cs" />
+    <Compile Include="12.MapRuntime\OnTransformChangedHandler.cs" />
+    <Compile Include="12.MapRuntime\RenderArgs.cs" />
+    <Compile Include="12.MapRuntime\ScaleBarArgs.cs" />
+    <Compile Include="13.MapRuntimeHost\ICoordinateTransform.cs" />
+    <Compile Include="13.MapRuntimeHost\IMapRefresh.cs" />
+    <Compile Include="13.MapRuntimeHost\IMapRuntimeHost.cs" />
+    <Compile Include="13.MapRuntimeHost\IQueryResultContainer.cs" />
+    <Compile Include="15.UIs\BookmarkManager.cs" />
+    <Compile Include="15.UIs\enumContainerEventType.cs" />
+    <Compile Include="15.UIs\enumMapToolType.cs" />
+    <Compile Include="15.UIs\Bookmark.cs" />
+    <Compile Include="15.UIs\IBookmarkManager.cs" />
+    <Compile Include="15.UIs\IContainerEventHandler.cs" />
+    <Compile Include="15.UIs\IMapControl.cs" />
+    <Compile Include="15.UIs\IMapControlDummySupprot.cs" />
+    <Compile Include="15.UIs\IMapControlEvents.cs" />
+    <Compile Include="15.UIs\IMapTool.cs" />
+    <Compile Include="15.UIs\IMouseLocationInfoPrinter.cs" />
+    <Compile Include="15.UIs\IMouseLocationInfoPrinterManager.cs" />
+    <Compile Include="15.UIs\MapEventDelegateDefs.cs" />
+    <Compile Include="15.UIs\OnRenderIsFinishedHandler.cs" />
+    <Compile Include="14.Persist\IPersistable.cs" />
+    <Compile Include="14.Persist\IPersistToBinary.cs" />
+    <Compile Include="14.Persist\PersistObject.cs" />
+    <Compile Include="16.MapImageGenerator\IMapImageGenerator.cs" />
+    <Compile Include="16.MapImageGenerator\MapImageGeneratorDefault.cs" />
+    <Compile Include="17.TileSystem\TileComputer.cs" />
+    <Compile Include="17.TileSystem\ITileSystemHelper.cs" />
+    <Compile Include="17.TileSystem\TileDef.cs" />
+    <Compile Include="17.TileSystem\TileSystemHelper.cs" />
+    <Compile Include="19.Service\IMapServer.cs" />
+    <Compile Include="19.Service\IMapService.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="18.DbConnections\DbConnectionFactory.cs" />
+    <Compile Include="18.DbConnections\DiffDbAdapter.cs" />
+    <Compile Include="18.DbConnections\DiffDbAdapterFactory.cs" />
+    <Compile Include="18.DbConnections\DiffDbAdapterMySQL.cs" />
+    <Compile Include="18.DbConnections\DiffDbAdapterOracle.cs" />
+    <Compile Include="18.DbConnections\DiffDbAdapterSql.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="red-pushpin.png" />
+    <EmbeddedResource Include="BudGISMetadata.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="08.Symbol\UI\frmFeatureRendererEditor.resx">
+      <DependentUpon>frmFeatureRendererEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\frmPictureBrowser.resx">
+      <DependentUpon>frmPictureBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\frmTrueTypeFontBrowser.resx">
+      <DependentUpon>frmTrueTypeFontBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\UCFeatureRendererComposite.resx">
+      <DependentUpon>UCFeatureRendererComposite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\UCFeatureRendererSimple.resx">
+      <DependentUpon>UCFeatureRendererSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\UCFeatureRendererSimpleTwoStep.resx">
+      <DependentUpon>UCFeatureRendererSimpleTwoStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\UCFeatureRendererUniqueValue.resx">
+      <DependentUpon>UCFeatureRendererUniqueValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\UCPictureBrowser.resx">
+      <DependentUpon>UCPictureBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08.Symbol\UI\UCTrueTypeBrowser.resx">
+      <DependentUpon>UCTrueTypeBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeCell.Bricks\00.CodeCell.Bricks.csproj">
+      <Project>{530F3258-AE9C-4C12-A506-358F7021B345}</Project>
+      <Name>00.CodeCell.Bricks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="00.Projection\Proj4\00README.txt" />
+    <Content Include="GeoDo.Project.Cnfg.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

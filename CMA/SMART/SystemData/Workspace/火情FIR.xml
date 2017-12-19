@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Workspace text="火情" identify="FIR" isenabled="true">
+  <ExtractCatalog text="当前监测分析" class="CurrentExtracting">
+    <CatalogNodeGroup text="2012-06-26" identify="OrbitDateTime">
+      <CatalogNodeGroup  text="局地文件" identify="OrbitFileName"/>
+      <CatalogNodeGroup text="栅格产品" identify="DBLV,0FPG,0CLM,FIRG,SMOK,GFRT,GFRR,FIRF,FIFL,FLMX,FLMI,FLAV,FLAN,FLCY,FLAR,FRAM" pattern="*_{0}_*.dat">
+        <!--<CatalogNodeGroup text="二值栅格" identify="DBLV" pattern="*_{0}_*.dat"/>
+          <CatalogNodeGroup text="火点强度" identify="0FPG" pattern="*_{0}_*.dat"/>-->
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="矢量产品" identify="RGFR" pattern="*_{0}_*.shp">
+        <!--<CatalogNodeGroup text="修正火点" identify="RGFR" pattern="*_{0}_*.shp"/>-->
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="信息列表">
+        <CatalogNodeGroup text="火点信息" identify="PLST,PLSF" pattern="*_{0}_*.txt"/>
+        <CatalogNodeGroup text="全球火点" identify="GFIL" pattern="*_{0}_*.txt"/>
+        <CatalogNodeGroup text="火区信息" identify="FRIL,FRIH,FRIK" pattern="*_{0}_*.xlsx"/>
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="专题图产品" identify="MCSI,NCSI,0SDI,CSDI,FPGI,CFPG,CMPI,CCMP,GFPI,CGFP,COMP,CCOM,FREI,GFRF,GFRI,OMCS,FFRI,FFLI,OFFR,OFFL,GFRY" pattern="*_{0}_*.gxd">
+        <!--<CatalogNodeGroup text="多通道合成图" identify="MCSI" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="二值图" identify="0SDI,CSDI" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="火点强度" identify="FPGI,CFPG" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="对比分析图" identify="CMPI,CCMP" pattern="*_{0}_*.gxd"/>
+          <CatalogNodeGroup text="全球火点" identify="GFPI,CGFP" pattern="*_{0}_*.gxd"/>-->
+      </CatalogNodeGroup>
+      <CatalogNodeGroup text="统计分析">
+        <CatalogNodeGroup text="面积统计" identify="CCAR,CCCA,CLUT,0CBP,0CCC,0CCB,FCAR,FCLU,CLUP,FCBP,CBPP,FCCC" pattern="*_{0}_*.xlsx"/>
+        <CatalogNodeGroup text="火点大洲统计" identify="GFCF" pattern="*_{0}_*.xlsx"/>
+        <CatalogNodeGroup text="多时段合成" identify="CYCI,CCYC" pattern="*_{0}_*.gxd"/>
+        <CatalogNodeGroup text="频次统计" identify="FREQ,CFRE" pattern="*_{0}_*.gxd"/>
+      </CatalogNodeGroup>
+    </CatalogNodeGroup>
+  </ExtractCatalog>
+  <Catalog text="栅格产品" folder="栅格产品" class="RasterProduct" identify="DBLV,0FPG,0CLM,FIRG,SMOK,GFRR,GFRT,FIRF,FIFL,FLMX,FLMI,FLAV,FLAN,FLCY,FLAR,FRAM" filter="Smart Raster(*.dat)|*.dat" pattern="*_{0}_*.dat">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <!--<Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+        <Attribute text="传感器" identify="Sensor" format="" visible="true"/>-->
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <!--<Attribute text="原始文件" identify="SourceFile" format="" visible="true"/>
+        <Attribute text="监测区域" identify="RegionIdentify" format="" visible="true"/>
+        <Attribute text="描述" identify="Description" format="" visible="true"/>-->
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="统计分析产品" folder="统计产品" class="ChartProduct" identify="CCAR,CCCA,CLUT,0CBP,0CCC,GFCF,FCAR,FCLU,CLUP,FCBP,CBPP,FCCC" filter="Ms Office Files(*.xlsx)|*.xlsx" pattern="*_{0}_*.xlsx">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="火点信息列表" folder="信息列表" class="VectorProduct" identify="PLST,GFIL,PLSF" filter="Txt File(*.txt)|*.txt" pattern="*_{0}_*.txt">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="火区信息列表" folder="统计产品" class="InfoProduct" identify="FRIL,FRIH,FRIK" filter="Excel File(*.xlsx)|*.xlsx" pattern="*_{0}_*.xlsx">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="矢量产品" folder="矢量产品" class="GlobalFireProduct" identify="RGFR" filter="Vector File(*.shp)|*.shp" pattern="*_{0}_*.shp">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd" visible="true"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+    </Attributes>
+  </Catalog>
+  <Catalog text="专题图产品" folder="专题产品" class="GraphicProduct" identify="MCSI,NCSI,0SDI,CSDI,CMPI,CCMP,FPGI,CFPG,CYCI,CCYC,FREQ,CFRE,COMP,CCOM,FREI,GFRI,GFRF,OMCS,FFRI,FFLI,OFFR,OFFL,GFRY" filter="Smart Theme File(*.gxd)|*.gxd" pattern="*_{0}_*.gxd">
+    <Attributes>
+      <Attribute text="产品类别" identify="CatalogItemCN" format="" visible="true"/>
+      <Attribute text="区域" identify="Region" format="" visible="true"/>
+      <Attribute text="卫星" identify="Satellite" format="" visible="true"/>
+      <Attribute text="传感器" identify="Sensor" format="" visible="true"/>
+      <Attribute text="轨道时间" identify="OrbitDateTime" format="yyyy-MM-dd HH:mm:ss" visible="true"/>
+      <Attribute text="轨道时间分组" identify="OrbitTimeGroup" format="yyyy-MM-dd" visible="false"/>
+      <Attribute text="文件名" identify="FileName" format="" visible="true"/>
+    </Attributes>
+  </Catalog>
+</Workspace>

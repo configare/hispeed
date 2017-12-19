@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2A7FC07-042C-4395-BCDC-CC6B944436AB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.CA</RootNamespace>
+    <AssemblyName>GeoDo.RSS.CA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CurvesEffect\Class\ColorBgra.cs" />
+    <Compile Include="CurvesEffect\Class\ColorTransferMode.cs" />
+    <Compile Include="CurvesEffect\Class\EnumLocalizer.cs" />
+    <Compile Include="CurvesEffect\Class\EventArgs`1.cs" />
+    <Compile Include="CurvesEffect\Class\EventHandler`1.cs" />
+    <Compile Include="CurvesEffect\Class\MaskMode.cs" />
+    <Compile Include="CurvesEffect\Class\PdnResources.cs" />
+    <Compile Include="CurvesEffect\Class\Program.cs" />
+    <Compile Include="CurvesEffect\Class\StartupTestType.cs" />
+    <Compile Include="CurvesEffect\Class\Utility.cs" />
+    <Compile Include="CurvesEffect\Control\Argument\AdjustedValues.cs" />
+    <Compile Include="CurvesEffect\Control\Argument\CurveAdjustArg.cs" />
+    <Compile Include="CurvesEffect\Control\Argument\CurveAdjustProcessorArg.cs" />
+    <Compile Include="CurvesEffect\Control\ColourBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\ControlPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\ControlPoint.Designer.cs">
+      <DependentUpon>ControlPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\CurveAdjustProcessor.cs" />
+    <Compile Include="CurvesEffect\Control\CurveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\CurveControlLuminosity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\CurveControlRgb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\frmCurveProcessorArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CurvesEffect\Control\frmCurveProcessorArgEditor.Designer.cs">
+      <DependentUpon>frmCurveProcessorArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CurvesEffect\Interpolator\IInterpolator.cs" />
+    <Compile Include="CurvesEffect\Interpolator\InterpolatorFactory.cs" />
+    <Compile Include="CurvesEffect\Interpolator\LineInterpolator.cs" />
+    <Compile Include="CurvesEffect\Interpolator\SplineInterpolator.cs" />
+    <Compile Include="LPY\EdgeEnhance\EdgeEnhance.cs" />
+    <Compile Include="LPY\EliminationColor\EliminationColorProcessor.cs" />
+    <Compile Include="LPY\GaussianFliter\frmGaussianFliter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LPY\GaussianFliter\frmGaussianFliter.Designer.cs">
+      <DependentUpon>frmGaussianFliter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LPY\GaussianFliter\GaussianFliter.cs" />
+    <Compile Include="LPY\GaussianFliter\GaussianFliterARG.cs" />
+    <Compile Include="LPY\HisEqualizing\HisEqualizing.cs" />
+    <Compile Include="LPY\HistGetGrades\HistGetGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LPY\HistGetGrades\HistGetGrades.Designer.cs">
+      <DependentUpon>HistGetGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LPY\HistGetGrades\HistGetGradesArg.cs" />
+    <Compile Include="LPY\HistGetGrades\HistGetGradesProcessor.cs" />
+    <Compile Include="LPY\HueSaturation\frmHueSaturation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LPY\HueSaturation\frmHueSaturation.designer.cs">
+      <DependentUpon>frmHueSaturation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LPY\HueSaturation\HSLColorArg.cs" />
+    <Compile Include="LPY\HueSaturation\HueSaturationProcess.cs" />
+    <Compile Include="LPY\Sharpen\SharpenProcessor.cs" />
+    <Compile Include="NSMCExpEnhance\frmNSMCExpEnhanceArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NSMCExpEnhance\frmNSMCExpEnhanceArgEditor.Designer.cs">
+      <DependentUpon>frmNSMCExpEnhanceArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NSMCExpEnhance\IActiveDrawing.cs" />
+    <Compile Include="NSMCExpEnhance\NSMCExpEnhanceArg.cs" />
+    <Compile Include="NSMCExpEnhance\PointsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NSMCExpEnhance\PointsControl.Designer.cs">
+      <DependentUpon>PointsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NSMCExpEnhance\NSMCExpEnhanceProcessor.cs" />
+    <Compile Include="NSMCExpEnhance\PointsControlRGB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NSMCExpEnhance\PointsControlLuminosity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="WYD\BrightContrast\BrightContrastArg.cs" />
+    <Compile Include="WYD\BrightContrast\BrightContrastProcessor.cs" />
+    <Compile Include="WYD\BrightContrast\enumChannel.cs" />
+    <Compile Include="WYD\BrightContrast\frmBrightContrastArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYD\BrightContrast\frmBrightContrastArgEditor.Designer.cs">
+      <DependentUpon>frmBrightContrastArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYD\Histogram\UCHistogram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WYD\Histogram\UCHistogram.Designer.cs">
+      <DependentUpon>UCHistogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYD\LevelColor\CountPixel.cs" />
+    <Compile Include="WYD\LevelColor\frmLevelColorArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYD\LevelColor\frmLevelColorArgEditor.Designer.cs">
+      <DependentUpon>frmLevelColorArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYD\LevelColor\LevelColorArg.cs" />
+    <Compile Include="WYD\LevelColor\LevelColorProcessor.cs" />
+    <Compile Include="WYD\LevelColor\ObjPixelCount.cs" />
+    <Compile Include="WYD\Slider\UCSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WYD\Slider\UCSlider.Designer.cs">
+      <DependentUpon>UCSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\AverageFilter\RgbProcessorAverageFilter.cs" />
+    <Compile Include="WYU\3BandViewer\BandSpliter.cs" />
+    <Compile Include="WYU\3BandViewer\frm3BandViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\3BandViewer\frm3BandViewer.designer.cs">
+      <DependentUpon>frm3BandViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\3BandViewer\I3BandViewer.cs" />
+    <Compile Include="WYU\3BandViewer\StickyForm.cs" />
+    <Compile Include="WYU\3BandViewer\TopFormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\3BandViewer\TopFormBase.designer.cs">
+      <DependentUpon>TopFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\3BandViewer\Win32.cs" />
+    <Compile Include="WYU\ExponentEnhance\Tools\DblBarTrackWithBoxs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\DblBarTrackWithBoxs.designer.cs">
+      <DependentUpon>DblBarTrackWithBoxs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\DoubleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\EndpointValueItem.cs" />
+    <Compile Include="WYU\ExponentEnhance\ExponentEnhanceArg.cs" />
+    <Compile Include="WYU\ExponentEnhance\ExponentEnhanceProcessor.cs" />
+    <Compile Include="WYU\ExponentEnhance\frmExponentEnhanceII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\frmExponentEnhanceII.designer.cs">
+      <DependentUpon>frmExponentEnhanceII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\frmEndpointValueManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\frmEndpointValueManager.designer.cs">
+      <DependentUpon>frmEndpointValueManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\frmSetEndpointValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\frmSetEndpointValue.designer.cs">
+      <DependentUpon>frmSetEndpointValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\MultiBarTrack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WYU\ExponentEnhance\Tools\MultiBarTrack.designer.cs">
+      <DependentUpon>MultiBarTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\LogEnhance\frmLogEnhance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\LogEnhance\frmLogEnhance.designer.cs">
+      <DependentUpon>frmLogEnhance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\LogEnhance\LogEnhanceArg.cs" />
+    <Compile Include="WYU\LogEnhance\RgbProcessorLogEnhance.cs" />
+    <Compile Include="WYU\MiddleFilter\frmMiddleFilterArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\MiddleFilter\frmMiddleFilterArgEditor.Designer.cs">
+      <DependentUpon>frmMiddleFilterArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\MiddleFilter\MiddleFilterArg.cs" />
+    <Compile Include="WYU\MiddleFilter\RgbProcessorMiddleFilter.cs" />
+    <Compile Include="WYU\ReplaceColor\frmReplaceColorArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\ReplaceColor\frmReplaceColorArgEditor.Designer.cs">
+      <DependentUpon>frmReplaceColorArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\ReplaceColor\OnColorPickIsFinishedHandler.cs" />
+    <Compile Include="WYU\ReplaceColor\ReplaceColorArg.cs" />
+    <Compile Include="WYU\ReplaceColor\RgbProcessorReplacedColor.cs" />
+    <Compile Include="WYU\ReversalColor\frmReversalColorEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\ReversalColor\frmReversalColorEditor.Designer.cs">
+      <DependentUpon>frmReversalColorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\ReversalColor\ReversalColorArg.cs" />
+    <Compile Include="WYU\ReversalColor\RgbProcessorReversalColor.cs" />
+    <Compile Include="WYU\SelectableColor\enumSelectableColor.cs" />
+    <Compile Include="WYU\SelectableColor\enumSelectableColorApplyType.cs" />
+    <Compile Include="WYU\SelectableColor\frmSelectableColorArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\SelectableColor\frmSelectableColorArgEditor.Designer.cs">
+      <DependentUpon>frmSelectableColorArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\SelectableColor\RgbProcessorSelectableColor.cs" />
+    <Compile Include="WYU\SelectableColor\SelectableColorArg.cs" />
+    <Compile Include="WYU\SelectableColor\SelectableColorArgItem.cs" />
+    <Compile Include="WYU\SelectableColor\SelectableColorTargetColorItem.cs" />
+    <Compile Include="WYU\WeightedAverageFiltering\frmWeightedAveFilterArgEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WYU\WeightedAverageFiltering\frmWeightedAveFilterArgEditor.Designer.cs">
+      <DependentUpon>frmWeightedAveFilterArgEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WYU\WeightedAverageFiltering\RgbProcessorWeightedAveFilter.cs" />
+    <Compile Include="WYU\WeightedAverageFiltering\WeightedAveFilterArg.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CurvesEffect\Control\ControlPoint.resx">
+      <DependentUpon>ControlPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CurvesEffect\Control\frmCurveProcessorArgEditor.resx">
+      <DependentUpon>frmCurveProcessorArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPY\GaussianFliter\frmGaussianFliter.resx">
+      <DependentUpon>frmGaussianFliter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPY\HistGetGrades\HistGetGrades.resx">
+      <DependentUpon>HistGetGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPY\HueSaturation\frmHueSaturation.resx">
+      <DependentUpon>frmHueSaturation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NSMCExpEnhance\frmNSMCExpEnhanceArgEditor.resx">
+      <DependentUpon>frmNSMCExpEnhanceArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYD\BrightContrast\frmBrightContrastArgEditor.resx">
+      <DependentUpon>frmBrightContrastArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYD\Histogram\UCHistogram.resx">
+      <DependentUpon>UCHistogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYD\LevelColor\frmLevelColorArgEditor.resx">
+      <DependentUpon>frmLevelColorArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYD\Slider\UCSlider.resx">
+      <DependentUpon>UCSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\3BandViewer\frm3BandViewer.resx">
+      <DependentUpon>frm3BandViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\3BandViewer\TopFormBase.resx">
+      <DependentUpon>TopFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ExponentEnhance\Tools\DblBarTrackWithBoxs.resx">
+      <DependentUpon>DblBarTrackWithBoxs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ExponentEnhance\frmExponentEnhanceII.resx">
+      <DependentUpon>frmExponentEnhanceII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ExponentEnhance\Tools\frmEndpointValueManager.resx">
+      <DependentUpon>frmEndpointValueManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ExponentEnhance\Tools\frmSetEndpointValue.resx">
+      <DependentUpon>frmSetEndpointValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ExponentEnhance\Tools\MultiBarTrack.resx">
+      <DependentUpon>MultiBarTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\LogEnhance\frmLogEnhance.resx">
+      <DependentUpon>frmLogEnhance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\MiddleFilter\frmMiddleFilterArgEditor.resx">
+      <DependentUpon>frmMiddleFilterArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ReplaceColor\frmReplaceColorArgEditor.resx">
+      <DependentUpon>frmReplaceColorArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\ReversalColor\frmReversalColorEditor.resx">
+      <DependentUpon>frmReversalColorEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\SelectableColor\frmSelectableColorArgEditor.resx">
+      <DependentUpon>frmSelectableColorArgEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WYU\WeightedAverageFiltering\frmWeightedAveFilterArgEditor.resx">
+      <DependentUpon>frmWeightedAveFilterArgEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Core.CA\0.GeoDo.RSS.Core.CA.csproj">
+      <Project>{842E885C-D6C9-44E2-9776-74499DD9A771}</Project>
+      <Name>0.GeoDo.RSS.Core.CA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NSMCExpEnhance\算法描述.txt" />
+    <Content Include="WYU\Resources\PaintDotNet.Icons.ColorPickerToolIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WYU\CurveAdjust\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

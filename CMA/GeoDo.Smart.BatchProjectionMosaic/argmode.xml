@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <InputFilename>E:\Smart\Fog_yingji\n16 *.1BD</InputFilename>
+  <OutputDir>E:\Smart\Fog_yingji</OutputDir>
+  <ValidEnvelopes>
+    <!--<Envelope name="AGT" minx="-75" maxx="-50" miny="-50" maxy="-20" />-->
+    <Envelope name="内蒙古" minx="96.5" maxx="126.5" miny="37" maxy="54" />
+  </ValidEnvelopes>
+  <Bands>3,4</Bands>
+  <ProjectionIdentify>GLL</ProjectionIdentify>
+  <Envelopes>
+    <Envelope name="内蒙古" minx="96.5" maxx="126.5" miny="37" maxy="54" />
+  </Envelopes>
+  <ResolutionX>0.01</ResolutionX>
+  <ResolutionY>0.01</ResolutionY>
+  <IsOnlySaveMosaicFile>false</IsOnlySaveMosaicFile>
+  <Mosaic>
+    <OutputDir>E:\Smart\Fog_yingji</OutputDir>
+    <Envelope name="内蒙古" minx="96.5" maxx="126.5" miny="37" maxy="54" />
+  </Mosaic>
+</xml>

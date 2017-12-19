@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,BlackText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TreeViewNodeMouseOverFill,TreeViewNodeMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeUI.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NodeSelectedBorder,TreeViewNodeSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeUI.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,TransparentBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeUI" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTreeViewElement.HoveredCollapseImage" Value="Qk16AQAAAAAAADYAAAAoAAAACQAAAAkAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAmoN2/1w1HP9mPSL/cUYq/3xPMf+HWDj/kmFA/5xqR//KrJb/SycQ/7bt//+u7P//pen//5rm//+Q4///heD//33e//+cakf/RSEM/77w//+57v//sOz//6fp//+d5///kOP//4Xg//+SYUD/Qh8K//////////////////////////////////////+HWDj/Qh8K//////9CHwr/Qh8K/5xdNv9CHwr/TSwY//////98TzH/Qh8K//////////////////////////////////////9xRir/Qh8K/9T3///S9v//z/X//8r0///D8v//uu///7Ht//9mPSL/Qh8K/9b5///V+P//0vf//872///J9P//wvL//7rv//9cNRz/kHtv/0IfCv9CHwr/Qh8K/0IfCv9CHwr/RSEM/0snEP+ag3b/" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTreeViewElement.HoveredExpandImage" Value="Qk16AQAAAAAAADYAAAAoAAAACQAAAAkAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAspeG/3FGKv9mPSL/XDUc/1cyG/9LJxD/RSEM/0IfCv+Qe2//h1g4/7bt//+u7P//////////////////heD//33e//9CHwr/kmFA/77w//+57v///////10xF///////kuP//4Xg//9FIQz/nGpH/////////////////4FLKf////////////////9LJxD/rnlT//////9dMRf/gUsp/5xdNv+BSyn/Zz0l//////9TLRb/rnlT/////////////////4FLKf////////////////9cNRz/tX9X/9T3///S9v///////10xF///////vO///7Ht//9mPSL/uoNb/9b5///V+P//////////////////wvL//7rv//9xRir/1raf/7qDW/+1f1f/rnlT/6d1Uf+cakf/kmFA/4dYOP+yl4b/" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTreeViewElement.CollapseImage" Value="Qk16AQAAAAAAADYAAAAoAAAACQAAAAkAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAmoN2/1w1HP9mPSL/cUYq/3xPMf+HWDj/kmFA/5xqR//KrJb/SycQ//bw6//07Of/8+ni//Hm3v/v49r/7uDX/+ze1P+cakf/RSEM//jz7//38Oz/9e3n//Pq4//x59//7+Pa/+7g1/+SYUD/Qh8K//////////////////////////////////////+HWDj/Qh8K//////9CHwr/Qh8K/5xdNv9CHwr/TSwY//////98TzH/Qh8K//////////////////////////////////////9xRir/Qh8K//79/f/9+/r/+/n3//r29P/58/D/9vDr//Ts5/9mPSL/Qh8K///////+/f3//fv6//v59//69vP/+PPv//bw6/9cNRz/kHtv/0IfCv9CHwr/Qh8K/0IfCv9CHwr/RSEM/0snEP+ag3b/" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadTreeViewElement.ExpandImage" Value="Qk16AQAAAAAAADYAAAAoAAAACQAAAAkAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAspeG/3FGKv9mPSL/XDUc/1cyG/9LJxD/RSEM/0IfCv+Qe2//h1g4//bw6//07Of/////////////////7uDX/+ze1P9CHwr/kmFA//jz7//38Oz//////10xF///////8OTb/+7g1/9FIQz/nGpH/////////////////4FLKf////////////////9LJxD/rnlT//////9dMRf/gUsp/5xdNv+BSyn/Zz0l//////9TLRb/rnlT/////////////////4FLKf////////////////9cNRz/tX9X//79/f/9+/r//////10xF///////9/Ds//Ts5/9mPSL/uoNb///////+/f3/////////////////+PPv//bw6/9xRir/1raf/7qDW/+1f1f/rnlT/6d1Uf+cakf/kmFA/4dYOP+yl4b/" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTreeViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NodeSelectedBorder,TreeViewNodeSelectedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TreeNodeUI.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.OLD.RadTreeView" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

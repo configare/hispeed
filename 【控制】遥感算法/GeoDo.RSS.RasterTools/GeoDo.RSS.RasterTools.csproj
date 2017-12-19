@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35C987D8-7D19-4A03-B9F9-F89E39D66EA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.RasterTools</RootNamespace>
+    <AssemblyName>GeoDo.RSS.RasterTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.MathAlg">
+      <HintPath>..\RefDLL\MathLib\GeoDo.MathAlg.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_AOIRasterFetcher\AOIRasterFetcher.cs" />
+    <Compile Include="Tool_AOIRasterFetcher\IAOIRasterFetcher.cs" />
+    <Compile Include="Tool_BandMath\ExpressTree\IBandMathExecutor.cs" />
+    <Compile Include="Tool_BandMath\BandMathTool.cs" />
+    <Compile Include="Tool_BandMath\UI\frmBandVarMapper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\frmBandVarMapper.Designer.cs">
+      <DependentUpon>frmBandVarMapper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\frmSelectExpression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\frmSelectExpression.Designer.cs">
+      <DependentUpon>frmSelectExpression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\UCBandMath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\UCBandMath.Designer.cs">
+      <DependentUpon>UCBandMath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\UCBandVarSetter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_BandMath\UI\UCBandVarSetter.Designer.cs">
+      <DependentUpon>UCBandVarSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_BandMath\Visitor\BandMathVisitor.cs" />
+    <Compile Include="Tool_BandMath\Visitor\IBandMathVisitor.cs" />
+    <Compile Include="Tool_BandMath\IBandMathTool.cs" />
+    <Compile Include="AOI\AOIHelper.cs" />
+    <Compile Include="Tool_BandMath\ExpressTree\ClassRuntimeGenerator.cs" />
+    <Compile Include="Tool_BandMath\ExpressTree\IPixelValuesOperator.cs" />
+    <Compile Include="Tool_BandMath\ExpressTree\TemplateCode.cs" />
+    <Compile Include="IRasterTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool_Contour\ContourGenerateTool.cs" />
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGenerator.cs" />
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorByte.cs" />
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorDouble.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorFloat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorInt16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorInt32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorInt64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorUInt16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorUInt32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\ContourGeneratorUInt64.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\ContourGenerator\IContourGenerator.cs" />
+    <Compile Include="Tool_Contour\ContourGenerator\ContourLine.cs" />
+    <Compile Include="Tool_Contour\ContourGenerator\StatusRecorder.cs" />
+    <Compile Include="Tool_Contour\ContourGenerator\VTriangle.cs" />
+    <Compile Include="Tool_Contour\IContourGenerateTool.cs" />
+    <Compile Include="Tool_Contour\Persisit\ContourPersist.cs" />
+    <Compile Include="Tool_Contour\Persisit\IContourPersisit.cs" />
+    <Compile Include="Tool_Contour\UI\frmContourSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_Contour\UI\frmContourSettings.Designer.cs">
+      <DependentUpon>frmContourSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_GeoCorrection\CalGeoCoef.cs" />
+    <Compile Include="Tool_GeoCorrection\PolyCorrection.cs" />
+    <Compile Include="Tool_Histogram\HistogramComputer.cs" />
+    <Compile Include="Tool_Histogram\MaxMinValueComputer.cs" />
+    <Compile Include="Tool_Histogram\IRasterQuickStatTool.cs" />
+    <Compile Include="Tool_Histogram\RasterQuickStatTool.cs" />
+    <Compile Include="Tool_Histogram\UI\frmDataProviderSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\frmDataProviderSelector.Designer.cs">
+      <DependentUpon>frmDataProviderSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\frmRasterQuickStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\frmRasterQuickStat.Designer.cs">
+      <DependentUpon>frmRasterQuickStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\UCHistogramGrapCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\UCHistogramGrapCanvas.Designer.cs">
+      <DependentUpon>UCHistogramGrapCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\UCHistogramGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\UCHistogramGraph.Designer.cs">
+      <DependentUpon>UCHistogramGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\UCHistogramValues.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_Histogram\UI\UCHistogramValues.Designer.cs">
+      <DependentUpon>UCHistogramValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_Interpolation\IDW_Interpolation.cs" />
+    <Compile Include="Tool_MagicWand\BitmapMagicWand.cs" />
+    <Compile Include="Tool_MagicWand\IBitmapMagicWand.cs" />
+    <Compile Include="Tool_MagicWand\IScanLinePolygonBuilder.cs" />
+    <Compile Include="Tool_MagicWand\ScanLinePolygon.cs" />
+    <Compile Include="Tool_MagicWand\ScanLinePolygonBuilder.cs" />
+    <Compile Include="Tool_MagicWand\ScanLineRing.cs" />
+    <Compile Include="Tool_MagicWand\ScanLineSegment.cs" />
+    <Compile Include="Tool_Moasic\IRasterMosaic.cs" />
+    <Compile Include="Tool_RasterCut\ExtMethods.cs" />
+    <Compile Include="Tool_RasterCut\IRasterCut.cs" />
+    <Compile Include="Tool_RasterCut\RasterCut.cs" />
+    <Compile Include="Tool_ScatterPlot\IScatterPlotTool.cs" />
+    <Compile Include="Tool_ScatterPlot\MultipleLinearRegression.cs" />
+    <Compile Include="Tool_ScatterPlot\UI\frmScatterGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmScatterGraph.Designer.cs">
+      <DependentUpon>frmScatterGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmScatterTwoVarSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmScatterTwoVarSelector.Designer.cs">
+      <DependentUpon>frmScatterTwoVarSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmScatterVarSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmScatterVarSelector.Designer.cs">
+      <DependentUpon>frmScatterVarSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmSetEndpoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\frmSetEndpoints.Designer.cs">
+      <DependentUpon>frmSetEndpoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\UCScatterGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\UCScatterGraph.Designer.cs">
+      <DependentUpon>UCScatterGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\UCScatterGraphUniversal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\UI\UCScatterGraphUniversal.Designer.cs">
+      <DependentUpon>UCScatterGraphUniversal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool_ScatterPlot\Visitor\IScatterPixelVisitor.cs" />
+    <Compile Include="XYAxisEndpointValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tool_BandMath\ExpressTree\FeatureComputeFuncTemplate.txt" />
+    <Content Include="Tool_BandMath\ExpressTree\FuncTemplate.txt" />
+    <Content Include="Tool_Contour\Persisit\等值线二进制格式说明.txt" />
+    <Content Include="Tool_MagicWand\魔术棒算法.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_BandMath\UI\frmBandVarMapper.resx">
+      <DependentUpon>frmBandVarMapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_BandMath\UI\frmSelectExpression.resx">
+      <DependentUpon>frmSelectExpression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_BandMath\UI\UCBandMath.resx">
+      <DependentUpon>UCBandMath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_BandMath\UI\UCBandVarSetter.resx">
+      <DependentUpon>UCBandVarSetter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_Contour\UI\frmContourSettings.resx">
+      <DependentUpon>frmContourSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_Histogram\UI\frmDataProviderSelector.resx">
+      <DependentUpon>frmDataProviderSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_Histogram\UI\frmRasterQuickStat.resx">
+      <DependentUpon>frmRasterQuickStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_Histogram\UI\UCHistogramGrapCanvas.resx">
+      <DependentUpon>UCHistogramGrapCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_Histogram\UI\UCHistogramGraph.resx">
+      <DependentUpon>UCHistogramGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_Histogram\UI\UCHistogramValues.resx">
+      <DependentUpon>UCHistogramValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_ScatterPlot\UI\frmScatterGraph.resx">
+      <DependentUpon>frmScatterGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_ScatterPlot\UI\frmScatterTwoVarSelector.resx">
+      <DependentUpon>frmScatterTwoVarSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_ScatterPlot\UI\frmScatterVarSelector.resx">
+      <DependentUpon>frmScatterVarSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_ScatterPlot\UI\frmSetEndpoints.resx">
+      <DependentUpon>frmSetEndpoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_ScatterPlot\UI\UCScatterGraph.resx">
+      <DependentUpon>UCScatterGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tool_ScatterPlot\UI\UCScatterGraphUniversal.resx">
+      <DependentUpon>UCScatterGraphUniversal.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tool_BandProfile\" />
+    <Folder Include="Tool_Contour\Layer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.g.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.CursorInfoWndContent.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.FeatureListContent.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.UCLayerManager.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.UCLayerManagerPanel.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.OverviewContent.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.Properties.Resources.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.RasterPropertyWndContent.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.UCRasterInfoTree.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GeoDo.RSS.UI.AddIn.Windows.UCSelectBandForRgb.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.Windows\obj\Debug\GenerateResource.write.1.tlog

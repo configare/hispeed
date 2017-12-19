@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DB71CF6-88B4-4C41-822F-8C53F3A6D899}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.FileProject</RootNamespace>
+    <AssemblyName>GeoDo.FileProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\Output\GeoDo.FileProject.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Visual Studio 2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Visual Studio 2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;test</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\Output\GeoDo.FileProject.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Visual Studio 2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Visual Studio 2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.HDF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.HDF5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.HDF5.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.MEF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MEF\GeoDo.MEF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GDAL.HDF5Universal">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GDAL.HDF5Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.NOAA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.NOAA.dll</HintPath>
+    </Reference>
+    <Reference Include="HDF5DotNet, Version=1.8.8.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\HDF5DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Band\BandHelper.cs" />
+    <Compile Include="CatchFileManager.cs" />
+    <Compile Include="FileFinder.cs" />
+    <Compile Include="FileProjector\OrbitFile\Block.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY2_NOMProjection.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY3C_VIRRFileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY3C_MERSIFileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY1X_1A5FileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\HDF4FileProjector.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="PrjSettings\FY3L2L3FilePrjSettings.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY3L2L3FileProjector.cs" />
+    <Compile Include="GenericFilename.cs" />
+    <Compile Include="PrjBlockHelper.cs" />
+    <Compile Include="PrjEnvelopeItem.cs" />
+    <Compile Include="PrjOutArg.cs" />
+    <Compile Include="FileProjector\ProjectedFile\ProjectedFileTransform.cs" />
+    <Compile Include="PrjSettings\Fy2_NOM_PrjSettings.cs" />
+    <Compile Include="PrjSettings\HDF4FilePrjSettings.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="OrbitProductProjection\frmFY3OrbitProductProjection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrbitProductProjection\frmFY3OrbitProductProjection.Designer.cs">
+      <DependentUpon>frmFY3OrbitProductProjection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmPrjEnvelopeSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmPrjEnvelopeSet.Designer.cs">
+      <DependentUpon>frmPrjEnvelopeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Band\PrjBand.cs" />
+    <Compile Include="Band\OrbitBandDefCollection.cs" />
+    <Compile Include="UI\PrjArgsSelectBand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PrjArgsSelectBand.Designer.cs">
+      <DependentUpon>PrjArgsSelectBand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrjEnvelopeSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PrjEnvelopeSet.Designer.cs">
+      <DependentUpon>PrjEnvelopeSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectionFileChecker.cs" />
+    <Compile Include="FileProjector\FileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY3_VIRRFileProjector.cs" />
+    <Compile Include="FileProjector\IFileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\NOAA_1BDFileProjector.cs" />
+    <Compile Include="MemoryHelper.cs" />
+    <Compile Include="ProjectionFactory.cs" />
+    <Compile Include="UI\DoubleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\frmBandSelectTemplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBandSelectTemplete.Designer.cs">
+      <DependentUpon>frmBandSelectTemplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmProjectionSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmProjectionSetting.designer.cs">
+      <DependentUpon>frmProjectionSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmSelectBands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmSelectBands.designer.cs">
+      <DependentUpon>frmSelectBands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrjSettings\NOAA_PrjSettings.cs" />
+    <Compile Include="PrjSettingsEditor\IPrjSettingsEditor.cs" />
+    <Compile Include="PrjSettings\EOS_MODIS_PrjSettings.cs" />
+    <Compile Include="PrjSettings\FilePrjSettings.cs" />
+    <Compile Include="PrjSettings\FY3_VIRR_PrjSettings.cs" />
+    <Compile Include="PrjSettings\FY3_MERSI_PrjSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FileProjector\SingleFileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\FY3_MERSIFileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\EOS_FileProjector.cs" />
+    <Compile Include="FileProjector\OrbitFile\NOAA_1A5FileProjector.cs" />
+    <Compile Include="UI\frmSelectBandsSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmSelectBandsSet.Designer.cs">
+      <DependentUpon>frmSelectBandsSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PrjTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ProjectionSetting.cs" />
+    <Compile Include="Band\PrjBandTable.cs" />
+    <Compile Include="UI\IntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.ProjectDefine\3.GeoDo.ProjectDefine.csproj">
+      <Project>{678812B2-79E5-4DA4-B5EC-4799D7FCA548}</Project>
+      <Name>3.GeoDo.ProjectDefine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.Project\0.GeoDo.Project.csproj">
+      <Project>{4B382930-1BBA-42E0-BB07-883395570176}</Project>
+      <Name>0.GeoDo.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RasterProject\1.GeoDo.RasterProject.csproj">
+      <Project>{4E2F8F11-B5A3-48E9-A448-788E5C45F92C}</Project>
+      <Name>1.GeoDo.RasterProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrbitProductProjection\frmFY3OrbitProductProjection.resx">
+      <DependentUpon>frmFY3OrbitProductProjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmPrjEnvelopeSet.resx">
+      <DependentUpon>frmPrjEnvelopeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrjArgsSelectBand.resx">
+      <DependentUpon>PrjArgsSelectBand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PrjEnvelopeSet.resx">
+      <DependentUpon>PrjEnvelopeSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmBandSelectTemplete.resx">
+      <DependentUpon>frmBandSelectTemplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmProjectionSetting.resx">
+      <DependentUpon>frmProjectionSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmSelectBands.resx">
+      <DependentUpon>frmSelectBands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmSelectBandsSet.resx">
+      <DependentUpon>frmSelectBandsSet.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjectionSetting.xml" />
+    <None Include="Resources\cmdOpen.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

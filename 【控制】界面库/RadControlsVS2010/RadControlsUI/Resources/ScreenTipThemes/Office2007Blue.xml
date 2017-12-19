@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="Telerik.WinControls.DefaultStyleBuilder">
+      <StylesheetRelations>
+        <RadStylesheetRelation ElementType="Telerik.WinControls.RootRadElement" RegistrationType="ElementTypeControlType" ElementName="" ControlName="" ControlType="Telerik.WinControls.UI.RadOffice2007ScreenTip" />
+        <RadStylesheetRelation ElementType="Telerik.WinControls.UI.RadOffice2007ScreenTipElement" RegistrationType="ElementTypeDefault" ElementName="" ControlName="" ControlType="" />
+      </StylesheetRelations>
+      <BuilderData xsi:type="XmlStyleSheet">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="202, 218, 239" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="255, 255, 255" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScreenTipFill" AutoUnapply="True" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="118,118,118" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.InnerColor" Value="221,231,244" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="OuterInnerBorders" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScreenTipBorder" AutoUnapply="True" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadLineItem.LineColor" Value="158, 187, 221" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadLineItem.LineColor2" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadLineItem.LineStyle" Value="Bevel" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="5, 0, 5, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScreenTipFooterLine" AutoUnapply="True" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Arial, 9pt, style=Bold" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="ControlText" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScreenTipCaptionText" AutoUnapply="True" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Arial, 9pt, style=Bold" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScreenTipFooterText" AutoUnapply="True" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup>
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Arial, 8.25pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="5, 5, 5, 5" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="ScreenTipText" AutoUnapply="True" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="MWS" subIdentify="MWSD" colortablename="MWSMWSD" description="积雪深度" labeltext="">
+      <Colors>
+        <!--<Color color="240,240,240" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="0,0,0" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />
+        <Color color="206,255,207" minValue="0.03" maxValue="8" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="8" maxValue="12" labeltext="8" displaylengend="true" />
+        <Color color="0,208,203" minValue="12" maxValue="15" labeltext="12" displaylengend="true" />
+        <Color color="0,153,153" minValue="15" maxValue="20" labeltext="15" displaylengend="true" />
+        <Color color="85,79,237" minValue="20" maxValue="30" labeltext="20" displaylengend="true" />
+        <Color color="0,0,254" minValue="30" maxValue="50" labeltext="30" displaylengend="true" />
+        <Color color="255,255,255" minValue="50" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+        <Color color="220,220,220" minValue="-0.0000001" maxValue="0.029" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    
+    <ProductColorTable identify="MWS" subIdentify="MSWE" colortablename="MWSMSWE" description="积雪雪水当量" labeltext="">
+      <Colors>
+        <!--<Color color="220,220,220" minValue="1E-06" maxValue="5" labeltext="" displaylengend="false" />-->
+        <!--<Color color="240,240,240" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="0,0,0" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />
+        <Color color="206,255,207" minValue="0.03" maxValue="10" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="10" maxValue="20" labeltext="10" displaylengend="true" />
+        <Color color="0,208,203" minValue="20" maxValue="30" labeltext="20" displaylengend="true" />
+        <Color color="0,153,153" minValue="30" maxValue="40" labeltext="30" displaylengend="true" />
+        <Color color="85,79,237" minValue="40" maxValue="50" labeltext="40" displaylengend="true" />
+        <Color color="0,0,254" minValue="50" maxValue="100" labeltext="50" displaylengend="true" />
+        <Color color="220,220,220" minValue="-0.0000001" maxValue="0.029" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="100" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="MFSD" colortablename="MWSMFSD" description="积雪雪深（平滑）" labeltext="">
+      <Colors>
+        <!--<Color color="220,220,220" minValue="1E-06" maxValue="5" labeltext="" displaylengend="false" />-->
+        <!--<Color color="245,245,245" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <!--<Color color="240,240,240" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="0,0,0" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />
+        <Color color="206,255,207" minValue="0.03" maxValue="8" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="8" maxValue="12" labeltext="8" displaylengend="true" />
+        <Color color="0,208,203" minValue="12" maxValue="15" labeltext="12" displaylengend="true" />
+        <Color color="0,153,153" minValue="15" maxValue="20" labeltext="15" displaylengend="true" />
+        <Color color="85,79,237" minValue="20" maxValue="25" labeltext="20" displaylengend="true" />
+        <Color color="0,0,254" minValue="30" maxValue="50" labeltext="30" displaylengend="true" />
+        <Color color="255,255,255" minValue="50" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+        <Color color="220,220,220" minValue="-0.0000001" maxValue="0.029" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="MFWE" colortablename="MWSMFWE" description="积雪雪水当量（平滑）" labeltext="">
+      <Colors>
+        <!--<Color color="240,240,240" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="0,0,0" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />
+        <Color color="206,255,207" minValue="0.03" maxValue="10" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="10" maxValue="20" labeltext="10" displaylengend="true" />
+        <Color color="0,208,203" minValue="20" maxValue="30" labeltext="20" displaylengend="true" />
+        <Color color="0,153,153" minValue="30" maxValue="40" labeltext="30" displaylengend="true" />
+        <Color color="85,79,237" minValue="40" maxValue="50" labeltext="40" displaylengend="true" />
+        <Color color="0,0,254" minValue="50" maxValue="100" labeltext="50" displaylengend="true" />
+        <Color color="220,220,220" minValue="-0.0000001" maxValue="0.029" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="100" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="HFSD" colortablename="MWSHFSD" description="历史周期积雪雪深（平滑）" labeltext="">
+      <Colors>
+        <!--<Color color="220,220,220" minValue="1E-06" maxValue="5" labeltext="" displaylengend="false" />-->
+        <Color color="206,255,207" minValue="1E-06" maxValue="8" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="8" maxValue="12" labeltext="8" displaylengend="true" />
+        <Color color="0,208,203" minValue="12" maxValue="15" labeltext="12" displaylengend="true" />
+        <Color color="0,153,153" minValue="15" maxValue="20" labeltext="15" displaylengend="true" />
+        <Color color="85,79,237" minValue="20" maxValue="25" labeltext="20" displaylengend="true" />
+        <Color color="0,0,254" minValue="30" maxValue="40" labeltext="30" displaylengend="true" />
+        <Color color="255,255,255" minValue="40" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+        <!--<Color color="240,240,240" minValue="-0.000001" maxValue="0.000001" labeltext="" displaylengend="false" />
+        <Color color="245,245,245" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="220,220,220" minValue="-0.000001" maxValue="0.000001" labeltext="" displaylengend="false" />
+        <!--<Color color="240,240,240" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="0,0,0" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="HFWE" colortablename="MWSHFWE" description="历史周期积雪雪水当量（平滑）" labeltext="">
+      <Colors>
+        <Color color="206,255,207" minValue="0.00001" maxValue="10" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="10" maxValue="20" labeltext="10" displaylengend="true" />
+        <Color color="0,208,203" minValue="20" maxValue="30" labeltext="20" displaylengend="true" />
+        <Color color="0,153,153" minValue="30" maxValue="40" labeltext="30" displaylengend="true" />
+        <Color color="85,79,237" minValue="40" maxValue="50" labeltext="40" displaylengend="true" />
+        <Color color="0,0,254" minValue="50" maxValue="100" labeltext="50" displaylengend="true" />
+        <Color color="255,255,255" minValue="100" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+        <Color color="220,220,220" minValue="-0.0000001" maxValue="0.000001" labeltext="" displaylengend="false" />
+        <!--<Color color="240,240,240" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />-->
+        <Color color="0,0,0" minValue="-1000" maxValue="-1" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="MWVI" colortablename="MWSMVSD" description="微波可见光雪深" labeltext="">
+      <Colors>
+        <!--<Color color="220,220,220" minValue="1E-06" maxValue="5" labeltext="" />-->
+        <Color color="206,255,207" minValue="5" maxValue="8" labeltext="5" />
+        <Color color="116,255,255" minValue="8" maxValue="12" labeltext="8" />
+        <Color color="0,208,203" minValue="12" maxValue="15" labeltext="12"/>
+        <Color color="0,153,153" minValue="15" maxValue="18" labeltext="15" />
+        <Color color="85,79,237" minValue="18" maxValue="25" labeltext="18" />
+        <Color color="0,0,254" minValue="25" maxValue="35" labeltext="25"/>
+        <Color color="255,255,255" minValue="35" maxValue="3.402823E+38" labeltext=""/>
+        <Color color="255,255,255" minValue="-0.0000001" maxValue="4.99999999" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="MFVI" colortablename="MWSMFVI" description="微波可见光雪深(平滑)" labeltext="">
+      <Colors>
+        <!--<Color color="220,220,220" minValue="1E-06" maxValue="5" labeltext="" displaylengend="false" />-->
+        <Color color="206,255,207" minValue="5" maxValue="8" labeltext="5" displaylengend="true" />
+        <Color color="116,255,255" minValue="8" maxValue="12" labeltext="8" displaylengend="true" />
+        <Color color="0,208,203" minValue="12" maxValue="15" labeltext="12" displaylengend="true" />
+        <Color color="0,153,153" minValue="15" maxValue="20" labeltext="15" displaylengend="true" />
+        <Color color="85,79,237" minValue="20" maxValue="30" labeltext="20" displaylengend="true" />
+        <Color color="0,0,254" minValue="30" maxValue="35" labeltext="30" displaylengend="true" />
+        <Color color="255,255,255" minValue="35" maxValue="3.402823E+38" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="-0.0000001" maxValue="4.99999999" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="MCVI" colortablename="MWSMCVI" description="微波可见光雪深(分类)" labeltext="">
+      <Colors>
+        <Color color="206, 255, 207" maxValue="1.1" minValue="0.99" labeltext="1" />
+        <Color color="116, 255, 255" maxValue="11.1" minValue="10.99" labeltext="11" />
+        <Color color="0, 208, 203" maxValue="15.1" minValue="14.99" labeltext="15" />
+        <Color color="0, 153, 153" maxValue="21.1" minValue="20.99" labeltext="21" />
+        <Color color="85, 79, 237" maxValue="22.1" minValue="21.99" labeltext="22" />
+        <Color color="0, 0, 254" maxValue="25.1" minValue="24.99" labeltext="25" />
+        <Color color="255, 255, 255" maxValue="" minValue="60" labeltext="60" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="DBLV" colortablename="MWS" description="判识结果" labeltext="">
+      <Colors>
+        <Color color="0, 0, 0" maxValue="1" minValue="" labeltext="无雪" displaylengend="false"/>
+        <Color color="255,255,0" maxValue="2" minValue="1" labeltext="积雪" />
+      </Colors>
+    </ProductColorTable>
+    <!--<ProductColorTable identify="MWS" subIdentify="JPAF" colortablename="MWSJPAF" description="距平分析" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-100" maxValue="-3" labeltext="" isplaylengend="false"/>
+        
+        <Color color="169,255,84" minValue="-3" maxValue="-1" labeltext="-3" />
+        <Color color="85,254,171" minValue="-1" maxValue="-0.000001" labeltext="-1" />
+        <Color color="0,0,254" minValue="0.00001" maxValue="1" labeltext="0"/>
+        <Color color="52,51,153" minValue="1" maxValue="3" labeltext="1" />
+        <Color color="128,126,191" minValue="3" maxValue="6" labeltext="3" />
+        <Color color="178,178,216" minValue="6" maxValue="15" labeltext="6" />
+        <Color color="229,229,241" minValue="15" maxValue="30" labeltext="15" />
+        <Color color="255,255,255" minValue="30" maxValue="1000" labeltext="30" />
+        <Color color="0,0,0" minValue="-0.000001" maxValue="0.00001" labeltext="" displaylengend="false" />
+        
+        --><!--<Color color="0,0,254" minValue="25" maxValue="35" labeltext="25"/>--><!--
+        --><!--<Color color="255,255,255" minValue="35" maxValue="3.402823E+38" labeltext=""/>--><!--
+      </Colors>
+    </ProductColorTable>-->
+    <!--距平分析雪水当量色表-->
+    <ProductColorTable identify="MWS" subIdentify="JPEA" colortablename="MWSJPEA" description="距平分析雪水当量" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-60" maxValue="-30" labeltext="" displaylengend="false"/>
+        <Color color="255,85,0" minValue="-30" maxValue="-15" labeltext="-30" displaylengend="true"/>
+        <Color color="255,170,1" minValue="-15" maxValue="-6" labeltext="-15" displaylengend="true"/>
+        <Color color="255,255,1" minValue="-6" maxValue="-3" labeltext="-6" displaylengend="true"/>
+        <Color color="169,255,84" minValue="-3" maxValue="-1" labeltext="-3" />
+        <Color color="85,254,171" minValue="-1" maxValue="-0.000001" labeltext="-1" />
+        <Color color="0,0,254" minValue="0.00001" maxValue="1" labeltext="0"/>
+        <Color color="52,51,153" minValue="1" maxValue="3" labeltext="1" />
+        <Color color="128,126,191" minValue="3" maxValue="6" labeltext="3" />
+        <Color color="178,178,216" minValue="6" maxValue="15" labeltext="6" />
+        <Color color="229,229,241" minValue="15" maxValue="30" labeltext="15" />
+        <Color color="255,255,255" minValue="30" maxValue="1000" labeltext="30" />
+        <Color color="0,0,0" minValue="-0.000001" maxValue="0.00001" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="JPDA" colortablename="MWSJPDA" description="距平分析雪深" labeltext="">
+      <Colors>
+        <Color color="255,255,255" minValue="-60" maxValue="-30" labeltext="" displaylengend="false"/>
+        <Color color="255,85,0" minValue="-30" maxValue="-15" labeltext="-30" displaylengend="true"/>
+        <Color color="255,170,1" minValue="-15" maxValue="-6" labeltext="-15" displaylengend="true"/>
+        <Color color="255,255,1" minValue="-6" maxValue="-3" labeltext="-6" displaylengend="true"/>
+        <Color color="169,255,84" minValue="-3" maxValue="-1" labeltext="-3" />
+        <Color color="85,254,171" minValue="-1" maxValue="-0.000001" labeltext="-1" />
+        <Color color="0,0,254" minValue="0.00001" maxValue="1" labeltext="0"/>
+        <Color color="52,51,153" minValue="1" maxValue="3" labeltext="1" />
+        <Color color="128,126,191" minValue="3" maxValue="6" labeltext="3" />
+        <Color color="178,178,216" minValue="6" maxValue="15" labeltext="6" />
+        <Color color="229,229,241" minValue="15" maxValue="30" labeltext="15" />
+        <Color color="255,255,255" minValue="30" maxValue="1000" labeltext="30" />
+        <Color color="0,0,0" minValue="-0.000001" maxValue="0.00001" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="0PSI" colortablename="SNWPSSD" description="MWRI雪深日产品" labeltext="">
+      <Colors>
+        <!--<Color color="255,255,255" maxValue="" minValue="255" labeltext="" displaylengend="false"/>-->
+        <Color color="206,255,207" maxValue="40" minValue="0" labeltext="0" />
+        <Color color="112,255,255" maxValue="80" minValue="40" labeltext="40" />
+        <Color color="0,209,202" maxValue="120" minValue="80" labeltext="80" />
+        <Color color="0,155,154" maxValue="160" minValue="120" labeltext="120" />
+        <Color color="86,79,237" maxValue="200" minValue="160" labeltext="160" />
+        <Color color="3,3,254" maxValue="240.0001" minValue="200" labeltext="200" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="MWS" subIdentify="0PSI" colortablename="SNWPSWE" description="MWRI雪水当量日产品" labeltext="">
+      <Colors>
+        <Color color="206, 255, 207" maxValue="40" minValue="0" labeltext="0" />
+        <Color color="116, 255, 255" maxValue="80" minValue="40" labeltext="40" />
+        <Color color="0, 208, 203" maxValue="120" minValue="80" labeltext="80" />
+        <Color color="0, 153, 153" maxValue="160" minValue="120" labeltext="120" />
+        <Color color="85, 79, 237" maxValue="200" minValue="160" labeltext="160" />
+        <Color color="0, 0, 254" maxValue="240.0001" minValue="200" labeltext="200" />
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

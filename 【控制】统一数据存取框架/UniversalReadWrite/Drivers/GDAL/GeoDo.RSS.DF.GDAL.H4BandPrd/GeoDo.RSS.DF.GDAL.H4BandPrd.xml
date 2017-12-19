@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BandProviders>
+  <BandProvider category="MODIS轨道数据1KM" name="Aqua"  satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Aqua"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据1KM" name="Aqua"  satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="Aqua"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据1KM" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Terra"/>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME.1" value="Terra"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据1KM" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <!--<IdentifyAtt name="Satellite" value="Terra"/>此种情况下，无该属性，如2007年的数据-->
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="Terra"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0500M分辨率" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Terra"/>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME.1" value="Terra"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0500M分辨率" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <!--<IdentifyAtt name="Satellite" value="Terra"/>此种情况下，无该属性，如2007年的数据-->
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="Terra"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0500M分辨率" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Aqua"/>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME.1" value="Aqua"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0500M分辨率" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="Aqua"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Terra"/>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME.1" value="Terra"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <!--<IdentifyAtt name="Satellite" value="Terra"/>此种情况下，无该属性，如2007年的数据-->
+      <IdentifyAtt name="PGE_Version" value="3.0.0"/>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="Terra"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Aqua"/>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME.1" value="Aqua"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="Aqua"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS角度数据" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Terra"/>
+      <IdentifyAtt name="QAPERCENTFIELDS" value="Longitude, Latitude, Height, SensorZenith,SensorAzimuth, Range, SolarZenith, SolarAzimuth"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS角度数据" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Satellite" value="Aqua"/>
+      <IdentifyAtt name="QAPERCENTFIELDS" value="Longitude, Latitude, Height, SensorZenith,SensorAzimuth, Range, SolarZenith, SolarAzimuth"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS角度数据" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Parameter Version" value="1.2"/>
+      <IdentifyAtt name="QAPERCENTFIELDS" value="Longitude, Latitude, Height, SensorZenith,SensorAzimuth, Range, SolarZenith, SolarAzimuth"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS角度数据" name="Terra" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="Parameter Version" value="1.2"/>
+      <IdentifyAtt name="QAPERCENTFIELDS" value="Longitude, Latitude, Height, SensorZenith,SensorAzimuth, Range, SolarZenith, SolarAzimuth"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据MOD021KM（国际）" name="Aqua"  satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.9"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据MOD02HKM（国际）" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.9"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率（国际）" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.9"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS角度数据（国际）" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.9"/>
+      <IdentifyAtt name="QAPERCENTFIELDS" value="Longitude, Latitude, Height, SensorZenith,SensorAzimuth, Range, SolarZenith, SolarAzimuth"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--下面这段数据来源于四川省局，其采用华云EOS资料处理软件得到的数据，并进行了裁切-->
+  <BandProvider category="MODIS轨道数据1KM（省局华云EOS解包，裁切）" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="TERRA"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0500M分辨率（省局华云EOS解包，裁切）" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="TERRA"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率（省局华云EOS解包，裁切）" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="TERRA"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据1KM（省局华云EOS解包，裁切）" name="Aquq" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="AQUA"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0500M分辨率（省局华云EOS解包，裁切）" name="Aquq" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="AQUA"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率（省局华云EOS解包，裁切）" name="Aquq" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="ASSOCIATEDPLATFORMSHORTNAME" value="AQUA"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <!--采用星地通新EOS资料预处理软件得到的数据 20150825-->
+  <BandProvider category="MODIS轨道数据MOD021KM（星地通）" name="Aqua"  satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.17"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_1KM_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_250_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_Aggr1km_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_1KM_Emissive" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据MOD02HKM（星地通）" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.17"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_Aggr500_RefSB" bandnoatt="band_names"/>
+      <DefaultBandDataset name="EV_500_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS轨道数据0250M分辨率（星地通）" name="Aqua" satellite="EOSA" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.17"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+      <DefaultBandDataset name="EV_250_RefSB" bandnoatt="band_names"/>
+    </DefaultBandDatasets>
+  </BandProvider>
+  <BandProvider category="MODIS角度数据（星地通）" name="Terra" satellite="EOST" sensor="MODIS">
+    <IdentifyAtts>
+      <IdentifyAtt name="HDFEOSVersion" value="HDFEOS_V2.17"/>
+      <IdentifyAtt name="QAPERCENTFIELDS" value="Longitude, Latitude, Height, SensorZenith,SensorAzimuth, Range, SolarZenith, SolarAzimuth"/>
+    </IdentifyAtts>
+    <DefaultBandDatasets>
+    </DefaultBandDatasets>
+  </BandProvider>
+</BandProviders>

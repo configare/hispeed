@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml identify="mosaic">
+  <InputFilename>E:\Smart\temp\FY3C_MERSI_WHOLE_GLL_L1_20130922_0650_1000M(5).ldf</InputFilename>
+  <DayOrNight>D</DayOrNight>
+  <OrbitIdentify>0250</OrbitIdentify>
+  <MosaicMode>Mosaic</MosaicMode>
+  <MosaicEnvelopes>
+    <Envelope name="CHINA" minx="60" maxx="150" miny="10" maxy="70" />
+  </MosaicEnvelopes>
+  <OutputDir>E:\Smart\temp\</OutputDir>
+  <OutputType>DayNightOrbit</OutputType>
+</xml>

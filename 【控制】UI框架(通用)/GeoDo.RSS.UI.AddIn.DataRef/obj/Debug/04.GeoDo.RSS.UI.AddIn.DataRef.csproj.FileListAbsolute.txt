@@ -1,0 +1,8 @@
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GeoDo.RSS.UI.AddIn.DataRef.Properties.Resources.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GeoDo.RSS.UI.AddIn.DataRef.frmBookMarkGroupsManager.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GeoDo.RSS.UI.AddIn.DataRef.frmCreatBookMarkGroup.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GeoDo.RSS.UI.AddIn.DataRef.frmCustomGridSetting.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GeoDo.RSS.UI.AddIn.DataRef.UCGeoRangeControl.resources
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\【控制】UI框架(通用)\GeoDo.RSS.UI.AddIn.DataRef\obj\Debug\GenerateResource.write.1.tlog

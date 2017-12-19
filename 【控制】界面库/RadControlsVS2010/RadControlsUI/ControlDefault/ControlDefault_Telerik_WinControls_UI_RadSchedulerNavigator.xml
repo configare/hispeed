@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="NormalButtonText,SegoeUI10pt">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="203, 225, 255" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorViewPanelFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="LightSkyBlue">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationPanelFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="0, 28, 78" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 8, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 11pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorLabel" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedViewPanelBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, -1, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorViewPanelBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonNormalFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavButtonBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavButtonBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavButtonBorderPressed">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding65,RoundRectShape14">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="12, 11, 4, 11" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk0WAQAAAAAAADYAAAAoAAAABwAAAAgAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAD/////cjYR/wAAAAAAAAAAAAAAAAAAAAD/////Yi4P/3I2Ef8AAAAAAAAAAAAAAAD/////UCYM/2IuD/9yNhH/////////////////Qh8K/1AmDP9iLg//cjYR/4E9E/+LQhX/i0IV/0IfCv9QJgz/Yi4P/3I2Ef+BPRP/i0IV/4tCFf8AAAAAUCYM/2IuD/9yNhH/AAAAAAAAAAAAAAAAAAAAAAAAAABiLg//cjYR/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHI2Ef8AAAAAAAAAAAAAAAA=" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorBackwardsButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding65,RoundRectShape14">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 4, 5, 5" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 11, 10, 11" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.Image" Value="Qk0WAQAAAAAAADYAAAAoAAAABwAAAAgAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAdzgS//////8AAAAAAAAAAAAAAAAAAAAAAAAAAHc4Ev9pMhD//////wAAAAD///////////////93OBL/aTIQ/1orDv//////i0IV/4tCFf+DPhT/dzgS/2kyEP9aKw7/TCQL/4tCFf+LQhX/gz4U/3c4Ev9pMhD/WisO/0wkC/8AAAAAAAAAAAAAAAB3OBL/aTIQ/1orDv8AAAAAAAAAAAAAAAAAAAAAdzgS/2kyEP8AAAAAAAAAAAAAAAAAAAAAAAAAAHc4Ev8AAAAAAAAAAAAAAAA=" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorForwardsButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavNormalImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="21, 66, 139" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="10, 7, 10, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavToggleBorderNormal">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, -1, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="110, 153, 210" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPkNlbnRlcllUaWxlWDwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazJTQVFBQUFBQUFBRFlBQUFBb0FBQUFBd0FBQUIwQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFuZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9tdUQvLzVyZy8vK2E0UC8vbHR6Ky81YmMvditXM1A3L2tkaisvNUhZL3YrUjJQNy9pOVQ5LzR2VS9mK0wxUDMvaE03OS80VE8vZitFenYzL2ZzbjgvMzdKL1A5K3lmei9kOFQ4LzNmRS9QOTN4UHovY0w3Ny8zQysrLzl3dnZ2L2FibjYvMm01K3Y5cHVmci9ZN1Q2LzJPMCt2OWp0UHIvWGEvNS8xMnYrZjlkci9uL1dhdjUvMW1yK2Y5WnEvbi9WYWo0LzFXbytQOVZxUGovVXFYNC8xS2wrUDlTcGZqL1VhVDQvMUdrK1A5UnBQai9sOHo4LzVmTS9QK1h6UHovbTg3OC81dk8vUCtienZ6L245SDkvNS9SL2YrZjBmMy9wTlQ5LzZUVS9mK2sxUDMvcU5mOS82algvZitvMS8zLzwvSW1hZ2VTdHJlYW0+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ClipDrawing" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="10, 7, 10, 7" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPkNlbnRlcllUaWxlWDwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazJTQVFBQUFBQUFBRFlBQUFBb0FBQUFBd0FBQUIwQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFuZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9tdUQvLzVyZy8vK2E0UC8vbHR6Ky81YmMvditXM1A3L2tkaisvNUhZL3YrUjJQNy9pOVQ5LzR2VS9mK0wxUDMvaE03OS80VE8vZitFenYzL2ZzbjgvMzdKL1A5K3lmei9kOFQ4LzNmRS9QOTN4UHovY0w3Ny8zQysrLzl3dnZ2L2FibjYvMm01K3Y5cHVmci9ZN1Q2LzJPMCt2OWp0UHIvWGEvNS8xMnYrZjlkci9uL1dhdjUvMW1yK2Y5WnEvbi9WYWo0LzFXbytQOVZxUGovVXFYNC8xS2wrUDlTcGZqL1VhVDQvMUdrK1A5UnBQai9sOHo4LzVmTS9QK1h6UHovbTg3OC81dk8vUCtienZ6L245SDkvNS9SL2YrZjBmMy9wTlQ5LzZUVS9mK2sxUDMvcU5mOS82algvZitvMS8zLzwvSW1hZ2VTdHJlYW0+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ClipDrawing" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavHoveredImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ClipDrawing" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPkNlbnRlcllUaWxlWDwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazJTQVFBQUFBQUFBRFlBQUFBb0FBQUFBd0FBQUIwQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFuZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9tdUQvLzVyZy8vK2E0UC8vbHR6Ky81YmMvditXM1A3L2tkaisvNUhZL3YrUjJQNy9pOVQ5LzR2VS9mK0wxUDMvaE03OS80VE8vZitFenYzL2ZzbjgvMzdKL1A5K3lmei9kOFQ4LzNmRS9QOTN4UHovY0w3Ny8zQysrLzl3dnZ2L2FibjYvMm01K3Y5cHVmci9ZN1Q2LzJPMCt2OWp0UHIvWGEvNS8xMnYrZjlkci9uL1dhdjUvMW1yK2Y5WnEvbi9WYWo0LzFXbytQOVZxUGovVXFYNC8xS2wrUDlTcGZqL1VhVDQvMUdrK1A5UnBQai9sOHo4LzVmTS9QK1h6UHovbTg3OC81dk8vUCtienZ6L245SDkvNS9SL2YrZjBmMy9wTlQ5LzZUVS9mK2sxUDMvcU5mOS82algvZitvMS8zLzwvSW1hZ2VTdHJlYW0+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ClipDrawing" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPkNlbnRlcllUaWxlWDwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazJTQVFBQUFBQUFBRFlBQUFBb0FBQUFBd0FBQUIwQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFuZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9uZUwvLzUzaS8vK2Q0di8vbmVMLy81M2kvLytkNHYvL25lTC8vNTNpLy8rZDR2Ly9tdUQvLzVyZy8vK2E0UC8vbHR6Ky81YmMvditXM1A3L2tkaisvNUhZL3YrUjJQNy9pOVQ5LzR2VS9mK0wxUDMvaE03OS80VE8vZitFenYzL2ZzbjgvMzdKL1A5K3lmei9kOFQ4LzNmRS9QOTN4UHovY0w3Ny8zQysrLzl3dnZ2L2FibjYvMm01K3Y5cHVmci9ZN1Q2LzJPMCt2OWp0UHIvWGEvNS8xMnYrZjlkci9uL1dhdjUvMW1yK2Y5WnEvbi9WYWo0LzFXbytQOVZxUGovVXFYNC8xS2wrUDlTcGZqL1VhVDQvMUdrK1A5UnBQai9sOHo4LzVmTS9QK1h6UHovbTg3OC81dk8vUCtienZ6L245SDkvNS9SL2YrZjBmMy9wTlQ5LzZUVS9mK2sxUDMvcU5mOS82algvZitvMS8zLzwvSW1hZ2VTdHJlYW0+PC9SYWRJbWFnZVNoYXBlPg==" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ClipDrawing" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavToggleBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ToggleButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48UGFpbnRNb2RlPk5vbmU8L1BhaW50TW9kZT48SW1hZ2VTdHJlYW0+UWsydUdBQUFBQUFBQURZQUFBQW9BQUFBTmdBQUFCMEFBQUFCQUNBQUFBQUFBQUFBQUFERURnQUF4QTRBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBLy8vL0JQbjUrU3Y4K2ZsVi9QcjRkZno2K0hyNytmbVMrL2o0bWZ2NCtKbjcrUGlaKy9qNG1mdjQrSm43K1BpWisvajRtZnY0K0puNytQaVorL2o0bWZ2NCtKbjcrUGlaKy9qNG1mdjQrSm43K1BpWisvajRtZnY0K0puNytQaVorL2o0bWZ2NCtKbjcrUGlaKy9qNG1mdjQrSm43K1BpWisvbjVrdno2K0hyOCt2aDEvUG41VmZuNStTdi8vLzhDQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVA3KzV3djU5dlpXK2ZqMmt2djQ5cG45K1BpWi9majRtZjM0K0puOSsvaVovZnY0bWYzNytKbjkrL2laL2Z2NG1mMzcrSm45Ky9pWi9mdjRtZjM3K0puOSsvaVovZnY0bWYzNytKbjkrL2laL2Z2NG1mMzcrSm45Ky9pWi9mdjRtZjM3K0puOSsvaVovZnY0bWYzNytKbjkrL2laL2Z2NG1mMzcrSm45Ky9pWi9mdjRtZjM0K0puOStQaVovZmo0bWZ2NDlwbjU5dmFRK2ZiMlZ2Nys1d3NBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFELy8vOEM5L1R3U1BuMDhwTDcrUGFaL2Z2NG1mMzQrSm45K1BhWi9manptZjMyODVuOTl2T1ovZmJ4bWYzMjhabjk5dkdaL2ZieG1mMzI4Wm45OXZHWi9mYnhtZjMyOFpuOTl2R1ovZmJ4bWYzMjhabjk5dkdaL2ZieG1mMzI4Wm45OXZHWi9mYnhtZjMyOFpuOTl2R1ovZmJ4bWYzMjhabjk5dkdaL2ZieG1mMzI4Wm45OXZHWi9mYnptZjMyODVuOStQT1ovZmoybWYzNCtKbjkrUGlaKy9qMm1mbjA4cEQzOVBCSS8vLy9BZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDduNXd2MThleHgrUGJ6bWYzNDlwbjkrUGFaL2Ziem1mMzI4Wm45OCs2Wi9mUHVtZjN6N3BuOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N3BuOTgrNlovZlB1bWYzMjhabjk5dk9aL2ZqMm1mMzQ5cG40OXZPWjlmSHNjZjdpNGdrQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS8vLy9CZlR1Nm56NDgvR1ovZmoybWYzMjg1bjk4KzZaL2ZQdW1mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4KzZaL2ZQeG1mMzI4NW45K1BhWitQUHhtZlR1Nm56Ly8vOEZBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQvLy84Qzh1bm1hdmp4N0puOStQT1ovZmJ4bWYzejdwbjk4KzZaL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQdW1mM3o3cG45OXZHWi9manptZmp4N0pueTYrWnEvLy8vQWdBQUFBQUFBQUFBQUFBQUFBQUFBQUR3NWVGRzl1N3BtZjMyODVuOTl2R1ovZlB1bWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCs2Wi9mYnhtZjMyODVuMjd1bVo4T1hoUmdBQUFBQUFBQUFBQUFBQUFPL2YzeER2NU4rUy9mUHVtZjMyOFpuOTgrNlovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHVtZjMyOFpuOTgrNlo3K1Rma3UvZjN4QUFBQUFBQUFBQUFPdmYybHIyN09lWi9mYnhtZjN6N3BuOTgrNlovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHVtZjN6N3BuOTl2R1o5dXpubWV2ZjJsb0FBQUFBNHVMaUNlcmUxNVQ5OCs2Wi9mUHVtZjN6N3BuOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N3BuOTgrNlovZlB1bWVyZTE1VGk0dUlKNTluVU51N2szWm45OCs2Wi9mUHVtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgrNlovZlB1bWU3azNabm4yZFEyNk5mT1d2UHA0cG45OCs2Wi9mUHVtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgrNlovZlB1bWZQcDRwbm8xODVhNXRmTGMvanM1Sm45OCs2Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlB1bWZqczVKbm4xY3gxNWRUSWcvdnM1Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWZ2czVKbmwxTWlENHRIR2gvanA1Sm45OGVtWi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZkhwbWZqcDVKbmkwY2FINGMvQ2d2am4zNW45OGVtWi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZkhwbWZqbjM1bmh6OEtDMzh2QWMvUGkySm45N3VlWi9mSHBtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOThlbVovZTdubWZQaTJKbmZ5OEJ6MzhxOFdPN2F6cG43N09LWi9mSHBtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOThlbVorK3ppbWU3YXpwbmZ5cnhZM3NpNEwrZlF3Wm40NmQrWi9lN25tZjN4N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN4N0puOTd1ZVorT25mbWVmUXdabmV5TGd2ek16TUJkM0d0cEQyNHRXWisremltZjN4NlpuOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN4NlpuNzdPS1o5dUxWbWQzR3RwRE16TXdGQUFBQUFOekZzMWpwME1HWitPVGFtZjN1NUpuOThlbVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mSHBtZjN1NUpuNDVOcVo2ZERCbWQ3RHNWWUFBQUFBQUFBQUFOKy9yeERjd2JDUzg5ckxtZmpuM1puOTd1ZVovZkhzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OGV5Wi9lN25tZmpuM1puejJzNlozTUd3a3QrL3J4QUFBQUFBQUFBQUFBQUFBQURhdmF0RzVNbTNtZmJmMEpuNDZkK1ovZTdubWYzeDdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3g3Sm45N3VlWitPbmZtZmJmMEpua3liZVoycjJyUmdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQTJieW9aK1RKdDVuejNkQ1orT2ZkbWYzdTU1bjk4ZW1aL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZIcG1mM3U1NW40NTkyWjg5M1FtZVRKdDVuWXZLaHcvMzkvQWdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQXpNeVpCZGU2cFhya3hyS1o4OXJMbWZqazJKbjc3T0taL2U3cG1mM3g3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzeDdKbjk3dW1aKyt6aW1mamsySm56MnN1WjVNYXltZGU1cEh6aXhxa0pBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT0xHcVFuWHVxUnozOEd0bWU3VHdabnozYzZaK09UYW1mdnAzNW45N3VlWi9lN3BtZjN4NlpuOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN6N0puOTgreVovZlBzbWYzejdKbjk4K3laL2ZQc21mM3o3Sm45OCt5Wi9mUHNtZjN4NlpuOTd1bVovZTdrbWZ2cDM1bjQ1TnFaODkzT21lN1R3Wm5md2EyWjJMbWtjZUxHcVFrQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEL2YzOEMxcmlrVE5lNnBaVGl4TENaN3RQQm1mUGF5Wm4yMzlDWitPTFZtZmprMnBuNDU5MlorT2ZkbWZqcDM1bjQ2ZCtaK09uZm1manAzNW40NmQrWitPbmZtZmpwMzVuNDZkK1orT25mbWZqcDM1bjQ2ZCtaK09uZm1manAzNW40NmQrWitPbmZtZmpwMzVuNDZkK1orT25mbWZqcDM1bjQ2ZCtaK09uZm1manAzNW40NTkyWitPZmRtZmprMnBuNDR0V1o5dC9RbWZQYXlabnUwOEdaNHNTd21kZTZwWlRXdUtSTS8zOS9BZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU5xMm93N1p1NlZlMkxtbGw5L0JyWm5ueHJLWjZjdTNtZTdRdkpudTA4R1o4ZFBCbWZIVHdabngwOEdaOGRQQm1mSFR3Wm54MDhHWjhkUEJtZkhUd1pueDA4R1o4ZFBCbWZIVHdabngwOEdaOGRQQm1mSFR3Wm54MDhHWjhkUEJtZkhUd1pueDA4R1o4ZFBCbWZIVHdabngwOEdaOGRQQm1mSFR3Wm54MDhHWjd0UEJtZTdRdkpucHk3ZVo1OGF5bWQvQnJabll1YVdYMmJ1bFh0cTJvdzRBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBNHNhcENkYTNvekxYdWFWbjE3cWxldGU2cFk3WXVxT1oyTHFqbWRpNm81bll1cU9aMkxxam1kaTZvNW5ZdXFPWjJMcWptZGk2bzVuWXVxT1oyTHFqbWRpNm81bll1cU9aMkxxam1kaTZvNW5ZdXFPWjJMcWptZGk2bzVuWXVxT1oyTHFqbWRpNm81bll1cU9aMkxxam1kaTZvNW5ZdXFPWjJMcWptZGk1cFl6WHVxVjYxN21sWjlhM296TGl4cWtKQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBPC9JbWFnZVN0cmVhbT48TWFyZ2lucz48QWxsPi0xPC9BbGw+PEJvdHRvbT4wPC9Cb3R0b20+PExlZnQ+NTU8L0xlZnQ+PFJpZ2h0PjA8L1JpZ2h0PjxUb3A+MDwvVG9wPjwvTWFyZ2lucz48UGFkZGluZz48QWxsPi0xPC9BbGw+PEJvdHRvbT4wPC9Cb3R0b20+PExlZnQ+NjwvTGVmdD48UmlnaHQ+MDwvUmlnaHQ+PFRvcD42PC9Ub3A+PC9QYWRkaW5nPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="NavigationButtonsLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorCheckBoxLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigatorNavigationPanelBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerNavigatorNavigationPanelBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerNavigatorCheckBoxPanelBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="15, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerNavigatorCheckBoxLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SchedulerNavigatorElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ViewButtonsLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavToggleBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavToggleBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavToggleBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedNavToggleBorderHover">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorToggleButton.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SchedulerToggleButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Collapsed)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SchedulerTodayArrow,SchedulerTodayButtonText9pt,NormalButtonText">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.TextImageRelation" Value="ImageBeforeText" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="200, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.StretchVertically" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Alignment" Value="MiddleRight" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTimeZoneDropDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(0;0;0;5)">
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerNavigatorTodayLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(0;0;0;5)">
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerNavigatorTimeZonesLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Collapsed)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="WhiteBackground">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckMarkMouseDownFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBackGround" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="CheckMarkBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="XP" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="34, 163, 31" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="XP" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="XP" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="XP" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="34, 163, 31" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="XP" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="34, 163, 31" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="XP" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="127, 200, 228" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="37, 89, 140" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="36, 86, 124" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="45" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 2, 3, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="127, 200, 228" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="37, 89, 140" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="36, 86, 124" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientAngle" Value="45" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 2, 3, 3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.CheckPrimitiveStyle" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.CheckPrimitive.DrawFill" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=Intermediate.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadCheckBoxCheckPrimitive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Collapsed)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCheckBoxElement.ToggleState=On">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Collapsed)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TodayButtonHoveredText,SchedulerTodayArrow">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerNavigatorTodayButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadSchedulerNavigator" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

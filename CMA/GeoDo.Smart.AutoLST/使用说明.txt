@@ -1,0 +1,12 @@
+﻿LST计算
+目前算法对于FY2D、FY2E数据需要提供NDVI数据。
+
+本控制台程序直接输入参数即可，参数说明如下：
+举例：
+对于FY3A调用
+GeoDo.Smart.AutoLST.exe "-ldf" "E:\Smart\积雪\FY3A_VIRRX_DXX_GLL_L1_20130324_0300_1000M_MS.LDF" "-outfile" "E:\LST_DBLV_FY3A_VIRR_1000M_20130324030000.dat"
+
+对于FY2D、FY2E数据调用：
+GeoDo.Smart.AutoLST.exe "-ldf" "E:\Smart\积雪\FY2E_***.LDF" "-ndvi" "E:\Smart\积雪\NDVI***.LDF" "-outfile" "E:\LST_DBLV_FY2E_VIRR_1000M_20130324030000.dat"
+
+

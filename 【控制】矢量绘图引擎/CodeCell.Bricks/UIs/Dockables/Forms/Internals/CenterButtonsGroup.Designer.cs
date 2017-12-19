@@ -1,0 +1,38 @@
+/***************************************************************************
+ *   CopyRight (C) 2008 by SC Crom-Osec SRL                                *
+ *   Contact:  contact@osec.ro                                             *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the Crom Free License as published by           *
+ *   the SC Crom-Osec SRL; version 1 of the License                        *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   Crom Free License for more details.                                   *
+ *                                                                         *
+ *   You should have received a copy of the Crom Free License along with   *
+ *   this program; if not, write to the contact@osec.ro                    *
+ ***************************************************************************/
+
+namespace CodeCell.Bricks.UIs.Dockables
+{
+   partial class CenterButtonsGroup
+   {
+      #region Windows Form Designer generated code
+
+      /// <summary>
+      /// Required method for Designer support - do not modify
+      /// the contents of this method with the code editor.
+      /// </summary>
+      private void InitializeComponent ()
+      {
+         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager (typeof (CenterButtonsGroup));
+         this.SuspendLayout ();
+         this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject ("$this.BackgroundImage")));
+         this.ResumeLayout (false);
+      }
+
+      #endregion
+   }
+}

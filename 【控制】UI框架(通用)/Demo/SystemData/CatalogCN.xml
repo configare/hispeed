@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CatalogCNS>
+  <ProductIdentify name="FOG">
+    <CatalogCN identify="DBLV" cnname="大雾结果"/>
+    <CatalogCN identify="0CSR" cnname="晴空反射率"/>
+    <CatalogCN identify="OPTD" cnname="光学厚度"/>
+    <CatalogCN identify="MCSI" cnname="大雾监测示意图"/>
+    <CatalogCN identify="0LWP" cnname="液态水路径"/>
+    <CatalogCN identify="ERAD" cnname="雾滴尺度"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="CSDI" cnname="自定义二值图"/>
+    <CatalogCN identify="ERAI" cnname="雾滴尺度图"/>
+    <CatalogCN identify="LWPI" cnname="液态水路径图"/>
+    <CatalogCN identify="OPTI" cnname="光学厚度图"/>
+    <CatalogCN identify="CCAR" cnname="区域面积统计"/>
+    <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+    <CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+    <CatalogCN identify="0CBP" cnname="省界面积统计"/>
+    <CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+    <CatalogCN identify="CYCI" cnname="周期合成图"/>
+    <CatalogCN identify="CCYI" cnname="自定义周期图"/>
+    <CatalogCN identify="FREQ" cnname="频次统计图"/>
+    <CatalogCN identify="CFRI" cnname="自定义频次图"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+    <CatalogCN identify="CMED" cnname="自定义动画"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="LST">
+    <CatalogCN identify="DBLV" cnname="陆表高温"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="DRT">
+    <CatalogCN identify="TVDI" cnname="温度植被干旱指数"/>
+    <CatalogCN identify="VTI" cnname="时序植被温度干旱指数"/>
+    <CatalogCN identify="SWI" cnname="热惯量干旱指数"/>
+    <CatalogCN identify="TCI" cnname="温度状态指数"/>
+    <CatalogCN identify="VCI" cnname="植被状态指数"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="DST">
+    <CatalogCN identify="DBLV" cnname="沙尘结果"/>
+    <CatalogCN identify ="MCSI" cnname="沙尘监测示意图"/>
+    <CatalogCN identify="VISY" cnname="能见度结果"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="CSDI" cnname="自定义二值图"/>
+    <CatalogCN identify="VISI" cnname="能见度图"/>
+    <CatalogCN identify="CCAR" cnname="区域面积统计"/>
+    <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+    <CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+    <CatalogCN identify="0CBP" cnname="省界面积统计"/>
+    <CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+    <CatalogCN identify="CYCI" cnname="周期合成图"/>
+    <CatalogCN identify="CCYC" cnname="自定义周期图"/>
+    <CatalogCN identify="FREQ" cnname="频次统计图"/>
+    <CatalogCN identify="CFRE" cnname="自定义频次图"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+    <CatalogCN identify="CMED" cnname="自定义动画"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="VGT">
+    <CatalogCN identify="NDVI" cnname="NDVI数据"/>
+    <CatalogCN identify="0RVI" cnname="RVI数据"/>
+    <CatalogCN identify="0DVI" cnname="DVI数据"/>
+    <CatalogCN identify="0EVI" cnname="EVI数据"/>
+    <CatalogCN identify="0VCI" cnname="VCI数据"/>
+    <CatalogCN identify="0PLP" cnname="像元百分比"/>
+    <CatalogCN identify="SJPH" cnname="数据平滑"/>
+    <CatalogCN identify="0AVG" cnname="NDVI平均值"/>
+    <CatalogCN identify="0MAX" cnname="NDVI最大值"/>
+    <CatalogCN identify="0MIN" cnname="NDVI最小值"/>
+    <CatalogCN identify="CHAZ" cnname="NDVI差值"/>
+    <CatalogCN identify="ANMI" cnname="NDVI距平"/>
+    <CatalogCN identify="NVII" cnname="植被指数NDVI图"/>
+    <CatalogCN identify="RVII" cnname="植被指数RVI图"/>
+    <CatalogCN identify="DVII" cnname="植被指数DVI图"/>
+    <CatalogCN identify="EVII" cnname="植被指数EVI图"/>
+    <CatalogCN identify="VCII" cnname="植被状态指数图"/>
+    <CatalogCN identify="PTUI" cnname="植被指数距平图"/>
+    <CatalogCN identify="ZTUI" cnname="植被指数差值图"/>
+    <CatalogCN identify="NDVC" cnname="植被指数NDVI统计"/>
+    <CatalogCN identify="RVIC" cnname="植被指数RVI统计"/>
+    <CatalogCN identify="DVIC" cnname="植被指数DVI统计"/>
+    <CatalogCN identify="EVIC" cnname="植被指数EVI统计"/>
+    <CatalogCN identify="VCIC" cnname="植被状态指数统计"/>
+    <CatalogCN identify="CDVC" cnname="CNDVI统计"/>
+    <CatalogCN identify="CHZC" cnname="植被指数差值统计"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="UHI">
+    <CatalogCN identify="DBLV" cnname="城市热岛结果"/>
+    <CatalogCN identify="MCSI" cnname="城市热岛监测图"/>
+    <CatalogCN identify="0SDI" cnname="热岛专题图"/>
+    <CatalogCN identify="CSDI" cnname="自定义热岛专题图"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="SNW">
+    <CatalogCN identify="DBLV" cnname="积雪结果"/>
+    <CatalogCN identify="MCSI" cnname="积雪监测图"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="CSDI" cnname="自定义二值图"/>
+    <CatalogCN identify="NSDI" cnname="网络二值图"/>
+    <CatalogCN identify="CCAR" cnname="区域面积统计"/>
+    <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+    <CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+    <CatalogCN identify="0CBP" cnname="省界面积统计"/>
+    <CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+    <CatalogCN identify="FREQ" cnname="频次统计图"/>
+    <CatalogCN identify="CFRI" cnname="自定义频次图"/>
+    <CatalogCN identify="0SDC" cnname="当前区域程度指数统计"/>
+    <CatalogCN identify="PSDC" cnname="省界程度指数统计"/>
+    <CatalogCN identify="TSDC" cnname="省市界程度指数统计"/>
+    <CatalogCN identify="LSDC" cnname="土地类型程度指数统计"/>
+    <CatalogCN identify="CSDC" cnname="自定义程度指数统计"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+    <CatalogCN identify="CMED" cnname="自定义动画"/>
+    <CatalogCN identify="COMP" cnname="对比分析专题图"/>
+    <CatalogCN identify="MAXI" cnname="全国日合成图"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="BAG">
+    <CatalogCN identify="DBLV" cnname="蓝藻水华结果"/>
+    <CatalogCN identify="NDVI" cnname="NDVI数据"/>
+    <CatalogCN identify="BPCD" cnname="像元覆盖度"/>
+    <CatalogCN identify="MCSI" cnname="蓝藻监测图"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="CSDI" cnname="自定义二值图"/>
+    <CatalogCN identify="PCDI" cnname="覆盖度专题图"/>
+    <CatalogCN identify="0QD3" cnname="三级强度专题图"/>
+    <CatalogCN identify="QD10" cnname="十级强度专题图"/>
+    <CatalogCN identify="CCAR" cnname="区域面积统计"/>
+    <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+    <CatalogCN identify="BCDA" cnname="覆盖度面积统计"/>
+    <CatalogCN identify="FREQ" cnname="频次统计图"/>
+    <CatalogCN identify="BCDF" cnname="覆盖度频次统计图"/>
+    <CatalogCN identify="CFRI" cnname="自定义频次图"/>
+    <CatalogCN identify="BACD" cnname="像元覆盖度统计"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+    <CatalogCN identify="CMED" cnname="自定义动画"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="FLD">
+    <CatalogCN identify="DBLV" cnname="水情判识结果"/>
+    <CatalogCN identify="0MIX" cnname="混合像元文件"/>
+    <CatalogCN identify="FLOD" cnname="泛滥缩小水体文件"/>
+    <CatalogCN identify="MCSI" cnname="水情监测示意图"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="MIXI" cnname="混合像元专题图"/>
+    <CatalogCN identify="FLIM" cnname="泛滥缩小水体专题图"/>
+    <CatalogCN identify="MUTI" cnname="多时次洪涝专题图"/>
+    <CatalogCN identify="LS3J" cnname="淹没历时三级专题图"/>
+    <CatalogCN identify="LS6J" cnname="淹没历时六级专题图"/>
+    <CatalogCN identify="CCAR" cnname="判识水体区域面积统计"/>
+    <CatalogCN identify="0CCC" cnname="判识水体省市县面积统计"/>
+    <CatalogCN identify="CLUT" cnname="判时水体土地类型面积统计"/>
+    <CatalogCN identify="0CBP" cnname="判时水体省界面积统计"/>
+    <CatalogCN identify="FLUT" cnname="泛滥水体土地类型面积统计"/>
+    <CatalogCN identify="FCBP" cnname="泛滥水体省界面积统计"/>
+    <CatalogCN identify="CCCA" cnname="泛滥水体自定义面积统计"/>
+    <CatalogCN identify="ADLU" cnname="泛滥水体行政区划+地类面积统计"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="FIR">
+    <CatalogCN identify="DBLV" cnname="火点结果"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="CSDI" cnname="自定义二值图"/>
+    <CatalogCN identify="MCSI" cnname="火情监测图"/>
+    <CatalogCN identify="PLST" cnname="火点信息列表"/>
+    <CatalogCN identify="FRIL" cnname="火区信息列表"/>
+    <CatalogCN identify="CCAR" cnname="区域面积统计"/>
+    <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+    <CatalogCN identify="CLUT" cnname="土地类型面积统计"/>
+    <CatalogCN identify="0CBP" cnname="省界面积统计"/>
+    <CatalogCN identify="0CCC" cnname="省市县面积统计"/>
+    <CatalogCN identify="FREQ" cnname="频次统计图"/>
+    <CatalogCN identify="CFRI" cnname="自定义频次图"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+    <CatalogCN identify="CMED" cnname="自定义动画"/>
+    <CatalogCN identify="0FPG" cnname="火点强度"/>
+    <CatalogCN identify="FPGI" cnname="火点强度图"/>
+    <CatalogCN identify="CFPI" cnname="自定义强度图"/>
+  </ProductIdentify>
+
+  <ProductIdentify name="ICE">
+    <CatalogCN identify="DBLV" cnname="海冰结果"/>
+    <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+    <CatalogCN identify="CSDI" cnname="自定义二值图"/>
+    <CatalogCN identify="MCSI" cnname="海冰监测图"/>
+    <CatalogCN identify="CCAR" cnname="区域面积统计"/>
+    <CatalogCN identify="CCCA" cnname="自定义面积统计"/>
+    <CatalogCN identify="FREQ" cnname="频次统计图"/>
+    <CatalogCN identify="CFRI" cnname="自定义频次图"/>
+    <CatalogCN identify="MEDI" cnname="动画"/>
+    <CatalogCN identify="CMED" cnname="自定义动画"/>
+  </ProductIdentify>
+</CatalogCNS>

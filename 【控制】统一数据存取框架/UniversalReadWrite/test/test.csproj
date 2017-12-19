@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{019701C2-1ADD-4B43-BF1F-169AE1967534}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdal_csharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\GDAL CSharp\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.MEF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.MEF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.EC_GRIB">
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.EC_GRIB.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.FY1C_1D.BandPrd">
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.FY1C_1D.BandPrd.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.FY1D.BandPrd">
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.FY1D.BandPrd.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.FY2NOM">
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.FY2NOM.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.GeoEye">
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.GeoEye.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MEM">
+      <HintPath>..\Drivers\MEM\GeoDo.RSS.DF.MEM\obj\Debug\GeoDo.RSS.DF.MEM.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MODAS">
+      <HintPath>..\..\..\..\..\..\Proj_气溶胶反演\ASLRasterProductsAlg\AerosolApp\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.MODAS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IWPOutput.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestHdfRead.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithm\GeoDo.Oribit.Algorithm\GeoDo.Oribit.Algorithm.csproj">
+      <Project>{8F8E7333-1A67-45E6-A11E-9E0F35806679}</Project>
+      <Name>GeoDo.Oribit.Algorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\GeoDo.RSS.Core.DF\GeoDo.RSS.Core.DF.csproj">
+      <Project>{29E4664D-8930-4A57-A8BC-2B2ABD43C733}</Project>
+      <Name>GeoDo.RSS.Core.DF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\GeoDo.RSS.DF.GDAL.H4BandPrd\GeoDo.RSS.DF.GDAL.H4BandPrd.csproj">
+      <Project>{1132A5A7-11E0-41A1-BC38-8F84DB9892BC}</Project>
+      <Name>GeoDo.RSS.DF.GDAL.H4BandPrd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\GeoDo.RSS.DF.GDAL.H5BandPrd\GeoDo.RSS.DF.GDAL.H5BandPrd.csproj">
+      <Project>{FEF7DC4E-6CD5-47F6-BDF3-5CF31308AEFD}</Project>
+      <Name>GeoDo.RSS.DF.GDAL.H5BandPrd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\GeoDo.RSS.DF.GDAL\GeoDo.RSS.DF.GDAL.csproj">
+      <Project>{C9DBBDBD-3BA7-4FF3-B9F7-14B71DA31BD6}</Project>
+      <Name>GeoDo.RSS.DF.GDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\HDF Helper\GeoDo.HDF4\GeoDo.HDF4.csproj">
+      <Project>{2F2E1E62-054D-42B3-B212-20D8E8A1F8F2}</Project>
+      <Name>GeoDo.HDF4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\HDF Helper\GeoDo.HDF5\GeoDo.HDF5.csproj">
+      <Project>{200376B6-9AE8-422E-9CBD-DF3BEFF7761B}</Project>
+      <Name>GeoDo.HDF5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\GDAL\HDF Helper\GeoDo.HDF\GeoDo.HDF.csproj">
+      <Project>{318580C6-FF1F-42EF-8576-31E1C8068EE6}</Project>
+      <Name>GeoDo.HDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\LDF\GeoDo.LDF\GeoDo.RSS.DF.LDF.csproj">
+      <Project>{0BD295ED-3D74-494C-9654-A44DEE5A02C1}</Project>
+      <Name>GeoDo.RSS.DF.LDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Drivers\MVG\GeoDo.MVG\GeoDo.RSS.DF.MVG.csproj">
+      <Project>{6A98782D-7C31-40E1-A041-814DB7B6ACB7}</Project>
+      <Name>GeoDo.RSS.DF.MVG</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.FY1D\GeoDo.RSS.DF.FY1D.csproj">
+      <Project>{C460369F-4965-4D60-99E1-F7C4AE645611}</Project>
+      <Name>GeoDo.RSS.DF.FY1D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.GDAL.HDF5Universal\GeoDo.RSS.DF.GDAL.HDF5Universal.csproj">
+      <Project>{62D217C8-0A3F-433C-8750-B17EE8A04E00}</Project>
+      <Name>GeoDo.RSS.DF.GDAL.HDF5Universal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.GRIB\GeoDo.RSS.DF.GRIB.csproj">
+      <Project>{557DB61B-D08C-48AE-B158-F1707CBC57B8}</Project>
+      <Name>GeoDo.RSS.DF.GRIB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.NOAA.BandPrd\GeoDo.RSS.DF.NOAA.BandPrd.csproj">
+      <Project>{71900791-E627-4191-BC9B-6AB2CA0C1A39}</Project>
+      <Name>GeoDo.RSS.DF.NOAA.BandPrd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.NOAA\GeoDo.RSS.DF.NOAA.csproj">
+      <Project>{DFF65F94-C1B8-450C-8A1B-E4DF0FD7ECF4}</Project>
+      <Name>GeoDo.RSS.DF.NOAA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.DF.SeaSurfaceWind\GeoDo.RSS.DF.SeaSurfaceWind.csproj">
+      <Project>{AE8EDD9D-D61C-4BFD-A933-BB393C4C08B3}</Project>
+      <Name>GeoDo.RSS.DF.SeaSurfaceWind</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SystemData\MefConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{23A81C9B-036C-417E-A368-36669B6A3A33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.Layout.Elements</RootNamespace>
+    <AssemblyName>GeoDo.RSS.Layout.Elements</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoDo.MEF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDll\MEF\GeoDo.MEF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DrawTools\ArrowElement.cs" />
+    <Compile Include="DrawTools\ArrowLineElement.cs" />
+    <Compile Include="DrawTools\NorthArrowElement.cs" />
+    <Compile Include="Icons\AirPort.cs" />
+    <Compile Include="Icons\Freeway.cs" />
+    <Compile Include="Icons\Railway.cs" />
+    <Compile Include="Icons\River.cs" />
+    <Compile Include="Legends\CityElement.cs" />
+    <Compile Include="Legends\ContryBorderLine.cs" />
+    <Compile Include="Legends\ContyBorder.cs" />
+    <Compile Include="Legends\ProvinceBorderElement.cs" />
+    <Compile Include="Legends\RegionElement.cs" />
+    <Compile Include="Legends\WaterLandBorder.cs" />
+    <Compile Include="PictureElements\PictureElementSouthChinaSea134.cs" />
+    <Compile Include="PictureElements\PictureElementSouthChinaSea557.cs" />
+    <Compile Include="Logos\PictureElementGJWXQXZX.cs" />
+    <Compile Include="Logos\PictureElementZGQXJ.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DrawTools\ScaleBarElement.cs" />
+    <Compile Include="TextElements\TextElementCurrentDateTime5.cs" />
+    <Compile Include="TextElements\TextElementCurrentDateTimeS5.cs" />
+    <Compile Include="TextElements\TextElementQBG5.cs" />
+    <Compile Include="TextElements\TextElementSBR4.cs" />
+    <Compile Include="Logos\TextElementZGQXJ.cs" />
+    <Compile Include="Logos\TextElementGJWXQXZX.cs" />
+    <Compile Include="TextElements\TextElementWRYH2.cs" />
+    <Compile Include="TextElements\TextElementWRYH5.cs" />
+    <Compile Include="TextElements\TextElementWRYHS5.cs" />
+    <Compile Include="TextElements\TextElementXBYS5.cs" />
+    <Compile Include="UserControls\UCElementsListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCElementsListView.Designer.cs">
+      <DependentUpon>UCElementsListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTemplateSelectWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCTemplateSelectWindow.Designer.cs">
+      <DependentUpon>UCTemplateSelectWindow.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.Layout.GDIPlus\GeoDo.RSS.Layout.GDIPlus.csproj">
+      <Project>{D7603AD5-7EAC-40F4-9B45-32272761DCF7}</Project>
+      <Name>GeoDo.RSS.Layout.GDIPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoDo.RSS.Layout\GeoDo.RSS.Layout.csproj">
+      <Project>{9E9173D6-20E7-4AF2-A674-2AD80BB0AC31}</Project>
+      <Name>GeoDo.RSS.Layout</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserControls\UCTemplateSelectWindow.resx">
+      <DependentUpon>UCTemplateSelectWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\BorderElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\PictureElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\DefaultPicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ElementGJWXQXZX.png" />
+    <EmbeddedResource Include="Images\ElementZGQXJ.png" />
+    <EmbeddedResource Include="Images\IconGJWXQXZX.png" />
+    <EmbeddedResource Include="Images\IconZGQXJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\南海诸岛134_174.png" />
+    <EmbeddedResource Include="Images\南海诸岛16_16.png" />
+    <EmbeddedResource Include="Images\南海诸岛32_32.png" />
+    <EmbeddedResource Include="Images\南海诸岛557_720.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\IconArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\DataframeElement.png" />
+    <EmbeddedResource Include="Images\IconNorthArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\IconTextElement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\IconScaleBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\IconArrowRec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\机场.png" />
+    <EmbeddedResource Include="Images\河流湖泊.png" />
+    <EmbeddedResource Include="Images\铁路.png" />
+    <EmbeddedResource Include="Images\高速公路.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icon机场.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icon河流湖泊.png" />
+    <EmbeddedResource Include="Images\Icon铁路.png" />
+    <EmbeddedResource Include="Images\Icon高速公路.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\县界.bmp" />
+    <EmbeddedResource Include="Images\国境线.bmp" />
+    <EmbeddedResource Include="Images\图例.png" />
+    <EmbeddedResource Include="Images\地区界.bmp" />
+    <EmbeddedResource Include="Images\城镇.bmp" />
+    <EmbeddedResource Include="Images\海岸线.bmp" />
+    <EmbeddedResource Include="Images\省界.bmp" />
+    <EmbeddedResource Include="Images\省界_O.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icon省界.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icon国境线.bmp" />
+    <EmbeddedResource Include="Images\Icon图例.png" />
+    <EmbeddedResource Include="Images\Icon地区界.bmp" />
+    <EmbeddedResource Include="Images\Icon城镇.bmp" />
+    <EmbeddedResource Include="Images\Icon省界_O.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Icon县界.png" />
+    <EmbeddedResource Include="Images\Icon海岸线.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

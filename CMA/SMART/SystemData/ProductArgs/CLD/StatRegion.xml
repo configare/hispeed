@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <SelectedRegion>
+    <Envelope name="teat1" minx="60" maxx="80" miny="10" maxy="30" />
+  </SelectedRegion>
+  <ValidEnvelopes>
+    <Envelope name="中国" minx="65" maxx="145" miny="10" maxy="60" />
+    <Envelope name="teat" minx="60" maxx="100" miny="10" maxy="40" />
+    <Envelope name="teat1" minx="60" maxx="80" miny="10" maxy="30" />
+  </ValidEnvelopes>
+</xml>

@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IMapService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost/AgileMapService/MapService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IMapService"
+                contract="AgileMapServiceProxy.IMapService" name="BasicHttpBinding_IMapService" />
+        </client>
+    </system.serviceModel>
+</configuration>

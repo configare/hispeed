@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml identify="mosaic">
+  <!--待镶嵌输入文件，dayornight：白天晚上标识，orbitidentify轨道圈号标识-->
+  <InputFilename>E:\Smart\Fog_yingji\n16 *.ldf</InputFilename>
+  <DayOrNight></DayOrNight>
+  <OrbitIdentify></OrbitIdentify>
+  <!--
+  镶嵌或拼接
+  Mosaic：镶嵌，会根据定义的数据范围输出数据（默认值）【尚未支持】
+  Splice：拼接，直接将在范围内的数据拼接在一起，具体输出文件范围不确定
+  -->
+  <MosaicMode>Splice</MosaicMode>
+  <!--
+  镶嵌文件范围，可定义多个，name不能相同
+  MosaicMode=Mosaic时，表示输出范围
+  MosaicMode=Splice时，表示有效范围
+  -->
+  <MosaicEnvelopes>
+    <Envelope name="CHINA" minx="60" maxx="150" miny="10" maxy="70"/>
+    <!--<Envelope name="TGS" minx="60" maxx="150" miny="10" maxy="70"/>-->
+  </MosaicEnvelopes>
+  <!--输出文件目录-->
+  <OutputDir>E:\Mosaic</OutputDir>
+  <!--
+  数据分类：
+  (不同的模式会依据来源数据提供的信息，生成不同的目标文件名，如果目标文件已经存在，则会直接镶嵌到此文件)
+  DayNight：按日期，区分白天晚上，来拼接文件（默认值）
+  Day：按日期，区分白天晚上，并且只处理白天的数据，来拼接文件
+  Night：按日期，区分白天晚上，并且只处理晚上的数据，来拼接文件
+  DayNightOrbit：按日期，区分白天晚上，区分轨道圈，来拼接文件
+  -->
+  <OutputType>DayNightOrbit</OutputType>
+</xml>

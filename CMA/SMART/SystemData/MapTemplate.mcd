@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Map name="新地图">
+  <MapArguments backcolor="0,255,255,255" smoothingmode="Default" spatialreference="">
+    <Extent MinX="71.7646713256836" MinY="9.88995265960693" MaxX="136.915908813477" MaxY="55.500301361084" />
+  </MapArguments>
+  <ConflictDefinitionSymbol>
+    <ConflictDefinition gridsize="20,20" enabled="True" />
+  </ConflictDefinitionSymbol>
+  <ConflictDefinitionLabel>
+    <ConflictDefinition gridsize="60,16" enabled="True" />
+  </ConflictDefinitionLabel>
+  <Author author="" beginmaketime="0001-01-01 00:00:00" endmaketime="0001-01-01 00:00:00" />
+  <Version year="0" scaleofmapping="0" publisher="" source="" description="" />
+  <Layers>
+  </Layers>
+</Map>

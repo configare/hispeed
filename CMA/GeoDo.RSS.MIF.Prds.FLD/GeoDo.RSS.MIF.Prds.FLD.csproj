@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE541073-C92C-419C-A82C-AA117F74BC15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Prds.FLD</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Prds.FLD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMART\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MEM, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.MEM.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Layout.Elements, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Layout\GeoDo.RSS.Layout.Elements.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.Core">
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.MIF.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\MIF\GeoDo.RSS.MIF.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.RasterTools, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\RsTools\GeoDo.RSS.RasterTools.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Theme, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.UI.AddIn.Tools, Version=1.0.7.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\UI\GeoDo.RSS.UI.AddIn.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.2.11.712, Culture=neutral, PublicKeyToken=bf4391287131aaeb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Telerik\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\TimeStat\TimeStatInfo.cs" />
+    <Compile Include="Analysis\TimeStat\SubProductAnalysisFldTStat.cs" />
+    <Compile Include="Analysis\SubProductAnalysisFldFreq.cs" />
+    <Compile Include="Analysis\SubProductAnalysisFlodAreaStat.cs" />
+    <Compile Include="Analysis\SubProductAnalysisFldFlls.cs" />
+    <Compile Include="Analysis\SubProductAnalysisFldStat.cs" />
+    <Compile Include="Analysis\SubProductCYCIFLD.cs" />
+    <Compile Include="Analysis\SubProductTFREFLD.cs" />
+    <Compile Include="Analysis\SubProductTFRQFLD.cs" />
+    <Compile Include="BackWaterFileFinder.cs" />
+    <Compile Include="Binary\SubProductBinaryClm.cs" />
+    <Compile Include="Binary\SubProductBinaryFld.cs" />
+    <Compile Include="Controls\frmBackWaterImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmBackWaterImport.Designer.cs">
+      <DependentUpon>frmBackWaterImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmFeatureSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmFeatureSelector.Designer.cs">
+      <DependentUpon>frmFeatureSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeStat\frmEditTimeStatArg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeStat\frmEditTimeStatArg.Designer.cs">
+      <DependentUpon>frmEditTimeStatArg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeStat\InfoDef.cs" />
+    <Compile Include="Controls\UCBackgroudWaterSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCBackgroudWaterSetting.Designer.cs">
+      <DependentUpon>UCBackgroudWaterSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCComputeMixPixel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCComputeMixPixel.Designer.cs">
+      <DependentUpon>UCComputeMixPixel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCHistoryDBLVImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCHistoryDBLVImport.Designer.cs">
+      <DependentUpon>UCHistoryDBLVImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCMistExtract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCMistExtract.Designer.cs">
+      <DependentUpon>UCMistExtract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCMutiHistoryDBLVImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCMutiHistoryDBLVImport.Designer.cs">
+      <DependentUpon>UCMutiHistoryDBLVImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCStatDim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCStatDim.Designer.cs">
+      <DependentUpon>UCStatDim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCSearchCondition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCSearchCondition.Designer.cs">
+      <DependentUpon>UCSearchCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCStatTimeFrame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCStatTimeFrame.Designer.cs">
+      <DependentUpon>UCStatTimeFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCStatTimeRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeStat\UCStatTimeRegion.Designer.cs">
+      <DependentUpon>UCStatTimeRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCStageToArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCStageToArea.Designer.cs">
+      <DependentUpon>UCStageToArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLD\frmChangeWater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLD\frmChangeWater.designer.cs">
+      <DependentUpon>frmChangeWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLD\UCChangeWater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FLD\UCChangeWater.designer.cs">
+      <DependentUpon>UCChangeWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLD\UITabWater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FLD\UITabWater.Designer.cs">
+      <DependentUpon>UITabWater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubProductLayoutFldImg.cs" />
+    <Compile Include="Layout\SubProductTFQIFLD.cs" />
+    <Compile Include="Layout\SubProductTFRIFLD.cs" />
+    <Compile Include="MonitoringProductFld.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raster\SubProductRasterFldFloodLastdays.cs" />
+    <Compile Include="Raster\SubProductRasterFldFlood.cs" />
+    <Compile Include="Raster\SubProductRasterFldFloodCount.cs" />
+    <Compile Include="Raster\SubProductRasterFldMix_OLD.cs" />
+    <Compile Include="Raster\SubProductRasterFldMix.cs" />
+    <Compile Include="Vector\GenerateContourLines.cs" />
+    <Compile Include="Vector\SubProductEDGEFLD.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\frmBackWaterImport.resx">
+      <DependentUpon>frmBackWaterImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeStat\frmEditTimeStatArg.resx">
+      <DependentUpon>frmEditTimeStatArg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeStat\UCSearchCondition.resx">
+      <DependentUpon>UCSearchCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeStat\UCStatTimeFrame.resx">
+      <DependentUpon>UCStatTimeFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeStat\UCStatTimeRegion.resx">
+      <DependentUpon>UCStatTimeRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCBackgroudWaterSetting.resx">
+      <DependentUpon>UCBackgroudWaterSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCComputeMixPixel.resx">
+      <DependentUpon>UCComputeMixPixel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCHistoryDBLVImport.resx">
+      <DependentUpon>UCHistoryDBLVImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCMistExtract.resx">
+      <DependentUpon>UCMistExtract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCMutiHistoryDBLVImport.resx">
+      <DependentUpon>UCMutiHistoryDBLVImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeStat\UCStatDim.resx">
+      <DependentUpon>UCStatDim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCStageToArea.resx">
+      <DependentUpon>UCStageToArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLD\frmChangeWater.resx">
+      <DependentUpon>frmChangeWater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLD\UCChangeWater.resx">
+      <DependentUpon>UCChangeWater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-horizontal-open1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-open16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoDo.RSS.MIF.Prds.Comm\GeoDo.RSS.MIF.Prds.Comm.csproj">
+      <Project>{9F3FE8A1-E2E1-4B99-8E3D-2EE977D132DF}</Project>
+      <Name>GeoDo.RSS.MIF.Prds.Comm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

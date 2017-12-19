@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<MASL2ColorTable name="TOZ" applyfor = "TOZ,TTO" description="臭氧总量"  matchstring="\S+_TOZ_\S+(\.HDF)$">
+  <BandValueRanges>
+    <BandValueRange name="TOZ" datasets="Total_Ozone" refdatasets="">
+      <Segment values = "-32768~125" indexes = "0" />
+      <Segment values = "125~150" indexes = "1" />
+      <Segment values = "150~175" indexes = "2" />
+      <Segment values = "175~200" indexes = "3" />
+      <Segment values = "200~225" indexes = "4" />
+      <Segment values = "225~250" indexes = "5" />
+      <Segment values = "250~275" indexes = "6" />
+      <Segment values = "275~300" indexes = "7" />
+      <Segment values = "300~325" indexes = "8" />
+      <Segment values = "325~350" indexes = "9" />
+      <Segment values = "350~375" indexes = "10" />
+      <Segment values = "375~400" indexes = "11" />
+      <Segment values = "400~425" indexes = "12" />
+      <Segment values = "425~450" indexes = "13" />
+      <Segment values = "450~475" indexes = "14" />
+      <Segment values = "475~32768" indexes = "15" />
+    </BandValueRange>
+   </BandValueRanges>
+  <ColorTables>
+    <ColorTable name="ColorTable" applyfor="TOZ" description="">
+      <Color index = "0" rgb = "10,0,10"/>
+      <Color index = "1" rgb = "90,0,90"/>
+      <Color index = "2" rgb = "140,0,140"/>
+      <Color index = "3" rgb = "94,30,214"/>
+      <Color index = "4" rgb = "15,35,255"/>
+      <Color index = "5" rgb = "0,120,235"/>
+      <Color index = "6" rgb = "0,191,194"/>
+      <Color index = "7" rgb = "0,255,255"/>
+      <Color index = "8" rgb = "114,255,53"/>
+      <Color index = "9" rgb = "0,255,0"/>
+      <Color index = "10" rgb = "195,234,12"/>
+      <Color index = "11" rgb = "255,255,0"/>
+      <Color index = "12" rgb = "255,155,0"/>
+      <Color index = "13" rgb = "206,43,0"/>
+      <Color index = "14" rgb = "125,20,22"/>
+      <Color index = "15" rgb = "55,10,10"/>
+    </ColorTable>
+  </ColorTables>
+</MASL2ColorTable>

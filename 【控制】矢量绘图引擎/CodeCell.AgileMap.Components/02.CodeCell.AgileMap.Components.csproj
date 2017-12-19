@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{622512A1-9550-4294-B7D2-143A66BEFC4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCell.AgileMap.Components</RootNamespace>
+    <AssemblyName>CodeCell.AgileMap.Components</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\CodeCell.AgileMap.Core\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.1.2, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Oracle\product\11.2.0\client_1\odp.net\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgDbfFile.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgFeatures.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgFieldDefs.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgFieldMaps.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgShpFile.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\enumFieldTypes.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\FieldDef.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\FieldMap.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\AttToFieldMapAttribute.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\CatalogEntityClassBase.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\CatalogEntityClassFeatureClass.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\CatalogEntityClassFeatureDataset.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\CatalogEntityClassMap.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\ICatalogEntityClass.cs" />
+    <Compile Include="Catalog\CatalogEntityClass\TransactionManager.cs" />
+    <Compile Include="Catalog\CatalogEntity\CatalogEntityBase.cs" />
+    <Compile Include="Catalog\CatalogEntity\ICatalogEntity.cs" />
+    <Compile Include="Catalog\CatalogEntity\SpatialDatabaseConn.cs" />
+    <Compile Include="Catalog\CatalogEntity\SpatialFeatureClass.cs" />
+    <Compile Include="Catalog\CatalogEntity\SpatialFeatureDataset.cs" />
+    <Compile Include="Catalog\CatalogEntity\SpatialMap.cs" />
+    <Compile Include="Catalog\CatalogEntity\StatInfoFetClass.cs" />
+    <Compile Include="Catalog\CatalogEntity\UI\frmDataSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmDataSource.Designer.cs">
+      <DependentUpon>frmDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmEntityEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmEntityEditor.Designer.cs">
+      <DependentUpon>frmEntityEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmFeatureClassEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmFeatureClassEditor.Designer.cs">
+      <DependentUpon>frmFeatureClassEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmFeatureDatasetsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmFeatureDatasetsEditor.Designer.cs">
+      <DependentUpon>frmFeatureDatasetsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmFetClassDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\frmFetClassDlg.Designer.cs">
+      <DependentUpon>frmFetClassDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\UCFetClassStatInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\UCFetClassStatInfo.Designer.cs">
+      <DependentUpon>UCFetClassStatInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\UCSpatialRef.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Catalog\CatalogEntity\UI\UCSpatialRef.Designer.cs">
+      <DependentUpon>UCSpatialRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogItems\CatalogDatabaseConn.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogDatabaseConnFolder.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogFeatureClass.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogFeatureDataset.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogFile.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogItem.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogLocal.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogLocalFolder.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogNetFeatureClass.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogNetFeatureDataset.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogNetInstance.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogNetServer.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogNetServerFolder.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogRoot.cs" />
+    <Compile Include="Catalog\CatalogItems\ContextOprItem.cs" />
+    <Compile Include="Catalog\CatalogItems\enumContextKeys.cs" />
+    <Compile Include="Catalog\CatalogItems\ICatalogItem.cs" />
+    <Compile Include="Catalog\CatalogItems\ICatalogItemRefresh.cs" />
+    <Compile Include="Catalog\CatalogItems\CatalogRasterFile.cs" />
+    <Compile Include="Catalog\CatalogPersist\CatalogPersist.cs" />
+    <Compile Include="Catalog\frmNewSpatialDbConn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalog\frmNewSpatialDbConn.Designer.cs">
+      <DependentUpon>frmNewSpatialDbConn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalog\CatalogActions\ActionClearSpatialDB.cs" />
+    <Compile Include="Catalog\CatalogActions\ActionImportFetClass.cs" />
+    <Compile Include="Catalog\CatalogActions\ActionImportShapeFile.cs" />
+    <Compile Include="Catalog\CatalogActions\ActionInitSpatialDB.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgCatalogItem.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgCatalogItemFetClass.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgCatalogItemLocation.cs" />
+    <Compile Include="Catalog\CatalogActions\ArgTypes\ArgDBConnection.cs" />
+    <Compile Include="Catalog\CatalogActions\DataToDb\DataImporter.cs" />
+    <Compile Include="Catalog\CatalogActions\DataToDb\IDataImporter.cs" />
+    <Compile Include="Catalog\CatalogActions\DataToDb\MetaFeatureClassDef.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\FetClassImporterFactory.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\IFetClassImporter.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\ImporterByCopyFile.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\ImporterByReaderWriter.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Reader\FeatureClassReaderFactory.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Reader\FetClassReaderForDb.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Reader\FetClassReaderForShpFile.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Reader\IFeatureClassReader.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Writer\FeatureClassWriterFactory.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Writer\FetClassWriterDb.cs" />
+    <Compile Include="Catalog\CatalogActions\ImportFetClass\Writer\IFeatureClassWriter.cs" />
+    <Compile Include="Catalog\CatalogActions\InitSpatialDb\SpatialDbBuilder.cs" />
+    <Compile Include="Catalog\UCAgileMapDataSource.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Catalog\UCAgileMapDataSource.Designer.cs">
+      <DependentUpon>UCAgileMapDataSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands\cmdAddLayer.cs" />
+    <Compile Include="Commands\cmdArrow.cs" />
+    <Compile Include="Commands\cmdFullView.cs" />
+    <Compile Include="Commands\cmdLayerManager.cs" />
+    <Compile Include="Commands\cmdNextOpr.cs" />
+    <Compile Include="Commands\cmdOpenFile.cs" />
+    <Compile Include="Commands\cmdPan.cs" />
+    <Compile Include="Commands\cmdPreviousOpr.cs" />
+    <Compile Include="Commands\cmdQueryBox.cs" />
+    <Compile Include="Commands\cmdQueryResultContainer.cs" />
+    <Compile Include="Commands\cmdSave.cs" />
+    <Compile Include="Commands\cmdScale.cs" />
+    <Compile Include="Commands\cmdSetProjection.cs" />
+    <Compile Include="Commands\cmdText.cs" />
+    <Compile Include="Commands\cmdZoomIn.cs" />
+    <Compile Include="Commands\cmdZoomOut.cs" />
+    <Compile Include="Dialog\DataSourceDialog.cs" />
+    <Compile Include="Hook\HookAgileMap.cs" />
+    <Compile Include="Hook\IHookOfAgileMap.cs" />
+    <Compile Include="LayerMamager\frmLayerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayerMamager\frmLayerManager.Designer.cs">
+      <DependentUpon>frmLayerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl\AgileMapControll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapControl\AgileMapControll.Designer.cs">
+      <DependentUpon>AgileMapControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl\MapTools\MapIdentifyTool.cs" />
+    <Compile Include="MapControl\MapTools\MapPanTool.cs" />
+    <Compile Include="MapControl\MapTools\MapPanToolBase.cs" />
+    <Compile Include="MapControl\MapTools\MapToolBase.cs" />
+    <Compile Include="MapControl\MapTools\MapZoomInTool.cs" />
+    <Compile Include="MapControl\MapTools\MapZoomOutTool.cs" />
+    <Compile Include="MapControl\MapTools\MapZoomToolBase.cs" />
+    <Compile Include="Dialog\OpenMapDialog.cs" />
+    <Compile Include="Operations\OprBudGIS.cs" />
+    <Compile Include="Operations\OprChangeExtent.cs" />
+    <Compile Include="Dialog\SaveMapDialog.cs" />
+    <Compile Include="LayerMamager\UCLayerManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayerMamager\UCLayerManager.Designer.cs">
+      <DependentUpon>UCLayerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\frmDataSource.resx">
+      <DependentUpon>frmDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\frmEntityEditor.resx">
+      <DependentUpon>frmEntityEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\frmFeatureClassEditor.resx">
+      <DependentUpon>frmFeatureClassEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\frmFeatureDatasetsEditor.resx">
+      <DependentUpon>frmFeatureDatasetsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\frmFetClassDlg.resx">
+      <DependentUpon>frmFetClassDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\UCFetClassStatInfo.resx">
+      <DependentUpon>UCFetClassStatInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\CatalogEntity\UI\UCSpatialRef.resx">
+      <DependentUpon>UCSpatialRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\frmNewSpatialDbConn.resx">
+      <DependentUpon>frmNewSpatialDbConn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalog\UCAgileMapDataSource.resx">
+      <DependentUpon>UCAgileMapDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerMamager\frmLayerManager.resx">
+      <DependentUpon>frmLayerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl\AgileMapControll.resx">
+      <DependentUpon>AgileMapControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayerMamager\UCLayerManager.resx">
+      <DependentUpon>UCLayerManager.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeCell.AgileMap.Core\01.CodeCell.AgileMap.Core.csproj">
+      <Project>{CB472768-5291-45D1-B5B0-322539867D84}</Project>
+      <Name>01.CodeCell.AgileMap.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeCell.Bricks\00.CodeCell.Bricks.csproj">
+      <Project>{530F3258-AE9C-4C12-A506-358F7021B345}</Project>
+      <Name>00.CodeCell.Bricks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

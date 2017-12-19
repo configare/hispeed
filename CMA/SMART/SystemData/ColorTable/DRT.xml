@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ColorTable>
+  <ProductColorTables>
+    <ProductColorTable identify="DRT" subIdentify="0VTI" colortablename="DRT0VTI" description="时序植被温度干旱指数图" labeltext="">
+      <Colors>
+        <Color color="196,79,54" minValue="0.0001" maxValue="15" labeltext="0" displaylengend="true" />
+        <Color color="255,145,79" minValue="15" maxValue="30" labeltext="15" displaylengend="true" />
+        <Color color="255,255,102" minValue="30" maxValue="40" labeltext="30" displaylengend="true" />
+        <Color color="172,255,69" minValue="40" maxValue="80" labeltext="40" displaylengend="true" />
+        <Color color="48,255,61" minValue="80" maxValue="3.40282347E+38" labeltext="&gt;=80" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="0PDI" colortablename="DRT0PDI" description="垂直干旱指数" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="0,0,0" minValue="0" maxValue="1E-05" labeltext="" displaylengend="false" />
+        <Color color="101,252,71" minValue="0.0001" maxValue="250" labeltext="正常" displaylengend="true" />
+        <Color color="252,246,50" minValue="250" maxValue="350" labeltext="轻旱" displaylengend="true" />
+        <Color color="232,119,53" minValue="350" maxValue="400" labeltext="中旱" displaylengend="true" />
+        <Color color="171,74,50" minValue="400" maxValue="9997" labeltext="重旱" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="MPDI" colortablename="DRTMPDI" description="改进垂直干旱指数" labeltext="">
+      <Colors>
+        <Color color="160,190,228" minValue="9998" maxValue="9999" labeltext="水体" displaylengend="true" />
+        <Color color="255,255,255" minValue="9999" maxValue="10000" labeltext="云" displaylengend="true" />
+        <Color color="101,252,71" minValue="-3.40282347E+38" maxValue="-0.00001" labeltext="正常" displaylengend="false" />
+        <Color color="101,252,71" minValue="0.00001" maxValue="100" labeltext="正常" displaylengend="true" />
+        <Color color="252,246,50" minValue="100" maxValue="150" labeltext="轻旱" displaylengend="true" />
+        <Color color="232,119,53" minValue="150" maxValue="200" labeltext="中旱" displaylengend="true" />
+        <Color color="171,74,50" minValue="200" maxValue="9997" labeltext="重旱" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="TVDI" colortablename="DRTTVDI" description="温度植被干旱指数图" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="-1E-05" labeltext="0" displaylengend="false" />
+        <Color color="0,0,255" minValue="0" maxValue="0" labeltext="0" displaylengend="false" />
+        <Color color="45,145,20" minValue="0.0001" maxValue="20" labeltext="20" displaylengend="true" />
+        <Color color="115,240,85" minValue="20" maxValue="40" labeltext="40" displaylengend="true" />
+        <Color color="245,240,140" minValue="40" maxValue="60" labeltext="60" displaylengend="true" />
+        <Color color="235,175,65" minValue="60" maxValue="80" labeltext="80" displaylengend="true" />
+        <Color color="200,125,65" minValue="80" maxValue="150" labeltext="200" displaylengend="true" />
+        <Color color="200,125,65" minValue="151" maxValue="200" labeltext="200" displaylengend="false" />
+        <Color color="0,0,0" minValue="200" maxValue="500" labeltext="500" displaylengend="true" />
+        <Color color="240,40,230" minValue="500" maxValue="3.40282347E+38" labeltext="&gt;500" displaylengend="true" />
+        <Color color="255,255,255" minValue="150" maxValue="151" labeltext="云" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="0DNT" colortablename="DRT0DNT" description="亮温差计算" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="-9999" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="254,105,3" minValue="-9998" maxValue="-650" labeltext="-650" displaylengend="true" />
+        <Color color="255,135,4" minValue="-650" maxValue="-640" labeltext="-640" displaylengend="true" />
+        <Color color="255,165,4" minValue="-640" maxValue="-630" labeltext="-630" displaylengend="true" />
+        <Color color="255,195,5" minValue="-630" maxValue="-620" labeltext="-620" displaylengend="true" />
+        <Color color="255,255,3" minValue="-620" maxValue="-610" labeltext="-610" displaylengend="true" />
+        <Color color="203,191,175" minValue="-610" maxValue="-60" labeltext="-60" displaylengend="true" />
+        <Color color="173,141,142" minValue="-60" maxValue="-30" labeltext="-30" displaylengend="true" />
+        <Color color="187,156,125" minValue="-30" maxValue="-10" labeltext="-10" displaylengend="true" />
+        <Color color="177,148,104" minValue="-10" maxValue="0" labeltext="10" displaylengend="true" />
+        <Color color="0,0,0" minValue="0" maxValue="1E-05" labeltext="10" displaylengend="false" />
+        <Color color="177,148,104" minValue="1E-05" maxValue="10" labeltext="10" displaylengend="false" />
+        <Color color="165,130,76" minValue="10" maxValue="30" labeltext="30" displaylengend="true" />
+        <Color color="146,113,62" minValue="30" maxValue="60" labeltext="60" displaylengend="true" />
+        <Color color="197,227,115" minValue="60" maxValue="75" labeltext="75" displaylengend="true" />
+        <Color color="161,191,79" minValue="75" maxValue="90" labeltext="90" displaylengend="true" />
+        <Color color="149,181,18" minValue="90" maxValue="115" labeltext="115" displaylengend="true" />
+        <Color color="125,155,43" minValue="115" maxValue="130" labeltext="130" displaylengend="true" />
+        <Color color="116,169,0" minValue="130" maxValue="150" labeltext="150" displaylengend="true" />
+        <Color color="102,160,0" minValue="150" maxValue="170" labeltext="170" displaylengend="true" />
+        <Color color="82,147,1" minValue="170" maxValue="200" labeltext="200" displaylengend="true" />
+        <Color color="60,133,0" minValue="200" maxValue="230" labeltext="230" displaylengend="true" />
+        <Color color="27,114,1" minValue="230" maxValue="250" labeltext="250" displaylengend="true" />
+        <Color color="0,95,1" minValue="250" maxValue="270" labeltext="270" displaylengend="true" />
+        <Color color="0,72,0" minValue="270" maxValue="290" labeltext="290" displaylengend="true" />
+        <Color color="0,55,0" minValue="290" maxValue="500" labeltext="500" displaylengend="true" />
+        <Color color="1,39,0" minValue="500" maxValue="700" labeltext="700" displaylengend="true" />
+        <Color color="0,19,0" minValue="700" maxValue="1000" labeltext="1000" displaylengend="true" />
+        <Color color="0,0,0" minValue="1000" maxValue="3.40282347E+38" labeltext="" displaylengend="false" />
+      </Colors>
+    </ProductColorTable>
+    <ProductColorTable identify="DRT" subIdentify="0SWI" colortablename="DRT0SWI" description="热惯量计算" labeltext="">
+      <Colors>
+        <Color color="0,0,0" minValue="-3.40282347E+38" maxValue="-9999" labeltext="" displaylengend="false" />
+        <Color color="255,255,255" minValue="-9999" maxValue="-9998" labeltext="云" displaylengend="true" />
+        <Color color="170,74,49" minValue="0.0001" maxValue="200" labeltext="20" displaylengend="true" />
+        <Color color="232,119,53" minValue="200" maxValue="400" labeltext="40" displaylengend="true" />
+        <Color color="252,155,236" minValue="400" maxValue="500" labeltext="50" displaylengend="true" />
+        <Color color="253,246,51" minValue="500" maxValue="600" labeltext="60" displaylengend="true" />
+        <Color color="101,253,72" minValue="600" maxValue="800" labeltext="80" displaylengend="true" />
+        <Color color="60,147,42" minValue="800" maxValue="3.40282347E+38" labeltext="100" displaylengend="true" />
+      </Colors>
+    </ProductColorTable>
+  </ProductColorTables>
+</ColorTable>

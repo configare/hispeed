@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFA2A4B6-CD16-43C0-B971-A37BC5B7422A}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCell.AgileMap.WebComponent</RootNamespace>
+    <AssemblyName>CodeCell.AgileMap.WebComponent</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\WebDemo\CodeCell.AgileMap.Silverlight\Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FeatureTips\IFeatureTips.cs" />
+    <Compile Include="FullviewMapControl\FullviewMapControl.xaml.cs">
+      <DependentUpon>FullviewMapControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GeoHelper.cs" />
+    <Compile Include="LayerManager\LayerManagerControl.xaml.cs">
+      <DependentUpon>LayerManagerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentCoordDisplayer\CurrentCoordDisplayer.xaml.cs">
+      <DependentUpon>CurrentCoordDisplayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentCoordDisplayer\ICurrentCoordDisplayer.cs" />
+    <Compile Include="MapControl\IMapControl.cs" />
+    <Compile Include="MapControl\MapControl.xaml.cs">
+      <DependentUpon>MapControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl\MapCreator.cs" />
+    <Compile Include="MapControl\OnMapControlViewportChangedHandler.cs" />
+    <Compile Include="MapControl\PrjRectangleF.cs" />
+    <Compile Include="MapTools\enumMapTools.cs" />
+    <Compile Include="MapTools\IMapCommand.cs" />
+    <Compile Include="MapTools\IMapTool.cs" />
+    <Compile Include="MapTools\IMapToolInternal.cs" />
+    <Compile Include="MapTools\ISelectTool.cs" />
+    <Compile Include="MapTools\MapCommandFullView.cs" />
+    <Compile Include="MapTools\MapCommandRefresh.cs" />
+    <Compile Include="MapTools\MapTool.cs" />
+    <Compile Include="MapTools\MapToolFactory.cs" />
+    <Compile Include="MapTools\MapToolPan.cs" />
+    <Compile Include="MapTools\MapToolRect.cs" />
+    <Compile Include="MapTools\MapToolWheel.cs" />
+    <Compile Include="MapTools\MapToolZoomIn.cs" />
+    <Compile Include="MapTools\MapToolZoomOut.cs" />
+    <Compile Include="MapTools\MeasureTool.cs" />
+    <Compile Include="MapTools\MeasureToolByPolyline.cs" />
+    <Compile Include="MapTools\OnSelectToolFinishedHandler.cs" />
+    <Compile Include="MapTools\SelectToolEllipse.cs" />
+    <Compile Include="MapTools\SelectToolRect.cs" />
+    <Compile Include="MapTools\MapToolEllpise.cs" />
+    <Compile Include="MapTools\MapToolPolygon.cs" />
+    <Compile Include="MapTools\SelectToolPolygon.cs" />
+    <Compile Include="MapTools\MapCommand.cs" />
+    <Compile Include="MapTools\MapToolIdentify.cs" />
+    <Compile Include="MapTools\MeasureToolByPolygon.cs" />
+    <Compile Include="Model\AgileMapEntity.cs" />
+    <Compile Include="Model\DynamicFeatureLayer.cs" />
+    <Compile Include="Model\Feature.cs" />
+    <Compile Include="Model\FeatureLayer.cs" />
+    <Compile Include="Model\GeometryFactory.cs" />
+    <Compile Include="Model\Geometry\enumCoordTypes.cs" />
+    <Compile Include="Model\Geometry\GeoLineString.cs" />
+    <Compile Include="Model\Geometry\GeoPieArea.cs" />
+    <Compile Include="Model\Geometry\GeoPoint.cs" />
+    <Compile Include="Model\Geometry\GeoPolygon.cs" />
+    <Compile Include="Model\Geometry\GeoPolyline.cs" />
+    <Compile Include="Model\Geometry\GeoRectangle.cs" />
+    <Compile Include="Model\Geometry\GeoRing.cs" />
+    <Compile Include="Model\Geometry\GeoShape.cs" />
+    <Compile Include="Model\Geometry\IProjectableArguments.cs" />
+    <Compile Include="Model\Geometry\GeoEllipse.cs" />
+    <Compile Include="Model\ISymbolSelector.cs" />
+    <Compile Include="Model\ProjectTransform\IProjectTransfrom.cs" />
+    <Compile Include="Model\Layer.cs" />
+    <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\Query\enumSpatialRelation.cs" />
+    <Compile Include="Model\Query\IQueryFeatures.cs" />
+    <Compile Include="Model\Query\QueryExecutor.cs" />
+    <Compile Include="Model\Query\QueryFilter.cs" />
+    <Compile Include="Model\ServiceFeatureLayer.cs" />
+    <Compile Include="Model\Symbol\AdjustSizeArgument.cs" />
+    <Compile Include="Model\Symbol\FillSymbol.cs" />
+    <Compile Include="Model\Symbol\LineSymbol.cs" />
+    <Compile Include="Model\Symbol\MarkerSymbol.cs" />
+    <Compile Include="Model\Symbol\Symbol.cs" />
+    <Compile Include="Model\SyncCallStatus.cs" />
+    <Compile Include="QueryResultControl\IQueryResultContainer.cs" />
+    <Compile Include="QueryResultControl\QueryResultContainerControl.xaml.cs">
+      <DependentUpon>QueryResultContainerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScaleBarControl\ScaleBarControl.xaml.cs">
+      <DependentUpon>ScaleBarControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServerAgent\BingMapTileProvider.cs" />
+    <Compile Include="ServerAgent\IMapTileProvider.cs" />
+    <Compile Include="ServerAgent\IMapServerAgent.cs" />
+    <Compile Include="ServerAgent\MapServerAgent.cs" />
+    <Compile Include="Service References\AgileMapServiceProxy\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TileSystem\ITileSystemHelper.cs" />
+    <Compile Include="TileSystem\TileDef.cs" />
+    <Compile Include="TileSystem\TileSystemHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolBar\FeatureQueryGroup.xaml.cs">
+      <DependentUpon>FeatureQueryGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar\FeatureSelectGroup.xaml.cs">
+      <DependentUpon>FeatureSelectGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar\IToolBar.cs" />
+    <Compile Include="ToolBar\MapBrowseGroup.xaml.cs">
+      <DependentUpon>MapBrowseGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar\MeasureToolGroup.xaml.cs">
+      <DependentUpon>MeasureToolGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar\StandardToolbar.xaml.cs">
+      <DependentUpon>StandardToolbar.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cmdRefresh.png" />
+    <Resource Include="Images\cmdPan.png" />
+    <Resource Include="Images\cmdFullView.png" />
+    <Resource Include="Images\cmdZoomOut.png" />
+    <Resource Include="Images\cmdZoomIn.png" />
+    <None Include="Service References\AgileMapServiceProxy\CodeCell.AgileMap.WebComponent.AgileMapServiceProxy.FeatureInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\CodeCell.AgileMap.WebComponent.AgileMapServiceProxy.LayerInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\CodeCell.AgileMap.WebComponent.AgileMapServiceProxy.MapImage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\CodeCell.AgileMap.WebComponent.AgileMapServiceProxy.MapInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\CodeCell.AgileMap.WebComponent.AgileMapServiceProxy.PointF.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\MapService.wsdl" />
+    <None Include="Service References\AgileMapServiceProxy\MapService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\MapService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\MapService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="Images\TriangleDown.png" />
+    <Resource Include="Images\SelectByCirlce.png" />
+    <Resource Include="Images\SelectByPolygon.png" />
+    <Resource Include="Images\SelectByRectangle.png" />
+    <Resource Include="Images\ToolIdentify.png" />
+    <Resource Include="Images\measureArea.png" />
+    <Resource Include="Images\measureDistance.png" />
+    <Resource Include="Images\Identify.cur" />
+    <Resource Include="Images\IdentifyPressed.cur" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AgileMapServiceProxy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AgileMapServiceProxy\MapService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AgileMapServiceProxy\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AgileMapServiceProxy\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AgileMapServiceProxy\MapService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\MapService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\MapService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AgileMapServiceProxy\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="FullviewMapControl\FullviewMapControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LayerManager\LayerManagerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CurrentCoordDisplayer\CurrentCoordDisplayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MapControl\MapControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QueryResultControl\QueryResultContainerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScaleBarControl\ScaleBarControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBar\FeatureQueryGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBar\FeatureSelectGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBar\MapBrowseGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBar\MeasureToolGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBar\StandardToolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Windows.Toolbar\Windows.Toolbar.csproj">
+      <Project>{E274ECD8-20EF-4625-8EB4-749655DA573A}</Project>
+      <Name>Windows.Toolbar</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

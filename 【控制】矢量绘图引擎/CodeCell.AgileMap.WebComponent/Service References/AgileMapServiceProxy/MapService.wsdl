@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MapService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.MapService" />
+      <xsd:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
+      <xsd:import schemaLocation="http://localhost/AgileMapService/MapService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/CodeCell.AgileMap.Core" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMapService_GetMapImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapImage" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetMapImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetMapImageByQuadkey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapImageByQuadkey" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetMapImageByQuadkey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapImageByQuadkeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GeoEnvelope2PrjEnvelope_InputMessage">
+    <wsdl:part name="parameters" element="tns:GeoEnvelope2PrjEnvelope" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GeoEnvelope2PrjEnvelope_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GeoEnvelope2PrjEnvelopeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Geo2Prj_InputMessage">
+    <wsdl:part name="parameters" element="tns:Geo2Prj" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Geo2Prj_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Geo2PrjResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Prj2Geo_InputMessage">
+    <wsdl:part name="parameters" element="tns:Prj2Geo" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Prj2Geo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Prj2GeoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetMapInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetMapInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMapInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetLayerInfos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLayerInfos" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_GetLayerInfos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLayerInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Query_InputMessage">
+    <wsdl:part name="parameters" element="tns:Query" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Query_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Identify_InputMessage">
+    <wsdl:part name="parameters" element="tns:Identify" />
+  </wsdl:message>
+  <wsdl:message name="IMapService_Identify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IdentifyResponse" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="false" name="IMapService">
+    <wsdl:operation name="GetMapImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/GetMapImage" message="tns:IMapService_GetMapImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/GetMapImageResponse" message="tns:IMapService_GetMapImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMapImageByQuadkey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/GetMapImageByQuadkey" message="tns:IMapService_GetMapImageByQuadkey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/GetMapImageByQuadkeyResponse" message="tns:IMapService_GetMapImageByQuadkey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GeoEnvelope2PrjEnvelope">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/GeoEnvelope2PrjEnvelope" message="tns:IMapService_GeoEnvelope2PrjEnvelope_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/GeoEnvelope2PrjEnvelopeResponse" message="tns:IMapService_GeoEnvelope2PrjEnvelope_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Geo2Prj">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/Geo2Prj" message="tns:IMapService_Geo2Prj_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/Geo2PrjResponse" message="tns:IMapService_Geo2Prj_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Prj2Geo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/Prj2Geo" message="tns:IMapService_Prj2Geo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/Prj2GeoResponse" message="tns:IMapService_Prj2Geo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMapInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/GetMapInfo" message="tns:IMapService_GetMapInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/GetMapInfoResponse" message="tns:IMapService_GetMapInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLayerInfos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/GetLayerInfos" message="tns:IMapService_GetLayerInfos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/GetLayerInfosResponse" message="tns:IMapService_GetLayerInfos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Query">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/Query" message="tns:IMapService_Query_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/QueryResponse" message="tns:IMapService_Query_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Identify">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMapService/Identify" message="tns:IMapService_Identify_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMapService/IdentifyResponse" message="tns:IMapService_Identify_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMapService" type="tns:IMapService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMapImage">
+      <soap:operation soapAction="http://tempuri.org/IMapService/GetMapImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMapImageByQuadkey">
+      <soap:operation soapAction="http://tempuri.org/IMapService/GetMapImageByQuadkey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GeoEnvelope2PrjEnvelope">
+      <soap:operation soapAction="http://tempuri.org/IMapService/GeoEnvelope2PrjEnvelope" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Geo2Prj">
+      <soap:operation soapAction="http://tempuri.org/IMapService/Geo2Prj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Prj2Geo">
+      <soap:operation soapAction="http://tempuri.org/IMapService/Prj2Geo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMapInfo">
+      <soap:operation soapAction="http://tempuri.org/IMapService/GetMapInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLayerInfos">
+      <soap:operation soapAction="http://tempuri.org/IMapService/GetLayerInfos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Query">
+      <soap:operation soapAction="http://tempuri.org/IMapService/Query" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Identify">
+      <soap:operation soapAction="http://tempuri.org/IMapService/Identify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MapService">
+    <wsdl:port name="BasicHttpBinding_IMapService" binding="tns:BasicHttpBinding_IMapService">
+      <soap:address location="http://localhost/AgileMapService/MapService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

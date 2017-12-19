@@ -1,0 +1,42 @@
+    
+    /// 类名：D2LineHeader
+    /// 属性描述：ISCCP的GPC格式数据的每行的头信息（prefix）,130bytes
+    /// 创建者：zhangyanbing   创建日期：2014-2-18 09:27:04
+    /// 修改者：             修改日期：
+    /// 修改描述：
+    /// 备注：
+    
+    public class D2RecordPrefix
+    {
+        
+        /// byte 1:Record number in file (1 - 67)
+        /// 文件中的记录号，即行号，1-67
+        
+        /// byte 2:File number on archive tape (5 - 112)
+        /// 文件在数据磁带中的记录号，5-112
+        
+        /// byte 3:Year (83 - 99)
+        /// 数据的观测年份，1983-1999
+        
+        /// byte 4: Month (1 - 12)
+       
+        /// byte 5:Not used = 255
+        
+        /// byte 6:Time UTC (00, 03, 06, ... 21, 255) where 255 = ALL TIMES
+        /// UTC时间，(00, 03, 06, ... 21, 255)，255表示所有
+        
+        /// byte 7:Beginning equal-area latitude index in record
+        /// 该行记录中的起始（等面积投影）纬度索引号
+        
+        /// byte 8:Beginning equal-area lontitude index in record
+        /// 该行记录中的起始（等面积投影）经度索引号
+        
+        /// byte 9:Ending equal-area latitude index in record
+        /// 该行记录中的终止（等面积投影）纬度索引号
+        
+        /// byte 10:Ending equal-area lontitude index in record
+        /// 该行记录中的终止（等面积投影）经度索引号
+
+        //11 - 130 Filled with 255，备用
+    }
+}

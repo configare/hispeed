@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BECE116-FC23-40A3-99CA-D71E8769DDD9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoDo.RSS.MIF.Core</RootNamespace>
+    <AssemblyName>GeoDo.RSS.MIF.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCell.AgileMap.Core">
+      <HintPath>..\RefDLL\AgileMap\CodeCell.AgileMap.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeCell.Bricks">
+      <HintPath>..\RefDLL\AgileMap\CodeCell.Bricks.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.Project, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RefDLL\Project\GeoDo.Project.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RasterProject">
+      <HintPath>..\RefDLL\Project\GeoDo.RasterProject.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DF">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.Core.DF.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.DrawEngine">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.DrawEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.Core.VectorDrawing">
+      <HintPath>..\RefDLL\DrawEngine\GeoDo.RSS.Core.VectorDrawing.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.DF.MEM">
+      <HintPath>..\RefDLL\UniversalReadWrite\GeoDo.RSS.DF.MEM.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoDo.RSS.RasterTools">
+      <HintPath>..\RefDLL\RsTools\GeoDo.RSS.RasterTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\RefDLL\WinExcel\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>..\RefDLL\WinExcel\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <HintPath>..\RefDLL\WinExcel\Interop.VBIDE.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AOI Template\AOITemplateFactory.cs" />
+    <Compile Include="AOI Template\Feature\CustomAOI\CustomAOISolutionArgs.cs" />
+    <Compile Include="AOI Template\Feature\CustomAOI\frmAddNewCustomAOISolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\CustomAOI\frmAddNewCustomAOISolution.Designer.cs">
+      <DependentUpon>frmAddNewCustomAOISolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\CustomAOI\frmApplyCustomAOISolution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\CustomAOI\frmApplyCustomAOISolution.Designer.cs">
+      <DependentUpon>frmApplyCustomAOISolution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\FeatrueCategory.cs" />
+    <Compile Include="AOI Template\Feature\frmFeatureSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmFeatureSelector.designer.cs">
+      <DependentUpon>frmFeatureSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmMaskTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmMaskTemplate.designer.cs">
+      <DependentUpon>frmMaskTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmRename.Designer.cs">
+      <DependentUpon>frmRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmStatCustomSubRegionTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmStatCustomSubRegionTemplates.Designer.cs">
+      <DependentUpon>frmStatCustomSubRegionTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmStatSubRegionTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmStatSubRegionTemplates.Designer.cs">
+      <DependentUpon>frmStatSubRegionTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmStatSubRegionTemplateToString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AOI Template\Feature\frmStatSubRegionTemplateToString.Designer.cs">
+      <DependentUpon>frmStatSubRegionTemplateToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AOI Template\Feature\SelectedFeaturesInfo.cs" />
+    <Compile Include="AOI Template\RasterTemplate\IRasterTemplateProvider.cs" />
+    <Compile Include="AOI Template\RasterTemplate\RasterDictionaryTemplateFactory_OLD.cs" />
+    <Compile Include="AutoGenerate\ContextEnvironment\ContextEnvironment.cs" />
+    <Compile Include="AutoGenerate\ContextEnvironment\IContextEnvironment.cs" />
+    <Compile Include="AutoGenerate\Executor\AutoGenerateExecutor.cs" />
+    <Compile Include="AutoGenerate\Executor\IArgumentMissProcessor.cs" />
+    <Compile Include="AutoGenerate\Executor\IAutoGenerateExecutor.cs" />
+    <Compile Include="AutoGenerate\Executor\IContextMessage.cs" />
+    <Compile Include="AutoGenerate\Executor\IResultHandler.cs" />
+    <Compile Include="AutoGenerate\FileFinder\DefaultFileFinder.cs" />
+    <Compile Include="AutoGenerate\FileFinder\FileFinder.cs" />
+    <Compile Include="AutoGenerate\FileFinder\IFileFinder.cs" />
+    <Compile Include="AutoGenerate\FileFinder\ObritFileFinder.cs" />
+    <Compile Include="Config\CatalogChineseHelper.cs" />
+    <Compile Include="Config\MonitoringThemeFactory.cs" />
+    <Compile Include="Config\MonitoringThemesParser.cs" />
+    <Compile Include="Extracting\ExpressTree\IFeatureSimpleComputeFuncProvider.cs" />
+    <Compile Include="Extracting\IProgressTrackerSupport.cs" />
+    <Compile Include="Extracting\MouseInteractive\ICurrentRasterInteractiver.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ArgProvider\IEnvironmentVarProvider.cs" />
+    <Compile Include="Extracting\ArgEnvironment\BandnameHelper\BandnameItem.cs" />
+    <Compile Include="Extracting\ArgEnvironment\BandnameHelper\BandnameRefTable.cs" />
+    <Compile Include="Extracting\ArgEnvironment\BandnameHelper\BandnameRefTableParser.cs" />
+    <Compile Include="Extracting\ArgEnvironment\BandnameHelper\BandWaveLength.cs" />
+    <Compile Include="Extracting\ArgEnvironment\BandnameHelper\BandRefTableHelper.cs" />
+    <Compile Include="Extracting\ArgEnvironment\Identify\ExtractAlgorithmIdentify.cs" />
+    <Compile Include="Extracting\ArgEnvironment\Identify\ExtractProductIdentify.cs" />
+    <Compile Include="Extracting\ArgEnvironment\MifEnvironment.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\AlgorithmDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\AOIDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\AOITemplate.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\ArgumentBase.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\ArgumentDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\ArgumentGroup.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\ArgumentPair.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\BandDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\ProductDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\SubProductDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\SubProductInstanceDef.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ThemeDefs\ThemeDef.cs" />
+    <Compile Include="Extracting\BinaryBitmapBuilder\BinaryBitmapBuilder.cs" />
+    <Compile Include="Extracting\BinaryBitmapBuilder\IBinaryBitmapBuilder.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\CandidatePixelFilter.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\CandidataPixelFilterPipe.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\ICandidatePixelFilter.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\ICandidatePixelFilterPipe.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\PercentPixelFilter\PercentPixelFilterFactory.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\PercentPixelFilter\PercentPixelFilterUInt16.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\PercentPixelFilter\PercentPixelFilterByte.cs" />
+    <Compile Include="Extracting\CandidateFixelFilter\PercentPixelFilter\PercentPixelFilterInt16.cs" />
+    <Compile Include="Extracting\ExpressTree\ExtractFuncProviderFactory.cs" />
+    <Compile Include="Extracting\ExpressTree\IExtractFuncProvider.cs" />
+    <Compile Include="AOI Template\AOIHelper.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ArgProvider\ArgumentProvider.cs" />
+    <Compile Include="Extracting\ExpressTree\IFeatureComputeFuncProvider.cs" />
+    <Compile Include="Extracting\ExpressTree\TemplateCode.cs" />
+    <Compile Include="Extracting\MouseInteractive\ILabelLayer.cs" />
+    <Compile Include="Extracting\MouseInteractive\ILabelService.cs" />
+    <Compile Include="Extracting\PixelVisitor\FilePrdMap.cs" />
+    <Compile Include="Extracting\PixelVisitor\ITryCreateVirtualPrd.cs" />
+    <Compile Include="Extracting\PixelVisitor\TryCreateVirtualPrdByMultiFile.cs" />
+    <Compile Include="MifConfig\IConfigEdit.cs" />
+    <Compile Include="MifConfig\MifConfig.cs" />
+    <Compile Include="Product\1.SubProduct\MonitoringSubProduct.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\ColorTable\ColorTable2RgbStretcher.cs" />
+    <Compile Include="Product\Workspace\CatalogItem.cs" />
+    <Compile Include="Product\Workspace\CatalogItemInfo.cs" />
+    <Compile Include="Product\Workspace\Definition\StrategyFilter.cs" />
+    <Compile Include="Product\Workspace\Definition\WorkspaceInfo\SDatinfo.cs" />
+    <Compile Include="Product\Workspace\Definition\WorkspaceInfo\SDatinfos.cs" />
+    <Compile Include="Product\Workspace\Definition\WorkspaceInfo\WorkspaceInfo.cs" />
+    <Compile Include="Product\Workspace\Definition\SubProductDef\CatalogAttriteDef.cs" />
+    <Compile Include="Product\Workspace\Definition\CatalogDef.cs" />
+    <Compile Include="Product\Workspace\Definition\ExtractingCatalog\CatalogNodeDef.cs" />
+    <Compile Include="Product\Workspace\Definition\ExtractingCatalog\CatalogNodeGroupDef.cs" />
+    <Compile Include="Product\Workspace\Definition\ExtractingCatalog\CatalogNodeItemDef.cs" />
+    <Compile Include="Product\Workspace\Definition\ExtractingCatalog\ExtractingCatalogDef.cs" />
+    <Compile Include="Product\Workspace\Definition\SubProductDef\SubProductCatalogDef.cs" />
+    <Compile Include="Product\Workspace\Definition\WorkspaceDef.cs" />
+    <Compile Include="Product\Workspace\Definition\WorkspaceDefinitionFactory.cs" />
+    <Compile Include="Product\Workspace\Definition\WorkspaceDefinitionParser.cs" />
+    <Compile Include="Product\Workspace\FileNameGenerator\FileNameGeneratorDefault.cs" />
+    <Compile Include="Product\Workspace\GlobalWorkspace.cs" />
+    <Compile Include="Product\Workspace\ICatalog.cs" />
+    <Compile Include="Product\Workspace\FileNameGenerator\IFileNameGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Product\Workspace\Strategy\IStrategyProvider.cs" />
+    <Compile Include="Product\Workspace\IWorkspace.cs" />
+    <Compile Include="Product\Workspace\ICatalogItem.cs" />
+    <Compile Include="Product\ColorTable\ProductColor.cs" />
+    <Compile Include="Product\ColorTable\ProductColorTable.cs" />
+    <Compile Include="Product\ColorTable\ProductColorTableFactory.cs" />
+    <Compile Include="Product\ColorTable\ProductColorTableParser.cs" />
+    <Compile Include="Product\Workspace\UWorkspace.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RasterProcessModel\RasterNdviTest.cs" />
+    <Compile Include="MifConfig\ucMifConfigEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MifConfig\ucMifConfigEdit.Designer.cs">
+      <DependentUpon>ucMifConfigEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StatResultToExcelFile\StatResultToChartInExcelFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StatResultToExcelFile\StatResultToChartInExcelFile.Designer.cs">
+      <DependentUpon>StatResultToChartInExcelFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StatResultToExcelFile\RowDisplayDef.cs" />
+    <Compile Include="Utility\UIO.cs" />
+    <Compile Include="Utility\UXmlConvert.cs" />
+    <Compile Include="VirtualRaster\RasterRectOffset.cs" />
+    <Compile Include="VirtualRaster\RasterOffsetHelper.cs" />
+    <Compile Include="RasterProcessModel\RasterCalcHandler.cs" />
+    <Compile Include="RasterProcessModel\RasterProcessModel.cs" />
+    <Compile Include="RasterProcessModel\RasterProcessModel_Oldcs.cs" />
+    <Compile Include="RasterProcessModel\RasterStatDictionary.cs" />
+    <Compile Include="RasterStatLibII\Implement\RasterBandsOperator.cs" />
+    <Compile Include="RasterStatLibII\IRasterAreaStatEngine.cs" />
+    <Compile Include="RasterStatLibII\IRasterBandsOperator.cs" />
+    <Compile Include="RasterStatLibII\IRasterSatisticEngine.cs" />
+    <Compile Include="RasterStatLibII\StatisticDim.cs" />
+    <Compile Include="RasterStatLibII\StatisticDimFactory.cs" />
+    <Compile Include="RasterStatModel\RasterStatByVector.cs" />
+    <Compile Include="RasterStatModel\RasterStatFactory.cs" />
+    <Compile Include="RasterStatModel\RasterStatByRaster.cs" />
+    <Compile Include="RasterStatModel\StatAreaItem.cs" />
+    <Compile Include="VirtualRaster\VirtualRaster.cs" />
+    <Compile Include="ResultFormat\ExtractResultArray\ExtractResultArray.cs" />
+    <Compile Include="ResultFormat\FileExtractResult\FileExtractResult.cs" />
+    <Compile Include="ResultFormat\ExtractResultArray\IExtractResultBase.cs" />
+    <Compile Include="ResultFormat\IExtractResult.cs" />
+    <Compile Include="Extracting\InfoExtracter\IExtracter.cs" />
+    <Compile Include="Extracting\InfoExtracter\IFeaturePixelExtracter.cs" />
+    <Compile Include="Extracting\InfoExtracter\IInterestedPixelExtracter.cs" />
+    <Compile Include="Extracting\InfoExtracter\IRasterExtracter.cs" />
+    <Compile Include="Extracting\PixelVisitor\IRasterPixelsVisitor.cs" />
+    <Compile Include="Extracting\PixelVisitor\IVirtualRasterDataProvider.cs" />
+    <Compile Include="Extracting\PixelVisitor\RasterPixelsVisitor.cs" />
+    <Compile Include="Extracting\InfoExtracter\IThresholdExtracter.cs" />
+    <Compile Include="Extracting\PixelVisitor\PixelWndAccessor.cs" />
+    <Compile Include="Extracting\InfoExtracter\SimpleRasterExtracter.cs" />
+    <Compile Include="Extracting\InfoExtracter\SimpleThresholdExtracter.cs" />
+    <Compile Include="ResultFormat\FileExtractResult\IFileExtractResult.cs" />
+    <Compile Include="ResultFormat\InterestedRaster\IExtHeaderSetter.cs" />
+    <Compile Include="ResultFormat\ExtractResultArray\IExtractResultArray.cs" />
+    <Compile Include="ResultFormat\ICursorDisplayedFeatures.cs" />
+    <Compile Include="ResultFormat\ValueExtractResult\IValueExtractResult.cs" />
+    <Compile Include="ResultFormat\PixelMapper\FeatureMapper\MemPixelFeatureMapper.cs" />
+    <Compile Include="ResultFormat\InterestedRaster\IInterestedRaster.cs" />
+    <Compile Include="ResultFormat\InterestedRaster\InterestedRaster.cs" />
+    <Compile Include="ResultFormat\PixelMapper\IndexMapper\MatrixPixelIndexMapper.cs" />
+    <Compile Include="ResultFormat\PixelMapper\IndexMapper\MemPixelIndexMapper.cs" />
+    <Compile Include="ResultFormat\PixelMapper\IPixelFeatureMapper.cs" />
+    <Compile Include="ResultFormat\InterestedRaster\RasterIdentify.cs" />
+    <Compile Include="ResultFormat\PixelMapper\IPixelIndexMapper.cs" />
+    <Compile Include="Extracting\PixelVisitor\VirtualRasterDataProvider.cs" />
+    <Compile Include="Product\1.SubProduct\IMonitoringSubProduct.cs" />
+    <Compile Include="Product\2.Product\IMonitoringProduct.cs" />
+    <Compile Include="Product\2.Product\MonitoringProduct.cs" />
+    <Compile Include="Product\3.Theme\IMonitoringTheme.cs" />
+    <Compile Include="Product\3.Theme\MonitoringTheme.cs" />
+    <Compile Include="Product\3.Theme\MonitoringThemeCMA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extracting\ArgEnvironment\ArgProvider\IArgumentProvider.cs" />
+    <Compile Include="AOI Template\RasterTemplate\IRasterDictionaryTemplate.cs" />
+    <Compile Include="AOI Template\RasterTemplate\LandRasterDictionaryTemplate.cs" />
+    <Compile Include="AOI Template\RasterTemplate\RasterDictionaryTemplate.cs" />
+    <Compile Include="AOI Template\RasterTemplate\RasterDictionaryTemplateFactory.cs" />
+    <Compile Include="AOI Template\RasterTemplate\XjRasterDictionaryTemplate.cs" />
+    <Compile Include="ResultFormat\PixelMapper\PixelIndexMapperFactory.cs" />
+    <Compile Include="ResultFormat\ValueExtractResult\ValueExtractResult.cs" />
+    <Compile Include="ResultStatAnalysis\ProductStat\CommProductStat.cs" />
+    <Compile Include="ResultStatAnalysis\RasterMosaicHelper\IRasterMosaicHelper.cs" />
+    <Compile Include="ResultStatAnalysis\RasterMosaicHelper\RasterMosaicHelper.cs" />
+    <Compile Include="ResultStatAnalysis\SpecialStat\SataAdminAndLandUse.cs" />
+    <Compile Include="ResultStatAnalysis\StatByAOITemplate\AOITemplateStat.cs" />
+    <Compile Include="ResultStatAnalysis\AreaCountHelper.cs" />
+    <Compile Include="ResultStatAnalysis\StatAnalysisEngine.cs" />
+    <Compile Include="ResultStatAnalysis\StatByAOITemplate\IAOITemplateStat.cs" />
+    <Compile Include="ResultStatAnalysis\IStatAnalysisEngine.cs" />
+    <Compile Include="ResultStatAnalysis\RasterOperator\IRasterOperator.cs" />
+    <Compile Include="ResultStatAnalysis\ResultDisplay\IStatResult.cs" />
+    <Compile Include="ResultStatAnalysis\ResultDisplay\IStatResultWindow.cs" />
+    <Compile Include="ResultStatAnalysis\RasterOperator\RasterOperator.cs" />
+    <Compile Include="ResultStatAnalysis\ResultDisplay\StatResultItem.cs" />
+    <Compile Include="ResultStatAnalysis\StatByAOITemplate\StatResultItemToIStatResult.cs" />
+    <Compile Include="ThemeGraph\IThemeGraphGenerator.cs" />
+    <Compile Include="ThemeGraph\MemoryRasterBitmap.cs" />
+    <Compile Include="UI\IArgumentEditorUI.cs" />
+    <Compile Include="UI\IExtractPanel.cs" />
+    <Compile Include="UI\IExtractPanelBuilder.cs" />
+    <Compile Include="AOI Template\VectorTemplate\Bitmap2RasterConverter.cs" />
+    <Compile Include="AOI Template\VectorTemplate\IBitmap2RasterConverter.cs" />
+    <Compile Include="AOI Template\VectorTemplate\IVector2BitmapConverter.cs" />
+    <Compile Include="AOI Template\VectorTemplate\IVectorAOIGenerator.cs" />
+    <Compile Include="AOI Template\VectorTemplate\VectorAOITemplate.cs" />
+    <Compile Include="AOI Template\VectorTemplate\Vector2BitmapConverter.cs" />
+    <Compile Include="AOI Template\VectorTemplate\VectorAOIGenerator.cs" />
+    <Compile Include="AOI Template\VectorTemplate\VectorAOITemplateFactory.cs" />
+    <Compile Include="UI\StatResultToExcelFile\StatResultToExcelFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StatResultToExcelFile\StatResultToExcelFile.designer.cs">
+      <DependentUpon>StatResultToExcelFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StatResultToTxtFile\StatResultToTxtFile.cs" />
+    <Compile Include="UI\WinExcel\ExcelRangeColor.cs" />
+    <Compile Include="UI\WinExcel\masExcelAlignType.cs" />
+    <Compile Include="UI\WinExcel\masExcelDrawStatType.cs" />
+    <Compile Include="UI\WinExcel\WinExcelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WinExcel\WinExcelControl.designer.cs">
+      <DependentUpon>WinExcelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IArgumentEditorUI2.cs" />
+    <Compile Include="VirtualRaster\VirtualRasterHeader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AOI Template\Feature\CustomAOI\frmAddNewCustomAOISolution.resx">
+      <DependentUpon>frmAddNewCustomAOISolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\CustomAOI\frmApplyCustomAOISolution.resx">
+      <DependentUpon>frmApplyCustomAOISolution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\frmFeatureSelector.resx">
+      <DependentUpon>frmFeatureSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\frmMaskTemplate.resx">
+      <DependentUpon>frmMaskTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\frmRename.resx">
+      <DependentUpon>frmRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\frmStatCustomSubRegionTemplates.resx">
+      <DependentUpon>frmStatCustomSubRegionTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\frmStatSubRegionTemplates.resx">
+      <DependentUpon>frmStatSubRegionTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AOI Template\Feature\frmStatSubRegionTemplateToString.resx">
+      <DependentUpon>frmStatSubRegionTemplateToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extracting\ExpressTree\FuncTemplate.txt" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MifConfig\ucMifConfigEdit.resx">
+      <DependentUpon>ucMifConfigEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StatResultToExcelFile\StatResultToChartInExcelFile.resx">
+      <DependentUpon>StatResultToChartInExcelFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StatResultToExcelFile\StatResultToExcelFile.resx">
+      <DependentUpon>StatResultToExcelFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WinExcel\WinExcelControl.resx">
+      <DependentUpon>WinExcelControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extracting\ArgEnvironment\BandnameHelper\GeoDo.RSS.MIF.Core.Cnfg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Extracting\ExpressTree\FeatureComputeFuncTemplate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SystemData\CatalogCN\DemoBAG.xml" />
+    <Content Include="SystemData\CatalogCN\DemoDRT.xml" />
+    <Content Include="SystemData\ColorTable\DemoColorTable2.xml" />
+    <Content Include="SystemData\Workspace\Demo大雾FOG.xml" />
+    <Content Include="SystemData\Workspace\Demo干旱DRT.xml" />
+    <EmbeddedResource Include="AOI Template\Feature\Images\open.png" />
+    <Content Include="SystemData\ColorTable\DemoColorTable.xml" />
+    <EmbeddedResource Include="Config\ThemeExample.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Product\Identify.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

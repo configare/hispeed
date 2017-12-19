@@ -1,0 +1,13 @@
+D:\监测分析平台\Code\CMA\SMART\bin\Release\镶嵌输入.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\BatchMosaicArgs.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\testMosaic.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\镶嵌输出.xml
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.BatchMosaic.exe.config
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.BatchMosaic.exe
+D:\监测分析平台\Code\CMA\SMART\bin\Release\GeoDo.Smart.BatchMosaic.pdb
+D:\监测分析平台\Code\CMA\GeoDo.Smart.BatchMosaic\obj\x86\Release\ResolveAssemblyReference.cache
+D:\监测分析平台\Code\CMA\GeoDo.Smart.BatchMosaic\obj\x86\Release\GeoDo.Smart.BatchMosaic.Properties.Resources.resources
+D:\监测分析平台\Code\CMA\GeoDo.Smart.BatchMosaic\obj\x86\Release\GenerateResource.read.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.Smart.BatchMosaic\obj\x86\Release\GenerateResource.write.1.tlog
+D:\监测分析平台\Code\CMA\GeoDo.Smart.BatchMosaic\obj\x86\Release\GeoDo.Smart.BatchMosaic.exe
+D:\监测分析平台\Code\CMA\GeoDo.Smart.BatchMosaic\obj\x86\Release\GeoDo.Smart.BatchMosaic.pdb

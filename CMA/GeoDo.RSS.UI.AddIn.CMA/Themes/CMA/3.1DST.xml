@@ -1,0 +1,595 @@
+﻿<Product name=" 沙  尘 " group="天气" identify="DST" image="system:dust.png" uiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UITabSandDust">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="真彩图" identify="NCIM" color="255,255,0" isuseaoitemplate="true" aoitemplates="vector:海陆模版" isdisplaypanel="true" isneedcurrentraster="false" iskeepusercontrol="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="真彩图" identify="NCIMAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="NatrueColorFile" description="真彩色图文件" editoruiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UCNatrueColor" />
+            <Argument name="TimeZone" description="时区" editoruiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UCTimeZone">
+              <DefaultValue>
+                <DefaultItem>(UTC+08:00)北京时</DefaultItem>
+                <Item>(UTC+08:00)北京时</Item>
+                <Item>(UTC+02:00)东欧时</Item>
+              </DefaultValue>
+            </Argument>
+            <Argument name="OutImageDir" description="输出文件路径" editoruiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UCCoverageFile"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="判识" identify="DBLV" color="190,168,65" isuseaoitemplate="true" aoitemplates="vector:海陆模版" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="风三陆地" identify="FY3Land" satellite="FY3A,FY3B,FY1D" sensor="VIRR,VIRRX,MERSI" customidentify="陆地" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55,0.565" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="28"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="78"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="245"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="293"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="短波红外阈值低端值" defaultvalue="28"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波可见光差值阈值" datatype="float" minvalue="-20" maxvalue="100">
+              <Argument name="ShortInfraredVisibleMin" endpointtype="min" description="短波可见光差值阈值低端值" defaultvalue="-20"/>
+              <!--defaultvalue="0"/>-->
+            </ArgumentPair>
+            <ArgumentPair description="短波远红外差值阈值" datatype="float" minvalue="-50" maxvalue="200">
+              <Argument name="ShortInfraredFarInfraredMin" endpointtype="min" description="短波远红外差值阈值低端值" defaultvalue="-50"/>
+              <!--defaultvalue="15"/>-->
+            </ArgumentPair>
+            <Argument name="ShortInfraredFarInfraredVar" description="短波远红外差值系数" datatype="float" defaultvalue="250"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="风三海洋" identify="FY3Sea" satellite="FY3A,FY3B,FY1D" sensor="VIRR,VIRRX,MERSI" customidentify="海洋" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55,0.565" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1" zoom="10" />
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1" zoom="10" />
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="8"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="26"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="265"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="短波红外阈值低端值" defaultvalue="8"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波近红外差值阈值" datatype="float" minvalue="-20" maxvalue="100">
+              <Argument name="ShortInfraredNearInfraredMin" endpointtype="min" description="短波近红外差值阈值低端值" defaultvalue="0"/>
+            </ArgumentPair>
+            <ArgumentPair description="可见光近红外差值阈值" datatype="float" minvalue="-20" maxvalue="100">
+              <Argument name="VisibleNearInfraredMin" endpointtype="min" description="可见光近红外差值阈值低端值" defaultvalue="15"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="NOAA17陆地" identify="NOAA17Land" satellite="NOAA17" sensor="AVHRR" customidentify="陆地" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55,0.565" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1" zoom="10" />
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="18"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="45"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="248"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="293"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="短波红外阈值低端值" defaultvalue="28"/>
+            </ArgumentPair>
+            <ArgumentPair description="近红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="NearInfraredMin" endpointtype="min" description="近红外阈值低端值" defaultvalue="20"/>
+              <Argument name="NearInfraredMax" endpointtype="max" description="近红外阈值高端值" defaultvalue="50"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外与近红外差值阈值" datatype="float" minvalue="-20" maxvalue="100">
+              <Argument name="ShortInfraredNearInfraredMin" endpointtype="min" description="短波红外与近红外差值阈值低端值" defaultvalue="0"/>
+            </ArgumentPair>
+            <Argument name="ShortInfraredFarInfraredVar" description="短波红外与远红外差值参数" datatype="float" defaultvalue="250"/>
+            <ArgumentPair description="短波红外远红外差值阈值" datatype="float" minvalue="-50" maxvalue="200">
+              <Argument name="ShortInfraredFarInfraredMin" endpointtype="min" description="短波红外远红外差值阈值低端值" defaultvalue="7.5"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="NOAA17海洋" identify="NOAA17Sea" satellite="NOAA17" sensor="AVHRR" customidentify="海洋" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10" />
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1"  zoom="10" />
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="8"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="26"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="265"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="短波红外阈值低端值" defaultvalue="6"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波近红外差值阈值" datatype="float" minvalue="-20" maxvalue="100">
+              <Argument name="ShortInfraredNearInfraredMin" endpointtype="min" description="短波近红外差值阈值低端值" defaultvalue="0"/>
+            </ArgumentPair>
+            <ArgumentPair description="可见光近红外差值阈值" datatype="float" minvalue="-20" maxvalue="100">
+              <Argument name="VisibleNearInfraredMin" endpointtype="min" description="可见光近红外差值阈值低端值" defaultvalue="0"/>
+            </ArgumentPair>
+            <Argument name="ShortInfraredFarInfraredVar" description="短波红外与远红外差值参数" datatype="float" defaultvalue="265"/>
+            <ArgumentPair description="短波远红外差值阈值" datatype="float" minvalue="-20" maxvalue="215">
+              <Argument name="ShortInfraredFarInfraredMin" endpointtype="min" description="短波远红外差值阈值低端值" defaultvalue="-5"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="NOAA18陆地" identify="NOAA18Land" satellite="NOAA16,NOAA18,FY2C,FY2D,FY2E" sensor="AVHRR,VISSR" customidentify="陆地" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1" zoom="10" />
+            <Band identify="MiddleInfrared" wavelength="3.65" centerwavenum="-1"  zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="20"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="48"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="265"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="中红外阈值" datatype="float" minvalue="278" maxvalue="500">
+              <Argument name="MiddleInfraredMin" endpointtype="min" description="中红外阈值低端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="中远红外差值阈值" datatype="float" minvalue="-20" maxvalue="350">
+              <Argument name="MiddleInfraredFarInfraredMin" endpointtype="min" description="中远红外差值阈值低端值" defaultvalue="20"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="NOAA18海洋" identify="NOAA18Sea" satellite="NOAA16,NOAA18,FY2C,FY2D,FY2E" sensor="AVHRR,VISSR" customidentify="海洋" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10" />
+            <Band identify="MiddleInfrared" wavelength="3.65" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="11"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="35"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="265"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="中红外阈值" datatype="float" minvalue="278" maxvalue="500">
+              <Argument name="MiddleInfraredMin" endpointtype="min" description="中红外阈值低端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="中远红外差值阈值" datatype="float" minvalue="-20" maxvalue="350">
+              <Argument name="MiddleInfraredFarInfraredMin" endpointtype="min" description="中远红外差值阈值低端值" defaultvalue="180"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="EOS陆地" identify="EOSLand" satellite="EOSA,EOST,EOS,TERRA,AQUA" sensor="MODIS,MOD" customidentify="陆地" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.65" centerwavenum="-1" zoom="10" />
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1"  zoom="10" />
+            <Band identify="MiddleInfrared" wavelength="3.67" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="28"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="78"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="短波红外阈值低端值" defaultvalue="28"/>
+              <Argument name="ShortInfraredMax" endpointtype="max" description="短波红外阈值高端值" defaultvalue="78"/>
+            </ArgumentPair>
+            <ArgumentPair description="中红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="MiddleInfraredMin" endpointtype="min" description="中红外阈值低端值" defaultvalue="260"/>
+              <Argument name="MiddleInfraredMax" endpointtype="max" description="中红外阈值高端值" defaultvalue="293"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="260"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="293"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="EOS海洋" identify="EOSSea" satellite="EOSA,EOST,EOS,TERRA,AQUA" sensor="MODIS,MOD" customidentify="海洋" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Visible" wavelength="0.47" centerwavenum="-1"  zoom="10" />
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1"  zoom="10" />
+            <Band identify="MiddleInfrared" wavelength="3.67" centerwavenum="-1" zoom="10" />
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" endpointtype="min" description="可见光阈值低端值" defaultvalue="8"/>
+              <Argument name="VisibleMax" endpointtype="max" description="可见光阈值高端值" defaultvalue="26"/>
+            </ArgumentPair>
+            <ArgumentPair description="短波红外阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="短波红外阈值低端值" defaultvalue="8"/>
+              <Argument name="ShortInfraredMax" endpointtype="max" description="短波红外阈值高端值" defaultvalue="26"/>
+            </ArgumentPair>
+            <ArgumentPair description="中红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="MiddleInfraredMin" endpointtype="min" description="中红外阈值低端值" defaultvalue="265"/>
+              <Argument name="MiddleInfraredMax" endpointtype="max" description="中红外阈值高端值" defaultvalue="283"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外阈值" datatype="float" minvalue="220" maxvalue="320">
+              <Argument name="FarInfraredMin" endpointtype="min" description="远红外阈值低端值" defaultvalue="265"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外阈值高端值" defaultvalue="283"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+         <Algorithm name="静止星业务" identify="FY2Algorithm_YW" satellite="FY2E" sensor="VISSR,FDI" customidentify="" grouptype="静止卫星">
+          <Bands>
+            <Band identify="Visible" bandno="1" wavelength="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="可见光阈值" datatype="float" minvalue="0" maxvalue="100">
+              <Argument name="VisibleMin" description="可见光低端值" endpointtype="min" defaultvalue="28" />
+              <Argument name="VisibleMax" description="可见光高端值" endpointtype="max" defaultvalue="35"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="静止星研究" identify="FY2Algorithm" satellite="FY2D,FY2E" sensor="VISSR,FDI" customidentify="" grouptype="静止卫星">
+          <Bands>
+            <Band identify="FarInfrared11" wavelength="11" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared12" wavelength="12" centerwavenum="-1" zoom="10"/>
+            <Band identify="MiddleInfrared1" wavelength="6.7" centerwavenum="-1" zoom="10"/>
+            <Band identify="MiddleInfrared2" wavelength="3.8" centerwavenum="-1" zoom="10"/>
+            <Band identify="Visible" wavelength="0.55,0.565" centerwavenum="-1" zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="Arguments" description="判识参数" fileprovider=""
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UCDstFY2Extract">
+            </Argument>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="真彩色判识" identify="ThresholdAlgorithm_RGB" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,AVHRR,MODIS,MOD" customidentify="" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="Red" bandno="1" wavelength="-1" zoom="1"/>
+            <Band identify="Green" bandno="2" wavelength="-1" zoom="1"/>
+            <Band identify="Blue" bandno="3" wavelength="-1" zoom="1"/>
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="红通道阈值" datatype="float" minvalue="0" maxvalue="255">
+              <Argument name="RedMin" description="红通道低端值" endpointtype="min" defaultvalue="28" />
+              <Argument name="RedMax" description="红通道高端值" endpointtype="max" defaultvalue="100" />
+            </ArgumentPair>
+            <ArgumentPair description="绿通道阈值" datatype="float" minvalue="0" maxvalue="255">
+              <Argument name="GreenMin" description="绿通道低端值" endpointtype="min" defaultvalue="28" />
+              <Argument name="GreenMax" description="绿通道高端值" endpointtype="max" defaultvalue="200" />
+            </ArgumentPair>
+            <ArgumentPair description="蓝通道阈值" datatype="float" minvalue="0" maxvalue="255">
+              <Argument name="BlueMin" description="蓝通道低端值" endpointtype="min" defaultvalue="26" />
+              <Argument name="BlueMax" description="蓝通道高端值" endpointtype="max" defaultvalue="100"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <!--<Algorithm name="FY3判识" identify="FY3Algorithm" satellite="FY3A,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MODIS,MOD" customidentify="">
+                <Bands>
+                  <Band identify="Visible64" wavelength="0.64" centerwavenum="-1" zoom="10"/>
+                  <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1" zoom="10"/>
+                  <Band identify="MiddleInfrared" wavelength="3.7" centerwavenum="-1" zoom="10"/>
+                  <Band identify="FarInfrared11" wavelength="11" centerwavenum="-1" zoom="10"/>
+                  <Band identify="FarInfrared12" wavelength="12" centerwavenum="-1" zoom="10"/>
+                  <Band identify="ShortInfrared" wavelength="1.64" centerwavenum="-1" zoom="10"/>
+                  <Band identify="Visible47" wavelength="0.47" centerwavenum="-1" zoom="10"/>
+                  <Band identify="Visible138" wavelength="1.38" centerwavenum="-1" zoom="10"/>
+                </Bands>
+                <Arguments>
+                  <Argument name="LSTFile" description="陆表温度文件"
+                                    refdatatype="file" reffilter="陆表温度数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                                    ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+                  <Argument name="HeightFile" description="高度文件"
+                                    refdatatype="file" reffilter="高度数据(*.ldf)|*.ldf|所有文件(*.*)|*.*" ismultiselect="false"/>
+                  <Argument name="AngleFile" description="太阳天顶角文件"
+                                    refdatatype="file" reffilter="太阳天顶角数据(*.ldf)|*.ldf|所有文件(*.*)|*.*" ismultiselect="false"/>
+                  <Argument name="Arguments" description="判识参数" fileprovider=""
+                            editoruiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UCDstFY3Extract">
+                  </Argument>
+                </Arguments>
+              </Algorithm>-->
+        <Algorithm name="MODIS判识" identify="ModisAlgorithm" satellite="EOST,EOSA,EOS,TERRA,AQUA" sensor="MODIS,MOD" customidentify="" grouptype="极轨卫星">
+          <Bands>
+            <Band identify="MiddleInfrared" wavelength="8.55" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared1" wavelength="11.03" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared2" wavelength="12.09" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="中红外远红外差值阈值" datatype="float" minvalue="-10" maxvalue="100">
+              <Argument name="MiddleInfraredFarInfraredMin" endpointtype="min" description="中远红外差值阈值低端值" defaultvalue="0"/>
+            </ArgumentPair>
+            <ArgumentPair description="远红外差值阈值" datatype="float" minvalue="-1" maxvalue="1">
+              <Argument name="FarInfraredMax" endpointtype="max" description="远红外差值阈值高端值" defaultvalue="-0.5"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="历史结果导入" identify="ImportAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,TERRA,AQUA,EOS,EOST,EOSA" sensor="VIRR,AVHRR,MODIS,MOD" customidentify="" grouptype="极轨卫星">
+          <Bands>
+          </Bands>
+          <!--<Arguments>
+            <Argument name="HistoryFile" description="历史监测结果" editoruiprovider="GeoDo.RSS.MIF.Prds.DST.dll:GeoDo.RSS.MIF.Prds.DST.UCHistoryDBLVImport"/>
+          </Arguments>-->
+          <Arguments>
+            <Argument name="HistoryFile" description="历史监测结果" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCHistroyImport"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="255,255,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="CLMAlgorithm" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA,NOAA,NOAA16,NOAA17,NOAA18,NOAA19" sensor="AVHRR,VIRR,MERSI,MODIS,MOD" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <NearVisiable>false</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="能见度计算" identify="VISY" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isneedcurrentraster="true" autogenerategroup="Ord,Dis">
+      <Algorithms>
+        <Algorithm name="能见度计算" identify="Visibility" satellite="FY3A,FY3B" sensor="VIRR,VIRRX,MERSI" customidentify="">
+          <Bands>
+            <Band identify="Visible" wavelength="0.63,0.55" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NearInfrared" wavelength="0.86" centerwavenum="-1"  zoom="10" />
+            <Band identify="ShortInfrared" wavelength="1.63" centerwavenum="-1" zoom="10"  />
+            <Band identify="FarInfrared" wavelength="10.8" centerwavenum="-1"  zoom="10" />
+          </Bands>
+          <Arguments>
+            <Argument name="BinaryFile" description="判识二值文件"
+                               refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="VisibilityA" description="能见度计算参数1" datatype="float" defaultvalue="44.7603"/>
+            <Argument name="VisibilityB" description="能见度计算参数2" datatype="float" defaultvalue="0.181571"/>
+            <Argument name="VisibilityC" description="能见度计算参数3" datatype="float" defaultvalue="-0.332972"/>
+            <Argument name="VisibilityD" description="能见度计算参数4" datatype="float" defaultvalue="0.122736"/>
+            <Argument name="VisibilityE" description="能见度计算参数5" datatype="float" defaultvalue="-0.144287"/>
+            <Argument name="VisibilityF" description="能见度计算参数6" datatype="float" defaultvalue="-0.114465"/>
+            <Argument name="ShortFarVar" description="短波红外与远红外差值参数" datatype="float" defaultvalue="253"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <!--<SubProduct name="定量反演产品计算" identify="QIPC" color="" isuseaoitemplate="false" isdisplaypanel="true" isneedcurrentraster="true" autogenerategroup="Ord,Dis">
+      <Algorithms>
+        <Algorithm name="MODIS定量反演计算" identify="MODQIPCAlgorithm" satellite="TERRA,EOST,EOSA,AQUA,EOS" sensor="MOD,MODIS" customidentify="">
+          <Bands>
+            <Band identify="MiddleInfrared" wavelength="8.55" centerwavenum="-1"  zoom="10"/>
+            <Band identify="FarInfrared1" wavelength="11.03" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared2" wavelength="12.09" centerwavenum="-1" zoom="10"  />
+          </Bands>
+          <Arguments>
+            <Argument name="BinaryFile" description="判识结果文件"
+                               refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="mbtd" description="BTD2931权重" datatype="float" defaultvalue="0"/>
+            <Argument name="mbt" description="BT31权重" datatype="float" defaultvalue="1"/>
+            <Argument name="ntype" description="类型" datatype="Int32" defaultvalue="3"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="VIRR定量反演计算" identify="VIRRQIPCAlgorithm" satellite="FY3A,FY3B" sensor="VIRR,VIRRX" customidentify="">
+          <Bands>
+            <Band identify="MiddleInfrared1" wavelength="6.7" centerwavenum="-1"  zoom="10"/>
+            <Band identify="MiddleInfrared2" wavelength="8.5" centerwavenum="-1"  zoom="10" />
+            <Band identify="FarInfrared" wavelength="9.7" centerwavenum="-1" zoom="10"  />
+          </Bands>
+          <Arguments>
+            <Argument name="BinaryFile" description="判识结果文件"
+                               refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="AngleFile" description="太阳天顶角文件"
+                               refdatatype="file" reffilter="太阳天顶角数据(*.ldf)|*.ldf|所有文件(*.*)|*.*" ismultiselect="false"/>
+
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>-->
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="0LWP" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件"
+                               refdatatype="file" refidentify="DBLV"
+                               reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="0SDI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="沙尘频次统计模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                 outfileidentify="MCSI" layoutname="沙尘监测图模版"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="true" autogenerategroup="Ord,Dis"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                 outfileidentify="OMCS" layoutname="沙尘监测图模版_无边框" isoriginal="true"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false" />
+        <Instance name="监测示意图" fileprovider="ContextEnvironment:DBLV"
+                 outfileidentify="0MSI" layoutname="沙尘监测示意图模版"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="true" autogenerategroup="Ord,Dis"/>
+        <Instance name="监测示意图_无边框" fileprovider="ContextEnvironment:CurrentRasterFile"
+                 outfileidentify="MOSI" layoutname="沙尘监测示意图模版_无边框" isoriginal="true"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false" />
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0SDI" layoutname="沙尘二值图模版"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord,Dis" colortablename="DSTDBLV"/>
+        <Instance name="二值图({关注区})" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CSDI" layoutname="沙尘二值图模版"
+                  aoiprovider="SystemAOI:DefaultAOI"  isautogenerate="false"/>
+        <Instance name="能见度图" fileprovider="ContextEnvironment:VISY"
+                  outfileidentify="VISI" layoutname="沙尘能见度模版" colortablename="DSTVISY"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord,Dis"/>
+        <Instance name="沙尘监测图模板_固定" fileprovider="ContextEnvironment:CurrentRasterFile"
+               outfileidentify="TNCI" layoutname="沙尘监测图模板_固定" isfixtemplesize="true" outdir="Z:\ASC_QXFW\天气网产品"
+               aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false" />
+        <Instance name="沙尘_原分" fileprovider="ContextEnvironment:CurrentRasterFile"
+             outfileidentify="ONCI" layoutname="沙尘监测图模板_原分" isoriginal="true" outdir="Z:\ASC_QXFW\天气网产品"
+             aoiprovider="SystemAOI:DefaultAOI" isautogenerate="false" />
+        <Instance name="多通道合成图(加站点)" fileprovider="ContextEnvironment:CurrentRasterFile"
+                 outfileidentify="MSSI" layoutname="沙尘监测图模版_加站点"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="true" autogenerategroup="Ord,Dis"/>
+        <Instance name="监测示意图" fileprovider="ContextEnvironment:DBLV"
+                 outfileidentify="0SSI" layoutname="沙尘监测示意图模版_加站点"
+                 aoiprovider="SystemAOI:DefaultAOI" isautogenerate="true" autogenerategroup="Ord,Dis"/>
+        <Instance name="对比分析图" fileprovider="ContextEnvironment:COMD"
+                outfileidentify="CODI" layoutname="沙尘对比分析专题图" autogenerategroup="Com"
+                aoiprovider="SystemAOI:DefaultAOI" colortablename="DSTCOMD"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="面积统计" identify="STAT" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="STATAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int32" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CCAR"
+                  aoiprovider="当前区域" autogenerategroup="Ord,Dis"/>
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CLUT"
+                  aoiprovider="土地利用类型" autogenerategroup="Ord,Dis"/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CBP"
+                  aoiprovider="省级行政区划" autogenerategroup="Ord,Dis"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CCC"
+                  aoiprovider="省市县行政区划" autogenerategroup="Ord,Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="频次统计" identify="FREQ" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="频次统计" identify="FREQAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="频次统计文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="LWPI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="沙尘频次统计图模版"/>
+            <Argument name="ThemeEnvelope" description="数据区域" datatype="string" defaultvalue="WithBlank:71,138,15,57"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="FREQ"  extinfo="_POTD" layoutname="沙尘频次统计图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="FREQ" extinfo="_POAM" layoutname="沙尘频次统计图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="FREQ" extinfo="_POAQ" layoutname="沙尘频次统计图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年频次统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="FREQ" extinfo="_POAY" layoutname="沙尘频次统计图模版" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="周期合成" identify="CYCI" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="周期合成" identify="CYCIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="周期合成文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="CYCI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="沙尘周期合成图模版"/>
+            <Argument name="ThemeEnvelope" description="数据区域" datatype="string" defaultvalue="WithBlank:71,138,15,57"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                argument="Prd=DST,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                outfileidentify="CYCI" extinfo="_POTD" layoutname="沙尘周期合成图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="CYCI" extinfo="_POAM" layoutname="沙尘周期合成图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="CYCI" extinfo="_POAQ" layoutname="沙尘周期合成图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年周期合成" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="CYCI" extinfo="_POAY" layoutname="沙尘周期合成图模版" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="日数统计" identify="0MDS" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="日数统计" identify="0MDSAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="频次统计文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="LWPI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="沙尘日数统计图模版"/>
+            <Argument name="ThemeEnvelope" description="数据区域" datatype="string" defaultvalue="WithBlank:71,138,15,57"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬日数统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="0MDS"  extinfo="_POTD" layoutname="沙尘日数统计图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="月日数统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=30,NaturalDays=false,Format=dat,BaseOn=POTD"
+                  outfileidentify="0MDS" extinfo="_POAM" layoutname="沙尘日数统计图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="季日数统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=90,NaturalDays=false,Format=dat,BaseOn=POAM"
+                  outfileidentify="0MDS" extinfo="_POAQ" layoutname="沙尘日数统计图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="年日数统计" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=DST,SubPrd=DBLV,Days=365,NaturalDays=false,Format=dat,BaseOn=POAQ"
+                  outfileidentify="0MDS" extinfo="_POAY" layoutname="沙尘日数统计图模版" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="对比分析" identify="COMD" isdisplaypanel="true" color="123,252,252" isuseaoitemplate="false" aoitemplates="" isneedcurrentraster="false">
+      <Algorithms>
+        <Algorithm name="对比分析" identify="COMD" satellite="FY3A,FY3B,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,VIRRX,MERSI,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="DBLV文件" refdatatype="file" refidentify="DBLV"
+                      reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue="" visible="false"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="COMD" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="对比分析" fileprovider="ContextEnvironment:DBLV"
+                 outfileidentify="COMD" aoiprovider="SystemAOI:DefaultAOI" />
+      </Instances>
+    </SubProduct>
+  
+  </SubProducts>
+</Product>

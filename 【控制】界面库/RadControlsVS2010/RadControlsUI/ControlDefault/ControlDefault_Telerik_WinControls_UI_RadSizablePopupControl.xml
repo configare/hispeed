@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="ControlDefault,*" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration>
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="CornerResizeGrip">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Alignment" Value="MiddleCenter" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, -12, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripNSEWImage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNS">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoFill(Hidden)">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Hidden)">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNS">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="EllipsisImage">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 4" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNS">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripNSImage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUIDefaultText,BlackText">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SizablePopupFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SizeGripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SizablePopupBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SizeGripElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Alignment" Value="BottomRight" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="15, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, -2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="0, 10" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SizeGripElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="NoBorder(Collapsed)">
+            <Selectors>
+              <XmlClassSelector ElementClass="GripNSEW">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GripItemBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadSizablePopupControl" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.SizeGripElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadComboBox" ElementType="Telerik.WinControls.UI.RadComboBoxItem" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

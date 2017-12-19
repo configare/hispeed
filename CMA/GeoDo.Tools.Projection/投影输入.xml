@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml identify="projectionarg">
+  <!--必填,输入文件绝对路径-->
+  <InputFilename></InputFilename>
+  <!--必填,输出目录-->
+  <OutputDir></OutputDir>
+  <!--必填,有效范围：[中国区域]60,150,10,70  节点数：1个或多个-->
+  <ValidEnvelopes>
+    <Envelope name="中国及周边" minx="60" maxx="150" miny="10" maxy="70"/>
+  </ValidEnvelopes>
+  <!--指定通道-->
+  <!--1,2,3...空值代表所有通道-->
+  <Bands></Bands>
+  <!--指定投影标识 GLL|ABS|...-->
+  <!--空值代表GLL-->
+  <!--名词解释：
+  1）可见光-近红外通道（VIR）的太阳高度角订正
+  即把不同太阳高度角(h)所形成的像元亮度值调整为太阳垂直照射的亮度值，表示为
+     Ec = E/sin(h) = E/cos(α)   
+     //α为太阳天顶角，h为探测点的太阳高度角，E为反射亮度
+  2）热红外（TIR）波段临边变暗订正
+  热红外通道探测数据随探测点卫星天顶角α的不同而有差异，越靠扫描线边缘，探测路径越长，大气衰减越严重，探测值越小，在图像上显示越暗，此为“临边变暗”
+  ，必须加以纠正。采用经验订正法加以改进。
+  T = Tb+ΔT-273.15(°C)
+  其中：T为订正后的温度；Tb为亮温温度；ΔT
+  ΔT= (Math.Pow(Math.E, 0.00012 * sensorZenith * sensorZenith) - 1) * (0.1072 * temperatureBB - 26.81);
+  -->
+  <ProjectionIdentify></ProjectionIdentify>
+  <!--指定输出文件坐标范围 节点数：0个或多个<Envelope name="HHLY" minx="" maxx="" miny="" maxy=""/> -->
+  <!--空值代表整个文件-->
+  <Envelopes>    
+  </Envelopes>
+  <!--指定输出文件经度方向分辨率-->
+  <!--空值用指定卫星传感器和投影方式取默认原始分辨率，例如VIRR的GLL投影是0.01，其他投影是1000-->
+  <ResolutionX>0.01</ResolutionX>
+  <!--指定输出文件纬度方向分辨率-->
+  <!--空值用指定卫星传感器和投影方式取默认原始分辨率，例如VIRR的GLL投影是0.01，其他投影是1000-->
+  <ResolutionY>0.01</ResolutionY>
+  <!--前一个处理文件的观测日期，时间，轨道圈号-->
+  <!--这个节点对于后续按轨道拼接时候，必须填写-->
+  <PervObservationDate></PervObservationDate>
+  <PervObservationTime></PervObservationTime>
+  <OrbitIdentify></OrbitIdentify>  
+  <!--如果指定拼接，是否保留拼接前的五分钟段投影数据-->
+  <IsOnlySaveMosaicFile>true</IsOnlySaveMosaicFile>
+  <!--20131007添加，用于设定投影时候是否只处理白天或晚上数据，取值：day、night、dayandnight，默认值是dayandnight-->
+  <DayNight>day</DayNight>
+  <!--扩展参数，逗号分隔，
+  1、可以支持输出指定的角度数据集(SensorAzimuth,SensorZenith,SolarAzimuth,SolarZenith,RelativeAzimuth,SatelliteZenith等)
+     支持是否计算亮温，是否高度角订正，是否临边变暗订正，是否清理投影缓存文件(NotRadiation,NotSolarZenith,IsSensorZenith,IsClearPrjCache)
+  2、左右去除像元个数(格式LeftRightInvalid={8|8})
+  3、支持其他数据集，如virr的(ExtBands=Hight;DEM;LandCover;LandSeaMask)，MODIS的（ExtBands=Height;Range;Land/SeaMask）-->
+  <ExtArgs></ExtArgs>
+  <Mosaic>
+    <!--拼接目录，按照规范名称，拼接当前五分钟投影后数据到目标文件-->
+    <!--首先在此目录查找拼接后的文件是否存在，如果存在，则镶嵌，否则，生成新的-->
+    <!--如果没有此节点[<Mosaic>]，则不执行拼接-->
+    <OutputDir></OutputDir>
+    <Envelope name="CHINA" minx="60" maxx="150" miny="10" maxy="70"/>
+  </Mosaic>
+</xml>

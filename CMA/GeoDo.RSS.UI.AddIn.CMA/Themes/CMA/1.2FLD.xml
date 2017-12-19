@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Product name=" 水  情 " group="环境" identify="FLD" image="system:water.png" uiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UITabWater">
+  <AOITemplates>
+    <AOITemplate name="海陆模版" template="vector:海陆模版" ischecked="false"/>
+    <AOITemplate name="洞庭湖" template="vector:洞庭湖" ischecked="true"/>
+    <AOITemplate name="鄱阳湖" template="vector:鄱阳湖" ischecked="true"/>
+    <AOITemplate name="太湖" template="vector:太湖" ischecked="true"/>
+    <AOITemplate name="巢湖" template="vector:巢湖" ischecked="true"/>
+    <AOITemplate name="滇池" template="vector:滇池" ischecked="true"/>
+    <AOITemplate name="贝尔湖" template="vector:贝尔湖" ischecked="true"/>
+    <AOITemplate name="呼伦湖" template="vector:呼伦湖" ischecked="true"/>
+    <AOITemplate name="丹江口水库" template="vector:丹江口水库" ischecked="true"/>
+    <AOITemplate name="官厅水库" template="vector:官厅水库" ischecked="true"/>
+    <AOITemplate name="密云水库" template="vector:密云水库" ischecked="true"/>
+  </AOITemplates>
+  <SubProducts>
+    <SubProduct name="判识" identify="DBLV" color="255,0,0" isuseaoitemplate="true" aoitemplates="vector:洞庭湖,vector:鄱阳湖,vector:太湖,vector:巢湖,vector:滇池,vector:贝尔湖,vector:呼伦湖,vector:丹江口水库,vector:官厅水库,vector:密云水库" isdisplaypanel="true" isneedcurrentraster="true">
+      <Algorithms>
+        <Algorithm name="晴空区域" identify="SunDay1" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="SunDay1">
+          <Bands>
+            <Band identify="NearInfrared" bandno="" wavelength="0.865" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="近红外" datatype="float"  minvalue="0" maxvalue="50">
+              <Argument name="ShortInfraredMin" endpointtype="min" description="近红外阈值低端值"  defaultvalue="0"/>
+              <Argument name="ShortInfraredMax" endpointtype="max" description="近红外阈值高端值" defaultvalue="14"/>
+            </ArgumentPair>
+            <Argument name="HistoryDBLVImport" description="历史判识结果替换"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCHistoryDBLVImport" isoptional="true"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="晴空多条件" identify="SunDay2" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="SunDay2">
+          <Bands>
+            <Band identify="Visible" bandno="" wavelength="0.67" centerwavenum="-1" zoom="10" />
+            <Band identify="NearInfrared" bandno="" wavelength="0.865" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="近红外-可见光" datatype="float"  minvalue="-101" maxvalue="10">
+              <Argument name="NearInfraredVisibleMax" endpointtype="max" description="阈值高端值" defaultvalue="0"/>
+            </ArgumentPair>
+            <ArgumentPair description="近红外" datatype="float"  minvalue="-1" maxvalue="100">
+              <Argument name="NearInfraredMax" endpointtype="max" description="阈值高端值" defaultvalue="12"/>
+            </ArgumentPair>
+            <ArgumentPair description="可见光" datatype="float"  minvalue="-1" maxvalue="100">
+              <Argument name="VisibleMax" endpointtype="max" description="阈值高端值" defaultvalue="15"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="夜间晴空" identify="Night" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="Night">
+          <Bands>
+            <Band identify="FarInfrared" bandno="" wavelength="11.3" centerwavenum="-1" zoom="10" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="远红外" datatype="float"  minvalue="220" maxvalue="350">
+              <Argument name="FarInfraredMin" endpointtype="min" description="阈值低端值"  defaultvalue="293"/>
+              <Argument name="FarInfraredMax" endpointtype="max" description="阈值高端值" defaultvalue="350"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="薄云区域" identify="ThinCloud" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="ThinCloud">
+          <Bands>
+            <Band identify="Visible" bandno="" wavelength="0.67" centerwavenum="-1" zoom="1" />
+            <Band identify="NearInfrared" bandno="" wavelength="0.865" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="近红外/可见光" datatype="float"  minvalue="0" maxvalue="5">
+              <Argument name="NearInfraredVisibleMin" endpointtype="min" description="阈值低端值"  defaultvalue="0"/>
+              <Argument name="NearInfraredVisibleMax" endpointtype="max" description="阈值高端值" defaultvalue="1.8"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="薄雾区域" identify="Fog" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="Fog">
+          <Bands>
+            <Band identify="MiddleInfrared" bandno="" wavelength="3.65" centerwavenum="-1" zoom="1" />
+            <Band identify="FarInfrared" bandno="" wavelength="11.3" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <Argument name="MiddleInfraredFarInfrared" description="亮温差：中红外-远红外"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCMistExtract">
+            </Argument>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="水位推算面积" identify="Stage2Area" description="水位推算面积" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR">
+          <Arguments>
+            <Argument name="Stage2Area" description="面积拟合"
+             editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCStageToArea">
+              <DefaultValue>
+                <!--envelope (minx miny maxx maxy)-->
+                <Region name="洞庭湖" formula="(float)(148.66*x-2799)" envelope="111.977757248618,113.217150024574,28.5152369903973,29.6946609597054"/>
+                <Region name="鄱阳湖" formula="(float)(241.35*x-663.35)" envelope="115.431015115544,117.105194873388,28.2503663532221,29.9595315968806"/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+        <!--<Algorithm name="植被指数" identify="NDVI" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="NDVI">
+          <Bands>
+            <Band identify="Visible" bandno="" wavelength="0.67" centerwavenum="-1"  zoom="1"/>
+            <Band identify="NearInfrared" bandno="" wavelength="0.865" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="植被指数判识水体" datatype="float"  minvalue="-1" maxvalue="1">
+              <Argument name="VisibleNearInfraredMin" endpointtype="min" description="阈值低端值"  defaultvalue="-1"/>
+              <Argument name="VisibleNearInfraredMax" endpointtype="max" description="阈值高端值" defaultvalue="0.26"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>-->
+        <Algorithm name="最优历史结果替换" identify="HistoryReplace" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="Replace">
+          <Arguments>
+            <Argument name="HistoryDBLVImport" description="历史判识结果替换"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCMutiHistoryDBLVImport"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="高分数据" identify="GFProcess" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="SunDay1">
+          <Bands>
+            <Band identify="band" bandno="4" wavelength="0.865" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <ArgumentPair description="波段阈值" datatype="float"  minvalue="0" maxvalue="1000">
+              <Argument name="band1Min" endpointtype="min" description="波段阈值低端值"  defaultvalue="100"/>
+              <Argument name="band1Max" endpointtype="max" description="波段阈值高端值" defaultvalue="500"/>
+            </ArgumentPair>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云检测" identify="0CLM" color="255,255,255" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云判识" identify="CLMAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="NDSIVisible" wavelength="0.67" centerwavenum="-1" zoom="10"/>
+            <Band identify="FarInfrared" wavelength="11.3" centerwavenum="-1"  zoom="10"/>
+            <Band identify="NDSIShortInfrared" wavelength="0.865,1.64" centerwavenum="-1"  zoom="10"/>
+            <Band identify="Visible" wavelength="0.67,0.55,0.63,0.565" centerwavenum="-1"  zoom="10"/>
+          </Bands>
+          <Arguments>
+            <Argument name="ArgumentSetting" description="参数设置" editoruiprovider="GeoDo.RSS.MIF.Prds.Comm.dll:GeoDo.RSS.MIF.Prds.Comm.UCCloudMethod">
+              <DefaultValue>
+                <NDSI>false</NDSI>
+                <FarInfrared>false</FarInfrared>
+                <NearVisiable>true</NearVisiable>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="云覆盖度" identify="YFGD" color="255,203,236,245" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="云覆盖度" identify="YFGD" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="BinCloud" description="云判识结果" datatype="float" refdatatype="file" refidentify="0CLM" reffilter="判识结果数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"  ismultiselect="false" defaultvalue=""/>
+            <Argument name="BackWaterFile" description="背景水体文件" datatype="float" refdatatype="file" refidentify="YFGD" reffilter="判识结果数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"  ismultiselect="false" defaultvalue=""/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="混合像元计算" identify="0MIX" color="" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isneedcurrentraster="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="混合像元计算" identify="0MIX" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Bands>
+            <Band identify="NearInfrared" bandno="" wavelength="0.865" centerwavenum="-1" zoom="1" />
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="水情产品" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="false" />
+            <Argument name="NearInfraredValues" description="近红外水体陆地端元值"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCComputeMixPixel">
+            </Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="扩大缩小水体" identify="FLOD" color="255,203,236,245" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true"  isautogenerate="true">
+      <Algorithms>
+        <Algorithm name="扩大缩小水体" identify="FLOD" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="backWaterFile" description="背景水体文件"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCBackgroudWaterSetting">
+              <DefaultValue>
+                <ValueItem/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="mainfiles" description="水体判识结果"  refdatatype="file"  fileprovider="ContextEnvironment:DBLV" refidentify="DBLV" reffilter="判识结果数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"  ismultiselect="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="泛滥水体天数" identify="FLDC" color="255,203,236,245" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="泛滥水体天数" identify="FLDC" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="BackWaterFile" description="背景水体文件"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCBackgroudWaterSetting">
+              <DefaultValue>
+                <ValueItem/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="SelectedPrimaryFiles" description="水体判识结果"  refdatatype="file"  fileprovider="ContextEnvironment:DBLV" refidentify="DBLV" reffilter="判识结果数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"  ismultiselect="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="泛滥历时面积" identify="FLLS" color="255,203,236,245" isuseaoitemplate="false" aoitemplates="" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="泛滥历时面积" identify="FLLS" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="判识结果文件" refdatatype="file"
+                      refidentify="DBLV" reffilter="判识结果数据(*.dat,*.ldf)|*.dat;*.ldf|所有文件(*.*)|*.*"
+                      ismultiselect="true" fileprovider="ContextEnvironment:DBLV"/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue="省级行政区+土地利用类型"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="FLLS"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="专题图" identify="0IMG" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="专题图生产" identify="0IMGAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="专题产品文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="0SDI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="水情二值图模版"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="NCSI" layoutname="水情网络合成图" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord,Dis"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="MCSI" layoutname="水情产品多通道合成图"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord,Dis"/>
+        <Instance name="多通道合成图" fileprovider="ContextEnvironment:CurrentRasterFile"
+                  outfileidentify="OCSI" layoutname="水情产品多通道合成图"
+                  isautogenerate="false" isoriginal="true"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Dis"/>
+        <Instance name="二值图" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0SDI" layoutname="水情二值图模版"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Ord,Dis"/>
+        <Instance name="扩大缩小水体专题图" fileprovider="ContextEnvironment:FLOD"
+                  outfileidentify="FLIM" layoutname="扩大缩小水体专题图模版"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup="Dis"/>
+        <Instance name="泛滥水体天数专题图" fileprovider="ContextEnvironment:FLDC"
+                  outfileidentify="FLCI" layoutname="泛滥水体天数专题图模版"
+                  aoiprovider="SystemAOI:DefaultAOI" autogenerategroup=""/>
+        <Instance name="洪涝专题图" fileprovider="ContextEnvironment:FLOD"
+                 outfileidentify="0MSI" layoutname="洪涝监测专题图模板"
+                 aoiprovider="SystemAOI:DefaultAOI" autogenerategroup=""/>
+        <Instance name="洪涝示意图" fileprovider="ContextEnvironment:FLOD"
+                outfileidentify="FLDB" layoutname="洪涝监测示意图模板"
+                aoiprovider="SystemAOI:DefaultAOI" autogenerategroup=""/>
+        <Instance name="洪涝持续天数图" fileprovider="ContextEnvironment:FLDS"
+             outfileidentify="FLSI" layoutname="洪涝持续天数图模板" colortablename="FLDFLSI"
+             aoiprovider="SystemAOI:DefaultAOI" autogenerategroup=""/>        
+      </Instances>
+    </SubProduct>
+    <SubProduct name="判识水体面积统计" identify="STAT" isdisplaypanel="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="STATAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CCAR"
+                  aoiprovider="" autogenerategroup="Ord,Dis"/>
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="CLUT"
+                  aoiprovider="土地利用类型" autogenerategroup="Ord,Dis"/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CBP"
+                  aoiprovider="省级行政区划" autogenerategroup="Ord,Dis"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="0CCC"
+                  aoiprovider="省市县行政区划" autogenerategroup="Ord,Dis"/>
+        <Instance name="土地类型面积统计（栅格）" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="RLUT"
+                  aoiprovider="土地利用类型(栅格)" autogenerategroup="Ord,Dis"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="扩大水体面积统计" identify="FWAS" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="面积统计" identify="FWAS" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="FLOD" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CBP"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="面积统计" fileprovider="ContextEnvironment:FLOD"
+                 outfileidentify="FCAR"
+                 aoiprovider=""/>
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:FLOD"
+                  outfileidentify="FLUT"
+                  aoiprovider="土地利用类型"/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:FLOD"
+                  outfileidentify="FCBP"
+                  aoiprovider="省级行政区划"/>
+        <Instance name="行政区划+地类" fileprovider="ContextEnvironment:FLOD"
+                  outfileidentify="ADLU"
+                  aoiprovider="省级行政区+土地利用类型"/>
+        <Instance name="省市县面积统计" fileprovider="ContextEnvironment:FLOD"
+                  outfileidentify="COCC"
+                  aoiprovider="省市县行政区划"/>
+        <Instance name="评估信息表（平方公里）" fileprovider="ContextEnvironment:FLOD"
+                  outfileidentify="COCU"
+                  aoiprovider="省级行政区+土地利用类型:受淹农田面积,望天田"/>
+        <Instance name="持续日数评估信息表（平方公里）" fileprovider="ContextEnvironment:FLDS"
+             outfileidentify="CODU"
+             aoiprovider="省级行政区+土地利用类型:受淹农田,望天田"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="频次统计" identify="FREQ" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="频次统计" identify="FREQAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="频次统计文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true"/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="FREQ"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="水情频次统计模板"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬三级淹没历时" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                   argument="Prd=FLD,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                   outfileidentify="LS3J" extinfo="_POTD" layoutname="三级水情淹没历时专题图模版" aoi="systemAOI:DefaultAOI"/>
+        <Instance name="旬六级淹没历时" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                  argument="Prd=FLD,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                  outfileidentify="LS6J" extinfo="_POTD" layoutname="六级水情淹没历时专题图模版" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="多时次洪涝" identify="CYCI" isdisplaypanel="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="周期合成" identify="CYCIAlgorithm" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="周期合成文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" datatype="Int16" defaultvalue=""/>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue=""/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="MUTI"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="多时次洪涝特点专题分析图"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="旬多时次洪涝" fileprovider="GeoDo.RSS.MIF.Core.dll,GeoDo.RSS.MIF.Core.DefaultFileFinder"
+                argument="Prd=FLD,SubPrd=DBLV,Days=10,NaturalDays=false,Format=dat"
+                outfileidentify="MUTI" extinfo="_POTD" layoutname="多时次洪涝特点专题分析图" aoi="systemAOI:DefaultAOI"/>
+      </Instances>
+    </SubProduct>
+    <SubProduct name="长序列频次" identify="TFRE" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频次" identify="TFREAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="DBLV"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:DBLV"
+                       ismultiselect="true"></Argument>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频率" identify="TFRQ" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频率" identify="TFRQAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="DBLV"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:DBLV"
+                       ismultiselect="true"></Argument>
+            <Argument name="Zoom" description="放大倍数" datatype="double" defaultvalue="1000" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频次图" identify="TFRI" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频次图" identify="TFRIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="长序列文件"
+                               refdatatype="file" refidentify="TFRE"
+                               reffilter="长序列数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" />
+            <Argument name="ShpFile" description="边缘线文件"
+                             refdatatype="file" refidentify="EDGE"
+                             reffilter="边缘线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                             ismultiselect="true" />
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="TFRI" visible="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="长序列频次图模板" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列频率图" identify="TFQI" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="长序列频率图" identify="TFQIAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="长序列文件"
+                               refdatatype="file" refidentify="TFRQ"
+                               reffilter="长序列数据(*.dat)|*.dat|所有文件(*.*)|*.*"
+                               ismultiselect="false" />
+            <Argument name="ShpFile" description="边缘线文件"
+                             refdatatype="file" refidentify="EDGE"
+                             reffilter="边缘线数据(*.shp)|*.shp|所有文件(*.*)|*.*"
+                             ismultiselect="true" />
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="TFQI" visible="false"/>
+            <Argument name="ThemeGraphTemplateName" description="专题图模板名称" datatype="string" defaultvalue="长序列频率图模板" visible="false"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="边缘线" identify="EDGE" isuseaoitemplate="false" isdisplaypanel="true" isneedcurrentraster="false" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="边缘线提取" identify="EDGEAlgorithm" satellite="NOAA,NOAA18,NOAA17,NOAA16,FY3A,FY3B,EOST,EOSA" sensor="AVHRR,VIRR,MERSI,MODIS,MODI" customidentify="海洋">
+          <Bands>
+            <Band identify="band" bandno="1"/>
+          </Bands>
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="提取边缘线文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true"/>
+            <Argument name="Smaping" description="采样比" datatype="Int32" defaultvalue="1"/>
+            <Argument name="dataValue" description="数据值" datatype="float" defaultvalue="1"/>
+            <Argument name="OutFileIdentify" description="输出产品标识" datatype="string" defaultvalue="EDGE" visible ="false"/>
+            <Argument name="IsOutputUncompleted" description="是否闭合" datatype="bool" defaultvalue="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+    <SubProduct name="长序列水体面积统计" identify="TSTA" isdisplaypanel="true" isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="基于数据库" identify="TSTAAlgorithmByDB" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue="" visible="false"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="0CCC" visible="false"/>
+            <Argument name="SearchCondition" descriptin="查询条件"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCSearchCondition">
+              <DefaultValue>
+                <ValueItem/>
+              </DefaultValue>
+            </Argument>
+            <Argument name="StatDim" descriptin="统计维度"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCStatDim">
+              <DefaultValue>
+                <ValueItem/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="基于文件" identify="TSTAAlgorithmByFiles" satellite="FY3A,FY3B,FY1D,NOAA,NOAA19,NOAA18,NOAA17,NOAA16,EOS,EOSA,EOST,TERRA,AQUA" sensor="VIRR,MERSI,MODIS,MOD,AVHRR" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="待统计栅格文件" refdatatype="file" refidentify="DBLV" reffilter="判识结果数据(*.dat)|*.dat|所有文件(*.*)|*.*"  ismultiselect="true" />
+            <Argument name="AOI" description="AOI模板名称或Int[]" datatype="object" defaultvalue="" visible="false"/>
+            <Argument name="OutFileIdentify" descriptin="输出产品标识" datatype="string" defaultvalue="TCCA" visible="false"/>
+            <Argument name="StatDim" descriptin="统计维度"
+                      editoruiprovider="GeoDo.RSS.MIF.Prds.FLD.dll:GeoDo.RSS.MIF.Prds.FLD.UCStatDim">
+              <DefaultValue>
+                <ValueItem/>
+              </DefaultValue>
+            </Argument>
+          </Arguments>
+
+        </Algorithm>
+      </Algorithms>
+      <Instances>
+        <Instance name="区域面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="TCCA"
+                  aoiprovider="" autogenerategroup=""/>
+        <Instance name="土地类型面积统计" fileprovider="ContextEnvironment:DBLV"
+                   outfileidentify="TCLU"
+                   aoiprovider="土地利用类型" autogenerategroup=""/>
+        <Instance name="省界面积统计" fileprovider="ContextEnvironment:DBLV"
+                   outfileidentify="TCBP"
+                   aoiprovider="省级行政区划" autogenerategroup=""/>
+        <!--<Instance name="省市县面积统计" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="TCCC"
+                  aoiprovider="省市县行政区划" autogenerategroup=""/>-->
+        <Instance name="土地类型面积统计（栅格）" fileprovider="ContextEnvironment:DBLV"
+                  outfileidentify="TLUT"
+                  aoiprovider="土地利用类型(栅格)" autogenerategroup=""/>
+        <Instance name="洞庭湖分区" fileprovider="ContextEnvironment:DBLV"
+                outfileidentify="TCDT"
+                aoiprovider="洞庭分区" autogenerategroup=""/>
+      </Instances>
+    </SubProduct>
+
+    <SubProduct name="持续天数" identify="FLDS" isdisplaypanel="true"  isautogenerate="false">
+      <Algorithms>
+        <Algorithm name="基于日数据" identify="DayFLDSAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="DBLV"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:DBLV"
+                       ismultiselect="true"></Argument>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="UInt16" defaultvalue="9999" visible ="false"/>
+            <Argument name="defWater" description="缺省值(水)" datatype="UInt16" defaultvalue="9998" visible ="false"/>
+            <Argument name="autoFJ" description="自动分级" datatype="bool" defaultvalue="true"/>
+          </Arguments>
+        </Algorithm>
+        <Algorithm name="基于差异数据" identify="FloodFLDSAlgorithm" satellite="FY3A,FY3B,NOAA,NOAA18,NOAA17,NOAA16,EOST,EOSA,EOS,TERRA,AQUA" sensor="VIRR,MERSI,AVHRR,MODIS,MOD" customidentify="">
+          <Arguments>
+            <Argument name="SelectedPrimaryFiles" description="统计文件"
+                       refdatatype="file" refidentify="FLOD"
+                       reffilter="栅格数据文件(*.dat)|*.dat|所有文件(*.*)|*.*"
+                       fileprovider="ContextEnvironment:FLOD"
+                       ismultiselect="true"></Argument>
+            <Argument name="defCloudy" description="缺省值(云)" datatype="UInt16" defaultvalue="9999" visible ="false"/>
+            <Argument name="defWater" description="缺省值(水)" datatype="UInt16" defaultvalue="9998" visible ="false"/>
+            <Argument name="autoFJ" description="自动分级" datatype="bool" defaultvalue="true"/>
+          </Arguments>
+        </Algorithm>
+      </Algorithms>
+    </SubProduct>
+
+  </SubProducts>
+</Product>

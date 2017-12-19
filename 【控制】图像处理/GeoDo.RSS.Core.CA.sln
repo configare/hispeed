@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0.GeoDo.RSS.Core.CA", "GeoDo.RSS.Core.CA\0.GeoDo.RSS.Core.CA.csproj", "{842E885C-D6C9-44E2-9776-74499DD9A771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{1E828791-BD1F-4D21-8C7F-EF350D65EB64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.GeoDo.RSS.CA", "GeoDo.RSS.CA\1.GeoDo.RSS.CA.csproj", "{B2A7FC07-042C-4395-BCDC-CC6B944436AB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://218.240.142.98:8080/tfs/smart_w520_20120716
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GeoDo.RSS.Core.CA\\0.GeoDo.RSS.Core.CA.csproj
+		SccProjectName1 = GeoDo.RSS.Core.CA
+		SccLocalPath1 = GeoDo.RSS.Core.CA
+		SccProjectUniqueName2 = test\\test.csproj
+		SccProjectName2 = test
+		SccLocalPath2 = test
+		SccProjectUniqueName3 = GeoDo.RSS.CA\\1.GeoDo.RSS.CA.csproj
+		SccProjectName3 = GeoDo.RSS.CA
+		SccLocalPath3 = GeoDo.RSS.CA
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{842E885C-D6C9-44E2-9776-74499DD9A771}.Release|x86.ActiveCfg = Release|Any CPU
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Debug|x86.ActiveCfg = Debug|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Debug|x86.Build.0 = Debug|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Release|Any CPU.ActiveCfg = Release|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Release|x86.ActiveCfg = Release|x86
+		{1E828791-BD1F-4D21-8C7F-EF350D65EB64}.Release|x86.Build.0 = Release|x86
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B2A7FC07-042C-4395-BCDC-CC6B944436AB}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductIdentify name="HAZ">
+  <CatalogCN identify="DBLV" cnname="雾霾结果"/>
+  <CatalogCN identify="HAZE" cnname="小仪器雾霾"/>
+  <CatalogCN identify="HAEI" cnname="雾霾专题图"/>
+  <CatalogCN identify="NCIM" cnname="真彩色图"/>
+  <CatalogCN identify="ONCI" cnname="原分真彩色图"/>
+  <CatalogCN identify="0MSI" cnname="雾霾监测示意图"/>
+  <CatalogCN identify="0SDI" cnname="单时次二值图"/>
+  <CatalogCN identify="TFRE" cnname="长序列频次"/>
+  <CatalogCN identify="TFRI" cnname="长序列频次图"/>
+  <CatalogCN identify="LAOD" cnname="基于AOD雾霾强度"/>
+</ProductIdentify>
